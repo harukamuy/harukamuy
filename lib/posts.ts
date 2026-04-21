@@ -57,6 +57,9 @@ export function getPostBySlug(slug: string): Post | null {
 }
 
 export async function renderMarkdown(markdown: string): Promise<string> {
-  const result = await remark().use(remarkGfm).use(remarkHtml).process(markdown);
+  const result = await remark()
+    .use(remarkGfm)
+    .use(remarkHtml, { sanitize: false })
+    .process(markdown);
   return result.toString();
 }
