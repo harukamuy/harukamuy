@@ -3,14 +3,15 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return {};
   return { title: post.title, description: post.excerpt };
 }
@@ -26,7 +27,8 @@ const categoryColor: Record<string, string> = {
 };
 
 export default async function PostPage({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) notFound();
 
   const contentHtml = await renderMarkdown(post.content);
@@ -69,7 +71,6 @@ export default async function PostPage({ params }: Props) {
         />
       </article>
 
-      {/* ナビゲーション */}
       <div className="mt-12 pt-8 border-t border-stone-200">
         <Link
           href="/blog"
