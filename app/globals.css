@@ -9,3 +9,85 @@ body {
   background-color: #fafaf9;
   color: #1c1917;
 }
+
+/* 会話形式スタイル */
+.dialogue {
+  margin: 1.5rem 0;
+}
+
+.dialogue-mio {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.dialogue-goma {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-direction: row-reverse;
+}
+
+.dialogue-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.dialogue-mio .dialogue-avatar {
+  background-color: #fef3c7;
+}
+
+.dialogue-goma .dialogue-avatar {
+  background-color: #dcfce7;
+}
+
+.dialogue-bubble {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.dialogue-mio .dialogue-bubble {
+  background-color: #fff7ed;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.dialogue-goma .dialogue-bubble {
+  background-color: #f0fdf4;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.dialogue-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  opacity: 0.6;
+}
+
+.dialogue-mio .dialogue-name {
+  text-align: left;
+}
+
+.dialogue-goma .dialogue-name {
+  text-align: right;
+}
+
+/* 資産サマリーボックス */
+.asset-summary {
+  background: linear-gradient(135deg, #fef3c7 0%, #fff7ed 100%);
+  border: 1px solid #fde68a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
