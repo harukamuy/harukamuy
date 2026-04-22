@@ -164,22 +164,11 @@ export default function Home() {
               width: 84,
               height: 84,
               borderRadius: "50%",
-              background: "var(--beige-2)",
               border: "3px solid var(--white)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
               overflow: "hidden",
               position: "relative",
             }}>
-              <div style={{
-                position: "absolute",
-                inset: 0,
-                background: "repeating-linear-gradient(-45deg,transparent,transparent 5px,rgba(255,255,255,0.35) 5px,rgba(255,255,255,0.35) 6px)",
-              }} />
-              <div style={{ fontSize: 9, color: "var(--brown-3)", textAlign: "center", fontFamily: "var(--font-hand)", lineHeight: 1.4, zIndex: 1 }}>
-                澪さん<br />写真
-              </div>
+              <img src="/images/mio-fullbody.png" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
             <div style={{
               position: "absolute",
