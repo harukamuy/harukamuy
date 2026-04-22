@@ -17,10 +17,18 @@ const strategyCards = [
 ];
 
 const dividendBars = [
-  { month: "1月", pct: 28, label: "28,000", val: "2.8万円" },
-  { month: "2月", pct: 52, label: "52,400", val: "5.2万円" },
-  { month: "3月", pct: 75, label: "75,800", val: "7.6万円" },
-  { month: "4月", pct: 41, label: "41,200", val: "4.1万円" },
+  { month: "1月",  pct:  0, label: "0",       val: "0円" },
+  { month: "2月",  pct:  0, label: "0",       val: "0円" },
+  { month: "3月",  pct: 17, label: "32,407",  val: "3.2万円" },
+  { month: "4月",  pct:  1, label: "1,440",   val: "0.1万円" },
+  { month: "5月",  pct:  7, label: "13,206",  val: "1.3万円" },
+  { month: "6月",  pct:100, label: "194,047", val: "19.4万円" },
+  { month: "7月",  pct:  0, label: "0",       val: "0円" },
+  { month: "8月",  pct:  0, label: "0",       val: "0円" },
+  { month: "9月",  pct: 14, label: "27,207",  val: "2.7万円" },
+  { month: "10月", pct:  1, label: "1,440",   val: "0.1万円" },
+  { month: "11月", pct:  1, label: "2,000",   val: "0.2万円" },
+  { month: "12月", pct: 93, label: "180,072", val: "18.0万円" },
 ];
 
 export default function SideFirePage() {
@@ -82,10 +90,10 @@ export default function SideFirePage() {
             {/* donut SVG */}
             <div style={{ position: "relative", width: 180, height: 180, flexShrink: 0 }}>
               <svg viewBox="0 0 36 36" width="180" height="180">
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" strokeWidth="3.5" strokeDasharray="64.8 35.2" strokeDashoffset="25" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" strokeWidth="3.5" strokeDasharray="25.8 74.2" strokeDashoffset="-39.8" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#c4674a" strokeWidth="3.5" strokeDasharray="2.1 97.9" strokeDashoffset="-65.6" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d5c3a8" strokeWidth="3.5" strokeDasharray="5.3 94.7" strokeDashoffset="-67.7" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" strokeWidth="3.5" strokeDasharray="65.6 34.4" strokeDashoffset="25" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" strokeWidth="3.5" strokeDasharray="26.7 73.3" strokeDashoffset="-40.6" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#c4674a" strokeWidth="3.5" strokeDasharray="2.2 97.8" strokeDashoffset="-67.3" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d5c3a8" strokeWidth="3.5" strokeDasharray="5.5 94.5" strokeDashoffset="-69.5" transform="rotate(-90 18 18)"/>
               </svg>
               <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", textAlign: "center" }}>
                 <div style={{ fontSize: 22, fontWeight: 700, color: "var(--brown)", lineHeight: 1 }}>
@@ -126,12 +134,12 @@ export default function SideFirePage() {
           {/* monthly summary card */}
           <div style={{ background: "var(--green)", color: "white", borderRadius: 20, padding: "28px 24px", marginBottom: 20, position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", right: -40, top: -40, width: 160, height: 160, borderRadius: "50%", background: "rgba(255,255,255,0.06)" }} />
-            <div style={{ fontSize: 13, opacity: 0.7, letterSpacing: "0.08em", marginBottom: 14 }}>📊 2025年4月の配当報告</div>
+            <div style={{ fontSize: 13, opacity: 0.7, letterSpacing: "0.08em", marginBottom: 14 }}>📊 2025年 配当実績（※米国除く）</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
               {[
-                { val: "41,200", unit: "円", label: "今月の受取配当" },
-                { val: "197,400", unit: "円", label: "2025年累計" },
+                { val: "451,819", unit: "円", label: "年間受取配当" },
                 { val: "490,000", unit: "円", label: "年間目標" },
+                { val: "92%", unit: "", label: "達成率" },
               ].map((item) => (
                 <div key={item.label}>
                   <div style={{ fontSize: "clamp(20px,3vw,28px)", fontWeight: 700, lineHeight: 1.1 }}>
