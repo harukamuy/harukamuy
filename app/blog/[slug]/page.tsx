@@ -85,14 +85,24 @@ export default async function PostPage({ params }: Props) {
           alignItems: "center",
           justifyContent: "center",
         }}>
-          <div style={{
-            position: "absolute",
-            inset: 0,
-            background: "repeating-linear-gradient(-45deg,transparent,transparent 10px,rgba(255,255,255,0.2) 10px,rgba(255,255,255,0.2) 11px)",
-          }} />
-          <span style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "rgba(255,255,255,0.9)", zIndex: 1 }}>
-            記事アイキャッチ画像（1200 × 630）
-          </span>
+          {post.coverImage ? (
+            <img
+              src={post.coverImage}
+              alt={post.title}
+              style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+            />
+          ) : (
+            <>
+              <div style={{
+                position: "absolute",
+                inset: 0,
+                background: "repeating-linear-gradient(-45deg,transparent,transparent 10px,rgba(255,255,255,0.2) 10px,rgba(255,255,255,0.2) 11px)",
+              }} />
+              <span style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "rgba(255,255,255,0.9)", zIndex: 1 }}>
+                記事アイキャッチ画像（1200 × 630）
+              </span>
+            </>
+          )}
         </div>
 
         {/* Category + date */}
@@ -261,7 +271,7 @@ export default async function PostPage({ params }: Props) {
           {[
             { label: "総資産", value: "5,463", unit: "万円" },
             { label: "年間配当", value: "49", unit: "万円" },
-            { label: "利回り", value: "4.1", unit: "%" },
+            { label: "利回り", value: "4.94", unit: "%" },
           ].map((row) => (
             <div key={row.label} style={{
               display: "flex",
