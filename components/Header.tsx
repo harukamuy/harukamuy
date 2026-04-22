@@ -42,7 +42,7 @@ export default function Header() {
           }}>
             ブログ
           </Link>
-          <Link href="/blog?category=gomazochi" style={{
+          <Link href="/gomamochi" style={{
             fontSize: 13,
             color: "var(--brown-2)",
             textDecoration: "none",
