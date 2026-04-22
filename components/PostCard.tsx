@@ -46,19 +46,25 @@ export default function PostCard({ post, featured }: { post: Post; featured?: bo
             minHeight: 200,
           }}
         >
-          <div style={{
-            position: "absolute",
-            inset: 0,
-            background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,0.28) 8px,rgba(255,255,255,0.28) 9px)",
-          }} />
-          <span style={{
-            fontFamily: "var(--font-hand)",
-            fontSize: 11,
-            color: "rgba(255,255,255,0.85)",
-            textAlign: "center",
-            lineHeight: 1.5,
-            zIndex: 1,
-          }}>記事アイキャッチ<br />（1200×630推奨）</span>
+          {post.coverImage ? (
+            <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+          ) : (
+            <>
+              <div style={{
+                position: "absolute",
+                inset: 0,
+                background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,0.28) 8px,rgba(255,255,255,0.28) 9px)",
+              }} />
+              <span style={{
+                fontFamily: "var(--font-hand)",
+                fontSize: 11,
+                color: "rgba(255,255,255,0.85)",
+                textAlign: "center",
+                lineHeight: 1.5,
+                zIndex: 1,
+              }}>記事アイキャッチ<br />（1200×630推奨）</span>
+            </>
+          )}
         </div>
         <div style={{ padding: "24px 26px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <div style={{
@@ -126,19 +132,25 @@ export default function PostCard({ post, featured }: { post: Post; featured?: bo
           justifyContent: "center",
         }}
       >
-        <div style={{
-          position: "absolute",
-          inset: 0,
-          background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,0.28) 8px,rgba(255,255,255,0.28) 9px)",
-        }} />
-        <span style={{
-          fontFamily: "var(--font-hand)",
-          fontSize: 11,
-          color: "rgba(255,255,255,0.85)",
-          textAlign: "center",
-          lineHeight: 1.5,
-          zIndex: 1,
-        }}>記事アイキャッチ</span>
+        {post.coverImage ? (
+          <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+        ) : (
+          <>
+            <div style={{
+              position: "absolute",
+              inset: 0,
+              background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,0.28) 8px,rgba(255,255,255,0.28) 9px)",
+            }} />
+            <span style={{
+              fontFamily: "var(--font-hand)",
+              fontSize: 11,
+              color: "rgba(255,255,255,0.85)",
+              textAlign: "center",
+              lineHeight: 1.5,
+              zIndex: 1,
+            }}>記事アイキャッチ</span>
+          </>
+        )}
       </div>
       <div style={{ padding: "15px 17px 18px" }}>
         <div style={{
