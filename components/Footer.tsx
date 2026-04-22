@@ -26,7 +26,7 @@ export default function Footer() {
             🐾 harukamuy
           </div>
           <div style={{ fontSize: 12, lineHeight: 1.85, maxWidth: 300 }}>
-            フリーランス映像プロデューサー・白川澪と愛犬ごまもちによる、FIRE達成後の暮らしと資産管理の記録ブログ。
+            フリーランス映像プロデューサー・あずきちゃんと愛犬ごまもちによる、FIRE達成後の暮らしと資産管理の記録ブログ。
           </div>
         </div>
         <nav style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "flex-end" }}>
@@ -45,7 +45,7 @@ export default function Footer() {
         textAlign: "center",
         letterSpacing: "0.06em",
       }}>
-        © 2025 harukamuy — 白川澪
+        © 2025 harukamuy — あずき
       </div>
     </footer>
   );

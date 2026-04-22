@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "フリーランス映像プロデューサーの白川澪と、愛犬ごまもちによる暮らしとお金の記録です。",
+  description: "フリーランス映像プロデューサーのあずきちゃんと、愛犬ごまもちによる暮らしとお金の記録です。",
 };
 
 const timeline = [
@@ -41,7 +41,7 @@ export default function AboutPage() {
           harukamuy について
         </h1>
         <p style={{ fontSize: 14, opacity: 0.75, lineHeight: 1.8, maxWidth: 500, margin: "0 auto", position: "relative" }}>
-          フリーランス映像プロデューサーの白川澪と、愛犬ごまもちによる暮らしとお金の記録です。
+          フリーランス映像プロデューサーのあずきちゃんと、愛犬ごまもちによる暮らしとお金の記録です。
         </p>
       </div>
 
@@ -53,10 +53,10 @@ export default function AboutPage() {
           {/* 澪カード */}
           <div style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 20, padding: "28px 24px", textAlign: "center" }}>
             <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", overflow: "hidden", border: "3px solid var(--ivory-2)" }}>
-              <img src="/images/mio-fullbody.png" alt="白川澪" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+              <img src="/images/mio-fullbody.png" alt="あずきちゃん" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
-            <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>白川 澪</div>
-            <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Mio Shirakawa</div>
+            <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>あずき</div>
+            <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Azuki</div>
             <p style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85, textAlign: "left" }}>
               1991年生まれ、34歳。都内在住の映像プロデューサー。29歳から本格的に資産形成を始め、34歳でFIREを達成。好きな映像の仕事だけを選びながら、ごまもちとのんびり暮らしています。
             </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>ごまもち</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Gomamochi, Boston Terrier</div>
             <p style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85, textAlign: "left" }}>
-              2020年生まれ、5歳。白川家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線で澪に質問する役を担当。
+              2020年生まれ、5歳。わが家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線であずきちゃんに質問する役を担当。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 12, justifyContent: "center" }}>
               {["ボストンテリア", "食いしん坊", "散歩大好き", "質問担当🐾"].map((tag) => (

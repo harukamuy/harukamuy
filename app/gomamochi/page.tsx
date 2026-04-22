@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 };
 
 const routines = [
-  { time: "6:30", ampm: "AM", icon: "🌅", title: "起床・朝のごあいさつ", text: "澪の顔をぺろぺろして起こしに来る。これが毎朝の日課。" },
+  { time: "6:30", ampm: "AM", icon: "🌅", title: "起床・朝のごあいさつ", text: "あずきちゃんの顔をぺろぺろして起こしに来る。これが毎朝の日課。" },
   { time: "7:00", ampm: "AM", icon: "🦴", title: "朝ごはん", text: "ドライフード+手作りトッピング。食べ終わるまで3分。" },
-  { time: "8:00", ampm: "AM", icon: "🌿", title: "朝散歩（30〜45分）", text: "澪と近所の公園へ。においを嗅ぎ回るのが何より好き。" },
-  { time: "昼間",  ampm: "",   icon: "😴", title: "お昼寝タイム", text: "澪が仕事中はソファで爆睡。いびきをかく。" },
+  { time: "8:00", ampm: "AM", icon: "🌿", title: "朝散歩（30〜45分）", text: "あずきちゃんと近所の公園へ。においを嗅ぎ回るのが何より好き。" },
+  { time: "昼間",  ampm: "",   icon: "😴", title: "お昼寝タイム", text: "あずきちゃんが仕事中はソファで爆睡。いびきをかく。" },
   { time: "17:00", ampm: "PM", icon: "🐾", title: "夕方散歩＆おやつ", text: "1日で一番テンションが上がる時間帯。" },
 ];
 

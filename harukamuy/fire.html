@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サイドFIRE — harukamuy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory:#f8f4ee;--ivory-2:#ede6d8;--beige:#e6d9c6;--beige-2:#d5c3a8;
+    --terra:#c4674a;--terra-lt:#e09a82;--blush:#f0d0c2;
+    --green:#5e7252;--green-lt:#8aaa7a;--green-dark:#3d5235;
+    --brown:#2e2318;--brown-2:#5c4a38;--brown-3:#9c8a76;--white:#fdfaf6;
+    --font:'Zen Maru Gothic',sans-serif;--font-hand:'Caveat',cursive;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--ivory);color:var(--brown);font-family:var(--font);font-size:15px;line-height:1.9;-webkit-font-smoothing:antialiased;}
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");opacity:0.5;}
+
+  header{position:sticky;top:0;z-index:100;background:rgba(248,244,238,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--beige);padding:0 24px;}
+  .header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .logo{font-weight:700;font-size:20px;color:var(--brown);text-decoration:none;letter-spacing:.05em;display:flex;align-items:center;gap:7px;}
+  nav{display:flex;gap:20px;align-items:center;}
+  nav a{font-size:13px;color:var(--brown-2);text-decoration:none;transition:color .2s;}
+  nav a:hover{color:var(--terra);}
+  nav a.active{color:var(--terra);font-weight:700;}
+  .nav-about{background:var(--blush);color:var(--brown)!important;padding:6px 16px;border-radius:20px;font-size:12px!important;}
+
+  /* HERO */
+  .fire-hero{background:var(--green);color:white;padding:68px 24px 56px;position:relative;overflow:hidden;}
+  .fire-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.05);}
+  .fire-hero::after{content:'';position:absolute;bottom:-50px;left:-30px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.04);}
+  .hero-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;}
+  .hero-eyebrow{font-family:var(--font-hand);font-size:17px;opacity:.75;margin-bottom:12px;}
+  .hero-title{font-size:clamp(26px,4.5vw,42px);font-weight:700;line-height:1.5;margin-bottom:16px;}
+  .hero-sub{font-size:14px;opacity:.8;line-height:1.85;max-width:480px;}
+  .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.18);border-radius:20px;padding:5px 16px;font-size:12px;letter-spacing:.1em;margin-bottom:18px;}
+  .hero-badge .dot{width:6px;height:6px;background:#a8e0a0;border-radius:50%;animation:blink 2s ease-in-out infinite;}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  .hero-nums{display:grid;grid-template-columns:repeat(3,auto);gap:28px;}
+  .hero-num .n{font-size:clamp(22px,3vw,32px);font-weight:700;line-height:1.1;}
+  .hero-num .n span{font-size:.5em;opacity:.8;font-weight:400;}
+  .hero-num .d{font-size:11px;opacity:.6;margin-top:3px;letter-spacing:.06em;}
+
+  /* page */
+  .page-wrap{max-width:900px;margin:0 auto;padding:56px 24px 80px;}
+
+  /* section */
+  .section{margin-bottom:56px;}
+  .section-head{display:flex;align-items:baseline;gap:10px;margin-bottom:24px;}
+  .section-title{font-size:20px;font-weight:700;color:var(--brown);}
+  .section-en{font-family:var(--font-hand);font-size:14px;color:var(--brown-3);}
+  .section-more{margin-left:auto;font-size:12px;color:var(--terra);text-decoration:none;letter-spacing:.06em;display:flex;align-items:center;gap:4px;transition:gap .2s;}
+  .section-more:hover{gap:8px;}
+
+  /* portfolio */
+  .portfolio-wrap{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;}
+  /* donut chart */
+  .donut-wrap{position:relative;width:180px;height:180px;flex-shrink:0;}
+  .donut-wrap svg{width:180px;height:180px;}
+  .donut-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
+  .donut-center .big{font-size:22px;font-weight:700;color:var(--brown);line-height:1;}
+  .donut-center .small{font-size:11px;color:var(--brown-3);letter-spacing:.04em;}
+  .portfolio-legend{display:flex;flex-direction:column;gap:10px;}
+  .legend-item{display:flex;align-items:center;gap:10px;}
+  .legend-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;}
+  .legend-label{font-size:13px;color:var(--brown-2);flex:1;}
+  .legend-val{font-size:13px;font-weight:700;color:var(--brown);}
+  .legend-pct{font-size:11px;color:var(--brown-3);margin-left:4px;}
+
+  /* monthly report */
+  .monthly-card{background:var(--green);color:white;border-radius:20px;padding:28px 24px;margin-bottom:20px;position:relative;overflow:hidden;}
+  .monthly-card::before{content:'';position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .monthly-head{font-size:13px;opacity:.7;letter-spacing:.08em;margin-bottom:14px;}
+  .monthly-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .monthly-item .val{font-size:clamp(20px,3vw,28px);font-weight:700;line-height:1.1;}
+  .monthly-item .val span{font-size:.5em;opacity:.8;font-weight:400;}
+  .monthly-item .lbl{font-size:11px;opacity:.6;margin-top:4px;letter-spacing:.06em;}
+
+  /* monthly log table */
+  .log-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .log-table th{text-align:left;font-size:11px;color:var(--brown-3);letter-spacing:.08em;padding:8px 12px;border-bottom:2px solid var(--beige-2);}
+  .log-table td{padding:12px 12px;border-bottom:1px solid var(--beige);color:var(--brown-2);}
+  .log-table tr:hover td{background:var(--ivory-2);}
+  .log-table td:last-child{font-weight:700;color:var(--green);}
+  .log-table .month{font-weight:600;color:var(--brown);}
+
+  /* bar chart */
+  .bar-chart{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+  .bar-row{display:flex;align-items:center;gap:10px;}
+  .bar-month{font-size:11px;color:var(--brown-3);width:36px;flex-shrink:0;text-align:right;}
+  .bar-track{flex:1;background:var(--beige);border-radius:4px;height:20px;overflow:hidden;}
+  .bar-fill{height:100%;background:var(--green);border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:10px;color:white;font-weight:600;transition:width .8s ease;}
+  .bar-val{font-size:11px;color:var(--brown-2);width:48px;flex-shrink:0;text-align:right;}
+
+  /* strategy cards */
+  .strategy-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .strategy-card{background:var(--white);border:1.5px solid var(--beige);border-radius:18px;padding:24px 20px;}
+  .strategy-icon{font-size:28px;margin-bottom:12px;}
+  .strategy-title{font-size:15px;font-weight:700;color:var(--brown);margin-bottom:8px;}
+  .strategy-text{font-size:13px;color:var(--brown-2);line-height:1.8;}
+
+  /* article cards */
+  .articles-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .article-card{background:var(--white);border:1.5px solid var(--beige);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:transform .25s,box-shadow .25s;}
+  .article-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(46,35,24,.09);}
+  .article-thumb{aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;}
+  .article-thumb .stripe{position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px);}
+  .article-thumb-lbl{font-family:var(--font-hand);font-size:11px;color:rgba(255,255,255,.85);z-index:1;}
+  .article-body{padding:14px 16px 16px;}
+  .article-cat{font-size:10px;color:var(--terra);letter-spacing:.1em;margin-bottom:6px;}
+  .article-ttl{font-size:13px;font-weight:500;line-height:1.7;color:var(--brown);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .article-date{font-size:11px;color:var(--brown-3);margin-top:6px;}
+
+  /* aff section */
+  .aff-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .aff-card{background:var(--white);border:1.5px solid var(--beige);border-radius:16px;padding:18px 18px;text-decoration:none;color:inherit;display:block;transition:transform .2s,box-shadow .2s;}
+  .aff-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(46,35,24,.08);}
+  .aff-card.wide{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:#f4efe8;}
+  .aff-icon{width:52px;height:52px;background:var(--beige);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+  .aff-badge{font-size:10px;background:var(--terra);color:white;padding:2px 9px;border-radius:4px;letter-spacing:.08em;display:inline-block;margin-bottom:5px;}
+  .aff-name{font-size:14px;font-weight:700;color:var(--brown);margin-bottom:3px;}
+  .aff-desc{font-size:12px;color:var(--brown-2);line-height:1.7;}
+  .aff-cta{margin-top:8px;font-size:11px;color:var(--terra);font-weight:500;}
+
+  footer{background:var(--brown);color:rgba(253,250,246,.7);padding:40px 24px 28px;}
+  .footer-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;}
+  .footer-logo{font-weight:700;font-size:20px;color:var(--white);margin-bottom:8px;}
+  .footer-desc{font-size:12px;line-height:1.85;max-width:300px;}
+  .footer-nav{display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+  .footer-nav a{color:rgba(253,250,246,.55);text-decoration:none;font-size:12px;letter-spacing:.06em;transition:color .2s;}
+  .footer-nav a:hover{color:var(--white);}
+  .footer-copy{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;text-align:center;letter-spacing:.06em;}
+
+  @media(max-width:600px){
+    .hero-inner{grid-template-columns:1fr;}
+    .hero-nums{grid-template-columns:1fr 1fr 1fr;}
+    .portfolio-wrap{grid-template-columns:1fr;}
+    .donut-wrap{margin:0 auto;}
+    .monthly-grid{grid-template-columns:1fr 1fr;}
+    .strategy-grid{grid-template-columns:1fr;}
+    .articles-grid{grid-template-columns:1fr;}
+    .aff-grid{grid-template-columns:1fr;}
+    .aff-card.wide{grid-template-columns:1fr;}
+    .footer-inner{grid-template-columns:1fr;}
+    .footer-nav{align-items:flex-start;}
+    nav a:not(.nav-about){display:none;}
+  }
+
+  .fade-up{opacity:0;transform:translateY(16px);animation:fadeUp .6s ease forwards;animation-play-state:paused;}
+  @keyframes fadeUp{to{opacity:1;transform:none;}}
+  .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🐾 harukamuy</a>
+    <nav>
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html">ごまもち</a>
+      <a href="fire.html" class="active">サイドFIRE</a>
+      <a href="about.html" class="nav-about">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="fire-hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><span class="dot"></span>FIRE 達成済み ✓</div>
+      <div class="hero-eyebrow">わたしの資産記録</div>
+      <div class="hero-title">サイドFIRE の記録</div>
+      <div class="hero-sub">フリーランス映像プロデューサーが5年かけて達成したサイドFIREの全記録。資産推移・配当ログ・投資方針を公開します。</div>
+    </div>
+    <div class="hero-nums">
+      <div class="hero-num"><div class="n">5,463<span>万</span></div><div class="d">総資産</div></div>
+      <div class="hero-num"><div class="n">49<span>万</span></div><div class="d">年間配当</div></div>
+      <div class="hero-num"><div class="n">4.1<span>%</span></div><div class="d">利回り</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+  <!-- PORTFOLIO -->
+  <div class="section fade-up">
+    <div class="section-head">
+      <div>
+        <div class="section-title">ポートフォリオ内訳</div>
+        <div class="section-en">Portfolio</div>
+      </div>
+    </div>
+    <div class="portfolio-wrap">
+      <!-- donut SVG -->
+      <div class="donut-wrap">
+        <svg viewBox="0 0 36 36">
+          <!-- インデックス 70% -->
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" stroke-width="3.5" stroke-dasharray="70 30" stroke-dashoffset="25" transform="rotate(-90 18 18)"/>
+          <!-- 高配当 21.6% -->
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" stroke-width="3.5" stroke-dasharray="21.6 78.4" stroke-dashoffset="-45" transform="rotate(-90 18 18)"/>
+          <!-- 現金 8.4% -->
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d5c3a8" stroke-width="3.5" stroke-dasharray="8.4 91.6" stroke-dashoffset="-66.6" transform="rotate(-90 18 18)"/>
+        </svg>
+        <div class="donut-center">
+          <div class="big">5,463<span style="font-size:12px;color:var(--brown-3)">万</span></div>
+          <div class="small">総資産</div>
+        </div>
+      </div>
+      <div class="portfolio-legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#5e7252"></div>
+          <div class="legend-label">インデックス投資（NISA含む）</div>
+          <div class="legend-val">3,820万</div>
+          <div class="legend-pct">70%</div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#8aaa7a"></div>
+          <div class="legend-label">高配当株・ETF</div>
+          <div class="legend-val">1,180万</div>
+          <div class="legend-pct">21.6%</div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#d5c3a8"></div>
+          <div class="legend-label">現金・生活防衛資金</div>
+          <div class="legend-val">463万</div>
+          <div class="legend-pct">8.4%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MONTHLY REPORT -->
+  <div class="section fade-up d1">
+    <div class="section-head">
+      <div>
+        <div class="section-title">配当金ログ</div>
+        <div class="section-en">Dividend Log</div>
+      </div>
+      <a href="article.html" class="section-more">記事を読む →</a>
+    </div>
+
+    <div class="monthly-card">
+      <div class="monthly-head">📊 2025年4月の配当報告</div>
+      <div class="monthly-grid">
+        <div class="monthly-item"><div class="val">41,200<span>円</span></div><div class="lbl">今月の受取配当</div></div>
+        <div class="monthly-item"><div class="val">197,400<span>円</span></div><div class="lbl">2025年累計</div></div>
+        <div class="monthly-item"><div class="val">490,000<span>円</span></div><div class="lbl">年間目標</div></div>
+      </div>
+    </div>
+
+    <!-- bar chart -->
+    <div class="bar-chart">
+      <div class="bar-row"><div class="bar-month">1月</div><div class="bar-track"><div class="bar-fill" style="width:28%">28,000</div></div><div class="bar-val">2.8万円</div></div>
+      <div class="bar-row"><div class="bar-month">2月</div><div class="bar-track"><div class="bar-fill" style="width:52%">52,400</div></div><div class="bar-val">5.2万円</div></div>
+      <div class="bar-row"><div class="bar-month">3月</div><div class="bar-track"><div class="bar-fill" style="width:75%">75,800</div></div><div class="bar-val">7.6万円</div></div>
+      <div class="bar-row"><div class="bar-month">4月</div><div class="bar-track"><div class="bar-fill" style="width:41%">41,200</div></div><div class="bar-val">4.1万円</div></div>
+    </div>
+  </div>
+
+  <!-- STRATEGY -->
+  <div class="section fade-up d2">
+    <div class="section-head">
+      <div>
+        <div class="section-title">わたしの投資方針</div>
+        <div class="section-en">Strategy</div>
+      </div>
+    </div>
+    <div class="strategy-grid">
+      <div class="strategy-card">
+        <div class="strategy-icon">🌍</div>
+        <div class="strategy-title">インデックス積立は「ほったらかし」</div>
+        <div class="strategy-text">eMAXIS Slim全世界株式をNISA満額で毎月自動積立。市場を予測せず、淡々と積み上げることが最大の戦略。</div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon">💰</div>
+        <div class="strategy-title">高配当株で「生活費の一部」を稼ぐ</div>
+        <div class="strategy-text">日米の高配当株・ETFを保有。配当金が毎月少しずつ入ることで、精神的な安定につながっている。</div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon">🛡️</div>
+        <div class="strategy-title">生活防衛資金は「12ヶ月分」固定</div>
+        <div class="strategy-text">フリーランスは収入が不安定なため、生活費12ヶ月分を現金で確保。これがあると投資を焦らず続けられる。</div>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon">📊</div>
+        <div class="strategy-title">月1回だけ見直す</div>
+        <div class="strategy-text">毎月末に資産チェック＆配当ログを更新。それ以外は基本的に動かさない。頻繁に見ると余計なことをしてしまうので。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLES -->
+  <div class="section fade-up d3">
+    <div class="section-head">
+      <div>
+        <div class="section-title">サイドFIRE 関連記事</div>
+        <div class="section-en">Articles</div>
+      </div>
+      <a href="index.html" class="section-more">すべて見る →</a>
+    </div>
+    <div class="articles-grid">
+      <a href="article.html" class="article-card">
+        <div class="article-thumb" style="background:#8fa87f"><div class="stripe"></div><div class="article-thumb-lbl">記事アイキャッチ</div></div>
+        <div class="article-body">
+          <div class="article-cat">サイドFIRE</div>
+          <div class="article-ttl">34歳でFIRE達成。5年で5,000万円を積み上げた具体的な方法</div>
+          <div class="article-date">2025年4月18日</div>
+        </div>
+      </a>
+      <a href="article.html" class="article-card">
+        <div class="article-thumb" style="background:#d4957e"><div class="stripe"></div><div class="article-thumb-lbl">記事アイキャッチ</div></div>
+        <div class="article-body">
+          <div class="article-cat">投資・配当</div>
+          <div class="article-ttl">2025年4月の配当金報告。今月はいくら受け取れた？</div>
+          <div class="article-date">2025年4月12日</div>
+        </div>
+      </a>
+      <a href="article.html" class="article-card">
+        <div class="article-thumb" style="background:#7a9e96"><div class="stripe"></div><div class="article-thumb-lbl">記事アイキャッチ</div></div>
+        <div class="article-body">
+          <div class="article-cat">投資・配当</div>
+          <div class="article-ttl">新NISAで積立設定を見直した。成長投資枠の使い方、私の場合</div>
+          <div class="article-date">2025年3月20日</div>
+        </div>
+      </a>
+      <a href="article.html" class="article-card">
+        <div class="article-thumb" style="background:#c9b99a"><div class="stripe"></div><div class="article-thumb-lbl">記事アイキャッチ</div></div>
+        <div class="article-body">
+          <div class="article-cat">サイドFIRE</div>
+          <div class="article-ttl">FIRE後の生活費、実際いくらかかってる？リアルな支出を公開</div>
+          <div class="article-date">2025年3月5日</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- AFFILIATE -->
+  <div class="section fade-up d4">
+    <div class="section-head">
+      <div>
+        <div class="section-title">わたしが使っているサービス</div>
+        <div class="section-en">Recommended</div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:var(--brown-3);margin-bottom:16px;letter-spacing:.04em;">※実際に使っているサービスのみ紹介しています。一部アフィリエイトリンクを含みます。</p>
+    <div class="aff-grid">
+      <a href="#" class="aff-card wide">
+        <div class="aff-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="3" y="14" width="5" height="8" rx="1" fill="#5e7252"/><rect x="10" y="9" width="5" height="13" rx="1" fill="#5e7252" opacity=".7"/><rect x="17" y="4" width="5" height="18" rx="1" fill="#5e7252" opacity=".4"/></svg>
+        </div>
+        <div>
+          <div class="aff-badge">★ 最もおすすめ</div>
+          <div class="aff-name">SBI証券 — わたしのメイン口座</div>
+          <div class="aff-desc">手数料ゼロ・新NISA対応・米国ETH買付も便利。5年以上愛用しています。</div>
+          <div class="aff-cta">公式サイトで詳しく見る →</div>
+        </div>
+      </a>
+      <a href="#" class="aff-card">
+        <div class="aff-badge">新NISA対応</div>
+        <div class="aff-name">eMAXIS Slim 全世界株式</div>
+        <div class="aff-desc">積立NISAで5年間愛用。信託報酬が最安水準。</div>
+        <div class="aff-cta">詳細を見る →</div>
+      </a>
+      <a href="#" class="aff-card">
+        <div class="aff-badge">フリーランス向け</div>
+        <div class="aff-name">freee 確定申告</div>
+        <div class="aff-desc">経費管理から確定申告まで。3年目から愛用中。</div>
+        <div class="aff-cta">詳細を見る →</div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">🐾 harukamuy</div>
+      <div class="footer-desc">フリーランス映像プロデューサー・白川澪と愛犬ごまもちによる、FIRE達成後の暮らしと資産管理の記録ブログ。</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html">ごまもち</a>
+      <a href="fire.html">サイドFIRE</a>
+      <a href="about.html">About</a>
+      <a href="#">プライバシーポリシー</a>
+    </nav>
+  </div>
+  <div class="footer-copy">© 2025 harukamuy — 白川澪</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.animationPlayState='running';obs.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.fade-up').forEach(el=>{el.style.animationPlayState='paused';obs.observe(el);});
+</script>
+</body>
+</html>

@@ -237,7 +237,7 @@ export default async function PostPage({ params }: Props) {
             }} />
             <span style={{ fontSize: 8, color: "var(--brown-3)", zIndex: 1 }}>写真</span>
           </div>
-          <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 2 }}>白川 澪 ＆ ごまもち</div>
+          <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 2 }}>あずき ＆ ごまもち</div>
           <div style={{ fontSize: 11, color: "var(--brown-3)", marginBottom: 9 }}>映像プロデューサー・34歳</div>
           <div style={{ fontSize: 11, color: "var(--brown-2)", lineHeight: 1.8, textAlign: "left" }}>
             愛犬ごまもちと会話しながら、投資・FIRE・フリーランスの話をゆるく発信中。

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ごまもち — harukamuy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* HERO */
+  .goma-hero{background:var(--blush-lt);border-bottom:2px solid var(--blush);padding:60px 24px 52px;text-align:center;position:relative;overflow:hidden;}
+  .goma-hero::before{content:'🐾';position:absolute;font-size:120px;opacity:.06;top:-10px;right:-20px;transform:rotate(15deg);}
+  .goma-hero::after{content:'🐾';position:absolute;font-size:80px;opacity:.05;bottom:-10px;left:-10px;transform:rotate(-10deg);}
+  .hero-eyebrow{font-family:var(--font-hand);font-size:18px;color:var(--terra);margin-bottom:12px;}
+  .hero-title{font-size:clamp(28px,5vw,46px);font-weight:700;line-height:1.4;color:var(--brown);margin-bottom:16px;}
+  .hero-sub{font-size:14px;color:var(--brown-2);line-height:1.8;max-width:460px;margin:0 auto 28px;}
+  .hero-dog-wrap{display:flex;justify-content:center;margin-top:8px;}
+
+  /* PROFILE */
+  
+
+  .goma-profile{background:white;border:1.5px solid var(--blush);border-radius:24px;padding:32px 28px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin-bottom:52px;}
+  .goma-big-avatar{width:140px;height:140px;flex-shrink:0;position:relative;}
+  .profile-info-name{font-size:24px;font-weight:700;margin-bottom:3px;}
+  .profile-info-en{font-family:var(--font-hand);font-size:14px;color:var(--brown-3);margin-bottom:16px;}
+  .spec-grid{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;font-size:13px;margin-bottom:14px;}
+  .spec-label{color:var(--brown-3);font-size:12px;letter-spacing:.06em;}
+  .spec-val{color:var(--brown-2);}
+  .goma-tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .goma-tag{font-size:11px;background:var(--blush-lt);padding:3px 10px;border-radius:20px;color:var(--brown-2);border:1px solid var(--blush);}
+
+  /* section */
+  .section{margin-bottom:52px;}
+  .section-head{display:flex;align-items:baseline;gap:10px;margin-bottom:24px;}
+  .section-title{font-size:20px;font-weight:700;color:var(--brown);}
+  .section-en{font-family:var(--font-hand);font-size:14px;color:var(--brown-3);}
+  .section-more{margin-left:auto;font-size:12px;color:var(--terra);text-decoration:none;letter-spacing:.06em;display:flex;align-items:center;gap:4px;transition:gap .2s;}
+  .section-more:hover{gap:8px;}
+
+  /* photo grid */
+  .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .photo-card{border-radius:14px;overflow:hidden;background:var(--beige-2);aspect-ratio:1;position:relative;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .2s;}
+  .photo-card:hover{transform:scale(1.02);}
+  .photo-card:first-child{grid-column:span 2;aspect-ratio:2/1;}
+  .photo-stripe{position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,.3) 8px,rgba(255,255,255,.3) 9px);}
+  .photo-label{font-family:var(--font-hand);font-size:12px;color:rgba(255,255,255,.85);text-align:center;z-index:1;line-height:1.5;}
+  .pc1{background:#d4a898;}
+  .pc2{background:#c9b99a;}
+  .pc3{background:#b8c9a0;}
+  .pc4{background:#d4957e;}
+  .pc5{background:#a0b8c8;}
+  .pc6{background:#c8b08a;}
+
+  /* diary cards */
+  .diary-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .diary-card{background:var(--white);border:1.5px solid var(--beige);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:transform .25s,box-shadow .25s;}
+  .diary-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(46,35,24,.09);}
+  .diary-thumb{aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;}
+  .diary-thumb .stripe{position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px);}
+  .diary-thumb-lbl{font-family:var(--font-hand);font-size:11px;color:rgba(255,255,255,.85);z-index:1;}
+  .diary-body{padding:14px 16px 16px;}
+  .diary-cat{font-size:10px;color:var(--terra);letter-spacing:.1em;margin-bottom:6px;}
+  .diary-ttl{font-size:13px;font-weight:500;line-height:1.7;color:var(--brown);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .diary-date{font-size:11px;color:var(--brown-3);margin-top:6px;}
+
+  /* routine */
+  .routine-wrap{display:flex;flex-direction:column;gap:16px;}
+  .routine-item{display:flex;gap:16px;align-items:flex-start;background:var(--white);border:1.5px solid var(--beige);border-radius:16px;padding:18px 20px;}
+  .routine-time{font-family:var(--font-hand);font-size:22px;color:var(--terra);font-weight:600;min-width:60px;text-align:center;line-height:1;}
+  .routine-time small{display:block;font-size:12px;font-family:var(--font);color:var(--brown-3);margin-top:3px;}
+  .routine-icon{font-size:26px;flex-shrink:0;}
+  .routine-text strong{display:block;font-size:14px;font-weight:700;color:var(--brown);margin-bottom:3px;}
+  .routine-text span{font-size:13px;color:var(--brown-2);}
+
+  /* amazon reco */
+  .reco-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+  .reco-card{background:var(--white);border:1.5px solid var(--beige);border-radius:14px;padding:16px 14px;text-align:center;text-decoration:none;color:inherit;display:block;transition:transform .2s,box-shadow .2s;}
+  .reco-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(46,35,24,.08);}
+  .reco-img{aspect-ratio:1;background:var(--ivory-2);border-radius:10px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:28px;border:1px solid var(--beige);}
+  .reco-badge{font-size:9px;background:var(--terra);color:white;padding:2px 8px;border-radius:4px;letter-spacing:.08em;display:inline-block;margin-bottom:6px;}
+  .reco-name{font-size:12px;font-weight:700;color:var(--brown);margin-bottom:3px;line-height:1.5;}
+  .reco-price{font-size:11px;color:var(--brown-3);}
+  .reco-cta{margin-top:8px;font-size:11px;color:var(--terra);font-weight:500;}
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  @media(max-width:600px){
+    .goma-profile{grid-template-columns:1fr;text-align:center;}
+    .goma-big-avatar{margin:0 auto;}
+    .spec-grid{justify-content:center;}
+    .photo-grid{grid-template-columns:1fr 1fr;}
+    .photo-card:first-child{grid-column:span 2;}
+    .diary-grid{grid-template-columns:1fr;}
+    .reco-grid{grid-template-columns:1fr 1fr;}
+    .footer-inner{grid-template-columns:1fr;}
+    .footer-nav{align-items:flex-start;}
+    nav a:not(.nav-about){display:none;}
+  }
+
+  
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🐾 harukamuy</a>
+    <nav>
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html" class="active">ごまもち</a>
+      <a href="fire.html">サイドFIRE</a>
+      <a href="about.html" class="nav-about">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="goma-hero">
+  <div class="hero-eyebrow">わが家のアイドル</div>
+  <div class="hero-title">🐾 ごまもち</div>
+  <div class="hero-sub">ボストンテリアのごまもち（5歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。</div>
+</div>
+
+<div class="page-wrap">
+
+  <!-- PROFILE -->
+  <div class="goma-profile fade-up">
+    <div class="goma-big-avatar">
+      <svg viewBox="0 0 140 160" width="140" height="160" fill="none">
+        <ellipse cx="70" cy="108" rx="42" ry="36" fill="#2e2318"/>
+        <ellipse cx="70" cy="108" rx="27" ry="24" fill="#f8f4ee"/>
+        <ellipse cx="70" cy="80" rx="40" ry="40" fill="#2e2318"/>
+        <ellipse cx="70" cy="90" rx="27" ry="28" fill="#f8f4ee"/>
+        <ellipse cx="46" cy="50" rx="12" ry="18" fill="#2e2318"/>
+        <ellipse cx="94" cy="50" rx="12" ry="18" fill="#2e2318"/>
+        <circle cx="56" cy="78" r="10" fill="#2e2318"/>
+        <circle cx="84" cy="78" r="10" fill="#2e2318"/>
+        <circle cx="56" cy="78" r="6" fill="white"/>
+        <circle cx="84" cy="78" r="6" fill="white"/>
+        <circle cx="58" cy="76" r="3" fill="#111"/>
+        <circle cx="86" cy="76" r="3" fill="#111"/>
+        <circle cx="59" cy="75" r="1.5" fill="white"/>
+        <circle cx="87" cy="75" r="1.5" fill="white"/>
+        <ellipse cx="70" cy="92" rx="8" ry="5" fill="#2e2318"/>
+        <ellipse cx="70" cy="92" rx="4" ry="2.5" fill="#3e3228"/>
+        <path d="M60 100 Q70 108 80 100" stroke="#2e2318" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <ellipse cx="48" cy="84" rx="7" ry="4" fill="#ebbfb0" opacity=".5"/>
+        <ellipse cx="92" cy="84" rx="7" ry="4" fill="#ebbfb0" opacity=".5"/>
+        <rect x="46" y="114" width="48" height="12" rx="6" fill="#c4674a"/>
+        <circle cx="70" cy="120" r="5" fill="#e4b840" opacity=".9"/>
+        <ellipse cx="52" cy="148" rx="16" ry="10" fill="#2e2318"/>
+        <ellipse cx="88" cy="148" rx="16" ry="10" fill="#2e2318"/>
+        <circle cx="44" cy="143" r="5" fill="#2e2318"/>
+        <circle cx="52" cy="140" r="5" fill="#2e2318"/>
+        <circle cx="60" cy="143" r="5" fill="#2e2318"/>
+        <circle cx="80" cy="143" r="5" fill="#2e2318"/>
+        <circle cx="88" cy="140" r="5" fill="#2e2318"/>
+        <circle cx="96" cy="143" r="5" fill="#2e2318"/>
+      </svg>
+    </div>
+    <div>
+      <div class="profile-info-name">ごまもち</div>
+      <div class="profile-info-en">Gomamochi / Boston Terrier ♂</div>
+      <div class="spec-grid">
+        <span class="spec-label">生年月日</span><span class="spec-val">2020年5月（5歳）</span>
+        <span class="spec-label">体重</span><span class="spec-val">8.2kg</span>
+        <span class="spec-label">好きなもの</span><span class="spec-val">おやつ・散歩・ソファ</span>
+        <span class="spec-label">ブログでの役割</span><span class="spec-val">読者目線の質問担当</span>
+      </div>
+      <div class="goma-tags">
+        <span class="goma-tag">食いしん坊</span>
+        <span class="goma-tag">甘えん坊</span>
+        <span class="goma-tag">表情豊か</span>
+        <span class="goma-tag">散歩好き</span>
+        <span class="goma-tag">ソファ占拠中</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY -->
+  <div class="section fade-up d1">
+    <div class="section-head">
+      <div>
+        <div class="section-title">フォトギャラリー</div>
+        <div class="section-en">Gallery</div>
+      </div>
+      <a href="#" class="section-more">もっと見る →</a>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-card pc1"><div class="photo-stripe"></div><div class="photo-label">ごまもちの<br>お気に入りの写真</div></div>
+      <div class="photo-card pc2"><div class="photo-stripe"></div><div class="photo-label">写真</div></div>
+      <div class="photo-card pc3"><div class="photo-stripe"></div><div class="photo-label">写真</div></div>
+      <div class="photo-card pc4"><div class="photo-stripe"></div><div class="photo-label">写真</div></div>
+      <div class="photo-card pc5"><div class="photo-stripe"></div><div class="photo-label">写真</div></div>
+      <div class="photo-card pc6"><div class="photo-stripe"></div><div class="photo-label">写真</div></div>
+    </div>
+  </div>
+
+  <!-- DIARY -->
+  <div class="section fade-up d2">
+    <div class="section-head">
+      <div>
+        <div class="section-title">ごまもちの日記</div>
+        <div class="section-en">Diary</div>
+      </div>
+      <a href="#" class="section-more">すべて見る →</a>
+    </div>
+    <div class="diary-grid">
+      <a href="article.html" class="diary-card">
+        <div class="diary-thumb" style="background:#d4a898"><div class="stripe"></div><div class="diary-thumb-lbl">写真</div></div>
+        <div class="diary-body">
+          <div class="diary-cat">ごまもち日記</div>
+          <div class="diary-ttl">熱海旅行でごまもちが大はしゃぎ！ペット可宿の本音レポ</div>
+          <div class="diary-date">2025年3月28日</div>
+        </div>
+      </a>
+      <a href="article.html" class="diary-card">
+        <div class="diary-thumb" style="background:#b8c9a0"><div class="stripe"></div><div class="diary-thumb-lbl">写真</div></div>
+        <div class="diary-body">
+          <div class="diary-cat">ごまもち日記</div>
+          <div class="diary-ttl">ごまもちの健康診断レポ。5歳になって気をつけていること</div>
+          <div class="diary-date">2025年3月10日</div>
+        </div>
+      </a>
+      <a href="article.html" class="diary-card">
+        <div class="diary-thumb" style="background:#c9b99a"><div class="stripe"></div><div class="diary-thumb-lbl">写真</div></div>
+        <div class="diary-body">
+          <div class="diary-cat">ごまもちの食事</div>
+          <div class="diary-ttl">ごまもちのごはん歴史。ドライフード比較5種</div>
+          <div class="diary-date">2025年2月20日</div>
+        </div>
+      </a>
+      <a href="article.html" class="diary-card">
+        <div class="diary-thumb" style="background:#d4957e"><div class="stripe"></div><div class="diary-thumb-lbl">写真</div></div>
+        <div class="diary-body">
+          <div class="diary-cat">お散歩ログ</div>
+          <div class="diary-ttl">ごまもちと代々木公園。春のお花見散歩レポ</div>
+          <div class="diary-date">2025年4月3日</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- DAILY ROUTINE -->
+  <div class="section fade-up d3">
+    <div class="section-head">
+      <div>
+        <div class="section-title">ごまもちの1日</div>
+        <div class="section-en">Daily Routine</div>
+      </div>
+    </div>
+    <div class="routine-wrap">
+      <div class="routine-item">
+        <div class="routine-time">6:30<small>AM</small></div>
+        <div class="routine-icon">🌅</div>
+        <div class="routine-text"><strong>起床・朝のごあいさつ</strong><span>澪の顔をぺろぺろして起こしに来る。これが毎朝の日課。</span></div>
+      </div>
+      <div class="routine-item">
+        <div class="routine-time">7:00<small>AM</small></div>
+        <div class="routine-icon">🦴</div>
+        <div class="routine-text"><strong>朝ごはん</strong><span>ドライフード+手作りトッピング。食べ終わるまで3分。</span></div>
+      </div>
+      <div class="routine-item">
+        <div class="routine-time">8:00<small>AM</small></div>
+        <div class="routine-icon">🌿</div>
+        <div class="routine-text"><strong>朝散歩（30〜45分）</strong><span>澪と近所の公園へ。においを嗅ぎ回るのが何より好き。</span></div>
+      </div>
+      <div class="routine-item">
+        <div class="routine-time">昼間</div>
+        <div class="routine-icon">😴</div>
+        <div class="routine-text"><strong>お昼寝タイム</strong><span>澪が仕事中はソファで爆睡。いびきをかく。</span></div>
+      </div>
+      <div class="routine-item">
+        <div class="routine-time">17:00<small>PM</small></div>
+        <div class="routine-icon">🐾</div>
+        <div class="routine-text"><strong>夕方散歩＆おやつ</strong><span>1日で一番テンションが上がる時間帯。</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECOMMENDED ITEMS -->
+  <div class="section fade-up d4">
+    <div class="section-head">
+      <div>
+        <div class="section-title">ごまもちのお気に入りグッズ</div>
+        <div class="section-en">Favorites</div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--brown-3);margin-bottom:16px;letter-spacing:.04em;">※実際に使用しているものをご紹介しています。一部アフィリエイトリンクを含みます。</p>
+    <div class="reco-grid">
+      <a href="#" class="reco-card">
+        <div class="reco-img">🦴</div>
+        <div class="reco-badge">愛用中</div>
+        <div class="reco-name">オリジン ドッグフード<br>スモールブリード</div>
+        <div class="reco-price">¥3,980〜</div>
+        <div class="reco-cta">Amazonで見る →</div>
+      </a>
+      <a href="#" class="reco-card">
+        <div class="reco-img">🎾</div>
+        <div class="reco-badge">ベストバイ</div>
+        <div class="reco-name">KONG クラシック<br>Mサイズ</div>
+        <div class="reco-price">¥1,480〜</div>
+        <div class="reco-cta">Amazonで見る →</div>
+      </a>
+      <a href="#" class="reco-card">
+        <div class="reco-img">🛏️</div>
+        <div class="reco-badge">ソファ占拠中</div>
+        <div class="reco-name">ABO ドッグベッド<br>Lサイズ</div>
+        <div class="reco-price">¥6,800〜</div>
+        <div class="reco-cta">Amazonで見る →</div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">🐾 harukamuy</div>
+      <div class="footer-desc">フリーランス映像プロデューサー・白川澪と愛犬ごまもちによる、FIRE達成後の暮らしと資産管理の記録ブログ。</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html">ごまもち</a>
+      <a href="fire.html">サイドFIRE</a>
+      <a href="about.html">About</a>
+      <a href="#">プライバシーポリシー</a>
+    </nav>
+  </div>
+  <div class="footer-copy">© 2025 harukamuy — 白川澪</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.animationPlayState='running';obs.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.fade-up').forEach(el=>{el.style.animationPlayState='paused';obs.observe(el);});
+</script>
+</body>
+</html>

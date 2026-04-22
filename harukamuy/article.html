@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>34歳でFIRE達成。5年で5,000万円の方法 — harukamuy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory:    #f8f4ee;
+    --ivory-2:  #ede6d8;
+    --beige:    #e6d9c6;
+    --beige-2:  #d5c3a8;
+    --terra:    #c4674a;
+    --terra-lt: #e09a82;
+    --blush:    #f0d0c2;
+    --green:    #5e7252;
+    --green-lt: #8aaa7a;
+    --brown:    #2e2318;
+    --brown-2:  #5c4a38;
+    --brown-3:  #9c8a76;
+    --white:    #fdfaf6;
+    --dog-bg:   #f4efe8;
+    --dog-bdr:  #e2d4c0;
+    --mio-bg:   #eef2ea;
+    --mio-bdr:  #cddac4;
+
+    --font-main: 'Zen Maru Gothic', sans-serif;
+    --font-hand: 'Caveat', cursive;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ivory);
+    color: var(--brown);
+    font-family: var(--font-main);
+    font-size: 15px;
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(248,244,238,0.93); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--beige); padding: 0 24px;
+  }
+  .header-inner {
+    max-width: 960px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; height: 62px;
+  }
+  .logo { font-weight: 700; font-size: 20px; color: var(--brown); text-decoration: none; letter-spacing: 0.05em; display: flex; align-items: center; gap: 7px; }
+  nav { display: flex; gap: 20px; align-items: center; }
+  nav a { font-size: 13px; color: var(--brown-2); text-decoration: none; transition: color 0.2s; }
+  nav a:hover { color: var(--terra); }
+  .nav-about { background: var(--blush); color: var(--brown) !important; padding: 6px 16px; border-radius: 20px; font-size: 12px !important; }
+
+  /* ── LAYOUT ── */
+  .page-wrap {
+    max-width: 960px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 272px;
+    gap: 48px; padding: 48px 24px 80px; align-items: start;
+  }
+
+  /* ── ARTICLE TOP ── */
+  .breadcrumb {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: var(--brown-3); margin-bottom: 22px;
+  }
+  .breadcrumb a { color: var(--brown-3); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--terra); }
+  .breadcrumb span { opacity: 0.5; }
+
+  .article-hero {
+    width: 100%; aspect-ratio: 16/9; background: #8fa87f;
+    border-radius: 20px; margin-bottom: 28px; position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .article-hero .stripe {
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(-45deg,transparent,transparent 10px,rgba(255,255,255,0.2) 10px,rgba(255,255,255,0.2) 11px);
+  }
+  .article-hero-lbl { font-family: var(--font-hand); font-size: 14px; color: rgba(255,255,255,0.9); z-index:1; }
+
+  .article-meta-top { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .cat-pill { font-size: 11px; background: var(--terra); color: white; padding: 3px 12px; border-radius: 20px; letter-spacing: 0.1em; }
+  .article-date { font-size: 12px; color: var(--brown-3); }
+
+  .article-title {
+    font-size: clamp(20px, 3.2vw, 28px); font-weight: 700;
+    line-height: 1.6; color: var(--brown); margin-bottom: 24px; letter-spacing: 0.02em;
+  }
+
+  /* intro text before conversation */
+  .article-intro {
+    background: var(--ivory-2); border-radius: 16px; padding: 20px 22px;
+    font-size: 14px; color: var(--brown-2); line-height: 1.9; margin-bottom: 32px;
+    border: 1px solid var(--beige);
+  }
+  .article-intro p + p { margin-top: 10px; }
+
+  /* ── CONVERSATION ── */
+  .conv-wrap { display: flex; flex-direction: column; gap: 0; }
+
+  /* section heading within conversation */
+  .conv-section-head {
+    display: flex; align-items: center; gap: 10px;
+    margin: 40px 0 28px; padding-left: 4px;
+  }
+  .conv-section-line { flex: 1; height: 1px; background: var(--beige-2); }
+  .conv-section-label {
+    font-size: 12px; color: var(--brown-3); letter-spacing: 0.12em;
+    white-space: nowrap; font-family: var(--font-hand); font-size: 15px;
+  }
+
+  /* individual turn */
+  .turn { display: flex; gap: 14px; margin-bottom: 20px; align-items: flex-start; }
+  .turn.dog { flex-direction: row; }
+  .turn.mio { flex-direction: row-reverse; }
+
+  /* avatar */
+  .avatar {
+    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; color: var(--brown-3); overflow: hidden; position: relative;
+  }
+  .avatar.dog-av {
+    background: var(--beige-2); border: 2px solid var(--beige);
+  }
+  .avatar.mio-av {
+    background: #cddac4; border: 2px solid var(--mio-bdr);
+  }
+  .avatar .av-stripe {
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(-45deg,transparent,transparent 4px,rgba(255,255,255,0.35) 4px,rgba(255,255,255,0.35) 5px);
+  }
+  .avatar-name {
+    font-size: 8px; text-align: center; line-height: 1.4; color: var(--brown-3); z-index:1; padding: 2px;
+  }
+
+  /* bubble */
+  .bubble-wrap { max-width: 82%; display: flex; flex-direction: column; gap: 4px; }
+  .turn.mio .bubble-wrap { align-items: flex-end; }
+
+  .speaker-label {
+    font-size: 11px; color: var(--brown-3); letter-spacing: 0.06em;
+    padding: 0 4px; display: flex; align-items: center; gap: 5px;
+  }
+  .turn.mio .speaker-label { justify-content: flex-end; }
+
+  .bubble {
+    padding: 14px 18px; border-radius: 20px; font-size: 14px;
+    line-height: 1.85; position: relative;
+  }
+
+  /* dog bubble — left, warm beige */
+  .turn.dog .bubble {
+    background: var(--dog-bg); border: 1.5px solid var(--dog-bdr);
+    border-top-left-radius: 6px; color: var(--brown-2);
+  }
+
+  /* mio bubble — right, soft green */
+  .turn.mio .bubble {
+    background: var(--mio-bg); border: 1.5px solid var(--mio-bdr);
+    border-top-right-radius: 6px; color: var(--brown);
+    text-align: left;
+  }
+
+  /* dog "thought" style */
+  .turn.dog .bubble .dog-think {
+    font-family: var(--font-hand); font-size: 16px;
+    color: var(--terra); display: block; margin-bottom: 4px;
+  }
+
+  /* data card inside bubble */
+  .data-card {
+    background: var(--green); color: white; border-radius: 14px;
+    padding: 18px 18px; margin-top: 12px; font-size: 13px;
+  }
+  .data-card-label { font-size: 10px; opacity: 0.7; letter-spacing: 0.1em; margin-bottom: 10px; }
+  .data-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid rgba(255,255,255,0.15); padding: 6px 0; font-size: 13px;
+  }
+  .data-row:last-child { border: none; }
+  .data-row .val { font-weight: 700; font-size: 17px; }
+  .data-row .unit { font-size: 10px; opacity: 0.7; }
+
+  /* tip card inside bubble */
+  .tip-card {
+    background: rgba(255,255,255,0.6); border: 1.5px solid var(--beige);
+    border-radius: 12px; padding: 12px 14px; margin-top: 12px;
+    font-size: 13px; color: var(--brown-2); line-height: 1.8;
+  }
+  .tip-card strong { color: var(--brown); }
+
+  /* affiliate card inside bubble */
+  .aff-inline {
+    display: flex; gap: 12px; align-items: center;
+    background: rgba(255,255,255,0.7); border: 1.5px solid var(--beige);
+    border-radius: 12px; padding: 12px 14px; margin-top: 12px;
+    text-decoration: none; color: inherit; transition: background 0.2s;
+  }
+  .aff-inline:hover { background: rgba(255,255,255,0.95); }
+  .aff-inline-icon { width: 38px; height: 38px; background: var(--ivory-2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .aff-inline-badge { font-size: 9px; background: var(--terra); color: white; padding: 1px 7px; border-radius: 4px; letter-spacing: 0.08em; display: inline-block; margin-bottom: 3px; }
+  .aff-inline-name  { font-size: 12px; font-weight: 700; }
+  .aff-inline-desc  { font-size: 11px; color: var(--brown-3); }
+  .aff-inline-cta   { margin-left: auto; font-size: 11px; color: var(--terra); white-space: nowrap; font-weight: 500; flex-shrink: 0; }
+
+  /* reaction emoji from dog */
+  .dog-react {
+    font-size: 22px; background: var(--dog-bg);
+    border: 1.5px solid var(--dog-bdr); border-top-left-radius: 4px;
+    border-radius: 20px; padding: 8px 16px;
+    display: inline-block;
+  }
+
+  /* blockquote style */
+  .conv-quote {
+    border-left: 3px solid var(--terra-lt); background: rgba(196,103,74,0.06);
+    border-radius: 0 12px 12px 0; padding: 10px 14px;
+    font-style: italic; font-size: 13px; color: var(--brown-2); margin-top: 10px;
+  }
+
+  /* ── SUMMARY BOX ── */
+  .summary-box {
+    background: var(--ivory-2); border: 1.5px solid var(--beige-2);
+    border-radius: 18px; padding: 22px 22px; margin: 40px 0;
+  }
+  .summary-title {
+    font-size: 13px; font-weight: 700; color: var(--brown);
+    letter-spacing: 0.08em; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 7px;
+  }
+  .summary-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .summary-list li {
+    font-size: 13px; color: var(--brown-2); line-height: 1.7;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .summary-list li::before { content: '🐾'; flex-shrink: 0; font-size: 12px; margin-top: 3px; }
+
+  /* share / related same as before */
+  .share-bar {
+    margin-top: 44px; padding-top: 26px; border-top: 1px solid var(--beige);
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .share-label { font-size: 13px; color: var(--brown-3); letter-spacing: 0.06em; }
+  .share-btn {
+    padding: 7px 18px; border-radius: 20px; font-size: 12px; font-family: var(--font-main);
+    cursor: pointer; border: 1.5px solid var(--beige-2); background: var(--white);
+    color: var(--brown-2); letter-spacing: 0.06em; transition: all 0.2s;
+  }
+  .share-btn:hover { background: var(--brown); color: var(--white); border-color: var(--brown); }
+  .share-btn.x { border-color: #1da1f2; color: #1da1f2; }
+  .share-btn.x:hover { background: #1da1f2; color: white; }
+
+  .related { margin-top: 44px; }
+  .related-title { font-size: 15px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 7px; }
+  .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .related-card {
+    background: var(--white); border: 1.5px solid var(--beige); border-radius: 14px;
+    overflow: hidden; text-decoration: none; color: inherit; display: block; transition: transform 0.2s;
+  }
+  .related-card:hover { transform: translateY(-3px); }
+  .related-thumb { aspect-ratio: 16/9; position: relative; display: flex; align-items: center; justify-content: center; }
+  .related-thumb .stripe { position: absolute; inset: 0; background: repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,0.25) 7px,rgba(255,255,255,0.25) 8px); }
+  .related-body { padding: 11px 13px; }
+  .related-cat  { font-size: 10px; color: var(--terra); letter-spacing: 0.1em; margin-bottom: 4px; }
+  .related-ttl  { font-size: 12px; font-weight: 500; line-height: 1.65; color: var(--brown); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* ── SIDEBAR ── */
+  .sidebar { position: sticky; top: 86px; display: flex; flex-direction: column; gap: 20px; }
+  .sb-card { background: var(--white); border: 1.5px solid var(--beige); border-radius: 18px; padding: 18px 16px; overflow: hidden; }
+  .sb-title { font-size: 12px; font-weight: 700; color: var(--brown); letter-spacing: 0.08em; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
+  .sb-profile { text-align: center; }
+  .sb-avatar { width: 68px; height: 68px; border-radius: 50%; background: var(--beige-2); margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; border: 3px solid var(--ivory-2); position: relative; overflow: hidden; }
+  .sb-avatar .s { position: absolute; inset: 0; background: repeating-linear-gradient(-45deg,transparent,transparent 4px,rgba(255,255,255,0.4) 4px,rgba(255,255,255,0.4) 5px); }
+  .sb-name { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+  .sb-sub  { font-size: 11px; color: var(--brown-3); margin-bottom: 9px; }
+  .sb-text { font-size: 11px; color: var(--brown-2); line-height: 1.8; text-align: left; }
+  .sb-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 9px; justify-content: center; }
+  .sb-tag  { font-size: 10px; background: var(--ivory-2); padding: 2px 8px; border-radius: 20px; color: var(--brown-3); border: 1px solid var(--beige); }
+  .sb-green { background: var(--green); border-color: transparent; color: white; }
+  .sb-green .sb-title { color: rgba(255,255,255,0.75); }
+  .sb-asset-row { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 12px; }
+  .sb-asset-row:last-child { border: none; }
+  .sb-asset-row .v { font-weight: 700; font-size: 16px; }
+  .sb-asset-row .u { font-size: 10px; opacity: 0.7; }
+  .toc-list { list-style: none; display: flex; flex-direction: column; gap: 3px; }
+  .toc-list li a { font-size: 12px; color: var(--brown-3); text-decoration: none; display: block; padding: 5px 9px; border-radius: 8px; transition: background 0.15s, color 0.15s; line-height: 1.5; }
+  .toc-list li a:hover, .toc-list li a.active { background: var(--ivory-2); color: var(--terra); }
+  .sb-aff-item { display: flex; gap: 10px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--beige); text-decoration: none; color: inherit; }
+  .sb-aff-item:last-child { border: none; padding-bottom: 0; }
+  .sb-aff-icon { width: 34px; height: 34px; background: var(--ivory-2); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+  .sb-aff-name { font-size: 12px; font-weight: 500; line-height: 1.4; }
+  .sb-aff-sub  { font-size: 10px; color: var(--brown-3); }
+
+  @media (max-width: 680px) {
+    .page-wrap { grid-template-columns: 1fr; gap: 36px; padding: 32px 18px 60px; }
+    .sidebar { position: static; }
+    .related-grid { grid-template-columns: 1fr; }
+    nav a:not(.nav-about) { display: none; }
+    .bubble-wrap { max-width: 90%; }
+  }
+
+  /* TWEAKS */
+  #tweaks-panel { display:none; position:fixed; bottom:24px; right:24px; width:260px; background:var(--white); border:1.5px solid var(--beige-2); border-radius:20px; padding:20px; z-index:9998; box-shadow:0 12px 40px rgba(46,35,24,0.13); font-family:var(--font-main); }
+  #tweaks-panel.open { display:block; }
+  .tweak-title { font-size:14px; font-weight:700; color:var(--brown); margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid var(--beige); }
+  .tweak-row { margin-bottom:13px; }
+  .tweak-row label { display:block; font-size:11px; color:var(--brown-3); letter-spacing:0.08em; margin-bottom:5px; }
+  .tweak-swatches { display:flex; gap:8px; }
+  .tweak-swatch { width:26px; height:26px; border-radius:50%; cursor:pointer; border:2.5px solid transparent; transition:border-color 0.2s; }
+  .tweak-swatch.sel { border-color:var(--brown); }
+  .tweak-row select { width:100%; font-size:12px; padding:6px 10px; border:1.5px solid var(--beige-2); border-radius:10px; background:var(--ivory); color:var(--brown); cursor:pointer; font-family:var(--font-main); }
+
+  .fade-up { opacity:0; transform:translateY(16px); animation:fadeUp 0.6s ease forwards; animation-play-state:paused; }
+  @keyframes fadeUp { to { opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🐾 harukamuy</a>
+    <nav>
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html">ごまもち</a>
+      <a href="fire.html">サイドFIRE</a>
+      <a href="#" class="nav-about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+<article class="fade-up">
+
+  <div class="breadcrumb">
+    <a href="index.html">TOP</a><span>›</span>
+    <a href="#">サイドFIRE</a><span>›</span>
+    34歳でFIRE達成…
+  </div>
+
+  <div class="article-hero">
+    <div class="stripe"></div>
+    <div class="article-hero-lbl">記事アイキャッチ画像（1200 × 630）</div>
+  </div>
+
+  <div class="article-meta-top">
+    <span class="cat-pill">サイドFIRE</span>
+    <span class="article-date">2025年4月18日</span>
+  </div>
+
+  <h1 class="article-title">34歳でFIRE達成。フリーランス映像プロデューサーが5年で5,000万円を積み上げた具体的な方法</h1>
+
+  <div class="article-intro">
+    <p>こんにちは、白川澪です。今日は愛犬ごまもちと一緒に、私がどうやって5年でFIREを達成したかをお話しします。ごまもちがピンとこないところを質問してくれるので、ぜひ最後まで読んでみてください🐾</p>
+  </div>
+
+  <!-- ── CONVERSATION ── -->
+  <div class="conv-wrap">
+
+    <!-- DOG opens -->
+    <div class="turn dog">
+      <div class="avatar dog-av">
+        <!-- boston terrier mini -->
+        <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
+          <ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/>
+          <ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/>
+          <ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/>
+          <ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/>
+          <ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/>
+          <ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/>
+          <circle cx="20" cy="22" r="3.5" fill="#2e2318"/>
+          <circle cx="28" cy="22" r="3.5" fill="#2e2318"/>
+          <circle cx="20" cy="22" r="2" fill="white"/>
+          <circle cx="28" cy="22" r="2" fill="white"/>
+          <circle cx="21" cy="21" r="1" fill="#111"/>
+          <circle cx="29" cy="21" r="1" fill="#111"/>
+          <ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/>
+          <ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/>
+          <ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          <span class="dog-think">ねえねえ！</span>
+          みおって34歳でFIREしたんだよね？5年で5,000万円ってどういうこと…？ぼくには全然わからない🐶
+        </div>
+      </div>
+    </div>
+
+    <!-- MIO responds -->
+    <div class="turn mio">
+      <div class="avatar mio-av">
+        <div class="av-stripe"></div>
+        <div class="avatar-name">澪</div>
+      </div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">白川 澪</div>
+        <div class="bubble">
+          そうだよ〜。29歳のときにスタートして、34歳でFIREできた。まず私のスペックから話すね。
+
+          <div class="data-card">
+            <div class="data-card-label">📊 FIRE達成時点の資産内訳（2025年4月）</div>
+            <div class="data-row"><span>インデックス投資（NISA含む）</span><span class="val">3,820<span class="unit">万円</span></span></div>
+            <div class="data-row"><span>高配当株・ETF</span><span class="val">1,180<span class="unit">万円</span></span></div>
+            <div class="data-row"><span>現金・生活防衛資金</span><span class="val">463<span class="unit">万円</span></span></div>
+            <div class="data-row"><span style="font-weight:700;">総資産</span><span class="val">5,463<span class="unit">万円</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOG reaction -->
+    <div class="turn dog">
+      <div class="avatar dog-av">
+        <svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg>
+      </div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          <span class="dog-react">😲🐾</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="turn dog">
+      <div class="avatar dog-av">
+        <svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg>
+      </div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          す、すごい…！でも年収ってそんなに高くなかったって聞いたけど…？どうやって貯めたの？
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: 収入の3層構造 -->
+    <div class="conv-section-head">
+      <div class="conv-section-line"></div>
+      <div class="conv-section-label">収入の「3層構造」をつくった</div>
+      <div class="conv-section-line"></div>
+    </div>
+
+    <div class="turn mio">
+      <div class="avatar mio-av"><div class="av-stripe"></div><div class="avatar-name">澪</div></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">白川 澪</div>
+        <div class="bubble">
+          年収は税込みで550〜700万円くらい。決して高くはないんだけど、収入を「3つの層」に分けたのが大きかったかな。
+
+          <div class="tip-card">
+            <strong>① 映像プロデューサー（メイン）</strong><br>
+            好きな仕事を続けながら、これがベースの収入に。<br><br>
+            <strong>② 写真素材販売 ＋ このブログ</strong><br>
+            寝ている間も少しずつ稼いでくれる仕組み。<br><br>
+            <strong>③ 配当収入</strong><br>
+            積み上げた資産が毎年49万円を生んでくれる。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="turn dog">
+      <div class="avatar dog-av"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          ぼくのごはん代も稼いでくれてる…！🙏<br>「寝ていても稼げる」ってどういうこと？
+        </div>
+      </div>
+    </div>
+
+    <div class="turn mio">
+      <div class="avatar mio-av"><div class="av-stripe"></div><div class="avatar-name">澪</div></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">白川 澪</div>
+        <div class="bubble">
+          そう（笑）。ブログのアフィリエイトとか、積み上げた投資の配当は、私が働いていなくても毎月・毎年入ってくるの。これが「不労所得」ってやつ。最初は月1,000円とかだけど、続けていくと雪だるま式に大きくなっていくよ。
+          <div class="conv-quote">「完璧なタイミングは来ない。始めることが、すべての始まり。」</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: 支出の見える化 -->
+    <div class="conv-section-head">
+      <div class="conv-section-line"></div>
+      <div class="conv-section-label">支出を「見える化」して固定費を削った</div>
+      <div class="conv-section-line"></div>
+    </div>
+
+    <div class="turn dog">
+      <div class="avatar dog-av"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          稼ぐのも大事だけど、使いすぎなかったの？みおってごはんとかけっこうこだわるじゃん🍳
+        </div>
+      </div>
+    </div>
+
+    <div class="turn mio">
+      <div class="avatar mio-av"><div class="av-stripe"></div><div class="avatar-name">澪</div></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">白川 澪</div>
+        <div class="bubble">
+          鋭い（笑）。フリーランスあるあるで、経費と生活費の境界が曖昧になりがちなの。freeeを導入してから、純粋な生活費が初めて「見えた」。それだけで翌月から自然と無駄が減ったよ。
+
+          <a href="#" class="aff-inline">
+            <div class="aff-inline-icon">📊</div>
+            <div>
+              <div class="aff-inline-badge">フリーランス向け</div>
+              <div class="aff-inline-name">freee 確定申告</div>
+              <div class="aff-inline-desc">経費管理から確定申告まで。フリーランス3年目から愛用中。</div>
+            </div>
+            <div class="aff-inline-cta">詳細 →</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: NISA -->
+    <div class="conv-section-head">
+      <div class="conv-section-line"></div>
+      <div class="conv-section-label">NISAは「満額・全世界・ほったらかし」</div>
+      <div class="conv-section-line"></div>
+    </div>
+
+    <div class="turn dog">
+      <div class="avatar dog-av"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          ニーサってよく聞く！難しそうで…ごまもちには理解できない🥺
+        </div>
+      </div>
+    </div>
+
+    <div class="turn mio">
+      <div class="avatar mio-av"><div class="av-stripe"></div><div class="avatar-name">澪</div></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">白川 澪</div>
+        <div class="bubble">
+          シンプルに考えていいよ！私がやったのは「毎月決まった額をeMAXIS Slim全世界株式に積み立てて、あとは何もしない」だけ。難しいことは考えない。SBI証券で自動積立を設定したら、あとはごまもちと散歩してるだけで勝手に増えていった感じ（笑）
+
+          <a href="#" class="aff-inline">
+            <div class="aff-inline-icon">📈</div>
+            <div>
+              <div class="aff-inline-badge">★ 最もおすすめ</div>
+              <div class="aff-inline-name">SBI証券 — わたしのメイン口座</div>
+              <div class="aff-inline-desc">手数料ゼロ・新NISA対応。5年以上愛用しています。</div>
+            </div>
+            <div class="aff-inline-cta">公式へ →</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="turn dog">
+      <div class="avatar dog-av"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          散歩してたのぼくだけじゃなかったんだ！！🐾🐾<br>
+          FIRE後って生活変わった？
+        </div>
+      </div>
+    </div>
+
+    <div class="turn mio">
+      <div class="avatar mio-av"><div class="av-stripe"></div><div class="avatar-name">澪</div></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">白川 澪</div>
+        <div class="bubble">
+          大きく変わったのは「働く理由」かな。以前は「食べるために働く」だった。今は「やりたいからやる」。朝にごまもちと散歩して、カフェで好きな仕事をして、夕方は料理する。それだけで十分幸せだよ☺️<br><br>
+          あと、嫌なクライアントを断れる。好きな人とだけ仕事できる。これがFIREの本当の価値だと思う。
+        </div>
+      </div>
+    </div>
+
+    <div class="turn dog">
+      <div class="avatar dog-av"><svg viewBox="0 0 48 48" width="48" height="48" fill="none"><ellipse cx="24" cy="28" rx="14" ry="12" fill="#2e2318"/><ellipse cx="24" cy="28" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="24" cy="22" rx="13" ry="12" fill="#2e2318"/><ellipse cx="24" cy="26" rx="9" ry="8" fill="#f8f4ee"/><ellipse cx="18" cy="16" rx="4" ry="6" fill="#2e2318"/><ellipse cx="30" cy="16" rx="4" ry="6" fill="#2e2318"/><circle cx="20" cy="22" r="3.5" fill="#2e2318"/><circle cx="28" cy="22" r="3.5" fill="#2e2318"/><circle cx="20" cy="22" r="2" fill="white"/><circle cx="28" cy="22" r="2" fill="white"/><circle cx="21" cy="21" r="1" fill="#111"/><circle cx="29" cy="21" r="1" fill="#111"/><ellipse cx="24" cy="28" rx="3" ry="2" fill="#2e2318"/><ellipse cx="16" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/><ellipse cx="32" cy="24" rx="2.5" ry="1.5" fill="#ebbfb0" opacity="0.5"/></svg></div>
+      <div class="bubble-wrap">
+        <div class="speaker-label">🐾 ごまもち</div>
+        <div class="bubble">
+          ぼくとの散歩がいちばん大事ってことだね🐾✨<br>読んでいる人も、まず一歩踏み出してみてね！
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /conv-wrap -->
+
+  <!-- SUMMARY -->
+  <div class="summary-box">
+    <div class="summary-title">🐾 この記事のまとめ</div>
+    <ul class="summary-list">
+      <li>収入を「メイン仕事 ＋ 副収入 ＋ 配当」の3層に分けた</li>
+      <li>freeeで支出を可視化し、固定費を無理なく削減</li>
+      <li>NISAはeMAXIS Slim全世界株式に満額・自動積立でほったらかし</li>
+      <li>FIRE後は「働く理由」が変わり、好きな仕事だけを選べる人生に</li>
+    </ul>
+  </div>
+
+  <!-- SHARE -->
+  <div class="share-bar">
+    <span class="share-label">この記事をシェア</span>
+    <button class="share-btn x">𝕏 でシェア</button>
+    <button class="share-btn" id="copyBtn">📋 URLをコピー</button>
+  </div>
+
+  <!-- RELATED -->
+  <div class="related">
+    <div class="related-title">🐾 関連記事</div>
+    <div class="related-grid">
+      <a href="#" class="related-card">
+        <div class="related-thumb" style="background:#d4957e"><div class="stripe"></div></div>
+        <div class="related-body"><div class="related-cat">投資・配当</div><div class="related-ttl">2025年4月の配当金報告。今月はいくら受け取れた？</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb" style="background:#d4a898"><div class="stripe"></div></div>
+        <div class="related-body"><div class="related-cat">ごまもち🐾</div><div class="related-ttl">ごまもちと行く熱海旅行。ペット可宿のリアルな感想</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb" style="background:#7a9e96"><div class="stripe"></div></div>
+        <div class="related-body"><div class="related-cat">フリーランス</div><div class="related-ttl">確定申告でやってよかった節税策3選</div></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-thumb" style="background:#8fa87f"><div class="stripe"></div></div>
+        <div class="related-body"><div class="related-cat">サイドFIRE</div><div class="related-ttl">新NISAの成長投資枠、私はこう使っています</div></div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sb-card sb-profile">
+    <div class="sb-title" style="justify-content:center;">このブログについて</div>
+    <div class="sb-avatar"><div class="s"></div><span style="font-size:8px;color:var(--brown-3);z-index:1">写真</span></div>
+    <div class="sb-name">白川 澪 ＆ ごまもち</div>
+    <div class="sb-sub">映像プロデューサー・34歳</div>
+    <div class="sb-text">愛犬ごまもちと会話しながら、投資・FIRE・フリーランスの話をゆるく発信中。</div>
+    <div class="sb-tags">
+      <span class="sb-tag">サイドFIRE</span>
+      <span class="sb-tag">投資</span>
+      <span class="sb-tag">🐶 ごまもち</span>
+    </div>
+  </div>
+
+  <div class="sb-card sb-green">
+    <div class="sb-title">📊 現在の資産状況</div>
+    <div class="sb-asset-row"><span>総資産</span><span><span class="v">5,463</span><span class="u">万円</span></span></div>
+    <div class="sb-asset-row"><span>年間配当</span><span><span class="v">49</span><span class="u">万円</span></span></div>
+    <div class="sb-asset-row"><span>利回り</span><span><span class="v">4.1</span><span class="u">%</span></span></div>
+  </div>
+
+  <div class="sb-card">
+    <div class="sb-title">📋 目次</div>
+    <ul class="toc-list">
+      <li><a href="#" class="active">私のスペックをざっくり</a></li>
+      <li><a href="#">収入の「3層構造」</a></li>
+      <li><a href="#">支出の見える化</a></li>
+      <li><a href="#">NISAはほったらかし</a></li>
+      <li><a href="#">FIRE後の生活</a></li>
+    </ul>
+  </div>
+
+  <div class="sb-card">
+    <div class="sb-title">🔗 おすすめサービス</div>
+    <a href="#" class="sb-aff-item"><div class="sb-aff-icon">📈</div><div><div class="sb-aff-name">SBI証券</div><div class="sb-aff-sub">メイン証券口座</div></div></a>
+    <a href="#" class="sb-aff-item"><div class="sb-aff-icon">🌏</div><div><div class="sb-aff-name">eMAXIS Slim 全世界</div><div class="sb-aff-sub">積立NISAで5年愛用</div></div></a>
+    <a href="#" class="sb-aff-item"><div class="sb-aff-icon">📊</div><div><div class="sb-aff-name">freee 確定申告</div><div class="sb-aff-sub">フリーランス必須ツール</div></div></a>
+  </div>
+</aside>
+</div>
+
+<!-- TWEAKS -->
+<div id="tweaks-panel">
+  <div class="tweak-title">🎨 Tweaks</div>
+  <div class="tweak-row">
+    <label>吹き出し — ごまもち側</label>
+    <div class="tweak-swatches">
+      <div class="tweak-swatch sel" style="background:#f4efe8;border:1.5px solid #ccc" onclick="setDogColor('#f4efe8','#e2d4c0',this)"></div>
+      <div class="tweak-swatch" style="background:#fde8e8;border:1.5px solid #ccc" onclick="setDogColor('#fde8e8','#f0c8c8',this)"></div>
+      <div class="tweak-swatch" style="background:#e8eef8;border:1.5px solid #ccc" onclick="setDogColor('#e8eef8','#c8d8f0',this)"></div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <label>吹き出し — 澪側</label>
+    <div class="tweak-swatches">
+      <div class="tweak-swatch sel" style="background:#eef2ea;border:1.5px solid #ccc" onclick="setMioColor('#eef2ea','#cddac4',this)"></div>
+      <div class="tweak-swatch" style="background:#eef4f0;border:1.5px solid #ccc" onclick="setMioColor('#eef4f0','#b8dcc8',this)"></div>
+      <div class="tweak-swatch" style="background:#f8f0fc;border:1.5px solid #ccc" onclick="setMioColor('#f8f0fc','#ddc4f0',this)"></div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <label>アクセントカラー</label>
+    <div class="tweak-swatches">
+      <div class="tweak-swatch sel" style="background:#c4674a" onclick="setAccent('#c4674a',this)"></div>
+      <div class="tweak-swatch" style="background:#b8699b" onclick="setAccent('#b8699b',this)"></div>
+      <div class="tweak-swatch" style="background:#5e7252" onclick="setAccent('#5e7252',this)"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', function() {
+  navigator.clipboard?.writeText(location.href).then(() => {
+    this.textContent = '✓ コピーしました';
+    setTimeout(() => this.textContent = '📋 URLをコピー', 2000);
+  });
+});
+
+function setDogColor(bg, bdr, el) {
+  el.parentElement.querySelectorAll('.tweak-swatch').forEach(s => s.classList.remove('sel'));
+  el.classList.add('sel');
+  document.documentElement.style.setProperty('--dog-bg', bg);
+  document.documentElement.style.setProperty('--dog-bdr', bdr);
+}
+function setMioColor(bg, bdr, el) {
+  el.parentElement.querySelectorAll('.tweak-swatch').forEach(s => s.classList.remove('sel'));
+  el.classList.add('sel');
+  document.documentElement.style.setProperty('--mio-bg', bg);
+  document.documentElement.style.setProperty('--mio-bdr', bdr);
+}
+function setAccent(color, el) {
+  el.parentElement.querySelectorAll('.tweak-swatch').forEach(s => s.classList.remove('sel'));
+  el.classList.add('sel');
+  document.documentElement.style.setProperty('--terra', color);
+}
+
+window.addEventListener('message', e => {
+  if (e.data?.type === '__activate_edit_mode')   document.getElementById('tweaks-panel').classList.add('open');
+  if (e.data?.type === '__deactivate_edit_mode') document.getElementById('tweaks-panel').classList.remove('open');
+});
+window.parent.postMessage({type:'__edit_mode_available'},'*');
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; obs.unobserve(e.target); } });
+}, {threshold: 0.05});
+document.querySelectorAll('.fade-up').forEach(el => { el.style.animationPlayState = 'paused'; obs.observe(el); });
+</script>
+</body>
+</html>

@@ -59,7 +59,7 @@ export default function Home() {
             gap: 8,
             alignItems: "center",
           }}>
-            <span>白川澪（34歳・映像プロデューサー）</span>
+            <span>あずきちゃん（34歳・映像プロデューサー）</span>
             <span style={{
               background: "var(--beige)",
               padding: "4px 12px",
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
 
         <div style={{ width: 220, flexShrink: 0, borderRadius: 20, overflow: "hidden", boxShadow: "0 4px 24px rgba(46,35,24,0.08)" }}>
-          <img src="/images/mio-room.png" alt="白川澪とごまもち" style={{ width: "100%", height: "auto", display: "block" }} />
+          <img src="/images/mio-room.png" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block" }} />
         </div>
       </section>
 
@@ -199,8 +199,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div style={{ fontFamily: "var(--font-serif)", fontSize: 18, fontWeight: 600, marginBottom: 2 }}>白川 澪</div>
-            <div style={{ fontFamily: "var(--font-hand)", fontSize: 13, color: "var(--brown-3)", marginBottom: 10 }}>Mio Shirakawa, 34</div>
+            <div style={{ fontFamily: "var(--font-serif)", fontSize: 18, fontWeight: 600, marginBottom: 2 }}>あずき</div>
+            <div style={{ fontFamily: "var(--font-hand)", fontSize: 13, color: "var(--brown-3)", marginBottom: 10 }}>Azuki, 34</div>
             <div style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85 }}>
               映像プロデューサー兼フリーランス。愛犬ごまもちと一緒に、都内の小さなアパートから資産形成を続けています。FIRE達成後も「好きな仕事だけ」を選ぶ生活を記録中。
             </div>
