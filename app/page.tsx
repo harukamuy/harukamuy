@@ -139,7 +139,7 @@ export default function Home() {
             </div>
             <div>
               <div style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.01em" }}>
-                4.1<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>%</span>
+                4.94<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>%</span>
               </div>
               <div style={{ fontSize: 11, opacity: 0.6, marginTop: 4, letterSpacing: "0.06em" }}>配当利回り（平均）</div>
             </div>
