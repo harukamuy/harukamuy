@@ -221,21 +221,11 @@ export default async function PostPage({ params }: Props) {
             width: 68,
             height: 68,
             borderRadius: "50%",
-            background: "var(--beige-2)",
             margin: "0 auto 10px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             border: "3px solid var(--ivory-2)",
-            position: "relative",
             overflow: "hidden",
           }}>
-            <div style={{
-              position: "absolute",
-              inset: 0,
-              background: "repeating-linear-gradient(-45deg,transparent,transparent 4px,rgba(255,255,255,0.4) 4px,rgba(255,255,255,0.4) 5px)",
-            }} />
-            <span style={{ fontSize: 8, color: "var(--brown-3)", zIndex: 1 }}>写真</span>
+            <img src="/images/mio-fullbody.png" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
           </div>
           <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 2 }}>あずき ＆ ごまもち</div>
           <div style={{ fontSize: 11, color: "var(--brown-3)", marginBottom: 9 }}>映像プロデューサー・34歳</div>
