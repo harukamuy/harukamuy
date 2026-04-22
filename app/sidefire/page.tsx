@@ -17,18 +17,18 @@ const strategyCards = [
 ];
 
 const dividendBars = [
-  { month: "1月",  pct:  0, label: "0",       val: "0円" },
-  { month: "2月",  pct:  0, label: "0",       val: "0円" },
-  { month: "3月",  pct: 17, label: "32,407",  val: "3.2万円" },
-  { month: "4月",  pct:  1, label: "1,440",   val: "0.1万円" },
-  { month: "5月",  pct:  7, label: "13,206",  val: "1.3万円" },
-  { month: "6月",  pct:100, label: "194,047", val: "19.4万円" },
-  { month: "7月",  pct:  0, label: "0",       val: "0円" },
-  { month: "8月",  pct:  0, label: "0",       val: "0円" },
-  { month: "9月",  pct: 14, label: "27,207",  val: "2.7万円" },
-  { month: "10月", pct:  1, label: "1,440",   val: "0.1万円" },
-  { month: "11月", pct:  1, label: "2,000",   val: "0.2万円" },
-  { month: "12月", pct: 93, label: "180,072", val: "18.0万円" },
+  { month: "1月",  pct:  2, label: "3,306",   val: "0.3万円" },
+  { month: "2月",  pct:  2, label: "3,306",   val: "0.3万円" },
+  { month: "3月",  pct: 18, label: "35,713",  val: "3.6万円" },
+  { month: "4月",  pct:  2, label: "4,746",   val: "0.5万円" },
+  { month: "5月",  pct:  8, label: "16,511",  val: "1.7万円" },
+  { month: "6月",  pct:100, label: "197,352", val: "19.7万円" },
+  { month: "7月",  pct:  2, label: "3,306",   val: "0.3万円" },
+  { month: "8月",  pct:  2, label: "3,306",   val: "0.3万円" },
+  { month: "9月",  pct: 16, label: "30,512",  val: "3.1万円" },
+  { month: "10月", pct:  2, label: "4,745",   val: "0.5万円" },
+  { month: "11月", pct:  3, label: "5,305",   val: "0.5万円" },
+  { month: "12月", pct: 93, label: "183,377", val: "18.3万円" },
 ];
 
 export default function SideFirePage() {
@@ -134,12 +134,12 @@ export default function SideFirePage() {
           {/* monthly summary card */}
           <div style={{ background: "var(--green)", color: "white", borderRadius: 20, padding: "28px 24px", marginBottom: 20, position: "relative", overflow: "hidden" }}>
             <div style={{ position: "absolute", right: -40, top: -40, width: 160, height: 160, borderRadius: "50%", background: "rgba(255,255,255,0.06)" }} />
-            <div style={{ fontSize: 13, opacity: 0.7, letterSpacing: "0.08em", marginBottom: 14 }}>📊 2025年 配当実績（※米国除く）</div>
+            <div style={{ fontSize: 13, opacity: 0.7, letterSpacing: "0.08em", marginBottom: 14 }}>📊 2025年 配当実績（ETF含む）</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
               {[
-                { val: "451,819", unit: "円", label: "年間受取配当" },
+                { val: "491,485", unit: "円", label: "年間受取配当" },
                 { val: "490,000", unit: "円", label: "年間目標" },
-                { val: "92%", unit: "", label: "達成率" },
+                { val: "達成🎉", unit: "", label: "目標達成" },
               ].map((item) => (
                 <div key={item.label}>
                   <div style={{ fontSize: "clamp(20px,3vw,28px)", fontWeight: 700, lineHeight: 1.1 }}>
