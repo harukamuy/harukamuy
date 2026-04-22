@@ -52,11 +52,8 @@ export default function AboutPage() {
 
           {/* 澪カード */}
           <div style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 20, padding: "28px 24px", textAlign: "center" }}>
-            <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", position: "relative", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--beige-2)", border: "3px solid var(--ivory-2)" }}>
-              <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 5px,rgba(255,255,255,.35) 5px,rgba(255,255,255,.35) 6px)" }} />
-              <span style={{ fontFamily: "var(--font-hand)", fontSize: 9, color: "var(--brown-3)", zIndex: 1, lineHeight: 1.4, textAlign: "center" }}>
-                澪さん<br />の写真
-              </span>
+            <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", overflow: "hidden", border: "3px solid var(--ivory-2)" }}>
+              <img src="/images/mio-fullbody.png" alt="白川澪" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>白川 澪</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Mio Shirakawa</div>
@@ -72,29 +69,8 @@ export default function AboutPage() {
 
           {/* ごまもちカード */}
           <div style={{ background: "#fdf0ea", border: "1.5px solid var(--blush)", borderRadius: 20, padding: "28px 24px", textAlign: "center" }}>
-            <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", position: "relative", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", background: "#e8dcc8", border: "3px solid var(--blush)" }}>
-              <svg viewBox="0 0 100 100" width="94" height="94" fill="none" style={{ position: "absolute" }}>
-                <ellipse cx="50" cy="62" rx="28" ry="24" fill="#2e2318"/>
-                <ellipse cx="50" cy="62" rx="18" ry="16" fill="#f8f4ee"/>
-                <ellipse cx="50" cy="50" rx="26" ry="26" fill="#2e2318"/>
-                <ellipse cx="50" cy="56" rx="18" ry="18" fill="#f8f4ee"/>
-                <ellipse cx="34" cy="30" rx="8" ry="12" fill="#2e2318"/>
-                <ellipse cx="66" cy="30" rx="8" ry="12" fill="#2e2318"/>
-                <circle cx="41" cy="48" r="7" fill="#2e2318"/>
-                <circle cx="59" cy="48" r="7" fill="#2e2318"/>
-                <circle cx="41" cy="48" r="4" fill="white"/>
-                <circle cx="59" cy="48" r="4" fill="white"/>
-                <circle cx="42" cy="47" r="2" fill="#111"/>
-                <circle cx="60" cy="47" r="2" fill="#111"/>
-                <circle cx="43" cy="46" r="1" fill="white"/>
-                <circle cx="61" cy="46" r="1" fill="white"/>
-                <ellipse cx="50" cy="58" rx="6" ry="4" fill="#2e2318"/>
-                <ellipse cx="50" cy="58" rx="3" ry="2" fill="#3e3228"/>
-                <ellipse cx="35" cy="52" rx="5" ry="3" fill="#ebbfb0" opacity=".5"/>
-                <ellipse cx="65" cy="52" rx="5" ry="3" fill="#ebbfb0" opacity=".5"/>
-                <rect x="34" y="70" width="32" height="8" rx="4" fill="#c4674a"/>
-                <circle cx="50" cy="74" r="3" fill="#e4b840" opacity=".9"/>
-              </svg>
+            <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", overflow: "hidden", border: "3px solid var(--blush)" }}>
+              <img src="/images/gomamochi-sit.png" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
             </div>
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>ごまもち</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Gomamochi, Boston Terrier</div>

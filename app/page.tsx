@@ -70,8 +70,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div style={{ width: 160, flexShrink: 0 }}>
-          <BostonTerrierSVG />
+        <div style={{ width: 220, flexShrink: 0, borderRadius: 20, overflow: "hidden", boxShadow: "0 4px 24px rgba(46,35,24,0.08)" }}>
+          <img src="/images/mio-room.png" alt="白川澪とごまもち" style={{ width: "100%", height: "auto", display: "block" }} />
         </div>
       </section>
 

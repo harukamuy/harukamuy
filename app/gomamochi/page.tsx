@@ -68,39 +68,9 @@ export default function GomamochiPage() {
           alignItems: "center",
           marginBottom: 52,
         }}>
-          {/* big SVG */}
-          <div style={{ width: 140, height: 160, flexShrink: 0 }}>
-            <svg viewBox="0 0 140 160" width="140" height="160" fill="none">
-              <ellipse cx="70" cy="108" rx="42" ry="36" fill="#2e2318"/>
-              <ellipse cx="70" cy="108" rx="27" ry="24" fill="#f8f4ee"/>
-              <ellipse cx="70" cy="80" rx="40" ry="40" fill="#2e2318"/>
-              <ellipse cx="70" cy="90" rx="27" ry="28" fill="#f8f4ee"/>
-              <ellipse cx="46" cy="50" rx="12" ry="18" fill="#2e2318"/>
-              <ellipse cx="94" cy="50" rx="12" ry="18" fill="#2e2318"/>
-              <circle cx="56" cy="78" r="10" fill="#2e2318"/>
-              <circle cx="84" cy="78" r="10" fill="#2e2318"/>
-              <circle cx="56" cy="78" r="6" fill="white"/>
-              <circle cx="84" cy="78" r="6" fill="white"/>
-              <circle cx="58" cy="76" r="3" fill="#111"/>
-              <circle cx="86" cy="76" r="3" fill="#111"/>
-              <circle cx="59" cy="75" r="1.5" fill="white"/>
-              <circle cx="87" cy="75" r="1.5" fill="white"/>
-              <ellipse cx="70" cy="92" rx="8" ry="5" fill="#2e2318"/>
-              <ellipse cx="70" cy="92" rx="4" ry="2.5" fill="#3e3228"/>
-              <path d="M60 100 Q70 108 80 100" stroke="#2e2318" strokeWidth="2" strokeLinecap="round" fill="none"/>
-              <ellipse cx="48" cy="84" rx="7" ry="4" fill="#ebbfb0" opacity=".5"/>
-              <ellipse cx="92" cy="84" rx="7" ry="4" fill="#ebbfb0" opacity=".5"/>
-              <rect x="46" y="114" width="48" height="12" rx="6" fill="#c4674a"/>
-              <circle cx="70" cy="120" r="5" fill="#e4b840" opacity=".9"/>
-              <ellipse cx="52" cy="148" rx="16" ry="10" fill="#2e2318"/>
-              <ellipse cx="88" cy="148" rx="16" ry="10" fill="#2e2318"/>
-              <circle cx="44" cy="143" r="5" fill="#2e2318"/>
-              <circle cx="52" cy="140" r="5" fill="#2e2318"/>
-              <circle cx="60" cy="143" r="5" fill="#2e2318"/>
-              <circle cx="80" cy="143" r="5" fill="#2e2318"/>
-              <circle cx="88" cy="140" r="5" fill="#2e2318"/>
-              <circle cx="96" cy="143" r="5" fill="#2e2318"/>
-            </svg>
+          {/* big illustration */}
+          <div style={{ width: 140, height: 160, flexShrink: 0, borderRadius: 16, overflow: "hidden" }}>
+            <img src="/images/gomamochi-sit.png" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
           </div>
 
           {/* profile info */}
@@ -135,12 +105,15 @@ export default function GomamochiPage() {
             <a href="#" style={{ marginLeft: "auto", fontSize: 12, color: "var(--terra)", textDecoration: "none", letterSpacing: "0.06em" }}>もっと見る →</a>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12 }}>
-            {/* wide first photo */}
-            <div style={{ gridColumn: "span 2", aspectRatio: "2/1", borderRadius: 14, background: photoColors[0], position: "relative", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
-              <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,.3) 8px,rgba(255,255,255,.3) 9px)" }} />
-              <span style={{ fontFamily: "var(--font-hand)", fontSize: 12, color: "rgba(255,255,255,.85)", textAlign: "center", zIndex: 1, lineHeight: 1.5 }}>ごまもちの<br />お気に入りの写真</span>
+            {/* wide first photo - 散歩シーン */}
+            <div style={{ gridColumn: "span 2", aspectRatio: "2/1", borderRadius: 14, overflow: "hidden" }}>
+              <img src="/images/mio-walk.png" alt="多摩川散歩" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
-            {photoColors.slice(1).map((color, i) => (
+            {/* ごまもち立ち姿 */}
+            <div style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
+              <img src="/images/gomamochi-stand.png" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+            </div>
+            {photoColors.slice(2).map((color, i) => (
               <div key={i} style={{ aspectRatio: "1", borderRadius: 14, background: color, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
                 <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,.3) 8px,rgba(255,255,255,.3) 9px)" }} />
                 <span style={{ fontFamily: "var(--font-hand)", fontSize: 12, color: "rgba(255,255,255,.85)", zIndex: 1 }}>写真</span>
