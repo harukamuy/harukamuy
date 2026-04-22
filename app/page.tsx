@@ -49,7 +49,7 @@ export default function Home() {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "0 85%",
               padding: "0 2px",
-            }}>ごまもち</em>と一緒に<br />FIREを目指す記録。
+            }}>ごまもち</em>と一緒に<br />サイドFIREを達成した記録。
           </h1>
           <div style={{
             fontSize: 13,
@@ -70,8 +70,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div style={{ width: 220, flexShrink: 0, borderRadius: 20, overflow: "hidden", boxShadow: "0 4px 24px rgba(46,35,24,0.08)" }}>
-          <img src="/images/mio-room.png" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block" }} />
+        <div style={{ width: 220, flexShrink: 0, borderRadius: 20, overflow: "hidden", boxShadow: "0 4px 24px rgba(46,35,24,0.08)", alignSelf: "flex-start" }}>
+          <img src="/images/mio-room.png" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
         </div>
       </section>
 
@@ -116,9 +116,9 @@ export default function Home() {
               animation: "blink 2s ease-in-out infinite",
               display: "inline-block",
             }} />
-            FIRE 達成済み ✓
+            サイドFIRE 達成済み ✓
           </div>
-          <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 8, letterSpacing: "0.04em" }}>わたしの資産状況（2025年4月）</div>
+          <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 8, letterSpacing: "0.04em" }}>わたしの資産状況（2026年4月）</div>
           <div style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr",
