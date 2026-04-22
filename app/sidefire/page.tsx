@@ -138,8 +138,8 @@ export default function SideFirePage() {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
               {[
                 { val: "491,485", unit: "円", label: "年間受取配当" },
-                { val: "490,000", unit: "円", label: "年間目標" },
-                { val: "達成🎉", unit: "", label: "目標達成" },
+                { val: "1,200,000", unit: "円", label: "年間目標（月10万）" },
+                { val: "41%", unit: "", label: "達成率" },
               ].map((item) => (
                 <div key={item.label}>
                   <div style={{ fontSize: "clamp(20px,3vw,28px)", fontWeight: 700, lineHeight: 1.1 }}>
