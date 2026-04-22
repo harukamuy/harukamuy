@@ -199,8 +199,14 @@ export default function SideFirePage() {
             {displayPosts.map((post, i) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, overflow: "hidden", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "16/9", background: thumbColors[i % thumbColors.length], position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px)" }} />
-                  <span style={{ fontFamily: "var(--font-hand)", fontSize: 11, color: "rgba(255,255,255,.85)", zIndex: 1 }}>記事アイキャッチ</span>
+                  {post.coverImage ? (
+                    <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+                  ) : (
+                    <>
+                      <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px)" }} />
+                      <span style={{ fontFamily: "var(--font-hand)", fontSize: 11, color: "rgba(255,255,255,.85)", zIndex: 1 }}>記事アイキャッチ</span>
+                    </>
+                  )}
                 </div>
                 <div style={{ padding: "14px 16px 16px" }}>
                   <div style={{ fontSize: 10, color: "var(--terra)", letterSpacing: "0.1em", marginBottom: 6 }}>サイドFIRE</div>

@@ -183,11 +183,15 @@ export default async function PostPage({ params }: Props) {
                     alignItems: "center",
                     justifyContent: "center",
                   }}>
-                    <div style={{
-                      position: "absolute",
-                      inset: 0,
-                      background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,0.25) 7px,rgba(255,255,255,0.25) 8px)",
-                    }} />
+                    {related.coverImage ? (
+                      <img src={related.coverImage} alt={related.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+                    ) : (
+                      <div style={{
+                        position: "absolute",
+                        inset: 0,
+                        background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,0.25) 7px,rgba(255,255,255,0.25) 8px)",
+                      }} />
+                    )}
                   </div>
                   <div style={{ padding: "11px 13px" }}>
                     <div style={{ fontSize: 10, color: "var(--terra)", letterSpacing: "0.1em", marginBottom: 4 }}>
