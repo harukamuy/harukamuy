@@ -48,7 +48,7 @@ export default function AboutPage() {
       <div style={{ maxWidth: 800, margin: "0 auto", padding: "64px 24px 80px" }}>
 
         {/* ── PROFILE DUO ── */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 56 }}>
+        <div className="profile-duo-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 56 }}>
 
           {/* 澪カード */}
           <div style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 20, padding: "28px 24px", textAlign: "center" }}>

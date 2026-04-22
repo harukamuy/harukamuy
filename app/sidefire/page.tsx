@@ -78,7 +78,7 @@ export default function SideFirePage() {
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>ポートフォリオ内訳</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Portfolio</div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "center" }}>
+          <div className="portfolio-wrap-grid" style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "center" }}>
             {/* donut SVG */}
             <div style={{ position: "relative", width: 180, height: 180, flexShrink: 0 }}>
               <svg viewBox="0 0 36 36" width="180" height="180">
@@ -163,7 +163,7 @@ export default function SideFirePage() {
             <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>わたしの投資方針</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Strategy</div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="two-col-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {strategyCards.map((card) => (
               <div key={card.title} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 18, padding: "24px 20px" }}>
                 <div style={{ fontSize: 28, marginBottom: 12 }}>{card.icon}</div>
@@ -185,7 +185,7 @@ export default function SideFirePage() {
               すべて見る →
             </Link>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="two-col-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {displayPosts.map((post, i) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, overflow: "hidden", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "16/9", background: thumbColors[i % thumbColors.length], position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>

@@ -57,7 +57,7 @@ export default function GomamochiPage() {
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "56px 24px 80px" }}>
 
         {/* ── PROFILE ── */}
-        <div style={{
+        <div className="portfolio-wrap-grid" style={{
           background: "white",
           border: "1.5px solid var(--blush)",
           borderRadius: 24,
@@ -160,7 +160,7 @@ export default function GomamochiPage() {
               すべて見る →
             </Link>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div className="two-col-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
             {displayPosts.map((post, i) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, overflow: "hidden", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "16/9", background: photoColors[i % photoColors.length], position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -211,7 +211,7 @@ export default function GomamochiPage() {
           <p style={{ fontSize: 13, color: "var(--brown-3)", marginBottom: 16, letterSpacing: "0.04em" }}>
             ※実際に使用しているものをご紹介しています。一部アフィリエイトリンクを含みます。
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
+          <div className="three-col-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
             {recoItems.map((item) => (
               <a key={item.name} href="#" style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 14, padding: "16px 14px", textAlign: "center", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "1", background: "var(--ivory-2)", borderRadius: 10, marginBottom: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, border: "1px solid var(--beige)" }}>

@@ -381,3 +381,18 @@ body::before {
 @media (max-width: 680px) {
   .bubble-wrap { max-width: 90%; }
 }
+
+/* ── RESPONSIVE HEADER ── */
+@media (max-width: 600px) {
+  .nav-link { display: none !important; }
+}
+
+/* ── RESPONSIVE LAYOUTS ── */
+@media (max-width: 600px) {
+  .profile-duo-grid   { grid-template-columns: 1fr !important; }
+  .two-col-grid       { grid-template-columns: 1fr !important; }
+  .three-col-grid     { grid-template-columns: 1fr 1fr !important; }
+  .hero-nums-grid     { grid-template-columns: 1fr 1fr !important; }
+  .portfolio-wrap-grid{ grid-template-columns: 1fr !important; }
+  .routine-time       { min-width: 48px !important; font-size: 18px !important; }
+}

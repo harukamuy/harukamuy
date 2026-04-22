@@ -34,7 +34,7 @@ export default function Header() {
           harukamuy
         </Link>
         <nav style={{ display: "flex", gap: 22, alignItems: "center" }}>
-          <Link href="/blog" style={{
+          <Link href="/blog" className="nav-link" style={{
             fontSize: 13,
             color: "var(--brown-2)",
             textDecoration: "none",
@@ -42,7 +42,7 @@ export default function Header() {
           }}>
             ブログ
           </Link>
-          <Link href="/gomamochi" style={{
+          <Link href="/gomamochi" className="nav-link" style={{
             fontSize: 13,
             color: "var(--brown-2)",
             textDecoration: "none",
@@ -50,7 +50,7 @@ export default function Header() {
           }}>
             ごまもち
           </Link>
-          <Link href="/sidefire" style={{
+          <Link href="/sidefire" className="nav-link" style={{
             fontSize: 13,
             color: "var(--brown-2)",
             textDecoration: "none",
