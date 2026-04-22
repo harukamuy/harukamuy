@@ -60,7 +60,7 @@ export default function AboutPage() {
               北海道十勝出身、34歳。都内在住の映像プロデューサー。2018年から8年間コツコツ積み上げ、2026年4月にサイドFIRE達成。好きな仕事を続けながら、ごまもちと楽しく暮らしています。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 12, justifyContent: "center" }}>
-              {["映像プロデューサー", "FIRE達成済み", "インデックス投資", "料理好き"].map((tag) => (
+              {["映像プロデューサー", "サイドFIRE達成済み", "インデックス投資", "料理好き"].map((tag) => (
                 <span key={tag} style={{ fontSize: 11, background: "var(--ivory-2)", padding: "3px 10px", borderRadius: 20, color: "var(--brown-3)", border: "1px solid var(--beige)" }}>{tag}</span>
               ))}
             </div>
