@@ -50,7 +50,7 @@ export default function Header() {
           }}>
             ごまもち
           </Link>
-          <Link href="/blog?category=sidefire" style={{
+          <Link href="/sidefire" style={{
             fontSize: 13,
             color: "var(--brown-2)",
             textDecoration: "none",
