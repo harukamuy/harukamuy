@@ -57,7 +57,7 @@ export default function SideFirePage() {
             {[
               { n: "5,463", unit: "万", label: "総資産" },
               { n: "49", unit: "万", label: "年間配当" },
-              { n: "4.1", unit: "%", label: "利回り" },
+              { n: "4.94", unit: "%", label: "配当利回り" },
             ].map((item) => (
               <div key={item.label}>
                 <div style={{ fontSize: "clamp(22px,3vw,32px)", fontWeight: 700, lineHeight: 1.1 }}>
@@ -82,9 +82,10 @@ export default function SideFirePage() {
             {/* donut SVG */}
             <div style={{ position: "relative", width: 180, height: 180, flexShrink: 0 }}>
               <svg viewBox="0 0 36 36" width="180" height="180">
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" strokeWidth="3.5" strokeDasharray="70 30" strokeDashoffset="25" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" strokeWidth="3.5" strokeDasharray="21.6 78.4" strokeDashoffset="-45" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d5c3a8" strokeWidth="3.5" strokeDasharray="8.4 91.6" strokeDashoffset="-66.6" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" strokeWidth="3.5" strokeDasharray="64.8 35.2" strokeDashoffset="25" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" strokeWidth="3.5" strokeDasharray="25.8 74.2" strokeDashoffset="-39.8" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#c4674a" strokeWidth="3.5" strokeDasharray="2.1 97.9" strokeDashoffset="-65.6" transform="rotate(-90 18 18)"/>
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d5c3a8" strokeWidth="3.5" strokeDasharray="5.3 94.7" strokeDashoffset="-67.7" transform="rotate(-90 18 18)"/>
               </svg>
               <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", textAlign: "center" }}>
                 <div style={{ fontSize: 22, fontWeight: 700, color: "var(--brown)", lineHeight: 1 }}>
@@ -97,9 +98,10 @@ export default function SideFirePage() {
             {/* legend */}
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {[
-                { color: "#5e7252", label: "インデックス投資（NISA含む）", val: "3,820万", pct: "70%" },
-                { color: "#8aaa7a", label: "高配当株・ETF", val: "1,180万", pct: "21.6%" },
-                { color: "#d5c3a8", label: "現金・生活防衛資金", val: "463万", pct: "8.4%" },
+                { color: "#5e7252", label: "S&P500（投資信託＋iDeCo）", val: "3,582万", pct: "64.8%" },
+                { color: "#8aaa7a", label: "高配当株＋外国債券ETF", val: "1,461万", pct: "25.8%" },
+                { color: "#c4674a", label: "ビットコイン（0.1BTC）", val: "120万", pct: "2.1%" },
+                { color: "#d5c3a8", label: "現金", val: "300万", pct: "5.3%" },
               ].map((item) => (
                 <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <div style={{ width: 12, height: 12, borderRadius: "50%", background: item.color, flexShrink: 0 }} />
