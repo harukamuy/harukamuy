@@ -6,18 +6,17 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "2016", label: "映像プロダクションに就職（25歳）", desc: "映像ディレクターとしてキャリアをスタート。当時の貯金はほぼゼロ。" },
-  { year: "2018", label: "フリーランスとして独立（27歳）", desc: "映像プロデューサーとして独立。収入が増えた反面、将来への不安も大きくなる。" },
-  { year: "2020", label: "本格的に資産形成スタート（29歳）＆ ごまもちお迎え", desc: "NISAとインデックス投資を始める。同年、ごまもちをお迎えし家族が増える🐾" },
-  { year: "2022", label: "高配当株・ETFポートフォリオを構築（31歳）", desc: "配当収入が年間20万円を超える。「お金が働いてくれる」実感が出てきた頃。" },
-  { year: "2025", label: "FIRE達成、ブログ開設（34歳）", desc: "総資産5,463万円・年間配当49万円でFIRE達成。同時にharukamuyを開設。" },
+  { year: "2018", label: "本格的に資産形成スタート（26歳）", desc: "北海道十勝から上京し映像の仕事を続けながら、NISAとインデックス投資を開始。貯金ほぼゼロからのスタート。" },
+  { year: "2023年3月", label: "会社退職・フリーランス転向（31歳）", desc: "8年間勤めた映像プロダクションを退職。退職時の総資産は3,000万円。不安より解放感が大きかった。" },
+  { year: "2023年", label: "ごまもちをお迎え", desc: "ボストンテリアのごまもちが家族に加わる🐾 一緒に暮らし始めて、毎日がもっと楽しくなった。" },
+  { year: "2026年4月", label: "サイドFIRE達成、ブログ開設（34歳）", desc: "総資産5,463万円・年間配当49万円でサイドFIRE達成。好きな仕事を続けながら、harukamuyを開設。" },
 ];
 
 const purposeItems = [
   "フリーランスでも地道にFIREできる、という実証記録",
   "難しく考えなくていい、シンプルなインデックス投資の話",
   "ごまもちと一緒に、お金と向き合う楽しさ",
-  "FIRE後も「好きな仕事だけ」を選ぶ生き方のヒント",
+  "サイドFIRE後も「好きな仕事だけ」を選ぶ生き方のヒント",
 ];
 
 export default function AboutPage() {
@@ -58,7 +57,7 @@ export default function AboutPage() {
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>あずき</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Azuki</div>
             <p style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85, textAlign: "left" }}>
-              1991年生まれ、34歳。都内在住の映像プロデューサー。29歳から本格的に資産形成を始め、34歳でFIREを達成。好きな映像の仕事だけを選びながら、ごまもちとのんびり暮らしています。
+              北海道十勝出身、34歳。都内在住の映像プロデューサー。2018年から8年間コツコツ積み上げ、2026年4月にサイドFIRE達成。好きな仕事を続けながら、ごまもちと楽しく暮らしています。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 12, justifyContent: "center" }}>
               {["映像プロデューサー", "FIRE達成済み", "インデックス投資", "料理好き"].map((tag) => (
@@ -75,7 +74,7 @@ export default function AboutPage() {
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>ごまもち</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Gomamochi, Boston Terrier</div>
             <p style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85, textAlign: "left" }}>
-              2020年生まれ、5歳。わが家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線であずきちゃんに質問する役を担当。
+              2023年生まれ、3歳。わが家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線であずきちゃんに質問する役を担当。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 12, justifyContent: "center" }}>
               {["ボストンテリア", "食いしん坊", "散歩大好き", "質問担当🐾"].map((tag) => (

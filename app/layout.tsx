@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | harukamuy",
   },
   description:
-    "ボストンテリアのごまもちとの日々、そして澪のサイドFIREへの道のりを綴るブログ。",
+    "ボストンテリアのごまもちとの日々、そしてあずきのサイドFIRE生活を綴るブログ。",
   openGraph: {
     siteName: "harukamuy",
     locale: "ja_JP",

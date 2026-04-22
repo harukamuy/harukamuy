@@ -191,7 +191,7 @@ export default function Home() {
             <div style={{ fontFamily: "var(--font-serif)", fontSize: 18, fontWeight: 600, marginBottom: 2 }}>あずき</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 13, color: "var(--brown-3)", marginBottom: 10 }}>Azuki, 34</div>
             <div style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85 }}>
-              映像プロデューサー兼フリーランス。愛犬ごまもちと一緒に、都内の小さなアパートから資産形成を続けています。FIRE達成後も「好きな仕事だけ」を選ぶ生活を記録中。
+              北海道十勝出身の映像プロデューサー。2018年から8年かけて資産を積み上げ、2026年4月にサイドFIRE達成。愛犬ごまもちと都内でのんびり暮らしながら、好きな仕事を続けています。
             </div>
             <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 10 }}>
               {["映像プロデューサー", "サイドFIRE", "インデックス投資", "🐶 ボストンテリア"].map((tag) => (

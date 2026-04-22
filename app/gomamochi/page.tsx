@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "ごまもち",
-  description: "ボストンテリアのごまもち（5歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。",
+  description: "ボストンテリアのごまもち（3歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。",
 };
 
 const routines = [
@@ -50,7 +50,7 @@ export default function GomamochiPage() {
           🐾 ごまもち
         </h1>
         <p style={{ fontSize: 14, color: "var(--brown-2)", lineHeight: 1.8, maxWidth: 460, margin: "0 auto 28px", position: "relative" }}>
-          ボストンテリアのごまもち（5歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。
+          ボストンテリアのごまもち（3歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。
         </p>
       </div>
 
@@ -79,7 +79,7 @@ export default function GomamochiPage() {
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 16 }}>Gomamochi / Boston Terrier ♂</div>
             <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: "4px 16px", fontSize: 13, marginBottom: 14 }}>
               <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>生年月日</span>
-              <span style={{ color: "var(--brown-2)" }}>2020年5月（5歳）</span>
+              <span style={{ color: "var(--brown-2)" }}>2023年5月（3歳）</span>
               <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>体重</span>
               <span style={{ color: "var(--brown-2)" }}>8.2kg</span>
               <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>好きなもの</span>
