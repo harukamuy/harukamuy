@@ -91,19 +91,19 @@ export default function AboutPage() {
           </h2>
           <div>
             {timeline.map((item, i) => (
-              <div key={item.year} style={{ display: "grid", gridTemplateColumns: "80px 1fr", gap: 0, position: "relative" }}>
+              <div key={item.year} style={{ display: "grid", gridTemplateColumns: "112px 1fr", gap: 0, position: "relative" }}>
                 {/* vertical line (not on last item) */}
                 {i < timeline.length - 1 && (
-                  <div style={{ position: "absolute", left: 38, top: 28, bottom: 0, width: 2, background: "var(--beige-2)" }} />
+                  <div style={{ position: "absolute", left: 105, top: 28, bottom: 0, width: 2, background: "var(--beige-2)" }} />
                 )}
                 {/* year */}
-                <div style={{ fontFamily: "var(--font-hand)", fontSize: 16, color: "var(--terra)", fontWeight: 600, paddingTop: 4, paddingRight: 8, textAlign: "right" }}>
+                <div style={{ fontFamily: "var(--font-hand)", fontSize: 15, color: "var(--terra)", fontWeight: 600, paddingTop: 6, paddingRight: 20, textAlign: "right", lineHeight: 1.3 }}>
                   {item.year}
                 </div>
                 {/* dot */}
-                <div style={{ position: "absolute", left: 32, top: 8, width: 14, height: 14, background: "var(--terra)", borderRadius: "50%", border: "3px solid var(--ivory)" }} />
+                <div style={{ position: "absolute", left: 99, top: 8, width: 14, height: 14, background: "var(--terra)", borderRadius: "50%", border: "3px solid var(--ivory)" }} />
                 {/* body */}
-                <div style={{ padding: "0 0 32px 24px" }}>
+                <div style={{ padding: "0 0 32px 20px" }}>
                   <div style={{ fontSize: 13, fontWeight: 700, color: "var(--brown)", marginBottom: 4 }}>{item.label}</div>
                   <div style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.8 }}>{item.desc}</div>
                 </div>
