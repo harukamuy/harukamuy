@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — harukamuy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ivory:#f8f4ee;--ivory-2:#ede6d8;--beige:#e6d9c6;--beige-2:#d5c3a8;
+    --terra:#c4674a;--terra-lt:#e09a82;--blush:#f0d0c2;
+    --green:#5e7252;--green-lt:#8aaa7a;
+    --brown:#2e2318;--brown-2:#5c4a38;--brown-3:#9c8a76;--white:#fdfaf6;
+    --font:'Zen Maru Gothic',sans-serif;--font-hand:'Caveat',cursive;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--ivory);color:var(--brown);font-family:var(--font);font-size:15px;line-height:1.9;-webkit-font-smoothing:antialiased;}
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");opacity:0.5;}
+
+  header{position:sticky;top:0;z-index:100;background:rgba(248,244,238,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--beige);padding:0 24px;}
+  .header-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .logo{font-weight:700;font-size:20px;color:var(--brown);text-decoration:none;letter-spacing:.05em;display:flex;align-items:center;gap:7px;}
+  nav{display:flex;gap:20px;align-items:center;}
+  nav a{font-size:13px;color:var(--brown-2);text-decoration:none;transition:color .2s;}
+  nav a:hover{color:var(--terra);}
+  nav a.active{color:var(--terra);font-weight:700;}
+  .nav-about{background:var(--blush);color:var(--brown)!important;padding:6px 16px;border-radius:20px;font-size:12px!important;}
+
+  /* HERO */
+  .about-hero{background:var(--green);color:white;padding:72px 24px 60px;text-align:center;position:relative;overflow:hidden;}
+  .about-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.06);}
+  .about-hero::after{content:'';position:absolute;bottom:-60px;left:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.04);}
+  .hero-eyebrow{font-family:var(--font-hand);font-size:17px;opacity:.75;margin-bottom:12px;letter-spacing:.05em;}
+  .hero-title{font-size:clamp(26px,5vw,44px);font-weight:700;line-height:1.5;margin-bottom:16px;letter-spacing:.03em;}
+  .hero-sub{font-size:14px;opacity:.75;line-height:1.8;max-width:500px;margin:0 auto;}
+
+  /* MAIN */
+  .page-wrap{max-width:800px;margin:0 auto;padding:64px 24px 80px;}
+
+  /* profile duo */
+  .profile-duo{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:56px;}
+  .profile-card{background:var(--white);border:1.5px solid var(--beige);border-radius:20px;padding:28px 24px;text-align:center;}
+  .profile-card.dog-card{background:#fdf0ea;border-color:var(--blush);}
+  .p-avatar{width:100px;height:100px;border-radius:50%;margin:0 auto 16px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+  .p-avatar-mio{background:var(--beige-2);border:3px solid var(--ivory-2);}
+  .p-avatar-dog{background:var(--beige);border:3px solid var(--blush);}
+  .p-avatar .stripe{position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 5px,rgba(255,255,255,.35) 5px,rgba(255,255,255,.35) 6px);}
+  .p-avatar-lbl{font-size:9px;color:var(--brown-3);z-index:1;text-align:center;font-family:var(--font-hand);}
+  .p-name{font-size:20px;font-weight:700;margin-bottom:3px;}
+  .p-en{font-family:var(--font-hand);font-size:14px;color:var(--brown-3);margin-bottom:12px;}
+  .p-text{font-size:13px;color:var(--brown-2);line-height:1.85;text-align:left;}
+  .p-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;justify-content:center;}
+  .p-tag{font-size:11px;background:var(--ivory-2);padding:3px 10px;border-radius:20px;color:var(--brown-3);border:1px solid var(--beige);}
+
+  /* section */
+  .section{margin-bottom:52px;}
+  .section-title{font-size:22px;font-weight:700;color:var(--brown);margin-bottom:24px;padding-left:16px;border-left:4px solid var(--terra);line-height:1.5;}
+  .section-text{font-size:15px;color:var(--brown-2);line-height:1.95;margin-bottom:16px;}
+
+  /* timeline */
+  .timeline{display:flex;flex-direction:column;gap:0;}
+  .tl-item{display:grid;grid-template-columns:80px 1fr;gap:0;position:relative;}
+  .tl-item::before{content:'';position:absolute;left:38px;top:28px;bottom:0;width:2px;background:var(--beige-2);}
+  .tl-item:last-child::before{display:none;}
+  .tl-year{font-family:var(--font-hand);font-size:16px;color:var(--terra);font-weight:600;padding-top:4px;padding-right:8px;text-align:right;}
+  .tl-dot{position:absolute;left:32px;top:8px;width:14px;height:14px;background:var(--terra);border-radius:50%;border:3px solid var(--ivory);}
+  .tl-body{padding:0 0 32px 24px;}
+  .tl-label{font-size:13px;font-weight:700;color:var(--brown);margin-bottom:4px;}
+  .tl-desc{font-size:13px;color:var(--brown-2);line-height:1.8;}
+
+  /* blog purpose */
+  .purpose-box{background:var(--ivory-2);border:1.5px solid var(--beige-2);border-radius:20px;padding:32px 28px;margin-bottom:52px;}
+  .purpose-title{font-size:16px;font-weight:700;color:var(--brown);margin-bottom:20px;display:flex;align-items:center;gap:8px;}
+  .purpose-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .purpose-list li{font-size:14px;color:var(--brown-2);display:flex;align-items:flex-start;gap:10px;line-height:1.75;}
+  .purpose-list li::before{content:'🐾';flex-shrink:0;font-size:13px;margin-top:2px;}
+
+  /* contact */
+  .contact-box{background:var(--green);color:white;border-radius:20px;padding:32px 28px;text-align:center;}
+  .contact-title{font-size:18px;font-weight:700;margin-bottom:10px;}
+  .contact-sub{font-size:13px;opacity:.8;margin-bottom:22px;line-height:1.8;}
+  .contact-btn{display:inline-block;background:white;color:var(--green);padding:12px 28px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:.06em;transition:transform .2s,box-shadow .2s;}
+  .contact-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.15);}
+
+  /* footer */
+  footer{background:var(--brown);color:rgba(253,250,246,.7);padding:40px 24px 28px;}
+  .footer-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;}
+  .footer-logo{font-weight:700;font-size:20px;color:var(--white);margin-bottom:8px;}
+  .footer-desc{font-size:12px;line-height:1.85;max-width:300px;}
+  .footer-nav{display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+  .footer-nav a{color:rgba(253,250,246,.55);text-decoration:none;font-size:12px;letter-spacing:.06em;transition:color .2s;}
+  .footer-nav a:hover{color:var(--white);}
+  .footer-copy{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;text-align:center;letter-spacing:.06em;}
+
+  @media(max-width:600px){
+    .profile-duo{grid-template-columns:1fr;}
+    .footer-inner{grid-template-columns:1fr;}
+    .footer-nav{align-items:flex-start;}
+    nav a:not(.nav-about){display:none;}
+    .about-hero{padding:52px 20px 44px;}
+  }
+
+  .fade-up{opacity:0;transform:translateY(16px);animation:fadeUp .6s ease forwards;animation-play-state:paused;}
+  @keyframes fadeUp{to{opacity:1;transform:none;}}
+  .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">🐾 harukamuy</a>
+    <nav>
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html">ごまもち</a>
+      <a href="fire.html">サイドFIRE</a>
+      <a href="about.html" class="nav-about active">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="about-hero">
+  <div class="hero-eyebrow">わたしたちについて</div>
+  <div class="hero-title">harukamuy について</div>
+  <div class="hero-sub">フリーランス映像プロデューサーの白川澪と、愛犬ごまもちによる暮らしとお金の記録です。</div>
+</div>
+
+<div class="page-wrap">
+
+  <!-- PROFILE DUO -->
+  <div class="profile-duo fade-up">
+    <div class="profile-card">
+      <div class="p-avatar p-avatar-mio">
+        <div class="stripe"></div>
+        <div class="p-avatar-lbl">澪さん<br>の写真</div>
+      </div>
+      <div class="p-name">白川 澪</div>
+      <div class="p-en">Mio Shirakawa</div>
+      <div class="p-text">1991年生まれ、34歳。都内在住の映像プロデューサー。29歳から本格的に資産形成を始め、34歳でFIREを達成。好きな映像の仕事だけを選びながら、ごまもちとのんびり暮らしています。</div>
+      <div class="p-tags">
+        <span class="p-tag">映像プロデューサー</span>
+        <span class="p-tag">FIRE達成済み</span>
+        <span class="p-tag">インデックス投資</span>
+        <span class="p-tag">料理好き</span>
+      </div>
+    </div>
+
+    <div class="profile-card dog-card">
+      <!-- boston terrier -->
+      <div class="p-avatar p-avatar-dog" style="background:#e8dcc8;">
+        <svg viewBox="0 0 100 100" width="94" height="94" fill="none" style="position:absolute;">
+          <ellipse cx="50" cy="62" rx="28" ry="24" fill="#2e2318"/>
+          <ellipse cx="50" cy="62" rx="18" ry="16" fill="#f8f4ee"/>
+          <ellipse cx="50" cy="50" rx="26" ry="26" fill="#2e2318"/>
+          <ellipse cx="50" cy="56" rx="18" ry="18" fill="#f8f4ee"/>
+          <ellipse cx="34" cy="30" rx="8" ry="12" fill="#2e2318"/>
+          <ellipse cx="66" cy="30" rx="8" ry="12" fill="#2e2318"/>
+          <circle cx="41" cy="48" r="7" fill="#2e2318"/>
+          <circle cx="59" cy="48" r="7" fill="#2e2318"/>
+          <circle cx="41" cy="48" r="4" fill="white"/>
+          <circle cx="59" cy="48" r="4" fill="white"/>
+          <circle cx="42" cy="47" r="2" fill="#111"/>
+          <circle cx="60" cy="47" r="2" fill="#111"/>
+          <circle cx="43" cy="46" r="1" fill="white"/>
+          <circle cx="61" cy="46" r="1" fill="white"/>
+          <ellipse cx="50" cy="58" rx="6" ry="4" fill="#2e2318"/>
+          <ellipse cx="50" cy="58" rx="3" ry="2" fill="#3e3228"/>
+          <ellipse cx="35" cy="52" rx="5" ry="3" fill="#ebbfb0" opacity=".5"/>
+          <ellipse cx="65" cy="52" rx="5" ry="3" fill="#ebbfb0" opacity=".5"/>
+          <rect x="34" y="70" width="32" height="8" rx="4" fill="#c4674a"/>
+          <circle cx="50" cy="74" r="3" fill="#e4b840" opacity=".9"/>
+        </svg>
+      </div>
+      <div class="p-name">ごまもち</div>
+      <div class="p-en">Gomamochi, Boston Terrier</div>
+      <div class="p-text">2020年生まれ、5歳。白川家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線で澪に質問する役を担当。</div>
+      <div class="p-tags">
+        <span class="p-tag">ボストンテリア</span>
+        <span class="p-tag">食いしん坊</span>
+        <span class="p-tag">散歩大好き</span>
+        <span class="p-tag">質問担当🐾</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="section fade-up d1">
+    <div class="section-title">わたしの歩み</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2016</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">映像プロダクションに就職（25歳）</div>
+          <div class="tl-desc">映像ディレクターとしてキャリアをスタート。当時の貯金はほぼゼロ。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">フリーランスとして独立（27歳）</div>
+          <div class="tl-desc">映像プロデューサーとして独立。収入が増えた反面、将来への不安も大きくなる。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2020</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">本格的に資産形成スタート（29歳）＆ ごまもちお迎え</div>
+          <div class="tl-desc">NISAとインデックス投資を始める。同年、ごまもちをお迎えし家族が増える🐾</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2022</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">高配当株・ETFポートフォリオを構築（31歳）</div>
+          <div class="tl-desc">配当収入が年間20万円を超える。「お金が働いてくれる」実感が出てきた頃。</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2025</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">FIRE達成、ブログ開設（34歳）</div>
+          <div class="tl-desc">総資産5,463万円・年間配当49万円でFIRE達成。同時にharukamuyを開設。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PURPOSE -->
+  <div class="purpose-box fade-up d2">
+    <div class="purpose-title">🐾 このブログでお伝えしたいこと</div>
+    <ul class="purpose-list">
+      <li>フリーランスでも地道にFIREできる、という実証記録</li>
+      <li>難しく考えなくていい、シンプルなインデックス投資の話</li>
+      <li>ごまもちと一緒に、お金と向き合う楽しさ</li>
+      <li>FIRE後も「好きな仕事だけ」を選ぶ生き方のヒント</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-box fade-up d3">
+    <div class="contact-title">お問い合わせ・コラボのご依頼</div>
+    <div class="contact-sub">記事へのご感想、取材・コラボのご依頼はお気軽にどうぞ。<br>アフィリエイト案件のご相談も受け付けています。</div>
+    <a href="#" class="contact-btn">お問い合わせはこちら →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">🐾 harukamuy</div>
+      <div class="footer-desc">フリーランス映像プロデューサー・白川澪と愛犬ごまもちによる、FIRE達成後の暮らしと資産管理の記録ブログ。</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">ブログ</a>
+      <a href="gomamochi.html">ごまもち</a>
+      <a href="fire.html">サイドFIRE</a>
+      <a href="about.html">About</a>
+      <a href="#">プライバシーポリシー</a>
+    </nav>
+  </div>
+  <div class="footer-copy">© 2025 harukamuy — 白川澪</div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.style.animationPlayState='running';obs.unobserve(e.target);} });
+},{threshold:.08});
+document.querySelectorAll('.fade-up').forEach(el=>{el.style.animationPlayState='paused';obs.observe(el);});
+</script>
+</body>
+</html>

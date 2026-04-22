@@ -2,37 +2,72 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="border-b border-stone-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-      <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="text-2xl">🐾</span>
-          <span className="font-bold text-xl text-stone-800 group-hover:text-amber-600 transition-colors">
-            harukamuy
-          </span>
+    <header style={{
+      position: "sticky",
+      top: 0,
+      zIndex: 100,
+      background: "rgba(248,244,238,0.93)",
+      backdropFilter: "blur(12px)",
+      borderBottom: "1px solid var(--beige)",
+      padding: "0 24px",
+    }}>
+      <div style={{
+        maxWidth: 900,
+        margin: "0 auto",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        height: 62,
+      }}>
+        <Link href="/" style={{
+          fontFamily: "var(--font-serif)",
+          fontWeight: 600,
+          fontSize: 21,
+          color: "var(--brown)",
+          textDecoration: "none",
+          letterSpacing: "0.05em",
+          display: "flex",
+          alignItems: "center",
+          gap: 8,
+        }}>
+          <span style={{ fontSize: 16 }}>🐾</span>
+          harukamuy
         </Link>
-        <nav className="flex items-center gap-6">
-          <Link
-            href="/blog"
-            className="text-stone-600 hover:text-amber-600 transition-colors text-sm font-medium"
-          >
+        <nav style={{ display: "flex", gap: 22, alignItems: "center" }}>
+          <Link href="/blog" style={{
+            fontSize: 13,
+            color: "var(--brown-2)",
+            textDecoration: "none",
+            letterSpacing: "0.05em",
+          }}>
             ブログ
           </Link>
-          <Link
-            href="/blog?category=gomazochi"
-            className="text-stone-600 hover:text-amber-600 transition-colors text-sm font-medium"
-          >
+          <Link href="/blog?category=gomazochi" style={{
+            fontSize: 13,
+            color: "var(--brown-2)",
+            textDecoration: "none",
+            letterSpacing: "0.05em",
+          }}>
             ごまもち
           </Link>
-          <Link
-            href="/blog?category=sidefire"
-            className="text-stone-600 hover:text-amber-600 transition-colors text-sm font-medium"
-          >
+          <Link href="/blog?category=sidefire" style={{
+            fontSize: 13,
+            color: "var(--brown-2)",
+            textDecoration: "none",
+            letterSpacing: "0.05em",
+          }}>
             サイドFIRE
           </Link>
-          <Link
-            href="/about"
-            className="text-stone-600 hover:text-amber-600 transition-colors text-sm font-medium"
-          >
+          <Link href="/about" style={{
+            background: "var(--blush)",
+            color: "var(--brown)",
+            padding: "6px 16px",
+            borderRadius: 20,
+            fontSize: 12,
+            fontWeight: 500,
+            textDecoration: "none",
+            letterSpacing: "0.05em",
+          }}>
             About
           </Link>
         </nav>
