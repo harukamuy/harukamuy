@@ -369,7 +369,7 @@ coverImage: "/images/mio-room.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
-    <div class="bubble">だから口座が作れないでしょ。笑　でも代わりに、ごまもちのごはん代は配当金で賄えるくらいにはなってきたから、ある意味ごまもちも投資家だよ。</div>
+    <div class="bubble">口座は作れないけど、ごまもちは毎日私に元気と幸せを運んできてくれるじゃない。それってわたしへの投資みたいなものだよ。その分いっぱいかわいがっちゃうからね。</div>
   </div>
 </div>
 
