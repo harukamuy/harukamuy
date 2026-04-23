@@ -70,8 +70,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Caveat:wght@400;600&display=swap"
           rel="stylesheet"
         />
-        {/* Google Search Console 認証タグ（取得後に content を差し替えてください） */}
-        {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
+        <meta name="google-site-verification" content="4CGA_h1VKtrpeC4f7HWzGs3QV5rX1fD5_ZQNfgNZ2KQ" />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
