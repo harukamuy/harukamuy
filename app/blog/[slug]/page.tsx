@@ -89,7 +89,7 @@ export default async function PostPage({ params }: Props) {
             <img
               src={post.coverImage}
               alt={post.title}
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }}
             />
           ) : (
             <>
@@ -184,7 +184,7 @@ export default async function PostPage({ params }: Props) {
                     justifyContent: "center",
                   }}>
                     {related.coverImage ? (
-                      <img src={related.coverImage} alt={related.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+                      <img src={related.coverImage} alt={related.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
                     ) : (
                       <div style={{
                         position: "absolute",

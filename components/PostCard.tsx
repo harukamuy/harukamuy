@@ -47,7 +47,7 @@ export default function PostCard({ post, featured }: { post: Post; featured?: bo
           }}
         >
           {post.coverImage ? (
-            <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+            <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
           ) : (
             <>
               <div style={{
@@ -133,7 +133,7 @@ export default function PostCard({ post, featured }: { post: Post; featured?: bo
         }}
       >
         {post.coverImage ? (
-          <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+          <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
         ) : (
           <>
             <div style={{
