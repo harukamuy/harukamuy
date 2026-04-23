@@ -167,7 +167,7 @@ coverImage: "/images/mio-room.png"
   </div>
   <p style="font-size:13px;color:var(--brown-2);line-height:1.85;margin-bottom:10px;">毎年黒字かつ増加傾向が理想。赤字はNG。ここが悪化しているのに配当を維持している場合は「減配予備軍」の可能性がある。<strong>過去10年分を必ず確認する。</strong></p>
   <div style="background:#fdf8f4;border:1px solid #f0e0c8;border-radius:10px;padding:12px 14px;font-size:13px;color:var(--brown-2);">
-    <span style="font-weight:700;color:var(--brown);">オカムラの実績：</span>213.5億円（2024年）→ <strong>9.8億円（2025年）</strong>　急落。ただし長期では黒字を維持しており、過去最高水準（2021年269億円）実績もある。<strong>単年の落ち込みとして許容し、来期回復を確認する方針。</strong>
+    <span style="font-weight:700;color:var(--brown);">オカムラの実績：</span>213.5億円（2024年）→ <strong>9.8億円（2025年）</strong>　急落。決算資料を確認したところ、原材料費の高騰による原価率の悪化、事業拡大に伴う棚卸資産の増加、物流費・人件費の上昇が主な要因。一時的な圧迫と判断したが、<strong>来期の回復は引き続き確認する。</strong>
   </div>
 </div>
 
@@ -211,11 +211,13 @@ coverImage: "/images/mio-room.png"
 
 ---
 
-<div style="background:var(--green);border-radius:20px;padding:28px 24px;color:white;margin:36px 0;text-align:center;">
-  <div style="font-size:13px;opacity:0.8;margin-bottom:8px;letter-spacing:0.05em;">💡 あずきが使っている証券口座</div>
-  <div style="font-size:18px;font-weight:700;margin-bottom:10px;">SBI証券</div>
-  <p style="font-size:13px;opacity:0.85;line-height:1.8;margin-bottom:18px;">米国ETFの買付・日本株の高配当投資、どちらもSBI証券をメイン口座として使っています。手数料ゼロ・使いやすさ・取扱銘柄の多さで5年以上愛用中。</p>
-  <a href="#" style="display:inline-block;background:white;color:var(--green);padding:11px 28px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:0.06em;">SBI証券の公式サイトを見る →</a>
+<div style="background:var(--ivory-2);border:1.5px solid var(--beige);border-radius:16px;padding:18px 22px;margin:36px 0;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+  <div style="flex:1;min-width:200px;">
+    <div style="font-size:12px;color:var(--brown-3);margin-bottom:4px;">📌 あずきの証券口座</div>
+    <div style="font-size:14px;font-weight:700;color:var(--brown);margin-bottom:4px;">SBI証券を使っています</div>
+    <div style="font-size:12px;color:var(--brown-2);line-height:1.75;">IRbankで調べた後の発注も、NISAの積立も、全部ここ。手数料ゼロで5年以上使っています。</div>
+  </div>
+  <a href="#" style="display:inline-block;background:var(--terra);color:white;padding:10px 22px;border-radius:30px;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap;">公式サイトを見る →</a>
 </div>
 
 ---
@@ -279,7 +281,11 @@ coverImage: "/images/mio-room.png"
         <div class="data-row"><span>配当金</span><span class="val" style="font-size:13px;color:#5e7252;">✓ 15年で14倍増配</span></div>
         <div class="data-row"><span>配当性向</span><span class="val" style="font-size:13px;color:#5e7252;">✓ 40.4%（健全）</span></div>
         <div class="data-row"><span style="font-weight:700;">今月の買い増し</span><span class="val">10<span class="unit">株（合計100株）</span></span></div>
+        <div class="data-row"><span>年間配当（100株×94円・税引前）</span><span class="val">9,400<span class="unit">円</span></span></div>
+        <div class="data-row"><span>税引後（約20%）</span><span class="val">約7,490<span class="unit">円／年</span></span></div>
+        <div class="data-row"><span>月換算</span><span class="val">約624<span class="unit">円／月</span></span></div>
       </div>
+      ごまもちのおやつ代、ひと月分くらいにはなってきた。笑
     </div>
   </div>
 </div>
@@ -300,7 +306,27 @@ coverImage: "/images/mio-room.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
-    <div class="bubble">投資は地味なくらいがちょうどいいと思ってる。笑　働く場所がある限りなくならないビジネスだし、派手じゃないからこそ長く続くんだよね。</div>
+    <div class="bubble">実はね、私、仕事でオカムラの「コンテッサ」っていうチェアを使ってて、めちゃくちゃ気に入ってるんだよね。よく行くスタジオで「この椅子、座り心地よすぎる…」と思ってたら、オカムラだった。で、頑張って自分でも買った。</div>
+  </div>
+</div>
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">株を買う前から、オカムラに投資してたじゃん！</div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">たしかに。笑　高い買い物だったけど、座り仕事が多いからめちゃくちゃいい投資だったよ。自分が愛用してる会社の株ってなんか安心感があるんだよね。投資は地味なくらいがちょうどいい。</div>
   </div>
 </div>
 
