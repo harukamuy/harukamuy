@@ -16,6 +16,7 @@ export type Post = {
   category: Category;
   excerpt: string;
   coverImage?: string;
+  coverImagePosition?: string;
   content: string;
 };
 
@@ -49,6 +50,7 @@ export function getPostBySlug(slug: string): Post | null {
       category: data.category ?? "all",
       excerpt: data.excerpt ?? "",
       coverImage: data.coverImage,
+      coverImagePosition: data.coverImagePosition,
       content,
     };
   } catch {
