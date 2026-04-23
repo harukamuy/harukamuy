@@ -5,6 +5,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "ごまもち",
   description: "ボストンテリアのごまもち（3歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。",
+  alternates: { canonical: "https://harukamuy.com/gomamochi" },
+  openGraph: {
+    title: "ごまもち | harukamuy",
+    description: "ボストンテリアのごまもち（3歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。",
+    url: "https://harukamuy.com/gomamochi",
+    images: [{ url: "/images/gomamochi-sit.png", width: 1200, height: 630, alt: "ごまもち" }],
+  },
 };
 
 const routines = [

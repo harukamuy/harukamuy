@@ -5,6 +5,14 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "ブログ",
+  description: "サイドFIRE・投資・愛犬ごまもちの日常をテーマにした記事一覧。インデックス投資・高配当株・フリーランスのお金事情など。",
+  alternates: { canonical: "https://harukamuy.com/blog" },
+  openGraph: {
+    title: "ブログ | harukamuy",
+    description: "サイドFIRE・投資・愛犬ごまもちの日常をテーマにした記事一覧。インデックス投資・高配当株・フリーランスのお金事情など。",
+    url: "https://harukamuy.com/blog",
+    images: [{ url: "/images/mio-room.png", width: 1200, height: 630, alt: "harukamuy ブログ" }],
+  },
 };
 
 export default function BlogPage() {

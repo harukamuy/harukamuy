@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "フリーランス映像プロデューサーのあずきちゃんと、愛犬ごまもちによる暮らしとお金の記録です。",
+  description: "フリーランス映像プロデューサーのあずきと愛犬ごまもちの自己紹介ページ。北海道出身・上京・FIRE達成までの軌跡を公開。",
+  alternates: { canonical: "https://harukamuy.com/about" },
+  openGraph: {
+    title: "About | harukamuy",
+    description: "フリーランス映像プロデューサーのあずきと愛犬ごまもちの自己紹介ページ。北海道出身・上京・FIRE達成までの軌跡を公開。",
+    url: "https://harukamuy.com/about",
+    images: [{ url: "/images/mio-fullbody.png", width: 1200, height: 630, alt: "あずき" }],
+  },
 };
 
 const timeline = [

@@ -5,6 +5,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "サイドFIREの記録",
   description: "フリーランス映像プロデューサーが5年かけて達成したサイドFIREの全記録。資産推移・配当ログ・投資方針を公開します。",
+  alternates: { canonical: "https://harukamuy.com/sidefire" },
+  openGraph: {
+    title: "サイドFIREの記録 | harukamuy",
+    description: "フリーランス映像プロデューサーが5年かけて達成したサイドFIREの全記録。資産推移・配当ログ・投資方針を公開します。",
+    url: "https://harukamuy.com/sidefire",
+    images: [{ url: "/images/mio-room.png", width: 1200, height: 630, alt: "サイドFIREの記録" }],
+  },
 };
 
 const thumbColors = ["#8fa87f", "#d4957e", "#7a9e96", "#c9b99a"];

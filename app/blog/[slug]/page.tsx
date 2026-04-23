@@ -10,11 +10,35 @@ export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
+const SITE_URL = "https://harukamuy.com";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  return { title: post.title, description: post.excerpt };
+  const ogImage = post.coverImage
+    ? `${SITE_URL}${post.coverImage}`
+    : `${SITE_URL}/images/mio-room.png`;
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: `${SITE_URL}/blog/${slug}` },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.excerpt,
+      url: `${SITE_URL}/blog/${slug}`,
+      publishedTime: post.date,
+      authors: ["あずき"],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [ogImage],
+    },
+  };
 }
 
 const categoryLabel: Record<string, string> = {
@@ -41,7 +65,45 @@ export default async function PostPage({ params }: Props) {
 
   const relatedThumbColors = ["#d4957e", "#d4a898", "#7a9e96", "#8fa87f"];
 
+  const ogImage = post.coverImage
+    ? `${SITE_URL}${post.coverImage}`
+    : `${SITE_URL}/images/mio-room.png`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: ogImage,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: "あずき",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "harukamuy",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/mio-fullbody.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${slug}`,
+    },
+  };
+
   return (
+    <>
+      {/* 構造化データ (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div style={{
       maxWidth: 960,
       margin: "0 auto",
@@ -345,5 +407,6 @@ export default async function PostPage({ params }: Props) {
         </div>
       </aside>
     </div>
+    </>
   );
 }

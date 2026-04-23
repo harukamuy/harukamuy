@@ -1,6 +1,25 @@
+import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import BostonTerrierSVG from "@/components/BostonTerrierSVG";
 import ArticlesSection from "@/components/ArticlesSection";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "harukamuy | ごまもちとサイドFIREの記録",
+  },
+  description:
+    "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
+  alternates: {
+    canonical: "https://harukamuy.com",
+  },
+  openGraph: {
+    title: "harukamuy | ごまもちとサイドFIREの記録",
+    description:
+      "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
+    url: "https://harukamuy.com",
+    images: [{ url: "/images/mio-room.png", width: 1200, height: 630, alt: "harukamuy" }],
+  },
+};
 
 export default function Home() {
   const posts = getAllPosts();
