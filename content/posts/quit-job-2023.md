@@ -148,7 +148,6 @@ coverImagePosition: "top center"
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#5a3a6a;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;">・</span><span>若手の教育・育成。思うように育たないもどかしさ</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;">・</span><span>売上管理・報告会議・営業……やることが多すぎた</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;">・</span><span>上司からの細かい報告書作成指示にストレスを感じていた</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;">・</span><span>組織の中で動くことが、自分には合っていないと気づいた</span></div>
   </div>
 </div>
