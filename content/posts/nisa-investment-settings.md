@@ -4,7 +4,7 @@ date: "2026-04-27"
 category: "sidefire"
 excerpt: "つみたて枠はeMAXIS Slimオルカンで毎月5万円。成長投資枠は日本高配当株。米国債券と合わせて月平均5万円の配当金が入る現在の設定を全公開。"
 coverImage: "/images/nisa-eyecatch.png"
-coverImagePosition: "top center"
+coverImagePosition: "center"
 ---
 
 <div class="conv-wrap">
