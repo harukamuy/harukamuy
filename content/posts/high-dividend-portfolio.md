@@ -223,7 +223,19 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      そうそう、そんな感じ。最後に全部食べ切れるかなぁ〜　笑
+      そうそう、そんな感じ　笑
+    </div>
+  </div>
+</div>
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      最後に全部食べ切れるかなぁ〜🐾
     </div>
   </div>
 </div>
