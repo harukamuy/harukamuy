@@ -199,7 +199,7 @@ coverImagePosition: "center"
   <div style="font-size:13px;font-weight:700;color:#7a5c44;margin-bottom:14px;">⚠️ フリーランスが特に意識すること</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#5a4a3a;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>国民年金・国民健康保険</strong>　会社が半額負担してくれていた分がなくなる。金額の大きさに最初は驚く</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>健康診断は自分で</strong>　体が資本。仕事でも遊びでも健康第一。自分で予約して費用も自己負担</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>健康診断は自分で</strong>　体が資本。仕事でも遊びでも健康第一。自治体によっては補助があって、基本的な検査はかなり安く受けられる場合も。お住まいの自治体のサービスは要チェック</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>消費税は自分のお金じゃない</strong>　売上に含まれる消費税は預り金。あとで税務署に納めるものなので、混同しないよう別管理が大事</span></div>
   </div>
 </div>
