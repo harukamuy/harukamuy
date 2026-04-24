@@ -211,7 +211,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      チャリンチャリン……おやつみたいに積み上がっていくんだね🐾
+      チャリンチャリン……おやつがどんどん増えていくイメージだね！🐾
     </div>
   </div>
 </div>
@@ -223,7 +223,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      そのイメージ、ちょうどいいかもしれない　笑
+      そうそう、そんな感じ。最後に全部食べ切れるかなぁ〜　笑
     </div>
   </div>
 </div>
