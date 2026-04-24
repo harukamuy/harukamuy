@@ -1,6 +1,6 @@
 ---
 title: "SBI証券を選んだ理由——迷ったら2択、わたしと始めるならSBI一択"
-date: "2026-04-28"
+date: "2026-04-16"
 category: "sidefire"
 excerpt: "はじめからSBI証券一択だった。手数料無料・NISA対応・住信SBIネット銀行との連携。デメリットも正直に書きます。"
 coverImage: "/images/20260423_5.png"
