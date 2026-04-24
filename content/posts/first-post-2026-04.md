@@ -12,7 +12,7 @@ coverImagePosition: "center"
 
 | 項目 | 金額 | 比率 |
 |------|------|------|
-| S&P500（投資信託＋iDeCo） | 3,582万円 | 64.8% |
+| オルカン・S&P500（投資信託＋iDeCo） | 3,582万円 | 64.8% |
 | 高配当株＋外国債券ETF | 1,461万円 | 25.8% |
 | ビットコイン | 120万円 | 2.1% |
 | 現金 | 300万円 | 5.3% |
@@ -43,7 +43,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      こわかったよ。でも退職時の総資産が3,000万円あったし、ごまもちのごはん代だけは絶対守れるって思ったから。
+      こわかったよ。でも退職時の総資産が2,000万円ほどあったし、ごまもちのごはん代だけは絶対守れるって思ったから。
     </div>
   </div>
 </div>
@@ -184,7 +184,7 @@ coverImagePosition: "center"
       そうだよ〜。2018年に26歳でスタートして、8年後の34歳でサイドFIRE達成。まず私のスペックから話すね。
       <div class="data-card">
         <div class="data-card-label">📊 サイドFIRE達成時点の資産内訳（2026年4月）</div>
-        <div class="data-row"><span>S&amp;P500（投資信託＋iDeCo）</span><span class="val">3,582<span class="unit">万円</span></span></div>
+        <div class="data-row"><span>オルカン・S&amp;P500（投資信託＋iDeCo）</span><span class="val">3,582<span class="unit">万円</span></span></div>
         <div class="data-row"><span>高配当株＋外国債券ETF</span><span class="val">1,461<span class="unit">万円</span></span></div>
         <div class="data-row"><span>ビットコイン（0.1BTC）</span><span class="val">120<span class="unit">万円</span></span></div>
         <div class="data-row"><span>現金</span><span class="val">300<span class="unit">万円</span></span></div>
@@ -413,7 +413,7 @@ coverImagePosition: "center"
 
 **📌 毎月の積立ルール**
 
-- S&P500：毎月5万円（NISA積立枠）
+- オルカン：毎月5万円（NISA積立枠）
 - 高配当株：買いたい銘柄があれば随時（NISA成長投資枠）
 - ビットコイン：買い増しなし
 - 現金：300万円を維持
@@ -422,4 +422,4 @@ coverImagePosition: "center"
 
 - 毎月の生活費：約15万円
 - 仕事収入：月40〜70万円
-- サイドFIREを意識し始めた時期：2010年頃
+- サイドFIREを意識し始めた時期：2020年頃（コロナをきっかけに）

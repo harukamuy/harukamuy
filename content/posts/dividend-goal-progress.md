@@ -78,7 +78,7 @@ coverImagePosition: "center"
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">✅</span><span>食費・携帯代・光熱費はほぼまかなえる</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">🔜</span><span>交際費・ごまもちの費用まではまだ届いていない</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">🎯</span><span>目標は年間120万円（月10万円）</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">🎯</span><span>目標は年間120万円（月10万円）。月5万円はその通過点</span></div>
   </div>
 </div>
 
