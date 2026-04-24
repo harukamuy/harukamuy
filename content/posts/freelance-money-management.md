@@ -138,7 +138,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      犬には食べさせられないよ　笑
+      ごまもちには食べさせられないよ　笑
     </div>
   </div>
 </div>
@@ -187,6 +187,55 @@ coverImagePosition: "center"
 
 ---
 
+## フリーランスになって気づいたお金の感覚
+
+会社員のころは、給料が自動で振り込まれて、税金や社会保険は引かれた後の手取りが手元に来る。その仕組みに慣れていると、お金の全体像が見えにくい。
+
+フリーランスになって変わったのは、**すべてを自分で管理するようになったこと**。
+
+年金・健康保険・税金、全部自分で納める。健康診断だって自分で予約して行かないといけない。でもそのぶん、お金の流れがリアルに見えるようになった。
+
+<div class="data-card" style="background:#fff8f0;border:1.5px solid #f0dcc8;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#7a5c44;margin-bottom:14px;">⚠️ フリーランスが特に意識すること</div>
+  <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#5a4a3a;">
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>国民年金・国民健康保険</strong>　会社が半額負担してくれていた分がなくなる。金額の大きさに最初は驚く</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>健康診断は自分で</strong>　体が資本。仕事でも遊びでも健康第一。自分で予約して費用も自己負担</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>消費税は自分のお金じゃない</strong>　売上に含まれる消費税は預り金。あとで税務署に納めるものなので、混同しないよう別管理が大事</span></div>
+  </div>
+</div>
+
+特に消費税は注意が必要で、売上に含まれているからといって自分のお金ではない。納税のタイミングで慌てないように、別で管理しておくのが鉄則だと思っている。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      会社員のほうが楽じゃないの？🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      仕組みとしては楽だけど、見えないところで引かれているお金が多い。フリーランスは大変だけど、全部見えるから逆に管理しやすい部分もある。
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -195,5 +244,6 @@ coverImagePosition: "center"
 <li>節税は青色申告・家事按分・業務用サブスク経費化・ふるさと納税の4本柱</li>
 <li>ふるさと納税は地元十勝へ。柳月の三方六やよつ葉のバターが届くのがうれしい</li>
 <li>独立の不安は「資産2,000万円超」と「実家に帰るプランB」で乗り越えた。逃げ道を持つことで挑戦のハードルが下がる</li>
+<li>フリーランスは年金・保険・税金・健康診断すべて自己管理。消費税は自分のお金ではないので別管理が鉄則</li>
 </ul>
 </div>
