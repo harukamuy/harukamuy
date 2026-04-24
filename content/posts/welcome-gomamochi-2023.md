@@ -3,6 +3,8 @@ title: "ごまもちをお迎えした日——「この子だ」と思った瞬
 date: "2026-04-26"
 category: "gomazochi"
 excerpt: "フリーランスになって1ヶ月、友人ブリーダーから届いた一枚の写真。会いに行ったらわたしにくっついて離れなかった。その日に決めた。"
+coverImage: "/images/20260423_3.png"
+coverImagePosition: "top center"
 ---
 
 <div class="conv-wrap">
