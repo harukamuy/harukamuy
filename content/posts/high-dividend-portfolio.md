@@ -235,7 +235,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      最後に全部食べ切れるかなぁ〜🐾
+      全部食べ切れるかなぁ〜🐾
     </div>
   </div>
 </div>
