@@ -174,7 +174,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      できるけど、おすすめしない。商品が少ないし、営業されるし、誘惑が多い。手数料の高い商品を勧められることもある。
+      できるけど、おすすめしない。商品が少ないし、営業されるし、誘惑が多い。手数料の高い商品を勧められることもある。聞いた話だけどね　笑
     </div>
   </div>
 </div>
@@ -207,6 +207,66 @@ coverImagePosition: "center"
 
 ---
 
+## iDeCoの移管先もSBIにした
+
+会社員だったころ、企業型確定拠出年金に加入していた。会社を辞めたあと、その資産（約100万円）をSBI証券のiDeCoに移管した。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      確定拠出年金って会社のやつ？🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      そう。会社員のときに積み立てていたやつ。会社を辞めたら自分でiDeCoに移管する手続きが必要で、SBI証券のiDeCoに移した。
+    </div>
+  </div>
+</div>
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      SBIにしてよかったの？🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      すごくよかった。SBI証券と連携して一緒に見られるから、NISA・高配当株・iDeCoを全部ひとつの画面で管理できる。一元管理できるのがとにかく楽。
+    </div>
+  </div>
+</div>
+
+</div>
+
+移管の手続き自体は少し面倒だったけど、やってよかったと思っている。iDeCoについては別の記事で詳しく書く予定。
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -214,6 +274,7 @@ coverImagePosition: "center"
 <li>投資信託・国内株の手数料無料、S株で少額から、NISA完全対応、住信SBIネット銀行との連携が特に便利</li>
 <li>デメリットは高配当株に特化した表示（配当金・構成比率・簿価利回り）がないこと。スプシで自己管理中</li>
 <li>銀行の窓口や対面証券はおすすめしない。選ぶならネット証券の楽天かSBIの2択</li>
+<li>会社の確定拠出年金をSBI iDeCoに移管。NISA・高配当株・iDeCoをまとめて一元管理できて楽</li>
 <li>わたしと一緒に始めたいならSBI一択</li>
 </ul>
 </div>
