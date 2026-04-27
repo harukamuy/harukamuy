@@ -198,13 +198,45 @@ coverImagePosition: "center"
 <div class="data-card" style="background:#fff8f0;border:1.5px solid #f0dcc8;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#7a5c44;margin-bottom:14px;">⚠️ フリーランスが特に意識すること</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#5a4a3a;">
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>国民年金・国民健康保険</strong>　会社が半額負担してくれていた分がなくなる。金額の大きさに最初は驚く</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>国民年金・国民健康保険</strong>　フリーランスになると厚生年金→国民年金、社会保険→国民健康保険に切り替わり、全額自己負担になる。金額の大きさに最初は驚いた</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>健康診断は自分で</strong>　体が資本。仕事でも遊びでも健康第一。自治体によっては補助があって、基本的な検査はかなり安く受けられる場合も。お住まいの自治体のサービスは要チェック</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>消費税は自分のお金じゃない</strong>　売上に含まれる消費税は預り金。あとで税務署に納めるものなので、混同しないよう別管理が大事</span></div>
   </div>
 </div>
 
 特に消費税は注意が必要で、売上に含まれているからといって自分のお金ではない。納税のタイミングで慌てないように、別で管理しておくのが鉄則だと思っている。
+
+わたし自身はそこまで細かく管理していなくて、月の売上の10%を目安に「これは自分のお金じゃない」と意識しておくくらい。年間売上を月平均40万円とすれば消費税は約4万円、それが12ヶ月分——という大まかな計算で頭に入れている。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      4万円って、りんごいっぱい買えるのに使えないの？🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      そう、これはあとで税務署に納めるお金だから使っちゃだめなやつ　笑　意識するだけで全然違うんだよ。
+    </div>
+  </div>
+</div>
+
+</div>
+
+また、インボイス登録をしてまもないフリーランスには<strong>2割特例</strong>という優遇措置があり（適用期限あり・要確認）、実際の納税額は少なくなる。まずは「10%を別で意識する」だけでも、申告時の慌てはぐっと減ると思う。
 
 <div class="conv-wrap">
 

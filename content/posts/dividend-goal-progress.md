@@ -69,9 +69,109 @@ coverImagePosition: "center"
 
 ---
 
+## 2024年——インデックスから高配当へのシフト
+
+2018年から投資を始めたころは、<strong>とにかくS&P500に積み立てる</strong>ことを考えていた。資産は着実に増えていったけれど、あるとき気づいた。
+
+「資産は増えているけど、手元にキャッシュが入ってくる感覚がない」
+
+株を売ればお金は出てくる。でも売りたくない。積み上げたものを削るのが性格的に合わないんだと思う。そこで<strong>2024年から本格的に高配当株へシフト</strong>した。
+
+新NISAが始まったこともきっかけになって、積極的に日本の高配当株を買い増していった。今はインデックス（オルカン・S&P500）を月5万円積み立てつつ、それ以外の資金は高配当株に充てている。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      キャッシュフローって、りんごが毎月届く感じ？🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      そのたとえ、すごくわかりやすい　笑　木を育てて、実を収穫するイメージに近いかも。
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+
+## 配当金の推移——2年で2.5倍になった
+
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 配当金の推移（概算）</div>
+  <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+      <span>時期</span><span>高配当株（個別株）</span><span>年間配当（概算）</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+      <span>〜2023年</span><span>約500万円</span><span>約20万円</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+      <span>2024年〜</span><span>新NISAで買い増し開始</span><span>数百円・数千円ずつ積み上げ</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+      <span>2026年現在</span><span>—</span><span>約49万円（税引き後）</span>
+    </div>
+  </div>
+</div>
+
+2023年末時点で日本高配当株（個別株）は約500万円・利回り4%で年間20万円ほど。そこから新NISAを活用して少しずつ買い増しを重ねた。数百円、数千円の配当がコツコツと積み上がって、2年ほどで約49万円（税引き後）まで育った。
+
+---
+
+## 月1万円を超えた日のこと
+
+マイルストーンをあまり意識するタイプではないけれど、<strong>月平均1万円を超えたとき</strong>は素直に嬉しかった。
+
+高校生のときのお小遣いが月5,000円だった。その倍のお金が、働かなくても毎月入ってくるようになった——そう思ったとき、「あ、これは本当にすごいことだ」と感じた。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      高校生のあずきちゃんも知りたかった🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      わたしにも若い時があったんだよ　笑
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+
 ## 今は食費・携帯・光熱費をまかなえるくらいに
 
-現在の配当金は**年間49万円（税引き後）**。月に換算すると約4万円。
+現在の配当金は<strong>年間49万円（税引き後）</strong>。月に換算すると約4万円。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 配当金の現在地</div>
@@ -114,11 +214,90 @@ coverImagePosition: "center"
 
 ---
 
-## 目標は年間120万円。焦らず、今を楽しみながら
+## 配当金の使い道——生活を少しずつ豊かにする
 
-目標金額は**年間120万円**。2〜3年のうちに達成したいと思っている。
+フリーランスで働いているので、配当金で生活費を補填する必要は今のところない。でも<strong>心のゆとり</strong>には確実になっている。
 
-ただ、「早く達成しなきゃ」と焦るのは違うと思っている。今の生活を楽しみながら、コツコツ積み上げていく。そのペースが自分には合っている。
+具体的には、こんなふうに使っている。
+
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">✨ 配当金の使い道（わたしの場合）</div>
+  <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span><strong>友人へのプレゼント</strong>　何を選ぼうか考える時間が楽しくて、喜んでもらえると本当に嬉しい。お金が心に余裕をくれている気がする</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span><strong>歯のクリーニング・定期検診</strong>　健康への投資を後回しにしなくなった</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span><strong>再投資</strong>　受け取った配当の一部はそのまま株に戻す</span></div>
+  </div>
+</div>
+
+「使う」というより「生活の質を上げる」感覚に近い。大きな買い物ではないけれど、こういう小さな積み重ねが、日々の満足度につながっていると思う。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      ごまもちへのプレゼントもある？🐾✨
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      もちろん。りんごも高級にしちゃうよ　笑
+    </div>
+  </div>
+</div>
+
+</div>
+
+---
+
+## 目標は年間120万円——NISAを使い切るころに
+
+目標金額は<strong>年間120万円</strong>。
+
+特別な近道は考えていなくて、<strong>割安なときにしっかり仕込んで、あとはガチホ</strong>というのが基本スタンス。そのために購入資金を生活防衛費とは別に積み立てていて、いいタイミングが来たらまとめて買う。
+
+長期的には、<strong>NISA枠（成長投資枠・つみたて投資枠合わせて1,800万円）を使い切るころ</strong>に、特定口座で保有しているものも合わせて年間120万円くらいに届かないかなと思っている。
+
+焦って買い増すのではなく、割安を待ってじっくり仕込む。それがわたしのペース。
+
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      120万円ってさつまいも何本分だろう🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      そこで計算するんだね　笑　めちゃくちゃ大量だよ、たぶん。
+    </div>
+  </div>
+</div>
+
+</div>
 
 ---
 
@@ -176,10 +355,12 @@ coverImagePosition: "center"
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
 <li>最初の配当金はコーヒー5杯分。会社以外からお金が入る感覚が嬉しかった</li>
+<li>2024年から新NISAをきっかけに高配当株へ本格シフト。インデックスは月5万円継続しつつ、それ以外は高配当株に</li>
+<li>月平均1万円（高校生のお小遣いの倍）を超えたときが一番うれしかったマイルストーン</li>
 <li>現在は年間49万円（税引き後）＝月約4万円。食費・携帯・光熱費はほぼまかなえる水準に</li>
-<li>目標は年間120万円。2〜3年で達成したいけど、焦らず今を楽しみながらが大事</li>
+<li>配当金の使い道は「生活を豊かにすること」。プレゼント・歯の検診・再投資。心のゆとりになっている</li>
+<li>目標は年間120万円。割安時に仕込んでガチホが基本。NISA枠を使い切るころに達成できたら</li>
 <li>達成したら十勝に帰ることも検討。両親の近くで、ごまもちと大自然の中で暮らしたい</li>
-<li>旅行を増やして、ごまもちといろんな場所で美味しいものを食べたい</li>
 </ul>
 </div>
 

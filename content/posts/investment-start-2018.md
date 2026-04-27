@@ -76,7 +76,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      5万円ってどのくらい？ぼくのご飯何ヶ月分？🦴
+      5万円ってどのくらい？りんご何個分かな🐾
     </div>
   </div>
 </div>

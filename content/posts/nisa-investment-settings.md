@@ -235,7 +235,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      つまり今月の配当金でぼくのおやつも買えるってこと？🦴
+      つまり今月の配当金でりんごもキャベツも買えるってこと？🐾✨
     </div>
   </div>
 </div>
