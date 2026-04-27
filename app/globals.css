@@ -388,9 +388,27 @@ body::before {
 }
 
 /* ── RESPONSIVE HEADER ── */
-@media (max-width: 600px) {
-  .header-nav { gap: 10px; }
-  .nav-link { font-size: 11px !important; letter-spacing: 0 !important; }
+@media (max-width: 680px) {
+  .desktop-nav { display: none !important; }
+  .hamburger-btn { display: flex !important; align-items: center; justify-content: center; }
+}
+
+/* ── SIDEFIRE HERO GRID ── */
+.sidefire-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 680px) {
+  .sidefire-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .sidefire-nums-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
 }
 
 /* ── RESPONSIVE LAYOUTS ── */

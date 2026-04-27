@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 const thumbColors = ["#8fa87f", "#d4957e", "#7a9e96", "#c9b99a"];
 
 const strategyCards = [
-  { icon: "🌍", title: "インデックス積立は「ほったらかし」", text: "eMAXIS Slim全世界株式をNISA満額で毎月自動積立。市場を予測せず、淡々と積み上げることが最大の戦略。" },
-  { icon: "💰", title: "高配当株で「生活費の一部」を稼ぐ", text: "日米の高配当株・ETFを保有。配当金が毎月少しずつ入ることで、精神的な安定につながっている。" },
+  { icon: "🌍", title: "インデックス積立は「ほったらかし」", text: "オルカン・S&P500をNISAで月5万円ずつ自動積立。市場を予測せず、淡々と積み上げることが最大の戦略。" },
+  { icon: "💰", title: "高配当株で「生活費の一部」を稼ぐ", text: "日本の高配当株とBND（米国債券ETF）を保有。6月・12月を中心に配当金が入ることで、精神的な安定につながっている。" },
   { icon: "🛡️", title: "生活防衛資金は「12ヶ月分」固定", text: "フリーランスは収入が不安定なため、生活費12ヶ月分を現金で確保。これがあると投資を焦らず続けられる。" },
   { icon: "📊", title: "月1回だけ見直す", text: "毎月末に資産チェック＆配当ログを更新。それ以外は基本的に動かさない。頻繁に見ると余計なことをしてしまうので。" },
 ];
@@ -51,7 +51,7 @@ export default function SideFirePage() {
         <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "rgba(255,255,255,0.05)" }} />
         <div style={{ position: "absolute", bottom: -50, left: -30, width: 180, height: 180, borderRadius: "50%", background: "rgba(255,255,255,0.04)" }} />
 
-        <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr auto", gap: 40, alignItems: "center", position: "relative" }}>
+        <div className="sidefire-hero-grid" style={{ maxWidth: 900, margin: "0 auto" }}>
           <div>
             {/* badge */}
             <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,0.18)", borderRadius: 20, padding: "5px 16px", fontSize: 12, letterSpacing: "0.1em", marginBottom: 18 }}>
@@ -68,7 +68,7 @@ export default function SideFirePage() {
           </div>
 
           {/* asset numbers */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,auto)", gap: 28 }}>
+          <div className="sidefire-nums-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,auto)", gap: 28 }}>
             {[
               { n: "5,463", unit: "万", label: "総資産" },
               { n: "49", unit: "万", label: "年間配当" },
@@ -90,7 +90,10 @@ export default function SideFirePage() {
         {/* ── PORTFOLIO ── */}
         <div style={{ marginBottom: 56 }}>
           <div style={{ marginBottom: 24 }}>
-            <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>ポートフォリオ内訳</div>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
+              <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>ポートフォリオ内訳</div>
+              <div style={{ fontSize: 12, color: "var(--brown-3)" }}>2026年4月1日時点</div>
+            </div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Portfolio</div>
           </div>
           <div className="portfolio-wrap-grid" style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "center" }}>
@@ -113,8 +116,8 @@ export default function SideFirePage() {
             {/* legend */}
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {[
-                { color: "#5e7252", label: "S&P500（投資信託＋iDeCo）", val: "3,582万", pct: "64.8%" },
-                { color: "#8aaa7a", label: "高配当株＋外国債券ETF", val: "1,461万", pct: "25.8%" },
+                { color: "#5e7252", label: "オルカン・S&P500（投資信託＋iDeCo）", val: "3,582万", pct: "64.8%" },
+                { color: "#8aaa7a", label: "高配当株＋BND（米国債券ETF）", val: "1,461万", pct: "25.8%" },
                 { color: "#c4674a", label: "ビットコイン（0.1BTC）", val: "120万", pct: "2.1%" },
                 { color: "#d5c3a8", label: "現金", val: "300万", pct: "5.3%" },
               ].map((item) => (
@@ -133,7 +136,10 @@ export default function SideFirePage() {
         <div style={{ marginBottom: 56 }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 24 }}>
             <div>
-              <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>配当金ログ</div>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
+                <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>配当金ログ</div>
+                <div style={{ fontSize: 12, color: "var(--brown-3)" }}>2026年4月1日時点</div>
+              </div>
               <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Dividend Log</div>
             </div>
           </div>
