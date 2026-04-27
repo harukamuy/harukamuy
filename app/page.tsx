@@ -328,7 +328,7 @@ export default function Home() {
         </div>
         {/* A8 tracking pixel */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img border={0} width={1} height={1} src="https://www12.a8.net/0.gif?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" alt="" style={{ display: "block" }} />
+        <img width={1} height={1} src="https://www12.a8.net/0.gif?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" alt="" style={{ display: "block", border: 0 }} />
       </section>
     </>
   );
