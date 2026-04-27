@@ -33,7 +33,7 @@ export default function Header() {
           <span style={{ fontSize: 16 }}>🐾</span>
           harukamuy
         </Link>
-        <nav style={{ display: "flex", gap: 22, alignItems: "center" }}>
+        <nav className="header-nav" style={{ display: "flex", alignItems: "center" }}>
           <Link href="/blog" className="nav-link" style={{
             fontSize: 13,
             color: "var(--brown-2)",

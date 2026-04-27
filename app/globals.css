@@ -382,9 +382,15 @@ body::before {
   .bubble-wrap { max-width: 90%; }
 }
 
+/* ── HEADER NAV ── */
+.header-nav {
+  gap: 22px;
+}
+
 /* ── RESPONSIVE HEADER ── */
 @media (max-width: 600px) {
-  .nav-link { display: none !important; }
+  .header-nav { gap: 10px; }
+  .nav-link { font-size: 11px !important; letter-spacing: 0 !important; }
 }
 
 /* ── RESPONSIVE LAYOUTS ── */
