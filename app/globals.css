@@ -396,3 +396,70 @@ body::before {
   .portfolio-wrap-grid{ grid-template-columns: 1fr !important; }
   .routine-time       { min-width: 48px !important; font-size: 18px !important; }
 }
+
+/* ── HERO SECTION ── */
+.hero-section {
+  padding: 52px 24px 44px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-image-wrap {
+  width: 220px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(46,35,24,0.08);
+  align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 32px 20px 36px;
+    gap: 20px;
+  }
+
+  /* 画像を上・テキストを下にするため画像を先に表示 */
+  .hero-image-wrap {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    border-radius: 16px;
+    order: -1;
+    align-self: center;
+  }
+
+  .hero-text-wrap {
+    order: 1;
+  }
+}
+
+/* ── ASSET SUMMARY GRID (mobile) ── */
+@media (max-width: 600px) {
+  .asset-grid-3col {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .affiliate-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .affiliate-wide {
+    grid-column: 1 !important;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .profile-grid > div:first-child {
+    margin: 0 auto;
+  }
+}

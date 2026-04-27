@@ -27,16 +27,8 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section style={{
-        padding: "52px 24px 44px",
-        maxWidth: 900,
-        margin: "0 auto",
-        display: "grid",
-        gridTemplateColumns: "1fr auto",
-        gap: 24,
-        alignItems: "center",
-      }}>
-        <div>
+      <section className="hero-section">
+        <div className="hero-text-wrap">
           <div style={{
             fontFamily: "var(--font-hand)",
             fontSize: 16,
@@ -53,7 +45,7 @@ export default function Home() {
           </div>
           <h1 style={{
             fontFamily: "var(--font-serif)",
-            fontSize: "clamp(24px, 4.5vw, 38px)",
+            fontSize: "clamp(20px, 5vw, 38px)",
             fontWeight: 600,
             lineHeight: 1.65,
             color: "var(--brown)",
@@ -89,7 +81,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div style={{ width: 220, flexShrink: 0, borderRadius: 20, overflow: "hidden", boxShadow: "0 4px 24px rgba(46,35,24,0.08)", alignSelf: "flex-start" }}>
+        <div className="hero-image-wrap">
           <img src="/images/mio-room.png" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
         </div>
       </section>
@@ -138,7 +130,7 @@ export default function Home() {
             サイドFIRE 達成済み ✓
           </div>
           <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 8, letterSpacing: "0.04em" }}>わたしの資産状況（2026年4月）</div>
-          <div style={{
+          <div className="asset-grid-3col" style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr",
             gap: 20,
@@ -168,7 +160,7 @@ export default function Home() {
 
       {/* PROFILE */}
       <div style={{ maxWidth: 852, margin: "0 auto 52px", padding: "0 24px" }}>
-        <div style={{
+        <div className="profile-grid" style={{
           background: "#fdf0ea",
           border: "1.5px solid var(--blush)",
           borderRadius: 24,
@@ -260,9 +252,9 @@ export default function Home() {
           <span style={{ color: "var(--terra)" }}>※</span>
           実際に使っているサービスのみ紹介しています。一部アフィリエイトリンクを含みます。
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+        <div className="affiliate-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
           {/* SBI 証券 - wide */}
-          <a href="#" style={{
+          <a href="#" className="affiliate-wide" style={{
             gridColumn: "1 / -1",
             borderRadius: "var(--r)",
             padding: "24px 26px",
