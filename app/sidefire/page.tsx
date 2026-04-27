@@ -98,7 +98,7 @@ export default function SideFirePage() {
           </div>
           <div className="portfolio-wrap-grid" style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "center" }}>
             {/* donut SVG */}
-            <div style={{ position: "relative", width: 180, height: 180, flexShrink: 0 }}>
+            <div className="donut-wrap" style={{ position: "relative", width: 180, height: 180, flexShrink: 0 }}>
               <svg viewBox="0 0 36 36" width="180" height="180">
                 <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" strokeWidth="3.5" strokeDasharray="65.6 34.4" strokeDashoffset="25" transform="rotate(-90 18 18)"/>
                 <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" strokeWidth="3.5" strokeDasharray="26.7 73.3" strokeDashoffset="-40.6" transform="rotate(-90 18 18)"/>
