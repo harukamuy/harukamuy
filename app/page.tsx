@@ -311,7 +311,7 @@ export default function Home() {
           </a>
 
           {/* freee */}
-          <a href="#" style={{
+          <a href="https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" rel="nofollow" target="_blank" style={{
             borderRadius: "var(--r)",
             padding: "20px 22px",
             textDecoration: "none",
@@ -326,6 +326,9 @@ export default function Home() {
             <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>詳細を見る →</div>
           </a>
         </div>
+        {/* A8 tracking pixel */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img border={0} width={1} height={1} src="https://www12.a8.net/0.gif?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" alt="" style={{ display: "block" }} />
       </section>
     </>
   );
