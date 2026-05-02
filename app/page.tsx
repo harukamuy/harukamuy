@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import BostonTerrierSVG from "@/components/BostonTerrierSVG";
 import ArticlesSection from "@/components/ArticlesSection";
+import { latestStats } from "@/components/sidefireData";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const stats = latestStats();
   const posts = getAllPosts();
 
   return (
@@ -129,7 +131,7 @@ export default function Home() {
             }} />
             サイドFIRE 達成済み ✓
           </div>
-          <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 8, letterSpacing: "0.04em" }}>わたしの資産状況（2026年4月）</div>
+          <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 8, letterSpacing: "0.04em" }}>わたしの資産状況（{stats.monthLabel}）</div>
           <div className="asset-grid-3col" style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr",
@@ -138,19 +140,19 @@ export default function Home() {
           }}>
             <div>
               <div style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.01em" }}>
-                5,463<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>万円</span>
+                {stats.totalManYenStr}<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>万円</span>
               </div>
               <div style={{ fontSize: 11, opacity: 0.6, marginTop: 4, letterSpacing: "0.06em" }}>総資産</div>
             </div>
             <div>
               <div style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.01em" }}>
-                49<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>万円</span>
+                {stats.annualDividendManYen}<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>万円</span>
               </div>
               <div style={{ fontSize: 11, opacity: 0.6, marginTop: 4, letterSpacing: "0.06em" }}>年間配当・分配金</div>
             </div>
             <div>
               <div style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.01em" }}>
-                4.94<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>%</span>
+                {stats.yieldPctStr}<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>%</span>
               </div>
               <div style={{ fontSize: 11, opacity: 0.6, marginTop: 4, letterSpacing: "0.06em" }}>配当利回り（平均）</div>
             </div>

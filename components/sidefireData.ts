@@ -17,6 +17,8 @@ export type Snapshot = {
   btc: number;
   /** その時点での「12ヶ月の年間配当想定」円（1月〜12月の順、BND込み） */
   dividendForecast: number[];
+  /** 配当利回り(%) ※高配当株部分（BND除く）に対する利回り */
+  dividendYieldPct: number;
 };
 
 export const SNAPSHOTS: Snapshot[] = [
@@ -29,6 +31,7 @@ export const SNAPSHOTS: Snapshot[] = [
     btc: 120,
     //                  1月    2月    3月     4月    5月     6月      7月    8月    9月     10月   11月  12月
     dividendForecast: [3000, 3000, 35407, 4440, 16206, 198287, 3000, 3000, 30207, 4440, 5000, 184312],
+    dividendYieldPct: 4.94,
   },
   {
     month: "2026年5月",
@@ -38,8 +41,13 @@ export const SNAPSHOTS: Snapshot[] = [
     cash: 300,
     btc: 120,
     dividendForecast: [3000, 3000, 35407, 4440, 16206, 199487, 3000, 3000, 30607, 4440, 5050, 184812],
+    dividendYieldPct: 4.94,
   },
 ];
+
+// ═══════════════════════════════════════════════════════════════════
+// 計算ヘルパー
+// ═══════════════════════════════════════════════════════════════════
 
 export function totalOf(s: Snapshot): number {
   return s.index + s.highDiv + s.cash + s.btc;
@@ -47,6 +55,23 @@ export function totalOf(s: Snapshot): number {
 
 export function dividendTotalOf(s: Snapshot): number {
   return s.dividendForecast.reduce((a, b) => a + b, 0);
+}
+
+/** 最新のスナップショット（配列の末尾） */
+export function latestSnapshot(): Snapshot {
+  return SNAPSHOTS[SNAPSHOTS.length - 1];
+}
+
+/** 各ページのHero/Sidebarに表示する数値（最新月ベース） */
+export function latestStats() {
+  const s = latestSnapshot();
+  return {
+    monthLabel: s.month,                                      // "2026年5月"
+    totalManYen: totalOf(s),                                  // 5539
+    totalManYenStr: totalOf(s).toLocaleString("ja-JP"),       // "5,539"
+    annualDividendManYen: Math.round(dividendTotalOf(s) / 10000), // 49
+    yieldPctStr: s.dividendYieldPct.toFixed(2),               // "4.94"
+  };
 }
 
 export const MONTH_LABELS = [

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
 import SideFireInteractive from "@/components/SideFireInteractive";
+import { latestStats } from "@/components/sidefireData";
 
 export const metadata: Metadata = {
   title: "サイドFIREの記録",
@@ -28,6 +29,7 @@ const strategyCards = [
 
 
 export default function SideFirePage() {
+  const stats = latestStats();
   const allPosts = getAllPosts();
   const sidePosts = allPosts.filter((p) => p.category === "sidefire").slice(0, 4);
   // fallback: show any posts if no sidefire articles yet
@@ -59,9 +61,9 @@ export default function SideFirePage() {
           {/* asset numbers */}
           <div className="sidefire-nums-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,auto)", gap: 28 }}>
             {[
-              { n: "5,463", unit: "万", label: "総資産" },
-              { n: "49", unit: "万", label: "年間配当" },
-              { n: "4.94", unit: "%", label: "配当利回り" },
+              { n: stats.totalManYenStr, unit: "万", label: "総資産" },
+              { n: String(stats.annualDividendManYen), unit: "万", label: "年間配当" },
+              { n: stats.yieldPctStr, unit: "%", label: "配当利回り" },
             ].map((item) => (
               <div key={item.label}>
                 <div style={{ fontSize: "clamp(22px,3vw,32px)", fontWeight: 700, lineHeight: 1.1 }}>

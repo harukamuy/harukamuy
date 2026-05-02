@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import ShareButtons from "@/components/ShareButtons";
+import { latestStats } from "@/components/sidefireData";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -58,6 +59,8 @@ export default async function PostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const stats = latestStats();
+
   const contentHtml = await renderMarkdown(post.content);
 
   const allPosts = getAllPosts();
@@ -104,7 +107,7 @@ export default async function PostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    <div style={{
+    <div className="blog-post-layout" style={{
       maxWidth: 960,
       margin: "0 auto",
       display: "grid",
@@ -280,7 +283,7 @@ export default async function PostPage({ params }: Props) {
       </article>
 
       {/* SIDEBAR */}
-      <aside style={{ position: "sticky", top: 86, display: "flex", flexDirection: "column", gap: 20 }}>
+      <aside className="blog-post-sidebar" style={{ position: "sticky", top: 86, display: "flex", flexDirection: "column", gap: 20 }}>
         {/* Profile card */}
         <div style={{
           background: "var(--white)",
@@ -335,9 +338,9 @@ export default async function PostPage({ params }: Props) {
             📊 現在の資産状況
           </div>
           {[
-            { label: "総資産", value: "5,463", unit: "万円" },
-            { label: "年間配当", value: "49", unit: "万円" },
-            { label: "利回り", value: "4.94", unit: "%" },
+            { label: "総資産", value: stats.totalManYenStr, unit: "万円" },
+            { label: "年間配当", value: String(stats.annualDividendManYen), unit: "万円" },
+            { label: "利回り", value: stats.yieldPctStr, unit: "%" },
           ].map((row) => (
             <div key={row.label} style={{
               display: "flex",
