@@ -488,3 +488,29 @@ body::before {
     margin: 0 auto;
   }
 }
+
+/* ── BLOG POST LAYOUT (mobile: stack sidebar below content) ── */
+@media (max-width: 880px) {
+  .blog-post-layout {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    padding: 32px 16px 64px !important;
+  }
+
+  .blog-post-sidebar {
+    position: static !important;
+    top: auto !important;
+  }
+}
+
+/* ── FEATURED ARTICLE CARD (mobile: stack image above text) ── */
+@media (max-width: 600px) {
+  .article-card.featured {
+    grid-template-columns: 1fr !important;
+  }
+
+  .article-card.featured > div:first-child {
+    aspect-ratio: 16/9 !important;
+    min-height: 0 !important;
+  }
+}

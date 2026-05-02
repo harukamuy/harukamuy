@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Google Cloud service account key (secret - never commit)
+harukamuy-analytics-*.json
+client_secret_*.json
+ga4-token.json

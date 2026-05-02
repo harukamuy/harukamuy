@@ -15,11 +15,13 @@ export const metadata: Metadata = {
 };
 
 const routines = [
-  { time: "6:30", ampm: "AM", icon: "🌅", title: "起床・朝のごあいさつ", text: "あずきちゃんの顔をぺろぺろして起こしに来る。これが毎朝の日課。" },
-  { time: "7:00", ampm: "AM", icon: "🦴", title: "朝ごはん", text: "ドライフード+手作りトッピング。食べ終わるまで3分。" },
-  { time: "8:00", ampm: "AM", icon: "🌿", title: "朝散歩（30〜45分）", text: "あずきちゃんと近所の公園へ。においを嗅ぎ回るのが何より好き。" },
-  { time: "昼間",  ampm: "",   icon: "😴", title: "お昼寝タイム", text: "あずきちゃんが仕事中はソファで爆睡。いびきをかく。" },
-  { time: "17:00", ampm: "PM", icon: "🐾", title: "夕方散歩＆おやつ", text: "1日で一番テンションが上がる時間帯。" },
+  { time: "5:30",  ampm: "AM", icon: "🌅", title: "起床", text: "あずきちゃんを起こしに行く。これが毎朝の日課。" },
+  { time: "6:00",  ampm: "AM", icon: "🌿", title: "朝の散歩（約1時間）", text: "近所をぐるっと1時間。においを嗅ぎ回るのが何より好き。" },
+  { time: "7:00",  ampm: "AM", icon: "🦴", title: "帰宅・朝ごはん", text: "落ち着いてからごはん。ドライフード＋手作りトッピング。食べ終わるまで3分。" },
+  { time: "9:00〜", ampm: "",  icon: "😴", title: "まったりタイム", text: "あずきちゃんが仕事中はソファで爆睡。いびきをかく。" },
+  { time: "18:30", ampm: "PM", icon: "🐾", title: "夕方散歩（約1時間）", text: "1日で一番テンションが上がる時間帯。" },
+  { time: "19:30", ampm: "PM", icon: "🦴", title: "帰宅・夕ごはん", text: "お腹ぺこぺこ。夕ごはんが待っている。" },
+  { time: "夜",    ampm: "",   icon: "✨", title: "ブラッシング・スキンシップ", text: "歯磨きとブラッシング。あずきちゃんと過ごす一番好きな時間。" },
 ];
 
 const recoItems = [
@@ -89,13 +91,15 @@ export default function GomamochiPage() {
               <span style={{ color: "var(--brown-2)" }}>2023年5月（3歳）</span>
               <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>体重</span>
               <span style={{ color: "var(--brown-2)" }}>8.2kg</span>
-              <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>好きなもの</span>
-              <span style={{ color: "var(--brown-2)" }}>おやつ・散歩・ソファ</span>
+              <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>好きな食べ物</span>
+              <span style={{ color: "var(--brown-2)" }}>りんご🍎・キャベツ🥬・スイカ🍉（夏）・さつまいも🍠（秋冬）</span>
+              <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>好きなこと</span>
+              <span style={{ color: "var(--brown-2)" }}>散歩・ソファ・あずきとのじかん</span>
               <span style={{ color: "var(--brown-3)", fontSize: 12, letterSpacing: "0.06em" }}>ブログでの役割</span>
               <span style={{ color: "var(--brown-2)" }}>読者目線の質問担当</span>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              {["食いしん坊", "甘えん坊", "表情豊か", "散歩好き", "ソファ占拠中"].map((tag) => (
+              {["食いしん坊", "りんご大好き", "甘えん坊", "表情豊か", "散歩好き", "ソファ占拠中"].map((tag) => (
                 <span key={tag} style={{ fontSize: 11, background: "#fde8e0", padding: "3px 10px", borderRadius: 20, color: "var(--brown-2)", border: "1px solid var(--blush)" }}>{tag}</span>
               ))}
             </div>
