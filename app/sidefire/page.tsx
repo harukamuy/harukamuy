@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
+import SideFireInteractive from "@/components/SideFireInteractive";
 
 export const metadata: Metadata = {
   title: "サイドFIREの記録",
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 
 const thumbColors = ["#8fa87f", "#d4957e", "#7a9e96", "#c9b99a"];
 
+
 const strategyCards = [
   { icon: "🌍", title: "インデックス積立は「ほったらかし」", text: "オルカン・S&P500をNISAで月5万円ずつ自動積立。市場を予測せず、淡々と積み上げることが最大の戦略。" },
   { icon: "💰", title: "高配当株で「生活費の一部」を稼ぐ", text: "日本の高配当株とBND（米国債券ETF）を保有。6月・12月を中心に配当金が入ることで、精神的な安定につながっている。" },
@@ -23,20 +25,7 @@ const strategyCards = [
   { icon: "📊", title: "月1回だけ見直す", text: "毎月末に資産チェック＆配当ログを更新。それ以外は基本的に動かさない。頻繁に見ると余計なことをしてしまうので。" },
 ];
 
-const dividendBars = [
-  { month: "1月",  pct:  2, label: "3,306",   val: "0.3万円" },
-  { month: "2月",  pct:  2, label: "3,306",   val: "0.3万円" },
-  { month: "3月",  pct: 18, label: "35,713",  val: "3.6万円" },
-  { month: "4月",  pct:  2, label: "4,746",   val: "0.5万円" },
-  { month: "5月",  pct:  8, label: "16,511",  val: "1.7万円" },
-  { month: "6月",  pct:100, label: "197,352", val: "19.7万円" },
-  { month: "7月",  pct:  2, label: "3,306",   val: "0.3万円" },
-  { month: "8月",  pct:  2, label: "3,306",   val: "0.3万円" },
-  { month: "9月",  pct: 16, label: "30,512",  val: "3.1万円" },
-  { month: "10月", pct:  2, label: "4,745",   val: "0.5万円" },
-  { month: "11月", pct:  3, label: "5,305",   val: "0.5万円" },
-  { month: "12月", pct: 93, label: "183,377", val: "18.3万円" },
-];
+
 
 export default function SideFirePage() {
   const allPosts = getAllPosts();
@@ -87,97 +76,15 @@ export default function SideFirePage() {
 
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "56px 24px 80px" }}>
 
-        {/* ── PORTFOLIO ── */}
+        {/* ── MONTHLY ASSET LOG (ドーナツ＋テーブル) ── */}
         <div style={{ marginBottom: 56 }}>
           <div style={{ marginBottom: 24 }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
               <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>ポートフォリオ内訳</div>
-              <div style={{ fontSize: 12, color: "var(--brown-3)" }}>2026年4月1日時点</div>
             </div>
-            <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Portfolio</div>
+            <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Portfolio / Monthly Asset Log</div>
           </div>
-          <div className="portfolio-wrap-grid" style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "center" }}>
-            {/* donut SVG */}
-            <div className="donut-wrap" style={{ position: "relative", width: 180, height: 180, flexShrink: 0 }}>
-              <svg viewBox="0 0 36 36" width="180" height="180">
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#5e7252" strokeWidth="3.5" strokeDasharray="65.6 34.4" strokeDashoffset="25" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#8aaa7a" strokeWidth="3.5" strokeDasharray="26.7 73.3" strokeDashoffset="-40.6" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#c4674a" strokeWidth="3.5" strokeDasharray="2.2 97.8" strokeDashoffset="-67.3" transform="rotate(-90 18 18)"/>
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d5c3a8" strokeWidth="3.5" strokeDasharray="5.5 94.5" strokeDashoffset="-69.5" transform="rotate(-90 18 18)"/>
-              </svg>
-              <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", textAlign: "center" }}>
-                <div style={{ fontSize: 22, fontWeight: 700, color: "var(--brown)", lineHeight: 1 }}>
-                  5,463<span style={{ fontSize: 12, color: "var(--brown-3)" }}>万</span>
-                </div>
-                <div style={{ fontSize: 11, color: "var(--brown-3)", letterSpacing: "0.04em" }}>総資産</div>
-              </div>
-            </div>
-
-            {/* legend */}
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {[
-                { color: "#5e7252", label: "オルカン・S&P500（投資信託＋iDeCo）", val: "3,582万", pct: "64.8%" },
-                { color: "#8aaa7a", label: "高配当株＋BND（米国債券ETF）", val: "1,461万", pct: "25.8%" },
-                { color: "#c4674a", label: "ビットコイン（0.1BTC）", val: "120万", pct: "2.1%" },
-                { color: "#d5c3a8", label: "現金", val: "300万", pct: "5.3%" },
-              ].map((item) => (
-                <div key={item.label} style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                  <div style={{ width: 12, height: 12, borderRadius: "50%", background: item.color, flexShrink: 0 }} />
-                  <div style={{ fontSize: 13, color: "var(--brown-2)", flex: 1 }}>{item.label}</div>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: "var(--brown)" }}>{item.val}</div>
-                  <div style={{ fontSize: 11, color: "var(--brown-3)", marginLeft: 4 }}>{item.pct}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* ── DIVIDEND LOG ── */}
-        <div style={{ marginBottom: 56 }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 24 }}>
-            <div>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
-                <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>配当金ログ</div>
-                <div style={{ fontSize: 12, color: "var(--brown-3)" }}>2026年4月1日時点</div>
-              </div>
-              <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Dividend Log</div>
-            </div>
-          </div>
-
-          {/* monthly summary card */}
-          <div style={{ background: "var(--green)", color: "white", borderRadius: 20, padding: "28px 24px", marginBottom: 20, position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", right: -40, top: -40, width: 160, height: 160, borderRadius: "50%", background: "rgba(255,255,255,0.06)" }} />
-            <div style={{ fontSize: 13, opacity: 0.7, letterSpacing: "0.08em", marginBottom: 14 }}>📊 2025年 配当実績（ETF含む）</div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
-              {[
-                { val: "491,485", unit: "円", label: "年間受取配当" },
-                { val: "1,200,000", unit: "円", label: "年間目標（月10万）" },
-                { val: "41%", unit: "", label: "達成率" },
-              ].map((item) => (
-                <div key={item.label}>
-                  <div style={{ fontSize: "clamp(20px,3vw,28px)", fontWeight: 700, lineHeight: 1.1 }}>
-                    {item.val}<span style={{ fontSize: "0.5em", opacity: 0.8, fontWeight: 400 }}>{item.unit}</span>
-                  </div>
-                  <div style={{ fontSize: 11, opacity: 0.6, marginTop: 4, letterSpacing: "0.06em" }}>{item.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* bar chart */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {dividendBars.map((row) => (
-              <div key={row.month} style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <div style={{ fontSize: 11, color: "var(--brown-3)", width: 36, flexShrink: 0, textAlign: "right" }}>{row.month}</div>
-                <div style={{ flex: 1, background: "var(--beige)", borderRadius: 4, height: 20, overflow: "hidden" }}>
-                  <div style={{ width: `${row.pct}%`, height: "100%", background: "var(--green)", borderRadius: 4, display: "flex", alignItems: "center", padding: "0 8px", fontSize: 10, color: "white", fontWeight: 600 }}>
-                    {row.label}
-                  </div>
-                </div>
-                <div style={{ fontSize: 11, color: "var(--brown-2)", width: 48, flexShrink: 0, textAlign: "right" }}>{row.val}</div>
-              </div>
-            ))}
-          </div>
+          <SideFireInteractive />
         </div>
 
         {/* ── STRATEGY ── */}
