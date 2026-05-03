@@ -188,6 +188,37 @@ coverImagePosition: "center"
 
 ---
 
+## 逆に「登録しない（免税事業者を続ける）」メリット・デメリット
+
+判断のためには、登録しない選択肢も並べて考える必要がある。こちらも整理しておく（前提：年間売上が1,000万円以下の場合）。
+
+### メリット
+
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">✅ 免税事業者を続けるメリット</div>
+  <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">①</span><span>消費税の納付義務がない（売上1,000万円以下の場合）</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②</span><span>消費税の確定申告が不要・事務作業がぐっと軽い</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">③</span><span>取引先がOKなら、請求書を税込で出して実質的な手取りが増える(いわゆる益税)</span></div>
+  </div>
+</div>
+
+### デメリット
+
+<div class="data-card" style="background:#fdf2f0;border:1.5px solid #e8c4b8;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#7a3e30;margin-bottom:14px;">⚠️ 免税事業者を続けるデメリット</div>
+  <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#5a3020;">
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#b85a40;font-weight:700;flex-shrink:0;">①</span><span>大手や消費税控除を厳密に処理する取引先から候補に入れてもらえない可能性</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#b85a40;font-weight:700;flex-shrink:0;">②</span><span>取引先から「税抜き(本体価格のみ)で請求してほしい」と言われて、実質的に消費税分の値引きになる可能性</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#b85a40;font-weight:700;flex-shrink:0;">③</span><span>受注前に「インボイス番号は？」と聞かれたとき、毎回説明が必要</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#b85a40;font-weight:700;flex-shrink:0;">④</span><span>業界の「登録するもの」という空気感の中で、なんとなく疎外感がある</span></div>
+  </div>
+</div>
+
+ざっくり言うと、**「お金と手間は確実に少なく済む、でも取引先選びの自由度が下がる可能性がある」** というトレードオフ。**登録するかしないかは、結局このふたつの天秤** ということになる。
+
+---
+
 ## モヤモヤする話——免税事業者で「税込請求」の人もいる
 
 ここからは少しモヤッとする話。
@@ -286,7 +317,8 @@ coverImagePosition: "center"
 <li>受注前に番号確認はされる。未登録で敬遠される空気はあるが、実際に断られた事例は周りでも見ていない</li>
 <li>2割特例で救われている。売上800万円なら納付16万円、終了後は40〜60万円に跳ね上がる可能性</li>
 <li>2026年9月末で2割特例終了。10月以降は簡易課税(第5種50%)か本則課税を選ぶ必要</li>
-<li>メリット：取引チャンス増、安心感、消費税上乗せ請求/デメリット：納付義務、事務負担、適格請求書対応</li>
+<li>登録メリット：取引チャンス増・安心感・消費税上乗せ請求/デメリット：納付義務・事務負担・適格請求書対応</li>
+<li>免税メリット：納税不要・事務軽い・益税の可能性/デメリット：大手から外される可能性・税抜き請求要請・空気感での疎外感</li>
 <li>免税事業者で税込請求している人もいる(益税)。グレーな状態がモヤモヤの原因</li>
 <li>判断軸：大手取引多い→登録、個人客中心→免税OKの可能性、1,000万超え→登録一択、1,000万以下→取引先次第</li>
 <li>取引先に直接聞く・終了後の納税額を試算する・「みんなやってるから」で決めない、の3つが大事</li>
