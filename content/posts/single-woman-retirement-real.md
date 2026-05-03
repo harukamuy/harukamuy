@@ -156,6 +156,8 @@ coverImagePosition: "center"
 
 今34歳のわたしが65歳になるのは31年後。年2%のインフレが続いた場合、今と同じ暮らしをするのに必要な金額は約 **1.85倍** になる。
 
+なお、年2%という数字は **日本銀行が物価安定の目標として掲げている水準**。実際にはこれより高い年も低い年もあるけれど、まずは政策上のベースラインを基準に試算しておくのがフェアだと思っている。長期で見ると、2%でも積み重なってかなりのインパクトになる。
+
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 31年後の必要生活費（インフレ年2%）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
