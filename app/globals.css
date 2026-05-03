@@ -703,20 +703,21 @@ body::before {
 }
 
 /* CTAブロック（記事末尾の大きい緑ボックス用） */
+/* Tailwind prose のテキスト色を上書きするため !important で固定 */
 .aff-cta {
   position: relative;
   background: var(--green, #6f8a5c);
   border-radius: 20px;
   padding: 28px 24px;
-  color: white;
+  color: white !important;
   margin: 36px 0;
   text-align: center;
 }
 
 .aff-pr-badge-light {
   background: rgba(255, 255, 255, 0.18);
-  color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .aff-cta-title {
@@ -725,14 +726,15 @@ body::before {
   margin-bottom: 10px;
   font-family: var(--font-serif);
   letter-spacing: 0.02em;
+  color: white !important;
 }
 
 .aff-cta-desc {
   font-size: 13px;
-  opacity: 0.88;
   line-height: 1.85;
   margin: 0 auto 18px;
   max-width: 540px;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .aff-cta-btn {
