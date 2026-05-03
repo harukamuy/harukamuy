@@ -366,6 +366,16 @@ coverImagePosition: "center"
 
 ---
 
+### 📚 配当金生活の前提となるお金の知識を1冊で
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+image: /images/books/okane-no-daigaku.jpg
+amazon: 4023318787
+rakuten: rb:18041936
+description: 「貯める・稼ぐ・増やす・守る・使う」の5つの力を1冊で。配当金で生活を支えるための土台がここに詰まっています。
+:::
+
 :::cta
 title: SBI証券 — あずきのメイン証券口座
 description: 高配当株・インデックス投資・iDeCoすべてをSBI証券で管理。手数料無料・NISA完全対応。コーヒー5杯分から始めた配当金が、今では生活費の一部になっています。

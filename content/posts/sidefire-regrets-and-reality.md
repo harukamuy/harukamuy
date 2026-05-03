@@ -291,3 +291,13 @@ coverImagePosition: "center"
 <li>サイドFIREは「選べる自由」を広げる手段。デメリットを知った上で準備して踏み出せば、後悔はしない</li>
 </ul>
 </div>
+
+### 📚 後悔しないFIREのための前提知識
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+image: /images/books/okane-no-daigaku.jpg
+amazon: 4023318787
+rakuten: rb:18041936
+description: FIREを目指すなら「お金との付き合い方」をまず固める。準備不足で後悔しないための土台が、この1冊に詰まっています。
+:::

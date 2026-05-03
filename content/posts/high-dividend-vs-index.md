@@ -213,3 +213,13 @@ coverImagePosition: "center"
 <li>インデックスは未来のための資産形成、高配当株は今を充実させるお金。目的を分けることで両方無理なく続けられる</li>
 </ul>
 </div>
+
+### 📚 投資の大枠を理解するために
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+image: /images/books/okane-no-daigaku.jpg
+amazon: 4023318787
+rakuten: rb:18041936
+description: インデックス・高配当株の違いも含め、お金の5つの力を網羅的に学べる入門書。投資の全体像をつかむのに最適。
+:::

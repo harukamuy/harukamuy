@@ -196,3 +196,13 @@ coverImagePosition: "center"
 <li>資産が「土台」になって、その上でフリーランスとして働く——それがわたしのサイドFIREのかたち</li>
 </ul>
 </div>
+
+### 📚 「いくら必要か」を考える前に
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+image: /images/books/okane-no-daigaku.jpg
+amazon: 4023318787
+rakuten: rb:18041936
+description: 資産形成の前提となるお金の知識を網羅。「いくら必要か」を計算する前に、まずお金の5つの力を学んでおきたい1冊。
+:::
