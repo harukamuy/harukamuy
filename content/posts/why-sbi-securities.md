@@ -281,9 +281,9 @@ coverImagePosition: "center"
 
 ---
 
-<div style="background:var(--green);border-radius:20px;padding:28px 24px;color:white;margin:36px 0;text-align:center;">
-  <div style="font-size:12px;opacity:0.75;margin-bottom:8px;letter-spacing:0.06em;">📌 アフィリエイト</div>
-  <div style="font-size:17px;font-weight:700;margin-bottom:10px;">SBI証券 — あずきのメイン証券口座</div>
-  <p style="font-size:13px;opacity:0.85;line-height:1.8;margin-bottom:18px;">NISA・高配当株・米国債券ETF・iDeCoすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。</p>
-  <a href="#" style="display:inline-block;background:white;color:var(--green);padding:11px 28px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:0.06em;">SBI証券の公式サイトを見る →</a>
-</div>
+:::cta
+title: SBI証券 — あずきのメイン証券口座
+description: NISA・高配当株・米国債券ETF・iDeCoすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。
+button: SBI証券の公式サイトを見る →
+url: https://go.sbisec.co.jp/account/sogoflow_01.html
+:::
