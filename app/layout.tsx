@@ -71,6 +71,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="4CGA_h1VKtrpeC4f7HWzGs3QV5rX1fD5_ZQNfgNZ2KQ" />
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3731608068434256"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
