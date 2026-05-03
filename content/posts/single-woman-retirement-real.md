@@ -314,7 +314,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      そう。見えると、こわくないんだよね。
+      そう。見えると、計画的に備えることができるからね。
     </div>
   </div>
 </div>
