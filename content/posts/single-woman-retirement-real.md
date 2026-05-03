@@ -122,7 +122,33 @@ coverImagePosition: "center"
 
 ここで共有したいのは具体的な金額の正解ではなく、**「こういう前提で計算するとこうなる」という考え方の流れ**。読み終わったあとに、自分の数字でぜひ計算し直してみてほしい。
 
-月37.2万円。ここで本番。次に必要なのは **「インフレ後の必要生活費」と比べる** こと。
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      じゃあ、つき37まんえんで、たりるの？🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      それを次に確かめるんだよ。「未来の生活費がいくらかかるか」と比べないと、足りるかどうかは見えないからね。
+    </div>
+  </div>
+</div>
+
+</div>
 
 ---
 
