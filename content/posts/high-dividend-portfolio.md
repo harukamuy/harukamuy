@@ -267,8 +267,6 @@ button: SBI証券の公式サイトを見る →
 url: https://go.sbisec.co.jp/account/sogoflow_01.html
 :::
 
----
-
 ### 📚 関連書籍
 
 :::product
