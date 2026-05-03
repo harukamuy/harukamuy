@@ -107,14 +107,24 @@ coverImagePosition: "center"
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 65歳〜90歳の取り崩し可能額</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">資産から</span><span>月<strong>約26.7万円</strong>（年約320万円）</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">年金</span><span>月15万円（仮）</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">合計</span><span>月<strong>約41.7万円</strong></span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">年金</span><span>月<strong>10万円</strong>（厳しめ設定・後述）</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">合計</span><span>月<strong>約36.7万円</strong></span></div>
   </div>
 </div>
 
-月41.7万円。ここだけ見ると「えっ、けっこう余裕あるじゃん」と思う。実際わたしも計算しながら一瞬そう思った。
+### 年金を月10万円にしたのはなぜか
 
-ただし、ここで止まると判断を誤る。次に必要なのは **「インフレ後の必要生活費」と比べる** こと。
+年金は仮に **月10万円** で設定した。これは女性の厚生年金受給額の平均（約**10.3万〜10.7万円**）よりわずかに厳しめの数字。
+
+「平均よりちょっと低めに見ておく」のがこの試算のスタンスだ。理由は、
+
+- 今後の年金制度改革で支給額が下がる可能性
+- フリーランス期間が長い女性は厚生年金の積み増し分が少なくなる
+- 「平均」を信じすぎると下振れしたときに困る
+
+老後の試算は **「やや厳しめの数字で組んで、上振れしたらラッキー」** という設計のほうが安心だと思っている。
+
+月36.7万円。ここで本番。次に必要なのは **「インフレ後の必要生活費」と比べる** こと。
 
 ---
 
@@ -136,20 +146,20 @@ coverImagePosition: "center"
 
 ---
 
-## 月41.7万円 vs 月36.9万円——「ギリギリ足りる」の正体
+## 月36.7万円 vs 月36.9万円——「ぴったり、でも足りない」の現実
 
 数字を並べてみよう。
 
 <div class="data-card" style="background:#fff8e8;border:1.5px solid #e8d4a0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#7a5a20;margin-bottom:14px;">⚖️ 65歳時点の収支</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#5a4520;">
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a8842e;font-weight:700;flex-shrink:0;">入る</span><span>月<strong>41.7万円</strong>（取り崩し26.7万＋年金15万）</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a8842e;font-weight:700;flex-shrink:0;">入る</span><span>月<strong>36.7万円</strong>（取り崩し26.7万＋年金10万）</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a8842e;font-weight:700;flex-shrink:0;">出る</span><span>月<strong>36.9万円</strong>（インフレ後の生活費＋α）</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a8842e;font-weight:700;flex-shrink:0;">差額</span><span>月<strong>約4.8万円</strong>のバッファ</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a8842e;font-weight:700;flex-shrink:0;">差額</span><span>月<strong>マイナス0.2万円</strong>（ほぼトントン、わずかに足りない）</span></div>
   </div>
 </div>
 
-差額は月4.8万円。ありはする。でも、**ここから先が「ギリギリ」と言わざるを得ない理由**だ。
+収支はほぼぴったり、しかも **わずかに足りない**。バッファはゼロどころかマイナスだ。これでも「数字上は成り立つ」けれど、現実にはこの試算が **崩れる方向にしか動かない**——次のセクションで書く。
 
 ---
 
@@ -166,9 +176,9 @@ coverImagePosition: "center"
   </div>
 </div>
 
-特に **②長生き** は独身女性にとって他人事じゃない。女性の平均寿命は約88歳、4人に1人は95歳まで生きる時代。25年想定で組んだプランが、30年・35年に伸びる可能性がある。資金が尽きた後は年金月15万円だけで暮らすことになるが、それは決して余裕のある暮らしではない。
+特に **②長生き** は独身女性にとって他人事じゃない。女性の平均寿命は約88歳、4人に1人は95歳まで生きる時代。25年想定で組んだプランが、30年・35年に伸びる可能性がある。資金が尽きた後は年金月10万円だけで暮らすことになるが、それは決して余裕のある暮らしではない。
 
-そして **①運用未達** も大きい。年4%は長期平均としては現実的だが、リーマン級の暴落直後に取り崩しを始めると、回復前に資産を切り崩すことになり、想定より早く尽きてしまう（シーケンスリスク）。これが起きると、月4.8万円のバッファは簡単に消える。
+そして **①運用未達** も大きい。年4%は長期平均としては現実的だが、リーマン級の暴落直後に取り崩しを始めると、回復前に資産を切り崩すことになり、想定より早く尽きてしまう（シーケンスリスク）。元々の収支がほぼトントンなので、ここが少しでも崩れると一気に苦しくなる。
 
 ---
 
@@ -214,11 +224,11 @@ coverImagePosition: "center"
 
 ---
 
-## 「ギリギリ」を「余裕」に変えるために積み上げる
+## 「足りない」を「余裕」に変えるために積み上げる
 
 もう一度、最初の問いに戻ろう。**新NISA1,800万円を満額使えば、独身女性の老後は安心か？**
 
-机上の計算では「ギリギリ足りる」が答え。でも、ギリギリは安心じゃない。**老後の30年を「ギリギリ」で過ごすのは、心が削れる暮らし方**だと思う。
+机上の計算では「ぴったり、でもわずかに足りない」が答え。バッファゼロのプランは安心じゃない。**老後の30年を「収支トントン」で過ごすのは、心が削れる暮らし方**だと思う。
 
 だからわたしは、1,800万円というラインを「最低限の合格点」として捉え、その上にもう少しバッファを積み上げたいと思っている。具体的には、
 
@@ -251,7 +261,7 @@ coverImagePosition: "center"
   </div>
 </div>
 
-数字を出すと、不安は **「課題」** に変わる。1,800万円で足りるか足りないかも、答えは人によって違う。わたしの場合は「ギリギリ足りる、だからもう少し積み上げたい」が結論。あなたにとってのラインは、計算してみないと見えてこない。
+数字を出すと、不安は **「課題」** に変わる。1,800万円で足りるか足りないかも、答えは人によって違う。わたしの場合は「ぴったりだけど足りない、だからもう少し積み上げたい」が結論。あなたにとってのラインは、計算してみないと見えてこない。
 
 <div class="conv-wrap">
 
@@ -288,10 +298,10 @@ coverImagePosition: "center"
 <ul class="summary-list">
 <li>独身女性の老後は「長生き・年金が薄い・収入は一人分」の3条件で世間の目安より厳しい</li>
 <li>30歳〜48歳でNISA1,800万円を満額積立、年利4%で65歳まで運用すると約5,000万円</li>
-<li>65歳から90歳まで運用しながら取り崩すと月約26.7万円。年金月15万円と合わせて月41.7万円</li>
-<li>インフレ後の必要生活費は月36.9万円（月20万円ベース＋年2%×31年）。差額は月4.8万円のバッファ</li>
-<li>ただし「運用未達・長生き・介護費」の3リスクで、この4.8万円は簡単に消える</li>
-<li>結論：1,800万円は「ギリギリ足りる、でも余裕はない」が現実。だから50歳までに資産1億・年配当200万円を目指している</li>
+<li>65歳から90歳まで運用しながら取り崩すと月約26.7万円。年金月10万円（厳しめ設定）と合わせて月36.7万円</li>
+<li>インフレ後の必要生活費は月36.9万円（月20万円ベース＋年2%×31年）。差額はマイナス0.2万円で、ほぼトントンだがわずかに足りない</li>
+<li>さらに「運用未達・長生き・介護費」の3リスクで、収支は崩れる方向にしか動かない</li>
+<li>結論：1,800万円は「ぴったり、でも足りない」が現実。だから50歳までに資産1億・年配当200万円を目指している</li>
 <li>世間の数字を信じる前に、自分の前提で必ず計算する。不安は「対処できる課題」に変わる</li>
 </ul>
 </div>
