@@ -21,6 +21,10 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_AMAZON_TAG: ${{ secrets.NEXT_PUBLIC_AMAZON_TAG }}
+          NEXT_PUBLIC_RAKUTEN_AFF_ID: ${{ secrets.NEXT_PUBLIC_RAKUTEN_AFF_ID }}
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

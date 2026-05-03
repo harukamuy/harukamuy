@@ -514,3 +514,266 @@ body::before {
     min-height: 0 !important;
   }
 }
+
+/* ==========================================================================
+   アフィリエイト商品カード / サービスカード
+   ========================================================================== */
+.aff-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 14px;
+  background: var(--white, #fdfaf5);
+  border: 1.5px solid var(--beige);
+  border-radius: 14px;
+  padding: 14px;
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+.aff-pr-badge {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 10px;
+  color: var(--brown-3);
+  background: var(--ivory-2, #f3ebdc);
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.06em;
+  z-index: 1;
+}
+
+.aff-card-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ivory-2, #f3ebdc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.aff-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aff-card-img-placeholder {
+  color: var(--brown-3);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.aff-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding-right: 4px;
+}
+
+.aff-card-title {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brown);
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.aff-card-desc {
+  font-size: 11px;
+  color: var(--brown-2);
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.aff-card-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.aff-btn {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  text-decoration: none !important;
+  transition: opacity 0.15s, transform 0.15s;
+  letter-spacing: 0.04em;
+}
+
+.aff-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.aff-btn-amazon {
+  background: #ff9900;
+  color: #1a1a1a !important;
+  border: 1px solid #e88a00;
+}
+
+.aff-btn-rakuten {
+  background: #bf0000;
+  color: #ffffff !important;
+  border: 1px solid #a30000;
+}
+
+/* サービスカード（横長） */
+.aff-service {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white, #fdfaf5);
+  border: 1.5px solid var(--beige);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 20px 0;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.aff-service:hover {
+  border-color: var(--beige-2);
+  transform: translateY(-1px);
+}
+
+.aff-service-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--ivory-2, #f3ebdc);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.aff-service-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.aff-service-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brown);
+  line-height: 1.4;
+}
+
+.aff-service-sub {
+  font-size: 11px;
+  color: var(--brown-3);
+  margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .aff-card {
+    grid-template-columns: 80px 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+  .aff-card-img {
+    width: 80px;
+    height: 80px;
+  }
+  .aff-card-title {
+    font-size: 13px;
+  }
+  .aff-card-desc {
+    font-size: 10.5px;
+    margin-bottom: 7px;
+  }
+  .aff-btn {
+    font-size: 10.5px;
+    padding: 6px 12px;
+  }
+}
+
+/* CTAブロック（記事末尾の大きい緑ボックス用） */
+.aff-cta {
+  position: relative;
+  background: var(--green, #6f8a5c);
+  border-radius: 20px;
+  padding: 28px 24px;
+  color: white;
+  margin: 36px 0;
+  text-align: center;
+}
+
+.aff-pr-badge-light {
+  background: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aff-cta-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: var(--font-serif);
+  letter-spacing: 0.02em;
+}
+
+.aff-cta-desc {
+  font-size: 13px;
+  opacity: 0.88;
+  line-height: 1.85;
+  margin: 0 auto 18px;
+  max-width: 540px;
+}
+
+.aff-cta-btn {
+  display: inline-block;
+  background: white;
+  color: var(--green, #6f8a5c) !important;
+  padding: 11px 28px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+  letter-spacing: 0.06em;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.aff-cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.aff-cta-placeholder {
+  font-size: 10px;
+  opacity: 0.6;
+  margin-top: 10px;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 600px) {
+  .aff-cta {
+    padding: 22px 18px;
+    margin: 28px 0;
+  }
+  .aff-cta-title {
+    font-size: 15px;
+  }
+  .aff-cta-desc {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .aff-cta-btn {
+    font-size: 12px;
+    padding: 10px 22px;
+  }
+}

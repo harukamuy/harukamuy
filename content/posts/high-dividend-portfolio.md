@@ -260,9 +260,21 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
 
 ---
 
-<div style="background:var(--green);border-radius:20px;padding:28px 24px;color:white;margin:36px 0;text-align:center;">
-  <div style="font-size:12px;opacity:0.75;margin-bottom:8px;letter-spacing:0.06em;">📌 アフィリエイト</div>
-  <div style="font-size:17px;font-weight:700;margin-bottom:10px;">SBI証券 — あずきのメイン証券口座</div>
-  <p style="font-size:13px;opacity:0.85;line-height:1.8;margin-bottom:18px;">高配当株・S&P500・BND・iDeCoすべてをSBI証券で管理しています。手数料無料・NISA完全対応。投資を始めるならまずここから。</p>
-  <a href="#" style="display:inline-block;background:white;color:var(--green);padding:11px 28px;border-radius:30px;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:0.06em;">SBI証券の公式サイトを見る →</a>
-</div>
+:::cta
+title: SBI証券 — あずきのメイン証券口座
+description: 高配当株・S&P500・BND・iDeCoすべてをSBI証券で管理しています。手数料無料・NISA完全対応。投資を始めるならまずここから。
+button: SBI証券の公式サイトを見る →
+url: https://go.sbisec.co.jp/account/sogoflow_01.html
+:::
+
+---
+
+### 📚 関連書籍
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+image: /images/books/okane-no-daigaku.jpg
+amazon: 4023318787
+rakuten: rb:18041936
+description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力をまるごと学べる1冊。サイドFIREの土台作りに。
+:::
