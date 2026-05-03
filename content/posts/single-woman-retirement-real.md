@@ -241,7 +241,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      冬は寒いよ。でもね、空気がきれいで、空がひろくて、好きな場所だよ。
+      冬は寒いよ。でもね、空気がきれいで、空がひろくて、ごまもちもきっと気にいると思うよ。
     </div>
   </div>
 </div>
