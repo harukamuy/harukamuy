@@ -170,10 +170,12 @@ function preprocessAffiliate(markdown: string): string {
     /^:::(product|service|cta)\s*\n([\s\S]*?)\n:::\s*$/gm,
     (_match, kind: string, body: string) => {
       const fields = parseBlock(body);
-      if (kind === "product") return renderProductCard(fields);
-      if (kind === "service") return renderServiceCard(fields);
-      if (kind === "cta") return renderCtaCard(fields);
-      return "";
+      let html = "";
+      if (kind === "product") html = renderProductCard(fields);
+      else if (kind === "service") html = renderServiceCard(fields);
+      else if (kind === "cta") html = renderCtaCard(fields);
+      // markdown のブロック判定が崩れないよう前後に空行を保証
+      return `\n\n${html}\n\n`;
     }
   );
 }
