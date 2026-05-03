@@ -231,7 +231,7 @@ coverImagePosition: "center"
   </div>
 </div>
 
-NISAだけに頼らず、高配当株で月々のキャッシュフローも作っていく——という二本立てが、わたしの戦略の中心だ。詳しくは[配当金ロードマップ](/blog/freelance-pension-future)に書いている。
+インデックスの取り崩しだけに頼らず、高配当株で月々のキャッシュフローも作っていく——という二本立てが、わたしの戦略の中心だ。詳しくは[配当金ロードマップ](/blog/freelance-pension-future)に書いている。
 
 ---
 
