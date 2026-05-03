@@ -51,12 +51,14 @@ coverImagePosition: "center"
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 独身女性の老後が厳しい3つの理由</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">①長生き</span><span>女性の平均寿命は約88歳、4人に1人が95歳まで生きる時代</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②年金が薄い</span><span>フリーランスは厚生年金がない。会社員女性も平均賃金が男性より低く受給額が少ない</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">③収入は世帯ではなく一人</span><span>夫婦世帯のように年金を2口足すことができない</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②年金が薄い</span><span>女性は平均賃金が男性より低いため、厚生年金の受給額も少ない</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">③年金は1人分のみ</span><span>夫婦は2人分受給できるが、独身は1人分。生活費は夫婦の約7割なのに年金は半分しかない</span></div>
   </div>
 </div>
 
-世間でよく聞く「老後2,000万円問題」は、夫婦世帯の試算がベース。独身女性、しかもフリーランスという条件でみると、必要額のスタートラインが違う。1,800万円という数字を「みんなが言っているから安心」と受け取るのは、ちょっと危ない、というのがわたしの感覚だ。
+特に③について補足しておくと、世間でよく聞く **「老後2,000万円問題」は夫婦世帯モデル** で、年金を月22万円（夫婦合算）もらえる前提で計算されている。一方、独身の場合は年金1人分（月10〜15万円程度）だけ。独身の生活費は夫婦の約7割で済むけれど、年金は半分しかもらえない——この **「収入の落ち方が支出の落ち方より大きい」** のが、独身の老後が構造的に厳しい一番の理由だ。
+
+つまり「老後2,000万円問題」の数字をそのまま当てはめても、独身女性の不足額はもっと大きくなる可能性が高い。1,800万円という数字を「みんなが言っているから安心」と受け取るのは、ちょっと危ない、というのがわたしの感覚だ。
 
 ---
 
