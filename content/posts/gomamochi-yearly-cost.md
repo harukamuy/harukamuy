@@ -1,6 +1,6 @@
 ---
 title: "ごまもちの年間コスト全公開——3年で200万円超、それでも安いと思える理由"
-date: "2026-05-04"
+date: "2026-04-15"
 category: "gomazochi"
 excerpt: "ボストンテリアのごまもちと暮らして3年。月額・年額・初期費用・累計まで全部並べてみました。月13,500円の固定費に乗らない出費、これからの高齢期に向けた備え、そして「かわいい」ゆえに止まらない楽しい浪費まで、正直に書きます。"
 coverImage: "/images/20260504_3.png"
@@ -35,7 +35,7 @@ coverImagePosition: "center"
 
 </div>
 
-ごまもちと暮らして3年が経った。ボストンテリアの男の子、小さくてぽっちゃり。人懐っこくて誰のことも疑わない、ちょっとおバカでとにかくかわいいやつだ。
+ごまもちと暮らしてもうすぐ3年。ボストンテリアの男の子、小さくてぽっちゃり。人懐っこくて誰のことも疑わない、ちょっとおバカでとにかくかわいいやつだ。
 
 ペットを飼うことを考えている人にとって、いちばん気になるのはお金の話だと思う。前に [ごまもちの健康管理——毎月かかる費用と、病院との付き合い方](/blog/gomamochi-health-cost) で月額の費用は書いた。今回はそれを **年間ベース・累計ベース・将来見込み** まで広げて、全部公開する。
 
@@ -270,10 +270,10 @@ coverImagePosition: "center"
 
 ## 6. 3年累計スナップショット
 
-ここまでの数字を合算すると、お迎えから今日(2026年5月)までの **ちょうど丸3年のスナップショット** が出せる。
+ここまでの数字を合算すると、お迎えからのおよそ3年分の **累計スナップショット** が出せる。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
-  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 3年間の累計コスト(2023年5月〜2026年5月)</div>
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 約3年間の累計コスト(2023年5月〜現在)</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
       <span>初期費用(生体価格除く)</span><span>約107,000円</span>

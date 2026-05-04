@@ -1,6 +1,6 @@
 ---
 title: "投資を始めた2018年——5万円の成功体験が人生を変えた話"
-date: "2026-04-05"
+date: "2026-04-03"
 category: "sidefire"
 excerpt: "友人の一言がきっかけで始めたFOLIOのテーマ投資。5万円が10万円になった成功体験から、ロボ投資を経てeMAXIS Slim S&P500に辿り着くまでのリアルなストーリー。"
 coverImage: "/images/20260424.png"
