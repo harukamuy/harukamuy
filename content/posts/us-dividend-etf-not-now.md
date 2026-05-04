@@ -1,6 +1,6 @@
 ---
 title: "米国高配当ETFを今は買わない理由——VYM・SPYD・HDVは優良。でも今じゃない"
-date: "2026-05-06"
+date: "2026-05-05"
 category: "sidefire"
 excerpt: "VYM・SPYD・HDVは魅力的なETF。バンガードのファンとしてVYMは特に狙っている。それでも今は買わない理由を、価格・為替・税制・NISA・役割分担の5つの観点から正直に書きます。"
 coverImage: "/images/20260502_3.png"
