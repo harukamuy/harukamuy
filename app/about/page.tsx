@@ -81,7 +81,7 @@ export default function AboutPage() {
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>ごまもち</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Gomamochi, Boston Terrier</div>
             <p style={{ fontSize: 13, color: "var(--brown-2)", lineHeight: 1.85, textAlign: "left" }}>
-              2023年生まれ、3歳。わが家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線であずきちゃんに質問する役を担当。
+              2023年生まれ、もうすぐ3歳。わが家の末っ子ボストンテリア。表情豊かで食いしん坊。散歩とおやつが大好き。ブログでは読者目線であずきちゃんに質問する役を担当。
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: 12, justifyContent: "center" }}>
               {["ボストンテリア", "食いしん坊", "散歩大好き", "質問担当🐾"].map((tag) => (
