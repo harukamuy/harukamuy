@@ -223,19 +223,39 @@ coverImagePosition: "center"
 
 ## モヤモヤする話——免税事業者で「税込請求」の人もいる
 
-ここからは少しモヤッとする話。
+知り合いのカメラマンに、**免税事業者なのに請求書は『税込』で出している人** がいる。本人は消費税を納めないので、その分がそのまま手取りになる（いわゆる「益税」）。
 
-知り合いのカメラマンに、**インボイス未登録の免税事業者なのに、請求書は『税込』で出している人** がいる。これはつまり、本人が消費税を納めなくていいのに、消費税分を上乗せして受け取って、そのまま懐に入れている状態（いわゆる「益税」と呼ばれる）。
+正直、これを聞いたときは結構モヤモヤした。**こちらは登録して消費税を払っているのに、同じ売上で手取りに差が出る** からだ。
 
-正直、これを聞いたとき結構モヤモヤした。**こちらは登録して消費税を払っているのに、その人は同じ売上から余計に手取りを得ている** ことになるから。
+ただ、もし「免税で税込請求」が全取引先でOKなら、ほとんどのフリーランスがそうしているはず。実際にはそうなっていないということは、**取引先側で何らかのフィルターはある** のだろう。ただ、その圧力の強さが見えない——これが3年目の最大のモヤモヤポイントだ。
 
-ただ、ここで考えたいのは、
+<div class="conv-wrap">
 
-- もし「免税事業者で税込請求」がどの取引先でもOKなら、**ほとんどのフリーランスがそうする** はず
-- でも実際にはそうなっていない＝**取引先側で何らかの圧力やフィルターはあると推測**
-- ただし「実際に断られた事例」を聞いたことがないので、**圧力の強さがわからない**
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      おなじしごとなのに、てどりがちがうの？🐾
+    </div>
+  </div>
+</div>
 
-このグレーな状態が **インボイス制度3年目の最大のモヤモヤポイント** だと思っている。「みんなが登録しているから自分も」ではなく、**「自分の取引先と取引内容に照らして、どっちが得か」** を冷静に判断できる人が、結果的に正解に近づくはずだ。
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      そういうこと。だからモヤモヤするんだよね。
+    </div>
+  </div>
+</div>
+
+</div>
 
 ---
 
