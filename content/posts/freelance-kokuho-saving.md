@@ -317,3 +317,12 @@ coverImagePosition: "center"
 <li>まずは自分でやれることから。フリーランスの先輩・AI・コミュニティに相談しながら、青色申告と経費計上を着実にやるのが近道</li>
 </ul>
 </div>
+
+---
+
+:::cta
+title: freee 会計 — 青色申告65万円控除をラクに取る
+description: 国保を抑える土台は「青色申告＋家事按分＋経費の積み上げ」で課税所得を適正に下げること。freeeなら複式簿記もe-Tax提出も画面に沿って進められるので、65万円控除のハードルがぐっと下がります。
+button: freeeを無料で試してみる →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::

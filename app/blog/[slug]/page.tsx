@@ -371,13 +371,15 @@ export default async function PostPage({ params }: Props) {
             🔗 おすすめサービス
           </div>
           {[
-            { icon: "📈", name: "SBI証券", sub: "メイン証券口座" },
-            { icon: "🌏", name: "eMAXIS Slim 全世界", sub: "積立NISAで5年愛用" },
-            { icon: "📊", name: "freee 確定申告", sub: "フリーランス必須ツール" },
+            { icon: "📈", name: "SBI証券", sub: "メイン証券口座", href: "https://go.sbisec.co.jp/account/sogoflow_01.html", rel: "noopener" },
+            { icon: "🌏", name: "eMAXIS Slim 全世界", sub: "積立NISAで5年愛用", href: "#", rel: "" },
+            { icon: "📊", name: "freee 確定申告", sub: "フリーランス必須ツール", href: "https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y", rel: "nofollow sponsored noopener" },
           ].map((item, i, arr) => (
             <a
               key={item.name}
-              href="#"
+              href={item.href}
+              rel={item.rel || undefined}
+              target={item.rel ? "_blank" : undefined}
               style={{
                 display: "flex",
                 gap: 10,
@@ -410,6 +412,9 @@ export default async function PostPage({ params }: Props) {
         </div>
       </aside>
     </div>
+    {/* A8 tracking pixel */}
+    {/* eslint-disable-next-line @next/next/no-img-element */}
+    <img width={1} height={1} src="https://www12.a8.net/0.gif?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" alt="" style={{ display: "block", border: 0 }} />
     </>
   );
 }
