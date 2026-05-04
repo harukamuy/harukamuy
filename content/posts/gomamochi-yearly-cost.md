@@ -270,10 +270,10 @@ coverImagePosition: "center"
 
 ## 6. 3年累計スナップショット
 
-ここまでの数字を合算すると、お迎えから今日(2026年7月)までの **3年累計のスナップショット** が出せる。
+ここまでの数字を合算すると、お迎えから今日(2026年5月)までの **ちょうど丸3年のスナップショット** が出せる。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
-  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 3年間の累計コスト(2023年7月〜2026年7月)</div>
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 3年間の累計コスト(2023年5月〜2026年5月)</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
       <span>初期費用(生体価格除く)</span><span>約107,000円</span>
