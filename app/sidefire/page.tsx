@@ -154,7 +154,7 @@ export default function SideFirePage() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
 
             {/* SBI wide */}
-            <a href="#" style={{ gridColumn: "1 / -1", background: "#f4efe8", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", display: "grid", gridTemplateColumns: "auto 1fr", gap: 18, alignItems: "center" }}>
+            <a href="https://go.sbisec.co.jp/account/sogoflow_01.html" rel="noopener" target="_blank" style={{ gridColumn: "1 / -1", background: "#f4efe8", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", display: "grid", gridTemplateColumns: "auto 1fr", gap: 18, alignItems: "center" }}>
               <div style={{ width: 52, height: 52, background: "var(--beige)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
                   <rect x="3" y="14" width="5" height="8" rx="1" fill="#5e7252"/>

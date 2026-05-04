@@ -256,7 +256,7 @@ export default function Home() {
         </div>
         <div className="affiliate-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
           {/* SBI 証券 - wide */}
-          <a href="#" className="affiliate-wide" style={{
+          <a href="https://go.sbisec.co.jp/account/sogoflow_01.html" rel="noopener" target="_blank" className="affiliate-wide" style={{
             gridColumn: "1 / -1",
             borderRadius: "var(--r)",
             padding: "24px 26px",
