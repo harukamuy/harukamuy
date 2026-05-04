@@ -324,7 +324,7 @@ export default function Home() {
           }}>
             <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>フリーランス向け</div>
             <div style={{ fontFamily: "var(--font-serif)", fontSize: 15, fontWeight: 600, marginBottom: 4 }}>freee 確定申告</div>
-            <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>フリーランス3年目から導入。経費管理が劇的に楽になりました。</div>
+            <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>フリーランス1年目から導入。経費管理が劇的に楽になりました。</div>
             <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>詳細を見る →</div>
           </a>
         </div>

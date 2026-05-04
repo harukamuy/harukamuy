@@ -182,7 +182,7 @@ export default function SideFirePage() {
             <a href="https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" rel="nofollow" target="_blank" style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 18px", textDecoration: "none", color: "inherit", display: "block" }}>
               <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 4, letterSpacing: "0.08em", display: "inline-block", marginBottom: 5 }}>フリーランス向け</div>
               <div style={{ fontSize: 14, fontWeight: 700, color: "var(--brown)", marginBottom: 3 }}>freee 確定申告</div>
-              <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>経費管理から確定申告まで。3年目から愛用中。</div>
+              <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>経費管理から確定申告まで。1年目から愛用中。</div>
               <div style={{ marginTop: 8, fontSize: 11, color: "var(--terra)", fontWeight: 500 }}>詳細を見る →</div>
             </a>
 
