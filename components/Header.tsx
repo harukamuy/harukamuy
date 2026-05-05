@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navLinks = [
@@ -10,6 +11,14 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <header style={{
@@ -29,7 +38,7 @@ export default function Header() {
         justifyContent: "space-between",
         height: 62,
       }}>
-        <Link href="/" style={{
+        <Link href="/" onClick={handleLogoClick} style={{
           fontFamily: "var(--font-serif)",
           fontWeight: 600,
           fontSize: 21,
