@@ -124,10 +124,14 @@ export default function GomamochiPage() {
             <div style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
               <img src="/images/gomamochi-stand.png" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
             </div>
-            {photoColors.slice(2).map((color, i) => (
-              <div key={i} style={{ aspectRatio: "1", borderRadius: 14, background: color, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
-                <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 8px,rgba(255,255,255,.3) 8px,rgba(255,255,255,.3) 9px)" }} />
-                <span style={{ fontFamily: "var(--font-hand)", fontSize: 12, color: "rgba(255,255,255,.85)", zIndex: 1 }}>写真</span>
+            {[
+              { src: "/images/20260423_3.png", alt: "ごまもちをお迎えした日", pos: "top center" },
+              { src: "/images/20260423_8.png", alt: "ごまもちとの1日", pos: "center" },
+              { src: "/images/20260425_3.png", alt: "ごまもちの健康管理", pos: "center" },
+              { src: "/images/20260504_3.png", alt: "ごまもちの年間コスト", pos: "center" },
+            ].map((p) => (
+              <div key={p.src} style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
+                <img src={p.src} alt={p.alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: p.pos }} />
               </div>
             ))}
           </div>
