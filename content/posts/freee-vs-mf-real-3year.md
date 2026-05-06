@@ -261,3 +261,12 @@ freeeのスタンダードプランは **インボイス制度・消費税申告
 これから会計ソフトを選ぶ人、いま乗り換えを迷っている人にとって、何かの参考になればうれしい。
 
 関連記事:[freeeで青色申告した流れ](/blog/freelance-tax-return-freee) / [インボイス制度・3年目のリアル](/blog/invoice-freelance-3year-real) / [フリーランスのお金の管理](/blog/freelance-money-management)
+
+---
+
+:::cta
+title: freee 会計 — 3年使い続けている定番ソフト
+description: ネット銀行・クレジットカードと連携して取引を自動取込。青色申告65万円控除も消費税申告（2割特例）もこれ1つで完結します。マネーフォワードと比較しても乗り換えていない、フリーランス1年目から愛用中の会計ソフトです。
+button: freeeを無料で試してみる →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
