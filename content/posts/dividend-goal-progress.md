@@ -380,5 +380,5 @@ description: 「貯める・稼ぐ・増やす・守る・使う」の5つの力
 title: SBI証券 — あずきのメイン証券口座
 description: 高配当株・インデックス投資・iDeCoすべてをSBI証券で管理。手数料無料・NISA完全対応。コーヒー5杯分から始めた配当金が、今では生活費の一部になっています。
 button: SBI証券の公式サイトを見る →
-url: https://go.sbisec.co.jp/account/sogoflow_01.html
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 :::

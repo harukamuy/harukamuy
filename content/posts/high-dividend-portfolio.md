@@ -264,7 +264,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
 title: SBI証券 — あずきのメイン証券口座
 description: 高配当株・S&P500・BND・iDeCoすべてをSBI証券で管理しています。手数料無料・NISA完全対応。投資を始めるならまずここから。
 button: SBI証券の公式サイトを見る →
-url: https://go.sbisec.co.jp/account/sogoflow_01.html
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 :::
 
 ### 📚 関連書籍

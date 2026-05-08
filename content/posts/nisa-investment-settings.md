@@ -285,5 +285,5 @@ coverImagePosition: "center"
 title: SBI証券 — あずきのメイン証券口座
 description: NISA・iDeCo・日本株・米国ETFすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。
 button: SBI証券の公式サイトを見る →
-url: https://go.sbisec.co.jp/account/sogoflow_01.html
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 :::

@@ -154,7 +154,7 @@ export default function SideFirePage() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
 
             {/* SBI wide */}
-            <a href="https://go.sbisec.co.jp/account/sogoflow_01.html" rel="noopener" target="_blank" style={{ gridColumn: "1 / -1", background: "#f4efe8", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", display: "grid", gridTemplateColumns: "auto 1fr", gap: 18, alignItems: "center" }}>
+            <a href="https://h.accesstrade.net/sp/cc?rk=0100piab00orlw" rel="nofollow sponsored noopener" target="_blank" style={{ gridColumn: "1 / -1", background: "#f4efe8", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", display: "grid", gridTemplateColumns: "auto 1fr", gap: 18, alignItems: "center" }}>
               <div style={{ width: 52, height: 52, background: "var(--beige)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
                   <rect x="3" y="14" width="5" height="8" rx="1" fill="#5e7252"/>
@@ -191,6 +191,9 @@ export default function SideFirePage() {
         {/* A8 tracking pixel */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img width={1} height={1} src="https://www12.a8.net/0.gif?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" alt="" style={{ display: "block", border: 0 }} />
+        {/* accesstrade impression pixel - SBI ゼロ革命 */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img width={1} height={1} src="https://h.accesstrade.net/sp/rr?rk=0100piab00orlw" alt="" style={{ display: "block", border: 0 }} />
 
       </div>
     </>

@@ -256,7 +256,7 @@ export default function Home() {
         </div>
         <div className="affiliate-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
           {/* SBI 証券 - wide */}
-          <a href="https://go.sbisec.co.jp/account/sogoflow_01.html" rel="noopener" target="_blank" className="affiliate-wide" style={{
+          <a href="https://h.accesstrade.net/sp/cc?rk=0100piab00orlw" rel="nofollow sponsored noopener" target="_blank" className="affiliate-wide" style={{
             gridColumn: "1 / -1",
             borderRadius: "var(--r)",
             padding: "24px 26px",
@@ -331,6 +331,9 @@ export default function Home() {
         {/* A8 tracking pixel */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img width={1} height={1} src="https://www12.a8.net/0.gif?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y" alt="" style={{ display: "block", border: 0 }} />
+        {/* accesstrade impression pixel - SBI ゼロ革命 */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img width={1} height={1} src="https://h.accesstrade.net/sp/rr?rk=0100piab00orlw" alt="" style={{ display: "block", border: 0 }} />
       </section>
     </>
   );
