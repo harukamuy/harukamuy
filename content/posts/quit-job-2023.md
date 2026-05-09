@@ -197,7 +197,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      よかった。ぼくのごはんだいのために働いてるんだからね🦴
+      よかった。ぼくのごはんだいのためにはたらいてるんだからね🦴
     </div>
   </div>
 </div>
@@ -249,7 +249,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      楽しいよ。好きな仕事だけ選べるって、こんなに気持ちが軽いんだって毎日感じてる。
+      楽しいよ。好きな仕事だけえらべるって、こんなに気持ちが軽いんだって毎日感じてる。
     </div>
   </div>
 </div>
