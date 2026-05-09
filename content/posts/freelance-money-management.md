@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      フリーランスってお金の管理が大変そうだね🐾
+      フリーランスってお金のかんりがたいへんそうだね🐾
     </div>
   </div>
 </div>
@@ -58,7 +58,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      自動でやってくれるの？🐾
+      じどうでやってくれるの？🐾
     </div>
   </div>
 </div>
@@ -166,7 +166,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      実家に帰るって、それってプランBってこと？🐾
+      じっかに帰るって、それってプランBってこと？🐾
     </div>
   </div>
 </div>
@@ -217,7 +217,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      4万円って、りんごいっぱい買えるのに使えないの？🐾
+      4万円って、りんごいっぱい買えるのにつかえないの？🐾
     </div>
   </div>
 </div>
@@ -247,7 +247,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      会社員のほうが楽じゃないの？🐾
+      かいしゃいんのほうが楽じゃないの？🐾
     </div>
   </div>
 </div>

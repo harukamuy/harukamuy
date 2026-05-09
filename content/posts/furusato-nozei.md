@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ふるさとのうぜいって、ふるさとに払うの？🐾
+      ふるさとのうぜいって、ふるさとにはらうの？🐾
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      じゃあおいしいもの選べばいいってこと？🐾
+      じゃあおいしいものえらべばいいってこと？🐾
     </div>
   </div>
 </div>
@@ -237,7 +237,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      りんごを選べばよかったのに🐾
+      りんごをえらべばよかったのに🐾
     </div>
   </div>
 </div>
@@ -267,7 +267,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      かくしていたおやつが出てきた感じかなぁ🐾
+      かくしていたおやつが出てきたかんじかなぁ🐾
     </div>
   </div>
 </div>

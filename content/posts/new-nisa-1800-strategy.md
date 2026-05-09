@@ -88,7 +88,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      すくすく育ってるね🐾
+      すくすくそだってるね🐾
     </div>
   </div>
 </div>

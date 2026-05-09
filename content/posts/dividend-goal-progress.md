@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      配当金って毎月どのくらい入ってくるの？🐾
+      はいとうきんって毎月どのくらい入ってくるの？🐾
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      すごい！最初からそんなに入ってきたの？🐾
+      すごい！さいしょからそんなに入ってきたの？🐾
     </div>
   </div>
 </div>
@@ -88,7 +88,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      キャッシュフローって、りんごが毎月届く感じ？🐾
+      キャッシュフローって、りんごが毎月とどくかんじ？🐾
     </div>
   </div>
 </div>
@@ -193,7 +193,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ごまもちの分まで届いてないの！？🐾
+      ごまもちの分までとどいてないの！？🐾
     </div>
   </div>
 </div>
@@ -316,7 +316,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      十勝ってどんなところ？🐾
+      とかちってどんなところ？🐾
     </div>
   </div>
 </div>
@@ -340,7 +340,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      走り回りたい！！早く達成しよう🐾✨
+      はしり回りたい！！早くたっせいしよう🐾✨
     </div>
   </div>
 </div>

@@ -14,7 +14,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble"><span class="dog-think">ねえねえ！</span>あずき、また株買ったの？</div>
+    <div class="bubble"><span class="dog-think">ねえねえ！</span>あずき、またかぶ買ったの？</div>
   </div>
 </div>
 
@@ -34,7 +34,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">オカムラって何屋さん？</div>
+    <div class="bubble">オカムラって何やさん？</div>
   </div>
 </div>
 
@@ -54,7 +54,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">なんで選んだの？</div>
+    <div class="bubble">なんでえらんだの？</div>
   </div>
 </div>
 
@@ -259,7 +259,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">で、オカムラは全部クリアしたの？</div>
+    <div class="bubble">で、オカムラはぜんぶクリアしたの？</div>
   </div>
 </div>
 
@@ -296,7 +296,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">オフィス家具って地味じゃない？</div>
+    <div class="bubble">オフィスかぐってじみじゃない？</div>
   </div>
 </div>
 
@@ -316,7 +316,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">株を買う前から、オカムラに投資してたじゃん！</div>
+    <div class="bubble">かぶを買う前から、オカムラにとうししてたじゃん！</div>
   </div>
 </div>
 
@@ -336,7 +336,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">堅実だね〜🐾</div>
+    <div class="bubble">けんじつだね〜🐾</div>
   </div>
 </div>
 
@@ -359,7 +359,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">ぼくもオカムラの株ほしい！</div>
+    <div class="bubble">ぼくもオカムラのかぶほしい！</div>
   </div>
 </div>
 
@@ -379,7 +379,7 @@ coverImage: "/images/20260423.png"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">やった！ぼく投資家！🐾✨</div>
+    <div class="bubble">やった！ぼくとうし家！🐾✨</div>
   </div>
 </div>
 

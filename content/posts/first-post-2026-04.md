@@ -31,7 +31,7 @@ coverImagePosition: "center"
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
       <span class="dog-think">ねえねえ！</span>
-      あずきちゃん、会社やめるって怖くなかったの？
+      あずきちゃん、会社やめるってこわくなかったの？
     </div>
   </div>
 </div>
@@ -55,7 +55,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくのごはんが判断基準なの！？
+      ぼくのごはんがはんだんきじゅんなの！？
     </div>
   </div>
 </div>
@@ -82,7 +82,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">でも仕事がなくなったらどうしようって、不安にはならなかったの？</div>
+    <div class="bubble">でもしごとがなくなったらどうしようって、ふあんにはならなかったの？</div>
   </div>
 </div>
 
@@ -122,7 +122,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">田舎の実家って最強の保険だね🐾</div>
+    <div class="bubble">いなかのじっかってさいきょうのほけんだね🐾</div>
   </div>
 </div>
 
@@ -146,7 +146,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">配当金ってなに？</div>
+    <div class="bubble">はいとうきんってなに？</div>
   </div>
 </div>
 
@@ -204,7 +204,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">そもそも投資スタートしたとき500万円あったって言ってたけど、26歳でそれってすごくない？どうやって貯めたの？</div>
+    <div class="bubble">そもそもとうしスタートしたとき500万円あったって言ってたけど、26さいでそれってすごくない？どうやってためたの？</div>
   </div>
 </div>
 
@@ -224,7 +224,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">外貨建て保険ってよくないの？</div>
+    <div class="bubble">がいかだてほけんってよくないの？</div>
   </div>
 </div>
 
@@ -264,7 +264,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">まいなすをプラスに変えてる〜！🐾✨</div>
+    <div class="bubble">まいなすをプラスにかえてる〜！🐾✨</div>
   </div>
 </div>
 
@@ -278,7 +278,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">ねえ、5,000万円もう超えてるじゃん！フルFIREしちゃえばいいんじゃないの？</div>
+    <div class="bubble">ねえ、5,000万円もうこえてるじゃん！フルFIREしちゃえばいいんじゃないの？</div>
   </div>
 </div>
 
@@ -301,7 +301,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">なるほど〜。ぼくとの散歩が毎日できるならいいけど🐾✨</div>
+    <div class="bubble">なるほど〜。ぼくとのさんぽが毎日できるならいいけど🐾✨</div>
   </div>
 </div>
 
@@ -327,7 +327,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">月15万円で東京で暮らせるの！？すごくない？</div>
+    <div class="bubble">月15万円で東京でくらせるの！？すごくない？</div>
   </div>
 </div>
 
@@ -359,7 +359,7 @@ coverImagePosition: "center"
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
-    <div class="bubble">携帯1,390円ってほぼタダじゃん！！🐾</div>
+    <div class="bubble">けいたい1,390円ってほぼタダじゃん！！🐾</div>
   </div>
 </div>
 

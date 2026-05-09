@@ -126,7 +126,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      税金をはらう町をえらべるって、ふしぎだね🐾
+      ぜいきんをはらう町をえらべるって、ふしぎだね🐾
     </div>
   </div>
 </div>
@@ -296,7 +296,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      あずきの好きなものばっかりだね🐾
+      あずきのすきなものばっかりだね🐾
     </div>
   </div>
 </div>
@@ -381,7 +381,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      バターのいい匂いがするとぼくも近づくよ🐾
+      バターのいいにおいがするとぼくもちかづくよ🐾
     </div>
   </div>
 </div>

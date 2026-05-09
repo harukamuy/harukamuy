@@ -16,7 +16,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ねえ、ぼくのことどうして選んでくれたの？
+      ねえ、ぼくのことどうしてえらんでくれたの？
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      写真だけで？🐾
+      しゃしんだけで？🐾
     </div>
   </div>
 </div>
@@ -64,7 +64,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      つまりぼくがあずきちゃんを選んだってこと🐾✨
+      つまりぼくがあずきちゃんをえらんだってこと🐾✨
     </div>
   </div>
 </div>
@@ -154,7 +154,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      そのときのあずきちゃんの顔、なんか変だったよ🐾
+      そのときのあずきちゃんの顔、なんかへんだったよ🐾
     </div>
   </div>
 </div>
@@ -178,7 +178,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      相談役って……ぼく、なんにもアドバイスできないけど🐾
+      そうだんやくって……ぼく、なんにもアドバイスできないけど🐾
     </div>
   </div>
 </div>
@@ -216,7 +216,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      足音で安心してくれてるの？なんかくすぐったいな🐾
+      足音であんしんしてくれてるの？なんかくすぐったいな🐾
     </div>
   </div>
 </div>

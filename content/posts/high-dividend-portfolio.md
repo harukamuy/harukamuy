@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      どんな株を持ってるの？🐾
+      どんなかぶをもってるの？🐾
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      なんで全部は公開できないの？🐾
+      なんでぜんぶはこうかいできないの？🐾
     </div>
   </div>
 </div>
@@ -94,7 +94,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      タバコ吸う人って減ってるよね？大丈夫なの？🐾
+      タバコすう人ってへってるよね？だいじょうぶなの？🐾
     </div>
   </div>
 </div>
@@ -134,7 +134,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      好きな会社の株を持つって、応援してるってこと？🐾
+      すきな会社のかぶをもつって、おうえんしてるってこと？🐾
     </div>
   </div>
 </div>
@@ -213,7 +213,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      チャリンチャリン……おやつがどんどん増えていくイメージだね！🐾
+      チャリンチャリン……おやつがどんどんふえていくイメージだね！🐾
     </div>
   </div>
 </div>
@@ -237,7 +237,7 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      全部食べ切れるかなぁ〜🐾
+      ぜんぶたべきれるかなぁ〜🐾
     </div>
   </div>
 </div>

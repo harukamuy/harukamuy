@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      NISAってなに？ぼくのごはん代に関係ある？🦴
+      NISAってなに？ぼくのごはんだいにかんけいある？🦴
     </div>
   </div>
 </div>
@@ -166,7 +166,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      取り崩すって？
+      とりくずすって？
     </div>
   </div>
 </div>
@@ -190,7 +190,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      じゃあ配当金はどこから来るの？
+      じゃあはいとうきんはどこから来るの？
     </div>
   </div>
 </div>
@@ -235,7 +235,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      つまり今月の配当金でりんごもキャベツも買えるってこと？🐾✨
+      つまり今月のはいとうきんでりんごもキャベツも買えるってこと？🐾✨
     </div>
   </div>
 </div>

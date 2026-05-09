@@ -107,7 +107,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      8まんえんって、りんご何個分だろう🐾
+      8まんえんって、りんごなんこぶんだろう🐾
     </div>
   </div>
 </div>
@@ -167,7 +167,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      はやくぜんぶ一か所でできるようになるといいね🐾
+      はやくぜんぶいっかしょでできるようになるといいね🐾
     </div>
   </div>
 </div>

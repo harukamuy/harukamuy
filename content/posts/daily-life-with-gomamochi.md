@@ -69,7 +69,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      あずきちゃんの足元はすこしひんやりとしていて気持ちいい🐾
+      あずきちゃんの足元はすこしひんやりとしていてきもちいい🐾
     </div>
   </div>
 </div>
@@ -151,7 +151,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくなりの都合があるんだよ🐾
+      ぼくなりのつごうがあるんだよ🐾
     </div>
   </div>
 </div>

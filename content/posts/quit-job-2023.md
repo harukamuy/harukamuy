@@ -92,7 +92,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      じゃあ何が変わって辞めることにしたの？
+      じゃあ何がかわってやめることにしたの？
     </div>
   </div>
 </div>
@@ -116,7 +116,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      じゃあお金が背中を押してくれたんだ🐾
+      じゃあお金がせなかをおしてくれたんだ🐾
     </div>
   </div>
 </div>
@@ -173,7 +173,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくが心の安定に貢献したってこと？🐾
+      ぼくが心のあんていにこうけんしたってこと？🐾
     </div>
   </div>
 </div>
@@ -197,7 +197,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      よかった。ぼくのごはん代のために働いてるんだからね🦴
+      よかった。ぼくのごはんだいのために働いてるんだからね🦴
     </div>
   </div>
 </div>
@@ -261,7 +261,7 @@ coverImagePosition: "top center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくも毎日散歩できて最高だよ🐾✨
+      ぼくも毎日さんぽできてさいこうだよ🐾✨
     </div>
   </div>
 </div>

@@ -247,7 +247,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼく、お迎えのときからお金かかってたんだね...🐾
+      ぼく、おむかえのときからお金かかってたんだね...🐾
     </div>
   </div>
 </div>
@@ -367,7 +367,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      くちびる、また伸びちゃうよ🐾
+      くちびる、またのびちゃうよ🐾
     </div>
   </div>
 </div>

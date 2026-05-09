@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      証券口座ってたくさんあるよね？なんでSBIにしたの？🐾
+      しょうけんこうざってたくさんあるよね？なんでSBIにしたの？🐾
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      なんで大正解なの？🐾
+      なんで大せいかいなの？🐾
     </div>
   </div>
 </div>
@@ -90,7 +90,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      S株って？1株だけ買えるってこと？🐾
+      Sかぶって？1かぶだけ買えるってこと？🐾
     </div>
   </div>
 </div>
@@ -114,7 +114,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくのごはん代みたいに、少しずつ積み上げていくんだね🐾
+      ぼくのごはんだいみたいに、少しずつつみあげていくんだね🐾
     </div>
   </div>
 </div>
@@ -162,7 +162,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      銀行でも投資できるんじゃないの？🐾
+      ぎんこうでもとうしできるんじゃないの？🐾
     </div>
   </div>
 </div>
@@ -186,7 +186,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      じゃあどこで始めればいいの？
+      じゃあどこではじめればいいの？
     </div>
   </div>
 </div>
@@ -220,7 +220,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      確定拠出年金って会社のやつ？🐾
+      かくていきょしゅつねんきんって会社のやつ？🐾
     </div>
   </div>
 </div>

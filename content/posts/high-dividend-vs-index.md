@@ -181,7 +181,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくは今のりんごも未来のりんごも両方ほしい🐾
+      ぼくは今のりんごもみらいのりんごもりょうほうほしい🐾
     </div>
   </div>
 </div>

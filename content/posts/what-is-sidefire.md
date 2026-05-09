@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      サイドFIREって、もう働かなくてよくなったってこと？🐾
+      サイドFIREって、もうはたらなくてよくなったってこと？🐾
     </div>
   </div>
 </div>
@@ -76,7 +76,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      じゃあ、もう働かなくていいんじゃない？🐾
+      じゃあ、もうはたらなくていいんじゃない？🐾
     </div>
   </div>
 </div>
@@ -122,7 +122,7 @@ S&P500はコロナショックのとき、一時3分の1近くまで下落した
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      ぼくといるためにも、在宅が選べるのも大事だよね🐾　散歩もいっぱいしたいし
+      ぼくといるためにも、ざいたくが選べるのも大事だよね🐾　さんぽもいっぱいしたいし
     </div>
   </div>
 </div>
@@ -180,7 +180,7 @@ S&P500はコロナショックのとき、一時3分の1近くまで下落した
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      1億円、いつかぜったいなれるよ🐾
+      1おく円、いつかぜったいなれるよ🐾
     </div>
   </div>
 </div>
