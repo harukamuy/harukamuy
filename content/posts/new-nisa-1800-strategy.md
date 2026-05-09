@@ -323,3 +323,12 @@ NISA枠は **使い切ったあとも非課税のまま** 継続できる(売ら
 - これから始める人は **「無理に埋めない」「買いたいものだけ買う」** を基本に
 
 関連記事:[わたしのNISA積立設定を公開](/blog/nisa-investment-settings) / [SBI証券・楽天・マネックス比較](/blog/sbi-vs-rakuten-vs-monex) / [BNDを買い増ししている理由](/blog/why-bnd-add-on) / [中東ショック2026で買い増したもの](/blog/middle-east-shock-2026)
+
+---
+
+:::cta
+title: SBI証券 — 新NISAも商品ラインナップが圧倒的
+description: つみたて投資枠・成長投資枠ともにオルカン／S&P500／日本高配当株まで一気通貫で買える、わたしのメイン口座。クレカ積立（三井住友カード）でポイントも貯まり、住信SBIネット銀行と組み合わせると資金移動もスムーズです。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
