@@ -219,3 +219,10 @@ coverImagePosition: "center"
 <li>実は稼働サイクルは会社員に近い。でも「選べること」があるだけで、同じリズムでも気持ちがちがう</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [フリーランス1年目の壁](/blog/freelance-first-year-wall)
+- [サイドFIREのリアルなデメリット](/blog/sidefire-regrets-and-reality)
+- [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)

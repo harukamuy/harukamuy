@@ -197,3 +197,12 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: フリーランスの「稼ぐ・貯める・守る」を網羅した王道入門書。サイドFIRE達成までの道のりを描く土台になる1冊。
 :::
+
+
+:::cta
+title: SBI証券 — 新NISAも商品ラインナップが圧倒的
+description: つみたて投資枠・成長投資枠ともにオルカン／S&P500／日本高配当株まで一気通貫で買える、わたしのメイン口座。住信SBIネット銀行と組み合わせると資金移動もスムーズです。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+

@@ -255,3 +255,10 @@ coverImagePosition: "center"
 <li>コロナショックを早期に経験できたのは結果的に幸運。「経験は最大の防御」になっている</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [中東ショックで資産が300万円減った](/blog/middle-east-shock-2026)
+- [減配の罠](/blog/high-dividend-cut-risk)
+- [高配当株の出口戦略](/blog/high-dividend-exit-strategy)

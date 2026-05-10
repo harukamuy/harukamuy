@@ -215,3 +215,10 @@ coverImagePosition: "center"
 <li>15万円を超えるときもある。そのときは配当金が助けてくれるので気持ち的に余裕がある</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [生活防衛資金は300万円](/blog/emergency-fund-300)
+- [フリーランスのお金管理](/blog/freelance-money-management)
+- [サイドFIRE達成のごあいさつ](/blog/first-post-2026-04)

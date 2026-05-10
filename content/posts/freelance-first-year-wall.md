@@ -239,3 +239,11 @@ coverImagePosition: "center"
 <li>特別なことは何もしていない。当たり前のことをめんどくさがらずにやり続けた。運がよかった部分も大きい</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [会社を辞めた日のこと](/blog/quit-job-2023)
+- [フリーランスのお金管理](/blog/freelance-money-management)
+- [フリーランス映像プロデューサーの仕事](/blog/video-producer-freelance-real)
+- [フリーランス転向前に知っておきたい失業保険](/blog/unemployment-insurance-freelance)

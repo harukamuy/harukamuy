@@ -204,3 +204,10 @@ coverImagePosition: "center"
 <li>失業保険の一番の価値は「焦らなくていい時間」をつくってくれること。事前の情報収集が最大のアドバイス</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [会社を辞めた日のこと](/blog/quit-job-2023)
+- [フリーランス1年目の壁](/blog/freelance-first-year-wall)
+- [フリーランスの社会保険](/blog/freelance-social-insurance)

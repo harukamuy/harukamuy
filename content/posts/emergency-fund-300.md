@@ -270,3 +270,10 @@ coverImagePosition: "center"
 <li>「使わないお金」を持っている安心感が、投資に向き合う土台になっている</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [東京・月15万円の生活費内訳](/blog/monthly-living-expenses)
+- [フリーランスのお金管理](/blog/freelance-money-management)
+- [独身女性の老後資金、1,800万円では足りない](/blog/single-woman-retirement-real)

@@ -223,3 +223,19 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: インデックス・高配当株の違いも含め、お金の5つの力を網羅的に学べる入門書。投資の全体像をつかむのに最適。
 :::
+
+
+:::cta
+title: SBI証券 — 新NISAも商品ラインナップが圧倒的
+description: つみたて投資枠・成長投資枠ともにオルカン／S&P500／日本高配当株まで一気通貫で買える、わたしのメイン口座。住信SBIネット銀行と組み合わせると資金移動もスムーズです。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+
+## 関連記事
+
+- [わたしの高配当株ポートフォリオ](/blog/high-dividend-portfolio)
+- [わたしのNISA積立設定](/blog/nisa-investment-settings)
+- [増配株 vs 高配当株](/blog/high-dividend-vs-growing-dividend)
+- [投資を始めた2018年](/blog/investment-start-2018)

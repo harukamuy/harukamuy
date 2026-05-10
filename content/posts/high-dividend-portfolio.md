@@ -276,3 +276,11 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力をまるごと学べる1冊。サイドFIREの土台作りに。
 :::
+
+
+## 関連記事
+
+- [高配当株の選び方](/blog/high-dividend-stock-selection)
+- [毎月配当を受け取るには](/blog/dividend-monthly-diversification)
+- [減配の罠](/blog/high-dividend-cut-risk)
+- [BNDを買い増ししている理由](/blog/why-bnd-add-on)

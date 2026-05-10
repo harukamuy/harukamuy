@@ -221,3 +221,11 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: FIRE・サイドFIREの大前提となる「お金の5つの力」をマンガで網羅。読んでから始めると遠回りせずに済みます。
 :::
+
+
+## 関連記事
+
+- [サイドFIRE達成のごあいさつ](/blog/first-post-2026-04)
+- [サイドFIREに必要な資産額](/blog/sidefire-asset-simulation)
+- [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)
+- [サイドFIREのリアルなデメリット](/blog/sidefire-regrets-and-reality)

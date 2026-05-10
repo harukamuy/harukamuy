@@ -237,3 +237,19 @@ coverImagePosition: "center"
 <li>覚悟はしていたけれどやっぱり重い。事前に知っておくことが独立準備で一番大事だと思う</li>
 </ul>
 </div>
+
+
+:::cta
+title: freee 会計 — フリーランスの確定申告を簡単に
+description: 銀行・クレカ連携で取引が自動取込、青色申告(65万円控除)もインボイス対応の消費税申告もサイト内で完結。わたしも3年使い続けている定番ソフト。
+button: freee 会計の公式サイトを見る →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+
+## 関連記事
+
+- [フリーランスの国民健康保険を安くする方法](/blog/freelance-kokuho-saving)
+- [フリーランスの老後試算](/blog/freelance-pension-future)
+- [freeeで青色申告した流れ](/blog/freelance-tax-return-freee)
+- [インボイス制度・3年目のリアル](/blog/invoice-freelance-3year-real)

@@ -206,3 +206,11 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: 資産形成の前提となるお金の知識を網羅。「いくら必要か」を計算する前に、まずお金の5つの力を学んでおきたい1冊。
 :::
+
+
+## 関連記事
+
+- [サイドFIREとは何か](/blog/what-is-sidefire)
+- [サイドFIRE達成のごあいさつ](/blog/first-post-2026-04)
+- [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)
+- [独身女性の老後資金、1,800万円では足りない](/blog/single-woman-retirement-real)

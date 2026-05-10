@@ -165,3 +165,10 @@ coverImagePosition: "center"
 <li>始めるなら高配当株（4%前後）がわかりやすい。そこから基準を磨くと増配株も自然に混じってくる</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [わたしの高配当株ポートフォリオ](/blog/high-dividend-portfolio)
+- [高配当株の選び方](/blog/high-dividend-stock-selection)
+- [高配当株とインデックス、どちらを選ぶか](/blog/high-dividend-vs-index)

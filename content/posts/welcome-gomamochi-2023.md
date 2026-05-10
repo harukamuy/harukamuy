@@ -259,3 +259,10 @@ coverImagePosition: "top center"
 <li>足音が聞こえるだけで安心できる存在。助けてもらっているのはわたしの方かもしれない</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [ごまもちとの1日](/blog/daily-life-with-gomamochi)
+- [ごまもちの年間コスト全公開](/blog/gomamochi-yearly-cost)
+- [ごまもちの健康管理](/blog/gomamochi-health-cost)

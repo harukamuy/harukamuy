@@ -241,3 +241,10 @@ coverImagePosition: "center"
 <li>生活防衛資金300万円を現金で確保。お金の心配をせず最善の治療を選べる状態にしておきたい</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [ごまもちの年間コスト全公開](/blog/gomamochi-yearly-cost)
+- [ごまもちをお迎えした日](/blog/welcome-gomamochi-2023)
+- [ごまもちとの1日](/blog/daily-life-with-gomamochi)

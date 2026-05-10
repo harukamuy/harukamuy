@@ -301,3 +301,10 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: FIREを目指すなら「お金との付き合い方」をまず固める。準備不足で後悔しないための土台が、この1冊に詰まっています。
 :::
+
+
+## 関連記事
+
+- [サイドFIREとは何か](/blog/what-is-sidefire)
+- [フリーランス転向3年のリアル](/blog/sidefire-first-year-real)
+- [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)

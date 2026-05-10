@@ -299,3 +299,10 @@ coverImagePosition: "center"
 <li>「めちゃ得した」感は薄いけれど、どうせ払う税金が実質2,000円で欲しいものに変わる制度。やらない理由はない</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [ふるさと納税ポータル比較](/blog/furusato-portal-comparison)
+- [freeeで青色申告した流れ](/blog/freelance-tax-return-freee)
+- [東京・月15万円の生活費内訳](/blog/monthly-living-expenses)

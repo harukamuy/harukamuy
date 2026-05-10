@@ -222,3 +222,10 @@ coverImagePosition: "center"
 <li>人懐っこくて、一度なでてもらった人を覚えている。見かけると猛ダッシュで追いかける人たらし</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [ごまもちをお迎えした日](/blog/welcome-gomamochi-2023)
+- [ごまもちの健康管理](/blog/gomamochi-health-cost)
+- [ごまもちの年間コスト全公開](/blog/gomamochi-yearly-cost)

@@ -21,6 +21,10 @@ coverImagePosition: "center"
 配当利回り：<strong>4.94%</strong> ／ 年間配当金（税引後）：<strong>約49万円（月換算 約4万円）</strong>
 </div>
 
+
+
+## 会社を辞めたきっかけ
+
 <div class="conv-wrap">
 
 <div class="turn dog">
@@ -73,6 +77,10 @@ coverImagePosition: "center"
 </div>
 
 </div>
+
+
+
+## 不安はなかった? — スキルと実家の保険
 
 <div class="conv-wrap">
 
@@ -138,6 +146,10 @@ coverImagePosition: "center"
 
 </div>
 
+
+
+## サイドFIRE達成時の資産内訳
+
 <div class="conv-wrap">
 
 <div class="turn dog">
@@ -195,6 +207,10 @@ coverImagePosition: "center"
 </div>
 
 </div>
+
+
+
+## 投資スタート時の500万円は、どう貯めたか
 
 <div class="conv-wrap">
 
@@ -270,6 +286,10 @@ coverImagePosition: "center"
 
 </div>
 
+
+
+## フルFIREじゃなくて、サイドFIREな理由
+
 <div class="conv-wrap">
 
 <div class="turn dog">
@@ -318,6 +338,10 @@ coverImagePosition: "center"
 </div>
 
 </div>
+
+
+
+## 東京で月15万円の暮らし
 
 <div class="conv-wrap">
 
@@ -433,3 +457,12 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力を1冊で。サイドFIREの土台作りに最適なロングセラー。
 :::
+
+
+## 関連記事
+
+- [サイドFIREとは何か](/blog/what-is-sidefire)
+- [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)
+- [東京・月15万円の生活費内訳](/blog/monthly-living-expenses)
+- [わたしのNISA積立設定](/blog/nisa-investment-settings)
+- [わたしの高配当株ポートフォリオ](/blog/high-dividend-portfolio)

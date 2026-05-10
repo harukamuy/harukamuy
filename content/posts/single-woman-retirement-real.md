@@ -340,3 +340,10 @@ coverImagePosition: "center"
 <li>世間の数字を信じる前に、自分の前提で必ず計算する。不安は「課題」に変わる</li>
 </ul>
 </div>
+
+
+## 関連記事
+
+- [フリーランスの老後試算](/blog/freelance-pension-future)
+- [女性のサイドFIRE](/blog/women-financial-independence)
+- [サイドFIREに必要な資産額](/blog/sidefire-asset-simulation)
