@@ -414,4 +414,8 @@ coverImagePosition: "center"
 - ふるさと納税は「劇的な節税」ではなく **「年1のお取り寄せ&応援イベント」** として楽しむのが正解(わたしの感覚)
 - 送り先指定ができるのでプレゼント用途にも便利
 
-関連記事:[ふるさと納税(基本編)](/blog/furusato-nozei) / [freeeで青色申告した流れ](/blog/freelance-tax-return-freee) / [freeeを3年使い続けている理由](/blog/freee-vs-mf-real-3year)
+## 関連記事
+
+- [ふるさと納税(基本編)](/blog/furusato-nozei)
+- [freeeで青色申告した流れ](/blog/freelance-tax-return-freee)
+- [freeeを3年使い続けている理由](/blog/freee-vs-mf-real-3year)

@@ -260,7 +260,11 @@ freeeのスタンダードプランは **インボイス制度・消費税申告
 
 これから会計ソフトを選ぶ人、いま乗り換えを迷っている人にとって、何かの参考になればうれしい。
 
-関連記事:[freeeで青色申告した流れ](/blog/freelance-tax-return-freee) / [インボイス制度・3年目のリアル](/blog/invoice-freelance-3year-real) / [フリーランスのお金の管理](/blog/freelance-money-management)
+## 関連記事
+
+- [freeeで青色申告した流れ](/blog/freelance-tax-return-freee)
+- [インボイス制度・3年目のリアル](/blog/invoice-freelance-3year-real)
+- [フリーランスのお金の管理](/blog/freelance-money-management)
 
 ---
 

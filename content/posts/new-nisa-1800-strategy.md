@@ -322,7 +322,12 @@ NISA枠は **使い切ったあとも非課税のまま** 継続できる(売ら
 - **最速で埋めないのは、高配当株を割高で買いたくない+生活キャッシュフローを守るため**
 - これから始める人は **「無理に埋めない」「買いたいものだけ買う」** を基本に
 
-関連記事:[わたしのNISA積立設定を公開](/blog/nisa-investment-settings) / [SBI証券・楽天・マネックス比較](/blog/sbi-vs-rakuten-vs-monex) / [BNDを買い増ししている理由](/blog/why-bnd-add-on) / [中東ショック2026で買い増したもの](/blog/middle-east-shock-2026)
+## 関連記事
+
+- [わたしのNISA積立設定を公開](/blog/nisa-investment-settings)
+- [SBI証券・楽天・マネックス比較](/blog/sbi-vs-rakuten-vs-monex)
+- [BNDを買い増ししている理由](/blog/why-bnd-add-on)
+- [中東ショック2026で買い増したもの](/blog/middle-east-shock-2026)
 
 ---
 

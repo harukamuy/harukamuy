@@ -403,4 +403,8 @@ coverImagePosition: "center"
 
 ペットを迎えるか迷っている人へ。**月3万円弱の固定費と、いつか来る医療費の山に備える覚悟**——この2つがクリアできるなら、たぶん大丈夫だと思う。少なくともわたしは、ごまもちを迎えてから一度も後悔したことがない。
 
-関連記事:[ごまもちの健康管理](/blog/gomamochi-health-cost) / [生活防衛資金300万円のリアル](/blog/emergency-fund-300) / [ごまもちをお迎えした日](/blog/welcome-gomamochi-2023)
+## 関連記事
+
+- [ごまもちの健康管理](/blog/gomamochi-health-cost)
+- [生活防衛資金300万円のリアル](/blog/emergency-fund-300)
+- [ごまもちをお迎えした日](/blog/welcome-gomamochi-2023)
