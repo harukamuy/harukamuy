@@ -185,11 +185,39 @@ coverImagePosition: "center"
 
 たまたまわたしは、いまの形になっているだけ。**どの選択にもそれぞれの良さがある** と思っている。
 
+<div class="conv-wrap">
+
+<div class="turn dog">
+  <div class="avatar dog-av" style="background:transparent;border:none;">
+    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">🐾 ごまもち</div>
+    <div class="bubble">
+      ぼくにも、いいであいあるかなぁ🐾
+    </div>
+  </div>
+</div>
+
+<div class="turn mio">
+  <div class="avatar mio-av" style="background:transparent;border:none;">
+    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+  </div>
+  <div class="bubble-wrap">
+    <div class="speaker-label">あずき</div>
+    <div class="bubble">
+      あるよ、きっと。あずきもごまもちに出会えたしね。
+    </div>
+  </div>
+</div>
+
+</div>
+
 ---
 
 ## 5. 「特別なことは何もしていない」のリアル
 
-ここまで読んで「5,463万円なんてすごい」と思った人もいるかもしれない。でも本当に、**わたしは特別なことを何もしていない**。
+ここまで読んで「5,463万円なんてわたしには無理」「イメージできない」と思った人もいるかもしれない。でも本当に、**わたしは特別なことを何もしていない**。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🛠 8年間でやってきたこと(地味)</div>
