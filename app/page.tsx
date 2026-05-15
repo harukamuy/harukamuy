@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
     url: "https://harukamuy.com",
-    images: [{ url: "/images/mio-room.png", width: 1200, height: 630, alt: "harukamuy" }],
+    images: [{ url: "/images/mio-room.webp", width: 1200, height: 630, alt: "harukamuy" }],
   },
 };
 
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
 
         <div className="hero-image-wrap">
-          <img src="/images/mio-room.png" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
+          <img src="/images/mio-room.webp" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
         </div>
       </section>
 
@@ -181,7 +181,7 @@ export default function Home() {
               overflow: "hidden",
               position: "relative",
             }}>
-              <img src="/images/mio-fullbody.png" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+              <img src="/images/mio-fullbody.webp" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
             <div style={{
               position: "absolute",
@@ -294,22 +294,6 @@ export default function Home() {
               <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>手数料ゼロ・米国ETFの買付も便利。配当金管理もシンプルで5年以上愛用しています。</div>
               <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>公式サイトで詳しく見る →</div>
             </div>
-          </a>
-
-          {/* eMAXIS */}
-          <a href="#" style={{
-            borderRadius: "var(--r)",
-            padding: "20px 22px",
-            textDecoration: "none",
-            color: "inherit",
-            display: "block",
-            border: "1.5px solid var(--beige)",
-            background: "var(--white)",
-          }}>
-            <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>新NISA対応</div>
-            <div style={{ fontFamily: "var(--font-serif)", fontSize: 15, fontWeight: 600, marginBottom: 4 }}>eMAXIS Slim 全世界株式</div>
-            <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>積立NISAで5年間愛用。信託報酬が最安水準で迷ったらこれ。</div>
-            <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>詳細を見る →</div>
           </a>
 
           {/* freee */}

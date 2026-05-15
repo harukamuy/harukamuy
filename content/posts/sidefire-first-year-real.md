@@ -3,7 +3,7 @@ title: "フリーランス転向3年のリアル——収入・メンタル・�
 date: "2026-04-24"
 category: "sidefire"
 excerpt: "会社を辞めてフリーランスに転向して3年。収入の波、メンタルの変化、時間の使い方、投資スタンス。やってみてわかったことを正直に書きます。"
-coverImage: "/images/20260430_1.png"
+coverImage: "/images/20260430_1.webp"
 coverImagePosition: "center"
 ---
 
@@ -11,7 +11,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -23,7 +23,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
@@ -53,7 +53,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -65,7 +65,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
@@ -93,7 +93,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -105,7 +105,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
@@ -133,7 +133,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -145,7 +145,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
@@ -171,7 +171,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -183,7 +183,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>

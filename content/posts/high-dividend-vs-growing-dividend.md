@@ -3,7 +3,7 @@ title: "増配株 vs 高配当株——実は「共存」が最強だと思っ�
 date: "2026-04-27"
 category: "sidefire"
 excerpt: "増配株と高配当株、どちらがいいのか。わたしの答えは「どちらか選ぶより、両方持つのが自然な結果になる」。その理由を正直に書きます。"
-coverImage: "/images/20260430_4.png"
+coverImage: "/images/20260430_4.webp"
 coverImagePosition: "center"
 ---
 
@@ -11,7 +11,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -23,7 +23,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
@@ -59,7 +59,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -71,7 +71,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
@@ -128,7 +128,7 @@ coverImagePosition: "center"
 
 <div class="turn dog">
   <div class="avatar dog-av" style="background:transparent;border:none;">
-    <img src="/images/gomamochi-sit.png" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
+    <img src="/images/gomamochi-sit.webp" alt="ごまもち" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
@@ -140,7 +140,7 @@ coverImagePosition: "center"
 
 <div class="turn mio">
   <div class="avatar mio-av" style="background:transparent;border:none;">
-    <img src="/images/mio-fullbody.png" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
+    <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;" />
   </div>
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>

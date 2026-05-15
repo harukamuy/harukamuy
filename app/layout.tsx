@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
     images: [
       {
-        url: "/images/mio-room.png",
+        url: "/images/mio-room.webp",
         width: 1200,
         height: 630,
         alt: "harukamuy | ごまもちとサイドFIREの記録",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "harukamuy | ごまもちとサイドFIREの記録",
     description:
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
-    images: ["/images/mio-room.png"],
+    images: ["/images/mio-room.webp"],
   },
   robots: {
     index: true,
@@ -71,17 +71,19 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="4CGA_h1VKtrpeC4f7HWzGs3QV5rX1fD5_ZQNfgNZ2KQ" />
-        {/* Google AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3731608068434256"
-          crossOrigin="anonymous"
-        />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+
+        {/* Google AdSense */}
+        <Script
+          id="adsense-init"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3731608068434256"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
 
         {/* Google Analytics 4 */}
         {GA_ID && (

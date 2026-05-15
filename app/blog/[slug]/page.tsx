@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
   const ogImage = post.coverImage
     ? `${SITE_URL}${post.coverImage}`
-    : `${SITE_URL}/images/mio-room.png`;
+    : `${SITE_URL}/images/mio-room.webp`;
   return {
     title: post.title,
     description: post.excerpt,
@@ -70,7 +70,7 @@ export default async function PostPage({ params }: Props) {
 
   const ogImage = post.coverImage
     ? `${SITE_URL}${post.coverImage}`
-    : `${SITE_URL}/images/mio-room.png`;
+    : `${SITE_URL}/images/mio-room.webp`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -91,7 +91,7 @@ export default async function PostPage({ params }: Props) {
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/images/mio-fullbody.png`,
+        url: `${SITE_URL}/images/mio-fullbody.webp`,
       },
     },
     mainEntityOfPage: {
@@ -304,7 +304,7 @@ export default async function PostPage({ params }: Props) {
             border: "3px solid var(--ivory-2)",
             overflow: "hidden",
           }}>
-            <img src="/images/mio-fullbody.png" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+            <img src="/images/mio-fullbody.webp" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
           </div>
           <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 2 }}>あずき ＆ ごまもち</div>
           <div style={{ fontSize: 11, color: "var(--brown-3)", marginBottom: 9 }}>映像プロデューサー・34歳</div>
@@ -372,7 +372,6 @@ export default async function PostPage({ params }: Props) {
           </div>
           {[
             { icon: "📈", name: "SBI証券", sub: "メイン証券口座", href: "https://h.accesstrade.net/sp/cc?rk=0100piab00orlw", rel: "nofollow sponsored noopener" },
-            { icon: "🌏", name: "eMAXIS Slim 全世界", sub: "積立NISAで5年愛用", href: "#", rel: "" },
             { icon: "📊", name: "freee 確定申告", sub: "フリーランス必須ツール", href: "https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y", rel: "nofollow sponsored noopener" },
           ].map((item, i, arr) => (
             <a

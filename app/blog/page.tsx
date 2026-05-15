@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "ブログ | harukamuy",
     description: "サイドFIRE・投資・愛犬ごまもちの日常をテーマにした記事一覧。インデックス投資・高配当株・フリーランスのお金事情など。",
     url: "https://harukamuy.com/blog",
-    images: [{ url: "/images/mio-room.png", width: 1200, height: 630, alt: "harukamuy ブログ" }],
+    images: [{ url: "/images/mio-room.webp", width: 1200, height: 630, alt: "harukamuy ブログ" }],
   },
 };
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "ごまもち | harukamuy",
     description: "ボストンテリアのごまもち（3歳）の日常とブログへの参加記録。食いしん坊で甘えん坊な毎日をお届けします。",
     url: "https://harukamuy.com/gomamochi",
-    images: [{ url: "/images/gomamochi-sit.png", width: 1200, height: 630, alt: "ごまもち" }],
+    images: [{ url: "/images/gomamochi-sit.webp", width: 1200, height: 630, alt: "ごまもち" }],
   },
 };
 
@@ -79,7 +79,7 @@ export default function GomamochiPage() {
         }}>
           {/* big illustration */}
           <div style={{ width: 140, height: 160, flexShrink: 0, borderRadius: 16, overflow: "hidden" }}>
-            <img src="/images/gomamochi-sit.png" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+            <img src="/images/gomamochi-sit.webp" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
           </div>
 
           {/* profile info */}
@@ -118,17 +118,17 @@ export default function GomamochiPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12 }}>
             {/* wide first photo - 散歩シーン */}
             <div style={{ gridColumn: "span 2", aspectRatio: "2/1", borderRadius: 14, overflow: "hidden" }}>
-              <img src="/images/mio-walk.png" alt="多摩川散歩" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src="/images/mio-walk.webp" alt="多摩川散歩" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
             {/* ごまもち立ち姿 */}
             <div style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
-              <img src="/images/gomamochi-stand.png" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+              <img src="/images/gomamochi-stand.webp" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
             </div>
             {[
-              { src: "/images/20260423_3.png", alt: "ごまもちをお迎えした日", pos: "top center" },
-              { src: "/images/20260423_8.png", alt: "ごまもちとの1日", pos: "center" },
-              { src: "/images/20260425_3.png", alt: "ごまもちの健康管理", pos: "center" },
-              { src: "/images/20260504_3.png", alt: "ごまもちの年間コスト", pos: "center" },
+              { src: "/images/20260423_3.webp", alt: "ごまもちをお迎えした日", pos: "top center" },
+              { src: "/images/20260423_8.webp", alt: "ごまもちとの1日", pos: "center" },
+              { src: "/images/20260425_3.webp", alt: "ごまもちの健康管理", pos: "center" },
+              { src: "/images/20260504_3.webp", alt: "ごまもちの年間コスト", pos: "center" },
             ].map((p) => (
               <div key={p.src} style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
                 <img src={p.src} alt={p.alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: p.pos }} />
