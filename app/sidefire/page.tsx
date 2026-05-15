@@ -153,29 +153,12 @@ export default function SideFirePage() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
 
-            {/* SBI wide */}
-            <a href="https://h.accesstrade.net/sp/cc?rk=0100piab00orlw" rel="nofollow sponsored noopener" target="_blank" style={{ gridColumn: "1 / -1", background: "#f4efe8", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 20px", textDecoration: "none", color: "inherit", display: "grid", gridTemplateColumns: "auto 1fr", gap: 18, alignItems: "center" }}>
-              <div style={{ width: 52, height: 52, background: "var(--beige)", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-                  <rect x="3" y="14" width="5" height="8" rx="1" fill="#5e7252"/>
-                  <rect x="10" y="9" width="5" height="13" rx="1" fill="#5e7252" opacity=".7"/>
-                  <rect x="17" y="4" width="5" height="18" rx="1" fill="#5e7252" opacity=".4"/>
-                </svg>
-              </div>
-              <div>
-                <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 4, letterSpacing: "0.08em", display: "inline-block", marginBottom: 5 }}>★ 最もおすすめ</div>
-                <div style={{ fontSize: 14, fontWeight: 700, color: "var(--brown)", marginBottom: 3 }}>SBI証券 — わたしのメイン口座</div>
-                <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>手数料ゼロ・新NISA対応・米国ETF買付も便利。5年以上愛用しています。</div>
-                <div style={{ marginTop: 8, fontSize: 11, color: "var(--terra)", fontWeight: 500 }}>公式サイトで詳しく見る →</div>
-              </div>
-            </a>
-
-            {/* eMAXIS */}
-            <a href="#" style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 18px", textDecoration: "none", color: "inherit", display: "block" }}>
-              <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 4, letterSpacing: "0.08em", display: "inline-block", marginBottom: 5 }}>新NISA対応</div>
-              <div style={{ fontSize: 14, fontWeight: 700, color: "var(--brown)", marginBottom: 3 }}>eMAXIS Slim 全世界株式</div>
-              <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>積立NISAで5年間愛用。信託報酬が最安水準。</div>
-              <div style={{ marginTop: 8, fontSize: 11, color: "var(--terra)", fontWeight: 500 }}>詳細を見る →</div>
+            {/* SBI */}
+            <a href="https://h.accesstrade.net/sp/cc?rk=0100piab00orlw" rel="nofollow sponsored noopener" target="_blank" style={{ background: "#f4efe8", border: "1.5px solid var(--beige)", borderRadius: 16, padding: "18px 18px", textDecoration: "none", color: "inherit", display: "block" }}>
+              <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 4, letterSpacing: "0.08em", display: "inline-block", marginBottom: 5 }}>★ 最もおすすめ</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "var(--brown)", marginBottom: 3 }}>SBI証券 — わたしのメイン口座</div>
+              <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>手数料ゼロ・新NISA対応・米国ETF買付も便利。5年以上愛用しています。</div>
+              <div style={{ marginTop: 8, fontSize: 11, color: "var(--terra)", fontWeight: 500 }}>公式サイトで詳しく見る →</div>
             </a>
 
             {/* freee */}
