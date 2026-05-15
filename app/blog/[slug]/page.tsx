@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
   const ogImage = post.coverImage
     ? `${SITE_URL}${post.coverImage}`
-    : `${SITE_URL}/images/mio-room.webp`;
+    : `${SITE_URL}/images/mio-room.jpg`;
   return {
     title: post.title,
     description: post.excerpt,
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       url: `${SITE_URL}/blog/${slug}`,
       publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
       authors: ["あずき"],
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
@@ -70,7 +71,7 @@ export default async function PostPage({ params }: Props) {
 
   const ogImage = post.coverImage
     ? `${SITE_URL}${post.coverImage}`
-    : `${SITE_URL}/images/mio-room.webp`;
+    : `${SITE_URL}/images/mio-room.jpg`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -79,7 +80,7 @@ export default async function PostPage({ params }: Props) {
     description: post.excerpt,
     image: ogImage,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
       "@type": "Person",
       name: "あずき",
@@ -100,12 +101,26 @@ export default async function PostPage({ params }: Props) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "TOP", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: categoryLabel[post.category] ?? post.category, item: `${SITE_URL}/blog?category=${post.category}` },
+      { "@type": "ListItem", position: 3, name: post.title },
+    ],
+  };
+
   return (
     <>
       {/* 構造化データ (JSON-LD) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
     <div className="blog-post-layout" style={{
       maxWidth: 960,

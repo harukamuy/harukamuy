@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
     url: "https://harukamuy.com",
-    images: [{ url: "/images/mio-room.webp", width: 1200, height: 630, alt: "harukamuy" }],
+    images: [{ url: "/images/mio-room.jpg", width: 1200, height: 630, alt: "harukamuy" }],
   },
 };
 

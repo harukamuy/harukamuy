@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
     images: [
       {
-        url: "/images/mio-room.webp",
+        url: "/images/mio-room.jpg",
         width: 1200,
         height: 630,
         alt: "harukamuy | ごまもちとサイドFIREの記録",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "harukamuy | ごまもちとサイドFIREの記録",
     description:
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
-    images: ["/images/mio-room.webp"],
+    images: ["/images/mio-room.jpg"],
   },
   robots: {
     index: true,

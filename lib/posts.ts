@@ -13,6 +13,7 @@ export type Post = {
   slug: string;
   title: string;
   date: string;
+  updated?: string;
   category: Category;
   excerpt: string;
   coverImage?: string;
@@ -47,6 +48,7 @@ export function getPostBySlug(slug: string): Post | null {
       slug,
       title: data.title ?? "",
       date: data.date ?? "",
+      updated: data.updated,
       category: data.category ?? "all",
       excerpt: data.excerpt ?? "",
       coverImage: data.coverImage,
