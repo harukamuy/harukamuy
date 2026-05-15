@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "サイドFIREとは何か、完全FIREとの違いをわかりやすく解説。約5,000万円の資産と4%ルールで基礎生活費をまかなう、わたし自身の考え方も正直に書きます。"
 coverImage: "/images/20260425_1.webp"
 coverImagePosition: "center"
+tags: ["サイドFIRE"]
 ---
 
 <div class="conv-wrap">

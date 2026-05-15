@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "ネット証券の3大手SBI・楽天・マネックスのメリット/デメリットを正直に比較。8年使い続けてわかったSBIの強みと、不満点（高配当株管理画面の弱さ）まで全部書きます。住信SBIネット銀行の「目的別口座」が神機能だった話も。"
 coverImage: "/images/20260505_3.webp"
 coverImagePosition: "center"
+tags: ["証券・銀行"]
 ---
 
 <div class="conv-wrap">

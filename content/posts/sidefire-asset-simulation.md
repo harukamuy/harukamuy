@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "4%ルール・トリニティスタディをもとに、わたしがサイドFIREの基準とした資産額5,000万円の考え方を解説。完全FIREではなく「サイドFIRE」を選んだ理由も正直に書きます。"
 coverImage: "/images/20260430_2.webp"
 coverImagePosition: "center"
+tags: ["サイドFIRE", "家計・資産管理"]
 ---
 
 <div class="conv-wrap">

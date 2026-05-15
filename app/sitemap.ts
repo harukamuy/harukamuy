@@ -1,7 +1,7 @@
 export const dynamic = "force-static";
 
 import type { MetadataRoute } from "next";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, getAllTags } from "@/lib/posts";
 
 const SITE_URL = "https://harukamuy.com";
 
@@ -24,5 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...postPages];
+  const tagPages: MetadataRoute.Sitemap = getAllTags().map((tag) => ({
+    url: `${SITE_URL}/tag/${encodeURIComponent(tag)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.5,
+  }));
+
+  return [...staticPages, ...postPages, ...tagPages];
 }

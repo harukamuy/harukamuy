@@ -5,6 +5,7 @@ category: "gomazochi"
 excerpt: "フリーランスになって1ヶ月、友人ブリーダーから届いた一枚の写真。会いに行ったらわたしにくっついて離れなかった。その日に決めた。"
 coverImage: "/images/20260423_3.webp"
 coverImagePosition: "top center"
+tags: ["ごまもち", "独立・キャリア"]
 ---
 
 <div class="conv-wrap">

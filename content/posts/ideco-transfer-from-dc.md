@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "会社を辞めたらiDeCoへの移管は必須。放置すると自動移管されて損をする。面倒でも絶対やった方がいい理由と、実際の手続きの流れを正直に書きます。"
 coverImage: "/images/20260425_2.webp"
 coverImagePosition: "center"
+tags: ["iDeCo"]
 ---
 
 <div class="conv-wrap">

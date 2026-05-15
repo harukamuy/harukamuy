@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "自分で選んだ高配当株を公開。バフェット効果で三菱商事、定番の東京海上・JT、EV撤退後のホンダ。選び方の基準もあわせて書きます。"
 coverImage: "/images/20260423_6b.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

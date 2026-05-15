@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "VYM・SPYD・HDVは魅力的なETF。バンガードのファンとしてVYMは特に狙っている。それでも今は買わない理由を、価格・為替・税制・NISA・役割分担の5つの観点から正直に書きます。"
 coverImage: "/images/20260502_3.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

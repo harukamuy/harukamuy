@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "会社を辞めてフリーランスに転向して3年。収入の波、メンタルの変化、時間の使い方、投資スタンス。やってみてわかったことを正直に書きます。"
 coverImage: "/images/20260430_1.webp"
 coverImagePosition: "center"
+tags: ["サイドFIRE"]
 ---
 
 <div class="conv-wrap">

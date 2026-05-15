@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "「新NISA1,800万円を満額使えば老後は安心」と言われるけど、独身女性の場合は本当にそうなのか。30歳〜48歳で1,800万円を年利4%で積み立て、65歳まで運用したケースを数字で試算した結果と、わたしが「もう少し積み上げたい」と思っている理由を正直に書きます。"
 coverImage: "/images/20260503_2.webp"
 coverImagePosition: "center"
+tags: ["女性の資産形成"]
 ---
 
 <div class="conv-wrap">

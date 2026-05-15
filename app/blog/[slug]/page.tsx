@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug, renderMarkdown } from "@/lib/posts";
+import { getAllPosts, getPostBySlug, renderMarkdown, extractHeadings, estimateReadingMinutes } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -67,9 +67,14 @@ export default async function PostPage({ params }: Props) {
   const stats = latestStats();
 
   const contentHtml = await renderMarkdown(post.content);
+  const headings = extractHeadings(post.content);
+  const readingMinutes = estimateReadingMinutes(post.content);
 
   const allPosts = getAllPosts();
-  const relatedPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 4);
+  // 同カテゴリの記事を優先し、不足分は他カテゴリの新着で補う
+  const sameCategory = allPosts.filter((p) => p.slug !== slug && p.category === post.category);
+  const otherCategory = allPosts.filter((p) => p.slug !== slug && p.category !== post.category);
+  const relatedPosts = [...sameCategory, ...otherCategory].slice(0, 4);
 
   const relatedThumbColors = ["#d4957e", "#d4a898", "#7a9e96", "#8fa87f"];
 
@@ -202,6 +207,7 @@ export default async function PostPage({ params }: Props) {
             {categoryLabel[post.category] ?? post.category}
           </span>
           <span style={{ fontSize: 12, color: "var(--brown-3)" }}>{post.date}</span>
+          <span style={{ fontSize: 12, color: "var(--brown-3)" }}>📖 約{readingMinutes}分で読めます</span>
         </div>
 
         {/* Title */}
@@ -217,6 +223,50 @@ export default async function PostPage({ params }: Props) {
           {post.title}
         </h1>
 
+        {/* Table of Contents */}
+        {headings.length >= 2 && (
+          <nav
+            aria-label="目次"
+            style={{
+              background: "var(--ivory-2)",
+              border: "1px solid var(--beige)",
+              borderRadius: 12,
+              padding: "16px 20px",
+              marginBottom: 28,
+            }}
+          >
+            <div style={{
+              fontSize: 12,
+              fontWeight: 700,
+              letterSpacing: "0.1em",
+              color: "var(--brown-2)",
+              marginBottom: 10,
+              display: "flex",
+              alignItems: "center",
+              gap: 6,
+            }}>
+              📑 目次
+            </div>
+            <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              {headings.map((h) => (
+                <li key={h.id} style={{ marginLeft: h.level === 3 ? 16 : 0, marginBottom: 6 }}>
+                  <a
+                    href={`#${h.id}`}
+                    style={{
+                      fontSize: h.level === 3 ? 12 : 13,
+                      color: "var(--brown-2)",
+                      textDecoration: "none",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {h.level === 3 ? "– " : ""}{h.text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
+
         {/* Content */}
         <div
           className="prose prose-stone prose-a:text-amber-600 max-w-none
@@ -226,6 +276,30 @@ export default async function PostPage({ params }: Props) {
           style={{ fontFamily: "var(--font-body)" }}
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
+
+        {/* Tags */}
+        {post.tags.length > 0 && (
+          <div style={{ marginTop: 32, display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
+            <span style={{ fontSize: 11, color: "var(--brown-3)", letterSpacing: "0.08em" }}>TAGS</span>
+            {post.tags.map((t) => (
+              <Link
+                key={t}
+                href={`/tag/${encodeURIComponent(t)}`}
+                style={{
+                  fontSize: 12,
+                  color: "var(--brown-2)",
+                  background: "var(--ivory-2)",
+                  border: "1px solid var(--beige)",
+                  borderRadius: 20,
+                  padding: "3px 12px",
+                  textDecoration: "none",
+                }}
+              >
+                #{t}
+              </Link>
+            ))}
+          </div>
+        )}
 
         {/* Share */}
         <ShareButtons title={post.title} />

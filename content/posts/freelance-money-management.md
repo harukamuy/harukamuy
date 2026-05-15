@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "映像フリーランスのリアルなお金管理。freeeでの収支管理、家事按分、青色申告、ふるさと納税。そして独立前の不安をどう乗り越えたかも正直に書きます。"
 coverImage: "/images/20260423_2.webp"
 coverImagePosition: "center"
+tags: ["フリーランス"]
 ---
 
 <div class="conv-wrap">

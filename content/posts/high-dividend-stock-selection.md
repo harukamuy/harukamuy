@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "配当利回り・PBR・PER・財務チェック。高配当株を選ぶときにわたしが見ていること、使っているツール、初心者へのアドバイスを正直に書きます。"
 coverImage: "/images/20260425_4.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

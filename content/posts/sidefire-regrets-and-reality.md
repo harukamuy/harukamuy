@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "サイドFIREを達成して見えてきた、正直なデメリット。孤独感・収入の波・社会保険のコスト……知った上で踏み出してほしいから、きれいごとなしに書きます。"
 coverImage: "/images/20260501_2.webp"
 coverImagePosition: "center"
+tags: ["サイドFIRE"]
 ---
 
 <div class="conv-wrap">

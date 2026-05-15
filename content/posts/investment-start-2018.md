@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "友人の一言がきっかけで始めたFOLIOのテーマ投資。5万円が10万円になった成功体験から、ロボ投資を経てeMAXIS Slim S&P500に辿り着くまでのリアルなストーリー。"
 coverImage: "/images/20260424.webp"
 coverImagePosition: "top center"
+tags: ["インデックス投資"]
 ---
 
 <div class="conv-wrap">

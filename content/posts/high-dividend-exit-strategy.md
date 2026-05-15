@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "高配当株はいつ売るのか。わたしの答えは「基本は売らない」。減配・M&A・老後の取り崩し方まで、出口戦略をまとめて正直に書きます。"
 coverImage: "/images/20260430_3.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

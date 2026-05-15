@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "フリーランス3年目、ふるさと納税はずっとふるなび。楽天・さとふる・ふるさとチョイスとの違いをフェアにまとめつつ、ふるなびを選び続けている直感的な理由、年間4万円の固定2品、ふるなびコインの使い道まで正直に書きます。"
 coverImage: "/images/20260506_1.webp"
 coverImagePosition: "center"
+tags: ["ふるさと納税"]
 ---
 
 <div class="conv-wrap">

@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "2026年3月から続く中東危機・イラン戦争で、わたしの資産は直近高値から約300万円下落。サイドFIRE直後のちょっと嫌なタイミングだったけれど、コロナショックの経験があったから意外と落ち着いていられた。航路を守って積立を続けた話を、正直に書きます。"
 coverImage: "/images/20260502_5.webp"
 coverImagePosition: "center"
+tags: ["市場の話"]
 ---
 
 <div class="conv-wrap">

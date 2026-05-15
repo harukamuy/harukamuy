@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "新NISA1,800万円のうち、いま約651万円使用済み・残り約1,149万円。月5万円のつみたて+年200万円の成長投資枠で、10年で埋め切る計画を公開。インデックスはひたすら積立、高配当株はタイミング重視、急がず楽しむ——というフリーランス3年目のリアル戦略。"
 coverImage: "/images/20260509_1.webp"
 coverImagePosition: "center"
+tags: ["新NISA", "NISA"]
 ---
 
 <div class="conv-wrap">

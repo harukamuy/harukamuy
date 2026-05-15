@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "NISAで高配当株を買うとき、配当受取の設定・損益通算・自分の基準を守ること。知っておくと後悔が減る3つのポイントと、インデックスとの使い分けをあずき流で書きます。"
 coverImage: "/images/20260427_1.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資", "NISA"]
 ---
 
 <div class="conv-wrap">

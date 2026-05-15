@@ -5,6 +5,7 @@ category: "freelance"
 excerpt: "フリーランス3年目、メインカードはJALカードCLUB-Aゴールドの1枚だけ。年240万円利用で北海道-羽田を年2往復ぶんのマイルが貯まる仕組み、仕事とプライベートを分けない理由、クレカ積立をあえてやらない選択まで、正直に書きます。"
 coverImage: "/images/202605010_1S.webp"
 coverImagePosition: "center"
+tags: ["フリーランス", "クレジットカード"]
 ---
 
 <div class="conv-wrap">

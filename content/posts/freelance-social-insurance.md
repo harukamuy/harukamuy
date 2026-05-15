@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "会社をやめると社会保険はどう変わるのか。国民健康保険・国民年金・住民税で月8万円程度の負担になる現実と、課税所得を下げて保険料を抑える方法を正直に書きます。"
 coverImage: "/images/20260426_3.webp"
 coverImagePosition: "center"
+tags: ["フリーランス"]
 ---
 
 <div class="conv-wrap">

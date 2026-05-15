@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "資産が1/3に下落したコロナショック。それを乗り越えた経験から学んだ、暴落時の過ごし方と含み損とのつきあい方。「航路を守れ」という格言は本当だった、と思う話。"
 coverImage: "/images/20260502_1.webp"
 coverImagePosition: "center"
+tags: ["市場の話"]
 ---
 
 <div class="conv-wrap">

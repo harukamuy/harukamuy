@@ -5,6 +5,7 @@ category: "freelance"
 excerpt: "フリーランス3年目、freeeで青色申告も消費税申告もすべて完結。マネーフォワードクラウド会計と比較しても乗り換えない理由、月次のリアル運用、年に数回の悪戦苦闘、そして「会計ソフトの最大の特徴はスイッチングコスト」という結論まで正直に書きます。"
 coverImage: "/images/20260505_4.webp"
 coverImagePosition: "center"
+tags: ["会計ツール"]
 ---
 
 <div class="conv-wrap">

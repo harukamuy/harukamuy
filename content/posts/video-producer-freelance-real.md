@@ -5,6 +5,7 @@ category: "freelance"
 excerpt: "映像プロデューサーというフリーランスの仕事を、案件ジャンル・単価・1日の流れ・年収・しんどさまで全部書きます。TV業界ではなく、企業向けのVPやセミナー配信が中心。地道で、サラリーマン的で、それでも好きな仕事の話。"
 coverImage: "/images/20260504_2.webp"
 coverImagePosition: "center"
+tags: ["フリーランス", "独立・キャリア"]
 ---
 
 <div class="conv-wrap">

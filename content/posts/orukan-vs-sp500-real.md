@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "S&P500歴8年・約3,267万円、オルカン歴2年・約179万円。両方積み立てているからこそ言える、両者の違いと『大きな差はない』というリアルな結論。これから始める人にはオルカンをすすめる理由まで正直に書きます。"
 coverImage: "/images/202605014_1.webp"
 coverImagePosition: "center"
+tags: ["インデックス投資"]
 ---
 
 <div class="conv-wrap">

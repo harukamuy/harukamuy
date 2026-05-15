@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "フリーランス転向後、最初の1年でぶつかった壁。収入の不安、ひとりの寂しさ、仕事の取り方。失敗もあったし、運もよかった。そのリアルを書きます。"
 coverImage: "/images/20260430_6.webp"
 coverImagePosition: "center"
+tags: ["フリーランス"]
 ---
 
 <div class="conv-wrap">

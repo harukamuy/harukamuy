@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "フリーランスの年金は国民年金のみ。わたしの見込み額は月9万円。老後の生活費・配当金・インデックスのバランスを、数字でぼんやり不安を解消する話を正直に書きます。"
 coverImage: "/images/20260502_2.webp"
 coverImagePosition: "center"
+tags: ["フリーランス"]
 ---
 
 <div class="conv-wrap">

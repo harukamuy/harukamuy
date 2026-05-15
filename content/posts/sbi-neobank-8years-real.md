@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "2018年からメイン銀行は住信SBIネット銀行1つだけ。目的別口座での3つの分類、SBIハイブリッド預金の仕組み、ATM・振込無料枠の使い心地、メガバンクとの手数料比較まで、8年使った正直な感想を書きます。"
 coverImage: "/images/202605013_1.webp"
 coverImagePosition: "center"
+tags: ["証券・銀行"]
 ---
 
 <div class="conv-wrap">

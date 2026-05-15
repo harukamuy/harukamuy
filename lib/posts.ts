@@ -15,6 +15,7 @@ export type Post = {
   date: string;
   updated?: string;
   category: Category;
+  tags: string[];
   excerpt: string;
   coverImage?: string;
   coverImagePosition?: string;
@@ -39,6 +40,18 @@ export function getPostsByCategory(category: Category): Post[] {
   return getAllPosts().filter((p) => p.category === category);
 }
 
+export function getAllTags(): string[] {
+  const set = new Set<string>();
+  for (const p of getAllPosts()) {
+    for (const t of p.tags) set.add(t);
+  }
+  return Array.from(set).sort();
+}
+
+export function getPostsByTag(tag: string): Post[] {
+  return getAllPosts().filter((p) => p.tags.includes(tag));
+}
+
 export function getPostBySlug(slug: string): Post | null {
   try {
     const fullPath = path.join(postsDirectory, `${slug}.md`);
@@ -50,6 +63,7 @@ export function getPostBySlug(slug: string): Post | null {
       date: data.date ?? "",
       updated: data.updated,
       category: data.category ?? "all",
+      tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
       excerpt: data.excerpt ?? "",
       coverImage: data.coverImage,
       coverImagePosition: data.coverImagePosition,
@@ -182,11 +196,59 @@ function preprocessAffiliate(markdown: string): string {
   );
 }
 
+export type Heading = { level: 2 | 3; text: string; id: string };
+
+// マークダウン本文から ## / ### 見出しを抜き出して目次データを返す
+export function extractHeadings(markdown: string): Heading[] {
+  const headings: Heading[] = [];
+  const lines = markdown.split("\n");
+  let inCodeBlock = false;
+  let index = 0;
+  for (const line of lines) {
+    if (/^```/.test(line)) {
+      inCodeBlock = !inCodeBlock;
+      continue;
+    }
+    if (inCodeBlock) continue;
+    const m = line.match(/^(#{2,3})\s+(.+?)\s*$/);
+    if (m) {
+      const level = m[1].length as 2 | 3;
+      const text = m[2].replace(/[*_`]/g, "").trim();
+      headings.push({ level, text, id: `h-${index++}` });
+    }
+  }
+  return headings;
+}
+
+// 日本語記事の読了時間を見積もる（500文字/分）
+export function estimateReadingMinutes(markdown: string): number {
+  // コード・記号・空白を雑に除いた文字数で概算
+  const text = markdown
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/[#*_`>\-\[\]\(\)!]/g, "");
+  const chars = text.replace(/\s/g, "").length;
+  return Math.max(1, Math.round(chars / 500));
+}
+
+// remark-html 出力後の <h2>/<h3> に id を付与（目次のアンカー用）
+function injectHeadingIds(html: string, headings: Heading[]): string {
+  let i = 0;
+  return html.replace(/<(h2|h3)>/g, (match, tag) => {
+    if (i < headings.length) {
+      const id = headings[i++].id;
+      return `<${tag} id="${id}">`;
+    }
+    return match;
+  });
+}
+
 export async function renderMarkdown(markdown: string): Promise<string> {
   const processed = preprocessAffiliate(markdown);
   const result = await remark()
     .use(remarkGfm)
     .use(remarkHtml, { sanitize: false })
     .process(processed);
-  return result.toString();
+  const headings = extractHeadings(markdown);
+  return injectHeadingIds(result.toString(), headings);
 }

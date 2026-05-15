@@ -4,6 +4,7 @@ date: "2026-04-02"
 category: "sidefire"
 excerpt: "高配当株を選ぶ際の8項目チェックリストを公開。今月10株買い増したオカムラ（7994）の実際の数字と、選んだ理由を正直に書きます。"
 coverImage: "/images/20260423.webp"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "最初の配当金はコーヒー5杯分だった。今は食費・携帯・光熱費をまかなえるまでになった。目標は年間120万円。焦らず、今を楽しみながら。"
 coverImage: "/images/20260423_7.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

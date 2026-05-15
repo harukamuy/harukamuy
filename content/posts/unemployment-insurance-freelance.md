@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "会社を辞めてフリーランスになるとき、失業保険は使えるの？結論、使えます。わたしが実際に約半年・70万円受給した体験をもとに、手続きの流れと注意点を正直に書きます。"
 coverImage: "/images/20260501_1.webp"
 coverImagePosition: "center"
+tags: ["フリーランス"]
 ---
 
 <div class="conv-wrap">

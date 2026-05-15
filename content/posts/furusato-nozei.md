@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "年間4万円のふるさと納税、ふるなびで上限額を調べて十勝の返礼品を2年選んでいる。柳月の三方六、よつ葉の発酵バター。freeeでの申告方法も正直に書きます。"
 coverImage: "/images/20260426_2.webp"
 coverImagePosition: "center"
+tags: ["ふるさと納税"]
 ---
 
 <div class="conv-wrap">

@@ -5,6 +5,7 @@ category: "gomazochi"
 excerpt: "ごまもちは今のところ元気いっぱい。でもおやつはあげすぎてしまう。毎月かかるリアルな費用と、かかりつけ病院のこと、もしものときの備えについて書きます。"
 coverImage: "/images/20260425_3.webp"
 coverImagePosition: "center"
+tags: ["ごまもち"]
 ---
 
 <div class="conv-wrap">

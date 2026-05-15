@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "2023年3月に退職しフリーランスへ転向。8年間のコツコツ積立で2026年4月にサイドFIRE達成。総資産5,463万円・年間配当49万円の現在地を公開します。"
 coverImage: "/images/mio-room.webp"
 coverImagePosition: "center"
+tags: ["サイドFIRE", "家計・資産管理"]
 ---
 
 <div class="asset-summary">

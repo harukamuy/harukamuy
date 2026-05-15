@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "わたしのポートフォリオで1割を切る米国総合債券ETFのBND。2019年に守り目的で買い始めて、いまは配当ドルで地味に買い増し中。AGG・LQD・HYGとの比較、為替を「リスク」ではなく「分散」と捉える理由まで、正直に書きます。"
 coverImage: "/images/20260505_2.webp"
 coverImagePosition: "center"
+tags: ["ETF", "債券"]
 ---
 
 <div class="conv-wrap">

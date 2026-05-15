@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "5年の結婚生活と離婚を経て、ひとりで経済的自立を選んだ女性のサイドFIRE。パートナーとお金、ライフイベント、女性ひとりで生きていくことのリアル。このブログだけに打ち明ける話を、正直に書きます。"
 coverImage: "/images/20260502_4.webp"
 coverImagePosition: "center"
+tags: ["女性の資産形成"]
 ---
 
 <div class="conv-wrap">

@@ -5,6 +5,7 @@ category: "gomazochi"
 excerpt: "ボストンテリアのごまもちと暮らして3年。月額・年額・初期費用・累計まで全部並べてみました。月13,500円の固定費に乗らない出費、これからの高齢期に向けた備え、そして「かわいい」ゆえに止まらない楽しい浪費まで、正直に書きます。"
 coverImage: "/images/20260504_3.webp"
 coverImagePosition: "center"
+tags: ["ごまもち"]
 ---
 
 <div class="conv-wrap">

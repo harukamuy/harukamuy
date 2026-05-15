@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "保有株が減配したとき、株価急落と配当カットを同時に経験した。その後に気づいた「減配しやすい企業の特徴」と、わたしが銘柄選びで意識していることを正直に書きます。"
 coverImage: "/images/20260429_4.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

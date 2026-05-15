@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "コロナをきっかけに「自由な生き方がしたい」と思い始めて3年。資産2,000万円を超えたタイミングで退職を決断。引き止められながらも辞めた日の話。"
 coverImage: "/images/20260424_2.webp"
 coverImagePosition: "top center"
+tags: ["独立・キャリア"]
 ---
 
 <div class="conv-wrap">

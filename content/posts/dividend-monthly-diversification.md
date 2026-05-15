@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "毎月配当を受け取りたいなら、日本株だけでは難しい。6月・12月に偏るのが現実。わたしの配当ログと、それでも気にしない理由を正直に書きます。"
 coverImage: "/images/20260429_5.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

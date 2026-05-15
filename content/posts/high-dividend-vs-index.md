@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "高配当株かインデックスか、迷っている人へ。テーマ投資・ロボアドを経てS&P500、そして日本高配当株へ。わたしが両方持つ理由と、オカムラの椅子から気づいたこと。"
 coverImage: "/images/20260429_2.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資", "インデックス投資"]
 ---
 
 <div class="conv-wrap">

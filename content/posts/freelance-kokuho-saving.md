@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "フリーランス3年目、国民健康保険は年35万円。マイクロ法人・国保組合・社保加入サービスは「自分のフェーズではまだ早い」と判断し、青色申告と家事按分・経費の積み上げで課税所得を適正に抑える方針でやっている。わたしの現在地を、正直に書きます。"
 coverImage: "/images/20260503_1.webp"
 coverImagePosition: "center"
+tags: ["フリーランス"]
 ---
 
 <div class="conv-wrap">

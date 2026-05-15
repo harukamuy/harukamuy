@@ -5,6 +5,7 @@ category: "gomazochi"
 excerpt: "フリーランスの在宅ワークにごまもちがいる日常。書類をバラバラにされても、ベッドを汚されても、あの申し訳なさそうな顔に全部許してしまう。"
 coverImage: "/images/20260423_8.webp"
 coverImagePosition: "center"
+tags: ["ごまもち"]
 ---
 
 <div class="conv-wrap">

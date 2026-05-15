@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "増配株と高配当株、どちらがいいのか。わたしの答えは「どちらか選ぶより、両方持つのが自然な結果になる」。その理由を正直に書きます。"
 coverImage: "/images/20260430_4.webp"
 coverImagePosition: "center"
+tags: ["高配当株", "配当投資"]
 ---
 
 <div class="conv-wrap">

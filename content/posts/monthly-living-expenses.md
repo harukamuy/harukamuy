@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "フリーランス・サイドFIREのリアルな生活費を公開。家賃7万・食費3万・ごまもち2万。節約ではなく「何にお金を使うか」を決めた結果が月15万円です。"
 coverImage: "/images/20260429_3.webp"
 coverImagePosition: "center"
+tags: ["家計・資産管理"]
 ---
 
 <div class="conv-wrap">

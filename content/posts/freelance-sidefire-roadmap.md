@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "2018年に投資をスタートし、2023年にフリーランス転向、2026年に5,000万円達成。映像プロデューサーがサイドFIREにたどり着くまでの道のりとステップを正直に書きます。"
 coverImage: "/images/20260430_5.webp"
 coverImagePosition: "center"
+tags: ["フリーランス", "サイドFIRE"]
 ---
 
 <div class="conv-wrap">

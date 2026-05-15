@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "はじめからSBI証券一択だった。手数料無料・NISA対応・住信SBIネット銀行との連携。デメリットも正直に書きます。"
 coverImage: "/images/20260423_5S.webp"
 coverImagePosition: "center"
+tags: ["証券・銀行"]
 ---
 
 <div class="conv-wrap">

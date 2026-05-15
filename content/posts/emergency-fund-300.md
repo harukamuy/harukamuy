@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "わたしの生活防衛資金は普通預金で300万円。金額の決め方・置き場所の理由・想定している使いどき。フリーランスが備えるリアルを正直に書きます。"
 coverImage: "/images/20260501_3.webp"
 coverImagePosition: "center"
+tags: ["家計・資産管理"]
 ---
 
 <div class="conv-wrap">

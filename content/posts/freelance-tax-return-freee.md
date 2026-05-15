@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "初めての確定申告は予想よりずっと簡単だった。freeeで日々管理していれば、資料さえ揃えれば1時間ほどで完結。準備しておくべきこととポイントをまとめます。"
 coverImage: "/images/20260425_5.webp"
 coverImagePosition: "center"
+tags: ["フリーランス", "会計ツール"]
 ---
 
 <div class="conv-wrap">
