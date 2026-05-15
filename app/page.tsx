@@ -22,12 +22,55 @@ export const metadata: Metadata = {
   },
 };
 
+const SITE_URL = "https://harukamuy.com";
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "harukamuy",
+  alternateName: "ごまもちとサイドFIREの記録",
+  url: SITE_URL,
+  inLanguage: "ja-JP",
+  description:
+    "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
+  publisher: {
+    "@type": "Organization",
+    name: "harukamuy",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/images/mio-fullbody.webp`,
+    },
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "あずき",
+  url: SITE_URL,
+  image: `${SITE_URL}/images/mio-fullbody.webp`,
+  description:
+    "北海道十勝出身、34歳のフリーランス映像プロデューサー。愛犬ごまもち（ボストンテリア）と暮らしながら、2026年4月にサイドFIREを達成。",
+  jobTitle: "映像プロデューサー",
+  knowsAbout: ["サイドFIRE", "インデックス投資", "高配当株投資", "フリーランス", "確定申告"],
+  mainEntityOfPage: SITE_URL,
+};
+
 export default function Home() {
   const stats = latestStats();
   const posts = getAllPosts();
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       {/* HERO */}
       <section className="hero-section">
         <div className="hero-text-wrap">
