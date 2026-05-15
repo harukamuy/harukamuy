@@ -16,7 +16,7 @@ coverImagePosition: "center"
   <div class="bubble-wrap">
     <div class="speaker-label">🐾 ごまもち</div>
     <div class="bubble">
-      にわりとっけいって、まだあるの?🐾
+      にわりとくれいって、まだあるの?🐾
     </div>
   </div>
 </div>
