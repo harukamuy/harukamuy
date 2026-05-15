@@ -13,6 +13,10 @@ export async function generateStaticParams() {
 
 const SITE_URL = "https://harukamuy.com";
 
+// YYYY-MM-DD → ISO 8601 with JST timezone (for schema.org / OpenGraph date properties)
+const toIsoJst = (d: string) =>
+  /^\d{4}-\d{2}-\d{2}$/.test(d) ? `${d}T00:00:00+09:00` : d;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
@@ -29,8 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.title,
       description: post.excerpt,
       url: `${SITE_URL}/blog/${slug}`,
-      publishedTime: post.date,
-      modifiedTime: post.updated ?? post.date,
+      publishedTime: toIsoJst(post.date),
+      modifiedTime: toIsoJst(post.updated ?? post.date),
       authors: ["あずき"],
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
@@ -79,8 +83,8 @@ export default async function PostPage({ params }: Props) {
     headline: post.title,
     description: post.excerpt,
     image: ogImage,
-    datePublished: post.date,
-    dateModified: post.updated ?? post.date,
+    datePublished: toIsoJst(post.date),
+    dateModified: toIsoJst(post.updated ?? post.date),
     author: {
       "@type": "Person",
       name: "あずき",
