@@ -255,45 +255,20 @@ export default function Home() {
           実際に使っているサービスのみ紹介しています。一部アフィリエイトリンクを含みます。
         </div>
         <div className="affiliate-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-          {/* SBI 証券 - wide */}
-          <a href="https://h.accesstrade.net/sp/cc?rk=0100piab00orlw" rel="nofollow sponsored noopener" target="_blank" className="affiliate-wide" style={{
-            gridColumn: "1 / -1",
+          {/* SBI 証券 */}
+          <a href="https://h.accesstrade.net/sp/cc?rk=0100piab00orlw" rel="nofollow sponsored noopener" target="_blank" style={{
             borderRadius: "var(--r)",
-            padding: "24px 26px",
+            padding: "20px 22px",
             textDecoration: "none",
             color: "inherit",
-            display: "grid",
-            gridTemplateColumns: "auto 1fr",
-            gap: 20,
-            alignItems: "center",
+            display: "block",
             border: "1.5px solid var(--beige)",
             background: "#f4efe8",
-            position: "relative",
-            overflow: "hidden",
           }}>
-            <div style={{
-              width: 58,
-              height: 58,
-              borderRadius: 16,
-              background: "var(--beige)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              fontSize: 26,
-            }}>
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <rect x="4" y="16" width="5" height="8" rx="1" fill="#5e7252"/>
-                <rect x="11.5" y="10" width="5" height="14" rx="1" fill="#5e7252" opacity="0.7"/>
-                <rect x="19" y="4" width="5" height="20" rx="1" fill="#5e7252" opacity="0.4"/>
-              </svg>
-            </div>
-            <div>
-              <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>★ 最もおすすめ</div>
-              <div style={{ fontFamily: "var(--font-serif)", fontSize: 15, fontWeight: 600, marginBottom: 4 }}>SBI証券 — わたしのメイン口座</div>
-              <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>手数料ゼロ・米国ETFの買付も便利。配当金管理もシンプルで5年以上愛用しています。</div>
-              <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>公式サイトで詳しく見る →</div>
-            </div>
+            <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>★ 最もおすすめ</div>
+            <div style={{ fontFamily: "var(--font-serif)", fontSize: 15, fontWeight: 600, marginBottom: 4 }}>SBI証券 — わたしのメイン口座</div>
+            <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>手数料ゼロ・米国ETFの買付も便利。配当金管理もシンプルで5年以上愛用しています。</div>
+            <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>公式サイトで詳しく見る →</div>
           </a>
 
           {/* freee */}
