@@ -24,12 +24,6 @@ const routines = [
   { time: "夜",    ampm: "",   icon: "✨", title: "ブラッシング・スキンシップ", text: "歯磨きとブラッシング。あずきちゃんと過ごす一番好きな時間。" },
 ];
 
-const recoItems = [
-  { icon: "🦴", badge: "愛用中",    name: "オリジン ドッグフード スモールブリード", price: "¥3,980〜" },
-  { icon: "🎾", badge: "ベストバイ", name: "KONG クラシック Mサイズ", price: "¥1,480〜" },
-  { icon: "🛏️", badge: "ソファ占拠中", name: "ABO ドッグベッド Lサイズ", price: "¥6,800〜" },
-];
-
 const photoColors = ["#d4a898", "#c9b99a", "#b8c9a0", "#d4957e", "#a0b8c8", "#c8b08a"];
 
 export default function GomamochiPage() {
@@ -113,7 +107,6 @@ export default function GomamochiPage() {
               <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>フォトギャラリー</div>
               <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Gallery</div>
             </div>
-            <a href="#" style={{ marginLeft: "auto", fontSize: 12, color: "var(--terra)", textDecoration: "none", letterSpacing: "0.06em" }}>もっと見る →</a>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12 }}>
             {/* wide first photo - 散歩シーン */}
@@ -192,30 +185,6 @@ export default function GomamochiPage() {
                   <span style={{ fontSize: 13, color: "var(--brown-2)" }}>{r.text}</span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ── RECOMMENDED ITEMS ── */}
-        <div>
-          <div style={{ marginBottom: 24 }}>
-            <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>ごまもちのお気に入りグッズ</div>
-            <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Favorites</div>
-          </div>
-          <p style={{ fontSize: 13, color: "var(--brown-3)", marginBottom: 16, letterSpacing: "0.04em" }}>
-            ※実際に使用しているものをご紹介しています。一部アフィリエイトリンクを含みます。
-          </p>
-          <div className="three-col-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
-            {recoItems.map((item) => (
-              <a key={item.name} href="#" style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 14, padding: "16px 14px", textAlign: "center", textDecoration: "none", color: "inherit", display: "block" }}>
-                <div style={{ aspectRatio: "1", background: "var(--ivory-2)", borderRadius: 10, marginBottom: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, border: "1px solid var(--beige)" }}>
-                  {item.icon}
-                </div>
-                <div style={{ fontSize: 9, background: "var(--terra)", color: "white", padding: "2px 8px", borderRadius: 4, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>{item.badge}</div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: "var(--brown)", marginBottom: 3, lineHeight: 1.5 }}>{item.name}</div>
-                <div style={{ fontSize: 11, color: "var(--brown-3)" }}>{item.price}</div>
-                <div style={{ marginTop: 8, fontSize: 11, color: "var(--terra)", fontWeight: 500 }}>Amazonで見る →</div>
-              </a>
             ))}
           </div>
         </div>
