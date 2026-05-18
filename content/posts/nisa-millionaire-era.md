@@ -194,7 +194,7 @@ coverImagePosition: "center"
 
 ## 5. 「平凡なミリオネア」の登場——比較ではなく、自由を見る
 
-ミリオネアが増えてくると、**「平凡なミリオネア」** という言葉も生まれてきた。UBSの調査では:
+ミリオネアが増えてくると、**「平凡なミリオネア」** という言葉も生まれてきた。**UBS**(スイスに本拠を置く世界最大級の金融グループで、資産運用・プライベートバンキング分野が特に強い)のグローバル・ウェルス・マネジメント部門の調査ではこう指摘されている:
 
 > 「米国の新しいミリオネアは心理的な富の壁を打ち破ったが、彼らの所得と支出は中間層世帯と変わらない」
 
@@ -203,7 +203,7 @@ coverImagePosition: "center"
 でも、この手の話は **無視していい** とわたしは思う。
 
 - 生活水準が「中間層と同じ」で何が悪い。**本人が幸せかどうかが大事**
-- 「典型的なミリオネアらしい生活」を目指すのは、お金の使い方が下手な人の発想
+- 「典型的なミリオネアらしい生活」を目指すのは、お金の使い方がちょっとズレている気もする(個人的な意見です💦)
 - メディアが煽る「お金持ちらしい暮らし」に流されない
 
 人間には、いくら資産が増えても **「まだ足りない」** と感じる性質がある。**他人との比較・競争に身を置くのではなく、「自分の望む自由な人生を送れているか?」だけを見る** ——わたしはそこを軸にしている。
@@ -248,7 +248,7 @@ coverImagePosition: "center"
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🎯 NISAミリオネアになるための3つの基本</div>
 <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#3a5030;">
 <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">①</span><span><strong>収入の一定割合を貯蓄・投資に回す</strong>。給料天引きで自動化するのがコツ</span></div>
-<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②</span><span><strong>NISA・iDeCoで税金を払わない</strong>。米国401k・英国ISAで起きていることが、日本でも起きる</span></div>
+<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②</span><span><strong>NISA・iDeCoで税金を払わない</strong>。米国401k・英国ISAで起きていることが、日本でも起きる(まずは <strong>NISAからスタート</strong> がおすすめ)</span></div>
 <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">③</span><span><strong>長期目線で持ち続ける</strong>。変な売買をせず、暴落でも積立を止めない</span></div>
 </div>
 </div>
