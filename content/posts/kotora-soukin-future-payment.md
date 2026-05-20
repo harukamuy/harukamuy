@@ -152,7 +152,26 @@ PayPayやLINE Payが台頭するなかで、銀行が静かに失っていたも
 
 このまま放置すれば、銀行は **「お金の保管庫」「PayPayへの蛇口」** に格下げされてしまう。だから銀行界は一致団結して、**「個人間送金は銀行のプラットフォームで完結できる」** という選択肢を作ったわけだ。
 
-もちろん **ユーザーにとっても便利な機能** ではあるけれど、それと同時に **「銀行を守るため」の側面** も大きい——という二面性のあるサービス。だからこそ、PayPayのような派手なテレビCMで一気に拡げる戦略ではなく、認知度や普及スピードもじわじわ進む形になっているのかもしれない。
+もちろん **ユーザーにとっても便利な機能** ではあるけれど、それと同時に **「銀行を守るため」の側面** も大きい——という二面性のあるサービス。
+
+### なぜPRが控えめなのか?(調べて見えてきた構造的な理由)
+
+「便利なのにもったいない」と感じたので、なぜ派手なPRが打てないのかを調べてみると、いくつか構造的な理由が見えてきた。
+
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
+<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🔍 ことらのPRが派手にならない構造的理由</div>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#3a5030;">
+<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">①</span><span><strong>「赤字を覚悟したばらまき」が銀行にはできない</strong> — PayPayは「100億円あげちゃうキャンペーン」「累積損失2,000億円近い先行投資」など、テック企業ならではの大胆さで一気にシェアを取りに行った。一方、銀行は株主への説明責任があり、規制下でこのスタイルは取りづらい</span></div>
+<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②</span><span><strong>「個人間送金」自体に収益源がない</strong> — ことらは手数料無料の共通インフラ。利益を生まない構造なので、巨額の広告費を回収するロジックを作りにくい</span></div>
+<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">③</span><span><strong>銀行連合の足並みが揃いにくい</strong> — メガバンク・地銀・ネット銀行の共同出資なので、施策は最大公約数になりがち。各行が独自施策を打つにはコスト負担の調整が必要</span></div>
+<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">④</span><span><strong>UXが各銀行アプリ任せ</strong> — ことら独自のアプリがなく、ユーザーは普段使う銀行アプリから操作。統一されたブランド体験を作りにくく、CMで「○○アプリを開いて〜」と細かい説明が必要になる</span></div>
+<div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">⑤</span><span><strong>「守りの戦略」だから派手にする必要が薄い</strong> — 攻めて市場を奪うのではなく、既存顧客を逃さないための仕組み。穏やかに浸透すれば目的は果たせる、というスタンスが垣間見える</span></div>
+</div>
+</div>
+
+つまり「**広告予算がない**」というより、**ビジネス構造そのものが派手なマーケティングと相性が悪い**。これが「便利なのに知られていない」というギャップの正体だ。
+
+逆に言えば、**ことらは静かに広がっていくのが運命** のサービス。これからの認知度上昇も急加速ではなく、口コミとアプリ内動線を通じて **じわじわ進む** タイプだと予想できる。
 
 ---
 
