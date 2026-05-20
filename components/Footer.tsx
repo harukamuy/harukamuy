@@ -23,7 +23,8 @@ export default function Footer() {
             alignItems: "center",
             gap: 6,
           }}>
-            🐾 harukamuy
+            <img src="/images/logo.png" alt="harukamuy" style={{ width: 20, height: 20, objectFit: "contain" }} />
+            harukamuy
           </div>
           <div style={{ fontSize: 12, lineHeight: 1.85, maxWidth: 300 }}>
             フリーランス映像プロデューサー・あずきちゃんと愛犬ごまもちによる、サイドFIRE達成後の暮らしと資産管理の記録ブログ。

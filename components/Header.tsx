@@ -49,7 +49,7 @@ export default function Header() {
           alignItems: "center",
           gap: 8,
         }}>
-          <span style={{ fontSize: 16 }}>🐾</span>
+          <img src="/images/logo.png" alt="harukamuy" style={{ width: 24, height: 24, objectFit: "contain" }} />
           harukamuy
         </Link>
 
