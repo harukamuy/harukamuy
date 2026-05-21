@@ -3,7 +3,7 @@ title: "気づいたら準富裕層——34歳フリーランスが見た『NISA
 date: "2026-05-18"
 category: "investment"
 excerpt: "米国で401kミリオネア(資産1.5億円超)が続々誕生。日本でも富裕層は153.5万世帯と過去最高水準。NISA・iDeCoが整備されたいま、日本にも『NISAミリオネア』が増える時代がくる。8年で5,463万円(準富裕層)に到達したわたしのリアル体感と、これから10年で何が起きるかを書きます。"
-coverImage: "/images/202605018_1.png"
+coverImage: "/images/202605018_1.webp"
 coverImagePosition: "center"
 ---
 

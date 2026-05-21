@@ -6,23 +6,64 @@
  *   node scripts/index-request.js --new-only   # ここ7日以内に追加された記事のみ
  *   node scripts/index-request.js URL1 URL2     # 個別URL指定
  *
- * 前提:
- *   - Google Cloud で Service Account 作成済み
- *   - Indexing API 有効化済み
- *   - Search Console で Service Account を「所有者」として追加済み
- *   - サービスアカウントの鍵ファイルを harukamuy-indexing-key.json として配置
+ * 認証: OAuth2（ブラウザでGoogleログイン）
+ *   初回実行時にブラウザが開きます。bokushinya@gmail.com でログインして許可してください。
+ *   トークンは indexing-token.json に保存され、次回から自動ログインになります。
  */
 
 const { google } = require('googleapis');
 const fs = require('fs');
 const path = require('path');
-const matter = require('gray-matter');
+const http = require('http');
 
 // ===== 設定 =====
-const KEY_PATH = path.join(__dirname, '..', 'harukamuy-indexing-key.json');
+const CREDENTIALS_PATH = path.join(__dirname, '..', 'client_secret_148969337324-pllh9ott6eur49era10lqhr982car072.apps.googleusercontent.com.json');
+const TOKEN_PATH = path.join(__dirname, '..', 'indexing-token.json');
 const SITE_URL = 'https://harukamuy.com';
 const POSTS_DIR = path.join(__dirname, '..', 'content', 'posts');
 const SCOPES = ['https://www.googleapis.com/auth/indexing'];
+
+// ===== OAuth 認証 =====
+async function authorize() {
+  const credentials = JSON.parse(fs.readFileSync(CREDENTIALS_PATH));
+  const { client_secret, client_id } = credentials.installed;
+  const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, 'http://localhost:3333');
+
+  if (fs.existsSync(TOKEN_PATH)) {
+    const token = JSON.parse(fs.readFileSync(TOKEN_PATH));
+    oAuth2Client.setCredentials(token);
+    return oAuth2Client;
+  }
+
+  // 初回：ブラウザで認証
+  const authUrl = oAuth2Client.generateAuthUrl({ access_type: 'offline', scope: SCOPES });
+  console.log('\n🔐 ブラウザでGoogleにログインして許可してください...\n');
+
+  // ローカルサーバーでコードを受け取る
+  const code = await new Promise((resolve, reject) => {
+    const server = http.createServer(async (req, res) => {
+      const url = new URL(req.url, 'http://localhost:3333');
+      const code = url.searchParams.get('code');
+      if (!code) { res.end('waiting'); return; }
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end('<h1>✅ 認証成功！このタブを閉じてください。</h1>');
+      server.close();
+      resolve(code);
+    });
+    server.listen(3333, () => {
+      // ブラウザを自動で開く
+      const { exec } = require('child_process');
+      exec(`open "${authUrl}"`);
+    });
+    setTimeout(() => reject(new Error('認証タイムアウト（120秒）')), 120000);
+  });
+
+  const { tokens } = await oAuth2Client.getToken(code);
+  oAuth2Client.setCredentials(tokens);
+  fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokens));
+  console.log('✅ 認証情報を保存しました（次回から自動ログイン）\n');
+  return oAuth2Client;
+}
 
 // ===== URL 一覧の取得 =====
 function getAllPostUrls() {
@@ -62,24 +103,6 @@ function getStaticPageUrls() {
   ];
 }
 
-// ===== 認証 =====
-async function authorize() {
-  if (!fs.existsSync(KEY_PATH)) {
-    console.error(`\n❌ サービスアカウントの鍵ファイルが見つかりません:\n   ${KEY_PATH}\n`);
-    console.error('   セットアップ手順:');
-    console.error('   1. Google Cloud Console で Service Account 作成');
-    console.error('   2. JSON キーをダウンロード');
-    console.error(`   3. ${KEY_PATH} に配置`);
-    console.error('   4. Search Console でサービスアカウントを「所有者」として追加\n');
-    process.exit(1);
-  }
-
-  const auth = new google.auth.GoogleAuth({
-    keyFile: KEY_PATH,
-    scopes: SCOPES,
-  });
-  return auth.getClient();
-}
 
 // ===== インデックス送信 =====
 async function publishUrl(client, url) {
@@ -122,7 +145,8 @@ async function main() {
   console.log('🚀 Google Indexing API への送信開始');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
-  const client = await authorize();
+  const oAuth2Client = await authorize();
+  const client = oAuth2Client;
 
   let success = 0;
   let failure = 0;

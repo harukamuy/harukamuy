@@ -17,13 +17,19 @@ const SITE_URL = "https://harukamuy.com";
 const toIsoJst = (d: string) =>
   /^\d{4}-\d{2}-\d{2}$/.test(d) ? `${d}T00:00:00+09:00` : d;
 
+// OGP用の軽量JPG（scripts/make-og-images.mjs が public/images/og/ に生成）。
+// X や LINE は大きい画像・WebPだとカードに画像を出さないことがあるため。
+function ogImageUrl(coverImage?: string): string {
+  if (!coverImage) return `${SITE_URL}/images/mio-room.jpg`;
+  const base = coverImage.replace(/^\/images\//, "").replace(/\.[a-z]+$/i, "");
+  return `${SITE_URL}/images/og/${base}.jpg`;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  const ogImage = post.coverImage
-    ? `${SITE_URL}${post.coverImage}`
-    : `${SITE_URL}/images/mio-room.jpg`;
+  const ogImage = ogImageUrl(post.coverImage);
   return {
     title: post.title,
     description: post.excerpt,
@@ -78,9 +84,7 @@ export default async function PostPage({ params }: Props) {
 
   const relatedThumbColors = ["#d4957e", "#d4a898", "#7a9e96", "#8fa87f"];
 
-  const ogImage = post.coverImage
-    ? `${SITE_URL}${post.coverImage}`
-    : `${SITE_URL}/images/mio-room.jpg`;
+  const ogImage = ogImageUrl(post.coverImage);
 
   const jsonLd = {
     "@context": "https://schema.org",

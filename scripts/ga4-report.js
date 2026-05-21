@@ -67,11 +67,14 @@ async function runReport(auth) {
     },
   });
 
-  // 過去30日間
-  const res30 = await analyticsData.properties.runReport({
+  // 今月（直近30日）と先月（31〜60日前）を同時取得して比較
+  const resMonthly = await analyticsData.properties.runReport({
     property: `properties/${PROPERTY_ID}`,
     requestBody: {
-      dateRanges: [{ startDate: '30daysAgo', endDate: 'today' }],
+      dateRanges: [
+        { startDate: '30daysAgo', endDate: 'today' },       // 今月
+        { startDate: '60daysAgo', endDate: '31daysAgo' },   // 先月
+      ],
       metrics: [
         { name: 'screenPageViews' },
         { name: 'sessions' },
@@ -104,13 +107,32 @@ async function runReport(auth) {
     },
   });
 
-  return { res7, res30, resPages, resSource };
+  return { res7, resMonthly, resPages, resSource };
+}
+
+// ===== 前月比の矢印表示 =====
+function trend(current, previous) {
+  if (!previous || previous === 0) return '';
+  const rate = ((current - previous) / previous) * 100;
+  const arrow = rate >= 0 ? '↑' : '↓';
+  return ` ${arrow}${Math.abs(rate).toFixed(0)}%`;
 }
 
 // ===== レポート表示 =====
-function printReport({ res7, res30, resPages, resSource }) {
+function printReport({ res7, resMonthly, resPages, resSource }) {
   const v7 = res7.data.rows?.[0]?.metricValues || [];
-  const v30 = res30.data.rows?.[0]?.metricValues || [];
+
+  // 月次比較データ（GA4は dateRange ごとに別行で返る）
+  const rows = resMonthly.data.rows || [];
+  const nowRow  = rows.find(r => r.dimensionValues?.[0]?.value === 'date_range_0');
+  const prevRow = rows.find(r => r.dimensionValues?.[0]?.value === 'date_range_1');
+
+  const nowPV       = Number(nowRow?.metricValues?.[0]?.value || 0);
+  const nowSessions = Number(nowRow?.metricValues?.[1]?.value || 0);
+  const nowUsers    = Number(nowRow?.metricValues?.[2]?.value || 0);
+  const prevPV       = Number(prevRow?.metricValues?.[0]?.value || 0);
+  const prevSessions = Number(prevRow?.metricValues?.[1]?.value || 0);
+  const prevUsers    = Number(prevRow?.metricValues?.[2]?.value || 0);
 
   console.log('');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -123,10 +145,16 @@ function printReport({ res7, res30, resPages, resSource }) {
   console.log(`  セッション   : ${Number(v7[1]?.value || 0).toLocaleString()}`);
   console.log(`  ユーザー数   : ${Number(v7[2]?.value || 0).toLocaleString()} 人`);
 
-  console.log('\n【過去30日間】');
-  console.log(`  ページビュー : ${Number(v30[0]?.value || 0).toLocaleString()} PV`);
-  console.log(`  セッション   : ${Number(v30[1]?.value || 0).toLocaleString()}`);
-  console.log(`  ユーザー数   : ${Number(v30[2]?.value || 0).toLocaleString()} 人`);
+  console.log('\n【月次比較（直近30日 vs その前30日）】');
+  if (!prevRow) {
+    console.log(`  直近30日: ${nowPV.toLocaleString()} PV / ${nowSessions.toLocaleString()} セッション / ${nowUsers.toLocaleString()} 人`);
+    console.log(`  前30日  : データなし（ブログ開設前の期間が含まれています）`);
+  } else {
+    console.log(`                    直近30日    前30日    前月比`);
+    console.log(`  ページビュー : ${String(nowPV.toLocaleString()).padStart(8)}  ${String(prevPV.toLocaleString()).padStart(7)}  ${trend(nowPV, prevPV)}`);
+    console.log(`  セッション   : ${String(nowSessions.toLocaleString()).padStart(8)}  ${String(prevSessions.toLocaleString()).padStart(7)}  ${trend(nowSessions, prevSessions)}`);
+    console.log(`  ユーザー数   : ${String(nowUsers.toLocaleString()).padStart(8)}  ${String(prevUsers.toLocaleString()).padStart(7)}  ${trend(nowUsers, prevUsers)}`);
+  }
 
   console.log('\n【人気記事 TOP10（過去30日）】');
   const pages = resPages.data.rows || [];
