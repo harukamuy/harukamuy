@@ -1,7 +1,7 @@
 export const dynamic = "force-static";
 
 import type { MetadataRoute } from "next";
-import { getAllPosts, getAllTags } from "@/lib/posts";
+import { getAllPosts, getAllTags, tagToSlug } from "@/lib/posts";
 
 const SITE_URL = "https://harukamuy.com";
 
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const tagPages: MetadataRoute.Sitemap = getAllTags().map((tag) => ({
-    url: `${SITE_URL}/tag/${encodeURIComponent(tag)}`,
+    url: `${SITE_URL}/tag/${tagToSlug(tag)}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.5,

@@ -1,4 +1,4 @@
-import { getAllTags, getPostsByTag } from "@/lib/posts";
+import { getAllTags, getPostsByTag, tagToSlug, slugToTag } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -9,25 +9,26 @@ type Props = { params: Promise<{ tag: string }> };
 const SITE_URL = "https://harukamuy.com";
 
 export async function generateStaticParams() {
-  return getAllTags().map((tag) => ({ tag: encodeURIComponent(tag) }));
+  return getAllTags().map((tag) => ({ tag: tagToSlug(tag) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { tag } = await params;
-  const decoded = decodeURIComponent(tag);
-  const posts = getPostsByTag(decoded);
-  if (posts.length === 0) return {};
+  const { tag: slug } = await params;
+  const tag = slugToTag(slug);
+  if (!tag) return {};
+  const posts = getPostsByTag(tag);
   return {
-    title: `${decoded}の記事一覧`,
-    description: `${decoded}に関する記事 ${posts.length} 件`,
-    alternates: { canonical: `${SITE_URL}/tag/${encodeURIComponent(decoded)}` },
+    title: `${tag}の記事一覧`,
+    description: `${tag}に関する記事 ${posts.length} 件`,
+    alternates: { canonical: `${SITE_URL}/tag/${slug}` },
   };
 }
 
 export default async function TagPage({ params }: Props) {
-  const { tag } = await params;
-  const decoded = decodeURIComponent(tag);
-  const posts = getPostsByTag(decoded);
+  const { tag: slug } = await params;
+  const tag = slugToTag(slug);
+  if (!tag) notFound();
+  const posts = getPostsByTag(tag);
   if (posts.length === 0) notFound();
 
   return (
@@ -38,11 +39,11 @@ export default async function TagPage({ params }: Props) {
         <span style={{ opacity: 0.5 }}>›</span>
         <Link href="/blog" style={{ color: "var(--brown-3)", textDecoration: "none" }}>記事一覧</Link>
         <span style={{ opacity: 0.5 }}>›</span>
-        <span>#{decoded}</span>
+        <span>#{tag}</span>
       </div>
 
       <h1 style={{ fontFamily: "var(--font-serif)", fontSize: 28, fontWeight: 700, color: "var(--brown)", marginBottom: 6, letterSpacing: "0.02em" }}>
-        #{decoded}
+        #{tag}
       </h1>
       <p style={{ fontSize: 13, color: "var(--brown-3)", marginBottom: 32 }}>
         {posts.length} 件の記事

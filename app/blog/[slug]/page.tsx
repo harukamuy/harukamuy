@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug, renderMarkdown, extractHeadings, estimateReadingMinutes } from "@/lib/posts";
+import { getAllPosts, getPostBySlug, renderMarkdown, extractHeadings, estimateReadingMinutes, tagToSlug } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -284,7 +284,7 @@ export default async function PostPage({ params }: Props) {
             {post.tags.map((t) => (
               <Link
                 key={t}
-                href={`/tag/${encodeURIComponent(t)}`}
+                href={`/tag/${tagToSlug(t)}`}
                 style={{
                   fontSize: 12,
                   color: "var(--brown-2)",

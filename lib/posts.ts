@@ -40,6 +40,52 @@ export function getPostsByCategory(category: Category): Post[] {
   return getAllPosts().filter((p) => p.category === category);
 }
 
+// タグ名 → URL用スラッグ（ASCII）。日本語URLはCloudflare Pagesで配信できないため、
+// URLは必ずASCIIにする。新しいタグを追加したらこの表にも1行足すこと。
+export const TAG_SLUGS: Record<string, string> = {
+  "サイドFIRE": "sidefire",
+  "新NISA": "new-nisa",
+  "NISA": "nisa",
+  "高配当株": "high-dividend",
+  "配当投資": "dividend",
+  "インデックス投資": "index-investing",
+  "ETF": "etf",
+  "債券": "bonds",
+  "iDeCo": "ideco",
+  "フリーランス": "freelance",
+  "独立・キャリア": "career",
+  "ごまもち": "gomamochi",
+  "家計・資産管理": "household",
+  "女性の資産形成": "women-finance",
+  "ふるさと納税": "furusato-nozei",
+  "証券・銀行": "securities",
+  "クレジットカード": "credit-card",
+  "会計ツール": "accounting",
+  "市場の話": "market",
+  "十勝計画": "tokachi-plan",
+};
+
+// 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）
+function fallbackSlug(tag: string): string {
+  if (/^[\x20-\x7e]+$/.test(tag)) {
+    return tag.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  }
+  let h = 0;
+  for (let i = 0; i < tag.length; i++) h = (h * 31 + tag.charCodeAt(i)) | 0;
+  return "t-" + Math.abs(h).toString(36);
+}
+
+export function tagToSlug(tag: string): string {
+  return TAG_SLUGS[tag] ?? fallbackSlug(tag);
+}
+
+export function slugToTag(slug: string): string | null {
+  for (const tag of getAllTags()) {
+    if (tagToSlug(tag) === slug) return tag;
+  }
+  return null;
+}
+
 export function getAllTags(): string[] {
   const set = new Set<string>();
   for (const p of getAllPosts()) {
