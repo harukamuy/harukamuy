@@ -173,7 +173,7 @@ tags: ["インデックス投資"]
 <span style="font-weight:700;">米国比率</span><span>約60%</span><span>100%</span>
 </div>
 <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
-<span style="font-weight:700;">経費率</span><span>0.05775%</span><span>0.09372%(eMAXIS) / 0.0938%(SBI・V)</span>
+<span style="font-weight:700;">経費率</span><span>0.05775%</span><span>0.09372%(eMAXIS Slim) / 0.0938%(SBI・V)</span>
 </div>
 <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">過去10年リターン</span><span>年率約10%</span><span>年率約13%</span>
