@@ -98,6 +98,13 @@ export function getPostsByTag(tag: string): Post[] {
   return getAllPosts().filter((p) => p.tags.includes(tag));
 }
 
+// フロントマターの coverImage を必ず最適化済みWebPに正規化する。
+// （元画像が .png / .jpg でも、ビルド時に同名の .webp が生成されるため）
+function normalizeCoverImage(cover: unknown): string | undefined {
+  if (typeof cover !== "string" || !cover) return undefined;
+  return cover.replace(/\.(png|jpe?g)$/i, ".webp");
+}
+
 export function getPostBySlug(slug: string): Post | null {
   try {
     const fullPath = path.join(postsDirectory, `${slug}.md`);
@@ -111,7 +118,7 @@ export function getPostBySlug(slug: string): Post | null {
       category: data.category ?? "all",
       tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
       excerpt: data.excerpt ?? "",
-      coverImage: data.coverImage,
+      coverImage: normalizeCoverImage(data.coverImage),
       coverImagePosition: data.coverImagePosition,
       content,
     };
