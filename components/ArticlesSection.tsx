@@ -4,16 +4,25 @@ import { useState } from "react";
 import type { Post } from "@/lib/posts";
 import PostCard from "./PostCard";
 
-const catTabs = [
-  { value: "all", label: "すべて" },
-  { value: "sidefire", label: "サイドFIRE" },
-  { value: "gomazochi", label: "ごまもち🐾" },
+const catTabs: { value: string; label: string; kind: "all" | "category" | "tag" }[] = [
+  { value: "all", label: "すべて", kind: "all" },
+  { value: "sidefire", label: "サイドFIRE", kind: "category" },
+  { value: "investment", label: "投資", kind: "category" },
+  { value: "freelance", label: "フリーランス", kind: "category" },
+  { value: "gomazochi", label: "ごまもち🐾", kind: "category" },
+  { value: "十勝計画", label: "十勝計画", kind: "tag" },
 ];
 
 export default function ArticlesSection({ posts }: { posts: Post[] }) {
   const [active, setActive] = useState("all");
 
-  const filtered = active === "all" ? posts : posts.filter((p) => p.category === active);
+  const activeTab = catTabs.find((t) => t.value === active);
+  const filtered =
+    !activeTab || activeTab.kind === "all"
+      ? posts
+      : activeTab.kind === "tag"
+        ? posts.filter((p) => p.tags?.includes(activeTab.value))
+        : posts.filter((p) => p.category === activeTab.value);
   const firstPost = filtered[0];
   const restPosts = filtered.slice(1);
 
