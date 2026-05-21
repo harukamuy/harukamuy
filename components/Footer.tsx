@@ -46,7 +46,7 @@ export default function Footer() {
         textAlign: "center",
         letterSpacing: "0.06em",
       }}>
-        © 2025 harukamuy — あずき
+        © {new Date().getFullYear()} harukamuy — あずき
       </div>
     </footer>
   );
