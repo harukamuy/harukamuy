@@ -59,7 +59,7 @@ export default function AboutPage() {
           {/* 澪カード */}
           <div style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 20, padding: "28px 24px", textAlign: "center" }}>
             <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", overflow: "hidden", border: "3px solid var(--ivory-2)" }}>
-              <img src="/images/mio-fullbody.webp" alt="あずきちゃん" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+              <img src="/images/mio-fullbody.webp" alt="あずきちゃん" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>あずき</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Azuki</div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
           {/* ごまもちカード */}
           <div style={{ background: "#fdf0ea", border: "1.5px solid var(--blush)", borderRadius: 20, padding: "28px 24px", textAlign: "center" }}>
             <div style={{ width: 100, height: 100, borderRadius: "50%", margin: "0 auto 16px", overflow: "hidden", border: "3px solid var(--blush)" }}>
-              <img src="/images/gomamochi-sit.webp" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+              <img src="/images/gomamochi-sit.webp" alt="ごまもち" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
             </div>
             <div style={{ fontSize: 20, fontWeight: 700, marginBottom: 3 }}>ごまもち</div>
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)", marginBottom: 12 }}>Gomamochi, Boston Terrier</div>

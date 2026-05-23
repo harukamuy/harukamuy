@@ -23,7 +23,7 @@ export default function Footer() {
             alignItems: "center",
             gap: 6,
           }}>
-            <img src="/images/logo.png" alt="harukamuy" style={{ width: 20, height: 20, objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+            <img src="/images/logo.png" alt="harukamuy" width={20} height={20} style={{ width: 20, height: 20, objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             harukamuy
           </div>
           <div style={{ fontSize: 12, lineHeight: 1.85, maxWidth: 300 }}>
@@ -34,8 +34,10 @@ export default function Footer() {
           <Link href="/blog" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>ブログ</Link>
           <Link href="/blog?category=gomazochi" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>ごまもち</Link>
           <Link href="/blog?category=sidefire" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>サイドFIRE</Link>
+          <Link href="/tags" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>タグ一覧</Link>
           <Link href="/about" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>About</Link>
           <Link href="/privacy" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>プライバシーポリシー</Link>
+          <a href="/feed.xml" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>RSS</a>
         </nav>
       </div>
       <div style={{

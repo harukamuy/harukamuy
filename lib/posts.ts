@@ -16,6 +16,8 @@ export type Post = {
   updated?: string;
   category: Category;
   tags: string[];
+  series?: string;       // 連載ID（例: "tokachi-plan"）
+  seriesOrder?: number;  // 連載内の順序（1, 2, 3...）
   excerpt: string;
   coverImage?: string;
   coverImagePosition?: string;
@@ -98,6 +100,26 @@ export function getPostsByTag(tag: string): Post[] {
   return getAllPosts().filter((p) => p.tags.includes(tag));
 }
 
+// 連載ID → 表示名。新しい連載を始めたらここに1行追加。
+export const SERIES_NAMES: Record<string, string> = {
+  "tokachi-plan": "十勝計画",
+};
+
+export function getAllSeries(): string[] {
+  const set = new Set<string>();
+  for (const p of getAllPosts()) {
+    if (p.series) set.add(p.series);
+  }
+  return Array.from(set).sort();
+}
+
+// 連載に属する記事を seriesOrder 順（昇順）で返す
+export function getSeriesPosts(series: string): Post[] {
+  return getAllPosts()
+    .filter((p) => p.series === series)
+    .sort((a, b) => (a.seriesOrder ?? 999) - (b.seriesOrder ?? 999));
+}
+
 // フロントマターの coverImage を必ず最適化済みWebPに正規化する。
 // （元画像が .png / .jpg でも、ビルド時に同名の .webp が生成されるため）
 function normalizeCoverImage(cover: unknown): string | undefined {
@@ -117,6 +139,8 @@ export function getPostBySlug(slug: string): Post | null {
       updated: data.updated,
       category: data.category ?? "all",
       tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
+      series: typeof data.series === "string" ? data.series : undefined,
+      seriesOrder: typeof data.seriesOrder === "number" ? data.seriesOrder : undefined,
       excerpt: data.excerpt ?? "",
       coverImage: normalizeCoverImage(data.coverImage),
       coverImagePosition: data.coverImagePosition,

@@ -127,7 +127,7 @@ export default function Home() {
         </div>
 
         <div className="hero-image-wrap">
-          <img src="/images/mio-room.webp" alt="あずきちゃんとごまもち" style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
+          <img src="/images/mio-room.webp" alt="あずきちゃんとごまもち" width={1672} height={941} style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
         </div>
       </section>
 
@@ -224,7 +224,7 @@ export default function Home() {
               overflow: "hidden",
               position: "relative",
             }}>
-              <img src="/images/mio-fullbody.webp" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+              <img src="/images/mio-fullbody.webp" alt="あずき" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
             <div style={{
               position: "absolute",

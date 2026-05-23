@@ -73,7 +73,7 @@ export default function GomamochiPage() {
         }}>
           {/* big illustration */}
           <div style={{ width: 140, height: 160, flexShrink: 0, borderRadius: 16, overflow: "hidden" }}>
-            <img src="/images/gomamochi-sit.webp" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+            <img src="/images/gomamochi-sit.webp" alt="ごまもち" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
           </div>
 
           {/* profile info */}
@@ -111,11 +111,11 @@ export default function GomamochiPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12 }}>
             {/* wide first photo - 散歩シーン */}
             <div style={{ gridColumn: "span 2", aspectRatio: "2/1", borderRadius: 14, overflow: "hidden" }}>
-              <img src="/images/mio-walk.webp" alt="多摩川散歩" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src="/images/mio-walk.webp" alt="多摩川散歩" width={800} height={400} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
             {/* ごまもち立ち姿 */}
             <div style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
-              <img src="/images/gomamochi-stand.webp" alt="ごまもち" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
+              <img src="/images/gomamochi-stand.webp" alt="ごまもち" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }} />
             </div>
             {[
               { src: "/images/20260423_3.webp", alt: "ごまもちをお迎えした日", pos: "top center" },
@@ -124,7 +124,7 @@ export default function GomamochiPage() {
               { src: "/images/20260504_3.webp", alt: "ごまもちの年間コスト", pos: "center" },
             ].map((p) => (
               <div key={p.src} style={{ aspectRatio: "1", borderRadius: 14, overflow: "hidden" }}>
-                <img src={p.src} alt={p.alt} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: p.pos }} />
+                <img src={p.src} alt={p.alt} width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: p.pos }} />
               </div>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default function GomamochiPage() {
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, overflow: "hidden", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "16/9", background: photoColors[i % photoColors.length], position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   {post.coverImage ? (
-                    <img src={post.coverImage} alt={post.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
+                    <img src={post.coverImage} alt={post.title} width={1600} height={900} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
                   ) : (
                     <>
                       <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px)" }} />

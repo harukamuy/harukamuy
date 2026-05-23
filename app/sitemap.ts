@@ -1,7 +1,7 @@
 export const dynamic = "force-static";
 
 import type { MetadataRoute } from "next";
-import { getAllPosts, getAllTags, tagToSlug } from "@/lib/posts";
+import { getAllPosts, getAllTags, tagToSlug, getAllSeries } from "@/lib/posts";
 
 const SITE_URL = "https://harukamuy.com";
 
@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/sidefire`,           lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
     { url: `${SITE_URL}/gomamochi`,          lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
     { url: `${SITE_URL}/privacy`,            lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
+    { url: `${SITE_URL}/tags`,               lastModified: new Date(), changeFrequency: "weekly",  priority: 0.5 },
   ];
 
   const postPages: MetadataRoute.Sitemap = posts.map((post) => ({
@@ -31,5 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...postPages, ...tagPages];
+  const seriesPages: MetadataRoute.Sitemap = getAllSeries().map((s) => ({
+    url: `${SITE_URL}/series/${s}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...postPages, ...tagPages, ...seriesPages];
 }

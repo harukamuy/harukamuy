@@ -6,6 +6,8 @@ excerpt: "東京に住む理由が、少しずつ減ってきた。74歳と71歳
 coverImage: "/images/20260521_1.webp"
 coverImagePosition: "center"
 tags: ["十勝計画", "サイドFIRE"]
+series: "tokachi-plan"
+seriesOrder: 1
 ---
 
 <div class="conv-wrap">

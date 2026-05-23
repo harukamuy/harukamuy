@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug, renderMarkdown, extractHeadings, estimateReadingMinutes, tagToSlug } from "@/lib/posts";
+import { getAllPosts, getPostBySlug, renderMarkdown, extractHeadings, estimateReadingMinutes, tagToSlug, getSeriesPosts, SERIES_NAMES } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -81,6 +81,13 @@ export default async function PostPage({ params }: Props) {
   const sameCategory = allPosts.filter((p) => p.slug !== slug && p.category === post.category);
   const otherCategory = allPosts.filter((p) => p.slug !== slug && p.category !== post.category);
   const relatedPosts = [...sameCategory, ...otherCategory].slice(0, 4);
+
+  // 連載情報（series が指定されていれば、シリーズ内の前後記事と目次を出す）
+  const seriesPosts = post.series ? getSeriesPosts(post.series) : [];
+  const seriesIndex = seriesPosts.findIndex((p) => p.slug === slug);
+  const prevInSeries = seriesIndex > 0 ? seriesPosts[seriesIndex - 1] : null;
+  const nextInSeries = seriesIndex >= 0 && seriesIndex < seriesPosts.length - 1 ? seriesPosts[seriesIndex + 1] : null;
+  const seriesName = post.series ? (SERIES_NAMES[post.series] ?? post.series) : "";
 
   const relatedThumbColors = ["#d4957e", "#d4a898", "#7a9e96", "#8fa87f"];
 
@@ -227,6 +234,44 @@ export default async function PostPage({ params }: Props) {
           {post.title}
         </h1>
 
+        {/* Series banner */}
+        {post.series && seriesPosts.length > 0 && (
+          <div
+            style={{
+              background: "var(--white)",
+              border: "1.5px solid var(--blush)",
+              borderRadius: 12,
+              padding: "14px 18px",
+              marginBottom: 24,
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 10 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: "var(--terra)", letterSpacing: "0.1em" }}>📚 SERIES</span>
+              <Link href={`/series/${post.series}`} style={{ fontFamily: "var(--font-serif)", fontSize: 14, fontWeight: 600, color: "var(--brown)", textDecoration: "none" }}>
+                {seriesName}（全{seriesPosts.length}回）
+              </Link>
+            </div>
+            <ol style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 4 }}>
+              {seriesPosts.map((p) => {
+                const isCurrent = p.slug === slug;
+                return (
+                  <li key={p.slug} style={{ fontSize: 12, lineHeight: 1.6 }}>
+                    {isCurrent ? (
+                      <span style={{ color: "var(--brown)", fontWeight: 600 }}>
+                        ▶ {p.seriesOrder ?? "?"}. {p.title}
+                      </span>
+                    ) : (
+                      <Link href={`/blog/${p.slug}`} style={{ color: "var(--brown-2)", textDecoration: "none" }}>
+                        {p.seriesOrder ?? "?"}. {p.title}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        )}
+
         {/* Table of Contents */}
         {headings.length >= 2 && (
           <nav
@@ -305,6 +350,55 @@ export default async function PostPage({ params }: Props) {
           </div>
         )}
 
+        {/* Series prev/next */}
+        {post.series && (prevInSeries || nextInSeries) && (
+          <nav
+            aria-label="連載ナビゲーション"
+            style={{
+              marginTop: 36,
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 12,
+            }}
+          >
+            {prevInSeries ? (
+              <Link
+                href={`/blog/${prevInSeries.slug}`}
+                style={{
+                  background: "var(--white)",
+                  border: "1.5px solid var(--beige)",
+                  borderRadius: 12,
+                  padding: "14px 16px",
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "block",
+                }}
+              >
+                <div style={{ fontSize: 10, color: "var(--terra)", letterSpacing: "0.1em", marginBottom: 4 }}>← 前の話（第{prevInSeries.seriesOrder}回）</div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: "var(--brown)", lineHeight: 1.5 }}>{prevInSeries.title}</div>
+              </Link>
+            ) : <div />}
+            {nextInSeries ? (
+              <Link
+                href={`/blog/${nextInSeries.slug}`}
+                style={{
+                  background: "var(--white)",
+                  border: "1.5px solid var(--beige)",
+                  borderRadius: 12,
+                  padding: "14px 16px",
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "block",
+                  textAlign: "right",
+                }}
+              >
+                <div style={{ fontSize: 10, color: "var(--terra)", letterSpacing: "0.1em", marginBottom: 4 }}>次の話（第{nextInSeries.seriesOrder}回）→</div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: "var(--brown)", lineHeight: 1.5 }}>{nextInSeries.title}</div>
+              </Link>
+            ) : <div />}
+          </nav>
+        )}
+
         {/* Share */}
         <ShareButtons title={post.title} />
 
@@ -346,7 +440,7 @@ export default async function PostPage({ params }: Props) {
                     justifyContent: "center",
                   }}>
                     {related.coverImage ? (
-                      <img src={related.coverImage} alt={related.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: related.coverImagePosition ?? "top center" }} />
+                      <img src={related.coverImage} alt={related.title} width={1600} height={900} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: related.coverImagePosition ?? "top center" }} />
                     ) : (
                       <div style={{
                         position: "absolute",
@@ -401,7 +495,7 @@ export default async function PostPage({ params }: Props) {
             border: "3px solid var(--ivory-2)",
             overflow: "hidden",
           }}>
-            <img src="/images/mio-fullbody.webp" alt="あずき" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+            <img src="/images/mio-fullbody.webp" alt="あずき" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
           </div>
           <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 2 }}>あずき ＆ ごまもち</div>
           <div style={{ fontSize: 11, color: "var(--brown-3)", marginBottom: 9 }}>映像プロデューサー・34歳</div>
