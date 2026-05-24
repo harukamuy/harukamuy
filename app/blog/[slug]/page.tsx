@@ -105,6 +105,7 @@ export default async function PostPage({ params }: Props) {
       "@type": "Person",
       name: "あずき",
       url: SITE_URL,
+      sameAs: ["https://x.com/harukamuy"],
     },
     publisher: {
       "@type": "Organization",
@@ -514,6 +515,28 @@ export default async function PostPage({ params }: Props) {
               }}>{tag}</span>
             ))}
           </div>
+          <a
+            href="https://x.com/harukamuy"
+            target="_blank"
+            rel="noopener"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 6,
+              marginTop: 12,
+              fontSize: 11,
+              color: "var(--brown)",
+              background: "var(--ivory-2)",
+              border: "1px solid var(--beige)",
+              padding: "5px 12px",
+              borderRadius: 20,
+              textDecoration: "none",
+              fontWeight: 600,
+            }}
+          >
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Xでフォロー
+          </a>
         </div>
 
         {/* Asset card */}

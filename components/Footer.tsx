@@ -37,7 +37,12 @@ export default function Footer() {
           <Link href="/tags" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>タグ一覧</Link>
           <Link href="/about" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>About</Link>
           <Link href="/privacy" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>プライバシーポリシー</Link>
-          <a href="/feed.xml" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>RSS</a>
+          <div style={{ display: "flex", gap: 14, alignItems: "center", marginTop: 4 }}>
+            <a href="https://x.com/harukamuy" target="_blank" rel="noopener" aria-label="X (Twitter)" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", display: "inline-flex", alignItems: "center" }}>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="/feed.xml" aria-label="RSSフィード" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>RSS</a>
+          </div>
         </nav>
       </div>
       <div style={{

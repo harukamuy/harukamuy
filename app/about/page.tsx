@@ -141,9 +141,15 @@ export default function AboutPage() {
             記事へのご感想、取材・コラボのご依頼はお気軽にどうぞ。<br />
             アフィリエイト案件のご相談も受け付けています。
           </p>
-          <a href="mailto:azuki@harukamuy.com" style={{ display: "inline-block", background: "white", color: "var(--green)", padding: "12px 28px", borderRadius: 30, fontSize: 13, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em" }}>
-            お問い合わせはこちら →
-          </a>
+          <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap" }}>
+            <a href="mailto:azuki@harukamuy.com" style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "white", color: "var(--green)", padding: "12px 24px", borderRadius: 30, fontSize: 13, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em" }}>
+              ✉️ メールでお問い合わせ
+            </a>
+            <a href="https://x.com/harukamuy" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,255,255,0.12)", color: "white", border: "1.5px solid rgba(255,255,255,0.4)", padding: "12px 24px", borderRadius: 30, fontSize: 13, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em" }}>
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Xでフォロー
+            </a>
+          </div>
         </div>
 
       </div>

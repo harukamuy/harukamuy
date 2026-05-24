@@ -54,6 +54,7 @@ const personJsonLd = {
     "北海道十勝出身、34歳のフリーランス映像プロデューサー。愛犬ごまもち（ボストンテリア）と暮らしながら、2026年4月にサイドFIREを達成。",
   jobTitle: "映像プロデューサー",
   knowsAbout: ["サイドFIRE", "インデックス投資", "高配当株投資", "フリーランス", "確定申告"],
+  sameAs: ["https://x.com/harukamuy"],
   mainEntityOfPage: SITE_URL,
 };
 
