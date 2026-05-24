@@ -503,18 +503,6 @@ export default async function PostPage({ params }: Props) {
           <div style={{ fontSize: 11, color: "var(--brown-2)", lineHeight: 1.8, textAlign: "left" }}>
             愛犬ごまもちと会話しながら、投資・FIRE・フリーランスの話をゆるく発信中。
           </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 9, justifyContent: "center" }}>
-            {["サイドFIRE", "投資", "🐶 ごまもち"].map((tag) => (
-              <span key={tag} style={{
-                fontSize: 10,
-                background: "var(--ivory-2)",
-                padding: "2px 8px",
-                borderRadius: 20,
-                color: "var(--brown-3)",
-                border: "1px solid var(--beige)",
-              }}>{tag}</span>
-            ))}
-          </div>
           <a
             href="https://x.com/harukamuy"
             target="_blank"
