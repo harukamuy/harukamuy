@@ -117,7 +117,7 @@ export default function PrivacyPage() {
         }}>
           <div style={{ fontWeight: 700, color: "var(--brown)", marginBottom: 8 }}>お問い合わせ</div>
           プライバシーポリシーに関するご質問は、下記メールアドレスまでご連絡ください。<br />
-          <a href="mailto:mio@harukamuy.com" style={{ color: "var(--terra)", textDecoration: "none", fontWeight: 500 }}>
+          <a href="mailto:azuki@harukamuy.com" style={{ color: "var(--terra)", textDecoration: "none", fontWeight: 500 }}>
             mio@harukamuy.com
           </a>
         </div>

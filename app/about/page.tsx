@@ -141,7 +141,7 @@ export default function AboutPage() {
             記事へのご感想、取材・コラボのご依頼はお気軽にどうぞ。<br />
             アフィリエイト案件のご相談も受け付けています。
           </p>
-          <a href="mailto:mio@harukamuy.com" style={{ display: "inline-block", background: "white", color: "var(--green)", padding: "12px 28px", borderRadius: 30, fontSize: 13, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em" }}>
+          <a href="mailto:azuki@harukamuy.com" style={{ display: "inline-block", background: "white", color: "var(--green)", padding: "12px 28px", borderRadius: 30, fontSize: 13, fontWeight: 700, textDecoration: "none", letterSpacing: "0.06em" }}>
             お問い合わせはこちら →
           </a>
         </div>
