@@ -500,6 +500,8 @@ body::before {
   .blog-post-sidebar {
     position: static !important;
     top: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
   }
 }
 

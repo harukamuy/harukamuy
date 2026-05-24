@@ -475,7 +475,7 @@ export default async function PostPage({ params }: Props) {
       </article>
 
       {/* SIDEBAR */}
-      <aside className="blog-post-sidebar" style={{ position: "sticky", top: 86, display: "flex", flexDirection: "column", gap: 20 }}>
+      <aside className="blog-post-sidebar" style={{ position: "sticky", top: 86, maxHeight: "calc(100vh - 102px)", overflowY: "auto", display: "flex", flexDirection: "column", gap: 20 }}>
         {/* Profile card */}
         <div style={{
           background: "var(--white)",
