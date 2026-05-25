@@ -480,3 +480,10 @@ description: つみたて投資枠・成長投資枠ともにオルカン/S&P500
 button: SBI証券の公式サイトを見る →
 url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 :::
+
+:::cta
+title: マネックス証券 — クレカ積立還元1.1%は破格
+description: マネックスカードでつみたて投資をすると、業界最高水準の1.1%還元。新NISA枠でコツコツ積立しながら、ポイントもしっかり貯まります。米国株の分析ツール「銘柄スカウター」も銘柄選びの心強い味方です。
+button: マネックス証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pe7300orlw
+:::
