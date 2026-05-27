@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "映像、投資、ブログ、BGM。34歳フリーランスのわたしが、サイドFIRE達成後も4つの柱を持ち続けている理由を正直に書きました。労働収入だけへの不安、AI時代の働き方、お金とワクワクの正直な動機まで。"
 coverImage: "/images/20260525_1.png"
 coverImagePosition: "center"
+tags: ["フリーランス", "独立・キャリア"]
 ---
 
 <div class="conv-wrap">

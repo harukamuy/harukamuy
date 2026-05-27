@@ -5,6 +5,7 @@ category: "freelance"
 excerpt: "インボイス2割特例は2026年9月末で終了予定→令和8年度税制改正で『3割特例』として2028年度まで個人事業者限定で延長へ。納税額はざっくり1.5倍に。あずきの実例で『2割→3割でどれだけ増えるか』をシミュレーション。あわせて簡易課税の選択についても整理します。"
 coverImage: "/images/202605015_1.webp"
 coverImagePosition: "center"
+tags: ["フリーランス", "会計ツール"]
 ---
 
 <div class="conv-wrap">

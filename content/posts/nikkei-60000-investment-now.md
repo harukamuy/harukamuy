@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "日経平均が6万円台へ。わたしが2018年に投資を始めたときは2万円台だった。8年で3倍。同じ8年を貯金だけで過ごしていたら…?インフレと給与の乖離、なぜ投資が『怖いけど必要』なのか、オルカン10年成績で見える現実まで、34歳フリーランスの本音で書きます。"
 coverImage: "/images/202605017_1.webp"
 coverImagePosition: "center"
+tags: ["市場の話", "インデックス投資"]
 ---
 
 <div class="conv-wrap">

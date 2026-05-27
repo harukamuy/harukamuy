@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "新NISAを始めるなら証券会社はSBI・楽天・マネックスの3択。クレカ積立の還元率・銀行連携・初心者向け使いやすさを比較して、これから始める人にどれを勧めるかをまとめます。8年SBIユーザーのリアルな結論つき。"
 coverImage: "/images/202605019_1.webp"
 coverImagePosition: "center"
+tags: ["新NISA", "NISA", "証券・銀行"]
 ---
 
 <div class="conv-wrap">

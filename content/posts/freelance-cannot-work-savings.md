@@ -5,6 +5,7 @@ category: "sidefire"
 excerpt: "フリーランスは働けなくなったらどうするの？34歳独身女性のわたしは保険ではなく貯金で備えています。公的制度の整理と、生活防衛資金300万円・サイドFIRE資産という具体的な備え、ぎっくり背中の体験まで正直に書きます。"
 coverImage: "/images/20260523_1.png"
 coverImagePosition: "center"
+tags: ["フリーランス", "家計・資産管理"]
 ---
 
 <div class="conv-wrap">
