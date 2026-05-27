@@ -273,6 +273,12 @@ coverImagePosition: "center"
 
 NISAミリオネアの時代は、もうすぐそこに来ている。**「目指す」のではなく、「自然に到達する設計」** にしておくのが、いちばん近道だと思う。
 
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
+  <div style="font-size:13px;color:#3a5030;">
+    📚 <strong>この記事を含む完全ガイドはこちら：</strong><br><a href="/blog/new-nisa-complete-guide">新NISA完全ガイド（1,800万円を10年で埋める道筋）</a>
+  </div>
+</div>
+
 ## 関連記事
 
 - [貯金500万→5,463万までの8年](/blog/30s-single-woman-asset-roadmap)

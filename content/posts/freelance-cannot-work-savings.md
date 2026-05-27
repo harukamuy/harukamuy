@@ -422,3 +422,10 @@ amazon: 4023318787
 rakuten: rb:18041936
 description: 「貯金で備えられないリスクだけ保険でカバーする」という考え方の土台になった1冊。社会保障・公的制度・民間保険の役割を体系的に整理できる、フリーランスにこそ読んでほしい王道入門書です。
 :::
+
+## 関連記事
+
+- [生活防衛資金は300万円](/blog/emergency-fund-300)
+- [フリーランスの社会保険](/blog/freelance-social-insurance)
+- [フリーランスと失業保険](/blog/unemployment-insurance-freelance)
+- [フリーランスの老後試算](/blog/freelance-pension-future)

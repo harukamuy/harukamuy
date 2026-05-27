@@ -258,6 +258,12 @@ tags: ["市場の話"]
 </div>
 
 
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
+  <div style="font-size:13px;color:#3a5030;">
+    📚 <strong>この記事を含む完全ガイドはこちら：</strong><br><a href="/blog/new-nisa-complete-guide">新NISA完全ガイド（1,800万円を10年で埋める道筋）</a>
+  </div>
+</div>
+
 ## 関連記事
 
 - [中東ショックで資産が300万円減った](/blog/middle-east-shock-2026)

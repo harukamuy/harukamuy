@@ -207,3 +207,10 @@ button: SBI証券の公式サイトを見る →
 url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 :::
 
+## 関連記事
+
+- [サイドFIREとは何か](/blog/what-is-sidefire)
+- [サイドFIREにいくら必要?](/blog/sidefire-asset-simulation)
+- [貯金500万→5,463万までの8年](/blog/30s-single-woman-asset-roadmap)
+- [フリーランス転向3年のリアル](/blog/sidefire-first-year-real)
+

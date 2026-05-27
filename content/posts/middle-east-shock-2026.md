@@ -278,3 +278,16 @@ tags: ["市場の話"]
 <li>初心者へ：①インデックスは航路を守って淡々と ②少額からスタート ③高配当株は信頼できる発信から学ぶのが近道</li>
 </ul>
 </div>
+
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
+  <div style="font-size:13px;color:#3a5030;">
+    📚 <strong>この記事を含む完全ガイドはこちら：</strong><br><a href="/blog/new-nisa-complete-guide">新NISA完全ガイド（1,800万円を10年で埋める道筋）</a>
+  </div>
+</div>
+
+## 関連記事
+
+- [暴落・含み損とのつきあい方](/blog/market-crash-mindset)
+- [減配の罠](/blog/high-dividend-cut-risk)
+- [わたしのNISA積立設定](/blog/nisa-investment-settings)
+- [高配当株とインデックス、どちらを選ぶか](/blog/high-dividend-vs-index)
