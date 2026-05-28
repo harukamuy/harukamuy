@@ -47,3 +47,6 @@ client_secret_*.json
 ga4-token.json
 gsc-token.json
 indexing-token.json
+
+# 自動生成データ（検索順位レポートなど）
+data/
