@@ -1,8 +1,9 @@
 ---
-title: "サイドFIREとは何か。FIREとの違いと、わたしなりの定義"
+title: "サイドFIRE（サイドファイヤー）とは何か。FIREとの違いと、わたしなりの定義"
 date: "2026-04-12"
+updated: "2026-05-30"
 category: "sidefire"
-excerpt: "サイドFIREとは何か、完全FIREとの違いをわかりやすく解説。約5,000万円の資産と4%ルールで基礎生活費をまかなう、わたし自身の考え方も正直に書きます。"
+excerpt: "サイドFIRE（サイドファイヤー）とは何か、完全FIREとの違いをわかりやすく解説。約5,000万円の資産と4%ルールで基礎生活費をまかなう、わたし自身の考え方も正直に書きます。"
 coverImage: "/images/20260425_1.webp"
 coverImagePosition: "center"
 tags: ["サイドFIRE"]
