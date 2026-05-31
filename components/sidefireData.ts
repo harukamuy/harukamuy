@@ -50,7 +50,7 @@ export const SNAPSHOTS: Snapshot[] = [
     index: 3823,
     highDiv: 1565,
     cash: 300,
-    btc: 117,
+    btc: 118,
     //                  1月 2月    3月     4月   5月     6月       7月   8月     9月     10月   11月    12月
     dividendForecast: [0, 11426, 45051, 8243, 17726, 162656, 10070, 11426, 40861, 14145, 11676, 153222],
     dividendYieldPct: 4.85,

@@ -38,10 +38,29 @@ for (const f of foreign.holdings) {
 
 const man = (yen) => Math.round(yen / 10000);
 
+// ── BTC：保有数 × 現在価格（自動取得）──
+async function btcManYen() {
+  const amount = manual.btc_amount;
+  if (amount == null) return manual.btc_man ?? 0; // 旧形式（固定額）にも対応
+  try {
+    const res = await fetch(
+      "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=jpy"
+    );
+    const data = await res.json();
+    const price = data?.bitcoin?.jpy;
+    if (!price) throw new Error("価格取得失敗");
+    console.log(`  ℹ️ BTC価格 ${price.toLocaleString("ja-JP")} 円/BTC を取得`);
+    return Math.round((amount * price) / 10000);
+  } catch (e) {
+    console.log(`  ⚠️ BTC価格の自動取得に失敗（${e.message}）→ fallback値を使用`);
+    return manual.btc_fallback_man ?? 0;
+  }
+}
+
 const index = man(fundVal) + manual.ideco_man; // インデックス＋iDeCo
 const highDiv = man(stockVal) + man(foreignVal); // 国内株＋外国ETF
 const cash = manual.cash_man;
-const btc = manual.btc_man;
+const btc = await btcManYen();
 
 // ── 月別配当（税引後）──
 const dividendForecast = buildMonthly(CSV, { afterTax: true });
