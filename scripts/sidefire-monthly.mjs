@@ -15,15 +15,25 @@ function payMonthsOf(code) {
   return [end, mid];
 }
 
-// 1銘柄の年間配当を支払い月に均等配分して months[] に加算
+// 1銘柄の年間配当を支払い月に配分して months[] に加算（weights があれば不均等配分）
 function distribute(months, code, annual) {
   const pm = payMonthsOf(code);
-  if (pm.length === 0) {
-    months[0] += 0; // 不明はスキップ
-    return;
+  if (pm.length === 0) return; // 不明はスキップ
+  const sc = master.schedule[code];
+  const w = sc && sc.weights && sc.weights.length === pm.length ? sc.weights : null;
+  if (w) {
+    const wsum = w.reduce((a, b) => a + b, 0);
+    pm.forEach((m, i) => (months[m - 1] += (annual * w[i]) / wsum));
+  } else {
+    const per = annual / pm.length;
+    for (const m of pm) months[m - 1] += per;
   }
-  const per = annual / pm.length;
-  for (const m of pm) months[m - 1] += per;
+}
+
+// 外国株の税引後係数（market と口座で切替）
+function foreignAfterTaxFactor(market, account) {
+  if (account === "NISA") return market === "HK" ? 1 : 1 - 0.1; // 香港=非課税, 米国=米10%残る
+  return market === "HK" ? 1 - 0.20315 : 1 - 0.2828; // 特定: 香港=日本20.315%, 米国=28.28%
 }
 
 export function buildMonthly(csvPath, { afterTax }) {
@@ -31,8 +41,6 @@ export function buildMonthly(csvPath, { afterTax }) {
   const foreign = JSON.parse(readFileSync("data/sidefire/foreign.json", "utf8"));
 
   const TAX_DOM = 0.20315; // 特定・日本株
-  const TAX_FOR_TOKUTEI = 0.2828; // 特定・米国ETF（米10%+日本20.315%）
-  const TAX_FOR_NISA = 0.1; // NISA・米国ETF（米10%のみ）
 
   const months = new Array(12).fill(0);
 
@@ -48,14 +56,12 @@ export function buildMonthly(csvPath, { afterTax }) {
     distribute(months, h.code, annual);
   }
 
-  // 外国ETF
+  // 外国株（米国ETF・香港株など）
   for (const f of foreign.holdings) {
     const ps = master.perShare[f.code];
     if (ps == null) continue;
     let annual = f.shares * ps;
-    if (afterTax) {
-      annual *= f.account === "NISA" ? 1 - TAX_FOR_NISA : 1 - TAX_FOR_TOKUTEI;
-    }
+    if (afterTax) annual *= foreignAfterTaxFactor(f.market, f.account);
     distribute(months, f.code, annual);
   }
 
