@@ -23,8 +23,8 @@ export type Snapshot = {
 
 export const SNAPSHOTS: Snapshot[] = [
   {
-    month: "2026年4月",
-    monthNum: 4,
+    month: "2026年3月末",
+    monthNum: 3,
     index: 3582,
     highDiv: 1482,
     cash: 300,
@@ -34,8 +34,8 @@ export const SNAPSHOTS: Snapshot[] = [
     dividendYieldPct: 4.90,
   },
   {
-    month: "2026年5月",
-    monthNum: 5,
+    month: "2026年4月末",
+    monthNum: 4,
     index: 3669,
     highDiv: 1471,
     cash: 300,
@@ -45,8 +45,8 @@ export const SNAPSHOTS: Snapshot[] = [
     dividendYieldPct: 4.87,
   },
   {
-    month: "2026年6月",
-    monthNum: 6,
+    month: "2026年5月末",
+    monthNum: 5,
     index: 3823,
     highDiv: 1565,
     cash: 300,
