@@ -29,9 +29,9 @@ export const SNAPSHOTS: Snapshot[] = [
     highDiv: 1461,
     cash: 300,
     btc: 120,
-    //                  1月    2月    3月     4月    5月     6月      7月    8月    9月     10月   11月  12月
-    dividendForecast: [3000, 3000, 35407, 4440, 16206, 198287, 3000, 3000, 30207, 4440, 5000, 184312],
-    dividendYieldPct: 4.94,
+    //                  1月 2月    3月     4月   5月     6月      7月   8月     9月     10月  11月    12月
+    dividendForecast: [0, 10805, 42602, 7795, 16762, 153813, 6424, 10805, 38639, 7795, 11041, 144891],
+    dividendYieldPct: 4.47,
   },
   {
     month: "2026年5月",
@@ -40,8 +40,9 @@ export const SNAPSHOTS: Snapshot[] = [
     highDiv: 1450,
     cash: 300,
     btc: 120,
-    dividendForecast: [3000, 3000, 35407, 4440, 16206, 199487, 3000, 3000, 30607, 4440, 5050, 184812],
-    dividendYieldPct: 4.94,
+    //                  1月 2月    3月     4月   5月     6月      7月   8月     9月     10月  11月    12月
+    dividendForecast: [0, 10723, 42281, 7736, 16636, 152654, 6375, 10723, 38349, 7736, 10958, 143801],
+    dividendYieldPct: 4.47,
   },
   {
     month: "2026年6月",
