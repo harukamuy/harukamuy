@@ -50,3 +50,7 @@ indexing-token.json
 
 # 自動生成データ（検索順位レポートなど）
 data/
+
+# 記事用画像の元png（webpに自動変換されるためgitには入れない。logoだけ例外）
+public/images/*.png
+!public/images/logo.png
