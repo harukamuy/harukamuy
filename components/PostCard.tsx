@@ -80,20 +80,20 @@ export default function PostCard({ post, featured }: { post: Post; featured?: bo
             <span style={{ width: 14, height: 1, background: "var(--terra)", display: "inline-block", flexShrink: 0 }} />
             {catLabel}
           </div>
-          <div style={{
+          <h2 style={{
             fontFamily: "var(--font-serif)",
             fontSize: 16,
             fontWeight: 500,
             lineHeight: 1.75,
             color: "var(--brown)",
-            marginBottom: 9,
+            margin: "0 0 9px",
             display: "-webkit-box",
             WebkitLineClamp: 4,
             WebkitBoxOrient: "vertical",
             overflow: "hidden",
           }}>
             {post.title}
-          </div>
+          </h2>
           <div style={{ fontSize: 11, color: "var(--brown-3)", letterSpacing: "0.04em" }}>{post.date}</div>
           {post.excerpt && (
             <div style={{ fontSize: 12, color: "var(--brown-3)", marginTop: 10, lineHeight: 1.75 }}>
@@ -166,20 +166,20 @@ export default function PostCard({ post, featured }: { post: Post; featured?: bo
           <span style={{ width: 14, height: 1, background: "var(--terra)", display: "inline-block", flexShrink: 0 }} />
           {catLabel}
         </div>
-        <div style={{
+        <h2 style={{
           fontFamily: "var(--font-serif)",
           fontSize: 14,
           fontWeight: 500,
           lineHeight: 1.75,
           color: "var(--brown)",
-          marginBottom: 9,
+          margin: "0 0 9px",
           display: "-webkit-box",
           WebkitLineClamp: 3,
           WebkitBoxOrient: "vertical",
           overflow: "hidden",
         }}>
           {post.title}
-        </div>
+        </h2>
         <div style={{ fontSize: 11, color: "var(--brown-3)", letterSpacing: "0.04em" }}>{post.date}</div>
       </div>
     </Link>

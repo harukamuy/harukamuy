@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import BostonTerrierSVG from "@/components/BostonTerrierSVG";
 import ArticlesSection from "@/components/ArticlesSection";
+import HomeAssetChart from "@/components/HomeAssetChart";
 import { latestStats } from "@/components/sidefireData";
 
 export const metadata: Metadata = {
@@ -134,6 +136,7 @@ export default function Home() {
 
       {/* ASSET SUMMARY */}
       <div style={{ maxWidth: 852, margin: "0 auto 52px", padding: "0 24px" }}>
+        <Link href="/sidefire" style={{ textDecoration: "none", color: "inherit", display: "block" }}>
         <div style={{
           background: "var(--green)",
           borderRadius: 24,
@@ -201,6 +204,15 @@ export default function Home() {
               <div style={{ fontSize: 11, opacity: 0.6, marginTop: 4, letterSpacing: "0.06em" }}>配当利回り（平均）</div>
             </div>
           </div>
+          <div style={{ marginTop: 20, fontSize: 12, fontWeight: 500, letterSpacing: "0.04em", display: "inline-flex", alignItems: "center", gap: 5, color: "rgba(255,255,255,0.92)" }}>
+            資産の内訳・毎月の記録を見る →
+          </div>
+        </div>
+        </Link>
+
+        {/* 資産推移グラフ（クリックで各月の総資産を表示） */}
+        <div style={{ marginTop: 16 }}>
+          <HomeAssetChart />
         </div>
       </div>
 
@@ -264,6 +276,27 @@ export default function Home() {
                 </span>
               ))}
             </div>
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 14, alignItems: "center" }}>
+              <a href="https://x.com/harukamuy" target="_blank" rel="noopener" style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
+                fontSize: 12,
+                fontWeight: 600,
+                color: "var(--brown)",
+                background: "var(--white)",
+                border: "1px solid var(--beige)",
+                borderRadius: 20,
+                padding: "6px 14px",
+                textDecoration: "none",
+              }}>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                Xでフォロー
+              </a>
+              <Link href="/about" style={{ fontSize: 12, fontWeight: 500, color: "var(--terra)", textDecoration: "none", letterSpacing: "0.04em" }}>
+                プロフィール詳細 →
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -309,7 +342,10 @@ export default function Home() {
             border: "1.5px solid var(--beige)",
             background: "#f4efe8",
           }}>
-            <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>★ 最もおすすめ</div>
+            <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 6 }}>
+              <span style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block" }}>★ 最もおすすめ</span>
+              <span style={{ fontSize: 9, background: "var(--beige)", color: "var(--brown-3)", padding: "2px 7px", borderRadius: 5, letterSpacing: "0.08em" }}>PR</span>
+            </div>
             <div style={{ fontFamily: "var(--font-serif)", fontSize: 15, fontWeight: 600, marginBottom: 4 }}>SBI証券 — わたしのメイン口座</div>
             <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>手数料ゼロ・米国ETFの買付も便利。配当金管理もシンプルで5年以上愛用しています。</div>
             <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>公式サイトで詳しく見る →</div>
@@ -325,7 +361,10 @@ export default function Home() {
             border: "1.5px solid var(--beige)",
             background: "var(--white)",
           }}>
-            <div style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block", marginBottom: 6 }}>フリーランス向け</div>
+            <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 6 }}>
+              <span style={{ fontSize: 10, background: "var(--terra)", color: "white", padding: "2px 9px", borderRadius: 6, letterSpacing: "0.08em", display: "inline-block" }}>フリーランス向け</span>
+              <span style={{ fontSize: 9, background: "var(--beige)", color: "var(--brown-3)", padding: "2px 7px", borderRadius: 5, letterSpacing: "0.08em" }}>PR</span>
+            </div>
             <div style={{ fontFamily: "var(--font-serif)", fontSize: 15, fontWeight: 600, marginBottom: 4 }}>freee 確定申告</div>
             <div style={{ fontSize: 12, color: "var(--brown-2)", lineHeight: 1.7 }}>フリーランス1年目から導入。経費管理が劇的に楽になりました。</div>
             <div style={{ marginTop: 10, fontSize: 11, color: "var(--terra)", fontWeight: 500, letterSpacing: "0.06em", display: "inline-flex", alignItems: "center", gap: 4 }}>詳細を見る →</div>

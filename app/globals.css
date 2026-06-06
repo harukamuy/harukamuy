@@ -32,6 +32,12 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
+/* 資産カードの「達成済み」ステータスドットの点滅 */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
 body {
   background: var(--ivory);
   color: var(--brown);

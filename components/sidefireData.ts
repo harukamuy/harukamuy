@@ -78,11 +78,11 @@ export function latestSnapshot(): Snapshot {
 export function latestStats() {
   const s = latestSnapshot();
   return {
-    monthLabel: s.month,                                      // "2026年5月"
-    totalManYen: totalOf(s),                                  // 5539
-    totalManYenStr: totalOf(s).toLocaleString("ja-JP"),       // "5,539"
+    monthLabel: s.month,                                      // "2026年5月末"
+    totalManYen: totalOf(s),                                  // 5806
+    totalManYenStr: totalOf(s).toLocaleString("ja-JP"),       // "5,806"
     annualDividendManYen: Math.round(dividendTotalOf(s) / 10000), // 49
-    yieldPctStr: s.dividendYieldPct.toFixed(2),               // "4.94"
+    yieldPctStr: s.dividendYieldPct.toFixed(2),               // "4.85"
   };
 }
 
