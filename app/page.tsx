@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, getPopularPosts } from "@/lib/posts";
 import BostonTerrierSVG from "@/components/BostonTerrierSVG";
 import ArticlesSection from "@/components/ArticlesSection";
 import HomeAssetChart from "@/components/HomeAssetChart";
 import { latestStats } from "@/components/sidefireData";
+
+const categoryLabel: Record<string, string> = {
+  sidefire: "サイドFIRE",
+  investment: "投資",
+  freelance: "フリーランス",
+  gomazochi: "ごまもち🐾",
+  all: "コラム",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -63,6 +71,7 @@ const personJsonLd = {
 export default function Home() {
   const stats = latestStats();
   const posts = getAllPosts();
+  const popularPosts = getPopularPosts(5);
 
   return (
     <>
@@ -300,6 +309,56 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* POPULAR RANKING（GA4のPVから自動生成） */}
+      {popularPosts.length > 0 && (
+        <section style={{ padding: "0 24px", maxWidth: 900, margin: "0 auto 56px" }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 20 }}>
+            <div>
+              <div style={{ fontFamily: "var(--font-serif)", fontSize: 19, fontWeight: 600, color: "var(--brown)", letterSpacing: "0.04em" }}>よく読まれている記事</div>
+              <div style={{ fontFamily: "var(--font-hand)", fontSize: 13, color: "var(--brown-3)" }}>Popular Posts</div>
+            </div>
+          </div>
+          <ol style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+            {popularPosts.map((post, i) => (
+              <li key={post.slug}>
+                <Link href={`/blog/${post.slug}`} style={{
+                  display: "grid",
+                  gridTemplateColumns: "auto 1fr",
+                  gap: 16,
+                  alignItems: "center",
+                  background: "var(--white)",
+                  border: "1.5px solid var(--beige)",
+                  borderRadius: 14,
+                  padding: "14px 18px",
+                  textDecoration: "none",
+                  color: "inherit",
+                }}>
+                  <span style={{
+                    fontFamily: "var(--font-serif)",
+                    fontSize: 22,
+                    fontWeight: 700,
+                    color: i === 0 ? "var(--terra)" : "var(--brown-3)",
+                    width: 28,
+                    textAlign: "center",
+                    flexShrink: 0,
+                  }}>
+                    {i + 1}
+                  </span>
+                  <div>
+                    <div style={{ fontSize: 10, color: "var(--terra)", letterSpacing: "0.1em", marginBottom: 3 }}>
+                      {categoryLabel[post.category] ?? "コラム"}
+                    </div>
+                    <div style={{ fontFamily: "var(--font-serif)", fontSize: 14, fontWeight: 600, color: "var(--brown)", lineHeight: 1.55, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                      {post.title}
+                    </div>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       {/* ARTICLES with category filter (Client Component) */}
       <ArticlesSection posts={posts} />

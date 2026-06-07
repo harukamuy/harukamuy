@@ -37,6 +37,24 @@ export function getAllPosts(): Post[] {
   return posts;
 }
 
+// 人気記事ランキング（GA4のPVから scripts/popular-posts.js が生成した
+// data/popular-posts.json を読む。ファイルが無い/壊れている場合は空配列）。
+export function getPopularPosts(limit = 5): Post[] {
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), "data", "popular-posts.json"),
+      "utf8"
+    );
+    const data = JSON.parse(raw) as { posts?: { slug: string }[] };
+    return (data.posts ?? [])
+      .map((p) => getPostBySlug(p.slug))
+      .filter((p): p is Post => p !== null)
+      .slice(0, limit);
+  } catch {
+    return [];
+  }
+}
+
 export function getPostsByCategory(category: Category): Post[] {
   if (category === "all") return getAllPosts();
   return getAllPosts().filter((p) => p.category === category);

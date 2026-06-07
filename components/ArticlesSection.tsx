@@ -17,12 +17,16 @@ export default function ArticlesSection({ posts }: { posts: Post[] }) {
   const [active, setActive] = useState("all");
 
   const activeTab = catTabs.find((t) => t.value === active);
-  const filtered =
+  const filteredAll =
     !activeTab || activeTab.kind === "all"
       ? posts
       : activeTab.kind === "tag"
         ? posts.filter((p) => p.tags?.includes(activeTab.value))
         : posts.filter((p) => p.category === activeTab.value);
+  // トップは「最新の数本」だけ見せる。全部は /blog（すべて見る →）へ
+  const VISIBLE = 7; // 注目1本 + 6本
+  const filtered = filteredAll.slice(0, VISIBLE);
+  const hasMore = filteredAll.length > VISIBLE;
   const firstPost = filtered[0];
   const restPosts = filtered.slice(1);
 
@@ -73,6 +77,25 @@ export default function ArticlesSection({ posts }: { posts: Post[] }) {
           {restPosts.map((post) => (
             <PostCard key={post.slug} post={post} />
           ))}
+        </div>
+      )}
+
+      {hasMore && (
+        <div style={{ textAlign: "center", marginTop: 28 }}>
+          <a href="/blog" style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 6,
+            border: "1.5px solid var(--beige-2)",
+            borderRadius: 24,
+            padding: "10px 24px",
+            fontSize: 13,
+            color: "var(--brown-2)",
+            textDecoration: "none",
+            letterSpacing: "0.06em",
+          }}>
+            記事をもっと見る →
+          </a>
         </div>
       )}
     </section>

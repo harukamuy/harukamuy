@@ -49,7 +49,9 @@ gsc-token.json
 indexing-token.json
 
 # 自動生成データ（検索順位レポートなど）
-data/
+data/*
+# ただし人気記事ランキングはトップ表示に使うのでコミットする（CIビルドで必要）
+!data/popular-posts.json
 
 # 記事用画像の元png（webpに自動変換されるためgitには入れない。logoだけ例外）
 public/images/*.png
