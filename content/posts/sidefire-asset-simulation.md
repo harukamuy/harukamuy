@@ -53,6 +53,13 @@ tags: ["サイドFIRE", "家計・資産管理"]
 
 つまり、**資産を年率4%で運用しながら取り崩していけば、元本を大きく減らさずに生活できる**という考え方だ。
 
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">📝 補足：トリニティスタディの前提</div>
+  <div style="font-size:13px;color:#3a5030;line-height:1.9;">
+    このトリニティスタディが前提にしているのは「株式と債券を組み合わせたポートフォリオ」で、株式100%から債券100%までいくつかの配分が検証されている。なかでもよく引用されるのが、<strong>株式50%・債券50%</strong>くらいのバランス型だ。わたし自身の資産配分はこれとは違っていて、高配当株・インデックス・債券・現金を組み合わせている。だから4%ルールも、そのまま自分に当てはめているというより、<strong>あくまで目安として参考にしている</strong>。
+  </div>
+</div>
+
 これをFIREに当てはめると、こうなる。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
