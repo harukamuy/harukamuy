@@ -291,3 +291,10 @@ tags: ["市場の話"]
 - [減配の罠](/blog/high-dividend-cut-risk)
 - [わたしのNISA積立設定](/blog/nisa-investment-settings)
 - [高配当株とインデックス、どちらを選ぶか](/blog/high-dividend-vs-index)
+
+---
+
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の体験・考えの記録であり、特定の銘柄や金融商品への投資を推奨・勧誘するものではありません。掲載している数字は手元の記録や各種資料をもとにしていますが、正確性を保証するものではありません。投資は価格が変動し、元本を割り込む可能性があります。投資の最終判断は、必ずご自身の責任で行ってください。
+</div>

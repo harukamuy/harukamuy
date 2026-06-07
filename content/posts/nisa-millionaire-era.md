@@ -298,3 +298,10 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 ---
 
 *情報の出典*: [日経電子版・資産1億円超える一般人「いつの間にか富裕層」](https://www.nikkei.com/), 野村総合研究所「純金融資産保有額別の世帯数推計(2023年)」, THE WALL STREET JOURNAL「米で『401kミリオネア』続々誕生」, リベラルアーツ大学・両学長の解説
+
+---
+
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の体験・考えの記録であり、特定の銘柄や金融商品への投資を推奨・勧誘するものではありません。掲載している数字は手元の記録や各種資料をもとにしていますが、正確性を保証するものではありません。投資は価格が変動し、元本を割り込む可能性があります。投資の最終判断は、必ずご自身の責任で行ってください。
+</div>
