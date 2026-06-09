@@ -7,7 +7,7 @@ import remarkHtml from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
-export type Category = "gomazochi" | "sidefire" | "all";
+export type Category = "gomazochi" | "sidefire" | "investment" | "freelance" | "all";
 
 export type Post = {
   slug: string;
@@ -35,6 +35,16 @@ export function getAllPosts(): Post[] {
     .filter((p): p is Post => p !== null)
     .sort((a, b) => (a.date < b.date ? 1 : -1));
   return posts;
+}
+
+// 一覧表示用の「本文抜き」記事データ。
+// "use client" コンポーネントに Post(本文含む) を渡すと全記事本文が
+// ページのHTMLに埋め込まれてしまう（トップ/blogが1.6MB超になっていた原因）ため、
+// 一覧系は必ずこちらを使うこと。
+export type PostMeta = Omit<Post, "content">;
+
+export function getAllPostMeta(): PostMeta[] {
+  return getAllPosts().map(({ content: _content, ...meta }) => meta);
 }
 
 // 人気記事ランキング（GA4のPVから scripts/popular-posts.js が生成した

@@ -21,6 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${name}（連載）`,
     description: `${name}の連載記事一覧（全${posts.length}回）。${posts[0]?.excerpt ?? ""}`,
     alternates: { canonical: `${SITE_URL}/series/${series}` },
+    openGraph: {
+      title: `${name}（連載） | harukamuy`,
+      description: `${name}の連載記事一覧（全${posts.length}回）。`,
+      url: `${SITE_URL}/series/${series}`,
+      images: [{ url: "/images/mio-room.jpg", width: 1200, height: 630, alt: `連載「${name}」` }],
+    },
   };
 }
 

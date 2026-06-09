@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Post } from "@/lib/posts";
+import type { PostMeta } from "@/lib/posts";
 import PostCard from "./PostCard";
 
 const catTabs: { value: string; label: string; kind: "all" | "category" | "tag" }[] = [
@@ -13,7 +13,7 @@ const catTabs: { value: string; label: string; kind: "all" | "category" | "tag" 
   { value: "十勝計画", label: "十勝計画", kind: "tag" },
 ];
 
-export default function ArticlesSection({ posts }: { posts: Post[] }) {
+export default function ArticlesSection({ posts }: { posts: PostMeta[] }) {
   const [active, setActive] = useState("all");
 
   const activeTab = catTabs.find((t) => t.value === active);

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "サイドFIREの記録 | harukamuy",
     description: "フリーランス映像プロデューサーが5年かけて達成したサイドFIREの全記録。資産推移・配当ログ・投資方針を公開します。",
     url: "https://harukamuy.com/sidefire",
-    images: [{ url: "/images/mio-room.webp", width: 1200, height: 630, alt: "サイドFIREの記録" }],
+    images: [{ url: "/images/mio-room.jpg", width: 1200, height: 630, alt: "サイドFIREの記録" }],
   },
 };
 

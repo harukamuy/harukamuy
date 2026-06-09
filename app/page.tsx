@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllPosts, getPopularPosts } from "@/lib/posts";
+import { getAllPostMeta, getPopularPosts } from "@/lib/posts";
 import BostonTerrierSVG from "@/components/BostonTerrierSVG";
 import ArticlesSection from "@/components/ArticlesSection";
 import HomeAssetChart from "@/components/HomeAssetChart";
@@ -70,7 +70,7 @@ const personJsonLd = {
 
 export default function Home() {
   const stats = latestStats();
-  const posts = getAllPosts();
+  const posts = getAllPostMeta();
   const popularPosts = getPopularPosts(5);
 
   return (

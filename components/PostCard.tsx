@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Post } from "@/lib/posts";
+import type { PostMeta } from "@/lib/posts";
 
 const categoryLabel: Record<string, string> = {
   gomazochi: "ごまもち🐾",
@@ -13,7 +13,7 @@ const thumbClass: Record<string, string> = {
   all: "t-beige",
 };
 
-export default function PostCard({ post, featured }: { post: Post; featured?: boolean }) {
+export default function PostCard({ post, featured }: { post: PostMeta; featured?: boolean }) {
   const catLabel = categoryLabel[post.category] ?? post.category;
   const thumbCls = thumbClass[post.category] ?? "t-beige";
 

@@ -1,17 +1,19 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import type { Post, Category } from "@/lib/posts";
+import type { PostMeta, Category } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 import Link from "next/link";
 
 const categories: { value: Category | "all"; label: string }[] = [
   { value: "all", label: "すべて" },
-  { value: "gomazochi", label: "🐾 ごまもち" },
   { value: "sidefire", label: "💰 サイドFIRE" },
+  { value: "investment", label: "📈 投資" },
+  { value: "freelance", label: "💼 フリーランス" },
+  { value: "gomazochi", label: "🐾 ごまもち" },
 ];
 
-export default function BlogClient({ posts }: { posts: Post[] }) {
+export default function BlogClient({ posts }: { posts: PostMeta[] }) {
   const searchParams = useSearchParams();
   const category = searchParams.get("category") as Category | null;
 

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description: "harukamuy のプライバシーポリシーです。",
+  alternates: { canonical: "https://harukamuy.com/privacy" },
 };
 
 const sections = [

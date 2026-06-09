@@ -56,6 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const categoryLabel: Record<string, string> = {
   gomazochi: "ごまもち🐾",
   sidefire: "サイドFIRE",
+  investment: "投資",
+  freelance: "フリーランス",
   all: "その他",
 };
 
