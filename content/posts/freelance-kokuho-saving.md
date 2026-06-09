@@ -330,7 +330,7 @@ url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
 
 ## 関連記事
 
+- [配当を確定申告すると国保が上がる](/blog/dividend-kokuho-filing)
 - [フリーランスの社会保険](/blog/freelance-social-insurance)
 - [フリーランスの確定申告](/blog/freelance-tax-return-freee)
-- [フリーランスのお金管理](/blog/freelance-money-management)
 - [フリーランスが3ヶ月働けなくなったら](/blog/freelance-cannot-work-savings)

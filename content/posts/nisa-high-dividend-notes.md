@@ -238,7 +238,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 - [わたしのNISA積立設定](/blog/nisa-investment-settings)
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)
 - [わたしの高配当株ポートフォリオ](/blog/high-dividend-portfolio)
-- [高配当株の選び方](/blog/high-dividend-stock-selection)
+- [配当を確定申告すると国保が上がる](/blog/dividend-kokuho-filing)
 
 ---
 
