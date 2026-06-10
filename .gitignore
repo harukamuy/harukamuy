@@ -56,3 +56,6 @@ data/*
 # 記事用画像の元png（webpに自動変換されるためgitには入れない。logoだけ例外）
 public/images/*.png
 !public/images/logo.png
+
+# インスタ用スライド（ローカル生成物。サイトのビルドには不要）
+/instagram/
