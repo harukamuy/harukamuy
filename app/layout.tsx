@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AffiliateClickTracker from "@/components/AffiliateClickTracker";
 
 const SITE_URL = "https://harukamuy.com";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
@@ -103,6 +104,7 @@ export default function RootLayout({
                 gtag('config', '${GA_ID}');
               `}
             </Script>
+            <AffiliateClickTracker />
           </>
         )}
       </body>

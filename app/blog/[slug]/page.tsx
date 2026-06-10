@@ -230,12 +230,17 @@ export default async function PostPage({ params }: Props) {
           fontWeight: 700,
           lineHeight: 1.6,
           color: "var(--brown)",
-          marginBottom: 24,
+          marginBottom: 10,
           letterSpacing: "0.02em",
           fontFamily: "var(--font-serif)",
         }}>
           {post.title}
         </h1>
+
+        {/* PR表記（ステマ規制対応：サイドバー含めページ内に広告リンクがあるため全記事に表示） */}
+        <div style={{ fontSize: 11, color: "var(--brown-3)", marginBottom: 24, letterSpacing: "0.02em" }}>
+          ※本記事にはアフィリエイト広告（プロモーション）が含まれています
+        </div>
 
         {/* Series banner */}
         {post.series && seriesPosts.length > 0 && (
