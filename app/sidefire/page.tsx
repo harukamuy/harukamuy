@@ -59,6 +59,8 @@ export default function SideFirePage() {
           </div>
 
           {/* asset numbers */}
+          <div>
+          <div style={{ fontSize: 11, opacity: 0.6, letterSpacing: "0.06em", marginBottom: 10 }}>{stats.monthLabel}時点</div>
           <div className="sidefire-nums-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,auto)", gap: 28 }}>
             {[
               { n: stats.totalManYenStr, unit: "万", label: "総資産" },
@@ -72,6 +74,7 @@ export default function SideFirePage() {
                 <div style={{ fontSize: 11, opacity: 0.6, marginTop: 3, letterSpacing: "0.06em" }}>{item.label}</div>
               </div>
             ))}
+          </div>
           </div>
         </div>
       </div>
@@ -122,7 +125,7 @@ export default function SideFirePage() {
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, overflow: "hidden", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "16/9", background: thumbColors[i % thumbColors.length], position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   {post.coverImage ? (
-                    <img src={post.coverImage} alt={post.title} width={1600} height={900} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
+                    <img src={post.coverImage} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
                   ) : (
                     <>
                       <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px)" }} />

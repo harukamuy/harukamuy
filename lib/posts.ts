@@ -93,6 +93,13 @@ export const TAG_SLUGS: Record<string, string> = {
   "会計ツール": "accounting",
   "市場の話": "market",
   "十勝計画": "tokachi-plan",
+  "ポートフォリオ": "portfolio",
+  "資産公開": "asset-disclosure",
+  "月次資産公開": "monthly-report",
+  "副業": "side-job",
+  "固定費・節約": "saving",
+  "映像×AI": "video-ai",
+  "AI": "ai",
 };
 
 // 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）

@@ -67,11 +67,11 @@ for (const cover of covers) {
     webpMade++;
   }
 
-  // OGP用JPG（横1200px・軽量）
+  // OGP用JPG（横1200px・軽量。SNSカードは小さく表示されるので品質68で十分）
   if (isStale(ogPath, src)) {
     await sharp(src)
       .resize(1200, null, { withoutEnlargement: true })
-      .jpeg({ quality: 80, mozjpeg: true })
+      .jpeg({ quality: 68, mozjpeg: true })
       .toFile(ogPath);
     console.log(`  ✓ og/${base}.jpg`);
     ogMade++;

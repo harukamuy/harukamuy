@@ -448,7 +448,7 @@ export default async function PostPage({ params }: Props) {
                     justifyContent: "center",
                   }}>
                     {related.coverImage ? (
-                      <img src={related.coverImage} alt={related.title} width={1600} height={900} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: related.coverImagePosition ?? "top center" }} />
+                      <img src={related.coverImage} alt={related.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: related.coverImagePosition ?? "top center" }} />
                     ) : (
                       <div style={{
                         position: "absolute",
@@ -566,7 +566,7 @@ export default async function PostPage({ params }: Props) {
           color: "white",
         }}>
           <div style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: "0.08em", marginBottom: 14, display: "flex", alignItems: "center", gap: 6 }}>
-            📊 現在の資産状況
+            📊 現在の資産状況（{stats.monthLabel}）
           </div>
           {[
             { label: "総資産", value: stats.totalManYenStr, unit: "万円" },
