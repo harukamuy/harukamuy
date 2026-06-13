@@ -298,9 +298,9 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 
 ## 関連記事
 
+- [スペースX上場。オルカン・QQQ・S&P500にはいつ入る？](/blog/spacex-ipo-index-inclusion)
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)
 - [NISAで高配当株を買うときに知っておきたいこと](/blog/nisa-high-dividend-notes)
-- [iDeCoへの移管](/blog/ideco-transfer-from-dc)
 - [SBI証券を選んだ理由](/blog/why-sbi-securities)
 
 ---

@@ -408,11 +408,11 @@ S&P500だけを買うと、こういう不安が出てくる。
 
 ## 関連記事
 
+- [スペースX上場。オルカン・QQQ・S&P500にはいつ入る？](/blog/spacex-ipo-index-inclusion)
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)
 - [わたしのNISA積立設定](/blog/nisa-investment-settings)
 - [投資を始めた2018年](/blog/investment-start-2018)
 - [SBI証券・楽天証券・マネックス証券](/blog/sbi-vs-rakuten-vs-monex)
-- [BNDを買い増ししている理由](/blog/why-bnd-add-on)
 
 :::cta
 title: SBI証券 — オルカン・S&P500の積立はここから
