@@ -1,7 +1,7 @@
 ---
 title: "スペースX上場。オルカン・QQQ・S&P500にはいつ入る？指数のルールを調べてみた"
 date: "2026-06-13"
-category: "sidefire"
+category: "news"
 excerpt: "史上最大のIPOとなったスペースXのNASDAQ上場。インデックス投資家として気になるのは「わたしのオルカンにはいつ入るの？」ということ。調べてみたら、オルカンが一番早くて6月下旬、QQQが7月上旬、そしてS&P500は数年先の可能性も。ここまで差が開くとは思っていなかった。指数ごとの組入ルールを、わたしの持ち分と合わせて整理します。"
 coverImage: "/images/20260613_1.webp"
 coverImagePosition: "center"

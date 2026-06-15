@@ -7,7 +7,7 @@ import remarkHtml from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
-export type Category = "gomazochi" | "sidefire" | "investment" | "freelance" | "all";
+export type Category = "gomazochi" | "sidefire" | "investment" | "freelance" | "news" | "all";
 
 export type Post = {
   slug: string;

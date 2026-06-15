@@ -9,6 +9,7 @@ const catTabs: { value: string; label: string; kind: "all" | "category" | "tag" 
   { value: "sidefire", label: "サイドFIRE", kind: "category" },
   { value: "investment", label: "投資", kind: "category" },
   { value: "freelance", label: "フリーランス", kind: "category" },
+  { value: "news", label: "ニュース📰", kind: "category" },
   { value: "gomazochi", label: "ごまもち🐾", kind: "category" },
   { value: "十勝計画", label: "十勝計画", kind: "tag" },
 ];

@@ -10,6 +10,7 @@ const categories: { value: Category | "all"; label: string }[] = [
   { value: "sidefire", label: "💰 サイドFIRE" },
   { value: "investment", label: "📈 投資" },
   { value: "freelance", label: "💼 フリーランス" },
+  { value: "news", label: "📰 ニュース" },
   { value: "gomazochi", label: "🐾 ごまもち" },
 ];
 

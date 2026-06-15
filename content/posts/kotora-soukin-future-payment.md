@@ -1,7 +1,7 @@
 ---
 title: "ことら送金って増えてきたよね、で調べてみたら『銀行 vs PayPay』の壮絶な戦いが見えてきた話"
 date: "2026-05-18"
-category: "investment"
+category: "news"
 excerpt: "最近『ことらで送るね』が増えてきた。なんとなく設定してみたら、これが銀行界の生存戦略だった。という話。PayPay経済圏の拡大、株式会社ことらの裏側、世界の決済インフラ事情、そしてわたしの三層戦略まで、調べていくうちに見えてきたお金の未来を書きます。"
 coverImage: "/images/20260520_1.webp"
 coverImagePosition: "center"

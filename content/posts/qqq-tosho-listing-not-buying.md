@@ -1,7 +1,7 @@
 ---
 title: "世界最大級ETF『QQQ』が東証上場。でもわたしは買わない理由"
 date: "2026-06-10"
-category: "investment"
+category: "news"
 excerpt: "運用資産65兆円超・世界最大級のETF『インベスコQQQ』が東証に上場。円建てで買えるようになって人気は出そうだけど、わたしは買わない。S&P500との10年比較、コスト、分配金、そして『初心者ほど手を出す理由がない』と思う理由を正直に書きます。"
 coverImage: "/images/20260610_1.png"
 coverImagePosition: "center"
