@@ -48,6 +48,9 @@ ga4-token.json
 gsc-token.json
 indexing-token.json
 
+# 個人の資産データ・記事引き継ぎ（絶対に公開しない）
+/private/
+
 # 自動生成データ（検索順位レポートなど）
 data/*
 # ただし人気記事ランキングはトップ表示に使うのでコミットする（CIビルドで必要）
