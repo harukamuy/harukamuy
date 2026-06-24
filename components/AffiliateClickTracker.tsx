@@ -8,7 +8,6 @@ import { useEffect } from "react";
 
 const MERCHANT_PATTERNS: Array<{ test: (href: string) => boolean; merchant: string }> = [
   { test: (h) => h.includes("a8.net") && h.includes("1MXXO2"), merchant: "freee" },
-  { test: (h) => h.includes("a8.net") && h.includes("DNS2GI"), merchant: "ahamo" },
   { test: (h) => h.includes("a8.net"), merchant: "a8-other" },
   { test: (h) => h.includes("accesstrade.net") && h.includes("0100piab"), merchant: "sbi-zero" },
   { test: (h) => h.includes("accesstrade.net") && h.includes("0100pesr"), merchant: "sbi-nisa" },
