@@ -20,7 +20,7 @@ const toIsoJst = (d: string) =>
 // OGP用の軽量JPG（scripts/make-og-images.mjs が public/images/og/ に生成）。
 // X や LINE は大きい画像・WebPだとカードに画像を出さないことがあるため。
 function ogImageUrl(coverImage?: string): string {
-  if (!coverImage) return `${SITE_URL}/images/mio-room.jpg`;
+  if (!coverImage) return `${SITE_URL}/images/harukamuy-ogp.jpg`;
   const base = coverImage.replace(/^\/images\//, "").replace(/\.[a-z]+$/i, "");
   return `${SITE_URL}/images/og/${base}.jpg`;
 }
@@ -503,7 +503,7 @@ export default async function PostPage({ params }: Props) {
             border: "3px solid var(--ivory-2)",
             overflow: "hidden",
           }}>
-            <img src="/images/mio-fullbody.webp" alt="あずき" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+            <img src="/images/mio-fullbody.webp" alt="あずき" width={400} height={400} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
           </div>
           <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 2 }}>あずき ＆ ごまもち</div>
           <div style={{ fontSize: 11, color: "var(--brown-3)", marginBottom: 9 }}>映像プロデューサー・34歳</div>

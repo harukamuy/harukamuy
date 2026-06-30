@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${tag}の記事一覧 | harukamuy`,
       description: `${tag}に関する記事 ${posts.length} 件`,
       url: `${SITE_URL}/tag/${slug}`,
-      images: [{ url: "/images/mio-room.jpg", width: 1200, height: 630, alt: `${tag}の記事一覧` }],
+      images: [{ url: "/images/harukamuy-ogp.jpg", width: 1200, height: 630, alt: `${tag}の記事一覧` }],
     },
   };
 }

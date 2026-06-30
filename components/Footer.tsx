@@ -23,7 +23,7 @@ export default function Footer() {
             alignItems: "center",
             gap: 6,
           }}>
-            <img src="/images/logo.png" alt="harukamuy" width={20} height={20} style={{ width: 20, height: 20, objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+            <img src="/images/logo.png" alt="harukamuy" width={20} height={20} loading="lazy" style={{ width: 20, height: 20, objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             harukamuy
           </div>
           <div style={{ fontSize: 12, lineHeight: 1.85, maxWidth: 300 }}>

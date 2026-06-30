@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "ボストンテリアのごまもちと暮らすフリーランス映像プロデューサー・あずきが、サイドFIRE達成までの資産形成・投資・日常をゆるく発信するブログ。",
     url: "https://harukamuy.com",
-    images: [{ url: "/images/mio-room.jpg", width: 1200, height: 630, alt: "harukamuy" }],
+    images: [{ url: "/images/harukamuy-ogp.jpg", width: 1200, height: 630, alt: "harukamuy" }],
   },
 };
 
@@ -246,7 +246,7 @@ export default function Home() {
               overflow: "hidden",
               position: "relative",
             }}>
-              <img src="/images/mio-fullbody.webp" alt="あずき" width={400} height={400} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+              <img src="/images/mio-fullbody.webp" alt="あずき" width={400} height={400} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
             </div>
             <div style={{
               position: "absolute",
