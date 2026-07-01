@@ -4,6 +4,9 @@ import type { PostMeta } from "@/lib/posts";
 const categoryLabel: Record<string, string> = {
   gomazochi: "ごまもち🐾",
   sidefire: "サイドFIRE",
+  investment: "投資",
+  freelance: "フリーランス",
+  news: "ニュース",
   all: "その他",
 };
 

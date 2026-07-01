@@ -10,6 +10,7 @@ const categoryLabel: Record<string, string> = {
   sidefire: "サイドFIRE",
   investment: "投資",
   freelance: "フリーランス",
+  news: "ニュース",
   gomazochi: "ごまもち🐾",
   all: "コラム",
 };

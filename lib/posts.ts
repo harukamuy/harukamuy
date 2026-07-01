@@ -100,6 +100,10 @@ export const TAG_SLUGS: Record<string, string> = {
   "固定費・節約": "saving",
   "映像×AI": "video-ai",
   "AI": "ai",
+  "投資": "investing",
+  "確定申告": "tax-return",
+  "税金・社会保険": "tax-insurance",
+  "資産推移": "asset-growth",
 };
 
 // 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）

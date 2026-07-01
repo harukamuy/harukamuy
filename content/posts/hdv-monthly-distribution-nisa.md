@@ -5,7 +5,7 @@ category: "news"
 excerpt: "わたしの好きな高配当ETF「HDV」が2026年6月から毎月分配に変わった。毎月もらえて一見うれしいニュースだけど、日本の投資家には落とし穴が。新NISAの成長投資枠から外れてしまったのだ。なぜ毎月分配はNISAで除外なのか(タコ足分配の話)、HDVが毎月分配を選んだ理由、そして実はBNDも同じ理由で対象外という話まで、あずきの目線で整理してみた。"
 coverImage: "/images/20260621_1.png"
 coverImagePosition: "center"
-tags: ["ETF", "高配当", "新NISA"]
+tags: ["ETF", "高配当株", "新NISA"]
 ---
 
 <div class="conv-wrap">
