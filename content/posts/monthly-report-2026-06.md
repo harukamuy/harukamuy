@@ -59,6 +59,32 @@ tags: ["サイドFIRE", "月次資産公開", "市場の話"]
   </div>
 </div>
 
+内訳を円グラフにすると、こんなバランスになる。
+
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 18px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:6px;">🥧 資産の内訳（割合）</div>
+  <svg viewBox="0 0 500 300" style="width:100%;height:auto;display:block;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="資産内訳の円グラフ。SP500・オルカン66.1%、日本高配当株21.9%、外国債券BND5.2%、現金5.2%、ビットコイン1.6%">
+    <path d="M135,150 L135,40 A110,110 0 1,1 41.8,208.4 Z" fill="#5a8a50" stroke="#f0f5ee" stroke-width="2"></path>
+    <path d="M135,150 L41.8,208.4 A110,110 0 0,1 59.8,69.7 Z" fill="#8fb87f" stroke="#f0f5ee" stroke-width="2"></path>
+    <path d="M135,150 L59.8,69.7 A110,110 0 0,1 89.4,49.9 Z" fill="#b8d4a8" stroke="#f0f5ee" stroke-width="2"></path>
+    <path d="M135,150 L89.4,49.9 A110,110 0 0,1 123.7,40.6 Z" fill="#cfc9b8" stroke="#f0f5ee" stroke-width="2"></path>
+    <path d="M135,150 L123.7,40.6 A110,110 0 0,1 135,40 Z" fill="#d98a4a" stroke="#f0f5ee" stroke-width="2"></path>
+    <rect x="270" y="60" width="14" height="14" rx="2" fill="#5a8a50"></rect>
+    <text x="292" y="72" font-size="13" fill="#3a5030">SP500・オルカン　66.1%</text>
+    <rect x="270" y="94" width="14" height="14" rx="2" fill="#8fb87f"></rect>
+    <text x="292" y="106" font-size="13" fill="#3a5030">日本高配当株　21.9%</text>
+    <rect x="270" y="128" width="14" height="14" rx="2" fill="#b8d4a8"></rect>
+    <text x="292" y="140" font-size="13" fill="#3a5030">外国債券（BND）　5.2%</text>
+    <rect x="270" y="162" width="14" height="14" rx="2" fill="#cfc9b8"></rect>
+    <text x="292" y="174" font-size="13" fill="#3a5030">現金　5.2%</text>
+    <rect x="270" y="196" width="14" height="14" rx="2" fill="#d98a4a"></rect>
+    <text x="292" y="208" font-size="13" fill="#3a5030">ビットコイン　1.6%</text>
+  </svg>
+  <div style="font-size:11px;color:#5a8a50;text-align:right;margin-top:4px;">2026年6月30日時点</div>
+</div>
+
+コアになる株式（SP500・オルカンと日本高配当株）で、あわせて<strong>約88%</strong>。そこに外国債券（BND）を足すと9割を超える。現金とビットコインは、守りと遊びの小さな枠だ。
+
 ---
 
 ## 2. 総資産はほぼ横ばい。株の伸びを、ビットコインの下げが相殺した
