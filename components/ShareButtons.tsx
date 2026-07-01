@@ -22,6 +22,21 @@ export default function ShareButtons({ title }: { title: string }) {
     }
   };
 
+  const handleHatenaShare = () => {
+    if (typeof window !== "undefined") {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://b.hatena.ne.jp/entry/panel/?url=${url}`, "_blank");
+    }
+  };
+
+  const handleLineShare = () => {
+    if (typeof window !== "undefined") {
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(title);
+      window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, "_blank");
+    }
+  };
+
   return (
     <div style={{
       marginTop: 44,
@@ -49,6 +64,40 @@ export default function ShareButtons({ title }: { title: string }) {
         }}
       >
         𝕏 でシェア
+      </button>
+      <button
+        onClick={handleHatenaShare}
+        style={{
+          padding: "7px 18px",
+          borderRadius: 20,
+          fontSize: 12,
+          fontFamily: "var(--font-body)",
+          cursor: "pointer",
+          border: "1.5px solid #00a4de",
+          background: "var(--white)",
+          color: "#00a4de",
+          letterSpacing: "0.06em",
+          transition: "all 0.2s",
+        }}
+      >
+        B! はてブ
+      </button>
+      <button
+        onClick={handleLineShare}
+        style={{
+          padding: "7px 18px",
+          borderRadius: 20,
+          fontSize: 12,
+          fontFamily: "var(--font-body)",
+          cursor: "pointer",
+          border: "1.5px solid #06c755",
+          background: "var(--white)",
+          color: "#06c755",
+          letterSpacing: "0.06em",
+          transition: "all 0.2s",
+        }}
+      >
+        LINE で送る
       </button>
       <button
         onClick={handleCopy}
