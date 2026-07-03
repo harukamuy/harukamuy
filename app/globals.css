@@ -542,7 +542,7 @@ body::before {
   top: 8px;
   right: 10px;
   font-size: 10px;
-  color: var(--brown-3);
+  color: var(--brown-2);
   background: var(--ivory-2, #f3ebdc);
   padding: 2px 8px;
   border-radius: 10px;
@@ -783,5 +783,22 @@ body::before {
   .aff-cta-btn {
     font-size: 12px;
     padding: 10px 22px;
+  }
+}
+
+/* ── 記事内パーツのモバイル対応（375px想定） ── */
+@media (max-width: 600px) {
+  /* 緑枠データカード内の多カラムgridを縦積みに（横潰れ・折返し崩れ防止） */
+  .data-card div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 2px 8px !important;
+  }
+  /* 会話パーツ: アバターを小さくして本文の幅を確保 */
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+  .turn {
+    gap: 10px;
   }
 }

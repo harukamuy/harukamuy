@@ -6,6 +6,7 @@ category: "news"
 excerpt: "S&P500がスペースXの早期組み入れ用のルール変更を2026年6月に否決。一方でNASDAQ100とラッセルは緩和済み。同じ『超大型IPO』に指数会社の判断が真っ二つに割れた背景を、収益性要件・上場期間ルール・スペースXの財務まで含めてファクトベースで調べました。前回の『指数のルール調べてみた』の続報です。"
 coverImage: "/images/20260615_1.png"
 coverImagePosition: "center"
+tags: ["市場の話", "インデックス投資"]
 ---
 
 <div class="conv-wrap">

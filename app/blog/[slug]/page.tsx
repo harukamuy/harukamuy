@@ -157,24 +157,32 @@ export default async function PostPage({ params }: Props) {
     }}>
       <article>
         {/* Breadcrumb */}
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 8,
-          fontSize: 12,
-          color: "var(--brown-3)",
-          marginBottom: 22,
-        }}>
-          <Link href="/" style={{ color: "var(--brown-3)", textDecoration: "none" }}>TOP</Link>
-          <span style={{ opacity: 0.5 }}>›</span>
-          <Link href={`/blog?category=${post.category}`} style={{ color: "var(--brown-3)", textDecoration: "none" }}>
-            {categoryLabel[post.category] ?? post.category}
-          </Link>
-          <span style={{ opacity: 0.5 }}>›</span>
-          <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: 200 }}>
-            {post.title}
-          </span>
-        </div>
+        <nav aria-label="パンくずリスト" style={{ marginBottom: 22 }}>
+          <ol style={{
+            listStyle: "none",
+            padding: 0,
+            margin: 0,
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
+            fontSize: "clamp(11px, 2vw, 13px)",
+            color: "var(--brown-2)",
+          }}>
+            <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <Link href="/" style={{ color: "var(--brown-2)", textDecoration: "none" }}>TOP</Link>
+              <span aria-hidden="true" style={{ opacity: 0.5 }}>›</span>
+            </li>
+            <li style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <Link href={`/blog?category=${post.category}`} style={{ color: "var(--brown-2)", textDecoration: "none" }}>
+                {categoryLabel[post.category] ?? post.category}
+              </Link>
+              <span aria-hidden="true" style={{ opacity: 0.5 }}>›</span>
+            </li>
+            <li style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: "60%" }} aria-current="page">
+              {post.title}
+            </li>
+          </ol>
+        </nav>
 
         {/* Hero image area */}
         <div style={{
@@ -338,7 +346,7 @@ export default async function PostPage({ params }: Props) {
         {/* Tags */}
         {post.tags.length > 0 && (
           <div style={{ marginTop: 32, display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
-            <span style={{ fontSize: 11, color: "var(--brown-3)", letterSpacing: "0.08em" }}>TAGS</span>
+            <span style={{ fontSize: 11, color: "var(--brown-2)", letterSpacing: "0.08em" }}>TAGS</span>
             {post.tags.map((t) => (
               <Link
                 key={t}

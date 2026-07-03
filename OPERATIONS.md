@@ -111,3 +111,40 @@ GA4の直近28日の実データからトップの「よく読まれている記
 | 人気記事ランキング | ✋ 手動（月1、コマンド1回） |
 | 新タグのURL登録・新カテゴリ | ✋ Claudeに依頼 |
 | 記事の `updated:` 記入 | ✋ リライト時に手動 |
+
+---
+
+## 11. 免責事項のテンプレ（記事末尾に貼る）
+
+記事の種類に応じて、末尾（関連記事の前）に対応する免責を貼る。**投資・税務系は必須**。
+
+### A. 投資系（銘柄・商品・相場に触れる記事）
+```html
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の見解・体験のシェアです。特定の銘柄・金融商品への投資を推奨・勧誘するものではありません。掲載している数字は執筆時点の情報にもとづくもので、正確性を保証するものではなく、今後変動する可能性があります。投資は価格が変動し、元本を割り込む可能性があります。必ずご自身の判断と責任で行ってください。
+</div>
+```
+
+### B. 税務・社会保険系（確定申告・国保・年金・控除などの記事）
+```html
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の体験と、執筆時点の制度にもとづく情報のシェアです。税制・社会保険制度は改正されることがあり、また個々の状況によって扱いが異なります。実際の申告・手続きにあたっては、税務署・自治体・税理士など専門家にご確認ください。
+</div>
+```
+
+### C. 一般情報系（ごまもち日記・暮らし系は不要。制度に軽く触れる程度なら）
+```html
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事は執筆時点の情報にもとづく、あずき個人の体験・見解のシェアです。最新の情報は各公式サイトでご確認ください。
+</div>
+```
+
+## 12. 記事公開前のセルフチェック（1分）
+
+- [ ] tags を **2〜3個**付けたか（付け忘れると関連記事・タグページに出ない）
+- [ ] 新しいタグを使ったら Claude に「TAG_SLUGS 登録して」と依頼したか
+- [ ] 投資・税務系なら免責（上のA/B）を末尾に貼ったか
+- [ ] 数字には「いつ時点か」を書いたか（例: 2026年6月末時点）

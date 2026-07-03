@@ -75,6 +75,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="4CGA_h1VKtrpeC4f7HWzGs3QV5rX1fD5_ZQNfgNZ2KQ" />
+        <link rel="alternate" type="application/rss+xml" title="harukamuy RSS" href="/feed.xml" />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />

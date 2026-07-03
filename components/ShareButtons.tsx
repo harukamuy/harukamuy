@@ -58,7 +58,7 @@ export default function ShareButtons({ title }: { title: string }) {
           cursor: "pointer",
           border: "1.5px solid #1da1f2",
           background: "var(--white)",
-          color: "#1da1f2",
+          color: "var(--brown-2)",
           letterSpacing: "0.06em",
           transition: "all 0.2s",
         }}
@@ -75,7 +75,7 @@ export default function ShareButtons({ title }: { title: string }) {
           cursor: "pointer",
           border: "1.5px solid #00a4de",
           background: "var(--white)",
-          color: "#00a4de",
+          color: "var(--brown-2)",
           letterSpacing: "0.06em",
           transition: "all 0.2s",
         }}
@@ -92,7 +92,7 @@ export default function ShareButtons({ title }: { title: string }) {
           cursor: "pointer",
           border: "1.5px solid #06c755",
           background: "var(--white)",
-          color: "#06c755",
+          color: "var(--brown-2)",
           letterSpacing: "0.06em",
           transition: "all 0.2s",
         }}

@@ -5,6 +5,7 @@ category: "investment"
 excerpt: "円安が続くなか「日本円だけで資産を持つのは安全?」を本気で整理しました。ポイントは『円か外貨か』だけでなく『現金か投資か』の2軸。同じ円でも預金と株では全然違う。34歳フリーランスのわたしの実際のポートフォリオ(生活防衛資金・日本高配当株・オルカン/S&P500/BND)を例に、ありがちな誤解をほどきます。"
 coverImage: "/images/20260617_2.png"
 coverImagePosition: "center"
+tags: ["家計・資産管理", "市場の話"]
 ---
 
 <div class="conv-wrap">
