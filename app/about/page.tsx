@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
@@ -87,6 +88,11 @@ export default function AboutPage() {
               {["ボストンテリア", "食いしん坊", "散歩大好き", "質問担当🐾"].map((tag) => (
                 <span key={tag} style={{ fontSize: 11, background: "var(--ivory-2)", padding: "3px 10px", borderRadius: 20, color: "var(--brown-3)", border: "1px solid var(--beige)" }}>{tag}</span>
               ))}
+            </div>
+            <div style={{ marginTop: 14 }}>
+              <Link href="/gomamochi" style={{ fontSize: 12, fontWeight: 600, color: "var(--terra)", textDecoration: "none", letterSpacing: "0.04em" }}>
+                🐾 ごまもちの日常を見る →
+              </Link>
             </div>
           </div>
         </div>

@@ -104,6 +104,7 @@ export const TAG_SLUGS: Record<string, string> = {
   "確定申告": "tax-return",
   "税金・社会保険": "tax-insurance",
   "資産推移": "asset-growth",
+  "制度改正": "policy-change",
 };
 
 // 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）

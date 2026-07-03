@@ -97,6 +97,11 @@ export default function GomamochiPage() {
                 <span key={tag} style={{ fontSize: 11, background: "#fde8e0", padding: "3px 10px", borderRadius: 20, color: "var(--brown-2)", border: "1px solid var(--blush)" }}>{tag}</span>
               ))}
             </div>
+            <div style={{ marginTop: 14 }}>
+              <Link href="/about" style={{ fontSize: 12, fontWeight: 600, color: "var(--terra)", textDecoration: "none", letterSpacing: "0.04em" }}>
+                あずき＆ごまもちについて（About）→
+              </Link>
+            </div>
           </div>
         </div>
 

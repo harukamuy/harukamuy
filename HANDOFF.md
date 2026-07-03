@@ -1,0 +1,51 @@
+# 引き継ぎメモ（harukamuy ブログ作業）
+
+最終更新: 2026-06-17 のセッション終わり
+
+## ⚠️ 重要: 複数セッションが並行している
+- このリポジトリでは複数の Claude セッションが並行作業している。
+- 直近のコミット（`63682e8` 固定費記事など）は別セッションのもの。**作業前に必ず `git pull` / `git log` で最新を確認**すること。
+
+---
+
+## 🔴 未完了タスク（次のセッションで対応）
+
+（いまアクティブな未完了タスクはなし）
+
+> ✅ 直近の完了（push 済み）:
+> - 2026-07-02: 新記事「つみたて投資枠に『債券』がやってくる（2027年1月から）」(`nisa-2026-tsumitate-bond.md`) 公開（commit `689f781`、category=news）。主役=つみたて枠への債券追加／こどもNISA（枠は増えず"早く始められる"だけ＝内数の💡解説・引き出し条件）／新指数（読売333・JPXプライム150）／**「売却枠の当年復活」は金融庁要望どまりで今回は見送り**と正確に整理／立場別アドバイスをアイコンカード化／子育て世代へ長期投資の注意（近い資金は現金）／あずきの軸=インデックス一本でいい・債券はお守り。アイキャッチ `20260702_1`、CTAはNISA訴求リンク。※外部レビュー指摘で当年復活の事実誤認（初回は"決定"と誤記）を修正済み。
+> - 2026-06-21: 新記事「好きな高配当ETF『HDV』が毎月分配に。その理由を調べてみた」(`hdv-monthly-distribution-nisa.md`) 公開（commit `8a2e424`、category=news）。内容＝HDV毎月分配化の理由(米国インカム需要)・新NISA成長投資枠の対象外・タコ足分配(毒キノコ)解説を厚め・「HDV/BNDはタコ足ではない」・BNDも同理由でNISA対象外(→BND記事リンク)・「いま持っているHDVはどうなる」FAQ枠・HDV vs VYM/SPYD比較表・ごまもち会話4か所。アイキャッチ `20260621_1`、CTAは一般SBIリンク。※毎月分配の開始日は公式403でメディアベース(「2026年6月から/初回7月」)。「理由を調べてみた」シリーズの型。
+> - 2026-06-18: BND記事「why-bnd-add-on.md」セクション5タイトルを「為替には分散で備える」に、出だしも「円とドルが互いの弱点を補い合う分散」へ修正（commit `d831634`）。抽象的な「為替＝分散」の言い回しを具体化。
+> - 2026-06-17: 新記事「円だけで持つリスク」(`yen-only-asset-risk.md`) 公開（commit `985938c`）。アイキャッチ `20260617_2`、CTAは一般SBIリンク `rk=0100piab00orlw`、4タイプ表を罫線入り化、円高=守り/円安=攻めの非対称説明に修正、ごまもちセリフのルール違反（減/損→ひらがな）も修正。
+> - 2026-06-17: middle-east-shock を news→investment に戻す（commit `95ceee2`）。
+
+---
+
+## ✅ このセッションで完了したこと
+
+- **新カテゴリ「ニュース(news)」を新設**（コミット `7b54fc6`、push済み）
+  - 実装3箇所: `lib/posts.ts`(型), `app/blog/BlogClient.tsx`(タブ), `components/ArticlesSection.tsx`(タブ)
+- 時事ニュース起点の7記事を `news` に振り分け済み（kotora-soukin / nikkei-60000 / nisa-millionaire / qqq-tosho / spacex-ipo / spacex-sp500-rejected / middle-east-shock）
+  - ※ただし middle-east-shock は investment に戻す指示が出た（上記タスク2）
+- **新記事「スペースX、S&P500は門前払い」公開済み**（`spacex-sp500-rejected-index-rules.md`、push済み）
+- **朝刊ルーティン設定済み**: スケジュールタスク `azuki-blog-asakan`（毎朝6時・JST）。NISA/FIRE/フリーランス/年金/老後 の5カテゴリを検索し、あずきの4基準で3〜5本ピックアップする「今日の朝刊」を自動生成。
+
+## 📂 カテゴリの使い分けルール（このセッションで決めた方針）
+- **news**: 特定のニュース・制度改正・上場・相場急変が起点の記事（例: スペースX上場、QQQ東証上場、日経6万円）
+- **investment**: 時期を問わず通用する投資の考え方・手法（例: 円だけで持つリスク、オルカンvs S&P500、高配当株の選び方）
+- **freelance / sidefire / gomazochi**: 既存どおり
+
+## 🛠 記事制作の手順（毎回共通・このブログの慣習）
+1. `content/posts/<slug>.md` を Write で作成（frontmatter: title/date/category/excerpt/coverImage/coverImagePosition）
+2. アバター画像は `/images/gomamochi-sit.webp` と `/images/mio-fullbody.webp`（**.png ではなく .webp**。間違えるとリンク切れ）
+3. ごまもち(犬)の発言は **ひらがな + 小学校低学年(1〜2年)の漢字のみ**
+4. 本文で「——」(全角ダッシュ)は使わない（ユーザーの強い希望。`feedback_no_emdash` メモ参照）
+5. 投資系記事の末尾に免責事項ブロックを入れる（既存記事からコピー）
+6. アフィCTAは `:::cta` ブロック。SBI=`https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw`、freee=`https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y`
+7. アイキャッチ: ユーザーが `YYYYMMDD_n` 形式のファイル名を伝える → `harukamuy-image/` から `public/images/` にコピー → `node scripts/optimize-images.mjs` 実行
+8. ローカル確認は preview ツールで dev サーバー起動（`harukamuy-dev`、port 3000）
+9. 公開は `git add -A && git commit && git push`（push すると新記事検出→5分後に Google インデックス自動申請が走る）
+
+## 📰 朝刊の使い方
+- ユーザーが「今日の朝刊」「なにかニュースある?」と言ったら、5カテゴリを WebSearch → あずき4基準でフィルタ → 「📰 今日の朝刊(日付)」形式で3〜5本+おすすめ1本を提示。
+- 各候補: `[優先度🔴/🟡/🟢] ① タイトル / 1行要約 / あずき視点で書ける角度 / ソースURL`

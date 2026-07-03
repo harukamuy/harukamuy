@@ -117,7 +117,7 @@ export default function PrivacyPage() {
           lineHeight: 1.9,
         }}>
           <div style={{ fontWeight: 700, color: "var(--brown)", marginBottom: 8 }}>お問い合わせ</div>
-          プライバシーポリシーに関するご質問は、下記メールアドレスまでご連絡ください。<br />
+          プライバシーポリシーに関するご質問は、下記メールアドレスまでご連絡ください。通常3営業日以内に返信いたします。<br />
           <a href="mailto:azuki@harukamuy.com" style={{ color: "var(--terra)", textDecoration: "none", fontWeight: 500 }}>
             azuki@harukamuy.com
           </a>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPostMeta, getPopularPosts } from "@/lib/posts";
-import BostonTerrierSVG from "@/components/BostonTerrierSVG";
 import ArticlesSection from "@/components/ArticlesSection";
 import HomeAssetChart from "@/components/HomeAssetChart";
 import { latestStats } from "@/components/sidefireData";
