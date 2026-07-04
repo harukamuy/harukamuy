@@ -236,9 +236,9 @@ tags: ["家計・資産管理", "市場の話"]
 
 ## 関連記事
 
-- [BNDを買い増ししている理由——「守り」というより「気休め」](/blog/why-bnd-add-on)
-- [生活防衛資金は300万円——「健康のための備え」だと思っている](/blog/emergency-fund-300)
-- [オルカン vs S&P500——両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [BNDを買い増ししている理由。「守り」というより「気休め」](/blog/why-bnd-add-on)
+- [生活防衛資金は300万円。「健康のための備え」だと思っている](/blog/emergency-fund-300)
+- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
 - [日経平均6万円時代。8年で2万→6万、貯金では追いつかない現実](/blog/nikkei-60000-investment-now)
 
 :::cta
