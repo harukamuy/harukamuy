@@ -269,6 +269,15 @@ tags: ["NISA"]
 
 ---
 
+:::cta
+title: SBI証券 — あずきのメイン証券口座
+description: NISA・iDeCo・日本株・米国ETFすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -279,16 +288,6 @@ tags: ["NISA"]
 <li>これから始めるならまずNISA口座の開設から。年間360万円の非課税枠をフル活用したい</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: SBI証券 — あずきのメイン証券口座
-description: NISA・iDeCo・日本株・米国ETFすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

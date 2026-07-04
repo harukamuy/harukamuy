@@ -220,6 +220,15 @@ BND(米国債券ETF)を地味に持ち続けているわたしとしては、こ
 
 ---
 
+:::cta
+title: SBI証券 — つみたても米国ETFも、これ1つで
+description: つみたて投資枠のインデックスも、日本の高配当株も、BND・VYMなどの米国ETFも、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## 8. まとめ
 
 最後に、この記事のポイントを整理する。
@@ -274,9 +283,3 @@ BND(米国債券ETF)を地味に持ち続けているわたしとしては、こ
 - [円だけで資産を持つリスクを整理してみた](/blog/yen-only-asset-risk)
 - [NISA設定](/blog/nisa-investment-settings)
 
-:::cta
-title: SBI証券 — つみたても米国ETFも、これ1つで
-description: つみたて投資枠のインデックスも、日本の高配当株も、BND・VYMなどの米国ETFも、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::

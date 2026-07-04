@@ -147,6 +147,12 @@ tags: ["暗号資産", "ビットコイン", "税金"]
 
 </div>
 
+<div style="background:#faf6f0;border:1.5px solid #e5d8c8;border-radius:12px;padding:14px 18px;margin:26px 0;font-size:13px;line-height:2;">
+<strong style="color:#a8705a;">📌 あわせて読みたい</strong><br>
+<a href="/blog/new-nisa-complete-guide">新NISA完全ガイド。1,800万円を10年で埋める道筋</a><br>
+<a href="/blog/yen-only-asset-risk">円だけで資産を持つリスクを整理してみた</a>
+</div>
+
 ---
 
 ## 5. じゃあ、わたしはどうする? → 2028年1月まで待ってみる
@@ -217,6 +223,15 @@ tags: ["暗号資産", "ビットコイン", "税金"]
 
 ---
 
+:::cta
+title: SBI証券 — 投資の"主軸"はコツコツ積立から
+description: 話題のビットコインより、まずは長期の主軸を。オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 - ビットコインは20万円で0.1BTC買った **“余興枠”**（いま99万円・含み益79万円）。主軸はあくまでインデックス
@@ -268,9 +283,3 @@ tags: ["暗号資産", "ビットコイン", "税金"]
 - [BNDを買い増ししている理由。「気休め」でも持ち続ける債券ETF](/blog/why-bnd-add-on)
 - [HDVが毎月分配に。その理由を調べてみた](/blog/hdv-monthly-distribution-nisa)
 
-:::cta
-title: SBI証券 — 投資の"主軸"はコツコツ積立から
-description: 話題のビットコインより、まずは長期の主軸を。オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

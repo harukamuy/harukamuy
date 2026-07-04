@@ -220,6 +220,15 @@ tags: ["フリーランス", "固定費・節約", "サイドFIRE"]
 
 そして、削って浮いたお金は、ただ消えるわけじゃない。わたしはそのぶんを貯蓄や[NISA](/blog/new-nisa-complete-guide)にまわしてきた。固定費を下げて、浮いた分を投資に回す。これが、サイドFIREに向けたいちばん地味で、いちばん確実な一歩だと思っている。
 
+:::cta
+title: SBI証券 — 浮いた固定費を、NISAにまわす
+description: 固定費を見直して浮いたお金は、消費ではなく投資へ。SBI証券ならNISA口座でオルカンやS&P500を毎月自動積立でき、クレカ積立でポイントも貯まります。固定費を下げて差額を積み立てる、サイドFIREの王道の仕組みづくりに。わたしも8年使っているメイン口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -230,13 +239,6 @@ tags: ["フリーランス", "固定費・節約", "サイドFIRE"]
 <li>固定費の見直しは我慢の節約ではなく「価値の棚卸し」。浮いた分を貯蓄やNISAにまわすのが、サイドFIREへの地味で確実な一歩</li>
 </ul>
 </div>
-
-:::cta
-title: SBI証券 — 浮いた固定費を、NISAにまわす
-description: 固定費を見直して浮いたお金は、消費ではなく投資へ。SBI証券ならNISA口座でオルカンやS&P500を毎月自動積立でき、クレカ積立でポイントも貯まります。固定費を下げて差額を積み立てる、サイドFIREの王道の仕組みづくりに。わたしも8年使っているメイン口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ## 関連記事
 

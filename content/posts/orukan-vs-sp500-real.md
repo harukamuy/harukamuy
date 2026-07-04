@@ -387,6 +387,15 @@ S&P500だけを買うと、こういう不安が出てくる。
 
 ---
 
+:::cta
+title: SBI証券 — オルカン・S&P500の積立はここから
+description: eMAXIS Slim 全世界株式(オルカン)・米国株式(S&P500)、SBI・V・S&P500すべて買付手数料無料。クレカ積立(三井住友カード)でポイントも貯まる、わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 最後にこの記事のポイントをまとめておく。
@@ -413,13 +422,6 @@ S&P500だけを買うと、こういう不安が出てくる。
 - [わたしのNISA積立設定](/blog/nisa-investment-settings)
 - [投資を始めた2018年](/blog/investment-start-2018)
 - [SBI証券・楽天証券・マネックス証券](/blog/sbi-vs-rakuten-vs-monex)
-
-:::cta
-title: SBI証券 — オルカン・S&P500の積立はここから
-description: eMAXIS Slim 全世界株式(オルカン)・米国株式(S&P500)、SBI・V・S&P500すべて買付手数料無料。クレカ積立(三井住友カード)でポイントも貯まる、わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ---
 
