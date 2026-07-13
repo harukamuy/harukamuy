@@ -2,7 +2,7 @@
 title: "暴落・含み損とのつきあい方。わたしがコロナショックで学んだこと"
 date: "2026-05-03"
 category: "sidefire"
-excerpt: "資産が1/3に下落したコロナショック。それを乗り越えた経験から学んだ、暴落時の過ごし方と含み損とのつきあい方。「航路を守れ」という格言は本当だった、と思う話。"
+excerpt: "資産が約3割下落したコロナショック。それを乗り越えた経験から学んだ、暴落時の過ごし方と含み損とのつきあい方。「航路を守れ」という格言は本当だった、と思う話。"
 coverImage: "/images/20260502_1.webp"
 coverImagePosition: "center"
 tags: ["市場の話"]
@@ -57,11 +57,11 @@ tags: ["市場の話"]
 
 ---
 
-## コロナショックで資産が1/3に下落した話
+## コロナショックで資産が3割下落した話
 
 わたしが投資を始めたのは2018年。本格的な下落を初めて経験したのは、2020年3月の**コロナショック**だった。
 
-当時、資産が**3分の1程度に下落**した。投資を始めて2年、コツコツ積み上げてきた額が一気に削られていく感覚は、正直しんどかった。
+当時はほぼS&P500だけの構成で、資産は**3割ほど下落**した。投資を始めて2年、コツコツ積み上げてきた額が一気に削られていく感覚は、正直しんどかった。
 
 でも結果的に、わたしは何もしなかった。理由は、**本業が忙しすぎたから**。
 
@@ -193,7 +193,7 @@ tags: ["市場の話"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 コロナショックで学んだこと</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span>資産が1/3に減っても、売らなければ戻ってくる</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span>資産が3割減っても、売らなければ戻ってくる</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span>下落時に株価を見すぎない方が精神的に楽</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span>「何もしない」が正解になる場面が、投資には確かにある</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">・</span><span>底値で買おうとしない。落ちる途中で少しずつ拾えれば十分</span></div>
@@ -248,7 +248,7 @@ tags: ["市場の話"]
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
 <li>暴落時の基本スタンスは「静観・売らない・慌てない・見すぎない」。15〜20%下落で買い増し検討</li>
-<li>コロナショックで資産が1/3に下落。仕事が忙しく株価を見られなかったことが結果的に幸運に</li>
+<li>コロナショックで資産が約3割下落。仕事が忙しく株価を見られなかったことが結果的に幸運に</li>
 <li>「航路を守れ（Stay the course）」というボーグルの言葉を呪文のように唱えていた。格言は侮れない</li>
 <li>2022年は記憶にないぐらい。下落時は株価を見ない、上がってるときはワクワクする単純な性格</li>
 <li>含み損が出ている銘柄も複数あるが、全体プラス＋セクター分散＋配当メインで気にしない。「株同士の支え合い」</li>

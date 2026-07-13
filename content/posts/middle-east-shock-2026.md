@@ -29,7 +29,7 @@ tags: ["市場の話"]
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      コロナの時に資産が3分の1になった経験があるからね。今回は意外と落ち着いてたよ。でもサイドFIRE直後にこのタイミング、ちょっと嫌だったかな（笑）
+      コロナの時に資産が3割減った経験があるからね。今回は意外と落ち着いてたよ。でもサイドFIRE直後にこのタイミング、ちょっと嫌だったかな（笑）
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@ tags: ["市場の話"]
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">直近高値</span><span>サイドFIRE達成時点で過去最高水準</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">最大下落</span><span>約 <strong>300万円</strong>（直近高値比 <strong>5〜6%</strong>）</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">参考</span><span>2020年コロナショック時は資産が <strong>約1/3</strong> まで縮小した</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">参考</span><span>2020年コロナショック時は資産が <strong>約3割</strong> 下落した</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">回復状況</span><span>現時点では概ね戻り、むしろ少し上回っている</span></div>
   </div>
 </div>
@@ -66,7 +66,7 @@ tags: ["市場の話"]
 
 冷静でいられた理由は、ひとつしかない。2020年のコロナショックを経験しているからだ。
 
-あのとき、資産は一気に1/3まで縮んだ。でも正直に言うと、**わたしには青ざめている余裕すらなかった**。
+あのとき、資産は一気に3割ほど縮んだ。でも正直に言うと、**わたしには青ざめている余裕すらなかった**。
 
 当時の映像業界（特にわたしの会社）には、コロナ特需が来ていた。対面のイベントが軒並みライブ配信に置き換わって、案件が一気に増えたからだ。毎日が必死で、株価をじっくり眺めている時間がなかった。
 
@@ -270,7 +270,7 @@ tags: ["市場の話"]
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
 <li>2026年3月から続く中東危機・イラン戦争で、資産は直近高値から約300万円下落。サイドFIRE直後の嫌なタイミングだったけれど、5〜6%の下落で済んだ</li>
-<li>2020年のコロナショック（資産1/3まで縮小）の経験が、最大の精神的お守り。「次が来ても大丈夫」という感覚が芯になった</li>
+<li>2020年のコロナショック（資産が約3割下落）の経験が、最大の精神的お守り。「次が来ても大丈夫」という感覚が芯になった</li>
 <li>インデックスは「航路を守れ」を実行。積立は止めない、相場を読まない、数字を毎日見ない</li>
 <li>高配当株は「次こそ買い増すぞ」と意気込んでいたが、思ったほど下がらず、買えたのは少しだけ。基準を曲げなかったので、これは結果的に正解</li>
 <li>戻ってからもコツコツ拾うスタンス。無理に大きく買わない、チャンスを逃しても自分を責めない</li>
