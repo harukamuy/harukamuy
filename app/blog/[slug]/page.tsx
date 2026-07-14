@@ -155,7 +155,8 @@ export default async function PostPage({ params }: Props) {
       padding: "48px 24px 80px",
       alignItems: "start",
     }}>
-      <article>
+      {/* minWidth: 0 がないと grid item が中身（パンくずの nowrap タイトル）の幅まで広がり、モバイルで横スクロールが発生する */}
+      <article style={{ minWidth: 0 }}>
         {/* Breadcrumb */}
         <nav aria-label="パンくずリスト" style={{ marginBottom: 22 }}>
           <ol style={{
