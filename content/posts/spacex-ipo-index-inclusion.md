@@ -75,16 +75,16 @@ tags: ["インデックス投資", "市場の話"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🚀 スペースXが指数に入る見込み時期</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>指数（連動する商品）</span><span>見込み</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>MSCI ACWI（オルカン）</span><span><strong>6月下旬ごろ</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>NASDAQ-100（QQQ）</span><span><strong>7月上旬ごろ</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>S&P500</span><span><strong>数年先の可能性</strong></span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;font-size:11px;color:#6b8060;margin-top:2px;"><span style="flex-shrink:0;">※</span><span>2026年6月時点の各指数のルールにもとづく見込みで、確定したものではありません</span></div>

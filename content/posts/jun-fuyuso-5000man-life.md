@@ -133,14 +133,14 @@ tags: ["サイドFIRE", "家計・資産管理"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 30歳代の金融資産（2024年調査）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
-      <span>世帯構成</span><span>平均値</span><span>中央値</span>
+    <div style="display:flex;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+      <span style="flex:1;">世帯構成</span><span>平均値</span><span>中央値</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>単身世帯（わたしはここ）</span><span>459万円</span><span>90万円</span>
+    <div style="display:flex;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+      <span style="flex:1;">単身世帯（わたしはここ）</span><span>459万円</span><span>90万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>二人以上世帯</span><span>677万円</span><span>180万円</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">二人以上世帯</span><span>677万円</span><span>180万円</span>
     </div>
   </div>
   <div style="font-size:11px;color:#5a8a50;text-align:right;margin-top:4px;">J-FLEC「家計の金融行動に関する世論調査」2024年をもとに作成。単身世帯の約3割は金融資産非保有</div>

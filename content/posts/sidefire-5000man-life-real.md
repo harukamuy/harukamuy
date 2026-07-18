@@ -51,19 +51,19 @@ tags: ["サイドFIRE", "家計・資産管理"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 資産の中身（2026年6月末・総資産 約5,809万円）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>インデックス投信（オルカン・S&P500・iDeCo）</span><span><strong>約66%</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>日本高配当株</span><span><strong>約21%</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>米国債券ETF（BND）</span><span>約6%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>現金（生活防衛資金300万円）</span><span>約5%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>ビットコイン</span><span>約2%</span>
     </div>
   </div>
@@ -81,25 +81,25 @@ tags: ["サイドFIRE", "家計・資産管理"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💰 毎月のお金の流れ（ならしたイメージ）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>入ってくるお金</span><span></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>仕事の収入（フリーランス）</span><span>月によって変動</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>配当金（高配当株・BND、税引後）</span><span>ならして<strong>約4万円</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;margin-top:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;margin-top:8px;">
       <span>出ていくお金</span><span></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>生活費</span><span><strong>約15万円</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>積立投資（オルカン・NISA）</span><span>月5万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>税金・国民健康保険・国民年金</span><span>別途（年払い中心）</span>
     </div>
   </div>

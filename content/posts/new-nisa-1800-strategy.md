@@ -157,17 +157,17 @@ tags: ["新NISA", "NISA"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 残り約1,149万円を埋めるペース別シミュレーション</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
-      <span>ペース</span><span>年</span><span>完了時期</span>
+    <div style="display:flex;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+      <span style="flex:1;">ペース</span><span>年</span><span>完了時期</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>最速プラン(年360万・年間枠フル)</span><span>約3.2年</span><span>2029年</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">最速プラン(年360万・年間枠フル)</span><span>約3.2年</span><span>2029年</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>わたしのプラン(年200-260万)</span><span>約4-6年</span><span>2030-2032年</span>
+    <div style="display:flex;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+      <span style="flex:1;">わたしのプラン(年200-260万)</span><span>約4-6年</span><span>2030-2032年</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>ゆるプラン(年100万)</span><span>約11年</span><span>2037年</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">ゆるプラン(年100万)</span><span>約11年</span><span>2037年</span>
     </div>
   </div>
 </div>

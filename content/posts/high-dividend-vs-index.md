@@ -141,16 +141,16 @@ tags: ["高配当株", "配当投資", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 現在のポートフォリオ（概算）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>種別</span><span>金額（概算）</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>オルカン・S&P500（インデックス）</span><span>約3,582万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>日本高配当株（個別株）</span><span>約1,261万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>BND（米国債券ETF）</span><span>約200万円</span>
     </div>
   </div>

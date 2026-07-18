@@ -73,31 +73,31 @@ tags: ["フリーランス", "固定費・節約", "サイドFIRE"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🏠 暮らしの固定費（月）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>月額</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>家賃（ネット回線込み）</span><span>76,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>水道・光熱費</span><span>約10,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>携帯（日本通信SIM・20GB）</span><span>1,390円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>Netflix</span><span>1,590円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>Amazonプライム</span><span>600円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>火災保険</span><span>500円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>JALカード（年会費17,600円）</span><span>月あたり約1,470円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>合計</span><span>約92,000円</span>
     </div>
   </div>

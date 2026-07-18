@@ -51,16 +51,16 @@ tags: ["インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 わたしのインデックス投信(2026年5月)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>商品</span><span>評価額</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>S&P500</span><span>約3,267万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>オルカン(eMAXIS Slim 全世界株式)</span><span>約179万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div style="display:flex;justify-content:space-between;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>合計</span><span>約3,446万円</span>
 </div>
 </div>
@@ -134,16 +134,16 @@ tags: ["インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 ヴァンガード10年期待リターン予測(2024年版・抜粋)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>資産クラス</span><span>10年期待年率リターン</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>米国大型株(S&P500相当)</span><span>約3〜5%</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>米国除く先進国株</span><span>約7〜9%</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>新興国株</span><span>約6〜8%</span>
 </div>
 </div>

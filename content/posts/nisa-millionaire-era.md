@@ -146,16 +146,16 @@ tags: ["新NISA", "NISA", "家計・資産管理"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 わたしの8年間(2018〜2026)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2018年(26歳・投資スタート)</span><span>500万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2021年(マス層・1,000万円突破)</span><span>1,300万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2025年1月・アッパーマス層へ(3,000万超え)</span><span>3,790万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>2026年4月・準富裕層へ(5,000万超え)</span><span>5,463万円</span>
 </div>
 </div>

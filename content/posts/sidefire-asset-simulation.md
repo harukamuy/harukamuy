@@ -133,26 +133,26 @@ tags: ["サイドFIRE", "家計・資産管理"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 わたしの資産構成（現在）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
-      <span>種別</span><span>金額</span><span>割合</span>
+    <div style="display:flex;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+      <span style="flex:1;">種別</span><span>金額</span><span>割合</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>インデックス投信（オルカン・S&P500・iDeCo）</span><span>3,823万円</span><span>65.8%</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">インデックス投信（オルカン・S&P500・iDeCo）</span><span>3,823万円</span><span>65.8%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>日本高配当株</span><span>1,238万円</span><span>21.3%</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">日本高配当株</span><span>1,238万円</span><span>21.3%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>米国債券ETF（BND）</span><span>約330万円</span><span>5.7%</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">米国債券ETF（BND）</span><span>約330万円</span><span>5.7%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>現金（生活防衛資金）</span><span>300万円</span><span>5.2%</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">現金（生活防衛資金）</span><span>300万円</span><span>5.2%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
-      <span>ビットコイン</span><span>118万円</span><span>2.0%</span>
+    <div style="display:flex;gap:8px;">
+      <span style="flex:1;">ビットコイン</span><span>118万円</span><span>2.0%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>総資産</span><span>約5,806万円</span><span>—</span>
+    <div style="display:flex;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+      <span style="flex:1;">総資産</span><span>約5,806万円</span><span>—</span>
     </div>
   </div>
   <div style="font-size:11px;color:#5a8a50;text-align:right;margin-top:4px;">2026年6月時点。内訳は<a href="/blog/portfolio-full-disclosure-5806" style="color:#4a6640;">ポートフォリオ全部公開</a>、最新の推移は<a href="/blog/monthly-report-2026-06" style="color:#4a6640;">月次資産公開</a>に</div>

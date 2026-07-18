@@ -51,22 +51,22 @@ tags: ["ごまもち"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🐾 ごまもちにかかる月額費用</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>月額目安</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>フード代</span><span>約6,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>おやつ</span><span>約3,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>トリミング(2〜3ヶ月に1回)</span><span>約3,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>フィラリア・ノミダニ予防</span><span>約1,500円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>月計</span><span>約13,500円</span>
     </div>
   </div>
@@ -83,34 +83,34 @@ tags: ["ごまもち"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🐾 年に数回かかる費用</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>年額目安</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>混合ワクチン(年1回)</span><span>約9,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>狂犬病予防接種(年1回)</span><span>約3,500円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>健康診断(血液検査・年1回)</span><span>約20,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>ペットホテル(出張時・年8〜10泊)</span><span>約40,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>シャンプー用品・タオル・首輪・服など</span><span>約15,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>おもちゃ・ガム・知育グッズ</span><span>約12,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>防災グッズ(キャリー・避難用フード)</span><span>約5,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>記念フォト・誕生日グッズ</span><span>約8,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>年計</span><span>約112,500円</span>
     </div>
   </div>
@@ -143,16 +143,16 @@ tags: ["ごまもち"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 ごまもちの年間総コスト(健康な現状ベース)</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>月額固定費(13,500円 × 12ヶ月)</span><span>162,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>年に数回の費用(ワクチン・ホテル等)</span><span>112,500円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>通院積立(5,000円 × 12ヶ月)</span><span>60,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>年間合計</span><span>約334,500円</span>
     </div>
   </div>
@@ -199,37 +199,37 @@ tags: ["ごまもち"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🐾 お迎え時の初期費用(2023年)</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>金額</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>サークル(2×1mサイズ)</span><span>約18,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>ベッド・マット</span><span>約6,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>トイレトレー・ペットシーツ初期分</span><span>約8,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>食器・水入れ</span><span>約3,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>首輪・リード・ハーネス</span><span>約5,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>キャリーバッグ</span><span>約8,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>初期ワクチン(3回・パピー期)</span><span>約25,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>去勢手術</span><span>約30,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>マイクロチップ装着・登録</span><span>約4,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>初期費用合計(生体価格除く)</span><span>約107,000円</span>
     </div>
   </div>
@@ -276,16 +276,16 @@ tags: ["ごまもち"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 約3年間の累計コスト(2023年5月〜現在)</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>初期費用(生体価格除く)</span><span>約107,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>年間ランニング(約335,000円 × 3年)</span><span>約1,005,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div style="display:flex;justify-content:space-between;gap:8px;">
       <span>サークル・キャリーなど耐久品の追加・買い替え</span><span>約30,000円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>3年累計(生体価格除く)</span><span>約1,142,000円</span>
     </div>
   </div>

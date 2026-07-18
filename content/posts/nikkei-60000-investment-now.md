@@ -51,22 +51,22 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 日経平均株価の推移(ざっくり)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>時期</span><span>日経平均</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2018年初(わたしが投資を始めた頃)</span><span>約23,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2020年春(コロナショック)</span><span>約17,000円(底)</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2024年初</span><span>約33,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>2025年初</span><span>約40,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>2026年5月</span><span>約60,000円台</span>
 </div>
 </div>
@@ -85,13 +85,13 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💰 「投資した自分 vs 預金のままだった自分」(2018〜2026年)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>シナリオ</span><span>2026年5月時点</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>預金のまま(8年で投じた約2,700万円が利息ほぼ0)</span><span>約2,700万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div style="display:flex;justify-content:space-between;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>わたしの実際(投資した結果)</span><span>約5,463万円</span>
 </div>
 </div>
@@ -150,13 +150,13 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:20px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">📊 物価上昇による家計負担増(2026年予測・第一生命経済研究所)</div>
 <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>一人あたり(年間)</span><span><strong>約2.2万円</strong></span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>4人家族(年間)</span><span>約8.9万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>政府の物価高対策で軽減(一人あたり)</span><span>▲約0.6万円</span>
 </div>
 </div>
@@ -191,13 +191,13 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#fff5e8;border:1.5px solid #d4957e;border-radius:12px;padding:18px 20px;margin:20px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">⏱ フリーランス(税負担30%想定)が手取りで取り戻すなら</div>
 <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>手取り月5,000円(=グロス約7,150円)</span><span><strong>月7〜8時間</strong>労働</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>手取り月10,000円(=グロス約14,300円)</span><span><strong>月14〜15時間</strong>労働</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>手取り年12万円(=グロス約17.2万円)</span><span><strong>年172時間=丸7日分</strong></span>
 </div>
 </div>
@@ -299,22 +299,22 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 過去10年の年率リターン比較(2016〜2026年・概算)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>指数/商品</span><span>年率リターン</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>S&P500(米国大型株)</span><span>約13%</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>オルカン(全世界株式)</span><span>約10%</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>日経平均</span><span>約10%</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>銀行預金</span><span>0.001%</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+<div style="display:flex;justify-content:space-between;gap:8px;">
 <span>物価上昇(CPI)</span><span>約2%</span>
 </div>
 </div>

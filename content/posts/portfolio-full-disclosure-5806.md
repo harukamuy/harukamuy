@@ -72,13 +72,13 @@ tags: ["ポートフォリオ", "高配当株", "資産公開"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 資産クラス別の構成比（2026年5月末時点）</div>
   <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;"><span>資産クラス</span><span>金額</span><span>割合</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;"><span>インデックス投信（オルカン・S&amp;P500・iDeCo）</span><span>3,823万円</span><span>65.8%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;"><span>日本高配当株（個別株）</span><span>1,238万円</span><span>21.3%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;"><span>米国債券ETF（BND）</span><span>約330万円</span><span>5.7%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;"><span>現金（生活防衛資金）</span><span>300万円</span><span>5.2%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;"><span>ビットコイン</span><span>118万円</span><span>2.0%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:10px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;"><span>合計</span><span>約5,806万円</span><span>100%</span></div>
+    <div style="display:flex;gap:10px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;"><span style="flex:1;">資産クラス</span><span>金額</span><span>割合</span></div>
+    <div style="display:flex;gap:10px;"><span style="flex:1;">インデックス投信（オルカン・S&amp;P500・iDeCo）</span><span>3,823万円</span><span>65.8%</span></div>
+    <div style="display:flex;gap:10px;"><span style="flex:1;">日本高配当株（個別株）</span><span>1,238万円</span><span>21.3%</span></div>
+    <div style="display:flex;gap:10px;"><span style="flex:1;">米国債券ETF（BND）</span><span>約330万円</span><span>5.7%</span></div>
+    <div style="display:flex;gap:10px;"><span style="flex:1;">現金（生活防衛資金）</span><span>300万円</span><span>5.2%</span></div>
+    <div style="display:flex;gap:10px;"><span style="flex:1;">ビットコイン</span><span>118万円</span><span>2.0%</span></div>
+    <div style="display:flex;gap:10px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;"><span style="flex:1;">合計</span><span>約5,806万円</span><span>100%</span></div>
   </div>
   <div style="font-size:12px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">※端数の関係で割合の合計は概算。将来の軸はインデックス、今のキャッシュは高配当株、守りは債券と現金、という役割分担。</div>
 </div>
@@ -94,24 +94,24 @@ tags: ["ポートフォリオ", "高配当株", "資産公開"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 自分で選んだ高配当株 16銘柄（日本高配当株の中での構成比）</div>
   <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>住友商事</span><span>5.5%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>トヨタ自動車</span><span>2.3%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>JAL（日本航空）</span><span>2.2%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>野村ホールディングス</span><span>2.2%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>オカムラ（7994）</span><span>1.8%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>アステラス製薬</span><span>1.8%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>SHOEI</span><span>1.5%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>NTT</span><span>1.2%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>東京海上</span><span>1.1%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>ホンダ</span><span>1.1%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>ヤマハ発動機</span><span>1.0%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>JT（日本たばこ産業）</span><span>1.0%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>三菱商事</span><span>0.8%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>花王</span><span>0.7%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>武田薬品工業</span><span>0.6%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>DM三井製糖</span><span>0.2%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;"><span>自分で選んだ分 合計</span><span>約25%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;color:#5a8a50;"><span>リベシティで学んで選んだ分（銘柄名は非公開）</span><span>約75%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>住友商事</span><span>5.5%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>トヨタ自動車</span><span>2.3%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>JAL（日本航空）</span><span>2.2%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>野村ホールディングス</span><span>2.2%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>オカムラ（7994）</span><span>1.8%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>アステラス製薬</span><span>1.8%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>SHOEI</span><span>1.5%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>NTT</span><span>1.2%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>東京海上</span><span>1.1%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>ホンダ</span><span>1.1%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>ヤマハ発動機</span><span>1.0%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>JT（日本たばこ産業）</span><span>1.0%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>三菱商事</span><span>0.8%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>花王</span><span>0.7%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>武田薬品工業</span><span>0.6%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>DM三井製糖</span><span>0.2%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;"><span>自分で選んだ分 合計</span><span>約25%</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;color:#5a8a50;"><span>リベシティで学んで選んだ分（銘柄名は非公開）</span><span>約75%</span></div>
   </div>
 </div>
 
@@ -190,18 +190,18 @@ tags: ["ポートフォリオ", "高配当株", "資産公開"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📅 月別の配当（年間合計 約48.7万円）</div>
   <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>1月</span><span>0円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>2月</span><span>1.1万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>3月</span><span>4.5万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>4月</span><span>0.8万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>5月</span><span>1.8万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;color:#4a6640;"><span>6月</span><span>16.3万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>7月</span><span>1.0万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>8月</span><span>1.1万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>9月</span><span>4.1万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>10月</span><span>1.4万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;"><span>11月</span><span>1.2万円</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;font-weight:700;color:#4a6640;"><span>12月</span><span>15.3万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>1月</span><span>0円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>2月</span><span>1.1万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>3月</span><span>4.5万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>4月</span><span>0.8万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>5月</span><span>1.8万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;color:#4a6640;"><span>6月</span><span>16.3万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>7月</span><span>1.0万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>8月</span><span>1.1万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>9月</span><span>4.1万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>10月</span><span>1.4万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;"><span>11月</span><span>1.2万円</span></div>
+    <div style="display:flex;justify-content:space-between;gap:8px;font-weight:700;color:#4a6640;"><span>12月</span><span>15.3万円</span></div>
   </div>
   <div style="font-size:12px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">6月と12月の2ヶ月だけで、年間の約65%。閑散月の寂しさは、毎月分配のBNDが少し埋めてくれている。</div>
 </div>
