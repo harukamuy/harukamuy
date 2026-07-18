@@ -96,17 +96,17 @@ KOSPIには約830社が入っている。それなのに、**サムスン電子�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 オルカンの組入上位10銘柄(2026年5月末・月次レポートより)</div>
   <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>1. エヌビディア</span><span style="color:#7a9a6e;">アメリカ</span><span>4.9%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>2. アップル</span><span style="color:#7a9a6e;">アメリカ</span><span>4.3%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>3. マイクロソフト</span><span style="color:#7a9a6e;">アメリカ</span><span>2.9%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>4. アマゾン</span><span style="color:#7a9a6e;">アメリカ</span><span>2.5%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>5. アルファベット(A株)</span><span style="color:#7a9a6e;">アメリカ</span><span>2.1%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>6. アルファベット(C株)</span><span style="color:#7a9a6e;">アメリカ</span><span>1.9%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>7. ブロードコム</span><span style="color:#7a9a6e;">アメリカ</span><span>1.8%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>8. TSMC</span><span style="color:#a85f3c;">台湾</span><span>1.7%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>9. メタ</span><span style="color:#7a9a6e;">アメリカ</span><span>1.3%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;"><span>10. テスラ</span><span style="color:#7a9a6e;">アメリカ</span><span>1.2%</span></div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;"><span>上位10銘柄 合計</span><span>約24.6%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">1. エヌビディア</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">4.9%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">2. アップル</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">4.3%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">3. マイクロソフト</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">2.9%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">4. アマゾン</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">2.5%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">5. アルファベット(A株)</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">2.1%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">6. アルファベット(C株)</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">1.9%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">7. ブロードコム</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">1.8%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">8. TSMC</span><span style="color:#a85f3c;">台湾</span><span style="min-width:3.4em;text-align:right;">1.7%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">9. メタ</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">1.3%</span></div>
+    <div style="display:flex;gap:8px;"><span style="flex:1;">10. テスラ</span><span style="color:#7a9a6e;">アメリカ</span><span style="min-width:3.4em;text-align:right;">1.2%</span></div>
+    <div style="display:flex;gap:8px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;"><span style="flex:1;">上位10銘柄 合計</span><span>約24.6%</span></div>
     <div style="font-size:11px;color:#7a8a70;padding-top:6px;line-height:1.7;">※5位と6位の「アルファベット」はGoogleの親会社。議決権の違いで株が2種類に分かれているだけで、合わせると4.0%となり、実質はマイクロソフトを上回る3位の大きさになる。</div>
   </div>
 </div>
