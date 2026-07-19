@@ -239,6 +239,7 @@ VYM・SPYD・HDVは**ETF自体は素晴らしい銘柄**。長期保有すれば
 
 ## 関連記事
 
+- [HDVとは?米国高配当ETFの中身・利回り・VYMとの違いをわかりやすく解説](/blog/what-is-hdv)
 - [BNDを買い増ししている理由](/blog/why-bnd-add-on)
 - [わたしの高配当株ポートフォリオ](/blog/high-dividend-portfolio)
 - [NISAで高配当株を買うときに知っておきたいこと](/blog/nisa-high-dividend-notes)
