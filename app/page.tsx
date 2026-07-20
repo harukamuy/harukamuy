@@ -376,6 +376,39 @@ export default function Home() {
         </section>
       )}
 
+      {/* TOOLS（あずき製ツール） */}
+      <section style={{ padding: "0 24px", maxWidth: 900, margin: "0 auto 56px" }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 20 }}>
+          <div>
+            <div style={{ fontFamily: "var(--font-serif)", fontSize: 19, fontWeight: 600, color: "var(--brown)", letterSpacing: "0.04em" }}>あずき製ツール</div>
+            <div style={{ fontFamily: "var(--font-hand)", fontSize: 13, color: "var(--brown-3)" }}>Tools</div>
+          </div>
+        </div>
+        <Link href="/tools/jack-and-jill" style={{
+          display: "grid",
+          gridTemplateColumns: "auto 1fr auto",
+          gap: 16,
+          alignItems: "center",
+          background: "var(--white)",
+          border: "1.5px solid var(--beige)",
+          borderRadius: 14,
+          padding: "16px 18px",
+          textDecoration: "none",
+          color: "inherit",
+        }}>
+          <span style={{ fontSize: 26, flexShrink: 0 }}>🧮</span>
+          <div>
+            <div style={{ fontFamily: "var(--font-serif)", fontSize: 14, fontWeight: 600, color: "var(--brown)", lineHeight: 1.55 }}>
+              ジャックとジルの投資シミュレーター
+            </div>
+            <div style={{ fontSize: 12, color: "var(--brown-3)", lineHeight: 1.7, marginTop: 3 }}>
+              「早く始める」と「長く続ける」、複利ではどちらが強い? 積立額と年齢を自由に変えて、ふたりの資産推移を比べられます
+            </div>
+          </div>
+          <span style={{ color: "var(--terra)", fontSize: 14, flexShrink: 0 }}>→</span>
+        </Link>
+      </section>
+
       {/* ARTICLES with category filter (Client Component) */}
       <ArticlesSection posts={posts} />
 

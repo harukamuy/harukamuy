@@ -34,6 +34,7 @@ export default function Footer() {
           <Link href="/blog" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>ブログ</Link>
           <Link href="/blog?category=gomazochi" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>ごまもち</Link>
           <Link href="/blog?category=sidefire" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>サイドFIRE</Link>
+          <Link href="/tools/jack-and-jill" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>投資シミュレーター</Link>
           <Link href="/tags" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>タグ一覧</Link>
           <Link href="/about" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>About</Link>
           <Link href="/privacy" style={{ color: "rgba(253,250,246,0.55)", textDecoration: "none", fontSize: 12, letterSpacing: "0.06em" }}>プライバシーポリシー</Link>
