@@ -60,7 +60,8 @@ tags: ["インデックス投資", "初心者向け"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 65歳時点の資産（概算）</div>
-  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;min-width:420px;">
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#4a6640;">年利回り</div>
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#c0704a;text-align:center;">ジル<br /><span style="font-size:11px;font-weight:400;color:#7a5c44;">元本320万円</span></div>
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#4a6640;text-align:center;">ジャック<br /><span style="font-size:11px;font-weight:400;color:#5a8a50;">元本1,520万円</span></div>
@@ -70,6 +71,7 @@ tags: ["インデックス投資", "初心者向け"]
     <div style="background:#fbfdfa;padding:10px 12px;font-weight:700;color:#3a5030;">10%</div>
     <div style="background:#fff6ea;padding:10px 12px;color:#a85f3c;text-align:center;"><strong>約1.9億円 🏆</strong></div>
     <div style="background:#fbfdfa;padding:10px 12px;color:#3a5030;text-align:center;">約1.8億円</div>
+  </div>
   </div>
   <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">毎年はじめに積立・年1回複利・税金や手数料は考慮しない概算。勝敗が入れ替わる分岐点は<strong>利回り約8.8%</strong></div>
 </div>
@@ -181,7 +183,8 @@ tags: ["インデックス投資", "初心者向け"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 65歳時点の資産（概算）</div>
-  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;min-width:420px;">
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#4a6640;">年利回り</div>
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#c0704a;text-align:center;">ジル<br /><span style="font-size:11px;font-weight:400;color:#7a5c44;">元本850万円</span></div>
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#4a6640;text-align:center;">ジャック<br /><span style="font-size:11px;font-weight:400;color:#5a8a50;">元本1,760万円</span></div>
@@ -194,6 +197,7 @@ tags: ["インデックス投資", "初心者向け"]
     <div style="background:#fbfdfa;padding:10px 12px;font-weight:700;color:#3a5030;">7%</div>
     <div style="background:#fff6ea;padding:10px 12px;color:#a85f3c;text-align:center;"><strong>約1.8億円 🏆</strong></div>
     <div style="background:#fbfdfa;padding:10px 12px;color:#3a5030;text-align:center;">約1.1億円</div>
+  </div>
   </div>
   <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">毎年はじめに投資・年1回複利・税金や手数料は考慮しない概算。勝敗が入れ替わる分岐点は<strong>利回り約3.7%</strong>。<a href="/tools/jack-and-jill" style="color:#4a6640;">シミュレーター</a>のプリセット「大学に行かないジル vs 大卒のジャック」で再現できます</div>
 </div>
