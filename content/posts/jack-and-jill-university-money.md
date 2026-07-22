@@ -61,7 +61,7 @@ tags: ["インデックス投資", "初心者向け"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 65歳時点の資産（概算）</div>
   <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;min-width:296px;">
+  <div class="keep-grid" style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;min-width:296px;">
     <div style="background:#e6efe0;padding:10px 7px;font-weight:700;color:#4a6640;">年利回り</div>
     <div style="background:#e6efe0;padding:10px 7px;font-weight:700;color:#c0704a;text-align:center;">ジル<br /><span style="font-size:11px;font-weight:400;color:#7a5c44;">元本320万円</span></div>
     <div style="background:#e6efe0;padding:10px 7px;font-weight:700;color:#4a6640;text-align:center;">ジャック<br /><span style="font-size:11px;font-weight:400;color:#5a8a50;">元本1,520万円</span></div>
@@ -184,7 +184,7 @@ tags: ["インデックス投資", "初心者向け"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 65歳時点の資産（概算）</div>
   <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-  <div style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;min-width:296px;">
+  <div class="keep-grid" style="display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;min-width:296px;">
     <div style="background:#e6efe0;padding:10px 7px;font-weight:700;color:#4a6640;">年利回り</div>
     <div style="background:#e6efe0;padding:10px 7px;font-weight:700;color:#c0704a;text-align:center;">ジル<br /><span style="font-size:11px;font-weight:400;color:#7a5c44;">元本850万円</span></div>
     <div style="background:#e6efe0;padding:10px 7px;font-weight:700;color:#4a6640;text-align:center;">ジャック<br /><span style="font-size:11px;font-weight:400;color:#5a8a50;">元本1,760万円</span></div>

@@ -788,8 +788,9 @@ body::before {
 
 /* ── 記事内パーツのモバイル対応（375px想定） ── */
 @media (max-width: 600px) {
-  /* 緑枠データカード内の多カラムgridを縦積みに（横潰れ・折返し崩れ防止） */
-  .data-card div[style*="grid-template-columns"] {
+  /* 緑枠データカード内の多カラムgridを縦積みに（横潰れ・折返し崩れ防止）
+     ※罫線テーブル（class="keep-grid"）は列を保持するため除外 */
+  .data-card div[style*="grid-template-columns"]:not(.keep-grid) {
     grid-template-columns: 1fr !important;
     gap: 2px 8px !important;
   }
