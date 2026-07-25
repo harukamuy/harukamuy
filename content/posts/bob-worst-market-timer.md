@@ -132,14 +132,14 @@ tags: ["インデックス投資", "市場の話"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🏁 43年間の結果（2013年末・65歳時点）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
-      <span>投資した元本の合計</span><span>18万4,000ドル(約2,760万円)</span>
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
+      <span>投資した元本の合計</span><span style="text-align:right;">18万4,000ドル<br class="sp-only-br" />(約2,760万円)</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>最終的な資産</span><span>約110万ドル(<strong>約1.65億円</strong>)</span>
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+      <span>最終的な資産</span><span style="text-align:right;">約110万ドル<br class="sp-only-br" />(<strong>約1.65億円</strong>)</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
-      <span>ふくらんだ倍率</span><span><strong>約6倍</strong></span>
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
+      <span>ふくらんだ倍率</span><span style="text-align:right;"><strong>約6倍</strong></span>
     </div>
   </div>
   <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">配当再投資込み・税金や手数料は考慮しない概算。円換算は1ドル150円の目安</div>

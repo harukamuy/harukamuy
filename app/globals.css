@@ -786,6 +786,11 @@ body::before {
   }
 }
 
+/* スマホ専用の改行（デスクトップでは無効） */
+.sp-only-br {
+  display: none;
+}
+
 /* ── 記事内パーツのモバイル対応（375px想定） ── */
 @media (max-width: 600px) {
   /* 緑枠データカード内の多カラムgridを縦積みに（横潰れ・折返し崩れ防止）
@@ -793,6 +798,9 @@ body::before {
   .data-card div[style*="grid-template-columns"]:not(.keep-grid) {
     grid-template-columns: 1fr !important;
     gap: 2px 8px !important;
+  }
+  .sp-only-br {
+    display: inline;
   }
   /* 会話パーツ: アバターを小さくして本文の幅を確保 */
   .avatar {
