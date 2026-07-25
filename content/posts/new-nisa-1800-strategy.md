@@ -53,7 +53,7 @@ tags: ["新NISA", "NISA"]
 <div style="display:flex;flex-direction:column;gap:12px;">
 <div style="background:#fff;border:1.5px solid #c8d8c0;border-radius:12px;padding:14px 16px;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">つみたて枠 <span style="font-size:11px;font-weight:400;color:#5a8a50;">(上限600万)</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:12px;text-align:center;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:12px;text-align:center;">
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">使用済み</div><div style="font-weight:700;color:#4a6640;font-size:14px;">約142万円</div></div>
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">評価額</div><div style="font-weight:700;color:#d4957e;font-size:14px;">約189万円</div></div>
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">残り枠</div><div style="font-weight:700;color:#4a6640;font-size:14px;">約458万円</div></div>
@@ -61,7 +61,7 @@ tags: ["新NISA", "NISA"]
 </div>
 <div style="background:#fff;border:1.5px solid #c8d8c0;border-radius:12px;padding:14px 16px;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">成長投資枠 <span style="font-size:11px;font-weight:400;color:#5a8a50;">(上限1,200万)</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:12px;text-align:center;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:12px;text-align:center;">
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">使用済み</div><div style="font-weight:700;color:#4a6640;font-size:14px;">約510万円</div></div>
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">評価額</div><div style="font-weight:700;color:#d4957e;font-size:14px;">約609万円</div></div>
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">残り枠</div><div style="font-weight:700;color:#4a6640;font-size:14px;">約690万円</div></div>
@@ -69,7 +69,7 @@ tags: ["新NISA", "NISA"]
 </div>
 <div style="background:#e8f0e4;border:1.5px solid #4a6640;border-radius:12px;padding:14px 16px;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">合計 <span style="font-size:11px;font-weight:400;color:#5a8a50;">(上限1,800万)</span></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:12px;text-align:center;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:12px;text-align:center;">
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">使用済み</div><div style="font-weight:700;color:#4a6640;font-size:16px;">約651万円</div></div>
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">評価額</div><div style="font-weight:700;color:#d4957e;font-size:16px;">約798万円</div></div>
 <div><div style="color:#5a8a50;font-size:10px;margin-bottom:3px;">残り枠</div><div style="font-weight:700;color:#4a6640;font-size:16px;">約1,149万円</div></div>

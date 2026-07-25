@@ -314,13 +314,13 @@ S&Pが最終的にルール変更を否決したのも、こういう批判や�
 <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">①評価額</span><span>スペースXは <strong>約1.75兆ドル</strong>(前編より)。一方、指数全体は S&P500が <strong>約50兆ドル</strong>・オルカン(ACWI)が <strong>約80兆ドル</strong>くらい(いずれも概算)</span></div>
 <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">②浮動株</span><span>でも指数に反映されるのは <strong>市場に出回っている株式分(浮動株)だけ</strong>。スペースXは創業者・社員・投資家が大半を握っていて、上場で市場に出る分はごく一部。だから「評価額まるごと」で計算すると過大に出てしまう</span></div>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;font-size:12.5px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;font-size:12.5px;">
 <span>③結果(概算)</span><span>S&P500</span><span>オルカン</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;font-size:12.5px;color:#3a5030;padding-top:7px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;font-size:12.5px;color:#3a5030;padding-top:7px;">
 <span>評価額まるごと(過大)</span><span>約3.5%</span><span>約2.2%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;font-size:12.5px;color:#3a5030;padding-top:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;font-size:12.5px;color:#3a5030;padding-top:8px;">
 <span><strong>浮動株ベース(実際に近い)</strong></span><span><strong>1%未満</strong></span><span><strong>1%未満</strong></span>
 </div>
 </div>

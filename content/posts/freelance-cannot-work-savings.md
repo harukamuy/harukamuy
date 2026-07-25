@@ -105,7 +105,7 @@ tags: ["フリーランス", "家計・資産管理"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 公的制度の早見表：会社員 vs フリーランス</div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:8px 12px;font-size:13px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:8px 12px;font-size:13px;color:#3a5030;">
 <div style="font-weight:700;border-bottom:1px solid #c8d8c0;padding-bottom:6px;">制度</div>
 <div style="font-weight:700;border-bottom:1px solid #c8d8c0;padding-bottom:6px;">会社員</div>
 <div style="font-weight:700;border-bottom:1px solid #c8d8c0;padding-bottom:6px;">フリーランス</div>
