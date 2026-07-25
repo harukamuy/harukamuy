@@ -144,19 +144,19 @@ tags: ["フリーランス", "副業", "サイドFIRE"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 同じ100万円、手取り比較（概算）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>昇給+100万</span><span>副業+100万</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">社会保険料</span><span>+約15万</span><span>0</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">税（所得＋住民）</span><span>+約13万</span><span>+約1万</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>消えるお金</span><span>約28万</span><span>約1万</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">手元に残る現金</span><span>約72万</span><span>約69万</span>
     </div>
   </div>

@@ -153,23 +153,26 @@ BNDの分配金は毎月ドルで入ってくる。日本株の配当も使う�
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 米国債券ETF 4本の比較</div>
-  <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div style="min-width:330px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>銘柄</span><span>中身</span><span>経費率</span><span>利回り</span>
     </div>
-    <div style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;">
       <span style="font-weight:700;">BND</span><span>米国投資適格債券全般(国債・社債含む)・ヴァンガード</span><span>0.03%</span><span>約4%</span>
     </div>
-    <div style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;">
       <span style="font-weight:700;">AGG</span><span>BNDとほぼ同じ中身・iShares(ブラックロック)・出来高は最大級</span><span>0.03%</span><span>約4%</span>
     </div>
-    <div style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;">
       <span style="font-weight:700;">LQD</span><span>米国の投資適格社債のみ(国債は含まない)</span><span>0.14%</span><span>約4.5%</span>
     </div>
-    <div style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:80px 1fr 70px 60px;gap:8px;">
       <span style="font-weight:700;">HYG</span><span>米国のハイイールド社債(信用度低め・高利回り)</span><span>0.49%</span><span>約7%</span>
     </div>
   </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 ざっくり整理するとこうなる。

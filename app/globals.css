@@ -786,8 +786,9 @@ body::before {
   }
 }
 
-/* スマホ専用の改行（デスクトップでは無効） */
-.sp-only-br {
+/* スマホ専用の改行・注記（デスクトップでは非表示） */
+.sp-only-br,
+.sp-only-note {
   display: none;
 }
 
@@ -801,6 +802,9 @@ body::before {
   }
   .sp-only-br {
     display: inline;
+  }
+  .sp-only-note {
+    display: block;
   }
   /* 会話パーツ: アバターを小さくして本文の幅を確保 */
   .avatar {

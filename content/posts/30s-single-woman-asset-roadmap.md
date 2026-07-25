@@ -50,50 +50,53 @@ tags: ["女性の資産形成", "家計・資産管理"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 資産推移(2018年→2026年)</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:370px;display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>時期</span><span>年齢</span><span>資産</span><span>出来事</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2018年初</span><span>26歳</span><span>約500万円</span><span>投資スタート</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;color:#888;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;color:#888;">
 <span>2019年初</span><span>27歳</span><span>約650万円 (推測)</span><span>S&P500 微減・積立継続</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;color:#888;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;color:#888;">
 <span>2020年初</span><span>28歳</span><span>約900万円 (推測)</span><span>S&P500 +30%</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;background:#fff;padding:6px 4px;border-radius:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;background:#fff;padding:6px 4px;border-radius:8px;">
 <span>2020年春</span><span>28歳</span><span>大きく凹む</span><span><strong>コロナショック</strong></span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;color:#888;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;color:#888;">
 <span>2021年初</span><span>29歳</span><span>約1,100万円 (推測)</span><span>急回復・1,000万円突破</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2021年8月</span><span>29歳</span><span>1,300万円</span><span>記録開始</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2022年1月</span><span>30歳</span><span>1,560万円</span><span>—</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2023年1月</span><span>31歳</span><span>1,680万円</span><span>2022年は伸び鈍化</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;background:#fff;padding:6px 4px;border-radius:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;background:#fff;padding:6px 4px;border-radius:8px;">
 <span>2023年春</span><span>31歳</span><span>約1,900万円</span><span><strong>フリーランス転向</strong></span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2024年1月</span><span>32歳</span><span>2,550万円</span><span>—</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2025年1月</span><span>33歳</span><span>3,790万円</span><span>—</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;">
 <span>2026年1月</span><span>34歳</span><span>4,870万円</span><span>—</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 80px 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>2026年4月</span><span>34歳</span><span>5,463万円</span><span>サイドFIRE達成</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 8年間で **500万円が5,463万円** に。月で割ると約52万円ずつ増えた計算になるけれど、実際には市場の上下と積立の積み重ねで、こんな階段状の動きだった。

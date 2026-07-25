@@ -54,26 +54,29 @@ tags: ["新NISA", "NISA", "家計・資産管理"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 純金融資産保有額別の世帯数(2023年・野村総研)</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:380px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>階層</span><span>純金融資産</span><span>世帯数</span><span>全体比</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
 <span>超富裕層</span><span>5億円以上</span><span>11.8万</span><span>0.2%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
 <span>富裕層</span><span>1億円〜5億円</span><span>153.5万</span><span>2.8%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>準富裕層(← わたし)</span><span>5,000万〜1億円</span><span>403.9万</span><span>7.3%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
 <span>アッパーマス層</span><span>3,000万〜5,000万</span><span>576.5万</span><span>10.3%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 0.7fr 0.6fr;gap:8px;">
 <span>マス層</span><span>3,000万円未満</span><span>4,424.7万</span><span>79.4%</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 <div style="font-size:11px;color:#5a8a50;margin-top:8px;">※全世帯数を約5,570万世帯として算出</div>
 </div>
 

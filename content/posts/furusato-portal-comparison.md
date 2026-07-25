@@ -155,22 +155,22 @@ tags: ["ふるさと納税"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 主要5ポータルの比較(2026年時点・一般的な評価)</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>ポータル</span><span>強み</span><span>こんな人向け</span>
     </div>
-    <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;">
       <span style="font-weight:700;">ふるなび</span><span>家電・パソコン・コインの還元・Amazonギフト交換</span><span>還元を素直に受け取りたい人・楽天経済圏でない人</span>
     </div>
-    <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">楽天ふるさと納税</span><span>楽天ポイント還元・楽天SPUと連動で実質還元最強</span><span>楽天経済圏ガチ勢(楽天市場・楽天カード・楽天モバイル)</span>
     </div>
-    <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">さとふる</span><span>業界最大手・知名度No.1・CMで安心感・配送スピード</span><span>初心者・とにかく安心して使いたい人</span>
     </div>
-    <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">ふるさとチョイス</span><span>掲載自治体数が最多・返礼品の選択肢最大・本気派向け</span><span>こだわって選びたい人・地方支援を重視する人</span>
     </div>
-    <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">Amazonふるさと納税</span><span>2024年参入・Amazonアカウントで即注文・配送品質・ポイント還元</span><span>Amazonヘビーユーザー・とにかく手早く済ませたい人</span>
     </div>
   </div>

@@ -73,37 +73,37 @@ ETFなので、この1本を買うだけで75社に分散投資したのと同�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🏭 HDVの上位10構成銘柄（2026年7月時点）</div>
   <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>銘柄</span><span>なにの会社?</span><span>比率</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>エクソン・モービル</span><span>石油</span><span>約7.5%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>アッヴィ</span><span>医薬品</span><span>約6.3%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>シェブロン</span><span>石油</span><span>約5.8%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>ベライゾン</span><span>通信</span><span>約5.2%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>P&amp;G（プロクター・アンド・ギャンブル）</span><span>日用品</span><span>約4.8%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>ホーム・デポ</span><span>ホームセンター</span><span>約4.7%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>フィリップ・モリス</span><span>たばこ</span><span>約4.5%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>ファイザー</span><span>医薬品</span><span>約4.3%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>コカ・コーラ</span><span>飲料</span><span>約4.0%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto auto;gap:8px;">
       <span>メルク</span><span>医薬品</span><span>約4.0%</span>
     </div>
   </div>
@@ -173,7 +173,8 @@ HDVのもうひとつの特徴が、銘柄の選び方だ。連動する「モ�
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 高配当ETF定番3本の比較（2026年7月時点）</div>
-  <div style="display:grid;grid-template-columns:56px 1fr 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.55;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div class="keep-grid" style="display:grid;min-width:330px;grid-template-columns:56px 1fr 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.55;">
     <div style="background:#e6efe0;padding:9px 7px;font-weight:700;color:#4a6640;"></div>
     <div style="background:#fff6ea;padding:9px 7px;font-weight:700;color:#a85f3c;">HDV</div>
     <div style="background:#e6efe0;padding:9px 7px;font-weight:700;color:#4a6640;">VYM</div>
@@ -207,6 +208,8 @@ HDVのもうひとつの特徴が、銘柄の選び方だ。連動する「モ�
     <div style="background:#fbfdfa;padding:9px 7px;color:#3b6d11;font-weight:700;">○ 対象</div>
     <div style="background:#fbfdfa;padding:9px 7px;color:#3b6d11;font-weight:700;">○ 対象</div>
   </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
   <div style="font-size:11px;color:#5a8a50;text-align:right;margin-top:4px;">数値はいずれも概算。最新は各運用会社の公式情報で確認を</div>
 </div>
 

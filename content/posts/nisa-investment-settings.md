@@ -55,7 +55,7 @@ tags: ["NISA"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:16px;">📊 あずきの現在のNISA設定</div>
   <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 16px;align-items:start;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:auto 1fr;gap:8px 16px;align-items:start;">
       <span style="background:#5a8a50;color:white;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap;">つみたて枠</span>
       <span><strong>eMAXIS Slim 全世界株式（オルカン）</strong>　毎月5万円</span>
       <span style="background:#7a9e96;color:white;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap;">成長投資枠</span>

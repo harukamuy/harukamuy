@@ -52,19 +52,19 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🗓 S&P500ルール変更騒動の時系列</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:90px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>時期</span><span>出来事</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 1fr;gap:8px;">
 <span>2026年3月</span><span>S&Pがルール変更を検討中と報道される(Bloomberg)</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 1fr;gap:8px;">
 <span>2026年5月1日</span><span>具体案を公表し意見募集(パブリックコメント)を開始</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 1fr;gap:8px;">
 <span>2026年5月28日</span><span>意見募集の締め切り</span>
 </div>
-<div style="display:grid;grid-template-columns:90px 1fr;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:90px 1fr;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>2026年6月4日</span><span>S&Pがルール変更を否決。スペースXの早期採用を見送り</span>
 </div>
 </div>
@@ -104,13 +104,13 @@ tags: ["市場の話", "インデックス投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 S&P500の採用ルール:変更案 vs 維持された現行ルール</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>変更案(否決)</span><span>現行ルール(維持)</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
 <span>上場後の必要期間</span><span>12ヶ月→6ヶ月に短縮</span><span><strong>12ヶ月のまま</strong></span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
 <span>収益性要件</span><span>大企業は免除</span><span><strong>免除しない(維持)</strong></span>
 </div>
 </div>
@@ -181,16 +181,16 @@ S&P500の「直近4四半期が黒字」という関門に、いまのスペー�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">⚖️ 指数会社ごとに割れたスペースXへの判断</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>指数</span><span>判断</span><span>背景</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;">
 <span>S&P500</span><span><strong>門前払い</strong></span><span>収益性要件を維持。黒字化するまで入れない</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;">
 <span>NASDAQ100(QQQ)</span><span><strong>道を開いた</strong></span><span>超大型IPOの早期参入を認めるようルールを調整済み</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1.3fr;gap:8px;">
 <span>ラッセル1000/2000</span><span><strong>道を開いた</strong></span><span>同じく早期参入に対応</span>
 </div>
 </div>

@@ -67,44 +67,47 @@ tags: ["証券・銀行"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 3社の主な違い(2026年時点・一般的な評価)</div>
-  <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div style="min-width:420px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>SBI</span><span>楽天</span><span>マネックス</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">国内株手数料</span><span>無料(条件付)</span><span>無料(条件付)</span><span>無料(条件付)</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">米国株手数料</span><span>業界最安水準</span><span>業界最安水準</span><span>業界最安水準</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">単元未満株</span><span>S株・約3,800銘柄</span><span>かぶミニ・約1,800銘柄</span><span>ワン株・全銘柄対応</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">NISA</span><span>つみたて・成長両対応</span><span>つみたて・成長両対応</span><span>つみたて・成長両対応</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">iDeCo</span><span>商品ラインナップ豊富・運営管理手数料無料</span><span>ラインナップ良好・運営管理手数料無料</span><span>ラインナップやや絞り込み・運営管理手数料無料</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">クレカ積立</span><span>三井住友カード(0.5〜3%)</span><span>楽天カード(0.5〜2%)</span><span>マネックスカード(1.1%)</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">系列銀行連携</span><span>住信SBI(超強力)</span><span>楽天銀行(マネーブリッジ)</span><span>なし</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">ポイント</span><span>V/Ponta/JAL等選択可</span><span>楽天ポイント</span><span>マネックスポイント</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">米国株分析ツール</span><span>標準</span><span>標準</span><span>業界最強(銘柄スカウター)</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">IPO抽選</span><span>取扱数最大・優遇あり</span><span>取扱数控えめ</span><span>完全平等抽選</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">UI評価</span><span>機能多く複雑との声</span><span>シンプルで使いやすい</span><span>標準・地味</span>
     </div>
   </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 ざっくり言えば、**手数料はもうどこも横並び** に近い。差がつくのは「クレカ積立」「系列銀行連携」「単元未満株の銘柄数」「分析ツール」「ポイント」あたりだ。

@@ -51,46 +51,46 @@ tags: ["高配当株", "配当投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 2025年 月別配当受取額（実績）</div>
   <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>月</span><span></span><span style="text-align:right;">金額</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>1月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:2%;min-width:4px;"></div><span style="text-align:right;">0.3万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>2月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:2%;min-width:4px;"></div><span style="text-align:right;">0.3万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>3月</span><div style="background:#c8d8c0;border-radius:4px;height:14px;width:18%;"></div><span style="text-align:right;">3.6万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>4月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:2%;min-width:4px;"></div><span style="text-align:right;">0.5万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>5月</span><div style="background:#c8d8c0;border-radius:4px;height:14px;width:8%;"></div><span style="text-align:right;">1.7万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span style="font-weight:700;color:#4a6640;">6月</span><div style="background:#5a8a50;border-radius:4px;height:14px;width:100%;"></div><span style="text-align:right;font-weight:700;color:#4a6640;">19.7万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>7月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:2%;min-width:4px;"></div><span style="text-align:right;">0.3万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>8月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:2%;min-width:4px;"></div><span style="text-align:right;">0.3万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>9月</span><div style="background:#c8d8c0;border-radius:4px;height:14px;width:16%;"></div><span style="text-align:right;">3.1万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>10月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:2%;min-width:4px;"></div><span style="text-align:right;">0.5万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span>11月</span><div style="background:#e8f0e4;border-radius:4px;height:14px;width:3%;min-width:4px;"></div><span style="text-align:right;">0.5万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;align-items:center;">
       <span style="font-weight:700;color:#4a6640;">12月</span><div style="background:#5a8a50;border-radius:4px;height:14px;width:93%;"></div><span style="text-align:right;font-weight:700;color:#4a6640;">18.3万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:3rem 1fr 4rem;gap:8px;padding-top:6px;border-top:1px solid #c8d8c0;font-weight:700;color:#4a6640;">
       <span>合計</span><span></span><span style="text-align:right;">49.1万円</span>
     </div>
   </div>

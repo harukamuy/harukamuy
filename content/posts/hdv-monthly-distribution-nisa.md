@@ -269,7 +269,8 @@ HDVやBNDは、毒キノコじゃない。ちゃんと **食べられるキノ�
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 高配当ETF3本・分配とNISA</div>
-  <div style="display:grid;grid-template-columns:64px 88px 80px 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.55;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div class="keep-grid" style="display:grid;min-width:330px;grid-template-columns:64px 88px 80px 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.55;">
     <div style="background:#e6efe0;padding:9px 7px;font-weight:700;color:#4a6640;">銘柄</div>
     <div style="background:#e6efe0;padding:9px 7px;font-weight:700;color:#4a6640;">分配</div>
     <div style="background:#e6efe0;padding:9px 7px;font-weight:700;color:#4a6640;">NISA成長枠</div>
@@ -287,6 +288,8 @@ HDVやBNDは、毒キノコじゃない。ちゃんと **食べられるキノ�
     <div style="background:#fbfdfa;padding:9px 7px;color:#3b6d11;font-weight:700;">○ 対象</div>
     <div style="background:#fbfdfa;padding:9px 7px;color:#3a5030;">S&P500の高配当上位 約80銘柄。利回り高め(約4%台)</div>
   </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 ざっくりした使い分けは、こうなる。

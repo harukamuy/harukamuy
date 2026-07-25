@@ -105,19 +105,19 @@ tags: ["高配当株", "配当投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 増配株と高配当株の比較</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span></span><span>増配株</span><span>高配当株</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
       <span>利回り</span><span>低め〜中程度</span><span>4%前後が目安</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
       <span>配当の方向性</span><span>毎年少しずつ増加</span><span>安定して高水準</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
       <span>企業の姿勢</span><span>株主還元を意識</span><span>安定配当を重視</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
       <span>向いている人</span><span>長期で育てたい人</span><span>今すぐ配当が欲しい人</span>
     </div>
   </div>

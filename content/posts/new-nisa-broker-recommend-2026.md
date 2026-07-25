@@ -86,35 +86,38 @@ tags: ["新NISA", "NISA", "証券・銀行"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 新NISA・3社の基本比較</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:12px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:420px;display:flex;flex-direction:column;gap:10px;font-size:12px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>SBI証券</span><span>楽天証券</span><span>マネックス証券</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">つみたて枠</span><span>○ オルカン・S&P500等</span><span>○ オルカン・S&P500等</span><span>○ オルカン・S&P500等</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">成長投資枠</span><span>◎ 国内株・米国株・ETF・投信</span><span>◎ 国内株・米国株・ETF・投信</span><span>◎ 国内株・米国株・ETF・投信</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">単元未満株</span><span>S株(約3,800銘柄)</span><span>かぶミニ(約1,800銘柄)</span><span>ワン株(全銘柄)</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">手数料(日本株)</span><span>無料(条件付)</span><span>無料(条件付)</span><span>無料(条件付)</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">系列銀行連携</span><span>住信SBIネット銀行(神レベル)</span><span>楽天銀行(マネーブリッジ)</span><span>なし</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">ポイント</span><span>V/Ponta/JAL等選択可</span><span>楽天ポイント</span><span>マネックスポイント</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">米国株分析ツール</span><span>標準</span><span>標準</span><span>業界最強(銘柄スカウター)</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">UI(初心者)</span><span>機能多く複雑との声</span><span>シンプルで使いやすい</span><span>標準・地味</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 基本性能はほぼ横並び。**「どれを選んでも、新NISAでオルカンやS&P500を積み立てる」というスタートには十分** だ。差がつくのはこのあとの2つの観点になる。
@@ -129,29 +132,32 @@ tags: ["新NISA", "NISA", "証券・銀行"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💳 クレカ積立還元率比較(2026年5月時点)</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:12px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:380px;display:flex;flex-direction:column;gap:10px;font-size:12px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>証券会社</span><span>使えるカード</span><span>還元率</span><span>年会費</span>
 </div>
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
 <span style="font-weight:700;">SBI証券</span><span>三井住友カード(NL)</span><span>0.5%</span><span>永年無料</span>
 </div>
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
 <span style="font-weight:700;">SBI証券</span><span>三井住友カード(ゴールドNL)</span><span>1.0%</span><span>5,500円(年100万利用で翌年無料)</span>
 </div>
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
 <span style="font-weight:700;">SBI証券</span><span>三井住友カード(プラチナプリファード)</span><span>3.0%</span><span>33,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
 <span style="font-weight:700;">楽天証券</span><span>楽天カード(通常)</span><span>0.5%</span><span>永年無料</span>
 </div>
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
 <span style="font-weight:700;">楽天証券</span><span>楽天プレミアムカード</span><span>1.0%</span><span>11,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:110px 1fr 70px 1fr;gap:8px;">
 <span style="font-weight:700;">マネックス証券</span><span>マネックスカード</span><span>1.1%</span><span>550円(年1回利用で翌年無料 = 実質無料)</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 ### 補足:クレカ積立の上限は月10万円(年120万円)
@@ -163,25 +169,25 @@ tags: ["新NISA", "NISA", "証券・銀行"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💴 月5万円(年60万円)積立の場合の年間還元額</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>カード</span><span>還元率</span><span>実質還元額(年会費控除後)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>三井住友(NL)</span><span>0.5%</span><span>+3,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>三井住友(ゴールドNL)</span><span>1.0%</span><span>+500円(年100万利用で年会費無料時:+6,000円)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>三井住友(プラチナプリファード)</span><span>3.0%</span><span>−15,000円(年会費でマイナス)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>楽天カード(通常)</span><span>0.5%</span><span>+3,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>楽天プレミアムカード</span><span>1.0%</span><span>−5,000円(年会費でマイナス)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>マネックスカード</span><span>1.1%</span><span>+6,600円(実質1位)</span>
 </div>
 </div>
@@ -190,25 +196,25 @@ tags: ["新NISA", "NISA", "証券・銀行"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💴 月10万円(年120万円・MAX)積立の場合の年間還元額</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>カード</span><span>還元率</span><span>実質還元額(年会費控除後)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>三井住友(NL)</span><span>0.5%</span><span>+6,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>三井住友(ゴールドNL)</span><span>1.0%</span><span>+6,500円(翌年以降 年100万利用で無料化:+12,000円)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>三井住友(プラチナプリファード)</span><span>3.0%</span><span>+3,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>楽天カード(通常)</span><span>0.5%</span><span>+6,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;">
 <span>楽天プレミアムカード</span><span>1.0%</span><span>+1,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 60px 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>マネックスカード</span><span>1.1%</span><span>+13,200円(実質1位)</span>
 </div>
 </div>
@@ -225,16 +231,16 @@ tags: ["新NISA", "NISA", "証券・銀行"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 月10万円・年利5%・15年運用 × クレカ還元の差</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>ケース</span><span>15年後の還元/評価</span><span>還元なし比較</span>
 </div>
-<div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;">
 <span>銀行引き落とし(還元なし)</span><span>NISA満額約2,673万円</span><span>基準</span>
 </div>
-<div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;">
 <span>マネックス還元・現金キープ(累計)</span><span>NISA同等 + ポイント19.8万円</span><span>+約19.8万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>マネックス還元・特定口座で再投資</span><span>NISA同等 + 特定口座 約29.4万円(税引前)</span><span>+約29.4万円</span>
 </div>
 </div>

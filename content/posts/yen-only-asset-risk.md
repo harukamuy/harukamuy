@@ -97,7 +97,7 @@ tags: ["家計・資産管理", "市場の話"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🧭 資産は「通貨」×「現金/投資」の4タイプで考える</div>
-<div style="display:grid;grid-template-columns:1fr 1.5fr 1.5fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.6;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1.5fr 1.5fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.6;">
 <div style="background:#e6efe0;padding:9px 8px;"></div>
 <div style="background:#e6efe0;padding:9px 8px;font-weight:700;color:#4a6640;text-align:center;">円建て</div>
 <div style="background:#e6efe0;padding:9px 8px;font-weight:700;color:#4a6640;text-align:center;">外貨建て(ドル等)</div>

@@ -162,32 +162,35 @@ tags: ["インデックス投資"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 オルカン vs S&P500 比較</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:330px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>オルカン</span><span>S&P500</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">投資対象</span><span>全世界の株式 約3,000銘柄(先進国+新興国)</span><span>米国大型株 500銘柄</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">米国比率</span><span>約60%</span><span>100%</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">経費率</span><span>0.05775%</span><span>0.09372%(eMAXIS Slim) / 0.0938%(SBI・V)</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">過去10年リターン</span><span>年率約10%</span><span>年率約13%</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">10年期待(VG予測)</span><span>年率約4.5-6.5%(構成比加重)</span><span>年率約3-5%</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">為替リスク</span><span>分散される</span><span>ドル円に大きく依存</span>
 </div>
-<div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">中身の傾向</span><span>米国メイン+欧州+新興国(中国・インド含む)</span><span>米国大型株のみ(GAFAM・エヌビディア等)</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 要するに、**「世界全体に広く投資したいならオルカン」「米国の成長に集中投資したいならS&P500」** という違いになる。

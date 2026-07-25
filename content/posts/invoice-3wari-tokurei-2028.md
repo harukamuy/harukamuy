@@ -83,20 +83,23 @@ tags: ["フリーランス", "会計ツール"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💰 納税額シミュレーション(年売上700万円・税抜636万円・サービス業想定)</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:380px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>2割特例<br/>(〜2026)</span><span>3割特例<br/>(2027〜2028)</span><span>簡易課税<br/>(2029〜想定)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;">
 <span>売上消費税額(10%)</span><span>約63.6万円</span><span>約63.6万円</span><span>約63.6万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;">
 <span>納付率(実質)</span><span>20%</span><span>30%</span><span>50%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 0.9fr 0.9fr 0.9fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>納付税額</span><span>約12.7万円</span><span>約19.1万円</span><span>約31.8万円</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 つまり、**「2割特例 → 3割特例」では年+6.4万円、「3割特例 → 簡易課税」ではさらに年+12.7万円** という階段。
@@ -142,22 +145,22 @@ tags: ["フリーランス", "会計ツール"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📅 経過措置スケジュール(免税事業者からの仕入税額控除割合)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>期間</span><span>控除割合</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
 <span>〜2026年9月末(現行)</span><span>80%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>2026年10月〜2028年9月末(<strong>新設</strong>)</span><span>70%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
 <span>2028年10月〜2030年9月末</span><span>50%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
 <span>2030年10月〜2031年9月末</span><span>30%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:8px;">
 <span>2031年10月〜</span><span>廃止(0%)</span>
 </div>
 </div>

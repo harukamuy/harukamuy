@@ -113,7 +113,7 @@ GPIFは、わたしたちが納めている年金保険料の一部を積み立�
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 GPIFの基本ポートフォリオ(現行)</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;">
+  <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;">
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#4a6640;">国内債券 25%</div>
     <div style="background:#e6efe0;padding:10px 12px;font-weight:700;color:#4a6640;">国内株式 25%</div>
     <div style="background:#fbfdfa;padding:10px 12px;color:#3a5030;">外国債券 25%</div>

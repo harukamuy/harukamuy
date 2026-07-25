@@ -142,19 +142,19 @@ tags: ["フリーランス", "配当投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 課税所得400万円の人が、特定口座の配当50万円を受け取った年（概算）</div>
   <div style="display:flex;flex-direction:column;gap:9px;font-size:12px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>申告しない</span><span>申告する</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;">
       <span>所得税（配当分）</span><span>そのまま</span><span>約2.7万 戻る</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;">
       <span>住民税（配当分）</span><span>5％のまま</span><span>約1.1万 増</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;">
       <span>国民健康保険</span><span>影響なし</span><span>約5万 増</span>
     </div>
-    <div style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;background:#e8f0e4;padding:7px 6px;border-radius:8px;font-weight:700;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1.15fr 0.95fr 1fr;gap:6px;background:#e8f0e4;padding:7px 6px;border-radius:8px;font-weight:700;color:#4a6640;">
       <span>差し引き</span><span>—</span><span>約3.4万 損</span>
     </div>
   </div>

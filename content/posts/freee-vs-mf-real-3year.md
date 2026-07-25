@@ -84,35 +84,38 @@ tags: ["会計ツール"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 freee vs マネーフォワードクラウド会計</div>
-  <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div style="min-width:330px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>項目</span><span>freee</span><span>マネーフォワード</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">設計思想</span><span>簿記知識なしでも使える独自設計</span><span>従来の簿記に近い設計</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">UI</span><span>モダンで初心者向け</span><span>業務システム的・経理経験者向け</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">自動仕訳精度</span><span>高い・候補提案が賢い</span><span>高い・連携サービス数が多い</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">連携サービス数</span><span>豊富</span><span>業界最多クラス</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">税理士連携</span><span>対応あり</span><span>会計事務所での採用率が高い</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">スマホアプリ</span><span>使いやすい</span><span>使いやすい</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">料金(個人向け最低)</span><span>月980円〜(年払い)</span><span>月980円〜(年払い)</span>
     </div>
-    <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:130px 1fr 1fr;gap:8px;">
       <span style="font-weight:700;">向いている人</span><span>簿記初心者・フリーランス・小規模事業</span><span>経理経験者・税理士と組む人・複数サービスをまとめて使う人</span>
     </div>
   </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 ざっくり言えば、**「簿記知識ゼロからでも始めやすいfreee」「税理士・経理経験者と相性がいいMF」** という違いがある。料金や基本機能はほぼ同等で、どちらを選んでも大きく失敗することはない。

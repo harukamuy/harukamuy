@@ -101,22 +101,22 @@ QQQの中身は米国株なので、**円高になれば基準価額は下がる
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 QQQ vs S&P500 過去10年比較(2016〜2026年・配当込み・概算)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>QQQ</span><span>S&P500</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
 <span>年率リターン(10年)</span><span><strong>約15%</strong></span><span>約12%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
 <span>10年で100万円が</span><span><strong>約520万円</strong></span><span>約290万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
 <span>値動きの激しさ(標準偏差)</span><span>S&P500の約1.3倍</span><span>—</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
 <span>過去最大の下落(ITバブル崩壊)</span><span><strong>-83%</strong></span><span>約-55%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;">
 <span>テック株比率</span><span>50%超</span><span>約25%</span>
 </div>
 </div>
@@ -133,16 +133,16 @@ QQQは1999年3月に米国で上場した。せっかくなので **設定来27�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 設定来(1999年〜)の比較 — 結果はQQQの勝ち、でも…</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>QQQ</span><span>S&P500(SPY)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;">
 <span>設定来トータルリターン(配当込・2024年時点)</span><span><strong>約+627%</strong></span><span>約+265%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;">
 <span>最大下落(2000-2002年)</span><span><strong>-83%</strong></span><span>-55%</span>
 </div>
-<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;background:#fff5e8;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>2000年の高値を取り戻すまで</span><span>約15年(2015年)</span><span>約7年</span>
 </div>
 </div>
@@ -203,13 +203,13 @@ QQQは1999年3月に米国で上場した。せっかくなので **設定来27�
 <div class="data-card" style="background:#fff5e8;border:1.5px solid #d4957e;border-radius:12px;padding:18px 20px;margin:20px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">✂️ 切り取る期間で「正解」が変わる</div>
 <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
 <span>直近10年で比較</span><span><strong>QQQの圧勝</strong>(5.2倍 vs 2.9倍)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
 <span>1999年の設定来で比較</span><span><strong>QQQの勝ち</strong>(ただし15年はS&P500に負けていた)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.2fr 1fr;gap:8px;">
 <span>2000年の天井から比較</span><span><strong>約20年間S&P500の勝ち</strong>(QQQの逆転はごく最近)</span>
 </div>
 </div>

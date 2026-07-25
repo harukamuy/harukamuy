@@ -82,29 +82,32 @@ SBI証券には、自分の資産がどう動いてきたかをさかのぼっ�
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 18px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 SBI証券口座の年末スナップショット</div>
-  <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div style="min-width:370px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>時点</span><span>総資産</span><span>評価損益</span><span>損益率</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
       <span>2021/8</span><span>1,301万</span><span>+174万</span><span>+15.4%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
       <span>2021末</span><span>1,530万</span><span>+296万</span><span>+24.0%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
       <span>2022末</span><span>1,675万</span><span>+246万</span><span>+17.2%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
       <span>2023末</span><span>2,537万</span><span>+746万</span><span>+41.7%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;">
       <span>2024末</span><span>3,819万</span><span>+1,586万</span><span>+73.8%</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 0.8fr;gap:6px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>2025末</span><span>4,886万</span><span>+2,204万</span><span>+85.8%</span>
     </div>
   </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 グラフにすると、こうなる。濃い緑が<strong>自分で入れたお金（元本）</strong>、薄い緑が<strong>評価益</strong>だ。

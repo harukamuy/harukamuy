@@ -154,16 +154,16 @@ S&P500はコロナショックのとき、一時3割を超えて下落した。�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💡 資産額と年間運用益のイメージ（利回り5%の場合）</div>
   <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>資産額</span><span>年間運用益（目安）</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
       <span>3,000万円</span><span>150万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
       <span>5,000万円</span><span>250万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;">
       <span><strong>1億円</strong></span><span><strong>500万円 → 働かなくてもいい水準</strong></span>
     </div>
   </div>

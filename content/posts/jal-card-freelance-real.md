@@ -67,32 +67,35 @@ tags: ["フリーランス", "クレジットカード"]
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 JALカード 普通カード vs CLUB-Aゴールド</div>
-<div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<div style="min-width:340px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>普通カード</span><span>CLUB-Aゴールド</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">年会費</span><span>2,200円</span><span>17,600円</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">ショッピングマイル</span><span>200円=1マイル<br/>(プレミアム加入で100円=1、年3,300円)</span><span>100円=1マイル<br/>(プレミアム自動付帯)</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">入会搭乗ボーナス</span><span>1,000マイル</span><span>5,000マイル</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">毎年初回搭乗ボーナス</span><span>1,000マイル</span><span>2,000マイル</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">フライトマイル割増</span><span>+10%</span><span>+25%</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">空港ラウンジ</span><span>なし</span><span>国内主要空港 無料</span>
 </div>
-<div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:140px 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">海外旅行保険</span><span>最高1,000万円(利用付帯)</span><span>最高1億円(自動付帯)</span>
 </div>
 </div>
+</div>
+<div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
 </div>
 
 ### 年240万円利用・国内2往復のリアル比較
@@ -100,22 +103,22 @@ tags: ["フリーランス", "クレジットカード"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💴 年間トータルコスト/マイル比較(概算)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>普通(プレミアム加入)</span><span>CLUB-Aゴールド</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
 <span>実質年会費</span><span>5,500円</span><span>17,600円</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
 <span>ショッピングマイル</span><span>24,000</span><span>24,000</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
 <span>毎年初回ボーナス</span><span>1,000</span><span>2,000</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
 <span>フライトマイル(出張3往復のみ)</span><span>約3,750</span><span>約4,250</span>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>合計マイル/年</span><span>約28,750</span><span>約30,250</span>
 </div>
 </div>
@@ -172,16 +175,16 @@ JALカードを使う一番の理由は、シンプルに **マイル** だ。�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💰 マイル価値 vs 正規料金(国内線・往復)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>路線</span><span>必要マイル</span><span>正規料金(往復)</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;">
 <span>羽田⇄帯広</span><span>15,000</span><span>約60,000-80,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;">
 <span>羽田⇄福岡</span><span>15,000</span><span>約70,000-90,000円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 0.8fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>年2往復ぶんで</span><span>約30,000</span><span>約13万-17万円相当(残マイルは翌年へ繰越)</span>
 </div>
 </div>

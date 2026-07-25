@@ -115,16 +115,16 @@ tags: ["高配当株", "配当投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📊 配当金の推移（概算）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
       <span>時期</span><span>高配当株（個別株）</span><span>年間配当（概算）</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
       <span>〜2023年</span><span>約500万円</span><span>約20万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
       <span>2024年〜</span><span>新NISAで買い増し開始</span><span>数百円・数千円ずつ積み上げ</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>2026年現在</span><span>—</span><span>約49万円（税引き後）</span>
     </div>
   </div>

@@ -137,13 +137,13 @@ tags: ["インデックス投資", "初心者向け"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🎓 大学4年間の学費の目安（2026年時点・授業料等のみ）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;">
       <span>国立大学</span><span>約243万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
       <span>私立文系（今回の計算で使う数字）</span><span>約410万円</span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;">
       <span>私立理系</span><span>約550万円</span>
     </div>
   </div>
@@ -153,10 +153,10 @@ tags: ["インデックス投資", "初心者向け"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💼 大卒と高卒の生涯賃金の差（60歳まで・額面）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;">
       <span>男性（高卒 約2.1億 → 大卒 約2.6億）</span><span>差 <strong>約5,000万円</strong></span>
     </div>
-    <div style="display:grid;grid-template-columns:1fr auto;gap:8px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;">
       <span>女性（高卒 約1.5億 → 大卒 約2.1億）</span><span>差 <strong>約6,000万円</strong></span>
     </div>
   </div>

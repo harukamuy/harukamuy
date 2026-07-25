@@ -74,22 +74,22 @@ tags: ["債券", "十勝計画"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🔍 わたしの「隠れ債券」チェック</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:120px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>わたしの場合</span>
 </div>
-<div style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
 <span style="font-weight:700;">① 株</span><span>◎ S&P500・オルカン中心でしっかり保有</span>
 </div>
-<div style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
 <span style="font-weight:700;">② 年金</span><span>△ 会社員時代の厚生年金はあるが、転向後は国民年金のみ。ずっと会社員の人より少なめ</span>
 </div>
-<div style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
 <span style="font-weight:700;">③ 持ち家</span><span>✕ 賃貸暮らし(家賃7万円)。持ち家という債券はゼロ</span>
 </div>
-<div style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
 <span style="font-weight:700;">④ 遺産</span><span>△ 十勝に実家はあるが、アテにした計算はしたくない</span>
 </div>
-<div style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:120px 1fr;gap:8px;">
 <span style="font-weight:700;">⑤ 労働収入</span><span>△ フリーランス。安定雇用ではなく、収入に波がある</span>
 </div>
 </div>
@@ -164,16 +164,16 @@ tags: ["債券", "十勝計画"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🏔️ 十勝に帰ると増える「隠れ債券」(資産換算)</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:12.5px;color:#3a5030;">
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #c8d8c0;color:#4a6640;">
 <span>項目</span><span>かからずに済む費用(月)</span><span>債券に換算すると</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">住まい(家賃が浮く)</span><span>約7万円</span><span>約2,100万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;">
 <span style="font-weight:700;">車(実家の1台を使える)</span><span>約5万円</span><span>約1,500万円</span>
 </div>
-<div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
+<div class="keep-grid" style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
 <span>合計</span><span>約12万円</span><span>約3,600万円</span>
 </div>
 </div>
