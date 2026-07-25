@@ -360,6 +360,24 @@ function injectHeadingIds(html: string, headings: Heading[]): string {
   });
 }
 
+// 表の中の「金額・割合などの数値セル」が、スマホで途中改行されるのを防ぐ
+// 例:「3,582万円」が「3,582万」＋「円」に割れてしまうのを避ける
+const NUMERIC_CELL =
+  /^(約|およそ|ほぼ|▲|△|\+|-|−|±)?\s*[¥$]?[\d,.]+\s*(億円|万円|兆円|円|億ドル|万ドル|ドル|%|％|倍|年|ヶ月|か月|カ月|日|人|件|本|回|歳|pt|ポイント)?\s*(前後|程度|超|以上|以下|台|弱|強)?$/;
+
+function nowrapNumericCells(html: string): string {
+  return html.replace(/<(td|th)(\s[^>]*)?>([\s\S]*?)<\/\1>/g, (match, tag, attrs = "", inner) => {
+    const text = inner.replace(/<[^>]+>/g, "").trim();
+    if (!text || !NUMERIC_CELL.test(text)) return match;
+    const a = attrs || "";
+    if (/white-space/.test(a)) return match;
+    const next = /style="/.test(a)
+      ? a.replace(/style="/, 'style="white-space:nowrap;')
+      : `${a} style="white-space:nowrap;"`;
+    return `<${tag}${next}>${inner}</${tag}>`;
+  });
+}
+
 export async function renderMarkdown(markdown: string): Promise<string> {
   const processed = preprocessAffiliate(markdown);
   const result = await remark()
@@ -367,5 +385,5 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     .use(remarkHtml, { sanitize: false })
     .process(processed);
   const headings = extractHeadings(markdown);
-  return injectHeadingIds(result.toString(), headings);
+  return nowrapNumericCells(injectHeadingIds(result.toString(), headings));
 }
