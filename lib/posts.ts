@@ -105,6 +105,22 @@ export const TAG_SLUGS: Record<string, string> = {
   "税金・社会保険": "tax-insurance",
   "資産推移": "asset-growth",
   "制度改正": "policy-change",
+  "ニュース解説": "news-explainer",
+  "日本株": "japan-stocks",
+  "米国株": "us-stocks",
+  "新興国株": "emerging-stocks",
+  "個別株": "single-stocks",
+  "為替": "forex",
+  "金利": "interest-rate",
+  "年金": "pension",
+  "住まい": "housing",
+  "暗号資産": "crypto",
+  "ビットコイン": "bitcoin",
+  "投資詐欺": "investment-scam",
+  "お金の守り方": "money-defense",
+  "初心者向け": "for-beginners",
+  "FIREの疑問": "fire-questions",
+  "後悔・不安": "regret-anxiety",
 };
 
 // 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）

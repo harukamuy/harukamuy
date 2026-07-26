@@ -239,7 +239,7 @@ tags: ["日本株", "個別株", "高配当株"]
 - [高配当株の出口戦略。わたしは「売らない」を基本にしている](/blog/high-dividend-exit-strategy)
 - [高配当株ポートフォリオ](/blog/high-dividend-portfolio)
 - [ビットコイン、2028年の分離課税まで売らないことにした理由](/blog/bitcoin-2028-separate-tax)
-- [オルカン vs S&P500——両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
 
 :::cta
 title: SBI証券 — インデックスも高配当株も、これ1つで

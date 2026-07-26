@@ -244,7 +244,7 @@ AI半導体の主役、HBMシェア6割、米国史上最大の外国企業IPO�
 
 ## 関連記事
 
-- [オルカン vs S&P500——両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
 - [なぜ、キオクシアは売られたのに株価が上がったの? 気になったので調べてみた](/blog/kioxia-sold-yet-rose)
 - [円だけで資産を持つリスクを整理してみた](/blog/yen-only-asset-risk)
 - [つみたて投資枠に「債券」がやってくる。2026年のNISA改正を調べてみた](/blog/nisa-2026-tsumitate-bond)
