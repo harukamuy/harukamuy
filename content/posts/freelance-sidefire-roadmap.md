@@ -83,10 +83,10 @@ tags: ["サイドFIRE", "フリーランス", "家計・資産管理"]
 
 最初にやるべきなのは、投資でも節約でもない。<strong>自分が目指しているものを、はっきりさせること</strong>だ。
 
-FIRE(経済的自立と早期リタイア)には、いくつか種類がある。ざっくり整理すると、こうなる。
+FIRE(経済的自立と早期リタイア)にはいろいろな呼び方があるけれど、わたしは<strong>2つだけ</strong>で考えている。働かないか、働く量を選ぶか。その違いだ。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
-  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🎯 FIREの種類と、必要な資産の目安</div>
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🎯 わたしの考えるFIREの定義</div>
   <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
   <div class="keep-grid" style="min-width:340px;display:grid;grid-template-columns:auto 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:13px;line-height:1.6;">
     <div style="background:#e6efe0;padding:10px 8px;font-weight:700;color:#4a6640;">種類</div>
@@ -94,18 +94,21 @@ FIRE(経済的自立と早期リタイア)には、いくつか種類がある�
     <div style="background:#e6efe0;padding:10px 8px;font-weight:700;color:#4a6640;text-align:center;">必要な資産</div>
     <div style="background:#fbfdfa;padding:10px 8px;font-weight:700;color:#3a5030;">完全FIRE</div>
     <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">働かない</div>
-    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">生活費の25年分</div>
+    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">ゆとりも含めた<br />暮らし全部 × 25年</div>
     <div style="background:#fff6ea;padding:10px 8px;font-weight:700;color:#a85f3c;">サイドFIRE</div>
     <div style="background:#fff6ea;padding:10px 8px;color:#a85f3c;text-align:center;"><strong>好きな量だけ働く</strong></div>
-    <div style="background:#fff6ea;padding:10px 8px;color:#a85f3c;text-align:center;"><strong>その半分程度でも可</strong></div>
-    <div style="background:#fbfdfa;padding:10px 8px;font-weight:700;color:#3a5030;">バリスタFIRE</div>
-    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">パートで働く</div>
-    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">サイドFIREと近い</div>
+    <div style="background:#fff6ea;padding:10px 8px;color:#a85f3c;text-align:center;"><strong>最低限の生活費 × 25年</strong><br /><span style="font-size:11px;">ゆとりは働いて稼ぐ</span></div>
   </div>
   </div>
   <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">「25年分」は年4%取り崩しを前提にした一般的な目安。必要額は生活費・働く量・家族構成で大きく変わります</div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">「×25年」は年4%取り崩しを前提にした一般的な目安（4%ルール）。あくまでわたしの整理で、必要額は生活費・働く量・家族構成によって大きく変わります</div>
 </div>
+
+ここで大事なのは、<strong>計算式はどちらも同じ「年間支出の25倍」</strong>だということ。違うのは<strong>何を"年間支出"に入れるか</strong>だ。
+
+完全FIREは、旅行も趣味も含めた暮らしまるごとを資産だけでまかなう。わたしの場合、それだと1億円くらいないと安心できない。対してサイドFIREは、<strong>最低限の生活費だけを資産に任せて、ゆとりのぶんは働いて稼ぐ</strong>。だからわたしは、月15万円の生活費に少しゆとりを足した<strong>年200万円 × 25 = 5,000万円</strong>を目標にした。半分になったのは基準がゆるいからではなく、<strong>資産に任せる範囲を狭くしたから</strong>だ。
+
+「サイドFIREはいくら必要か」の答えが人によってばらつくのは、この<strong>「どこまでを資産に任せるか」が人それぞれ</strong>だからだと思っている。金額そのものより、自分の線をどこに引くかを先に決めるほうが大事だ。
 
 わたしが選んだのは<strong>サイドFIRE</strong>。資産からの収入と、自分で選んだ仕事の収入、その両方で暮らす形だ。完全に働かない生活は、必要な金額が大きすぎるうえに、わたしには向いていないと思った。
 
@@ -115,7 +118,9 @@ FIRE(経済的自立と早期リタイア)には、いくつか種類がある�
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">
-    📖 <strong>もっと詳しく：</strong><br><a href="/blog/what-is-sidefire">サイドFIRE(サイドファイヤー)とは?完全FIREとの違いをわかりやすく解説</a>
+    📖 <strong>もっと詳しく：</strong><br>
+    <a href="/blog/what-is-sidefire">サイドFIRE(サイドファイヤー)とは?完全FIREとの違いをわかりやすく解説</a><br>
+    <a href="/blog/sidefire-asset-simulation">サイドFIREはいくら必要?34歳フリーランスが5,000万円で達成した金額の内訳</a>
   </div>
 </div>
 
@@ -453,7 +458,7 @@ iDeCoについては、会社員時代の企業型DCを移管したものをS&P5
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">❓ サイドFIREのよくある疑問</div>
   <div style="display:flex;flex-direction:column;gap:14px;font-size:13px;color:#3a5030;">
-    <div><strong style="color:#4a6640;">Q. いくらあれば達成できますか?</strong><br>生活費と、働き続ける量で変わります。わたしは月15万円の生活費で5,000万円台が目安でした。生活費が月20万円なら必要額はもっと増えます。まずは自分の生活費を出すところから。</div>
+    <div><strong style="color:#4a6640;">Q. いくらあれば達成できますか?</strong><br>「どこまでを資産に任せるか」で変わります。わたしは最低限の生活費(年200万円)だけを資産でまかなう設計にして、その25倍の<strong>5,000万円</strong>を目標にしました。旅行や趣味は仕事の収入から出しています。まずは自分の生活費を出して、資産に任せる範囲を決めるところから。</div>
     <div><strong style="color:#4a6640;">Q. 高収入じゃないと無理では?</strong><br>わたしの会社員時代の収入は、特別に高くはありませんでした。効いたのは収入の大きさより、<strong>生活費を抑えたことと、続けた年数</strong>です。</div>
     <div><strong style="color:#4a6640;">Q. 暴落が来たら終わりでは?</strong><br>コロナ(約3割減)・2022年の停滞・中東ショックの3回を、売らずに通過しました。生活防衛資金・配当・仕事の収入という3段の備えで、資産を売らずに済む設計にしています。</div>
     <div><strong style="color:#4a6640;">Q. 会社員でも同じようにできますか?</strong><br>できます。むしろ会社員のほうが、収入が安定していて社会保険も手厚いぶん有利な面があります。違うのは税金と社会保険の手続きくらいです。</div>
@@ -504,6 +509,7 @@ iDeCoについては、会社員時代の企業型DCを移管したものをS&P5
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
 <li>サイドFIREは「働かない生活」ではなく「仕事を選べる生活」。まずゴールの定義を決めるところから始まる</li>
+<li>必要な資産の計算式は完全FIREと同じ「年間支出の25倍」。違うのは何を年間支出に入れるか。わたしは最低限の生活費(年200万円)だけを資産に任せて5,000万円を目標にし、ゆとりは仕事で稼ぐ設計にした</li>
 <li>ステップ1は生活費の把握。必要な資産額は生活費で決まるので、投資より先にここ。わたしは東京・月15万円</li>
 <li>ステップ2は生活防衛資金。生活費20ヶ月分の300万円。暴落のときに株を売らずに済むための現金</li>
 <li>ステップ3で積立の仕組みづくり。新NISAのつみたて枠はオルカン1本(増やす)、成長投資枠で日本の高配当株(配当を非課税で受け取る)、入りきらないぶんを特定口座という役割分担</li>
