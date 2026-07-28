@@ -223,6 +223,12 @@ tags: ["サイドFIRE"]
 達成までの道のりを、ステップごとに [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap) にまとめている。これから目指す人は、あわせて読んでみてほしい。
 
 
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
+  <div style="font-size:13px;color:#3a5030;">
+    📚 <strong>この記事を含む完全ガイドはこちら：</strong><br><a href="/blog/freelance-sidefire-roadmap">フリーランスのサイドFIRE 完全ロードマップ（貯金500万から8年でたどり着いた全ステップ）</a>
+  </div>
+</div>
+
 ## 関連記事
 
 - [サイドFIREはいくら必要？5,000万円で達成した金額の内訳](/blog/sidefire-asset-simulation)

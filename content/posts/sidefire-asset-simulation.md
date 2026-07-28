@@ -260,6 +260,12 @@ description: 資産形成の前提となるお金の知識を網羅。「いく�
 </ul>
 </div>
 
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
+  <div style="font-size:13px;color:#3a5030;">
+    📚 <strong>この記事を含む完全ガイドはこちら：</strong><br><a href="/blog/freelance-sidefire-roadmap">フリーランスのサイドFIRE 完全ロードマップ（貯金500万から8年でたどり着いた全ステップ）</a>
+  </div>
+</div>
+
 ## 関連記事
 
 - [資産5,000万円でサイドFIREした生活のリアル。月の収支・仕事量・心境を全部書く](/blog/sidefire-5000man-life-real)
