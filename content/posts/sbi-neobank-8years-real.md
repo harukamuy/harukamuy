@@ -324,6 +324,11 @@ tags: ["証券・銀行"]
 - **ATM・振込ともに月最大20回無料**。メガバンク時代の数百円手数料が懐かしい
 - 大きな不満はなく、**SBI証券ユーザーなら一択** の選択肢
 
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の見解・体験のシェアです。特定の銘柄・金融商品への投資を推奨・勧誘するものではありません。掲載している数字は執筆時点の情報にもとづくもので、正確性を保証するものではなく、今後変動する可能性があります。投資は価格が変動し、元本を割り込む可能性があります。必ずご自身の判断と責任で行ってください。
+</div>
+
 ## 関連記事
 
 - [SBI証券・楽天証券・マネックス証券](/blog/sbi-vs-rakuten-vs-monex)

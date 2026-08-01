@@ -214,6 +214,11 @@ tags: ["債券", "十勝計画"]
 <div style="font-size:11px;color:#5a8a50;margin-top:10px;">※本記事は上記を参考に、わたし自身の状況に当てはめて考えた個人的な記録です。投資判断は自己責任でお願いします。</div>
 </div>
 
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の見解・体験のシェアです。特定の銘柄・金融商品への投資を推奨・勧誘するものではありません。掲載している数字は執筆時点の情報にもとづくもので、正確性を保証するものではなく、今後変動する可能性があります。投資は価格が変動し、元本を割り込む可能性があります。必ずご自身の判断と責任で行ってください。
+</div>
+
 ## 関連記事
 
 - [BNDを買い増ししている理由](/blog/why-bnd-add-on)

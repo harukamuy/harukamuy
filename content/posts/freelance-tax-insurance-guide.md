@@ -352,6 +352,11 @@ url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
 </ul>
 </div>
 
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の体験と、執筆時点の制度にもとづく情報のシェアです。税制・社会保険制度は改正されることがあり、また個々の状況によって扱いが異なります。実際の申告・手続きにあたっては、税務署・自治体・税理士など専門家にご確認ください。
+</div>
+
 ## 関連記事
 
 - [フリーランスの社会保険。国民健康保険・国民年金・住民税、月8万円の現実](/blog/freelance-social-insurance)
