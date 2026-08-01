@@ -69,7 +69,7 @@ export const SNAPSHOTS: Snapshot[] = [
   {
     month: "2026年7月末",
     monthNum: 7,
-    index: 3796,
+    index: 3794,
     highDiv: 1638,
     cash: 300,
     btc: 99,
