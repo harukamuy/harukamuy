@@ -371,7 +371,6 @@ tags: ["高配当株", "配当投資"]
 
 :::product
 title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-image: /images/books/okane-no-daigaku.jpg
 amazon: 4023318787
 rakuten: rb:18041936
 description: 「貯める・稼ぐ・増やす・守る・使う」の5つの力を1冊で。配当金で生活を支えるための土台がここに詰まっています。

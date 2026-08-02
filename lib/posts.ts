@@ -248,10 +248,23 @@ function buildRakutenUrl(itemCode: string): string {
   return `https://hb.afl.rakuten.co.jp/hgc/${RAKUTEN_AFF_ID}/?pc=${encodeURIComponent(itemUrl)}&m=${encodeURIComponent(itemUrl)}`;
 }
 
+// 書影は楽天ブックスの商品画像を使う（楽天アフィリエイトは商品画像の利用を
+// 認めており、画像自体を楽天リンクにしている）。Amazonの商品画像は2023年に
+// 画像リンクが廃止され、PA-APIは売上実績がないと使えないため使わない。
+// ASINをキーにしておけば、同じ本を何記事に置いてもURLは1箇所で済む。
+const BOOK_COVERS: Record<string, string> = {
+  "4023318787": "https://tshop.r10s.jp/book/cabinet/8786/9784023318786_1_2.jpg", // お金の大学
+  "4022951672": "https://tshop.r10s.jp/book/cabinet/1670/9784022951670_1_2.jpg", // ほったらかし投資術
+  "4532359112": "https://tshop.r10s.jp/book/cabinet/9119/9784532359119_1_2.jpg", // 敗者のゲーム
+  "4478114137": "https://tshop.r10s.jp/book/cabinet/4131/9784478114131_1_2.jpg", // サイコロジー・オブ・マネー
+  "4478108579": "https://tshop.r10s.jp/book/cabinet/8574/9784478108574.jpg", // FIRE 最強の早期リタイア術
+  "4822244571": "https://tshop.r10s.jp/book/cabinet/8222/82224457.jpg", // 株式投資の未来
+};
+
 function renderProductCard(fields: Record<string, string>): string {
   const title = escapeHtml(fields.title ?? "");
   const description = escapeHtml(fields.description ?? "");
-  const image = escapeHtml(fields.image ?? "");
+  const image = escapeHtml(fields.image ?? BOOK_COVERS[fields.amazon ?? ""] ?? "");
   const amazonUrl = fields.amazon ? buildAmazonUrl(fields.amazon) : "";
   const rakutenUrl = fields.rakuten ? buildRakutenUrl(fields.rakuten) : "";
 
@@ -267,10 +280,13 @@ function renderProductCard(fields: Record<string, string>): string {
     );
   }
 
-  // 書影がない場合は本の背表紙風プレースホルダー（Amazonの商品画像は
-  // 公式ツール経由でないと利用できないため、自前のデザインで代替する）
+  // 楽天の商品画像は楽天リンクとセットで使う（規約上そうなっている）。
+  // 書影が無い本は背表紙風プレースホルダーでしのぐ。
+  const imgTag = `<img src="${image}" alt="${title}" loading="lazy" />`;
   const imgHtml = image
-    ? `<div class="aff-card-img"><img src="${image}" alt="${title}" loading="lazy" /></div>`
+    ? image.startsWith("http") && rakutenUrl
+      ? `<a class="aff-card-img" href="${rakutenUrl}" target="_blank" rel="nofollow sponsored noopener">${imgTag}</a>`
+      : `<div class="aff-card-img">${imgTag}</div>`
     : `<div class="aff-card-img aff-card-img-placeholder" aria-hidden="true"><span>📖</span></div>`;
 
   return `<div class="aff-card" data-aff="product">

@@ -526,7 +526,6 @@ iDeCoについては、会社員時代の企業型DCを移管したものをS&P5
 
 :::product
 title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-image: /images/books/okane-no-daigaku.jpg
 amazon: 4023318787
 rakuten: rb:18041936
 description: フリーランスの「稼ぐ・貯める・守る」を網羅した王道入門書。サイドFIRE達成までの道のりを描く土台になる1冊。

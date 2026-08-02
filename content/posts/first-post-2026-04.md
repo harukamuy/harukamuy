@@ -453,7 +453,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 
 :::product
 title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-image: /images/books/okane-no-daigaku.jpg
 amazon: 4023318787
 rakuten: rb:18041936
 description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力を1冊で。サイドFIREの土台作りに最適なロングセラー。

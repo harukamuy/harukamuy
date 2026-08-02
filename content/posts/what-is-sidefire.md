@@ -218,7 +218,6 @@ S&P500はコロナショックのとき、一時3割を超えて下落した。�
 
 :::product
 title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-image: /images/books/okane-no-daigaku.jpg
 amazon: 4023318787
 rakuten: rb:18041936
 description: FIRE・サイドFIREの大前提となる「お金の5つの力」をマンガで網羅。読んでから始めると遠回りせずに済みます。

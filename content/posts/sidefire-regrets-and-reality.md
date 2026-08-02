@@ -297,7 +297,6 @@ tags: ["サイドFIRE"]
 
 :::product
 title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-image: /images/books/okane-no-daigaku.jpg
 amazon: 4023318787
 rakuten: rb:18041936
 description: FIREを目指すなら「お金との付き合い方」をまず固める。準備不足で後悔しないための土台が、この1冊に詰まっています。

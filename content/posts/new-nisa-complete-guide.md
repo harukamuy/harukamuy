@@ -431,7 +431,6 @@ NISA満額は通過点で、本当のゴールは **自由の土台、選択の�
 
 :::product
 title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-image: /images/books/okane-no-daigaku.jpg
 amazon: 4023318787
 rakuten: rb:18041936
 description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力をまるごと学べる1冊。新NISAを始める前後で、お金の全体像をつかむのに最適です。
