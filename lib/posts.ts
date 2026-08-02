@@ -267,9 +267,11 @@ function renderProductCard(fields: Record<string, string>): string {
     );
   }
 
+  // 書影がない場合は本の背表紙風プレースホルダー（Amazonの商品画像は
+  // 公式ツール経由でないと利用できないため、自前のデザインで代替する）
   const imgHtml = image
     ? `<div class="aff-card-img"><img src="${image}" alt="${title}" loading="lazy" /></div>`
-    : `<div class="aff-card-img aff-card-img-placeholder"><span>No Image</span></div>`;
+    : `<div class="aff-card-img aff-card-img-placeholder" aria-hidden="true"><span>📖</span></div>`;
 
   return `<div class="aff-card" data-aff="product">
   <span class="aff-pr-badge">広告</span>

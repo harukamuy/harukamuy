@@ -195,6 +195,15 @@ tags: ["iDeCo", "年金", "ニュース解説"]
 
 ---
 
+:::cta
+title: SBI証券 — インデックスも高配当株も、これ1つで
+description: オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 - 厚労省が **2027年度にもiDeCoへの金融機関の商品推奨・助言を解禁** する検討へ(2026年秋に有識者検討会、企業型DCも対象の方向)
@@ -249,10 +258,3 @@ tags: ["iDeCo", "年金", "ニュース解説"]
 - [好きな高配当ETF『HDV』が毎月分配に。その理由を調べてみた](/blog/hdv-monthly-distribution-nisa)
 - [株主総会のハガキをずっと捨てているわたしが、個人株主の『1票の見える化』を調べてみた](/blog/minority-shareholder-vote)
 - [新NISA 1,800万円を10年で埋める。34歳フリーランスのリアル戦略](/blog/new-nisa-1800-strategy)
-
-:::cta
-title: SBI証券 — インデックスも高配当株も、これ1つで
-description: オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

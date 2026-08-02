@@ -268,6 +268,15 @@ button: SBI証券の公式サイトを見る →
 url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 :::
 
+### 📚 「指数に任せる」を腹落ちさせたい人に
+
+:::product
+title: 敗者のゲーム［原著第8版］（チャールズ・エリス）
+amazon: 4532359112
+rakuten: rb:16973485
+description: 話題の銘柄を追いかけなくても、指数に任せておけばちゃんと乗れる。その理由を数字で説明してくれる古典です。スペースXのような大型IPOのニュースに心が動いたときこそ読み返したくなります。
+:::
+
 ---
 
 <div class="summary-box">

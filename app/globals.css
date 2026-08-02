@@ -573,9 +573,10 @@ body::before {
 }
 
 .aff-card-img-placeholder {
-  color: var(--brown-3);
-  font-size: 11px;
-  letter-spacing: 0.1em;
+  font-size: 30px;
+  background: linear-gradient(135deg, #f3ebdc 0%, #e8dcc6 100%);
+  border: 1px solid var(--beige, #e0d5c0);
+  box-shadow: inset 3px 0 0 rgba(168, 112, 90, 0.25);
 }
 
 .aff-card-body {
