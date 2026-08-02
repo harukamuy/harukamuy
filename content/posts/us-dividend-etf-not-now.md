@@ -223,6 +223,16 @@ VYM・SPYD・HDVは**ETF自体は素晴らしい銘柄**。長期保有すれば
 
 ---
 
+### 📚 配当を軸に長期で持つ意味を知りたい人に
+
+:::product
+title: 株式投資の未来（ジェレミー・シーゲル）
+amazon: 4822244571
+description: 派手な成長株より、地味でも配当を出し続ける会社のほうが長期リターンで上回ってきた。その検証が延々と続く一冊です。米国高配当ETFを「いつ買うか」を考えるときの、判断のものさしになります。
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
