@@ -62,3 +62,6 @@ public/images/*.png
 
 # インスタ用スライド（ローカル生成物。サイトのビルドには不要）
 /instagram/
+
+# Claude Code の個人設定（このパソコン専用。共有しない）
+.claude/settings.local.json
