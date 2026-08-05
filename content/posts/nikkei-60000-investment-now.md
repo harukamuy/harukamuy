@@ -479,7 +479,7 @@ tags: ["市場の話", "インデックス投資"]
 - [サイドFIRE達成のごあいさつ](/blog/first-post-2026-04)
 - [貯金500万→5,463万までの8年](/blog/30s-single-woman-asset-roadmap)
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [投資を始めた2018年](/blog/investment-start-2018)
 
 :::cta

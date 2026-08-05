@@ -285,7 +285,7 @@ iDeCoについては、会社員時代の企業型DCを移管したものをS&P5
     📖 <strong>もっと詳しく：</strong><br>
     <a href="/blog/new-nisa-complete-guide">新NISA完全ガイド。34歳フリーランスのわたしが、1,800万円を10年で埋める道筋を全部書きます</a><br>
     <a href="/blog/new-nisa-1800-strategy">新NISA 1,800万円を10年で埋める。34歳フリーランスのリアル戦略</a><br>
-    <a href="/blog/orukan-vs-sp500-real">オルカン vs S&P500。両方積み立てているわたしの結論「初心者ならオルカン」</a><br>
+    <a href="/blog/orukan-vs-sp500-real">オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」</a><br>
     <a href="/blog/ideco-transfer-from-dc">iDeCoへの移管。企業型DCから手続きした話と、放置すると損する理由</a><br>
     <a href="/blog/high-dividend-portfolio">わたしの高配当株。三菱商事・東京海上・JT・ホンダを選んだ理由</a><br>
     <a href="/blog/dividend-monthly-diversification">毎月配当を受け取るには。日本高配当株の現実と、わたしの配当スケジュール</a>

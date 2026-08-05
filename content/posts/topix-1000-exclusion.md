@@ -271,7 +271,7 @@ TOPIXはいま、大がかりな見直しの最中だ。「日本株ほぼ全部
 - [なぜ、キオクシアは売られたのに株価が上がったの? 気になったので調べてみた](/blog/kioxia-sold-yet-rose)
 - [財務相の一言で、円も株も金利も動いた。GPIFの『国内投資後押し』を調べてみた](/blog/gpif-katayama-domestic-shift)
 - [高配当株の出口戦略。わたしは「売らない」を基本にしている](/blog/high-dividend-exit-strategy)
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 
 :::cta
 title: SBI証券 — インデックスも高配当株も、これ1つで

@@ -247,6 +247,6 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 
 - [BNDを買い増ししている理由。「守り」というより「気休め」](/blog/why-bnd-add-on)
 - [生活防衛資金は300万円。「健康のための備え」だと思っている](/blog/emergency-fund-300)
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [日経平均6万円時代。8年で2万→6万、貯金では追いつかない現実](/blog/nikkei-60000-investment-now)
 

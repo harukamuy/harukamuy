@@ -257,4 +257,4 @@ description: お金で失敗する原因は知識の不足ではなく、感情�
 - [高配当株の出口戦略。わたしは「売らない」を基本にしている](/blog/high-dividend-exit-strategy)
 - [高配当株ポートフォリオ](/blog/high-dividend-portfolio)
 - [ビットコイン、2028年の分離課税まで売らないことにした理由](/blog/bitcoin-2028-separate-tax)
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)

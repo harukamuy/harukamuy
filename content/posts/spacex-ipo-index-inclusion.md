@@ -64,7 +64,7 @@ tags: ["インデックス投資", "市場の話"]
 
 ニュースとしてはそれだけでも大きいけれど、インデックス投資家のわたしが気になったのは別のところ。**わたしが毎月積み立てているオルカンやS&P500に、スペースXはいつ入ってくるのか**。
 
-[前に書いたとおり](/blog/orukan-vs-sp500-real)、わたしはS&P500を8年、オルカンを2年、両方積み立てている。でも考えてみると、新しい会社が指数に「いつ、どうやって入るのか」を、これまできちんと調べたことがなかった。8年も積み立てているのに、だ。今回ちゃんと整理してみたら知らないことだらけで、いい勉強になった。
+[前に書いたとおり](/blog/orukan-vs-sp500-real)、わたしはS&P500を8年、オルカンを2年、両方持っている。でも考えてみると、新しい会社が指数に「いつ、どうやって入るのか」を、これまできちんと調べたことがなかった。8年も持っているのに、だ。今回ちゃんと整理してみたら知らないことだらけで、いい勉強になった。
 
 ---
 
@@ -98,7 +98,7 @@ tags: ["インデックス投資", "市場の話"]
 <div style="background:#faf6f0;border:1.5px solid #e5d8c8;border-radius:12px;padding:14px 18px;margin:26px 0;font-size:13px;line-height:2;">
 <strong style="color:#a8705a;">📌 あわせて読みたい</strong><br>
 <a href="/blog/new-nisa-complete-guide">新NISA完全ガイド。1,800万円を10年で埋める道筋</a><br>
-<a href="/blog/orukan-vs-sp500-real">オルカン vs S&P500。両方積み立てているわたしの結論</a>
+<a href="/blog/orukan-vs-sp500-real">オルカン vs S&P500。両方持っているわたしの結論</a>
 </div>
 
 ---
@@ -293,7 +293,7 @@ description: 市場に勝とうとして動くほど成績が落ちていく。�
 
 ## 関連記事
 
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [わたしのNISA積立設定を公開](/blog/nisa-investment-settings)
 - [新NISA完全ガイド](/blog/new-nisa-complete-guide)
 - [中東ショックで資産が300万円減った話](/blog/middle-east-shock-2026)

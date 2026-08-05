@@ -364,7 +364,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 ## 関連記事
 
 - [円安が止まらない。わたしの資産、円だけで大丈夫?リスクを整理してみた](/blog/yen-only-asset-risk)
-- [オルカン vs S&P500。両方積み立てているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 - [なぜ、トルコの金利は40%もあるの? 高金利通貨のワナを調べてみた](/blog/high-interest-currency-trap)
 - [BNDを買い増ししている理由。「守り」というより「気休め」、それでも持ち続けている債券ETF](/blog/why-bnd-add-on)
 

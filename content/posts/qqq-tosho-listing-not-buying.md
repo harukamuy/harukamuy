@@ -251,7 +251,7 @@ QQQは1999年3月に米国で上場した。せっかくなので **設定来27�
 
 <div style="background:#faf6f0;border:1.5px solid #e5d8c8;border-radius:12px;padding:14px 18px;margin:26px 0;font-size:13px;line-height:2;">
 <strong style="color:#a8705a;">📌 あわせて読みたい</strong><br>
-<a href="/blog/orukan-vs-sp500-real">オルカン vs S&P500。両方積み立てているわたしの結論</a><br>
+<a href="/blog/orukan-vs-sp500-real">オルカン vs S&P500。両方持っているわたしの結論</a><br>
 <a href="/blog/new-nisa-complete-guide">新NISA完全ガイド。1,800万円を10年で埋める道筋</a>
 </div>
 
@@ -380,7 +380,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 
 ## 関連記事
 
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [米国高配当ETFを今は買わない理由](/blog/us-dividend-etf-not-now)
 - [BNDを買い増ししている理由](/blog/why-bnd-add-on)
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)

@@ -276,6 +276,6 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 
 - [貯金500万→5,463万までの8年。34歳フリーランスの資産形成ロードマップ](/blog/30s-single-woman-asset-roadmap)
 - [資産5,806万円のポートフォリオ。構成比・高配当株16銘柄・月別配当を公開](/blog/portfolio-full-disclosure-5806)
-- [オルカン vs S&P500。両方積み立てているわたしの結論](/blog/orukan-vs-sp500-real)
+- [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [新NISA完全ガイド。1,800万円を10年で埋める道筋](/blog/new-nisa-complete-guide)
 - [スペースX上場。オルカン・QQQ・S&P500にはいつ入る？](/blog/spacex-ipo-index-inclusion)
