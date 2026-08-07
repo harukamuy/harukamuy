@@ -32,8 +32,9 @@ import puppeteer from "puppeteer-core";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const W = 1080;
-const H = 1350;
+// 既定はカルーセル用の4:5。リール用は SLIDE_H=1920 で9:16にできる
+const W = Number(process.env.SLIDE_W || 1080);
+const H = Number(process.env.SLIDE_H || 1350);
 
 // 画像はbase64で埋め込む（file://はsetContentしたページから読めないため）
 const dataUri = (p, mime) =>
@@ -41,18 +42,6 @@ const dataUri = (p, mime) =>
 const AZUKI_IMG = dataUri(path.join(ROOT, "public/images/mio-fullbody.webp"), "image/webp");
 const GOMA_IMG = dataUri(path.join(ROOT, "public/images/gomamochi-sit.webp"), "image/webp");
 const LOGO_IMG = dataUri(path.join(ROOT, "public/images/logo.png"), "image/png");
-
-// ---- 入力の解決 ----
-const arg = process.argv[2];
-if (!arg) {
-  console.error("使い方: node scripts/instagram-slides.mjs instagram/<slug>/slides.json");
-  process.exit(1);
-}
-const jsonPath = arg.endsWith(".json")
-  ? path.resolve(ROOT, arg)
-  : path.join(ROOT, "instagram", arg, "slides.json");
-const outDir = path.dirname(jsonPath);
-const spec = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
 
 // ---- HTML部品 ----
 const esc = (s = "") =>
@@ -304,6 +293,28 @@ function slideDocument(slide, i, total) {
   </body></html>`;
 }
 
+// 動画版（instagram-reel.mjs）から使えるように公開する
+export { slideDocument, W, H, CHROME, ROOT };
+
+// ---- ここから下は「直接実行されたとき」だけ動く ----
+const isMain =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isMain) {
+
+// ---- 入力の解決 ----
+const arg = process.argv[2];
+if (!arg) {
+  console.error("使い方: node scripts/instagram-slides.mjs instagram/<slug>/slides.json");
+  process.exit(1);
+}
+const jsonPath = arg.endsWith(".json")
+  ? path.resolve(ROOT, arg)
+  : path.join(ROOT, "instagram", arg, "slides.json");
+const outDir = path.dirname(jsonPath);
+const spec = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
+
 // ---- レンダリング ----
 const browser = await puppeteer.launch({
   executablePath: CHROME,
@@ -338,3 +349,5 @@ try {
 } finally {
   await browser.close();
 }
+
+} // isMain
