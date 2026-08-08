@@ -821,3 +821,22 @@ body::before {
     gap: 10px;
   }
 }
+
+/* 記事本文の h3
+   これまで文字サイズが少し変わるだけで、h2 との区別がつきにくかった。
+   左に細いラインを立てて、話が切り替わったことが目で分かるようにする。 */
+.prose h3 {
+  position: relative;
+  padding-left: 14px;
+  margin-top: 2.4em;
+}
+.prose h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 4px;
+  border-radius: 2px;
+  background: #c0704a;
+}
