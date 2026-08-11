@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import ShareButtons from "@/components/ShareButtons";
 import { latestStats } from "@/components/sidefireData";
+import ogSizes from "@/lib/og-sizes.json";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,19 +18,29 @@ const SITE_URL = "https://harukamuy.com";
 const toIsoJst = (d: string) =>
   /^\d{4}-\d{2}-\d{2}$/.test(d) ? `${d}T00:00:00+09:00` : d;
 
-// OGP用の軽量JPG（scripts/make-og-images.mjs が public/images/og/ に生成）。
+// OGP用の軽量JPG（scripts/optimize-images.mjs が public/images/og/ に生成）。
 // X や LINE は大きい画像・WebPだとカードに画像を出さないことがあるため。
-function ogImageUrl(coverImage?: string): string {
-  if (!coverImage) return `${SITE_URL}/images/harukamuy-ogp.jpg`;
+//
+// width / height は og-sizes.json（同スクリプトが実物から書き出す）を使う。
+// 決め打ちにすると実物とズレて、X がカードに画像を出さないことがある。
+function ogImage(coverImage?: string): { url: string; width: number; height: number } {
+  if (!coverImage) {
+    return { url: `${SITE_URL}/images/harukamuy-ogp.jpg`, width: 1200, height: 630 };
+  }
   const base = coverImage.replace(/^\/images\//, "").replace(/\.[a-z]+$/i, "");
-  return `${SITE_URL}/images/og/${base}.jpg`;
+  const size = (ogSizes as Record<string, { w: number; h: number }>)[base];
+  return {
+    url: `${SITE_URL}/images/og/${base}.jpg`,
+    width: size?.w ?? 1200,
+    height: size?.h ?? 630,
+  };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
-  const ogImage = ogImageUrl(post.coverImage);
+  const og = ogImage(post.coverImage);
   return {
     title: post.title,
     description: post.excerpt,
@@ -42,13 +53,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: toIsoJst(post.date),
       modifiedTime: toIsoJst(post.updated ?? post.date),
       authors: ["あずき"],
-      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
+      images: [{ url: og.url, width: og.width, height: og.height, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [ogImage],
+      images: [og.url],
     },
   };
 }
@@ -94,14 +105,14 @@ export default async function PostPage({ params }: Props) {
 
   const relatedThumbColors = ["#d4957e", "#d4a898", "#7a9e96", "#8fa87f"];
 
-  const ogImage = ogImageUrl(post.coverImage);
+  const og = ogImage(post.coverImage);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: ogImage,
+    image: og.url,
     datePublished: toIsoJst(post.date),
     dateModified: toIsoJst(post.updated ?? post.date),
     author: {

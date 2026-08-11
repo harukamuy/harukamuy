@@ -9,13 +9,18 @@
 // （元画像が .png / .jpg / .webp のいずれでも動く）
 
 import sharp from "sharp";
-import { readdirSync, readFileSync, existsSync, mkdirSync, statSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync, mkdirSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
 const postsDir = join(root, "content/posts");
 const imagesDir = join(root, "public/images");
 const ogDir = join(imagesDir, "og");
+// OGP画像の実寸を書き出す先。og:image:width / height をここから読むことで、
+// 宣言値と実物のズレ（Xがカードを描けない原因になる）を防ぐ。
+const sizesPath = join(root, "lib/og-sizes.json");
+// 1200×630に合わせたとき、余白を埋める色（ブログのアイボリー）
+const OG_BG = { r: 243, g: 235, b: 220 };
 
 if (!existsSync(ogDir)) mkdirSync(ogDir, { recursive: true });
 
@@ -67,10 +72,18 @@ for (const cover of covers) {
     webpMade++;
   }
 
-  // OGP用JPG（横1200px・軽量。SNSカードは小さく表示されるので品質68で十分）
+  // OGP用JPG（1200×630ちょうど・軽量。SNSカードは小さく表示されるので品質68で十分）
+  //
+  // サイズを固定するのは、X が og:image:width / height の宣言値をもとにカードを
+  // 組むため。実物とズレると画像を出さないことがある。1200×630 は X / Facebook /
+  // LINE 共通の標準サイズ。
+  //
+  // fit: "contain" にしているのは、元画像が正方形や縦長のときに人物の頭が
+  // 切れるのを避けるため。余った部分はブログの背景色で埋める。
   if (isStale(ogPath, src)) {
     await sharp(src)
-      .resize(1200, null, { withoutEnlargement: true })
+      .resize(1200, 630, { fit: "contain", background: OG_BG })
+      .flatten({ background: OG_BG })
       .jpeg({ quality: 68, mozjpeg: true })
       .toFile(ogPath);
     console.log(`  ✓ og/${base}.jpg`);
@@ -80,6 +93,16 @@ for (const cover of covers) {
   }
 }
 
+// 生成済みのOGP画像すべての実寸を記録する（スキップしたものも含めて毎回作り直す）
+const sizes = {};
+for (const file of readdirSync(ogDir)) {
+  if (!file.endsWith(".jpg")) continue;
+  const { width, height } = await sharp(join(ogDir, file)).metadata();
+  if (width && height) sizes[file.replace(/\.jpg$/, "")] = { w: width, h: height };
+}
+writeFileSync(sizesPath, JSON.stringify(sizes, null, 0) + "\n");
+
 console.log(
   `\n画像最適化: WebP ${webpMade}件 / OGP ${ogMade}件 / 最新のためスキップ ${skipped}件 / 元画像なし ${missing}件`
 );
+console.log(`OGP実寸を記録: ${Object.keys(sizes).length}件 → lib/og-sizes.json`);
