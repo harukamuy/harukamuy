@@ -4,7 +4,10 @@ import { Snapshot, totalOf } from "./sidefireData";
 
 const SEGMENTS = [
   { key: "index"   as const, label: "オルカン・S&P500（投資信託＋iDeCo）", color: "#5e7252" },
-  { key: "highDiv" as const, label: "高配当株＋BND（米国債券ETF）",        color: "#8aaa7a" },
+  { key: "highDiv" as const, label: "日本の高配当株",                     color: "#8aaa7a" },
+  // 外国ぶんだけ寒色にして「日本株ではない」と一目で分かるようにする
+  // （色覚特性のある方でも他の4色と区別できることを scripts/check-colors.mjs で確認済み）
+  { key: "foreign" as const, label: "BND・外国ETF（米国債券ほか）",         color: "#6d8fa6" },
   { key: "btc"     as const, label: "ビットコイン（0.1BTC）",              color: "#c4674a" },
   { key: "cash"    as const, label: "現金",                               color: "#d5c3a8" },
 ];
@@ -126,7 +129,7 @@ export default function MonthlyAssetTracker({ snapshots, selectedIdx, onSelect }
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
           <thead>
             <tr>
-              {["月", "総資産", "インデックス", "高配当株＋BND", "現金", "BTC", "年間配当想定"].map((h) => (
+              {["月", "総資産", "インデックス", "日本の高配当株", "BND・外国ETF", "現金", "BTC", "年間配当想定"].map((h) => (
                 <th
                   key={h}
                   style={{
@@ -185,7 +188,7 @@ export default function MonthlyAssetTracker({ snapshots, selectedIdx, onSelect }
                     </span>
                     <Unit />
                   </td>
-                  {([r.index, r.highDiv, r.cash, r.btc] as number[]).map((val, ci) => (
+                  {([r.index, r.highDiv, r.foreign, r.cash, r.btc] as number[]).map((val, ci) => (
                     <td key={ci} style={tdStyle}>
                       <span style={{ fontWeight: 500, color: "var(--brown-2)" }}>{fmt(val)}</span>
                       <Unit />

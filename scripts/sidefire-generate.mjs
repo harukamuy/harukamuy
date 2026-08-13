@@ -58,7 +58,8 @@ async function btcManYen() {
 }
 
 const index = man(fundVal) + manual.ideco_man; // インデックス＋iDeCo
-const highDiv = man(stockVal) + man(foreignVal); // 国内株＋外国ETF
+const highDiv = man(stockVal);      // 日本の高配当株
+const foreignMan = man(foreignVal); // BND＋外国ETF
 const cash = manual.cash_man;
 const btc = await btcManYen();
 
@@ -70,7 +71,7 @@ const preTaxAnnual = buildMonthly(CSV, { afterTax: false }).reduce((a, b) => a +
 const yieldPct = (preTaxAnnual / (stockCost + foreignCost)) * 100;
 
 // ── 出力 ──
-const total = index + highDiv + cash + btc;
+const total = index + highDiv + foreignMan + cash + btc;
 const afterTaxAnnual = dividendForecast.reduce((a, b) => a + b, 0);
 
 const snapshot = `  {
@@ -78,6 +79,7 @@ const snapshot = `  {
     monthNum: ${manual.monthNum},
     index: ${index},
     highDiv: ${highDiv},
+    foreign: ${foreignMan},
     cash: ${cash},
     btc: ${btc},
     dividendForecast: [${dividendForecast.join(", ")}],
@@ -87,7 +89,8 @@ const snapshot = `  {
 console.log("\n══════════ ${manual.month} サマリー ══════════".replace("${manual.month}", manual.month));
 console.log(`  総資産        : ${total.toLocaleString("ja-JP")} 万円`);
 console.log(`    ├ インデックス: ${index} 万円（投信 ${man(fundVal)} + iDeCo ${manual.ideco_man}）`);
-console.log(`    ├ 高配当株+BND: ${highDiv} 万円（国内株 ${man(stockVal)} + 外国ETF ${man(foreignVal)}）`);
+console.log(`    ├ 日本の高配当株: ${highDiv} 万円`);
+console.log(`    ├ BND・外国ETF : ${foreignMan} 万円`);
 console.log(`    ├ 現金        : ${cash} 万円`);
 console.log(`    └ BTC         : ${btc} 万円`);
 console.log(`  年間配当(税引前): ${Math.round(preTaxAnnual).toLocaleString("ja-JP")} 円`);

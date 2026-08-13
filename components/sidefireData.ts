@@ -9,15 +9,17 @@ export type Snapshot = {
   monthNum: number;
   /** インデックス（オルカン・S&P500・iDeCo合算）万円 */
   index: number;
-  /** 高配当株＋BND（米国債券ETF） 万円 */
+  /** 日本の高配当株 万円 */
   highDiv: number;
+  /** BND（米国債券ETF）＋外国ETF 万円 */
+  foreign: number;
   /** 現金 万円 */
   cash: number;
   /** ビットコイン 万円 */
   btc: number;
   /** その時点での「12ヶ月の年間配当想定」円（1月〜12月の順、BND込み） */
   dividendForecast: number[];
-  /** 配当利回り(%) ※高配当株部分（BND除く）に対する利回り */
+  /** 配当利回り(%) ※取得金額に対する年間配当（税引前）*/
   dividendYieldPct: number;
 };
 
@@ -26,7 +28,8 @@ export const SNAPSHOTS: Snapshot[] = [
     month: "2026年3月末",
     monthNum: 3,
     index: 3582,
-    highDiv: 1482,
+    highDiv: 1166,
+    foreign: 316,
     cash: 300,
     btc: 120,
     //                  1月 2月    3月     4月   5月     6月      7月   8月     9月     10月   11月    12月
@@ -37,7 +40,8 @@ export const SNAPSHOTS: Snapshot[] = [
     month: "2026年4月末",
     monthNum: 4,
     index: 3669,
-    highDiv: 1471,
+    highDiv: 1155,
+    foreign: 316,
     cash: 300,
     btc: 120,
     //                  1月 2月    3月     4月   5月     6月      7月   8月     9月     10月   11月    12月
@@ -48,7 +52,8 @@ export const SNAPSHOTS: Snapshot[] = [
     month: "2026年5月末",
     monthNum: 5,
     index: 3823,
-    highDiv: 1565,
+    highDiv: 1249,
+    foreign: 316,
     cash: 300,
     btc: 118,
     //                  1月 2月    3月     4月   5月     6月       7月   8月     9月     10月   11月    12月
@@ -59,7 +64,8 @@ export const SNAPSHOTS: Snapshot[] = [
     month: "2026年6月末",
     monthNum: 6,
     index: 3839,
-    highDiv: 1575,
+    highDiv: 1252,
+    foreign: 323,
     cash: 300,
     btc: 95,
     //                  1月 2月    3月     4月   5月     6月       7月   8月     9月     10月   11月    12月
@@ -70,7 +76,8 @@ export const SNAPSHOTS: Snapshot[] = [
     month: "2026年7月末",
     monthNum: 7,
     index: 3794,
-    highDiv: 1638,
+    highDiv: 1315,
+    foreign: 323,
     cash: 300,
     btc: 99,
     //                  1月 2月    3月     4月   5月     6月       7月   8月     9月     10月   11月    12月
@@ -84,7 +91,7 @@ export const SNAPSHOTS: Snapshot[] = [
 // ═══════════════════════════════════════════════════════════════════
 
 export function totalOf(s: Snapshot): number {
-  return s.index + s.highDiv + s.cash + s.btc;
+  return s.index + s.highDiv + s.foreign + s.cash + s.btc;
 }
 
 export function dividendTotalOf(s: Snapshot): number {
