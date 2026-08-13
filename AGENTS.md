@@ -54,3 +54,36 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 1枚目はフック（cover）、最後はブログ誘導（cta）。資産公開記事は stat / breakdown 型が使える
 - 投稿文の末尾に投資の免責ひとことを入れる
 - 実行には Google Chrome（puppeteer-core が起動）と Google Fonts への接続が必要
+
+# サイドFIREの月次データ更新
+
+`/sidefire` ページの数字は、証券CSVから毎月つくり直す。
+**手順の本体は `data/sidefire/README.md`**（Git除外なのでローカルにだけある）。必ずそれを読むこと。
+
+毎月やることは、ざっくり2本のスクリプトを走らせるだけ。
+
+```bash
+node scripts/sidefire-generate.mjs   # 資産・配当  → components/sidefireData.ts に手で貼る
+node scripts/sidefire-sectors.mjs    # 業種別・リスク → components/sidefireSectorData.ts を自動で書き換える
+```
+
+- **入力は `data/` 配下（Git除外）**。証券CSV・業種マップ・配当マスタが入っている
+- **出力は `components/` 配下（コミットする）**。集計値だけで、個別銘柄名や保有株数は含まれない
+- `sidefire-sectors.mjs` は未知の銘柄コードがあると止まる。そのときはスクリプト冒頭のコメントに
+  JPXの銘柄一覧から業種マップを更新する手順が書いてある
+- 表示側は `components/SideFireSectors.tsx`。**データ側と大文字小文字だけ違う名前にしない**
+  （macOSはファイル名の大小を区別しないので、import が壊れる）
+
+## 業種の分け方
+
+- 業種はJPX「東証上場銘柄一覧」の33業種・17業種をそのまま使う（自分で分類しない）
+- 表示は17業種ベース。ただし景気敏感とディフェンシブが混ざる区分だけ33業種まで分ける
+- ディフェンシブの定義は `scripts/sidefire-sectors.mjs` の `DEFENSIVE_33` にある
+- ETF（業種区分が「-」）は中身のテーマで振り分ける（例: 1343→不動産業、1615→銀行業）
+
+## 色を変えるとき
+
+景気敏感／ディフェンシブの2色は、色覚特性のある方でも見分けられるか検証して選んでいる。
+**目視で決めないこと。** サイトの `--green` と `--terra` は一見よさそうに見えて、
+実際は protan で ΔE 3.3 しかなく区別できない（いまは `--terra-lt` を使って ΔE 17.7）。
+色を変えるなら dataviz スキルの `scripts/validate_palette.js` にかけ直す。

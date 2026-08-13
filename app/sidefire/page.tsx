@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
 import SideFireInteractive from "@/components/SideFireInteractive";
+import SideFireSectors from "@/components/SideFireSectors";
 import { latestStats } from "@/components/sidefireData";
 
 export const metadata: Metadata = {
@@ -90,6 +91,15 @@ export default function SideFirePage() {
             <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Portfolio / Monthly Asset Log</div>
           </div>
           <SideFireInteractive />
+        </div>
+
+        {/* ── SECTORS（日本の高配当株の中身） ── */}
+        <div style={{ marginBottom: 56 }}>
+          <div style={{ marginBottom: 24 }}>
+            <div style={{ fontSize: 20, fontWeight: 700, color: "var(--brown)" }}>日本の高配当株、その中身</div>
+            <div style={{ fontFamily: "var(--font-hand)", fontSize: 14, color: "var(--brown-3)" }}>Sectors &amp; Risk</div>
+          </div>
+          <SideFireSectors />
         </div>
 
         {/* ── STRATEGY ── */}

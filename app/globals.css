@@ -426,6 +426,7 @@ body::before {
   .profile-duo-grid   { grid-template-columns: 1fr !important; }
   .two-col-grid       { grid-template-columns: 1fr !important; }
   .three-col-grid     { grid-template-columns: 1fr 1fr !important; }
+  .sidefire-stat-grid { gap: 8px !important; }
   .hero-nums-grid     { grid-template-columns: 1fr 1fr !important; }
   .portfolio-wrap-grid{ grid-template-columns: 1fr !important; }
   .donut-wrap { margin: 0 auto; }
