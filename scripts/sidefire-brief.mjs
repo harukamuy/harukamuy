@@ -14,13 +14,31 @@
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { parseHoldingsCsv } from "./sidefire-parse-csv.mjs";
+import { compareWithPrev, archiveCurrent } from "./sidefire-compare.mjs";
 
 const FAST = process.argv.includes("--fast");
 const CSV = "data/sidefire/input/holdings.csv";
 
+// ── 買い増しルール（ここだけ直せば基準を変えられる）──
+const RULE = {
+  yieldMin: 3.5,    // これ未満は買わない（方針の「3.5〜4%中心」より）
+  yieldMax: 6.0,    // これ超は「市場が減配を予想している」とみなして除外
+  maxWeight: 3.0,   // 1銘柄が全体のこの%を超えたら買い増さない
+  maxSector: 10.0,  // その業種が全体のこの%を超えていたら買い増さない
+  minNoCut: 5,      // 何年連続で減配していなければ買ってよいか（実績ベース）
+};
+
 const { map: SEC } = JSON.parse(readFileSync("data/sidefire/sectors.json", "utf8"));
 const master = JSON.parse(readFileSync("data/sidefire/dividend-master.json", "utf8"));
 const manual = JSON.parse(readFileSync("data/sidefire/manual.json", "utf8"));
+const divPolicy = existsSync("data/sidefire/dividend-policy.json")
+  ? JSON.parse(readFileSync("data/sidefire/dividend-policy.json", "utf8"))
+  : { stable: {}, watch: {} };
+// 配当の実績（sidefire-dividend-history.mjs が作る。なくても動く）
+const HIST = existsSync("data/sidefire/dividend-history.json")
+  ? JSON.parse(readFileSync("data/sidefire/dividend-history.json", "utf8"))
+  : { data: {}, _生成: null };
+const hist = HIST.data || {};
 
 // ディフェンシブの定義は sidefire-sectors.mjs と揃えている
 const DEFENSIVE_33 = new Set([
@@ -192,13 +210,77 @@ if (!FAST) {
   ].join("\n");
 }
 
+// ── 配当の減りにくさ（dividend-policy.json）──
+const stableCodes = codes.filter((c) => divPolicy.stable?.[c]);
+const watchCodes = codes.filter((c) => divPolicy.watch?.[c]);
+const stableValue = stableCodes.reduce((s, c) => s + pos[c].value, 0);
+const watchValue = watchCodes.reduce((s, c) => s + pos[c].value, 0);
+
+// 実績ベースの減配耐性（dividend-history.json より）
+const vOf = (list) => list.reduce((s, c) => s + pos[c].value, 0);
+const band = (lo, hi) => codes.filter((c) => hist[c] && hist[c].noCut >= lo && hist[c].noCut < hi);
+const noHist = codes.filter((c) => !hist[c]);
+const recentCut = codes.filter((c) => hist[c] && hist[c].noCut === 0);
+const covidOk = codes.filter((c) => hist[c]?.covid === "減配なし");
+const covidCut = codes.filter((c) => hist[c]?.covid === "減配あり");
+const HIST_BANDS = [
+  ["15年以上", 15, 99], ["10〜14年", 10, 15], ["5〜9年", 5, 10],
+  ["1〜4年", 1, 5], ["直近で減配・据え置き", 0, 1],
+];
+
+// ── 前月との比較（分割補正込み）──
+const stamp = `${manual.month.slice(0, 4)}-${String(manual.monthNum).padStart(2, "0")}`;
+const cmp = compareWithPrev(pos, stamp);
+const cmpByCode = Object.fromEntries(cmp.rows.map((r) => [r.code, r]));
+
+// ── 買い増し候補の絞り込み ──
+// 「①前月より下がった ②利回りが帯に入る ③減配リスク ④業種が厚すぎない ⑤1銘柄が大きすぎない」
+// を順に当てはめ、落ちた理由も残す（なぜ候補が0件なのかが分かるように）。
+const sectorPct = (s) => (bySector[s].value / total) * 100;
+const screened = [];
+for (const c of codes) {
+  const p = pos[c];
+  const r = cmpByCode[c];
+  const w = (p.value / total) * 100;
+  const reject = [];
+
+  if (!cmp.available) reject.push("前月データなし");
+  else if (r?.isNew) reject.push("先月は保有なし");
+  else if (r == null || r.chgPct >= 0) reject.push("値下がりしていない");
+
+  if (p.yieldNow == null) reject.push("配当データなし");
+  else if (p.yieldNow < RULE.yieldMin) reject.push(`利回り${p1(p.yieldNow)}%が低い`);
+  else if (p.yieldNow > RULE.yieldMax) reject.push(`利回り${p1(p.yieldNow)}%が高すぎ（減配疑い）`);
+
+  if (divPolicy.watch?.[c]) reject.push("減配リスクあり");
+  if (w > RULE.maxWeight) reject.push(`1銘柄で${p1(w)}%（上限${RULE.maxWeight}%）`);
+  if (sectorPct(p.s33) > RULE.maxSector) reject.push(`${p.s33}が${p1(sectorPct(p.s33))}%で厚い`);
+
+  const h = hist[c];
+  if (!h) reject.push("配当の実績データなし");
+  else if (h.noCut < RULE.minNoCut) reject.push(`非減配${h.noCut}年（${RULE.minNoCut}年未満）`);
+
+  if (!reject.length) {
+    screened.push({
+      code: c, name: p.name, s33: p.s33, value: p.value, weight: w,
+      yieldNow: p.yieldNow, chgPct: r.chgPct, h,
+      stable: divPolicy.stable?.[c] || null,
+      nisa: p.yieldNow >= RULE.yieldMin,
+    });
+  }
+}
+// 減配していない年数が長い順 → 同じなら下がり幅の大きい順
+screened.sort((a, b) => b.h.noCut - a.h.noCut || a.chgPct - b.chgPct);
+
+// 値下がりした銘柄（候補に残らなかったものも含めて全部見せる）
+const fallen = cmp.rows
+  .filter((r) => !r.isNew && r.chgPct < 0)
+  .sort((a, b) => a.chgPct - b.chgPct);
+
 // ── 書き出し ──
 const policy = existsSync("data/sidefire/policy.md")
   ? readFileSync("data/sidefire/policy.md", "utf8").replace(/^# .*\n/, "").trim()
   : "（data/sidefire/policy.md がありません）";
-
-// "2026年7月末" → "2026-07"
-const stamp = `${manual.month.slice(0, 4)}-${String(manual.monthNum).padStart(2, "0")}`;
 
 const md = `# 【非公開】日本の高配当株ポートフォリオ 分析用ブリーフ
 
@@ -290,7 +372,114 @@ ${[[0, 2], [2, 3], [3, 4], [4, 5], [5, 100]].map(([lo, hi]) => {
 
 ---
 
-## 8. 全保有銘柄
+## 8. 配当の減りにくさ（実績ベース・自動集計）
+
+**利回りの高さより、この比率を上げていくのが方針**（policy.md）。
+
+過去20年の配当実績から「何年連続で配当を減らしていないか」を自動計算しています。
+${HIST._生成 ? `データ取得日：${HIST._生成}` : ""}
+会社が言っている方針ではなく、**実際に払った配当の記録**なので、宣言より確かな材料です。
+
+### 非減配年数の分布
+
+| 何年減らしていないか | 金額 | 比率 | 銘柄数 |
+|---|--:|--:|--:|
+${HIST_BANDS.map(([label, lo, hi]) => {
+  const g = band(lo, hi);
+  return `| ${label} | ${man(vOf(g))}万 | ${p1((vOf(g) / total) * 100)}% | ${g.length} |`;
+}).join("\n")}
+${noHist.length ? `| データなし | ${man(vOf(noHist))}万 | ${p1((vOf(noHist) / total) * 100)}% | ${noHist.length} |` : ""}
+
+### コロナ（2019・2020年度）を減配せずに通ったか
+
+| | 金額 | 比率 | 銘柄数 |
+|---|--:|--:|--:|
+| 減配なしで通過 | ${man(vOf(covidOk))}万 | ${p1((vOf(covidOk) / total) * 100)}% | ${covidOk.length} |
+| 減配した | ${man(vOf(covidCut))}万 | ${p1((vOf(covidCut) / total) * 100)}% | ${covidCut.length} |
+
+**これが「不況が来たら配当がいくら減るか」の最も実証的な手がかりです。**
+コロナで減配した銘柄が多いほど、次の不況でも同じことが起きる可能性が高くなります。
+
+### ⚠️ 直近の年度で減配・据え置きだった銘柄（${recentCut.length}件）
+
+${recentCut.length
+  ? `| コード | 銘柄 | 保有額 | 直近5年度の1株配当 | 記念配当疑い |
+|---|---|--:|---|:--:|
+${recentCut.sort((a, b) => pos[b].value - pos[a].value).map((c) => `| ${c} | ${pos[c].name} | ${yen(pos[c].value)}円 | ${hist[c].recent.map((r) => r.div).join(" → ")} | ${hist[c].spike ? "あり" : "－"} |`).join("\n")}
+
+「記念配当疑い＝あり」は、一時的な上乗せが剥がれただけの可能性があります（本当の減配ではない）。
+そうでないものは、**業績が落ちて配当を減らした**可能性を疑ってください。`
+  : "- なし"}
+
+### 「累進配当を宣言している」と登録済みの銘柄（手動・${p1((stableValue / total) * 100)}%）
+
+宣言は数字に出ないので、ここだけ手で登録します（\`dividend-policy.json\`）。
+
+${stableCodes.sort((a, b) => pos[b].value - pos[a].value).map((c) => `- ${c} ${pos[c].name}：${divPolicy.stable[c].type}｜${yen(pos[c].value)}円｜実績は非減配${hist[c] ? hist[c].noCut + "年" + (hist[c].capped ? "以上" : "") : "不明"}`).join("\n") || "- なし"}
+
+### 買い増し候補から自動で外している銘柄
+
+${watchCodes.map((c) => `- ${c} ${pos[c].name}：${divPolicy.watch[c].note}｜${yen(pos[c].value)}円`).join("\n") || "- なし"}
+
+---
+
+## 9. 今月の買い増し候補
+
+${!cmp.available
+  ? `前月（${cmp.prev}）のCSVが \`data/sidefire/archive/\` にないため、比較できませんでした。\n来月からは自動で保存されるので比較できます。`
+  : `前月（${cmp.prev}）末と比べています。**株式分割は補正済み**です。
+
+### 判定に使ったルール
+| 条件 | 基準 |
+|---|---|
+| ① 割安になったか | 前月末より株価が下がっている |
+| ② 利回りの帯 | ${RULE.yieldMin}% 以上 ${RULE.yieldMax}% 以下（高すぎは減配疑いで除外） |
+| ③ 減配していないか | **非減配${RULE.minNoCut}年以上**（実績）＋ \`watch\` 登録は除外 |
+| ④ 業種の厚さ | その業種が ${RULE.maxSector}% を超えていたら除外 |
+| ⑤ 1銘柄の上限 | 全体の ${RULE.maxWeight}% を超えていたら除外 |
+
+### ✅ 5つ全部を満たした銘柄：${screened.length}件
+${screened.length
+  ? `減配していない年数が長い順。
+
+| コード | 銘柄 | 業種 | 前月比 | 利回り | 非減配 | コロナ | 比率 | 置き場所 |
+|---|---|---|--:|--:|--:|:--:|--:|---|
+${screened.map((x) => `| ${x.code} | ${x.name} | ${x.s33} | ${p1(x.chgPct)}% | ${p1(x.yieldNow)}% | ${x.h.noCut}年${x.h.capped ? "以上" : ""} | ${x.h.covid === "減配なし" ? "○" : x.h.covid === "減配あり" ? "×" : "－"} | ${p1(x.weight)}% | ${x.nisa ? "NISA" : "特定"} |`).join("\n")}
+
+「コロナ ×」は2020年前後に減配した実績がある銘柄です。次の不況でも同じことが起きる前提で見てください。
+${screened.some((x) => x.h.spike) ? "\n⚠️ 記念配当の疑いがある銘柄が含まれます：" + screened.filter((x) => x.h.spike).map((x) => x.name).join("、") : ""}`
+  : `該当なしです。**これは失敗ではありません。**
+相場が上がっている月は候補が出ません。その月は買わずに翌月へ繰り越してください。
+（繰り越しは6ヶ月分までを目安に。それを超えたら基準を少し緩めることを検討）`}
+
+### 参考：値下がりした銘柄すべて（${fallen.length}件／${cmp.rows.filter((r) => !r.isNew).length}銘柄中）
+${fallen.length
+  ? `| コード | 銘柄 | 業種 | 前月比 | 利回り | 候補にならなかった理由 |
+|---|---|---|--:|--:|---|
+${fallen.slice(0, 20).map((r) => {
+    const p = pos[r.code];
+    const hit = screened.find((s) => s.code === r.code);
+    let why = "✅ 候補";
+    if (!hit) {
+      const w = (p.value / total) * 100;
+      if (divPolicy.watch?.[r.code]) why = "減配リスクあり";
+      else if (p.yieldNow == null) why = "配当データなし";
+      else if (p.yieldNow < RULE.yieldMin) why = `利回り${p1(p.yieldNow)}%が低い`;
+      else if (p.yieldNow > RULE.yieldMax) why = `利回り${p1(p.yieldNow)}%が高すぎ`;
+      else if (!hist[r.code]) why = "配当の実績データなし";
+      else if (hist[r.code].noCut < RULE.minNoCut) why = `**非減配${hist[r.code].noCut}年**（${RULE.minNoCut}年未満）`;
+      else if (w > RULE.maxWeight) why = `1銘柄で${p1(w)}%`;
+      else why = `${p.s33}が厚い（${p1(sectorPct(p.s33))}%）`;
+    }
+    return `| ${r.code} | ${r.name} | ${p.s33} | ${p1(r.chgPct)}% | ${p.yieldNow == null ? "-" : p1(p.yieldNow) + "%"} | ${why} |`;
+  }).join("\n")}`
+  : "- なし（全銘柄が値上がりしました）"}
+
+${cmp.notes.length ? `### ⚠️ 確認してほしいこと\n${cmp.notes.map((n) => `- ${n}`).join("\n")}` : ""}`}
+
+---
+
+## 10. 全保有銘柄
 
 金額の大きい順。利回りは「今の株価に対する」もの（取得価格ベースではない）。
 
@@ -304,13 +493,16 @@ ${codes.map((c, i) => {
 
 ---
 
-## 9. 分析をお願いしたいこと
+## 11. 分析をお願いしたいこと
 
-1. 業種の偏りをどう見るか。厚すぎる／薄すぎる業種はどれか
-2. 景気敏感 ${p1((cycV / total) * 100)}% ／ ディフェンシブ ${p1((defV / total) * 100)}% のバランスは方針に合っているか
-3. 配当が6月・12月に偏っているのは直すべきか、気にしなくてよいか
-4. 減配リスクが高そうな銘柄が混ざっていないか
-5. 次に買い足すならどの業種か（利回りだけで選ばないために）
+**前提：売却はしません。買い増しだけでバランスを整えていきます。**
+単元未満株を使っているので、1銘柄あたり数千円から調整できます。
+
+1. §9の買い増し候補は妥当か。見落としているリスクはないか
+2. 業種の偏りをどう見るか。厚すぎる／薄すぎる業種はどれか
+3. 景気敏感 ${p1((cycV / total) * 100)}% ／ ディフェンシブ ${p1((defV / total) * 100)}% のバランスは方針に合っているか
+4. コロナで減配した銘柄が ${p1((vOf(covidCut) / total) * 100)}% ある。次の不況にどう備えるか
+5. 配当が6月・12月に偏っているのは直すべきか、気にしなくてよいか
 
 **お願い**：専門用語は避けて平易に。リスクも正直に。
 個別の売買指示ではなく、考え方とバランスの助言をお願いします。
@@ -319,4 +511,19 @@ ${codes.map((c, i) => {
 const out = `data/sidefire/brief-${stamp}.md`;
 writeFileSync(out, md);
 console.log(`\n✅ ${out} に書き出しました（${codes.length}銘柄）`);
-console.log("   ⚠️ 個別銘柄が入っています。公開の場に貼らないでください。\n");
+
+// 次回の比較用に今月のCSVを保存
+const arc = archiveCurrent(CSV, stamp);
+console.log(arc.saved ? `📁 ${arc.dest} に保存（来月の比較用）` : `📁 ${arc.dest} は保存済み`);
+
+if (cmp.available) {
+  console.log(`\n📊 買い増し候補：${screened.length}件（${cmp.prev}比・値下がり${fallen.length}銘柄から絞り込み）`);
+  for (const x of screened.slice(0, 8))
+    console.log(`   ${x.code} ${x.name}（${p1(x.chgPct)}% / 利回り${p1(x.yieldNow)}% / 非減配${x.h.noCut}年${x.h.capped ? "以上" : ""} / コロナ${x.h.covid}）`);
+  if (!screened.length) console.log("   該当なし。今月は見送って繰り越すのが素直です。");
+  for (const n of cmp.notes) console.log(`   ⚠️ ${n.replace(/\*\*/g, "")}`);
+} else {
+  console.log(`\n📊 前月（${cmp.prev}）のCSVがないため比較なし。来月から使えます。`);
+}
+
+console.log("\n   ⚠️ 個別銘柄が入っています。公開の場に貼らないでください。\n");
