@@ -65,7 +65,7 @@ tags: ["高配当株", "日本株", "市場の話"]
       <span>年率リスク</span><span style="text-align:right;white-space:nowrap;">15.0%</span>
     </div>
   </div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">直近242営業日（約1年）の日次データから計算。配当は含まず、値動きだけを見ています。計算に使う日数を変えると、数字も少し変わります。なお117のうち2つは個別株ではなくETF（東証REIT指数・東証銀行業株価指数）で、残る115が個別株です</div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">直近242営業日（約1年）の日次データから計算。配当は含まず、値動きだけを見ています。計算に使う日数を変えると、数字も少し変わります。117のうち2つは、業種まるごとを買うETF（東証REIT指数・東証銀行業株価指数）です</div>
 </div>
 
 この15.0%が何を意味するかというと、1年後の評価額の目安はこうなる。
