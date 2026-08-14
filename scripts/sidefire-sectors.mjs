@@ -72,15 +72,22 @@ const sectors = Object.values(agg)
   .map((s) => ({ ...s, manYen: Math.round(s.value / 10000), pct: +((s.value / total) * 100).toFixed(1) }))
   .sort((a, b) => b.value - a.value);
 
-const split = { cyclical: { manYen: 0, count: 0 }, defensive: { manYen: 0, count: 0 } };
+// 万円は「部分を足すと全体に一致する」ように丸める。
+// 素直に四捨五入すると 978+338=1316（総額1315）となり、読者が足し算すると合わなくなるため、
+// 小さいほうを四捨五入し、大きいほうは差で埋める。
+const split = { cyclical: { yen: 0, count: 0 }, defensive: { yen: 0, count: 0 } };
 for (const c of codes) {
   const b = bucketOf(c);
-  split[b].manYen += pos[c];
+  split[b].yen += pos[c];
   split[b].count += 1;
 }
+const totalMan = Math.round(total / 10000);
+split.defensive.manYen = Math.round(split.defensive.yen / 10000);
+split.cyclical.manYen = totalMan - split.defensive.manYen;
 for (const b of ["cyclical", "defensive"]) {
-  split[b].pct = +((split[b].manYen / total) * 100).toFixed(1);
-  split[b].manYen = Math.round(split[b].manYen / 10000);
+  // ％も、表示する万円から計算した値にそろえる（読者が割り算しても一致する）
+  split[b].pct = +((split[b].manYen / totalMan) * 100).toFixed(1);
+  delete split[b].yen;
 }
 
 // ═══ 4. 年率リスク（直近1年・日次）═══

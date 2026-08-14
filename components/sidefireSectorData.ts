@@ -171,18 +171,18 @@ export const SECTORS: SectorRow[] = [
 /** 景気敏感 / ディフェンシブ の内訳 */
 export const CYCLE_SPLIT = {
   "cyclical": {
-    "manYen": 978,
     "count": 78,
+    "manYen": 977,
     "pct": 74.3
   },
   "defensive": {
-    "manYen": 338,
     "count": 39,
+    "manYen": 338,
     "pct": 25.7
   }
 };
 
-/** 年率リスク（直近1年・日次・242営業日） */
+/** 年率リスク（直近1年・日次・241営業日） */
 export const RISK = {
   /** ポートフォリオ全体の年率リスク（%） */
   annualPct: 14.8,
@@ -193,5 +193,5 @@ export const RISK = {
   /** ふつうの1年の振れ幅（万円・±1σ） */
   swingManYen: 194,
   /** 計算に使った営業日数 */
-  tradingDays: 242,
+  tradingDays: 241,
 };
