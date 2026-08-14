@@ -279,9 +279,16 @@ iDeCoは60歳以降に受け取る。受け取り方は3つある。
 
 ただしこの35年は、<strong>26年間ずっと拠出を続けられたら</strong>の話だ。国民年金の被保険者でなくなれば加入資格は消えるし、4章で書いた保険料の免除でも止まる。それ以前に、<strong>26年は自分で止めない自信を持てるほど短くない</strong>。1年止まれば枠は70万円減る。表の1,850万円は、<strong>うまくいったときの上限</strong>として見てほしい。
 
-その前に、ひとつ安心材料を書いておきたい。<strong>枠をはみ出しても、はみ出した分の全額に課税されるわけではない</strong>。<strong>さらに半分にしてから</strong>税金がかかる。しかも他の所得と合算されないので、税率も上がりにくい。
+その前に、ひとつ安心材料を書いておきたい。
 
-そしてこの「半分」は、<strong>拠出した年数の長さに関係なく使える</strong>。枠のほうは年数で決まるが、半分にする措置は年数と無関係だ。つまり<strong>枠が育っていなくても、そこは平等に効く</strong>。
+<div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🌱 枠をはみ出しても、半分にしてから課税される</div>
+  <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#3a5030;line-height:1.9;">
+    <div><strong>はみ出した分の全額に課税されるわけではない。</strong>さらに半分にしてから税金がかかる。しかも他の所得と合算されないので、税率も上がりにくい。</div>
+    <div><strong>そしてこの「半分」は、拠出した年数の長さに関係なく使える。</strong>枠のほうは年数で決まるが、半分にする措置は年数と無関係だ。つまり<strong>枠が育っていなくても、そこは平等に効く</strong>。</div>
+  </div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">勤続5年以下だと制限がかかりますが、9年拠出していれば関係ありません</div>
+</div>
 
 次の表の税金も、すべて半分にしたあとの金額から計算している。たとえばいちばん上の行は、966万円から枠の360万円を引いた606万円を<strong>半分の303万円にしてから</strong>課税して、51万円になっている。
 
