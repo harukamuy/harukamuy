@@ -26,6 +26,7 @@ const RULE = {
   maxWeight: 3.0,   // 1銘柄が全体のこの%を超えたら買い増さない
   maxSector: 10.0,  // その業種が全体のこの%を超えていたら買い増さない
   minNoCut: 5,      // 何年連続で減配していなければ買ってよいか（実績ベース）
+  listSize: 20,     // 毎月出す候補リストの件数
   // ── バランスの目標（ここを変えると「今月どこを厚くするか」が変わる）──
   targetDrop: 5.0,      // 不況時の配当減少率をここまで下げたい（%）
   targetDefensive: 35,  // ディフェンシブ比率の目標（%）
@@ -273,18 +274,16 @@ function priority(c) {
   return { pt, why: parts.join(" / ") };
 }
 
-// ── バランス上、厚くしたい銘柄（値下がりしているかに関係なく）──
-// 割安待ちの月に「次に安くなったらここ」を決めておくための待機リスト。
-const wishlist = codes
-  .filter((c) => {
-    const p = pos[c], h = hist[c];
-    return h && h.noCut >= 10 && h.covidDrop === 0 &&
-      p.yieldNow >= RULE.yieldMin && p.yieldNow <= RULE.yieldMax &&
-      (p.value / total) * 100 <= RULE.maxWeight &&
-      sectorPct(p.s33) <= RULE.maxSector && !divPolicy.watch?.[c];
-  })
-  .map((c) => ({ c, name: pos[c].name, s33: pos[c].s33, ...priority(c), y: pos[c].yieldNow, w: (pos[c].value / total) * 100, def: pos[c].defensive }))
-  .sort((a, b) => b.pt - a.pt || b.y - a.y);
+// 「買ってよい条件」を満たす銘柄（割安かどうかはここでは見ない）
+const eligible = codes.filter((c) => {
+  const p = pos[c], h = hist[c];
+  if (divPolicy.watch?.[c]) return false;
+  if (p.yieldNow == null || p.yieldNow < RULE.yieldMin || p.yieldNow > RULE.yieldMax) return false;
+  if (!h || h.noCut < RULE.minNoCut) return false;
+  if ((p.value / total) * 100 > RULE.maxWeight) return false;
+  if (sectorPct(p.s33) > RULE.maxSector) return false;
+  return true;
+});
 
 // ── 前月との比較（分割補正込み）──
 const stamp = `${manual.month.slice(0, 4)}-${String(manual.monthNum).padStart(2, "0")}`;
@@ -329,6 +328,25 @@ for (const c of codes) {
 }
 // バランスへの効き（優先度スコア）が高い順 → 同じなら下がり幅の大きい順
 screened.sort((a, b) => b.pt - a.pt || a.chgPct - b.chgPct);
+
+// ── 毎月の候補リスト ──
+// 「安い銘柄」と「厚くしたい銘柄」を1つの表にまとめる。
+// 買ってよい条件を満たすものを優先度で並べ、そのうえで「今月下がったか」を印で出す。
+// 割安かどうかを足切りに使わないのは、下がる月が少なく候補が枯れてしまうため。
+// 買うタイミングの判断（割安を待つ）は、印を見て本人がする。
+const monthly = eligible
+  .map((c) => {
+    const r = cmpByCode[c];
+    const fell = !!r && !r.isNew && r.chgPct < 0;
+    return {
+      c, name: pos[c].name, s33: pos[c].s33, y: pos[c].yieldNow,
+      w: (pos[c].value / total) * 100, def: pos[c].defensive, h: hist[c],
+      chgPct: r && !r.isNew ? r.chgPct : null, fell, ...priority(c),
+    };
+  })
+  .sort((a, b) => b.pt - a.pt || (a.chgPct ?? 99) - (b.chgPct ?? 99))
+  .slice(0, RULE.listSize);
+const buyNow = monthly.filter((x) => x.fell);
 
 // 値下がりした銘柄（候補に残らなかったものも含めて全部見せる）
 const fallen = cmp.rows
@@ -538,46 +556,65 @@ ${[
 
 ---
 
-## 10. 今月の買い増し候補
+## 10. 今月の買い増し候補（上位${monthly.length}銘柄）
 
-${!cmp.available
-  ? `前月（${cmp.prev}）のCSVが \`data/sidefire/archive/\` にないため、比較できませんでした。\n来月からは自動で保存されるので比較できます。`
-  : `前月（${cmp.prev}）末と比べています。**株式分割は補正済み**です。
+**すべて すでに保有している銘柄**です。新しく調べる必要はありません。
+単元未満株なので、この中から数千円ずつ足していけば全体のバランスが整います。
 
-### 判定に使ったルール
+### 買ってよい条件（これを満たすもの＝${eligible.length}銘柄）
+
 | 条件 | 基準 |
 |---|---|
-| ① 割安になったか | 前月末より株価が下がっている |
-| ② 利回りの帯 | ${RULE.yieldMin}% 以上 ${RULE.yieldMax}% 以下（高すぎは減配疑いで除外） |
-| ③ 減配していないか | **非減配${RULE.minNoCut}年以上**（実績）＋ \`watch\` 登録は除外 |
-| ④ 業種の厚さ | その業種が ${RULE.maxSector}% を超えていたら除外 |
-| ⑤ 1銘柄の上限 | 全体の ${RULE.maxWeight}% を超えていたら除外 |
+| 利回りの帯 | ${RULE.yieldMin}% 以上 ${RULE.yieldMax}% 以下（高すぎは減配疑いで除外） |
+| 減配していないか | **非減配${RULE.minNoCut}年以上**（実績）＋ \`watch\` 登録は除外 |
+| 業種の厚さ | その業種が ${RULE.maxSector}% を超えていたら除外 |
+| 1銘柄の上限 | 全体の ${RULE.maxWeight}% を超えていたら除外 |
 
-### ✅ 5つ全部を満たした銘柄：${screened.length}件
-${screened.length
-  ? `**バランスへの効き（優先度）が高い順**。点数の内訳も出しているので、納得できなければ無視してください。
+この${eligible.length}銘柄を**優先度（§9のバランス指標）が高い順**に並べ、上位${monthly.length}件を出しています。
 
-| 優先度 | コード | 銘柄 | 業種 | 前月比 | 利回り | 非減配 | コロナ | 置き場所 |
-|--:|---|---|---|--:|--:|--:|:--:|---|
-${screened.map((x) => `| **${x.pt}点** | ${x.code} | ${x.name} | ${x.s33} | ${p1(x.chgPct)}% | ${p1(x.yieldNow)}% | ${x.h.noCut}年${x.h.capped ? "以上" : ""} | ${x.h.covidDrop === 0 ? "○" : `−${p1(x.h.covidDrop)}%`} | ${x.nisa ? "NISA" : "特定"} |`).join("\n")}
+> **割安かどうかは足切りに使っていません。**
+> 株価が下がる月は少なく、そこで切ると候補が数件まで枯れてしまうためです。
+> 代わりに「今月」列に印を出すので、**買うタイミングはそこで判断**してください。
 
-#### 点数の内訳
-${screened.map((x) => `- **${x.name}（${x.pt}点）**：${x.why || "加点なし"}`).join("\n")}
+### 候補リスト
 
-「コロナ」欄の数字は、2020年前後に**実際に1株配当が何%減ったか**です。
-${screened.some((x) => x.h.spike) ? "\n⚠️ 記念配当の疑いがある銘柄が含まれます：" + screened.filter((x) => x.h.spike).map((x) => x.name).join("、") : ""}`
-  : `該当なしです。**これは失敗ではありません。**
-相場が上がっている月は候補が出ません。その月は買わずに翌月へ繰り越してください。
-（繰り越しは6ヶ月分までを目安に。それを超えたら基準を少し緩めることを検討）`}
+| 今月 | 優先度 | コード | 銘柄 | 業種 | 前月比 | 利回り | 非減配 | コロナ | 性格 |
+|:--:|--:|---|---|---|--:|--:|--:|:--:|---|
+${monthly.map((x) => `| ${x.fell ? "**✅**" : "－"} | **${x.pt}点** | ${x.c} | ${x.name} | ${x.s33} | ${x.chgPct == null ? "－" : p1(x.chgPct) + "%"} | ${p1(x.y)}% | ${x.h.noCut}年${x.h.capped ? "以上" : ""} | ${x.h.covidDrop === 0 ? "○" : `−${p1(x.h.covidDrop)}%`} | ${x.def ? "ディフェンシブ" : "景気敏感"} |`).join("\n")}
 
-### 参考：値下がりした銘柄すべて（${fallen.length}件／${cmp.rows.filter((r) => !r.isNew).length}銘柄中）
-${fallen.length
-  ? `| コード | 銘柄 | 業種 | 前月比 | 利回り | 候補にならなかった理由 |
+**✅ ＝ 前月末より株価が下がっている（いまが買い時）**
+「コロナ」欄は2020年前後に**実際に1株配当が何%減ったか**。○は減らさなかった銘柄です。
+
+${cmp.available
+  ? buyNow.length
+    ? `### いま下がっているのは ${buyNow.length}件
+
+${buyNow.map((x) => `- **${x.name}（${x.pt}点・${p1(x.chgPct)}%）**：${x.why || "加点なし"}`).join("\n")}
+
+この中から優先度の高いものを選べば、割安さとバランスの両方を満たせます。`
+    : `### いま下がっている銘柄はありません
+
+**これは失敗ではありません。** 相場が上がっている月は印がつきません。
+その月は買わずに翌月へ繰り越してください（繰り越しは6ヶ月分までが目安）。
+リストの銘柄が下がるのを待つ、という使い方になります。`
+  : `前月（${cmp.prev}）のCSVが \`data/sidefire/archive/\` にないため、「今月」列は空欄です。
+来月からは自動で保存されるので印がつきます。`}
+
+### 点数の内訳（なぜこの順番か）
+
+${monthly.map((x) => `- **${x.name}（${x.pt}点）**：${x.why || "加点なし"}`).join("\n")}
+
+${monthly.some((x) => x.h.spike) ? `⚠️ 記念配当の疑いがある銘柄：${monthly.filter((x) => x.h.spike).map((x) => x.name).join("、")}\n` : ""}
+${cmp.available && fallen.length ? `### 参考：値下がりした銘柄すべて（${fallen.length}件／${cmp.rows.filter((r) => !r.isNew).length}銘柄中）
+
+候補に入らなかったものは、その理由も出しています。
+
+| コード | 銘柄 | 業種 | 前月比 | 利回り | 候補に入ったか |
 |---|---|---|--:|--:|---|
-${fallen.slice(0, 20).map((r) => {
+${fallen.slice(0, 25).map((r) => {
     const p = pos[r.code];
-    const hit = screened.find((s) => s.code === r.code);
-    let why = "✅ 候補";
+    const hit = monthly.find((s) => s.c === r.code);
+    let why = hit ? `✅ 候補（${hit.pt}点）` : "";
     if (!hit) {
       const w = (p.value / total) * 100;
       if (divPolicy.watch?.[r.code]) why = "減配リスクあり";
@@ -587,28 +624,13 @@ ${fallen.slice(0, 20).map((r) => {
       else if (!hist[r.code]) why = "配当の実績データなし";
       else if (hist[r.code].noCut < RULE.minNoCut) why = `**非減配${hist[r.code].noCut}年**（${RULE.minNoCut}年未満）`;
       else if (w > RULE.maxWeight) why = `1銘柄で${p1(w)}%`;
-      else why = `${p.s33}が厚い（${p1(sectorPct(p.s33))}%）`;
+      else if (sectorPct(p.s33) > RULE.maxSector) why = `${p.s33}が厚い（${p1(sectorPct(p.s33))}%）`;
+      else why = `優先度が${RULE.listSize}位以内に届かず`;
     }
     return `| ${r.code} | ${r.name} | ${p.s33} | ${p1(r.chgPct)}% | ${p.yieldNow == null ? "-" : p1(p.yieldNow) + "%"} | ${why} |`;
-  }).join("\n")}`
-  : "- なし（全銘柄が値上がりしました）"}
+  }).join("\n")}` : ""}
 
-${cmp.notes.length ? `### ⚠️ 確認してほしいこと\n${cmp.notes.map((n) => `- ${n}`).join("\n")}` : ""}`}
-
-### 待機リスト：次に安くなったら買いたい銘柄（${wishlist.length}件）
-
-**値下がりしているかに関係なく**、バランスと品質の両面で厚くしたい銘柄です。
-条件は「非減配10年以上・コロナで減配なし・利回り${RULE.yieldMin}〜${RULE.yieldMax}%・業種${RULE.maxSector}%以内・1銘柄${RULE.maxWeight}%以内」。
-
-**候補が0件の月は、この中から下がったものが出るのを待つ**という使い方をします。
-すべて**すでに保有している銘柄**なので、新しく調べる必要はありません。
-
-${wishlist.length
-  ? `| 優先度 | コード | 銘柄 | 業種 | 利回り | 非減配 | 現在の比率 | 性格 |
-|--:|---|---|---|--:|--:|--:|---|
-${wishlist.slice(0, 15).map((x) => `| **${x.pt}点** | ${x.c} | ${x.name} | ${x.s33} | ${p1(x.y)}% | ${hist[x.c].noCut}年${hist[x.c].capped ? "以上" : ""} | ${p1(x.w)}% | ${x.def ? "ディフェンシブ" : "景気敏感"} |`).join("\n")}
-${wishlist.length > 15 ? `\n（ほか${wishlist.length - 15}件）` : ""}`
-  : "- 該当なし"}
+${cmp.notes.length ? `### ⚠️ 確認してほしいこと\n${cmp.notes.map((n) => `- ${n}`).join("\n")}` : ""}
 
 ---
 
@@ -645,18 +667,30 @@ const out = `data/sidefire/brief-${stamp}.md`;
 writeFileSync(out, md);
 console.log(`\n✅ ${out} に書き出しました（${codes.length}銘柄）`);
 
+// データが古いまま分析していないか警告する。
+// 自動実行では気づけないので、ここで止めずに大きく出す。
+const now = new Date();
+const behind =
+  (now.getFullYear() - +manual.month.slice(0, 4)) * 12 + (now.getMonth() + 1) - manual.monthNum;
+if (behind > 1) {
+  console.log(`\n⚠️⚠️  データが ${behind}ヶ月ぶん古いままです（manual.json は「${manual.month}」）`);
+  console.log(`     証券CSVを ${CSV} に置き換えて、manual.json の month / monthNum を直してください。`);
+  console.log(`     このまま出したレポートは古い保有状況にもとづいています。`);
+}
+
 // 次回の比較用に今月のCSVを保存
 const arc = archiveCurrent(CSV, stamp);
 console.log(arc.saved ? `📁 ${arc.dest} に保存（来月の比較用）` : `📁 ${arc.dest} は保存済み`);
 
+console.log(`\n📊 買い増し候補 上位${monthly.length}銘柄（条件を満たすのは${eligible.length}銘柄）`);
+for (const x of monthly)
+  console.log(`   ${x.fell ? "✅" : "  "} ${String(x.pt).padStart(2)}点 ${x.c} ${x.name}（利回り${p1(x.y)}% / 非減配${x.h.noCut}年${x.h.capped ? "以上" : ""}${x.chgPct == null ? "" : ` / 前月比${p1(x.chgPct)}%`}）`);
+
 if (cmp.available) {
-  console.log(`\n📊 買い増し候補：${screened.length}件（${cmp.prev}比・値下がり${fallen.length}銘柄から絞り込み）`);
-  for (const x of screened.slice(0, 8))
-    console.log(`   ${x.code} ${x.name}（${p1(x.chgPct)}% / 利回り${p1(x.yieldNow)}% / 非減配${x.h.noCut}年${x.h.capped ? "以上" : ""} / コロナ${x.h.covid}）`);
-  if (!screened.length) console.log("   該当なし。今月は見送って繰り越すのが素直です。");
+  console.log(`\n   ✅ = いま下がっている銘柄：${buyNow.length}件${buyNow.length ? "" : "（今月は見送って繰り越すのが素直です）"}`);
   for (const n of cmp.notes) console.log(`   ⚠️ ${n.replace(/\*\*/g, "")}`);
 } else {
-  console.log(`\n📊 前月（${cmp.prev}）のCSVがないため比較なし。来月から使えます。`);
+  console.log(`\n   前月（${cmp.prev}）のCSVがないため「今月下がったか」は判定なし。`);
 }
 
 console.log("\n   ⚠️ 個別銘柄が入っています。公開の場に貼らないでください。\n");
