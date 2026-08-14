@@ -48,6 +48,15 @@ function analyse(events) {
   let years = Object.keys(sum).map(Number).sort((a, b) => a - b);
   if (years.length < 3) return null;
 
+  // 無配の年は「配当イベントが1件もない」ため、そのままだと年度ごと消えてしまう。
+  // 記録の最初と最後のあいだに空いている年は 0円 として埋める。
+  // これをしないと、無配に転落した年（JALの2020年度など）が
+  // 「データなし」になって、いちばん危ない銘柄を見逃す。
+  for (let y = years[0]; y <= years[years.length - 1]; y++) {
+    if (sum[y] == null) { sum[y] = 0; count[y] = 0; }
+  }
+  years = Object.keys(sum).map(Number).sort((a, b) => a - b);
+
   // 直近の年度が「まだ配当が出そろっていない」なら捨てる。
   // 年1回→年2回に変えた会社（例: 6785 鈴木）を誤判定しないよう、
   // 全履歴の最頻値ではなく **直近3年の最大回数** と比べる。
@@ -70,11 +79,16 @@ function analyse(events) {
     if (now > prev + 1e-9) raise++; else break;
   }
 
-  // コロナ（2019・2020年度）を減配せずに通ったか
+  // コロナ（2019・2020年度）を減配せずに通ったか。
+  // 「何%減ったか」まで出す。これが不況時に配当がいくら減るかの実測値になる。
   let covid = "データなし";
-  const c19 = sum[2019], c20 = sum[2020], c18 = sum[2018];
+  let covidDrop = null;
+  const c18 = sum[2018], c19 = sum[2019], c20 = sum[2020];
   if (c18 != null && c19 != null && c20 != null) {
-    covid = c19 >= c18 - 1e-9 && c20 >= c19 - 1e-9 ? "減配なし" : "減配あり";
+    const before = Math.max(c18, c19);            // 不況前のピーク
+    const bottom = Math.min(c19, c20, sum[2021] ?? Infinity); // 底
+    covidDrop = before > 0 ? Math.max(0, (1 - bottom / before) * 100) : 0;
+    covid = covidDrop < 0.01 ? "減配なし" : "減配あり";
   }
 
   // 記念配当の疑い：ある年に5割以上増えて、翌年に減っている
@@ -84,9 +98,14 @@ function analyse(events) {
   }
 
   const recent = years.slice(-5).map((y) => ({ fy: y, div: +sum[y].toFixed(2) }));
+  const series = Object.fromEntries(years.map((y) => [y, +sum[y].toFixed(2)]));
   // 記録が取得できる範囲（20年）を丸ごと使い切っている＝「◯年以上」の意味
   const capped = noCut >= years.length - 1;
-  return { noCut, raise, covid, spike, capped, lastFy: years[years.length - 1], span: years.length, recent };
+  return {
+    noCut, raise, covid,
+    covidDrop: covidDrop == null ? null : +covidDrop.toFixed(1),
+    spike, capped, lastFy: years[years.length - 1], span: years.length, recent, series,
+  };
 }
 
 // ── 実行 ──
@@ -118,6 +137,8 @@ writeFileSync(
       _noCut: "非減配年数。何年連続で配当を減らしていないか。減配リスクを見る主指標",
       _raise: "連続増配年数。据え置きの年があると途切れる",
       _covid: "2019・2020年度（コロナ）を減配せずに通ったか",
+      _covidDrop: "コロナで1株配当が何%減ったか。次の不況で配当がいくら減るかの実測の手がかり",
+      _series: "年度ごとの1株配当（4月〜翌3月で集計）",
       _spike: "記念配当の疑い。trueなら年数を鵜呑みにしない",
       _生成: new Date().toISOString().slice(0, 10),
       data: result,
