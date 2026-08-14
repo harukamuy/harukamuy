@@ -159,6 +159,7 @@ export function getPostsByTag(tag: string): Post[] {
 // 連載ID → 表示名。新しい連載を始めたらここに1行追加。
 export const SERIES_NAMES: Record<string, string> = {
   "tokachi-plan": "十勝計画",
+  "cyclical-vs-defensive": "景気敏感株とディフェンシブ株",
 };
 
 export function getAllSeries(): string[] {
