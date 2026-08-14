@@ -65,6 +65,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 ```bash
 node scripts/sidefire-generate.mjs   # 資産・配当  → components/sidefireData.ts に手で貼る
 node scripts/sidefire-sectors.mjs    # 業種別・リスク → components/sidefireSectorData.ts を自動で書き換える
+node scripts/sidefire-brief.mjs       # 分析用ブリーフ → data/ に出力（非公開・貼らない）
 ```
 
 - **入力は `data/` 配下（Git除外）**。証券CSV・業種マップ・配当マスタが入っている
