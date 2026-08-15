@@ -53,8 +53,8 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 <div class="data-card" style="background:#fafaf7;border:1.5px solid #c8d8c0;border-radius:12px;padding:18px 20px;margin:20px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">💰 いま起きていること</div>
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
-2023年9月、ネット証券大手が<strong>国内株の売買手数料をゼロ</strong>に<br>
-その後も追随が続き、いまは<strong>条件なしで無料</strong>のところもある<br>
+2023年秋、ネット証券大手が<strong>国内株の売買手数料をゼロ</strong>に<br>
+その後も追随が続き、いまは<strong>約定代金がいくらでも無料</strong>のところが多い（条件は各社ちがう）<br>
 → それなのに、各社は<strong>過去最高益</strong>を更新している
 </div>
 </div>
@@ -92,7 +92,7 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
         <td style="padding:10px;border:1px solid #f0dcc8;vertical-align:top;">大手がそろって<strong>ゼロ</strong>に</td>
       </tr>
       <tr>
-        <td style="padding:10px;border:1px solid #f0dcc8;vertical-align:top;font-weight:700;">2023年9月<br>（日）</td>
+        <td style="padding:10px;border:1px solid #f0dcc8;vertical-align:top;font-weight:700;">2023年秋<br>（日）</td>
         <td style="padding:10px;border:1px solid #f0dcc8;vertical-align:top;">ネット証券大手が国内株を<strong>ゼロ</strong>に</td>
       </tr>
     </tbody>
@@ -133,13 +133,13 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 
 安くなったことは、まちがいなくいいことだ。**わたしも、その恩恵を受けている。**
 
-ただ、**払う痛みがなくなったということでもある**。そこは、あとの章でもう一度出てくる。
+ただ、**払う痛みがなくなったということでもある**。
 
 ---
 
 ## 3. 株の売買には、必ず「相手」がいる
 
-ここから仕組みの話になる。むずかしそうに見えるので、**金券ショップにたとえてみる。**
+ここから仕組みの話になる。**わたしはここが分からなかったので、金券ショップにたとえてみる。**
 
 まず大前提から。**あなたが株を「買う」ということは、同じ瞬間に誰かが「売っている」ということだ。**
 
@@ -195,7 +195,7 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 
 お店がお金を払ってまで個人の注文をほしがる理由は、**相手として都合がいいから**だ。プロの投資家は特別な情報や分析で動くので、相手をすると損をしやすい。**個人の注文には、そうした情報が乗っていないことが多い。**
 
-このあたりは[前の記事](/blog/genz-financial-nihilism)に書いたので、ここでは深追いしない。**この記事の主役は、日本のほうだ。**
+このあたりは[前の記事](/blog/genz-financial-nihilism)に書いた。
 
 ---
 
@@ -206,11 +206,11 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 **てっきり、掲示板より高い値段をつかまされていると思っていた**。でも、数字は逆だった。
 
 <div class="data-card" style="background:#fafaf7;border:1.5px solid #c8d8c0;border-radius:12px;padding:18px 20px;margin:20px 0;">
-<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">🔍 掲示板より安く買えた割合</div>
+<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">🔍 掲示板より安く買えた割合（アメリカの調査）</div>
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
 取引所で買うと：<strong>100株のうち9株</strong><br>
 お店で買うと：<strong>100株のうち66株</strong><br>
-→ お店のほうが、<strong>7倍以上多い</strong>
+→ お店のほうが、<strong>約7倍多い</strong>
 </div>
 </div>
 
@@ -218,7 +218,7 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 
 金券ショップの人が「掲示板は1,010円ですけど、うちなら1,008円でいいですよ」と言ってくれる状態だ。**業界がいちばん強く主張するのが、ここになる。**
 
-**たしかに、ぼったくられてはいない**。わたしもここは素直に受け止めた。
+**たしかに、ぼったくられてはいない**。
 
 ---
 
@@ -252,7 +252,7 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
       </tr>
     </tbody>
   </table>
-  <div style="font-size:11px;color:#7a5c44;margin-top:12px;border-top:1px dashed #f0dcc8;padding-top:10px;">アメリカで行われたある調査では、この配分は<strong>24%・1%・75%</strong>でした。上の表はそれを3章の10円にあてはめ、合計が10円になるように丸めたものです</div>
+  <div style="font-size:11px;color:#7a5c44;margin-top:12px;border-top:1px dashed #f0dcc8;padding-top:10px;">アメリカで行われたある調査では、この配分は<strong>24%・1%・75%</strong>でした。上の表は3章の10円にあてはめた概数です</div>
 </div>
 
 **戻ってくるのは、10円のうち2円だった。**
@@ -264,7 +264,7 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 もうひとつ、気になる数字があった。**掲示板より高く買ってしまった割合**だ。
 
 <div class="data-card" style="background:#fafaf7;border:1.5px solid #c8d8c0;border-radius:12px;padding:18px 20px;margin:20px 0;">
-<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">⚖️ 掲示板より高く買ってしまった割合</div>
+<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">⚖️ 掲示板より高く買ってしまった割合（アメリカの調査）</div>
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
 取引所で買うと：<strong>100株のうち2株</strong><br>
 お店で買うと：<strong>100株のうち7株</strong><br>
@@ -306,13 +306,9 @@ tags: ["市場の話", "インデックス投資", "家計・資産管理"]
 
 **損はしていない。ちゃんと得もしている**。ただ、**10円のうち8円近くは、お店のものだ。**
 
-**いちばん得をしているのは、お店のほうだった**。そういうことだ。
-
 ---
 
 ## 7. 無料には、条件がついていた
-
-さて、日本の話だ。
 
 日本には、アメリカのような**お店から証券会社への支払い**は確認できない。**その意味では、事情が違う。**
 
@@ -331,12 +327,12 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 
 **ダークプールというのは、取引所の板に出さずに売買を成立させる場所のことだ**。言葉の響きは怖いけれど、やっていることは3章のお店と同じで、**注文の相手方になる**というだけになる。
 
-日本のネット証券大手は、**2018年ごろからこの仕組みを持っている。**
+日本のネット証券も、**同じような仕組みをすでに持っている。**
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:12px;padding:18px 20px;margin:20px 0;">
-<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">✅ 日本にあるルール</div>
+<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">✅ 各社が公表しているルール</div>
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
-取引所以外へ回すのは、<strong>取引所と同じか、有利な値段のときだけ</strong>と定められている<br>
+取引所以外へ回すのは、<strong>取引所と同じか、有利な値段のときだけ</strong>と各社の最良執行方針に書かれている<br>
 → つまり<strong>取引所より不利な値段にはならない</strong>
 </div>
 </div>
@@ -345,15 +341,13 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 
 「お店が相手方になる」形は日本にもある。**でも「お店が証券会社にお金を払う」形は確認できないし、不利にしないルールが明文化されている。**
 
-**日本は関係ない、でもない。日本も同じ、でもない**。その中間が事実だった。
-
 ただ、ひとつはっきりしたことがある。**無料は、ただの親切ではない**。条件がついているということは、**証券会社の側にも、そうする理由があるということだ。**
 
 ---
 
 ## 8. では、どこで儲けているのか
 
-手数料をゼロにして、なぜ過去最高益なのか。**本題に戻る。**
+手数料をゼロにして、なぜ過去最高益なのか。
 
 その前に、ひとつはっきりさせておきたい。**ここまでの差額の話は、すべてアメリカの数字だ。**
 
@@ -397,9 +391,8 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
   </table>
 </div>
 
-**信用取引の金利は、お金を借りて売買する人から受け取る利息だ**。年2〜3%ほどで、**売買が活発なほど増えていく**。ここは、あとの章でもう一度出てくる。
-
-いっぽうで、**新NISAがここに重なった**。口座数は2023年末の1,428万から、2024年末には**1,803万**まで増えている。
+**信用取引の金利は、お金を借りて売買する人から受け取る利息だ**。年2〜3%ほどで、**売買が活発なほど増えていく**。
+いっぽうで、**新NISAがここに重なった**。証券会社のNISA口座数は2023年末の1,428万から、2024年末には**1,803万**まで増えている。
 
 **投資信託の信託報酬は、残高が増えれば自動的に増える**。しかも、その人が売買しなくても入り続ける。
 
@@ -440,7 +433,7 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 
 ## 9. 取引が多いほど、得をする人と損をする人
 
-ここまで調べて、いちばん引っかかったのはここだった。**日本の話**として、もう一度整理してみる。
+ここまで調べて、いちばん引っかかったのはここだった。
 
 8章で見た入り口のうち、**信用取引の金利は、借りているあいだずっとかかる**。年2〜3%ほどで、**活発に売り買いする人ほど、使う場面が増える**。
 
@@ -498,8 +491,6 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 </div>
 </div>
 
-**「タダより高いものはない」とまでは、言えない**。ただ、**タダだから何もない、というわけでもなかった。**
-
 ---
 
 ## 10. わたしは、なにも変えなかった
@@ -536,14 +527,14 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 
 **ただ、正直に言うと、わたしにはあまり関係のない話だった。**
 
-[オルカンを毎月積み立てて](/blog/orukan-vs-sp500-real)、[日本の高配当株を117銘柄持っている](/blog/portfolio-risk-117-stocks)だけだ。買ったら、基本的に動かさない。**相場は読まず、航路を守ると決めている。**
+[オルカンを毎月積み立てて](/blog/orukan-vs-sp500-real)、[日本の高配当株を117銘柄持っている](/blog/portfolio-risk-117-stocks)。積み立てているのはオルカンだけで、買ったら基本的に動かさない。**相場は読まず、航路を守ると決めている。**
 
-8章で見た3つの入り口を、自分にあてはめてみた。
+8章で見た入り口を、自分にあてはめてみた。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:12px;padding:18px 20px;margin:20px 0;">
-<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">✅ 3つとも、関係が薄かった</div>
+<div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">✅ 自分にあてはめると</div>
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
-<strong>信託報酬</strong> … オルカンは<strong>年0.05775%</strong>という<strong>低コスト</strong>。100万円あずけて<strong>1年で578円</strong>ほど<br>
+<strong>信託報酬</strong> … <strong>いちばん関係があるのはここだ</strong>。オルカンは年<strong>0.05775%</strong>、保有しているS&amp;P500は<strong>0.09372%</strong>。100万円あずけて年578円と937円ほど<br>
 <strong>売買の回数</strong> … 月に数回。<strong>積み立ては自動なので、押してすらいない</strong><br>
 <strong>信用取引</strong> … <strong>やっていない</strong>。借りていないので、金利もかからない
 </div>
@@ -551,11 +542,9 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 
 **だから、何かを変える必要は感じなかった。**
 
-そして、もうひとつ思ったことがある。**9章のデータを見るかぎり、この方向は間違っていなさそうだ。**
-
 売買がいちばん多い層だけ、市場全体に6.5%も負けていた。**あまり売り買いしないというやり方は、コストの面でも成績の面でも、いまのところ理にかなっている。**
 
-**やらないことが、そのまま答えになっている**。そういう分野なのだと思う。
+**やらないことが、そのまま答えになっている**。
 
 最後に、この記事を書きながらずっと頭にあった言葉を置いておく。インデックス投資の生みの親、ジョン・ボーグルのものだ。
 
@@ -577,34 +566,16 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>日本株の売買手数料は<strong>2023年9月にゼロ</strong>になったのに、証券会社は<strong>過去最高益</strong>。どこで儲けているのか調べた</li>
-<li>手数料は<strong>50年かけて消えた</strong>。米は1975年まで<strong>取引額の1〜2%</strong>が一律、日本は1999年まで<strong>100万円の取引で11,500円</strong>。<strong>買ってすぐ売るだけで資産の2.3%が消えていた</strong></li>
-<li>株の売買には必ず相手がいる。いまはその間に<strong>お店（マーケットメーカー）</strong>が入ることがあり、<strong>買値と売値の差</strong>で稼ぐ。金券ショップとまったく同じ形</li>
-<li><strong>差額で稼ぐのは新しいやり方ではない</strong>。むしろ手数料より古い。両替商も中古車屋も同じ形をしている</li>
-<li>アメリカでは<strong>お店が証券会社にお金を払う</strong>（PFOF）。2021年に大手12社が受け取ったのは<strong>38億ドル</strong>。個人の注文は、お店にとって<strong>相手として都合がいい</strong>から</li>
-<li>意外だったのは、<strong>掲示板より高く買わされてはいなかった</strong>こと。<strong>掲示板より安く買えた割合</strong>は、取引所が100株のうち<strong>9株</strong>、お店は<strong>66株</strong></li>
-<li>ただし差額の行き先を見ると、<strong>10円のうち、あなたに戻るのは2円、証券会社へ0.1円、お店に7.9円</strong>（アメリカのある調査では24%・1%・75%という配分だった）</li>
-<li>ただし<strong>掲示板より高く買ってしまう割合</strong>は、取引所が100株のうち<strong>2株</strong>、お店は<strong>7株</strong>。<strong>安くなるほうにも高くなるほうにも、お店のほうが振れが大きい</strong></li>
-<li>結論としては<strong>損はしていないし、ちゃんと得もしている</strong>。ただ<strong>10円のうち8円近くはお店のもので、いちばん得をしているのはお店</strong>だった</li>
-<li>日本では<strong>お店から証券会社への支払いは確認できない</strong>。ただし<strong>無料コースに条件がついている場合がある</strong>（指定の注文方式の利用が原則必須など）</li>
-<li>その接続先には<strong>取引所以外の私設市場やダークプール</strong>も含まれる。<strong>お店が相手方になる形は、日本にもすでにある</strong>（2018年ごろから）</li>
-<li>ただし日本には<strong>取引所と同じか有利な値段のときだけ回す</strong>というルールがある。<strong>取引所より不利な値段にはならない</strong></li>
-<li>ここまでの差額の話は<strong>すべてアメリカの数字</strong>。日本の証券会社は<strong>あの0.1円にあたるお金も受け取っていない</strong>。手数料もゼロ、差額の分け前もない。ではどこで稼いでいるのか</li>
-<li>そもそも<strong>無料にできる下地があった</strong>。あるネット証券大手では<strong>国内株の委託手数料は営業収益の11.2%ほど</strong>（無料化前）。<strong>残りの9割近くは、はじめから別のところから来ていた</strong></li>
-<li>手数料以外の入り口は<strong>信用取引の金利（年2〜3%）、投資信託の信託報酬、増えた口座数、為替やFX</strong>など</li>
-<li><strong>信託報酬は、残高がある限り毎日入る</strong>。売買しない人からも積み上がる。新NISAで口座は<strong>2023年末1,428万→2024年末1,803万</strong>に増えた</li>
-<li>無料化はそこで止まらず、<strong>2023年12月には米ドルと円の為替手数料もゼロ</strong>に。それでも各社は最高益を更新し続けている</li>
-<li>つまり<strong>「無料にしたら儲からなくなる」ではなく「無料にしたから儲かった」</strong>。手数料は下がったのではなく、<strong>置き場所が変わった</strong></li>
-<li>つまり<strong>薄利多売</strong>。信託報酬は年0.1%前後で、100万円あずけても1年で1,000円ほど。<strong>証券会社の取り分はさらにその一部</strong>なので、<strong>人数がいる</strong>。手数料をゼロにするのは、その人数を集める費用だった</li>
-<li>証券会社のなかには<strong>向きの違う入り口が同居している</strong>。信託報酬は売買しなくても入るお金で、ネット証券が積立をすすめるのも、それで説明がつく。<strong>どちらが主力かまでは、外からは分からなかった</strong></li>
-<li><strong>1回の取引だけを見れば、誰も損していない</strong>。買う人も売る人もお店も得をする。だから禁止しにくいし、業界も強く主張できる</li>
-<li>でも<strong>この構造には向きがある</strong>。信用取引の金利は借りているあいだずっとかかり、<strong>活発に売り買いする人ほど使う場面が増える</strong></li>
-<li>そして<strong>売買が多い層は成績が落ちる</strong>。アメリカで66,465世帯を6年間追った研究では、<strong>市場全体17.9%・全世帯の平均16.4%に対し、売買がいちばん多かった層は11.4%</strong>。日本の調査ではないが、傾向は国が変わっても起きそうだと思った</li>
-<li><strong>100万円で11,500円かかっていたころ、人はそう何度も押せなかった</strong>。高い手数料はブレーキでもあった。<strong>いまは押す痛みがゼロ</strong></li>
-<li>8章の3つの入り口を自分にあてはめると、<strong>信託報酬はオルカンの年0.05775%という低コスト（100万円で1年578円ほど）、売買は月に数回で積立は自動、信用取引はやっていない</strong>。<strong>3つとも関係が薄かった</strong></li>
-<li>そして<strong>9章のデータを見るかぎり、この方向は間違っていなさそう</strong>。<strong>あまり売り買いしないやり方は、コストの面でも成績の面でも理にかなっている</strong></li>
-<li>答えとしては、<strong>わたしたちにとっては、ほぼ本当に無料だった</strong>。手数料はゼロで、取引所より不利な値段にもならない。<strong>でも証券会社にとっては無料ではなく、信託報酬や信用取引の金利であとから回収している</strong></li>
-<li>ボーグルの<strong>「投資では、払わなかったぶんが手に入る」</strong>のとおり、<strong>減らしたぶんはそのまま自分の取り分になる</strong>。だから余計なコストを払わず、<strong>再現性の高い方法で淡々と続けていく</strong></li>
+<li>日本株の売買手数料は<strong>2023年秋にゼロ</strong>になったのに、証券会社は<strong>過去最高益</strong>。どこで儲けているのか調べた</li>
+<li>手数料は50年かけて消えた。米は1975年まで<strong>取引額の1〜2%</strong>、日本は1999年まで<strong>100万円で11,500円</strong>。<strong>買ってすぐ売るだけで資産の2.3%</strong>が消えていた</li>
+<li>売買には必ず相手がいて、いまはその間に<strong>お店（マーケットメーカー）</strong>が入る。<strong>買値と売値の差</strong>で稼ぐ、金券ショップと同じ形</li>
+<li>アメリカでは<strong>お店が証券会社にお金を払う</strong>（2021年に大手12社で<strong>38億ドル</strong>）。掲示板より安く買えた割合は取引所100株のうち9株、お店は66株。ただし<strong>差の10円のうち、あなたに戻るのは2円、証券会社へ0.1円、お店に7.9円</strong></li>
+<li>日本では<strong>お店から証券会社への支払いは確認できない</strong>。かわりに無料コースには条件があり、接続先には<strong>ダークプール</strong>も含まれる。ただし各社の方針で<strong>取引所より不利な値段にはならない</strong></li>
+<li>そもそも下地があった。<strong>国内株の委託手数料は営業収益の11.2%ほど</strong>（無料化前）。<strong>信託報酬は残高がある限り毎日入り</strong>、新NISAで証券会社のNISA口座は<strong>1,428万→1,803万</strong>に増えた</li>
+<li>つまり<strong>「無料にしたら儲からなくなる」ではなく「無料にしたから儲かった」</strong>。信託報酬は年0.1%前後なので<strong>人数が要る</strong>。<strong>手数料は下がったのではなく、置き場所が変わった</strong></li>
+<li>66,465世帯を6年追った研究では、<strong>市場全体17.9%に対し、売買がいちばん多かった層は11.4%</strong>。<strong>100万円で11,500円かかっていたころ、人はそう何度も押せなかった。いまは押す痛みがゼロ</strong></li>
+<li>答えは、<strong>わたしたちにとってはほぼ本当に無料</strong>。<strong>でも証券会社にとっては無料ではなく、信託報酬や信用取引の金利であとから回収している</strong></li>
+<li>自分にあてはめると、いちばん関係があるのは<strong>信託報酬</strong>だった。ボーグルの<strong>「投資では、払わなかったぶんが手に入る」</strong>のとおり、減らしたぶんはそのまま自分の取り分になる</li>
 </ul>
 </div>
 
@@ -640,7 +611,8 @@ SOR注文は、<strong>複数の市場を自動で比べて、有利なところ
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
 ・手数料の自由化（米）：<a href="https://en.wikipedia.org/wiki/1975_Stock_Brokerage_Commission_Deregulation" target="_blank" rel="noopener noreferrer">1975 Stock Brokerage Commission Deregulation</a>／<a href="https://pressroom.aboutschwab.com/press-releases/press-release/2019/In-Conjunction-With-Chuck-Schwabs-New-Book-Invested-Schwab-Removes-the-Final-Pricing-Barrier-to-Investing-Online-by-Eliminating-U.S.-Stock-ETF-and-Options-Commissions/default.aspx" target="_blank" rel="noopener noreferrer">Charles Schwab「手数料ゼロの発表」(2019年10月)</a><br>
 ・手数料の自由化（日）：<a href="https://news.radiko.jp/article/station/RN1/113125/" target="_blank" rel="noopener noreferrer">「株式売買手数料完全自由化から25年」</a>／<a href="https://www.japantimes.co.jp/business/2023/10/02/markets/sbi-zero-comission/" target="_blank" rel="noopener noreferrer">The Japan Times「Zero-commission services intensify brokerage competition in Japan」(2023年10月)</a><br>
-・PFOFと価格改善の内訳：<a href="https://businesslawreview.uchicago.edu/print-archive/disclosure-gap-market-order-flow" target="_blank" rel="noopener noreferrer">The University of Chicago Business Law Review「A Disclosure Gap in the Market for Order Flow」</a>／<a href="https://www.congress.gov/crs-product/IF12332" target="_blank" rel="noopener noreferrer">米議会調査局「Payment for Order Flow: The SEC Proposes Reforms」</a><br>
+・価格改善と差額の配分（この記事の中心データ）：<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4313095" target="_blank" rel="noopener noreferrer">Dyhrberg, Shkilko &amp; Werner「The Retail Execution Quality Landscape」(Journal of Financial Economics, 2025)</a><br>
+・PFOFの制度背景：<a href="https://businesslawreview.uchicago.edu/print-archive/disclosure-gap-market-order-flow" target="_blank" rel="noopener noreferrer">The University of Chicago Business Law Review「A Disclosure Gap in the Market for Order Flow」</a>／<a href="https://www.congress.gov/crs-product/IF12332" target="_blank" rel="noopener noreferrer">米議会調査局「Payment for Order Flow: The SEC Proposes Reforms」</a><br>
 ・無料コースの条件とSOR注文：<a href="https://www.rakuten-sec.co.jp/web/domestic/sor/" target="_blank" rel="noopener noreferrer">楽天証券「SOR注文」</a>／<a href="https://faq.sbisec.co.jp/answer/5ee087b450df500012207216/" target="_blank" rel="noopener noreferrer">SBI証券「SOR注文について」</a><br>
 ・オルカンの信託報酬：<a href="https://www.nikkei.com/nkd/fund/cost/?fcode=0331418A" target="_blank" rel="noopener noreferrer">日本経済新聞「eMAXIS Slim 全世界株式（オール・カントリー）のコスト」</a><br>
 ・収益構成と為替手数料の無料化：<a href="https://newswitch.jp/p/38352" target="_blank" rel="noopener noreferrer">ニュースイッチ（日刊工業新聞社）「株式取引に無料化の波…SBI証券・楽天証券は収益減の影響どう払拭するか」</a>／<a href="https://www.sbigroup.co.jp/news/2023/1130_14261.html" target="_blank" rel="noopener noreferrer">SBIホールディングス「『米ドル/円』の為替手数料無料化のお知らせ」(2023年11月)</a><br>
