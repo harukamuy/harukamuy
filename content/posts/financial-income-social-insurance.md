@@ -66,7 +66,7 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
 
 「金融所得が社会保険料に反映される」というニュースを見かけるようになった。株の配当や売却益を、健康保険料の計算に含めるという話だ。
 
-わたしはフリーランスで国民健康保険に入っていて、2026年6月末時点で年間49.2万円の配当を受け取っている。まさに直撃しそうなテーマなので、自分のために調べた。
+わたしはフリーランスで国民健康保険に入っていて、2026年6月末時点で、年間49.2万円の配当を受け取れる見込みになっている。まさに直撃しそうなテーマなので、自分のために調べた。
 
 調べてみて、いちばん大事だと思ったのは<strong>「どこまでが決定で、どこからが検討中なのか」</strong>だった。ここを混ぜて読むと、必要以上に不安になる。順番に整理していく。
 
@@ -89,7 +89,7 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
     <div style="background:#e6efe0;padding:10px 8px;font-weight:700;color:#4a6640;text-align:center;">中身</div>
     <div style="background:#fbfdfa;padding:10px 8px;font-weight:700;color:#3a5030;">75歳以上<br /><span style="font-size:11px;font-weight:400;color:#5a8a50;">後期高齢者医療</span></div>
     <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;"><strong>決定</strong></div>
-    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">2026年5月29日に法律が成立。保険料と窓口負担に反映。施行は2030年前後が目標</div>
+    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">2026年5月29日に法律が成立。保険料と窓口負担に反映。施行日は公布から5年以内に政令で決まる（報道では2029〜2030年ごろの見込み）</div>
     <div style="background:#fff6ea;padding:10px 8px;font-weight:700;color:#a85f3c;">国民健康保険<br /><span style="font-size:11px;font-weight:400;color:#a85f3c;">フリーランス・自営業</span></div>
     <div style="background:#fff6ea;padding:10px 8px;color:#a85f3c;text-align:center;"><strong>検討中</strong></div>
     <div style="background:#fff6ea;padding:10px 8px;color:#a85f3c;text-align:center;">2028年度までに結論を出す工程が閣議決定されている</div>
@@ -100,15 +100,15 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
     <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">対象外の見通し</div>
     <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">保険料が給与で決まる仕組みのため</div>
     <div style="background:#fbfdfa;padding:10px 8px;font-weight:700;color:#3a5030;">NISA</div>
-    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">対象外の見込み</div>
-    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">資産形成を促す制度のため除外の方向</div>
+    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;"><strong>対象外</strong></div>
+    <div style="background:#fbfdfa;padding:10px 8px;color:#3a5030;text-align:center;">75歳以上の制度について、厚生労働省が「非課税のNISAは対象外」と明記している</div>
   </div>
   </div>
   <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">厚生労働省の発表と報道をもとに2026年8月時点で整理。検討中の部分は今後変わる可能性があります</div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">厚生労働省の発表と報道をもとに2026年8月時点で整理。検討中の部分は今後変わる可能性があります。<strong>対象になるのは上場株式等の配当・利子・譲渡所得</strong>で、預貯金や一般公社債の利子は入っていません</div>
 </div>
 
-押さえておきたい線引きは、この3つだ。<strong>いま決まっているのは75歳以上のぶんだけ。国保はまだ検討中。NISAは対象外の見込み。</strong>
+押さえておきたい線引きは、この3つだ。<strong>いま決まっているのは75歳以上のぶんだけ。国保はまだ検討中。NISAは対象外。</strong>
 
 つまり<strong>34歳・国保のわたしは、いまの時点では対象外</strong>だ。ネットで「2028年から始まる」という書き方も見かけるけれど、正確には<strong>2028年度までに結論を出す</strong>という工程が決まっている段階で、国保にいつからどう適用されるかはこれからだ。
 
@@ -136,7 +136,30 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
   <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">2026年8月時点の基準。世帯の状況によって判定が変わります</div>
 </div>
 
-この判定に、いまは<strong>申告した配当だけが入っている</strong>。つまり同じだけ配当を受け取っていても、<strong>申告した人は3割負担になり、申告しなかった人は1割のまま</strong>ということが起こりうる。同じ状況なのに、手続きの選び方で負担が変わってしまう。
+この判定に、いまは<strong>申告した配当だけが入っている</strong>。つまり同じだけ配当を受け取っていても、<strong>申告した人は負担が重くなり、申告しなかった人は軽いまま</strong>ということが起こりうる。同じ状況なのに、手続きの選び方で負担が変わってしまう。
+
+厚生労働省の資料に、その実例が金額つきで載っていた。
+
+<div class="data-card" style="background:#fff8f0;border:1.5px solid #f0dcc8;border-radius:16px;padding:22px 20px;margin:24px 0;">
+  <div style="font-size:13px;font-weight:700;color:#7a5c44;margin-bottom:14px;">⚖ 同じ所得なのに、申告するかどうかで変わる</div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+  <div class="keep-grid" style="min-width:330px;display:grid;grid-template-columns:1.1fr 0.8fr 1.1fr;gap:1px;background:#f0dcc8;border:1px solid #f0dcc8;border-radius:10px;overflow:hidden;font-size:12.5px;line-height:1.6;">
+    <div style="background:#fdf0e2;padding:9px 8px;font-weight:700;color:#7a5c44;"></div>
+    <div style="background:#fdf0e2;padding:9px 8px;font-weight:700;color:#7a5c44;text-align:center;">窓口負担</div>
+    <div style="background:#fdf0e2;padding:9px 8px;font-weight:700;color:#7a5c44;text-align:right;">年間の保険料</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;">申告した人</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:center;">2割</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">169,978円</div>
+    <div style="background:#fffaf4;padding:9px 8px;color:#5a4a3a;">申告しなかった人</div>
+    <div style="background:#fffaf4;padding:9px 8px;color:#5a4a3a;text-align:center;">1割</div>
+    <div style="background:#fffaf4;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">118,928円</div>
+  </div>
+  </div>
+  <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
+  <div style="font-size:11px;color:#9a8574;margin-top:12px;border-top:1px dashed #f0dcc8;padding-top:10px;">厚生労働省の資料に載っている例。夫婦とも後期高齢者で、本人が年金230万円＋金融所得50万円、配偶者が基礎年金83万円の場合</div>
+</div>
+
+<strong>年51,050円の差</strong>だ。しかも窓口負担まで2倍になる。
 
 そこを揃えるのが今回の改正だ。だから基準になっているのは「富裕層かどうか」ではなく、<strong>もともとある課税所得のライン</strong>(145万円など)で、そこに金融所得も入れて判定しよう、という話になる。
 
@@ -150,7 +173,9 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
 
 これまで、源泉徴収ありの特定口座で受け取った配当は、<strong>確定申告をしなければ保険料の計算に入らなかった</strong>。申告するかどうかを自分で選べて、申告しなければ国保に響かない。この仕組みを前提に、わたしは[配当を申告しないという判断](/blog/dividend-kokuho-filing)をしてきた。
 
-新しい流れは、そこを変える。<strong>マイナンバーで金融機関と自治体のデータがつながり、申告の有無にかかわらず金融所得を把握して反映する</strong>という設計だ。まず75歳以上から始まる。
+新しい流れは、そこを変える。<strong>金融機関が出す法定調書を使って、申告の有無にかかわらず金融所得を把握して反映する</strong>という設計だ。まず75歳以上から始まる。
+
+法定調書というのは、証券会社が「この人にいくら配当を払いました」と役所に出す書類のことだ。いままでも税務署には届いていたものを、<strong>健康保険の側にも渡す</strong>ようにする。厚生労働省の資料には<strong>「個人の事務負担等が増えることはありません」</strong>と書かれている。
 
 <div class="conv-wrap">
 
@@ -245,21 +270,21 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💰 わたしの場合の試算（あくまで仮定）</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>年間の配当（税引後・2026年6月末時点）</span><span style="text-align:right;">約49.2万円</span>
+      <span>年間の配当（税引前・2026年6月末時点）</span><span style="text-align:right;">約61.7万円</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>国保に上乗せされる目安（10%）</span><span style="text-align:right;">年 約5万円</span>
+      <span>国保に上乗せされる目安（10%）</span><span style="text-align:right;">年 約6.2万円</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>月あたりにすると</span><span style="text-align:right;">約4,000円</span>
+      <span>月あたりにすると</span><span style="text-align:right;">約5,100円</span>
     </div>
   </div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">国保に金融所得が反映されると仮定した場合の概算。保険料率は自治体・年度で異なり、実際の金額は変わります</div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">国保に金融所得が反映されると仮定した場合の概算。保険料率は自治体・年度で異なり、実際の金額は変わります。国保の所得割は税引後ではなく税引前の所得で計算されるため、源泉徴収前の金額で試算しています。またNISA内の配当は対象外なので、実際に上乗せされるのは特定口座の分だけです。ここでは全額が特定口座にある場合の上限として計算しています</div>
 </div>
 
 年5万円。覚悟していたより穏やかな数字だった。生活が壊れる額ではない。
 
-ただし、これは<strong>いまの配当が49.2万円だから</strong>だ。わたしは[月10万円・年120万円の配当](/blog/dividend-goal-progress)を目標にしている。もし達成したら、上乗せは<strong>年12万円ほど</strong>になる。目標に近づくほど、この負担も一緒に育つ。
+ただし、これは<strong>いまの配当が49.2万円だから</strong>だ。わたしは[月10万円・年120万円の配当](/blog/dividend-goal-progress)を目標にしている。もし達成したら、上乗せは<strong>年15万円ほど</strong>になる。目標に近づくほど、この負担も一緒に育つ。
 
 ちなみに国保には上限があって、2026年度は年110万円前後(自治体により異なる)。青天井ではないけれど、その水準に届くのはずっと先の話だ。
 
@@ -293,13 +318,13 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🧭 いまのわたしにできること</div>
   <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#3a5030;">
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">①</span><span><strong>NISAの枠を優先して使う</strong>。NISA内の利益は算定対象外となる見込みで、いま最も確実性の高い置き場所</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">①</span><span><strong>NISAの枠を優先して使う</strong>。75歳以上の制度では厚生労働省が対象外と明記しており、いまいちばん確実な置き場所</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">②</span><span><strong>慌てて売らない</strong>。制度が変わるかもしれないという理由で持ち株を売れば、約20%の税金が確実に出ていく</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">③</span><span><strong>結論が出るまで見張っておく</strong>。2028年度が節目。そのとき申告方針をあらためて決める</span></div>
   </div>
 </div>
 
-①は、これまで[新NISAを優先してきた](/blog/new-nisa-1800-strategy)方針が、そのまま守りにもなるという話だ。ただし「対象外の見込み」であって、未来永劫の保証ではない。そこは正直に書いておきたい。
+①は、これまで[新NISAを優先してきた](/blog/new-nisa-1800-strategy)方針が、そのまま守りにもなるという話だ。ただし明記されているのは<strong>75歳以上の制度について</strong>で、国保がどうなるかはまだ決まっていない。未来永劫の保証ではないので、そこは正直に書いておきたい。
 
 なお、規模の大きい投資家だと<strong>法人を作って役員報酬ベースの社会保険に切り替える</strong>という手も語られる。ただ法人は設立も維持もコストがかかるし、法人側の税金もある。年49.2万円の配当のわたしには、いまのところ現実的な話ではない。
 
@@ -311,7 +336,7 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
 
 わたしがサイドFIREの計画を立てたとき、いまの税率と保険料で計算していた。でもこの8年でも、国保は上がり続けてきたし、[2026年には国保の負担がさらに重くなった](/blog/dividend-kokuho-filing)。これから先も、増える方向に動くと考えておくほうが自然だと思う。
 
-だからといって、悲観して投資をやめるのは違う。<strong>配当が増えるから保険料も増えるのであって、順番は逆ではない</strong>。年12万円の保険料が乗るのは、年120万円の配当を受け取れているときだ。
+だからといって、悲観して投資をやめるのは違う。<strong>配当が増えるから保険料も増えるのであって、順番は逆ではない</strong>。年15万円の保険料が乗るのは、年120万円の配当を受け取れているときだ。
 
 わたしにできるのは、制度の変化を早めに知って、そのつど自分の設計を調整することくらいだ。今回のように<strong>「決まったこと」と「検討中のこと」を分けて把握しておけば、必要以上に焦らずにすむ</strong>。それだけでも、調べた価値はあったと思っている。
 
@@ -350,13 +375,13 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>2026年5月29日に健康保険法などの改正法が成立。ただし金融所得の反映が決まったのは<strong>75歳以上の後期高齢者医療</strong>で、施行は2030年前後が目標とされる</li>
+<li>2026年5月29日に健康保険法などの改正法が成立。ただし金融所得の反映が決まったのは<strong>75歳以上の後期高齢者医療</strong>で、施行日は公布から5年以内に政令で決まる見通し（報道では2029〜2030年ごろ）</li>
 <li>フリーランスの<strong>国民健康保険や介護保険への拡大は、まだ検討段階</strong>。2028年度までに結論を出す工程が閣議決定されている。「2028年から始まる」ではなく「2028年度までに決める」が正確</li>
-<li>会社員の健康保険は対象外の見通し、NISA内の利益も算定対象外となる見込み</li>
-<li>大きな転換は金額より仕組み。<strong>確定申告の有無にかかわらず、マイナンバーで金融所得を把握して反映する</strong>設計が現実に入った</li>
+<li>会社員の健康保険は対象外の見通し。<strong>NISA内の利益は、厚生労働省が「非課税のNISAは対象外」と明記</strong>している（75歳以上の制度について）</li>
+<li>大きな転換は金額より仕組み。<strong>確定申告の有無にかかわらず、金融機関が出す法定調書で金融所得を把握して反映する</strong>設計が現実に入った</li>
 <li>これは単発の改正ではなく流れの一部。2023年末に検討が閣議決定、2025年に「1億円の壁」対策のミニマムタックスが適用開始、2026年に後期高齢者医療で成立、と<strong>税と社会保険の両側から動き続けている</strong></li>
 <li>海外にも前例がある。フランスは投資の利益に<strong>社会保障の負担が17.2%</strong>(所得税12.8%より重い)、アメリカは2013年から3.8%。一方でイギリスのように働いて得た収入にしかかけない国もあり、世界共通のルールではない</li>
-<li>もし国保に来たら、配当49.2万円のわたしで<strong>年約5万円</strong>の上乗せ(所得の10%前後で試算)。月10万円の配当目標を達成すると年12万円ほどになる</li>
+<li>もし国保に来たら、配当49.2万円（税引前で約61.7万円）のわたしで<strong>年約6万円</strong>の上乗せ(所得の10%前後で試算)。月10万円の配当目標を達成すると年15万円ほどになる</li>
 <li>「特定口座の配当は申告しない」というこれまでの判断は<strong>期限つきの正解</strong>。反映されるようになれば、むしろ申告して所得税の還付を受けたほうが得になる可能性がある</li>
 <li>いまできるのは、NISA枠を優先して使うこと、慌てて売らないこと、2028年度の結論を見てから申告方針を決め直すこと</li>
 <li>制度は変わる前提で設計しておく。ただし保険料が増えるのは配当が増えたときなので、順番を取り違えないようにしたい</li>
@@ -364,8 +389,8 @@ tags: ["フリーランス", "税金・社会保険", "配当投資"]
 </div>
 
 :::cta
-title: SBI証券 — NISA枠は、いま最も確実性の高い置き場所
-description: NISA内の利益は社会保険料の算定対象外となる見込みです。つみたて枠のオルカンも、成長投資枠の日本の高配当株も、SBI証券ひとつで完結します。制度が変わっていくなかで、まず埋めておきたい枠だと思っています。わたしが8年使っているメイン口座です。
+title: SBI証券 — NISA枠は、いまいちばん確実な置き場所
+description: NISA内の利益は、75歳以上の制度について厚生労働省が算定対象外と明記しています（国保への拡大はまだ検討中です）。つみたて枠のオルカンも、成長投資枠の日本の高配当株も、SBI証券ひとつで完結します。制度が変わっていくなかで、まず埋めておきたい枠だと思っています。わたしが8年使っているメイン口座です。
 button: SBI証券の公式サイトを見る →
 url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 :::
