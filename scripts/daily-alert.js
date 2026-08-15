@@ -2,6 +2,7 @@
  * 日次アクセス急増アラート
  * 使い方: node scripts/daily-alert.js
  * 昨日のPVが直近7日間の日次平均の2倍以上の記事を通知する
+ * 急増記事には流入元（X / 検索 / 直接など）の内訳も表示する
  */
 
 const { google } = require('googleapis');
@@ -14,6 +15,23 @@ const CREDENTIALS_PATH = path.join(__dirname, '..', 'client_secret_148969337324-
 const TOKEN_PATH = path.join(__dirname, '..', 'ga4-token.json');
 const SPIKE_THRESHOLD = 2.0;   // 平均の何倍以上でアラートを出すか
 const MIN_PV_YESTERDAY = 10;   // 昨日のPVがこれ未満なら無視（ノイズ除去）
+const MAX_SOURCES_PER_PAGE = 3; // 1記事あたり何件の流入元を表示するか
+
+// ===== 流入元のわかりやすい名前 =====
+// GA4は生のドメイン名で返してくるので、日本語の呼び名に置き換える
+function labelSource(source, medium) {
+  const s = (source || '').toLowerCase();
+  if (s === 't.co' || s === 'twitter.com' || s === 'x.com') return 'X（ポスト経由）';
+  if (s.includes('instagram')) return 'Instagram';
+  if (s.includes('facebook')) return 'Facebook';
+  if (s.includes('hatena')) return 'はてなブックマーク';
+  if (s === 'google' && medium === 'organic') return 'Google検索';
+  if (s === 'yahoo' && medium === 'organic') return 'Yahoo検索';
+  if (s === 'bing' && medium === 'organic') return 'Bing検索';
+  if (s === '(direct)') return '直接アクセス';
+  if (s === '(not set)' || s.includes('not available')) return '計測できず';
+  return `${source}（${medium}）`;
+}
 
 // ===== 認証 =====
 async function authorize() {
@@ -73,11 +91,35 @@ async function fetchData(auth) {
     },
   });
 
-  return { resYesterday, res7days, resTotalYesterday, resTotal7days };
+  // 昨日の「ページ別 × 流入元」（Xから来たのか検索から来たのかを見るため）
+  const resSourceByPage = await analyticsData.properties.runReport({
+    property: `properties/${PROPERTY_ID}`,
+    requestBody: {
+      dateRanges: [{ startDate: '1daysAgo', endDate: '1daysAgo' }],
+      dimensions: [{ name: 'pagePath' }, { name: 'sessionSource' }, { name: 'sessionMedium' }],
+      metrics: [{ name: 'screenPageViews' }],
+      orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
+      limit: 200,
+    },
+  });
+
+  // 昨日のサイト全体の流入元
+  const resSourceTotal = await analyticsData.properties.runReport({
+    property: `properties/${PROPERTY_ID}`,
+    requestBody: {
+      dateRanges: [{ startDate: '1daysAgo', endDate: '1daysAgo' }],
+      dimensions: [{ name: 'sessionSource' }, { name: 'sessionMedium' }],
+      metrics: [{ name: 'screenPageViews' }],
+      orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
+      limit: 50,
+    },
+  });
+
+  return { resYesterday, res7days, resTotalYesterday, resTotal7days, resSourceByPage, resSourceTotal };
 }
 
 // ===== レポート表示 =====
-function printAlert({ resYesterday, res7days, resTotalYesterday, resTotal7days }) {
+function printAlert({ resYesterday, res7days, resTotalYesterday, resTotal7days, resSourceByPage, resSourceTotal }) {
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
   const dateStr = yesterday.toLocaleDateString('ja-JP', { month: 'long', day: 'numeric', weekday: 'short' });
@@ -102,6 +144,31 @@ function printAlert({ resYesterday, res7days, resTotalYesterday, resTotal7days }
   console.log(`  昨日のPV    : ${totalPV_yes.toLocaleString()} PV`);
   console.log(`  7日間日次平均: ${dailyAvg.toLocaleString()} PV`);
   console.log(`  昨日 / 平均 : ${totalArrow} ${totalRatio.toFixed(1)}倍`);
+
+  // ── 昨日の流入元（サイト全体）──
+  const totalSources = {};
+  (resSourceTotal.data.rows || []).forEach(row => {
+    const label = labelSource(row.dimensionValues[0].value, row.dimensionValues[1].value);
+    totalSources[label] = (totalSources[label] || 0) + Number(row.metricValues[0].value);
+  });
+  const totalSourceList = Object.entries(totalSources).sort((a, b) => b[1] - a[1]);
+  if (totalSourceList.length > 0) {
+    console.log('\n【昨日の流入元】');
+    totalSourceList.forEach(([label, pv]) => {
+      const pct = totalPV_yes > 0 ? Math.round((pv / totalPV_yes) * 100) : 0;
+      console.log(`  ${String(pv).padStart(4)} PV （${String(pct).padStart(2)}%）  ${label}`);
+    });
+  }
+
+  // ── ページ別の流入元をマップ化 ──
+  const sourceMap = {};
+  (resSourceByPage.data.rows || []).forEach(row => {
+    const path  = row.dimensionValues[0].value;
+    const label = labelSource(row.dimensionValues[1].value, row.dimensionValues[2].value);
+    const pv    = Number(row.metricValues[0].value);
+    sourceMap[path] ||= {};
+    sourceMap[path][label] = (sourceMap[path][label] || 0) + pv;
+  });
 
   // ── ページ別急増チェック ──
   // 7日間データをページごとにマップ化
@@ -140,11 +207,21 @@ function printAlert({ resYesterday, res7days, resTotalYesterday, resTotal7days }
         : `${item.pvYes}PV（新規流入）`;
       console.log(`  🔥 ${item.title}`);
       console.log(`       ${ratio}`);
+
+      // この記事がどこから読まれたか
+      const sources = Object.entries(sourceMap[item.path] || {}).sort((a, b) => b[1] - a[1]);
+      if (sources.length > 0) {
+        const shown = sources.slice(0, MAX_SOURCES_PER_PAGE)
+          .map(([label, pv]) => `${label} ${pv}PV`)
+          .join(' / ');
+        console.log(`       流入元: ${shown}`);
+      }
     });
     console.log('');
     console.log('  💡 アクションヒント：');
     console.log('     ・急増記事に関連する他記事への内部リンクを追加する');
     console.log('     ・SNSでシェアして勢いを伸ばす');
+    console.log('     ・「直接アクセス」が多い記事はサイト内の回遊で読まれている可能性が高い');
   } else {
     console.log('\n【急増記事】特になし（通常どおり）');
   }
