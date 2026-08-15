@@ -79,7 +79,7 @@ const AZUKI: Inputs = {
 const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   {
     label: "あずき（記事の設定）",
-    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金はマクロ経済スライドの目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円（いまの価値）。記事より少し辛めに出るのは、生活防衛資金300万円を利回り0%の現預金として分けているためです",
+    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金はマクロ経済スライドの目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円（いまの価値）。記事は「いまの物価」で書いているので、このツールの金額（そのときの金額）とは見え方が違います。生活防衛資金300万円を利回り0%の現預金として分けているぶんも、少し辛めに出ます",
     inputs: AZUKI,
   },
   {
@@ -238,7 +238,6 @@ const selectStyle: React.CSSProperties = {
 export default function LifeplanSimulator() {
   const [inp, setInp] = useState<Inputs>(PRESETS[0].inputs);
   const [activePreset, setActivePreset] = useState<number>(0);
-  const [nominal, setNominal] = useState<boolean>(false); // true=そのときの金額（名目）
   const set = (patch: Partial<Inputs>) => { setInp((p) => ({ ...p, ...patch })); setActivePreset(-1); };
 
   const applyPreset = (i: number) => {
@@ -252,23 +251,29 @@ export default function LifeplanSimulator() {
 
   const result = useMemo(() => (invalid ? null : simulate(inp)), [inp, invalid]);
 
-  // 表示用。実質値 × 物価指数 で名目に直す
+  // 表示は「そのとき動く金額（名目）」に統一する。実質値 × 物価指数。
+  // ただし結果カードだけは「いまの物価だといくらか」も併記して、
+  // 金額が大きく見えるだけの錯覚が起きないようにする。
   const view = useMemo(() => {
     if (!result) return null;
-    const f = (v: number, r: Row) => (nominal ? v * r.factor : v);
     const rows = result.rows.map((r) => ({
       age: r.age, factor: r.factor,
-      income: f(r.income, r), living: f(r.living, r), edu: f(r.edu, r),
-      travel: f(r.travel, r), net: f(r.net, r), invested: f(r.invested, r),
-      cash: f(r.cash, r), asset: f(r.asset, r),
+      income: r.income * r.factor, living: r.living * r.factor, edu: r.edu * r.factor,
+      travel: r.travel * r.factor, net: r.net * r.factor, invested: r.invested * r.factor,
+      cash: r.cash * r.factor, asset: r.asset * r.factor,
     }));
-    const eduTotal = result.rows.reduce((s, r) => s + f(r.edu, r), 0);
+    const peakIdx = rows.reduce((bi, r, i) => (r.asset > rows[bi].asset ? i : bi), 0);
     return {
-      rows, eduTotal,
+      rows,
+      eduTotal: result.rows.reduce((s, r) => s + r.edu * r.factor, 0),
+      eduTotalReal: result.eduTotal,
       final: rows[rows.length - 1].asset,
-      peak: Math.max(...rows.map((r) => r.asset)),
+      finalReal: result.rows[result.rows.length - 1].asset,
+      peak: rows[peakIdx].asset,
+      peakReal: result.rows[peakIdx].asset,
+      peakAge: rows[peakIdx].age,
     };
-  }, [result, nominal]);
+  }, [result]);
 
   // ---- SVG chart ----
   const chart = useMemo(() => {
@@ -442,31 +447,9 @@ export default function LifeplanSimulator() {
       ) : (
         result && (
           <>
-            {/* 表示の切り替え */}
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 8, marginTop: 16 }}>
-              <span style={{ fontSize: 12, fontWeight: 700, color: GREEN_DARK }}>金額の見せ方</span>
-              {[
-                { v: false, label: "いまの物価", note: "実質" },
-                { v: true, label: "そのときの金額", note: "名目" },
-              ].map((o) => (
-                <button
-                  key={o.note}
-                  onClick={() => setNominal(o.v)}
-                  style={{
-                    fontSize: 12, fontWeight: 700, padding: "6px 12px", borderRadius: 999,
-                    border: `1.5px solid ${nominal === o.v ? GREEN_DARK : "#c8d8c0"}`,
-                    background: nominal === o.v ? GREEN_DARK : "#fff",
-                    color: nominal === o.v ? "#fff" : GREEN_DARK, cursor: "pointer",
-                  }}
-                >
-                  {o.label}（{o.note}）
-                </button>
-              ))}
-            </div>
-            <div style={{ fontSize: 11, color: GREEN, marginTop: 6, lineHeight: 1.8 }}>
-              {nominal
-                ? `そのとき実際に動く金額です。物価が上がるぶん、支出も年${inp.inflPct}%ずつ増えていきます。金額は大きく見えますが、価値が増えたわけではありません。`
-                : `すべていまの物価に直した金額です。支出が何年たっても同じなのは、物価のぶんをあらかじめ引いてあるからです（インフレは利回りの側で引いています）。`}
+            <div style={{ marginTop: 16, fontSize: 12, color: GREEN, lineHeight: 1.8, background: "#fff", border: "1.5px solid #c8d8c0", borderRadius: 12, padding: "10px 14px" }}>
+              💴 金額は<strong>そのとき実際に動く金額</strong>で出しています。物価が上がるぶん、支出も年{inp.inflPct}%ずつ増えていきます。ただし
+              <strong>金額が大きく見えても、価値が増えたわけではありません</strong>。下の結果には「いまの物価だといくらか」も添えました。
             </div>
 
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 12 }}>
@@ -478,19 +461,19 @@ export default function LifeplanSimulator() {
                   {result.depleteAge ? `${result.depleteAge}歳` : fmtMan(view!.final)}
                 </div>
                 <div style={{ fontSize: 12, color: INK }}>
-                  {result.depleteAge ? "この条件では最後まで持ちません" : "最後まで持ちます"}
+                  {result.depleteAge ? "この条件では最後まで持ちません" : <>いまの物価だと <strong>{fmtMan(view!.finalReal)}</strong></>}
                 </div>
               </div>
               <div style={{ flex: "1 1 200px", background: "#fff", border: "2px solid #c8d8c0", borderRadius: 16, padding: "14px 16px" }}>
-                <div style={{ fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>資産のピーク</div>
+                <div style={{ fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>資産のピーク（{view!.peakAge}歳）</div>
                 <div style={{ fontSize: 26, fontWeight: 700, color: INK, margin: "6px 0 2px" }}>{fmtMan(view!.peak)}</div>
-                <div style={{ fontSize: 12, color: INK }}>いちばん増えたときの金額</div>
+                <div style={{ fontSize: 12, color: INK }}>いまの物価だと <strong>{fmtMan(view!.peakReal)}</strong></div>
               </div>
               {view!.eduTotal > 0 && (
                 <div style={{ flex: "1 1 200px", background: "#fff", border: "2px solid #c8d8c0", borderRadius: 16, padding: "14px 16px" }}>
                   <div style={{ fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>教育費の合計</div>
                   <div style={{ fontSize: 26, fontWeight: 700, color: INK, margin: "6px 0 2px" }}>{fmtMan(view!.eduTotal)}</div>
-                  <div style={{ fontSize: 12, color: INK }}>この先かかるぶん</div>
+                  <div style={{ fontSize: 12, color: INK }}>いまの物価だと <strong>{fmtMan(view!.eduTotalReal)}</strong></div>
                 </div>
               )}
             </div>
@@ -576,7 +559,7 @@ export default function LifeplanSimulator() {
                 </table>
               </div>
               <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
-                単位は万円。いまは<strong>{nominal ? "そのときの金額（名目）" : "いまの物価に直した金額（実質）"}</strong>で表示しています。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
+                単位は万円。<strong>そのとき実際に動く金額</strong>で表示しています（物価のぶん、支出も収入も年々増えます）。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
               </div>
             </details>
           </>
@@ -584,7 +567,7 @@ export default function LifeplanSimulator() {
       )}
 
       <div style={{ marginTop: 12, fontSize: 11, color: GREEN, lineHeight: 1.8 }}>
-        ※ すべて「いまの物価」に直した実質値で計算・表示しています（実質利回り＝名目÷インフレ）。取り崩した年は利益に約20%の税金がかかるとして利回りを2割引きにしています。運用は毎年一定と置いた計算なので、<strong>取り崩し初期に暴落が来ると結果はこれより悪くなります</strong>。社会保険料・住宅ローン・児童手当などは入っていません。あくまで「考えるための道具」です。
+        ※ 金額は「そのとき実際に動く金額」で表示しています（内部ではいまの物価に直して計算し、表示のときに物価ぶんを戻しています）。取り崩した年は利益に約20%の税金がかかるとして利回りを2割引きにしています。現預金は利回り0%なので、物価が上がるぶん実質では目減りします。運用は毎年一定と置いた計算なので、<strong>取り崩し初期に暴落が来ると結果はこれより悪くなります</strong>。社会保険料・住宅ローン・児童手当などは入っていません。あくまで「考えるための道具」です。
       </div>
     </div>
   );

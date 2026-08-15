@@ -5,7 +5,7 @@ import LifeplanSimulator from "@/components/LifeplanSimulator";
 export const metadata: Metadata = {
   title: "ライフプラン・シミュレーター | 何歳まで資産が持つかの計算機",
   description:
-    "年齢・資産・収入・生活費・子どもの教育費・退職年齢・年金・iDeCo・利回り・インフレを自由に設定して、資産が何歳まで持つかを試せるシミュレーターです。すべて「いまの物価」に直した実質値で表示します。",
+    "年齢・資産・収入・生活費・子どもの教育費・退職年齢・年金・iDeCo・利回り・インフレを自由に設定して、資産が何歳まで持つかを試せるシミュレーターです。年ごとの明細つきで、金額はそのとき実際に動く金額で表示します。",
   alternates: { canonical: "https://harukamuy.com/tools/lifeplan" },
 };
 
@@ -28,7 +28,7 @@ export default function LifeplanPage() {
           ライフプラン・シミュレーター
         </h1>
         <p style={{ fontSize: 13, color: "var(--brown-3)", marginTop: 10 }}>
-          いまの資産と暮らし方で、何歳まで持つ? すべて「いまの物価」で答えます
+          いまの資産と暮らし方で、何歳まで持つ? 年ごとの明細つきで確かめられます
         </p>
       </div>
 
@@ -49,8 +49,9 @@ export default function LifeplanPage() {
           自分のライフプランを95歳まで計算した
           <Link href="/blog/lifeplan-one-line-95" style={{ color: "var(--brown)", fontWeight: 700 }}>記事</Link>
           で使った計算を、だれでも自分の数字で試せるようにしたツールです。家族構成・収入・教育費・退職年齢・年金・iDeCo・利回り・インフレを設定すると、
-          <strong>資産が何歳まで持つか</strong>がグラフでわかります。ポイントは、結果を全部
-          <strong>「いまの物価」に直して見せる</strong>こと。名目の金額は増えて見えても、実は物価が上がっただけ、という錯覚が混ざるからです。
+          <strong>資産が何歳まで持つか</strong>が年ごとの表とグラフでわかります。金額は
+          <strong>そのとき実際に動く金額</strong>で出すので、物価が上がるぶん支出も増えていきます。ただし金額が大きく見えても価値が増えたわけではないので、
+          結果には<strong>「いまの物価だといくらか」</strong>も添えています。
         </div>
 
         <LifeplanSimulator />
