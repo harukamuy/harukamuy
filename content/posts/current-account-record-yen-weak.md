@@ -2,7 +2,7 @@
 title: "稼いだお金が、日本に帰ってこない。過去最大の黒字なのに円安が進む理由を調べてみた"
 date: "2026-08-11"
 category: "news"
-excerpt: "2026年上半期の経常黒字が17兆4,292億円で過去最大。それなのに同じ半年でドル円は163円台まで進みました。中身を見たら、黒字の20兆4,914億円が第一次所得収支。海外で稼いだ配当が、帳簿には載るのに円には戻っていませんでした。その戻ってこないお金に、わたしの外貨建て資産も入っています。"
+excerpt: "2026年上半期の経常黒字が17兆4,292億円で過去最大。それなのにドル円は163円台まで進みました。中身を見たら、黒字の20兆4,914億円が第一次所得収支。海外で稼いだ配当が、帳簿には載るのに円には戻っていませんでした。その戻ってこないお金に、わたしの外貨建て資産も入っています。"
 coverImage: "/images/20260811_2.png"
 coverImagePosition: "center"
 tags: ["ニュース解説", "為替", "市場の話"]
@@ -40,7 +40,7 @@ tags: ["ニュース解説", "為替", "市場の話"]
 
 **なのに、円は安くなっている。**
 
-ふつうに考えるとおかしい。**たくさん稼いだ国の通貨は、買われるはずだ。**
+**たくさん稼いだ国の通貨は、買われるはずだ。**
 
 気になったので、中身を調べてみた。
 
@@ -63,20 +63,18 @@ tags: ["ニュース解説", "為替", "市場の話"]
 
 **数字だけ見れば、絵に描いたような好調だ。**
 
-ところが、同じ半年で為替はこう動いた。
+ところが、為替はこう動いた。
 
 <div class="data-card" style="background:#fff5e8;border:1.5px solid #d4957e;border-radius:12px;padding:18px 20px;margin:20px 0;">
-<div style="font-size:13px;font-weight:700;color:#a85f3c;margin-bottom:10px;">⚠ 同じ期間の円</div>
+<div style="font-size:13px;font-weight:700;color:#a85f3c;margin-bottom:10px;">⚠ そのあいだの円</div>
 <div style="font-size:13px;color:#5a4030;line-height:1.9;">
-7月24日に<strong>163.99円</strong>をつけた<br>
+7月23日に<strong>163.99円</strong>をつけた（上半期を越えたあと）<br>
 これは<strong>約40年ぶりの円安水準</strong><br>
 → <strong>稼いでいるのに、通貨は売られている</strong>
 </div>
 </div>
 
 **教科書どおりなら、逆になるはずだ**。輸出で稼げば、その代金を円に替える動きが出て、円が買われる。
-
-**でも、そうなっていない。**
 
 ---
 
@@ -284,7 +282,7 @@ tags: ["ニュース解説", "為替", "市場の話"]
 
 ただ、**大半は現地の工場や人に使われる**。日本へ実際に戻ってくるお金は、統計に載る金額よりずっと小さい。
 
-もうひとつある。**そもそも、円が買われる場面が少ない。**
+もうひとつある。**円を買う側の動きも、そもそも小さい。**
 
 会社が外国に工場や子会社をつくることを、**直接投資**という。これには、出ていく側と入ってくる側がある。
 
@@ -311,9 +309,9 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
 
 **TSMCの熊本工場は大きなニュースになった**。でも、あれくらいのことが**めったに起きない**というのが、この数字の意味だ。
 
-理由は、誘致がへただからというだけではないらしい。**日本市場そのものが伸びると思われていない**こと、**参入のハードルが高い**ことなど、構造的な事情が挙げられている。
+理由は、誘致がへただからだけではなかった。**日本市場そのものが伸びると思われていない**こと、**参入のハードルが高い**こと。構造的な事情がある。
 
-政府も問題だと考えていて、**2030年までに80兆円（GDP比12%）に増やす**という目標を立てている。裏を返せば、**いまはそこまで届いていない**ということでもある。
+政府も問題だと考えていて、**2030年までに120兆円に増やす**という目標を立てている。もともと80兆円だったものが、100兆円、120兆円と二度引き上げられた。それでも**2024年末の残高は53.3兆円**で、まだ半分ほどだ。
 
 **黒字なのに円安、という矛盾の正体はここだった**。統計が測っているのは**稼ぎ**で、為替を動かすのは**実際の売り買い**。**この2つが、ずれている。**
 
@@ -405,8 +403,6 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
 </div>
 </div>
 
-ただし、**外国の会社に来てほしくないという話ではない**。工場ができれば雇用も税収も生まれるし、そこで作ったものを輸出すれば貿易収支の側に乗る。**出ていく配当は、そのうちの一項目にすぎない。**
-
 **同じ数字でも、切り取りかたで逆に見える**。上半期は過去最大の黒字なのに、6月だけは赤字。海外からの投資は、円買いにも円売りにもなる。
 
 ---
@@ -415,7 +411,7 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
 
 いちばん気になるところだけれど、**わたしには分からない。**
 
-分からないなりに、**続きやすい理由と、変わりうる理由**を並べてみた。
+**続きやすい理由と、変わりうる理由**を並べてみた。
 
 <div class="data-card" style="background:#fafaf7;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 16px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:12px;">⚖️ どちらの理由もある</div>
@@ -443,8 +439,6 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
   </table>
 </div>
 
-**左を見ると続きそうだし、右を見ると変わりそうだ。どちらも、それらしく見える。**
-
 **どちらに転ぶかは、わたしには読めない。**
 
 ---
@@ -466,15 +460,13 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
 
 **当てるための分散ではない**。当てられないから分散する。**目的が逆だ。**
 
-実際、円が163.99円から157.85円へ動いたときは、**外貨建て約4,100万円が1日で約154万円目減りした**（[米雇用統計の記事](/blog/us-jobs-fell-unemployment-down)に書いた）。
+実際、円が163.99円から157.85円へ動いたときは、**外貨建て約4,100万円が約154万円目減りした**（[米雇用統計の記事](/blog/us-jobs-fell-unemployment-down)に書いた。7月末の高値から2週間ほどでの話だ）。
 
 **円高でも円安でも、どちらかが痛む**。それが分けておくということだと思っている。
 
 ---
 
 ## 8. わたしの場合は、ほとんど円とドルだ
-
-正直に書いておく。**わたしの分散は、そんなに立派なものではない。**
 
 <div class="data-card" style="background:#fafaf7;border:1.5px solid #c8d8c0;border-radius:12px;padding:18px 20px;margin:20px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:10px;">💴 わたしの通貨の内訳</div>
@@ -485,8 +477,6 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
 
 </div>
 </div>
-
-**「世界中に分散しています」とは、とても言えない。**
 
 それでも、**いまはこれでいいと思っている。**
 
@@ -522,7 +512,7 @@ OECD加盟38か国の平均は<strong>67%</strong>。日本は<strong>その38�
 
 いっぽうで、[円だけで持つリスク](/blog/yen-only-asset-risk)も書いてきたとおりで、**円だけというのも怖い。**
 
-**その2つを分けてあるなら、いまの自分にはひとまず足りている**。通貨をもっと細かく分けることもできるけれど、**そこまで手を広げる理由が、いまは見つかっていない。**
+**その2つを分けてあれば、いまの自分には足りている**。
 
 ---
 
@@ -543,7 +533,7 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
 
 **規模はまったく違うけれど、やっていることは同じだった。**
 
-海外で増えたお金を、円に替えずにそのまま置いておく。**そのほうが合理的だから**。企業がやっていることを、わたしも小さくやっている。
+海外で増えたお金を、円に替えずにそのまま置いておく。**そのほうが合理的だから**。
 
 **円安を「困ったこと」として読んでいたけれど、わたしはその流れの内側にいた。**
 
@@ -575,8 +565,6 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
 
 </div>
 
-**この記事は、ニュースの解説であると同時に、自分の説明でもあった。**
-
 ---
 
 ## 10. まとめ
@@ -584,38 +572,16 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>2026年上半期の経常黒字は<strong>17兆4,292億円</strong>（前年同期比<strong>+22.5%</strong>）で、比較できる1996年以降の上半期として<strong>過去最大</strong></li>
-<li>輸出も<strong>59兆1,929億円（+12.8%）</strong>で好調。半導体・電子部品は<strong>+41.1%</strong>、貿易収支も<strong>5年ぶりに黒字</strong>（7,421億円）</li>
-<li>それなのに<strong>同じ半年で円は売られ</strong>、7月24日に<strong>163.99円</strong>と約40年ぶりの円安水準をつけた</li>
-<li>黒字の中身を見たら答えがあった。<strong>第一次所得収支だけで20兆4,914億円</strong>。<strong>経常黒字17.4兆円より大きい</strong></li>
-<li>つまり<strong>黒字を作っているのは貿易ではない</strong>。貿易の黒字7,421億円は、第一次所得収支の<strong>28分の1</strong>しかない</li>
-<li><strong>第一次所得収支とは、日本が海外に持っている財産から生まれた稼ぎ</strong>。働いて得たお金ではなく、<strong>持っているから入ってくるお金</strong></li>
-<li>中身は<strong>①海外子会社からの配当 ②外国の債券や株の利子・配当 ③海外で働いた人の報酬</strong>の3つで、いちばん大きいのは①</li>
-<li>家計にたとえると、<strong>貿易収支＝給料、第一次所得収支＝配当や家賃</strong>。日本はいま<strong>給料より配当のほうがはるかに多い家</strong>になっている</li>
-<li>ここからが本題。<strong>海外子会社の利益は、円に替えられない</strong>。統計では日本の黒字に計上されるが、<strong>お金そのものは現地に残って再投資される</strong></li>
-<li>わざわざ円に替えて持ち帰り、使うときにドルへ戻すのは<strong>手間も為替の損も大きい</strong>から、現地に置くほうが合理的</li>
-<li>統計にはそれ専用のしくみがあった。<strong>再投資収益</strong>という。子会社が利益を現地に残すと、<strong>第一次所得収支に「受け取った」と計上し、同時に金融収支へ同額を「投資した」と計上</strong>する</li>
-<li>日銀の説明では<strong>「一旦配分された後、直ちに再投資されたものとみなして計上する」</strong>。<strong>受け取ってもいないし、投資し直してもいない</strong>のに、統計上は2回動いたことになる</li>
-<li>つまり<strong>円が買われないのは当然だった。円に替える場面がそもそも少ない</strong></li>
-<li>まったく動かないわけではない。<strong>現地の子会社が日本から機械や部品を買えば、そのぶんは円が買われる</strong>。ただし<strong>大半は現地の工場や人に使われる</strong></li>
-<li>さらに<strong>円が買われる場面そのものが少ない</strong>。<strong>トヨタがアメリカに工場をつくれば円安方向、TSMCが熊本につくれば円高方向</strong>に働くが、この2つの量が釣り合っていない</li>
-<li>日本に入ってきている直接投資の残高は<strong>GDPの5〜8%ほど</strong>。<strong>OECD38か国の平均67%に対して最下位</strong>。政府は2030年までに80兆円（GDP比12%）を目標にしている</li>
-<li>理由は誘致がへただからだけではなく、<strong>日本市場そのものが伸びると思われていない</strong>こと、<strong>参入のハードルが高い</strong>ことなど構造的な事情も挙げられている</li>
+<li>2026年上半期の経常黒字は<strong>17兆4,292億円</strong>（前年同期比<strong>+22.5%</strong>）で、比較できる1996年以降の上半期として<strong>過去最大</strong>。貿易収支も<strong>5年ぶりに黒字</strong>（7,421億円）</li>
+<li>それなのに<strong>そのあいだ円は売られ続け</strong>、7月23日には<strong>163.99円</strong>と約40年ぶりの円安水準をつけた</li>
+<li>黒字の中身は<strong>第一次所得収支が20兆4,914億円</strong>。貿易の黒字はその<strong>28分の1</strong>しかなく、<strong>黒字を作っているのは貿易ではなかった</strong></li>
+<li>第一次所得収支は<strong>海外に持っている財産から生まれた稼ぎ</strong>。家計にたとえると<strong>給料ではなく、配当や家賃</strong>にあたる</li>
+<li><strong>海外子会社の利益は、円に替えられない</strong>。統計は「受け取って、すぐ投資し直した」とみなして両方に計上する（<strong>再投資収益</strong>）。つまり<strong>円に替える場面が、そもそも少ない</strong></li>
+<li><strong>円を買う側の動きも小さい</strong>。日本に入ってきている直接投資の残高は<strong>GDPの5〜8%ほど</strong>で、<strong>OECD38か国の最下位</strong>だった</li>
 <li><strong>統計が測っているのは「稼ぎ」で、為替を動かすのは「実際の売り買い」</strong>。この2つがずれているのが、黒字なのに円安の正体だった</li>
-<li>6月単月を見ると<strong>▲923億円の赤字</strong>で17か月ぶり。<strong>第一次所得収支は3,801億円しかなく、前年同月比73.7%減</strong>だった</li>
-<li>理由は<strong>日本企業から海外の投資家へ支払う配当が増えた</strong>こと。つまり<strong>第一次所得収支は、受け取りから支払いを引いた残り</strong>だった。入ってくるだけの話ではない</li>
-<li>日本企業の配当は<strong>3月期決算の会社が6月に払う</strong>ものが多く、6月はもともと出ていく側が膨らむ月</li>
-<li>ここが4章とつながる。<strong>TSMCが熊本に来れば、そのときは円が買われる</strong>。でも利益が出れば<strong>今度は毎年、配当を海外へ払い続ける</strong></li>
-<li>つまり<strong>一度きりの円買いと、続いていく円売り</strong>。入ってくるお金には、出ていく約束がついてくる</li>
-<li>ただし<strong>外国の会社に来てほしくないという話ではない</strong>。工場ができれば<strong>雇用も税収も生まれ、輸出すれば貿易収支の側に乗る</strong>。出ていく配当は一項目にすぎない</li>
-<li><strong>ひとつの数字だけを見ると、逆の絵が出てくる</strong>。上半期は過去最大の黒字なのに6月だけは赤字だったのと、同じこと</li>
-<li>この傾向が続くかは<strong>わたしには分からない</strong>。企業の海外進出が構造的な点は続きやすいが、<strong>日米の金利差や政策</strong>で変わりうる。ただし<strong>配当を戻すと税を軽くする仕組みは2009年からあるのに、まだ戻っていない</strong></li>
-<li><strong>当てるための分散ではない。当てられないから分散する</strong>。円安なら外貨建てが増え、円高なら円で持っている分が目減りしない形にしておく</li>
-<li>実際、163.99円から157.85円へ動いたときは<strong>外貨建て約4,100万円が1日で約154万円目減り</strong>した。<strong>どちらに動いても、片方は痛む</strong></li>
-<li>わたしの通貨は<strong>円（日本株・生活防衛資金）とドル（S&P500・オルカン・外国債券）</strong>の<strong>2軸</strong>だけ。オルカンに他の通貨も入ってはいるが、実質はこの2つ</li>
-<li><strong>「世界中に分散しています」とは言えない</strong>。それでも、暮らしも仕事の報酬も円なので、<strong>いまの自分にはひとまず足りている</strong>と思っている</li>
-<li>最後に気づいたのは、<strong>「円に戻ってこないお金」にわたし自身も入っている</strong>ということ。評価益も配当も、<strong>ドルのまま置いてある</strong></li>
-<li>規模はまったく違うけれど、<strong>企業がやっていることを、自分も小さくやっていた</strong>。円安を他人事として読んではいられなかった</li>
+<li>6月単月は<strong>▲923億円の赤字</strong>。第一次所得収支は<strong>受け取りから支払いを引いた残り</strong>で、海外投資家への配当が増えていた。<strong>一度きりの円買いと、続いていく円売り</strong></li>
+<li>この傾向が続くかは<strong>わたしには分からない</strong>。<strong>当てるための分散ではない。当てられないから分散する</strong>。わたしの通貨は<strong>円とドルの2軸</strong>だけだ</li>
+<li>最後に気づいたのは、<strong>「円に戻ってこないお金」にわたし自身も入っている</strong>ということ。規模はまったく違うけれど、<strong>企業と同じことを小さくやっていた</strong></li>
 </ul>
 </div>
 
@@ -640,7 +606,7 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      そう。読めないことを認めるところから始まるの。
+      そう。読めないから、どっちが来ても困らない形にしてあるの。
     </div>
   </div>
 </div>
@@ -653,7 +619,7 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
 ・6月単月の国際収支：<a href="https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/preliminary/pg202606.htm" target="_blank" rel="noopener noreferrer">財務省「令和8年6月中 国際収支状況（速報）の概要」</a><br>
 ・過去最大の位置づけ：<a href="https://www.jiji.com/jc/article?k=2026081000117&g=eco" target="_blank" rel="noopener noreferrer">時事通信「26年上半期の経常黒字、過去最大 17.4兆円、半導体輸出好調」</a><br>
 ・対内直接投資の水準：<a href="https://www.nli-research.co.jp/report/detail/id=73575?site=nli" target="_blank" rel="noopener noreferrer">ニッセイ基礎研究所「対内直接投資倍増は実現できるのか」</a>／<a href="https://www.cao.go.jp/invest-japan/committee/mainpolicy_wg_01/shiryo_03.pdf" target="_blank" rel="noopener noreferrer">内閣府対日直接投資推進室「対日直接投資の現状」</a><br>
-・統計の用語：<a href="https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/term.htm" target="_blank" rel="noopener noreferrer">財務省「用語の解説」</a>／<a href="https://www.boj.or.jp/statistics/outline/exp/exbpsm6.htm" target="_blank" rel="noopener noreferrer">日本銀行「国際収支関連統計の解説」</a>
+・統計の用語：<a href="https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/term.htm" target="_blank" rel="noopener noreferrer">財務省「用語の解説」</a>／<a href="https://www.boj.or.jp/statistics/outline/exp/exbpsm6.htm" target="_blank" rel="noopener noreferrer">日本銀行「国際収支関連統計の解説」</a>／<a href="https://www.boj.or.jp/statistics/outline/exp/faqbpsm6.htm" target="_blank" rel="noopener noreferrer">日本銀行「国際収支関連統計のFAQ」（再投資収益の計上方法）</a>
 </div>
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:16px 0 36px;">
