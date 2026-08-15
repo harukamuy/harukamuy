@@ -46,7 +46,11 @@ type Child = { age: number; course: number; univ: number; grad: boolean };
 
 type Inputs = {
   age: number;        // いまの年齢
-  asset: number;      // いまの資産(万円)
+  asset: number;      // いまの資産(万円) 現預金＋投資の合計
+  cash: number;       // うち現預金(万円)。利回り0なのでインフレに負ける
+  invest: number;     // 年間の投資額(万円)。現預金から投資へ移す
+  investUntil: number; // 何歳まで投資を続けるか
+  raisePct: number;   // 昇給率(名目・年%)
   income: number;     // 世帯の手取り年収(万円) 退職まで
   retire: number;     // 退職年齢（収入が止まる）
   sideMonthly: number;   // 退職後のゆるい収入(月・万円)
@@ -65,7 +69,8 @@ type Inputs = {
 };
 
 const AZUKI: Inputs = {
-  age: 34, asset: 5831, income: 440, retire: 40,
+  age: 34, asset: 5831, cash: 300, invest: 160, investUntil: 40, raisePct: 0,
+  income: 440, retire: 40,
   sideMonthly: 0, sideUntil: 65, livingNow: 15, livingAfter: 12.5, travel: 100,
   pensionStart: 65, pensionMonthly: 7, lumpAge: 60, lumpAmount: 769,
   yieldPct: 5, inflPct: 2, endAge: 95, children: [],
@@ -74,14 +79,15 @@ const AZUKI: Inputs = {
 const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   {
     label: "あずき（記事の設定）",
-    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金はマクロ経済スライドの目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円（いまの価値）",
+    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金はマクロ経済スライドの目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円（いまの価値）。記事より少し辛めに出るのは、生活防衛資金300万円を利回り0%の現預金として分けているためです",
     inputs: AZUKI,
   },
   {
     label: "子ども2人の世帯",
     note: "35歳夫婦・子5歳と2歳。世帯手取り650万円で65歳まで働き、子はオール公立から国公立大学へ。年金は夫婦で月18万円（いまの価値）",
     inputs: {
-      age: 35, asset: 1000, income: 650, retire: 65,
+      age: 35, asset: 1000, cash: 300, invest: 100, investUntil: 60, raisePct: 1.5,
+      income: 650, retire: 65,
       sideMonthly: 0, sideUntil: 65, livingNow: 28, livingAfter: 24, travel: 30,
       pensionStart: 65, pensionMonthly: 18, lumpAge: 65, lumpAmount: 1000,
       yieldPct: 5, inflPct: 2, endAge: 95,
@@ -95,7 +101,8 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     label: "50歳からの老後チェック",
     note: "50歳・資産3,000万円。60歳まで働いて、退職金1,000万円と65歳からの年金月13万円で暮らせるか",
     inputs: {
-      age: 50, asset: 3000, income: 420, retire: 60,
+      age: 50, asset: 3000, cash: 400, invest: 60, investUntil: 60, raisePct: 0.5,
+      income: 420, retire: 60,
       sideMonthly: 5, sideUntil: 65, livingNow: 20, livingAfter: 18, travel: 20,
       pensionStart: 65, pensionMonthly: 13, lumpAge: 60, lumpAmount: 1000,
       yieldPct: 5, inflPct: 2, endAge: 95, children: [],
@@ -115,8 +122,13 @@ function eduCostAt(c: Child, yearsAhead: number): number {
   return 0;
 }
 
+type Row = {
+  age: number; income: number; living: number; edu: number; travel: number;
+  net: number; invested: number; cash: number; asset: number;
+};
+
 type SimResult = {
-  traj: number[];          // 各年齢末の資産（実質・万円）
+  rows: Row[];
   depleteAge: number | null;
   final: number;
   peak: number;
@@ -126,30 +138,45 @@ type SimResult = {
 function simulate(inp: Inputs): SimResult {
   const rNom = inp.yieldPct / 100;
   const infl = inp.inflPct / 100;
-  const rFull = (1 + rNom) / (1 + infl) - 1;          // 実質（積み上げ期）
-  const rTaxed = (1 + rNom * 0.8) / (1 + infl) - 1;   // 実質（取り崩した年）
-  let a = inp.asset;
-  const traj: number[] = [];
+  const rFull = (1 + rNom) / (1 + infl) - 1;          // 投資の実質利回り
+  const rCash = 1 / (1 + infl) - 1;                    // 現預金は名目0%＝インフレぶん目減り
+  const rSell = (1 + rNom * 0.8) / (1 + infl) - 1;     // 取り崩した年は税ぶん割り引く
+  let cash = Math.min(inp.cash, inp.asset);
+  let inv = Math.max(0, inp.asset - cash);
+  const rows: Row[] = [];
   let depleteAge: number | null = null;
-  let peak = a;
+  let peak = inp.asset;
   let eduTotal = 0;
   for (let age = inp.age; age <= inp.endAge; age++) {
     const years = age - inp.age;
     const edu = inp.children.reduce((s, c) => s + eduCostAt(c, years), 0);
     eduTotal += edu;
-    const income =
-      (age < inp.retire ? inp.income : 0) +
-      (age >= inp.retire && age < inp.sideUntil ? inp.sideMonthly * 12 : 0) +
-      (age >= inp.pensionStart ? inp.pensionMonthly * 12 : 0);
+    // 昇給は名目。実質に直すため物価で割る
+    const raise = Math.pow((1 + inp.raisePct / 100) / (1 + infl), years);
+    const salary = age < inp.retire ? inp.income * raise : 0;
+    const side = age >= inp.retire && age < inp.sideUntil ? inp.sideMonthly * 12 : 0;
+    const pension = age >= inp.pensionStart ? inp.pensionMonthly * 12 : 0;
+    const income = salary + side + pension;
     const living = (age < inp.retire ? inp.livingNow : inp.livingAfter) * 12;
     const net = income - living - inp.travel - edu;
-    a = a * (1 + (net < 0 ? rTaxed : rFull)) + net;
-    if (age === inp.lumpAge) a += inp.lumpAmount;
-    if (a < 0 && depleteAge === null) depleteAge = age;
-    if (a > peak) peak = a;
-    traj.push(a);
+    const invAmt = age <= inp.investUntil ? inp.invest : 0;
+
+    // 運用（取り崩す年は税ぶん割り引く）
+    inv = inv * (1 + (net < 0 ? rSell : rFull));
+    cash = cash * (1 + rCash);
+    // 収支と積立を反映
+    cash += net - invAmt;
+    inv += invAmt;
+    if (age === inp.lumpAge) cash += inp.lumpAmount;
+    // 現預金が足りなければ投資を取り崩す
+    if (cash < 0) { inv += cash; cash = 0; }
+
+    const asset = cash + inv;
+    if (asset < 0 && depleteAge === null) depleteAge = age;
+    if (asset > peak) peak = asset;
+    rows.push({ age, income, living, edu, travel: inp.travel, net, invested: Math.max(0, inv), cash, asset });
   }
-  return { traj, depleteAge, final: a, peak, eduTotal };
+  return { rows, depleteAge, final: rows[rows.length - 1].asset, peak, eduTotal };
 }
 
 function fmtMan(x: number): string {
@@ -226,7 +253,7 @@ export default function LifeplanSimulator() {
   const chart = useMemo(() => {
     if (!result) return null;
     const W = 720, H = 300, padL = 66, padR = 16, padT = 18, padB = 34;
-    const vals = result.traj.map((v) => Math.max(0, v));
+    const vals = result.rows.map((r) => Math.max(0, r.asset));
     const maxV = Math.max(...vals, 1);
     const n = vals.length;
     const x = (i: number) => padL + ((W - padL - padR) * i) / Math.max(1, n - 1);
@@ -272,11 +299,12 @@ export default function LifeplanSimulator() {
       <Section title="👤 いまの状態（収入・生活費・年金は世帯の合計で。単身でも夫婦でも使えます）">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 10 }}>
           <NumberField label="いまの年齢" value={inp.age} min={18} max={90} suffix="歳" onChange={(v) => set({ age: v })} />
-          <NumberField label="いまの資産" value={inp.asset} min={0} max={1000000} suffix="万円" onChange={(v) => set({ asset: v })} />
+          <NumberField label="いまの資産（合計）" value={inp.asset} min={0} max={1000000} suffix="万円" onChange={(v) => set({ asset: v })} />
+          <NumberField label="うち現預金" value={inp.cash} min={0} max={1000000} suffix="万円" onChange={(v) => set({ cash: v })} />
           <NumberField label="手取り年収（世帯）" value={inp.income} min={0} max={100000} suffix="万円" onChange={(v) => set({ income: v })} />
           <NumberField label="生活費（現役・月）" value={inp.livingNow} min={0} max={1000} step={0.5} suffix="万円" onChange={(v) => set({ livingNow: v })} />
         </div>
-        <div style={{ fontSize: 11, color: GREEN, marginTop: 8 }}>生活費に教育費は入れないでください（下の子どもの欄から自動で計算します）</div>
+        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>生活費に教育費は入れないでください（下の子どもの欄から自動で計算します）。<strong>現預金は利回り0%</strong>として扱うので、インフレのぶん実質で目減りします。</div>
       </Section>
 
       {/* 子ども */}
@@ -330,10 +358,22 @@ export default function LifeplanSimulator() {
       <Section title="💼 いつまで働くか">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 10 }}>
           <NumberField label="退職する年齢" value={inp.retire} min={18} max={90} suffix="歳" onChange={(v) => set({ retire: v })} />
+          <NumberField label="昇給率（名目・年）" value={inp.raisePct} min={-5} max={10} step={0.1} suffix="%" onChange={(v) => set({ raisePct: v })} />
           <NumberField label="退職後の生活費（月）" value={inp.livingAfter} min={0} max={1000} step={0.5} suffix="万円" onChange={(v) => set({ livingAfter: v })} />
           <NumberField label="退職後のゆるい収入（月）" value={inp.sideMonthly} min={0} max={100} step={0.5} suffix="万円" onChange={(v) => set({ sideMonthly: v })} />
           <NumberField label="ゆるい収入は何歳まで" value={inp.sideUntil} min={18} max={90} suffix="歳" onChange={(v) => set({ sideUntil: v })} />
           <NumberField label="旅行・特別支出（年）" value={inp.travel} min={0} max={10000} suffix="万円" onChange={(v) => set({ travel: v })} />
+        </div>
+      </Section>
+
+      {/* 積立 */}
+      <Section title="💰 毎年の積立">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 10 }}>
+          <NumberField label="年間の投資額" value={inp.invest} min={0} max={10000} suffix="万円" onChange={(v) => set({ invest: v })} />
+          <NumberField label="何歳まで積み立てる" value={inp.investUntil} min={18} max={90} suffix="歳" onChange={(v) => set({ investUntil: v })} />
+        </div>
+        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
+          現預金から投資へ移すお金です。<strong>余ったお金が自動で投資される計算ではありません</strong>。積立が収支を上回ると現預金が減り、足りなくなったら投資を取り崩します。
         </div>
       </Section>
 
@@ -367,6 +407,9 @@ export default function LifeplanSimulator() {
         </div>
         <div style={{ fontSize: 11, color: GREEN, marginTop: 8 }}>
           実質利回り（物価を引いたあと）: <strong>{(((1 + inp.yieldPct / 100) / (1 + inp.inflPct / 100) - 1) * 100).toFixed(1)}%</strong>
+          {inp.raisePct !== 0 && (
+            <> ／ 実質の昇給率: <strong>{(((1 + inp.raisePct / 100) / (1 + inp.inflPct / 100) - 1) * 100).toFixed(1)}%</strong>（昇給がインフレと同じなら実質0%）</>
+          )}
         </div>
       </Section>
 
@@ -434,6 +477,60 @@ export default function LifeplanSimulator() {
                 </svg>
               </div>
             )}
+
+            {/* 年ごとの明細 */}
+            <details style={{ marginTop: 14, background: "#fff", border: "1.5px solid #c8d8c0", borderRadius: 16, padding: "12px 14px" }}>
+              <summary style={{ cursor: "pointer", fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>
+                📋 年ごとの明細を見る（{result.rows.length}年ぶん）
+              </summary>
+              <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: 10 }}>
+                <table style={{ borderCollapse: "collapse", fontSize: 12, minWidth: 620, width: "100%" }}>
+                  <thead>
+                    <tr>
+                      {["年齢", "収入", "生活費", "教育費", "旅行", "収支", "投資", "現預金", "資産計"].map((h, i) => (
+                        <th key={h} style={{
+                          background: "#e6efe0", color: GREEN_DARK, fontWeight: 700,
+                          padding: "7px 8px", textAlign: i === 0 ? "left" : "right",
+                          position: "sticky", top: 0, whiteSpace: "nowrap",
+                          borderBottom: "1.5px solid #c8d8c0",
+                        }}>{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {result.rows.map((r) => {
+                      const isEvent = r.age === inp.retire || r.age === inp.pensionStart || r.age === inp.lumpAge;
+                      const gone = r.asset < 0;
+                      return (
+                        <tr key={r.age} style={{ background: gone ? "#fdecec" : isEvent ? "#f7ede0" : r.age % 2 ? "#fbfdfa" : "#fff" }}>
+                          <td style={{ padding: "6px 8px", color: INK, fontWeight: isEvent ? 700 : 400, whiteSpace: "nowrap" }}>
+                            {r.age}歳
+                            {r.age === inp.retire && <span style={{ color: TERRA_DARK, fontSize: 10 }}> 退職</span>}
+                            {r.age === inp.pensionStart && <span style={{ color: TERRA_DARK, fontSize: 10 }}> 年金</span>}
+                            {r.age === inp.lumpAge && <span style={{ color: TERRA_DARK, fontSize: 10 }}> 受取</span>}
+                          </td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: INK }}>{Math.round(r.income).toLocaleString()}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: INK }}>{Math.round(r.living).toLocaleString()}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: r.edu > 0 ? TERRA_DARK : "#bbb" }}>{r.edu > 0 ? Math.round(r.edu).toLocaleString() : "-"}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: r.travel > 0 ? INK : "#bbb" }}>{r.travel > 0 ? Math.round(r.travel).toLocaleString() : "-"}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 700, color: r.net < 0 ? TERRA_DARK : GREEN_DARK }}>
+                            {r.net >= 0 ? "+" : ""}{Math.round(r.net).toLocaleString()}
+                          </td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: INK }}>{Math.round(r.invested).toLocaleString()}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: INK }}>{Math.round(r.cash).toLocaleString()}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 700, color: gone ? TERRA_DARK : INK, background: gone ? "#fdecec" : "#fffdf5" }}>
+                            {Math.round(r.asset).toLocaleString()}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
+                単位は万円。すべて「いまの物価」に直した実質値です。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
+              </div>
+            </details>
           </>
         )
       )}
