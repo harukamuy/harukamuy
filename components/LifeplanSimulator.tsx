@@ -125,6 +125,7 @@ function eduCostAt(c: Child, yearsAhead: number): number {
 type Row = {
   age: number; income: number; living: number; edu: number; travel: number;
   net: number; invested: number; cash: number; asset: number;
+  factor: number; // その年の物価指数。実質値にこれを掛けると名目になる
 };
 
 type SimResult = {
@@ -174,7 +175,8 @@ function simulate(inp: Inputs): SimResult {
     const asset = cash + inv;
     if (asset < 0 && depleteAge === null) depleteAge = age;
     if (asset > peak) peak = asset;
-    rows.push({ age, income, living, edu, travel: inp.travel, net, invested: Math.max(0, inv), cash, asset });
+    // 各行は「その年の終わり」の状態。名目に直すときは1年ぶん先の物価を使う
+    rows.push({ age, income, living, edu, travel: inp.travel, net, invested: Math.max(0, inv), cash, asset, factor: Math.pow(1 + infl, years + 1) });
   }
   return { rows, depleteAge, final: rows[rows.length - 1].asset, peak, eduTotal };
 }
@@ -236,6 +238,7 @@ const selectStyle: React.CSSProperties = {
 export default function LifeplanSimulator() {
   const [inp, setInp] = useState<Inputs>(PRESETS[0].inputs);
   const [activePreset, setActivePreset] = useState<number>(0);
+  const [nominal, setNominal] = useState<boolean>(false); // true=そのときの金額（名目）
   const set = (patch: Partial<Inputs>) => { setInp((p) => ({ ...p, ...patch })); setActivePreset(-1); };
 
   const applyPreset = (i: number) => {
@@ -249,11 +252,29 @@ export default function LifeplanSimulator() {
 
   const result = useMemo(() => (invalid ? null : simulate(inp)), [inp, invalid]);
 
+  // 表示用。実質値 × 物価指数 で名目に直す
+  const view = useMemo(() => {
+    if (!result) return null;
+    const f = (v: number, r: Row) => (nominal ? v * r.factor : v);
+    const rows = result.rows.map((r) => ({
+      age: r.age, factor: r.factor,
+      income: f(r.income, r), living: f(r.living, r), edu: f(r.edu, r),
+      travel: f(r.travel, r), net: f(r.net, r), invested: f(r.invested, r),
+      cash: f(r.cash, r), asset: f(r.asset, r),
+    }));
+    const eduTotal = result.rows.reduce((s, r) => s + f(r.edu, r), 0);
+    return {
+      rows, eduTotal,
+      final: rows[rows.length - 1].asset,
+      peak: Math.max(...rows.map((r) => r.asset)),
+    };
+  }, [result, nominal]);
+
   // ---- SVG chart ----
   const chart = useMemo(() => {
-    if (!result) return null;
+    if (!result || !view) return null;
     const W = 720, H = 300, padL = 66, padR = 16, padT = 18, padB = 34;
-    const vals = result.rows.map((r) => Math.max(0, r.asset));
+    const vals = view!.rows.map((r) => Math.max(0, r.asset));
     const maxV = Math.max(...vals, 1);
     const n = vals.length;
     const x = (i: number) => padL + ((W - padL - padR) * i) / Math.max(1, n - 1);
@@ -272,7 +293,7 @@ export default function LifeplanSimulator() {
     const deplete = result.depleteAge !== null
       ? { xx: x(result.depleteAge - inp.age), yy: y(0) } : null;
     return { W, H, line, yTicks, xTicks, vlines, deplete, y0: y(0) };
-  }, [result, inp.age, inp.retire, inp.pensionStart, inp.endAge]);
+  }, [result, view, inp.age, inp.retire, inp.pensionStart, inp.endAge]);
 
   return (
     <div style={{ background: "#f0f5ee", border: "1.5px solid #c8d8c0", borderRadius: 16, padding: "20px 18px 22px" }}>
@@ -421,28 +442,55 @@ export default function LifeplanSimulator() {
       ) : (
         result && (
           <>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 14 }}>
+            {/* 表示の切り替え */}
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 8, marginTop: 16 }}>
+              <span style={{ fontSize: 12, fontWeight: 700, color: GREEN_DARK }}>金額の見せ方</span>
+              {[
+                { v: false, label: "いまの物価", note: "実質" },
+                { v: true, label: "そのときの金額", note: "名目" },
+              ].map((o) => (
+                <button
+                  key={o.note}
+                  onClick={() => setNominal(o.v)}
+                  style={{
+                    fontSize: 12, fontWeight: 700, padding: "6px 12px", borderRadius: 999,
+                    border: `1.5px solid ${nominal === o.v ? GREEN_DARK : "#c8d8c0"}`,
+                    background: nominal === o.v ? GREEN_DARK : "#fff",
+                    color: nominal === o.v ? "#fff" : GREEN_DARK, cursor: "pointer",
+                  }}
+                >
+                  {o.label}（{o.note}）
+                </button>
+              ))}
+            </div>
+            <div style={{ fontSize: 11, color: GREEN, marginTop: 6, lineHeight: 1.8 }}>
+              {nominal
+                ? `そのとき実際に動く金額です。物価が上がるぶん、支出も年${inp.inflPct}%ずつ増えていきます。金額は大きく見えますが、価値が増えたわけではありません。`
+                : `すべていまの物価に直した金額です。支出が何年たっても同じなのは、物価のぶんをあらかじめ引いてあるからです（インフレは利回りの側で引いています）。`}
+            </div>
+
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 12 }}>
               <div style={{ flex: "1 1 200px", background: "#fff", border: `2px solid ${result.depleteAge ? TERRA : GREEN}`, borderRadius: 16, padding: "14px 16px" }}>
                 <div style={{ fontSize: 13, fontWeight: 700, color: result.depleteAge ? TERRA_DARK : GREEN_DARK }}>
-                  {result.depleteAge ? "資産が尽きる年齢" : `${inp.endAge}歳時点の資産（いまの物価）`}
+                  {result.depleteAge ? "資産が尽きる年齢" : `${inp.endAge}歳時点の資産`}
                 </div>
                 <div style={{ fontSize: 26, fontWeight: 700, color: result.depleteAge ? TERRA_DARK : GREEN_DARK, margin: "6px 0 2px" }}>
-                  {result.depleteAge ? `${result.depleteAge}歳` : fmtMan(result.final)}
+                  {result.depleteAge ? `${result.depleteAge}歳` : fmtMan(view!.final)}
                 </div>
                 <div style={{ fontSize: 12, color: INK }}>
                   {result.depleteAge ? "この条件では最後まで持ちません" : "最後まで持ちます"}
                 </div>
               </div>
               <div style={{ flex: "1 1 200px", background: "#fff", border: "2px solid #c8d8c0", borderRadius: 16, padding: "14px 16px" }}>
-                <div style={{ fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>資産のピーク（いまの物価）</div>
-                <div style={{ fontSize: 26, fontWeight: 700, color: INK, margin: "6px 0 2px" }}>{fmtMan(result.peak)}</div>
+                <div style={{ fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>資産のピーク</div>
+                <div style={{ fontSize: 26, fontWeight: 700, color: INK, margin: "6px 0 2px" }}>{fmtMan(view!.peak)}</div>
                 <div style={{ fontSize: 12, color: INK }}>いちばん増えたときの金額</div>
               </div>
-              {result.eduTotal > 0 && (
+              {view!.eduTotal > 0 && (
                 <div style={{ flex: "1 1 200px", background: "#fff", border: "2px solid #c8d8c0", borderRadius: 16, padding: "14px 16px" }}>
                   <div style={{ fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>教育費の合計</div>
-                  <div style={{ fontSize: 26, fontWeight: 700, color: INK, margin: "6px 0 2px" }}>{fmtMan(result.eduTotal)}</div>
-                  <div style={{ fontSize: 12, color: INK }}>この先かかるぶん（いまの物価）</div>
+                  <div style={{ fontSize: 26, fontWeight: 700, color: INK, margin: "6px 0 2px" }}>{fmtMan(view!.eduTotal)}</div>
+                  <div style={{ fontSize: 12, color: INK }}>この先かかるぶん</div>
                 </div>
               )}
             </div>
@@ -481,7 +529,7 @@ export default function LifeplanSimulator() {
             {/* 年ごとの明細 */}
             <details style={{ marginTop: 14, background: "#fff", border: "1.5px solid #c8d8c0", borderRadius: 16, padding: "12px 14px" }}>
               <summary style={{ cursor: "pointer", fontSize: 13, fontWeight: 700, color: GREEN_DARK }}>
-                📋 年ごとの明細を見る（{result.rows.length}年ぶん）
+                📋 年ごとの明細を見る（{view!.rows.length}年ぶん）
               </summary>
               <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: 10 }}>
                 <table style={{ borderCollapse: "collapse", fontSize: 12, minWidth: 620, width: "100%" }}>
@@ -498,7 +546,7 @@ export default function LifeplanSimulator() {
                     </tr>
                   </thead>
                   <tbody>
-                    {result.rows.map((r) => {
+                    {view!.rows.map((r) => {
                       const isEvent = r.age === inp.retire || r.age === inp.pensionStart || r.age === inp.lumpAge;
                       const gone = r.asset < 0;
                       return (
@@ -528,7 +576,7 @@ export default function LifeplanSimulator() {
                 </table>
               </div>
               <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
-                単位は万円。すべて「いまの物価」に直した実質値です。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
+                単位は万円。いまは<strong>{nominal ? "そのときの金額（名目）" : "いまの物価に直した金額（実質）"}</strong>で表示しています。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
               </div>
             </details>
           </>
