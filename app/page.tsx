@@ -407,6 +407,30 @@ export default function Home() {
           </div>
           <span style={{ color: "var(--terra)", fontSize: 14, flexShrink: 0 }}>→</span>
         </Link>
+        <Link href="/tools/lifeplan" style={{
+          display: "grid",
+          gridTemplateColumns: "auto 1fr auto",
+          gap: 16,
+          alignItems: "center",
+          background: "var(--white)",
+          border: "1.5px solid var(--beige)",
+          borderRadius: 14,
+          padding: "16px 18px",
+          textDecoration: "none",
+          color: "inherit",
+          marginTop: 12,
+        }}>
+          <span style={{ fontSize: 26, flexShrink: 0 }}>🗓</span>
+          <div>
+            <div style={{ fontFamily: "var(--font-serif)", fontSize: 14, fontWeight: 600, color: "var(--brown)", lineHeight: 1.55 }}>
+              ライフプラン・シミュレーター
+            </div>
+            <div style={{ fontSize: 12, color: "var(--brown-3)", lineHeight: 1.7, marginTop: 3 }}>
+              家族構成・教育費・退職年齢・年金・インフレを自由に設定して、資産が何歳まで持つかを「いまの物価」で確かめられます
+            </div>
+          </div>
+          <span style={{ color: "var(--terra)", fontSize: 14, flexShrink: 0 }}>→</span>
+        </Link>
       </section>
 
       {/* ARTICLES with category filter (Client Component) */}

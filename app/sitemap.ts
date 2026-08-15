@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/privacy`,            lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
     { url: `${SITE_URL}/tags`,               lastModified: new Date(), changeFrequency: "weekly",  priority: 0.5 },
     { url: `${SITE_URL}/tools/jack-and-jill`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE_URL}/tools/lifeplan`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
   ];
 
   const postPages: MetadataRoute.Sitemap = posts.map((post) => ({

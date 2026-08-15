@@ -324,6 +324,8 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 
 ## 関連記事
 
+- 🗓 [この記事の計算を自分の数字で試す: ライフプラン・シミュレーター](/tools/lifeplan)
+
 - [FIREが増えると、インフレになるらしい。FIRE寄りの一人として調べてみた](/blog/fire-increase-causes-inflation)
 - [東京から十勝へ。Uターン費用を試算したら、障壁はお金じゃなかった【十勝計画③】](/blog/tokachi-plan-03-money-simulation)
 - [iDeCoを放置していた3年間。控除は金額ではなく年数で決まると知って、最低額で再開する](/blog/ideco-restart-minimum)
