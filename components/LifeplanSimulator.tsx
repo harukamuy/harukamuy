@@ -175,8 +175,8 @@ function simulate(inp: Inputs): SimResult {
     const asset = cash + inv;
     if (asset < 0 && depleteAge === null) depleteAge = age;
     if (asset > peak) peak = asset;
-    // 各行は「その年の終わり」の状態。名目に直すときは1年ぶん先の物価を使う
-    rows.push({ age, income, living, edu, travel: inp.travel, net, invested: Math.max(0, inv), cash, asset, factor: Math.pow(1 + infl, years + 1) });
+    // いちばん上の行は「今年」。入力した金額がそのまま出るよう、物価指数は経過年数ぶんだけ掛ける
+    rows.push({ age, income, living, edu, travel: inp.travel, net, invested: Math.max(0, inv), cash, asset, factor: Math.pow(1 + infl, years) });
   }
   return { rows, depleteAge, final: rows[rows.length - 1].asset, peak, eduTotal };
 }
@@ -559,7 +559,7 @@ export default function LifeplanSimulator() {
                 </table>
               </div>
               <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
-                単位は万円。<strong>そのとき実際に動く金額</strong>で表示しています（物価のぶん、支出も収入も年々増えます）。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
+                単位は万円。<strong>そのとき実際に動く金額</strong>で表示しています。いちばん上の行は<strong>今年</strong>で、入力した金額がそのまま入ります。そこから毎年{inp.inflPct}%ずつ増えていきます。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
               </div>
             </details>
           </>
