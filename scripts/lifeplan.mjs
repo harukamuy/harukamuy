@@ -96,7 +96,7 @@ for (const [l, g] of [["月5万", 50_000], ["月3万", 30_000], ["働かない",
   console.log(`  ${l.padEnd(8)}` + AGES.map(a => (r.snap[a] < 0 ? "枯渇" : man(r.snap[a])).padStart(9)).join("") + (r.尽きる ? ` ❌${r.尽きる}歳` : " ✓"));
 }
 console.log(`\n④ 旅行の上限`);
-for (const t of [1_000_000, 1_100_000, 1_200_000, 1_300_000, 1_500_000, 2_000_000])
+for (const t of [1_000_000, 1_050_000, 1_090_000, 1_100_000, 1_200_000, 1_500_000, 2_000_000])
   console.log(`  年${man(t).padStart(5)}  ${res(sim({ 旅行: t }))}`);
 console.log(`\n⑤ 崩す（旅行${man(旅行基準)}円・働かない基準）`);
 for (const [l, o] of [

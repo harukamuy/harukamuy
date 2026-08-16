@@ -164,7 +164,8 @@ function simulate(inp: Inputs): SimResult {
     // 昇給は名目。実質に直すため物価で割る
     const raise = Math.pow((1 + inp.raisePct / 100) / (1 + infl), years);
     const salary = age < inp.retire ? inp.income * raise : 0;
-    const side = age >= inp.retire && age < inp.sideUntil ? inp.sideMonthly * 12 : 0;
+    // 「何歳まで」は積立・完済と同じく、その年を含む
+    const side = age >= inp.retire && age <= inp.sideUntil ? inp.sideMonthly * 12 : 0;
     const pension = age >= inp.pensionStart ? inp.pensionMonthly * 12 : 0;
     const income = salary + side + pension;
     const living = (age < inp.retire ? inp.livingNow : inp.livingAfter) * 12;
@@ -359,7 +360,7 @@ export default function LifeplanSimulator() {
           <NumberField label="ローンの返済（月）" value={inp.debtMonthly} min={0} max={200} step={0.5} suffix="万円" onChange={(v) => set({ debtMonthly: v })} />
           <NumberField label="完済する年齢" value={inp.debtUntil} min={0} max={100} suffix="歳" onChange={(v) => set({ debtUntil: v })} />
         </div>
-        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>生活費に<strong>教育費とローンの返済</strong>は入れないでください（教育費は下の子どもの欄から自動で計算します）。住宅ローン・奨学金・車のローンは、毎月の返済額と完済する年齢を入れてください。<strong>金利を聞かないのは、返済額にすでに入っているから</strong>です。完済するとその支出が消えます（住宅ローンなら、完済後も固定資産税や修繕は残るので、そのぶんは生活費に残しておいてください）。<strong>現預金は利回り0%</strong>です。<strong>生活防衛資金はいまの価値で保ちます</strong>。この額を割りそうになると投資を取り崩して戻すので、<strong>取り崩しは投資のほうから</strong>進みます（表の現預金が名目で増えていくのは、同じ買い物ができる状態を保つためです）。</div>
+        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}><strong>いまの資産にiDeCo・企業型DCは入れないでください</strong>（下の「iDeCo・退職金の額」で別に入れるので、両方に入れると二重に数えることになります）。生活費に<strong>教育費とローンの返済</strong>は入れないでください（教育費は下の子どもの欄から自動で計算します）。住宅ローン・奨学金・車のローンは、毎月の返済額と完済する年齢を入れてください。<strong>金利を聞かないのは、返済額にすでに入っているから</strong>です。完済するとその支出が消えます（住宅ローンなら、完済後も固定資産税や修繕は残るので、そのぶんは生活費に残しておいてください）。<strong>現預金は利回り0%</strong>です。<strong>生活防衛資金はいまの価値で保ちます</strong>。この額を割りそうになると投資を取り崩して戻すので、<strong>取り崩しは投資のほうから</strong>進みます（表の現預金が名目で増えていくのは、同じ買い物ができる状態を保つためです）。</div>
       </Section>
 
       {/* 子ども */}
