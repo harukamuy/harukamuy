@@ -42,11 +42,11 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 
 帰る時期そのものは、まだ決めていない。早まることも、後ろにずれることもあると思う。ただ<strong>40歳はひとつの節目</strong>だから、いったんそこに置いて線を引く。40歳で[十勝に帰って](/blog/tokachi-plan-01-prologue)、実家で両親と暮らす。働く量も決めていないから、いちばん厳しい「働かない」まで幅で見る。60歳でiDeCoを受け取り、65歳から年金。独身のまま。これを全部1本の時間軸に並べて、いくらあって、いくら使えて、どこで崩れるのかを見ておきたい。
 
-先に書いておくと、この計算でいちばん効いたのは、運用でも節約でもなかった。
+先に書いておくと、この計算でいちばん効いたのは、運用でも労働でもなかった。
 
 <div class="data-card" style="background:#fff6ea;border:1.5px solid #f0dcc8;border-radius:14px;padding:16px 18px;font-size:12px;color:#7a5c44;line-height:1.9;margin:24px 0;">
 <strong>📝 2026年8月16日の訂正</strong><br />
-公開時の計算では、総資産5,831万円のうち<strong>生活防衛資金の300万円（普通預金）も運用に回る扱い</strong>になっていました。実際には利息のつかないお金なので、これを運用の外に出して全部の数字を計算し直しています。95歳の残りは3,679万円から<strong>2,183万円</strong>に、自由に使えるお金の上限は年130万円から<strong>年110万円</strong>に下がりました。いちばん効いたもの（実家で暮らすこと）は変わっていません。
+公開時の計算に、漏れが2つありました。ひとつは<strong>生活防衛資金の300万円（普通預金）も運用に回る扱い</strong>にしていたこと。もうひとつは、<strong>iDeCoのいまの残高271万円を二重に数えていた</strong>ことです（総資産5,831万円に入っているのに、60歳に受け取る1,285万円をそのまま足していました）。両方を直して全部の数字を計算し直しています。95歳の残りは3,679万円から<strong>1,204万円</strong>に、自由に使えるお金の上限は年130万円から<strong>年105万円</strong>に下がりました。いちばん効いたものは変わっていません。
 </div>
 
 ---
@@ -89,7 +89,7 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
       <span style="color:#5a8a50;font-weight:700;min-width:86px;">最後まで</span><span>独身のまま、95歳まで生きる前提</span>
     </div>
   </div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">生活費は<a href="/blog/tokachi-plan-03-money-simulation">十勝計画③</a>、iDeCoは<a href="/blog/ideco-restart-minimum">再開の記事</a>、年金は<a href="/blog/freelance-pension-future">老後試算の記事</a>の数字をそのまま使っています。配当（年49.3万円）は運用5%の中に含めています（別に足すと二重に数えてしまうため）。95歳まで見るのは、女性の平均寿命87.72歳に長生きの余裕を足したものです。iDeCoの掛金（月5,000円）は40〜59歳の支出に入れています。総資産5,831万円のうち<a href="/blog/monthly-report-2026-07">300万円は生活防衛資金の普通預金</a>なので、運用には回さず「いまの価値で300万円」のまま最後まで持つ計算にしています。なお40歳は、節目としていったん置いた仮の時期です。実際は前後にずれる可能性があり、帰る時期そのものは<a href="/blog/tokachi-plan-02-parents-and-pride">決めていません</a></div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">生活費は<a href="/blog/tokachi-plan-03-money-simulation">十勝計画③</a>、iDeCoは<a href="/blog/ideco-restart-minimum">再開の記事</a>、年金は<a href="/blog/freelance-pension-future">老後試算の記事</a>の数字をそのまま使っています。配当（年49.3万円）は運用5%の中に含めています（別に足すと二重に数えてしまうため）。95歳まで見るのは、女性の平均寿命<a href="https://www.mhlw.go.jp/toukei/saikin/hw/life/life25/index.html">87.33歳（厚生労働省・令和7年簡易生命表）</a>に長生きの余裕を足したものです。iDeCoの掛金（月5,000円）は40〜59歳の支出に入れています。総資産5,831万円のうち<a href="/blog/monthly-report-2026-07">300万円は生活防衛資金の普通預金</a>なので、運用には回さず「いまの価値で300万円」のまま最後まで持つ計算にしています。iDeCoのいまの残高271万円も総資産に入っているので、出発点から差し引いています（60歳に受け取る1,285万円が、これの育ったぶんを含むため）。なお40歳は、節目としていったん置いた仮の時期です。実際は前後にずれる可能性があり、帰る時期そのものは<a href="/blog/tokachi-plan-02-parents-and-pride">決めていません</a></div>
 </div>
 
 以下の数字は、すべて<strong>いまの物価に直した金額</strong>で書く。名目のままだと「増えて見えるけれど、実は物価が上がっただけ」という錯覚が混ざるからだ。
@@ -98,11 +98,11 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 
 ## 2. 40歳までに、いくらになるのか
 
-いまは34歳で[5,831万円](/blog/monthly-report-2026-07)。40歳までは働いて、生活費は収入でまかなう。投資はつみたて枠の月5万円に加えて、年100万円は入れたい。合わせて年160万円だ。
+いまは34歳で[5,831万円](/blog/monthly-report-2026-07)。ただし生活防衛資金の300万円は運用に回さず、60歳に別で受け取るiDeCoの271万円は二重に数えないよう出発点から外している。40歳までは働いて、生活費は収入でまかなう。投資はつみたて枠の月5万円に加えて、年100万円は入れたい。合わせて年160万円だ。
 
-これで計算すると、40歳の資産は<strong>名目8,795万円</strong>。ただし6年ぶんの物価上昇で割り戻すと、<strong>いまの感覚で7,810万円</strong>になる。
+これで計算すると、40歳の資産は<strong>名目8,431万円</strong>。ただし6年ぶんの物価上昇で割り戻すと、<strong>いまの感覚で7,487万円</strong>になる。
 
-ちょっと意外だったのは中身のほうだ。6年間で入れる元本は960万円。いっぽう運用が増やすぶんは<strong>2,004万円</strong>。<strong>自分が入れるお金より、すでにあるお金が働くぶんのほうが2倍以上大きい</strong>。貯金500万円から始めた[8年前](/blog/30s-single-woman-asset-roadmap)とは、完全に立場が逆になっている。
+ちょっと意外だったのは中身のほうだ。6年間で入れる元本は960万円。いっぽう運用が増やすぶんは<strong>1,912万円</strong>。<strong>自分が入れるお金より、すでにあるお金が働くぶんのほうが2倍近く大きい</strong>。貯金500万円から始めた[8年前](/blog/30s-single-woman-asset-roadmap)とは、完全に立場が逆になっている。
 
 ---
 
@@ -110,9 +110,9 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 
 40歳で仕事を辞めたとして、まずは旅行も贅沢もなし、月12.5万円だけで暮らす前提で線を引いた。
 
-結果、<strong>資産は減らなかった</strong>。それどころか、95歳で<strong>1億2,212万円</strong>（いまの物価で）まで増え続ける。
+結果、<strong>資産は減らなかった</strong>。それどころか、95歳で<strong>1億1,234万円</strong>（いまの物価で）まで増え続ける。
 
-理由は取り崩し率にある。年150万円の生活費は、40歳の資産7,949万円に対して<strong>1.9%</strong>。[4%ルール](/blog/four-percent-rule-japan-doubt)の半分以下だから、運用が増やすぶんの中に生活がすっぽり収まってしまう。
+理由は取り崩し率にある。年150万円の生活費は、40歳の資産7,487万円に対して<strong>2.0%</strong>。[4%ルール](/blog/four-percent-rule-japan-doubt)のちょうど半分だから、運用が増やすぶんの中に生活がすっぽり収まってしまう。
 
 計算はここで終わりだと思った。よかった、足りる、と。
 
@@ -135,32 +135,32 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
     <div style="background:#f7ede0;padding:9px 8px;font-weight:700;color:#7a5c44;text-align:right;">85歳</div>
     <div style="background:#f7ede0;padding:9px 8px;font-weight:700;color:#7a5c44;text-align:right;">95歳</div>
     <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;">月5万円働く</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">7,909万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">7,441万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">6,767万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">6,273万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">5,674万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">7,573万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">6,945万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">6,104万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">5,468万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">4,695万</div>
     <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;">月3万円働く</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">7,885万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">6,825万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">5,820万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">5,123万</div>
-    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">4,277万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">7,549万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">6,329万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">5,157万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">4,318万</div>
+    <div style="background:#fffdfa;padding:9px 8px;color:#5a4a3a;text-align:right;white-space:nowrap;">3,299万</div>
     <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;">働かない</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">7,849万</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">5,901万</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">4,400万</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">3,398万</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">2,183万</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">7,513万</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">5,405万</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">3,736万</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">2,593万</div>
+    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;white-space:nowrap;">1,204万</div>
   </div>
   </div>
   <div class="sp-only-note" style="font-size:11px;color:#5a8a50;margin-top:8px;">※表は横にスクロールできます</div>
   <div style="font-size:11px;color:#9a8574;margin-top:12px;border-top:1px dashed #f0dcc8;padding-top:10px;">「働く」は40〜64歳のあいだ。65歳からは年金月9万円だけになります。60歳の欄がへこまないのはiDeCoの受け取りがあるためです</div>
 </div>
 
-働かない場合、95歳の残りは<strong>1億2,212万円から2,183万円へ</strong>。約1億円の差だ。取り崩し率は1.9%から3.2%に上がる。まだ4%ルールの内側ではあるけれど、<strong>年100万円の旅行は、この計画の余裕の大半を使う</strong>。
+働かない場合、95歳の残りは<strong>1億1,234万円から1,204万円へ</strong>。約1億円の差だ。取り崩し率は2.0%から3.3%に上がる。まだ4%ルールの内側ではあるけれど、<strong>年100万円の旅行は、この計画の余裕の大半を使う</strong>。
 
-じゃあ、いくらまで使えるのか。年150万円にすると<strong>83歳で尽きる</strong>。年200万円なら72歳。95歳まで持たせるなら、自由に使えるお金の上限は<strong>年110万円くらい</strong>だった。
+じゃあ、いくらまで使えるのか。年150万円にすると<strong>80歳で尽きる</strong>。年200万円なら69歳。95歳まで持たせるなら、自由に使えるお金の上限は<strong>年105万円くらい</strong>だった。
 
 <div class="conv-wrap">
 
@@ -190,7 +190,7 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 
 </div>
 
-ゆるく働くと、ここが変わる。月3万円で95歳の残りは4,277万円、月5万円なら5,674万円。<strong>旅行をしながら余裕も残したいなら、少し働くのがいちばん素直な答え</strong>になる。
+ゆるく働くと、ここが変わる。月3万円で95歳の残りは3,299万円、月5万円なら4,695万円。<strong>旅行をしながら余裕も残したいなら、少し働くのがいちばん素直な答え</strong>になる。
 
 ---
 
@@ -205,33 +205,33 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
       <span>年金の目減りが深く、実質月6万円になる</span><span style="text-align:right;white-space:nowrap;">95歳まで持つ</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>80歳から施設に入る（月25万円）</span><span style="text-align:right;white-space:nowrap;">93歳で尽きる</span>
+      <span>80歳から施設に入る（月25万円）</span><span style="text-align:right;white-space:nowrap;">90歳で尽きる</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>運用が税引き後3%に下がる</span><span style="text-align:right;white-space:nowrap;">86歳で尽きる</span>
+      <span>運用が税引き後3%に下がる</span><span style="text-align:right;white-space:nowrap;">83歳で尽きる</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>実家に住めなくなる（月17.5万円）</span><span style="text-align:right;white-space:nowrap;">80歳で尽きる</span>
+      <span>実家に住めなくなる（月17.5万円）</span><span style="text-align:right;white-space:nowrap;">77歳で尽きる</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>インフレが3%になる</span><span style="text-align:right;white-space:nowrap;">80歳で尽きる</span>
+      <span>インフレが3%になる</span><span style="text-align:right;white-space:nowrap;">77歳で尽きる</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#fdf0e2;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>運用が税引き後2%に下がる</span><span style="text-align:right;white-space:nowrap;">76歳で尽きる</span>
+      <span>運用が税引き後2%に下がる</span><span style="text-align:right;white-space:nowrap;">74歳で尽きる</span>
     </div>
   </div>
-  <div style="font-size:11px;color:#9a8574;margin-top:12px;border-top:1px dashed #f0dcc8;padding-top:10px;">税引き後2%は、インフレ2%と同じ。つまり実質ゼロで運用しているのと同じ水準です。さらに2つ重なると、実家に住めない＋税引き後2%で66歳、そこで月5万円働いても73歳までしか延びません</div>
+  <div style="font-size:11px;color:#9a8574;margin-top:12px;border-top:1px dashed #f0dcc8;padding-top:10px;">税引き後2%は、インフレ2%と同じ。つまり実質ゼロで運用しているのと同じ水準です。さらに2つ重なると、実家に住めない＋税引き後2%で65歳、そこで月5万円働いても71歳までしか延びません</div>
 </div>
 
-見て気づくのは、ちぐはぐさだ。<strong>年金がさらに目減りしても95歳まで持ち、80歳から施設に入っても93歳までは持つ。それなのに運用が1ポイント下がるだけで86歳、2ポイントなら76歳で尽きる</strong>。この計画は年金や介護費より、運用に強く頼っている。
+見て気づくのは、ちぐはぐさだ。<strong>年金がさらに目減りしても95歳まで持ち、80歳から施設に入っても90歳までは持つ。それなのに運用が1ポイント下がるだけで83歳、2ポイントなら74歳で尽きる</strong>。この計画は年金や介護費より、運用に強く頼っている。
 
 年金についてはひとつ補足しておきたい。年金は名目で据え置かれるわけではなく、<strong>物価に合わせて毎年改定される</strong>。そうでなければ、困る人であふれてしまう。ただし満額は追いつかない設計で、マクロ経済スライドという仕組みのぶん、物価より少し低く改定される期間が続く。[2024年の財政検証](https://www.mhlw.go.jp/content/001270476.pdf)の厳しめのケース（過去30年投影ケース）では、基礎年金のこの調整が<strong>2057年度まで続く</strong>。わたしが65歳になるのは、ちょうどその2057年だ。
 
 ここで気をつけたいことがある。よく聞く「基礎年金は3割目減りする」という言い方は、<strong>現役世代の手取りと比べた比率</strong>（所得代替率）が36.2%から25.5%に下がるという意味で、物価と比べた金額の話ではない。賃金は物価より少し速く伸びる前提なので、同じ資料の数字（現役男子の手取り月37.0万円・実質賃金上昇率0.5%）から<strong>物価と比べた金額</strong>に直すと、下げ幅は3割ではなく<strong>2割ほど</strong>になる。1年あたりにすると0.5〜0.6%ずつ削られていく感覚で、物価が2%上がる年なら年金は1.4%くらいしか上がらない、ということだ。
 
-わたしの年金は基礎6.5万円＋厚生2.5万円で月9万円。削られるのは基礎の部分だけなので、2割引くと月7.9万円になる。ただこの計算では<strong>いまの価値で月7万円ぶん</strong>として置いた。約1万円ぶん辛く見ていることになるが、年金は下振れしたときに取り返しがつかないので、ここは厳しめのままにしておく。
+わたしの年金は基礎6.5万円＋厚生2.5万円で月9万円。削られるのは基礎の部分だけなので、2割引くと月7.7万円になる。ただこの計算では<strong>いまの価値で月7万円ぶん</strong>として置いた。0.7万円ぶん辛く見ていることになるが、年金は下振れしたときに取り返しがつかないので、ここは厳しめのままにしておく。
 
-それでも計画の柱になるには小さい、というのが上の表だ。ちなみにiDeCoの1,285万円は運用で増えたあとの未来の金額なので、60歳に受け取るときの実感でいえば<strong>いまの768万円くらい</strong>になる。
+ちなみにiDeCoの1,285万円は運用で増えたあとの未来の金額なので、60歳に受け取るときの実感でいえば<strong>いまの768万円くらい</strong>になる。
 
 ---
 
@@ -243,19 +243,19 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🏠 運用が下振れしたとき、何が守ってくれるか</div>
   <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3a5030;">
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>一人暮らし・働かない</span><span style="text-align:right;white-space:nowrap;">66歳で尽きる</span>
+      <span>一人暮らし・働かない</span><span style="text-align:right;white-space:nowrap;">65歳で尽きる</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
-      <span>一人暮らし・月5万円働く</span><span style="text-align:right;white-space:nowrap;">73歳（＋7年）</span>
+      <span>一人暮らし・月5万円働く</span><span style="text-align:right;white-space:nowrap;">71歳（＋6年）</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#e8f0e4;padding:6px 4px;border-radius:8px;font-weight:700;">
-      <span>実家で暮らす・働かない</span><span style="text-align:right;white-space:nowrap;">76歳（＋10年）</span>
+      <span>実家で暮らす・働かない</span><span style="text-align:right;white-space:nowrap;">74歳（＋9年）</span>
     </div>
   </div>
   <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">旅行年100万円・運用が税引き後2%の場合。一人暮らしは、実家の月12.5万円に帯広の家賃ぶん5万円を足した月17.5万円で、少し高めに見た概算です</div>
 </div>
 
-<strong>実家で暮らすことは、月5万円働くことより効いた</strong>。10年対7年。
+<strong>実家で暮らすことは、月5万円働くことより効いた</strong>。9年対6年。
 
 これは、ちょっと不思議な結論だと思う。わたしが実家で暮らしたいのは、[お金の話ではない](/blog/tokachi-plan-02-parents-and-pride)からだ。年老いた両親と過ごせる時間は限られていて、そばにいたいから帰る。生活費は家に月5万円入れるし、お金の面で頼る気はない。
 
@@ -279,7 +279,7 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 
 だからこの線は、一度引いたら終わりの設計図ではなくて、<strong>毎年の[資産公開](/blog/monthly-report-2026-07)で答え合わせをしていく下書き</strong>だと思っている。前提が動いたら、線も引き直す。
 
-引き直すたびに手で計算するのは大変なので、この記事の計算はそのまま[シミュレーター](/tools/lifeplan)にしてブログに置いた。年齢と資産と生活費を入れれば、同じ線が自分の数字で引ける。子どもの教育費や退職金、年金の欄もあるので、わたしと状況が違う人でも試せるはずだ。
+引き直すたびに手で計算するのは大変なので、この記事の計算はそのまま[シミュレーター](/tools/lifeplan)にしてブログに置いた。年齢と資産と生活費を入れれば、同じ線が自分の数字で引ける。
 
 <div class="conv-wrap">
 
@@ -316,12 +316,12 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>34歳・5,831万円から、年160万円ずつ投資すると<strong>40歳で8,795万円</strong>（いまの物価で7,810万円）。入れる元本960万円より、運用が増やす2,004万円のほうが大きい</li>
+<li>34歳・5,831万円から、年160万円ずつ投資すると<strong>40歳で8,431万円</strong>（いまの物価で7,487万円）。入れる元本960万円より、運用が増やす1,912万円のほうが大きい</li>
 <li>前提はインフレ2%・運用は名目5%（取り崩し中は税引きで実質2%）。<strong>国の財政検証の下から2番目あたり</strong>の控えめな置き方</li>
-<li>旅行なしなら、40歳で完全に仕事を辞めても資産は増え続けて<strong>95歳で1億2,212万円</strong>。取り崩し率1.9%は4%ルールの半分以下</li>
-<li><strong>旅行を年100万円入れると、95歳の残りは2,183万円</strong>。年150万円だと83歳で尽きるので、<strong>自由に使える上限は年110万円くらい</strong></li>
-<li>年金は<strong>物価スライドで実質が保たれる制度</strong>。ただしマクロ経済スライドの目減りを見込んで、月9万円を<strong>いまの価値で月7万円ぶん</strong>として計算した。それでも<strong>頼っているのは年金ではなく運用</strong>で、税引き後2%に下がると76歳で尽きる</li>
-<li>運用が下振れしたとき、<strong>実家で暮らすことは月5万円働くより効いた</strong>（＋10年対＋7年）。お金のために選んだわけではないことが、いちばん強い一手だった</li>
+<li>旅行なしなら、40歳で完全に仕事を辞めても資産は増え続けて<strong>95歳で1億1,234万円</strong>。取り崩し率2.0%は4%ルールのちょうど半分</li>
+<li><strong>旅行を年100万円入れると、95歳の残りは1,204万円</strong>。年150万円だと80歳で尽きるので、<strong>自由に使える上限は年105万円くらい</strong></li>
+<li>年金は<strong>物価スライドで実質が保たれる制度</strong>。ただしマクロ経済スライドの目減りを見込んで、月9万円を<strong>いまの価値で月7万円ぶん</strong>として計算した。それでも<strong>頼っているのは年金ではなく運用</strong>で、税引き後2%に下がると74歳で尽きる</li>
+<li>運用が下振れしたとき、<strong>実家で暮らすことは月5万円働くより効いた</strong>（＋9年対＋6年）。お金のために選んだわけではないことが、いちばん強い一手だった</li>
 <li>ただし運用を毎年一定と置いた計算で、<strong>取り崩し初期の暴落には弱い</strong>。毎年の資産公開で答え合わせしながら、線を引き直していく</li>
 </ul>
 </div>

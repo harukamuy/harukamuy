@@ -70,7 +70,7 @@ type Inputs = {
 };
 
 const AZUKI: Inputs = {
-  age: 34, asset: 5831, cash: 300, reserve: 300, invest: 160, investUntil: 40, raisePct: 2,
+  age: 34, asset: 5560, cash: 300, reserve: 300, invest: 160, investUntil: 40, raisePct: 2,
   income: 440, retire: 40,
   sideMonthly: 0, sideUntil: 65, livingNow: 15, livingAfter: 12.5, travel: 100,
   pensionStart: 65, pensionMonthly: 7, lumpAge: 60, lumpAmount: 769,
@@ -80,7 +80,7 @@ const AZUKI: Inputs = {
 const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   {
     label: "あずき（記事の設定）",
-    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金は目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円、生活防衛資金300万円は現預金のまま。記事と同じ前提です。ただし記事は「いまの物価」で書いているので、このツール（そのときの金額）とは見え方が違います。iDeCoの掛金（月5,000円）だけ入れる欄がないので、記事より少しだけ多めに出ます",
+    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金は目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円、生活防衛資金300万円は現預金のまま。資産は総資産5,831万円からiDeCoのいまの残高271万円を引いた額（60歳の受取と二重に数えないため）。記事と同じ前提です。ただし記事は「いまの物価」で書いているので、このツール（そのときの金額）とは見え方が違います。iDeCoの掛金（月5,000円）だけ入れる欄がないので、記事より少しだけ多めに出ます",
     inputs: AZUKI,
   },
   {
@@ -431,7 +431,7 @@ export default function LifeplanSimulator() {
         </div>
         <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
           年金・iDeCoとも<strong>いまの価値</strong>で入力してください。年金は物価スライドで実質が保たれる前提です。<br />
-          将来の目減り（マクロ経済スライド）を見込むなら、<strong>基礎年金の部分だけ</strong>を2割ほど下げてください。会社員期間の厚生年金（報酬比例）はほとんど削られないので、月額を丸ごと減らすと下げすぎになります。たとえば基礎6.5万円＋厚生2.5万円で月9万円の人なら、基礎だけ2割引いて<strong>月7.9万円</strong>です。<br />
+          将来の目減り（マクロ経済スライド）を見込むなら、<strong>基礎年金の部分だけ</strong>を2割ほど下げてください。会社員期間の厚生年金（報酬比例）はほとんど削られないので、月額を丸ごと減らすと下げすぎになります。たとえば基礎6.5万円＋厚生2.5万円で月9万円の人なら、基礎だけ2割引いて<strong>月7.7万円</strong>です。<br />
           よく聞く「3割目減り」は現役世代の手取りと<strong>比べた比率</strong>の話で、このツールは物価ベースなので、そのまま当てはめると下げすぎになります（<a href="/blog/lifeplan-one-line-95" style={{ color: GREEN_DARK }}>記事はあえて厳しめに月7万円で置いています</a>）。
         </div>
       </Section>
