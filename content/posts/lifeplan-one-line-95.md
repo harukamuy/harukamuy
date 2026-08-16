@@ -44,11 +44,6 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
 
 先に書いておくと、この計算でいちばん効いたのは、運用でも労働でもなかった。
 
-<div class="data-card" style="background:#fff6ea;border:1.5px solid #f0dcc8;border-radius:14px;padding:16px 18px;font-size:12px;color:#7a5c44;line-height:1.9;margin:24px 0;">
-<strong>📝 2026年8月16日の訂正</strong><br />
-公開時の計算に、漏れが2つありました。ひとつは<strong>生活防衛資金の300万円（普通預金）も運用に回る扱い</strong>にしていたこと。もうひとつは、<strong>iDeCoのいまの残高271万円を二重に数えていた</strong>ことです（総資産5,831万円に入っているのに、60歳に受け取る1,285万円をそのまま足していました）。両方を直して全部の数字を計算し直しています。95歳の残りは3,679万円から<strong>1,204万円</strong>に、自由に使えるお金の上限は年130万円から<strong>年105万円</strong>に下がりました。いちばん効いたものは変わっていません。
-</div>
-
 ---
 
 ## 1. 前提を決める。ここがいちばん大事だった
