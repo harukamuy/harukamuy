@@ -87,7 +87,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     label: "子ども2人の世帯",
     note: "35歳夫婦・子5歳と2歳。世帯手取り650万円で65歳まで働き、子はオール公立から国公立大学へ。年金は夫婦で月18万円（いまの価値）",
     inputs: {
-      age: 35, asset: 1000, cash: 300, reserve: 300, invest: 100, investUntil: 60, raisePct: 1.5,
+      age: 35, asset: 1000, cash: 300, reserve: 300, invest: 260, investUntil: 65, raisePct: 1.5,
       income: 650, retire: 65,
       sideMonthly: 0, sideUntil: 65, livingNow: 28, livingAfter: 24, travel: 30,
       pensionStart: 65, pensionMonthly: 18, lumpAge: 65, lumpAmount: 1000,
@@ -102,7 +102,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     label: "50歳からの老後チェック",
     note: "50歳・資産3,000万円。60歳まで働いて、退職金1,000万円と65歳からの年金月13万円で暮らせるか",
     inputs: {
-      age: 50, asset: 3000, cash: 400, reserve: 400, invest: 60, investUntil: 60, raisePct: 0.5,
+      age: 50, asset: 3000, cash: 400, reserve: 400, invest: 160, investUntil: 60, raisePct: 0.5,
       income: 420, retire: 60,
       sideMonthly: 5, sideUntil: 65, livingNow: 20, livingAfter: 18, travel: 20,
       pensionStart: 65, pensionMonthly: 13, lumpAge: 60, lumpAmount: 1000,
