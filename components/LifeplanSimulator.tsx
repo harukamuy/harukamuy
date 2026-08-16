@@ -85,7 +85,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   },
   {
     label: "子ども2人の世帯",
-    note: "35歳夫婦・子5歳と2歳。世帯手取り650万円で65歳まで働き、子はオール公立から国公立大学へ。年金は夫婦で月18万円（いまの価値）",
+    note: "35歳夫婦・子5歳と2歳。世帯手取り650万円で65歳まで働き、子はオール公立から国公立大学へ。年金は夫婦で月18万円（いまの価値）。ねんきん定期便の見込み額そのままで、将来の目減りは見ていません",
     inputs: {
       age: 35, asset: 1000, cash: 300, reserve: 300, invest: 260, investUntil: 65, raisePct: 1.5,
       income: 650, retire: 65,
@@ -100,7 +100,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   },
   {
     label: "50歳からの老後チェック",
-    note: "50歳・資産3,000万円。60歳まで働いて、退職金1,000万円と65歳からの年金月13万円で暮らせるか",
+    note: "50歳・資産3,000万円。60歳まで働いて、退職金1,000万円と65歳からの年金月13万円（見込み額そのまま。目減りは見ていません）で暮らせるか",
     inputs: {
       age: 50, asset: 3000, cash: 400, reserve: 400, invest: 160, investUntil: 60, raisePct: 0.5,
       income: 420, retire: 60,
@@ -430,7 +430,8 @@ export default function LifeplanSimulator() {
           <NumberField label="iDeCo・退職金の額" value={inp.lumpAmount} min={0} max={100000} suffix="万円" onChange={(v) => set({ lumpAmount: v })} />
         </div>
         <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
-          年金・iDeCoとも<strong>いまの価値</strong>で入力してください。年金は物価スライドで実質が保たれる前提です。マクロ経済スライドの目減りを見込むなら、月額を1〜3割ほど下げて入れるのがおすすめです（<a href="/blog/lifeplan-one-line-95" style={{ color: GREEN_DARK }}>記事ではそうしています</a>）。
+          年金・iDeCoとも<strong>いまの価値</strong>で入力してください。年金は物価スライドで実質が保たれる前提です。<br />
+          将来の目減り（マクロ経済スライド）を見込むなら、<strong>基礎年金の部分だけ</strong>を1〜3割下げてください。会社員期間の厚生年金はほとんど削られないので、月額を丸ごと減らすと下げすぎになります。たとえば基礎6.5万円＋厚生2.5万円で月9万円の人なら、基礎だけ3割引いて<strong>月7万円</strong>です（<a href="/blog/lifeplan-one-line-95" style={{ color: GREEN_DARK }}>記事ではそうしています</a>）。
         </div>
       </Section>
 
