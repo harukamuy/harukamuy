@@ -431,7 +431,8 @@ export default function LifeplanSimulator() {
         </div>
         <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
           年金・iDeCoとも<strong>いまの価値</strong>で入力してください。年金は物価スライドで実質が保たれる前提です。<br />
-          将来の目減り（マクロ経済スライド）を見込むなら、<strong>基礎年金の部分だけ</strong>を1〜3割下げてください。会社員期間の厚生年金はほとんど削られないので、月額を丸ごと減らすと下げすぎになります。たとえば基礎6.5万円＋厚生2.5万円で月9万円の人なら、基礎だけ3割引いて<strong>月7万円</strong>です（<a href="/blog/lifeplan-one-line-95" style={{ color: GREEN_DARK }}>記事ではそうしています</a>）。
+          将来の目減り（マクロ経済スライド）を見込むなら、<strong>基礎年金の部分だけ</strong>を2割ほど下げてください。会社員期間の厚生年金（報酬比例）はほとんど削られないので、月額を丸ごと減らすと下げすぎになります。たとえば基礎6.5万円＋厚生2.5万円で月9万円の人なら、基礎だけ2割引いて<strong>月7.9万円</strong>です。<br />
+          よく聞く「3割目減り」は現役世代の手取りと<strong>比べた比率</strong>の話で、このツールは物価ベースなので、そのまま当てはめると下げすぎになります（<a href="/blog/lifeplan-one-line-95" style={{ color: GREEN_DARK }}>記事はあえて厳しめに月7万円で置いています</a>）。
         </div>
       </Section>
 
