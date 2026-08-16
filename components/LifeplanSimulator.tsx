@@ -48,6 +48,7 @@ type Inputs = {
   age: number;        // いまの年齢
   asset: number;      // いまの資産(万円) 現預金＋投資の合計
   cash: number;       // うち現預金(万円)。利回り0なのでインフレに負ける
+  reserve: number;    // 生活防衛資金(万円・いまの価値)。ここは取り崩さず、割りそうなら投資から補充する
   invest: number;     // 年間の投資額(万円)。現預金から投資へ移す
   investUntil: number; // 何歳まで投資を続けるか
   raisePct: number;   // 昇給率(名目・年%)
@@ -69,7 +70,7 @@ type Inputs = {
 };
 
 const AZUKI: Inputs = {
-  age: 34, asset: 5831, cash: 300, invest: 160, investUntil: 40, raisePct: 0,
+  age: 34, asset: 5831, cash: 300, reserve: 300, invest: 160, investUntil: 40, raisePct: 0,
   income: 440, retire: 40,
   sideMonthly: 0, sideUntil: 65, livingNow: 15, livingAfter: 12.5, travel: 100,
   pensionStart: 65, pensionMonthly: 7, lumpAge: 60, lumpAmount: 769,
@@ -86,7 +87,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     label: "子ども2人の世帯",
     note: "35歳夫婦・子5歳と2歳。世帯手取り650万円で65歳まで働き、子はオール公立から国公立大学へ。年金は夫婦で月18万円（いまの価値）",
     inputs: {
-      age: 35, asset: 1000, cash: 300, invest: 100, investUntil: 60, raisePct: 1.5,
+      age: 35, asset: 1000, cash: 300, reserve: 300, invest: 100, investUntil: 60, raisePct: 1.5,
       income: 650, retire: 65,
       sideMonthly: 0, sideUntil: 65, livingNow: 28, livingAfter: 24, travel: 30,
       pensionStart: 65, pensionMonthly: 18, lumpAge: 65, lumpAmount: 1000,
@@ -101,7 +102,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     label: "50歳からの老後チェック",
     note: "50歳・資産3,000万円。60歳まで働いて、退職金1,000万円と65歳からの年金月13万円で暮らせるか",
     inputs: {
-      age: 50, asset: 3000, cash: 400, invest: 60, investUntil: 60, raisePct: 0.5,
+      age: 50, asset: 3000, cash: 400, reserve: 400, invest: 60, investUntil: 60, raisePct: 0.5,
       income: 420, retire: 60,
       sideMonthly: 5, sideUntil: 65, livingNow: 20, livingAfter: 18, travel: 20,
       pensionStart: 65, pensionMonthly: 13, lumpAge: 60, lumpAmount: 1000,
@@ -170,7 +171,15 @@ function simulate(inp: Inputs): SimResult {
     cash += net - invAmt;
     inv += invAmt;
     if (age === inp.lumpAge) cash += inp.lumpAmount;
-    // 現預金が足りなければ投資を取り崩す
+    // 生活防衛資金を割りそうなら、投資を取り崩して現預金に戻す
+    // （現預金は使わず、取り崩しは投資から）
+    if (cash < inp.reserve) {
+      const need = inp.reserve - cash;
+      const take = Math.min(need, Math.max(0, inv));
+      inv -= take;
+      cash += take;
+    }
+    // 投資も尽きたら、最後は現預金を使うしかない
     if (cash < 0) { inv += cash; cash = 0; }
 
     const asset = cash + inv;
@@ -335,10 +344,11 @@ export default function LifeplanSimulator() {
           <NumberField label="いまの年齢" value={inp.age} min={18} max={90} suffix="歳" onChange={(v) => set({ age: v })} />
           <NumberField label="いまの資産（合計）" value={inp.asset} min={0} max={1000000} suffix="万円" onChange={(v) => set({ asset: v })} />
           <NumberField label="うち現預金" value={inp.cash} min={0} max={1000000} suffix="万円" onChange={(v) => set({ cash: v })} />
+          <NumberField label="生活防衛資金（取り崩さない額）" value={inp.reserve} min={0} max={1000000} suffix="万円" onChange={(v) => set({ reserve: v })} />
           <NumberField label="手取り年収（世帯）" value={inp.income} min={0} max={100000} suffix="万円" onChange={(v) => set({ income: v })} />
           <NumberField label="生活費（現役・月）" value={inp.livingNow} min={0} max={1000} step={0.5} suffix="万円" onChange={(v) => set({ livingNow: v })} />
         </div>
-        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>生活費に教育費は入れないでください（下の子どもの欄から自動で計算します）。<strong>現預金は利回り0%</strong>として扱うので、インフレのぶん実質で目減りします。</div>
+        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>生活費に教育費は入れないでください（下の子どもの欄から自動で計算します）。<strong>現預金は利回り0%</strong>です。<strong>生活防衛資金はいまの価値で保ちます</strong>。この額を割りそうになると投資を取り崩して戻すので、<strong>取り崩しは投資のほうから</strong>進みます（表の現預金が名目で増えていくのは、同じ買い物ができる状態を保つためです）。</div>
       </Section>
 
       {/* 子ども */}
