@@ -70,10 +70,10 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
       <span style="color:#5a8a50;font-weight:700;min-width:86px;">インフレ</span><span>年2%</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;">
-      <span style="color:#5a8a50;font-weight:700;min-width:86px;">運用</span><span>名目5%。取り崩すときは税金を引いて年4%</span>
+      <span style="color:#5a8a50;font-weight:700;min-width:86px;">運用</span><span>名目5%。取り崩すときは税金を引いて年4%（<strong>NISAのぶんは本当は非課税</strong>なので、ここは厳しめ）</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;">
-      <span style="color:#5a8a50;font-weight:700;min-width:86px;">40歳まで</span><span>働いて生活費をまかない、年160万円を投資（つみたて月5万円＋年100万円）</span>
+      <span style="color:#5a8a50;font-weight:700;min-width:86px;">40歳まで</span><span>働いて生活費をまかない、年160万円を投資。<a href="/blog/nisa-investment-settings">NISAのつみたて枠に月5万円</a>と、成長投資枠に年100万円</span>
     </div>
     <div class="keep-grid" style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;">
       <span style="color:#5a8a50;font-weight:700;min-width:86px;">40歳から</span><span>十勝の実家で両親と暮らす。生活費は月12.5万円（家に入れる5万円と社会保険まで込み）</span>
