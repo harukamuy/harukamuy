@@ -211,7 +211,7 @@ tags: ["サイドFIRE"]
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>退職後は元の会社から仕事の声をかけてもらえたことと、[失業保険の活用](/blog/unemployment-insurance-freelance)が1年目の安定につながった</li>
+<li>退職後は元の会社から仕事の声をかけてもらえたことと、<a href="/blog/unemployment-insurance-freelance">失業保険の活用</a>が1年目の安定につながった</li>
 <li>収入の波はフリーランスの宿命。稼げるときに稼ぎ、時間があるときも動き続けることが大事</li>
 <li>メンタルは会社員時代より安定している。「誰にも詰められない」という環境の違いは想像以上に大きかった</li>
 <li>社会とのつながりが薄くなる寂しさは最初だけ。自由を前向きに楽しむ気持ちの方が今は強い</li>

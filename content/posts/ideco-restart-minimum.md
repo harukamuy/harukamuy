@@ -62,7 +62,7 @@ tags: ["iDeCo", "サイドFIRE", "税金・社会保険"]
   <div style="font-size:13px;font-weight:700;color:#7a7268;margin-bottom:12px;">🙈 放置していた理由</div>
   <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#5a544c;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>勝手に増えていく</strong>。271万円あって、S&P500に入れてあるので放っておいても働いてくれる</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>NISAを埋めるほうが先</strong>。[1,800万円の枠](/blog/new-nisa-1800-strategy)がまだ残っている</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>NISAを埋めるほうが先</strong>。<a href="/blog/new-nisa-1800-strategy">1,800万円の枠</a>がまだ残っている</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>資産は5,000万円を超えた</strong>。老後の箱をこれ以上急いで増やす必要を感じていなかった</span></div>
   </div>
 </div>

@@ -120,7 +120,7 @@ tags: ["サイドFIRE", "FIREの疑問", "市場の話"]
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>資産が減るのは、100%避けられない</strong>。暴落中に「資産だけで生活を全部まかなう」設計をしていたら、取り崩しが元本を急速に削る。これは本当に詰みかねない</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>フルFIRE（完全リタイア）なら、もっと深刻</strong>。収入源がなく、資産の取り崩しだけで暮らす設計だと、暴落のタイミングしだいで計画そのものが狂う</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>「見なければ平気」は、精神論では続かない</strong>。ちゃんとした備えの裏付けがあって初めて、見ないことができる</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>コロナショックも2022年の停滞も、[独立する前の会社員時代](/blog/quit-job-2023)に経験したもの</strong>。サイドFIRE達成後に経験した中東ショックは約5〜6%の下落で、コロナ級（約3割減）の本格的な暴落を、サイドFIREの状態でまだ経験していないのは事実だ</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">・</span><span><strong>コロナショックも2022年の停滞も、<a href="/blog/quit-job-2023">独立する前の会社員時代</a>に経験したもの</strong>。サイドFIRE達成後に経験した中東ショックは約5〜6%の下落で、コロナ級（約3割減）の本格的な暴落を、サイドFIREの状態でまだ経験していないのは事実だ</span></div>
   </div>
 </div>
 
@@ -163,7 +163,7 @@ tags: ["サイドFIRE", "FIREの疑問", "市場の話"]
   <div style="font-size:13px;font-weight:700;color:#7a5c44;margin-bottom:14px;">⚖️ リーマン級を想定したときの、素直な弱点</div>
   <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#5a4a3a;">
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">①</span><span><strong>資産の評価額は、5,000万円台が3,000万円前後まで沈む可能性がある</strong>。しかも数ヶ月ではなく、数年単位でそこに張り付く。「見ない」を続けられる自信はない</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">②</span><span><strong>高配当株の配当は、減るリスクがある</strong>。[実際に減配を経験したこともある](/blog/high-dividend-cut-risk)。景気全体が長期で悪化すれば、複数銘柄で同時に減配が起きても不思議ではない</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">②</span><span><strong>高配当株の配当は、減るリスクがある</strong>。<a href="/blog/high-dividend-cut-risk">実際に減配を経験したこともある</a>。景気全体が長期で悪化すれば、複数銘柄で同時に減配が起きても不思議ではない</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#c0704a;font-weight:700;flex-shrink:0;">③</span><span><strong>フリーランスの仕事も、無風ではいられない</strong>。リーマン級の不況では、映像・広告まわりの予算は真っ先に削られやすい。仕事がゼロにはならなくても、単価や本数が落ち込む可能性は十分にある</span></div>
   </div>
 </div>
