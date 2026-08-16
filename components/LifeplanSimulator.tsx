@@ -125,7 +125,8 @@ function eduCostAt(c: Child, yearsAhead: number): number {
 type Row = {
   age: number; income: number; living: number; edu: number; travel: number;
   net: number; invested: number; cash: number; asset: number;
-  factor: number; // その年の物価指数。実質値にこれを掛けると名目になる
+  factor: number;    // その年のお金の流れ（収入・支出）を名目に直す指数
+  factorEnd: number; // 年末の残高（投資・現預金）を名目に直す指数。1年ぶん先
 };
 
 type SimResult = {
@@ -175,8 +176,12 @@ function simulate(inp: Inputs): SimResult {
     const asset = cash + inv;
     if (asset < 0 && depleteAge === null) depleteAge = age;
     if (asset > peak) peak = asset;
-    // いちばん上の行は「今年」。入力した金額がそのまま出るよう、物価指数は経過年数ぶんだけ掛ける
-    rows.push({ age, income, living, edu, travel: inp.travel, net, invested: Math.max(0, inv), cash, asset, factor: Math.pow(1 + infl, years) });
+    // お金の流れは「その年」の物価（1行目は入力どおり）、残高は「年末」の物価で名目に戻す
+    rows.push({
+      age, income, living, edu, travel: inp.travel, net,
+      invested: Math.max(0, inv), cash, asset,
+      factor: Math.pow(1 + infl, years), factorEnd: Math.pow(1 + infl, years + 1),
+    });
   }
   return { rows, depleteAge, final: rows[rows.length - 1].asset, peak, eduTotal };
 }
@@ -258,14 +263,17 @@ export default function LifeplanSimulator() {
     if (!result) return null;
     const rows = result.rows.map((r) => ({
       age: r.age, factor: r.factor,
+      // お金の流れはその年の物価
       income: r.income * r.factor, living: r.living * r.factor, edu: r.edu * r.factor,
-      travel: r.travel * r.factor, net: r.net * r.factor, invested: r.invested * r.factor,
-      cash: r.cash * r.factor, asset: r.asset * r.factor,
+      travel: r.travel * r.factor, net: r.net * r.factor,
+      // 残高は年末の物価（現預金が名目で動かないぶん、ここで正しく据え置きになる）
+      invested: r.invested * r.factorEnd, cash: r.cash * r.factorEnd, asset: r.asset * r.factorEnd,
     }));
     const peakIdx = rows.reduce((bi, r, i) => (r.asset > rows[bi].asset ? i : bi), 0);
     return {
       rows,
       eduTotal: result.rows.reduce((s, r) => s + r.edu * r.factor, 0),
+      // 実質の併記はそのまま（いまの物価のまま）
       eduTotalReal: result.eduTotal,
       final: rows[rows.length - 1].asset,
       finalReal: result.rows[result.rows.length - 1].asset,
