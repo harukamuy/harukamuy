@@ -70,7 +70,7 @@ type Inputs = {
 };
 
 const AZUKI: Inputs = {
-  age: 34, asset: 5831, cash: 300, reserve: 300, invest: 160, investUntil: 40, raisePct: 0,
+  age: 34, asset: 5831, cash: 300, reserve: 300, invest: 160, investUntil: 40, raisePct: 2,
   income: 440, retire: 40,
   sideMonthly: 0, sideUntil: 65, livingNow: 15, livingAfter: 12.5, travel: 100,
   pensionStart: 65, pensionMonthly: 7, lumpAge: 60, lumpAmount: 769,
@@ -80,7 +80,7 @@ const AZUKI: Inputs = {
 const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   {
     label: "あずき（記事の設定）",
-    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金はマクロ経済スライドの目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円（いまの価値）。記事は「いまの物価」で書いているので、このツールの金額（そのときの金額）とは見え方が違います。生活防衛資金300万円を利回り0%の現預金として分けているぶんも、少し辛めに出ます",
+    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金は目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円、生活防衛資金300万円は現預金のまま。記事と同じ前提です。ただし記事は「いまの物価」で書いているので、このツール（そのときの金額）とは見え方が違います。iDeCoの掛金（月5,000円）だけ入れる欄がないので、記事より少しだけ多めに出ます",
     inputs: AZUKI,
   },
   {
@@ -170,7 +170,7 @@ function simulate(inp: Inputs): SimResult {
     // 収支と積立を反映
     cash += net - invAmt;
     inv += invAmt;
-    if (age === inp.lumpAge) cash += inp.lumpAmount;
+    if (age === inp.lumpAge) inv += inp.lumpAmount;   // 受け取ったお金は運用に回す前提
     // 生活防衛資金を割りそうなら、投資を取り崩して現預金に戻す
     // （現預金は使わず、取り崩しは投資から）
     if (cash < inp.reserve) {
