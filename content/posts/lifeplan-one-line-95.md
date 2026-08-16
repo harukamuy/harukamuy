@@ -272,6 +272,7 @@ tags: ["ライフプラン", "サイドFIRE", "十勝計画"]
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>ごまもちの高齢期の医療費</strong>と、その先にもし迎えるなら次の子のことも、まだ入れていない</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>年金の繰り下げは使っていない</strong>。65歳を70歳にすると1.42倍になる。苦しくなったときのために残している</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>税や社会保険の制度は変わる</strong>。<a href="/blog/financial-income-social-insurance">金融所得と保険料の話</a>のように、前提ごと動くことがある</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>NISAで持っているぶんは、取り崩しても税金がかからない</strong>。それなのにこの計算は、運用益の全部に20%かかるものとして置いた。<strong>この一点は、確実に厳しく見積もっている</strong>。ほかの前提が想定どおりに進めば、結果はこれより良くなる</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#a89880;font-weight:700;flex-shrink:0;">・</span><span><strong>95歳より長生きする可能性</strong>もある</span></div>
   </div>
 </div>
