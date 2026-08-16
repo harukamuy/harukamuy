@@ -56,7 +56,9 @@ type Inputs = {
   retire: number;     // 退職年齢（収入が止まる）
   sideMonthly: number;   // 退職後のゆるい収入(月・万円)
   sideUntil: number;     // ゆるい収入を何歳まで
-  livingNow: number;     // 現役の生活費(月・万円) 教育費は含めない
+  debtMonthly: number;   // 借金・ローンの毎月の返済額(万円)。金利は返済額にすでに入っている
+  debtUntil: number;     // 完済する年齢。この年まで返済が続く
+  livingNow: number;     // 現役の生活費(月・万円) 教育費・ローン返済は含めない
   livingAfter: number;   // 退職後の生活費(月・万円)
   travel: number;        // 旅行・特別支出(年・万円) 生涯つづく
   pensionStart: number;  // 年金の開始年齢
@@ -72,15 +74,16 @@ type Inputs = {
 const AZUKI: Inputs = {
   age: 34, asset: 5560, cash: 300, reserve: 300, invest: 160, investUntil: 40, raisePct: 2,
   income: 440, retire: 40,
+  debtMonthly: 0, debtUntil: 34,
   sideMonthly: 0, sideUntil: 65, livingNow: 15, livingAfter: 12.5, travel: 100,
-  pensionStart: 65, pensionMonthly: 7, lumpAge: 60, lumpAmount: 769,
+  pensionStart: 65, pensionMonthly: 7, lumpAge: 60, lumpAmount: 768,
   yieldPct: 5, inflPct: 2, endAge: 95, children: [],
 };
 
 const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
   {
     label: "あずき（記事の設定）",
-    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金は目減りを見て月7万円（いまの価値）、60歳にiDeCo769万円、生活防衛資金300万円は現預金のまま。資産は総資産5,831万円からiDeCoのいまの残高271万円を引いた額（60歳の受取と二重に数えないため）。記事と同じ前提です。ただし記事は「いまの物価」で書いているので、このツール（そのときの金額）とは見え方が違います。iDeCoの掛金（月5,000円）だけ入れる欄がないので、記事より少しだけ多めに出ます",
+    note: "34歳・独身。40歳でリタイアして旅行年100万円。年金は目減りを見て月7万円（いまの価値）、60歳にiDeCo768万円、生活防衛資金300万円は現預金のまま。資産は総資産5,831万円からiDeCoのいまの残高271万円を引いた額（60歳の受取と二重に数えないため）。記事と同じ前提です。ただし記事は「いまの物価」で書いているので、このツール（そのときの金額）とは見え方が違います。iDeCoの掛金（月5,000円）だけ入れる欄がないので、記事より少しだけ多めに出ます",
     inputs: AZUKI,
   },
   {
@@ -89,6 +92,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     inputs: {
       age: 35, asset: 1000, cash: 300, reserve: 300, invest: 260, investUntil: 65, raisePct: 1.5,
       income: 650, retire: 65,
+      debtMonthly: 10, debtUntil: 65,
       sideMonthly: 0, sideUntil: 65, livingNow: 28, livingAfter: 24, travel: 30,
       pensionStart: 65, pensionMonthly: 18, lumpAge: 65, lumpAmount: 1000,
       yieldPct: 5, inflPct: 2, endAge: 95,
@@ -104,6 +108,7 @@ const PRESETS: { label: string; note: string; inputs: Inputs }[] = [
     inputs: {
       age: 50, asset: 3000, cash: 400, reserve: 400, invest: 160, investUntil: 60, raisePct: 0.5,
       income: 420, retire: 60,
+      debtMonthly: 8, debtUntil: 58,
       sideMonthly: 5, sideUntil: 65, livingNow: 20, livingAfter: 18, travel: 20,
       pensionStart: 65, pensionMonthly: 13, lumpAge: 60, lumpAmount: 1000,
       yieldPct: 5, inflPct: 2, endAge: 95, children: [],
@@ -124,7 +129,7 @@ function eduCostAt(c: Child, yearsAhead: number): number {
 }
 
 type Row = {
-  age: number; income: number; living: number; edu: number; travel: number;
+  age: number; income: number; living: number; edu: number; travel: number; debt: number;
   net: number; invested: number; cash: number; asset: number;
   factor: number;    // その年のお金の流れ（収入・支出）を名目に直す指数
   factorEnd: number; // 年末の残高（投資・現預金）を名目に直す指数。1年ぶん先
@@ -144,8 +149,10 @@ function simulate(inp: Inputs): SimResult {
   const rFull = (1 + rNom) / (1 + infl) - 1;          // 投資の実質利回り
   const rCash = 1 / (1 + infl) - 1;                    // 現預金は名目0%＝インフレぶん目減り
   const rSell = (1 + rNom * 0.8) / (1 + infl) - 1;     // 取り崩した年は税ぶん割り引く
-  let cash = Math.min(inp.cash, inp.asset);
-  let inv = Math.max(0, inp.asset - cash);
+  // 資産はマイナスにできない。借金は「毎月の返済額」で表す
+  const asset0 = Math.max(0, inp.asset);
+  let cash = Math.min(Math.max(0, inp.cash), asset0);
+  let inv = Math.max(0, asset0 - cash);
   const rows: Row[] = [];
   let depleteAge: number | null = null;
   let peak = inp.asset;
@@ -161,7 +168,9 @@ function simulate(inp: Inputs): SimResult {
     const pension = age >= inp.pensionStart ? inp.pensionMonthly * 12 : 0;
     const income = salary + side + pension;
     const living = (age < inp.retire ? inp.livingNow : inp.livingAfter) * 12;
-    const net = income - living - inp.travel - edu;
+    // 返済額には金利がすでに含まれているので、利率は聞かない
+    const debt = age <= inp.debtUntil ? inp.debtMonthly * 12 : 0;
+    const net = income - living - inp.travel - edu - debt;
     const invAmt = age <= inp.investUntil ? inp.invest : 0;
 
     // 運用（取り崩す年は税ぶん割り引く）
@@ -187,7 +196,7 @@ function simulate(inp: Inputs): SimResult {
     if (asset > peak) peak = asset;
     // お金の流れは「その年」の物価（1行目は入力どおり）、残高は「年末」の物価で名目に戻す
     rows.push({
-      age, income, living, edu, travel: inp.travel, net,
+      age, income, living, edu, travel: inp.travel, debt, net,
       invested: Math.max(0, inv), cash, asset,
       factor: Math.pow(1 + infl, years), factorEnd: Math.pow(1 + infl, years + 1),
     });
@@ -274,7 +283,7 @@ export default function LifeplanSimulator() {
       age: r.age, factor: r.factor,
       // お金の流れはその年の物価
       income: r.income * r.factor, living: r.living * r.factor, edu: r.edu * r.factor,
-      travel: r.travel * r.factor, net: r.net * r.factor,
+      travel: r.travel * r.factor, debt: r.debt * r.factor, net: r.net * r.factor,
       // 残高は年末の物価（現預金が名目で動かないぶん、ここで正しく据え置きになる）
       invested: r.invested * r.factorEnd, cash: r.cash * r.factorEnd, asset: r.asset * r.factorEnd,
     }));
@@ -347,8 +356,10 @@ export default function LifeplanSimulator() {
           <NumberField label="生活防衛資金（取り崩さない額）" value={inp.reserve} min={0} max={1000000} suffix="万円" onChange={(v) => set({ reserve: v })} />
           <NumberField label="手取り年収（世帯）" value={inp.income} min={0} max={100000} suffix="万円" onChange={(v) => set({ income: v })} />
           <NumberField label="生活費（現役・月）" value={inp.livingNow} min={0} max={1000} step={0.5} suffix="万円" onChange={(v) => set({ livingNow: v })} />
+          <NumberField label="ローンの返済（月）" value={inp.debtMonthly} min={0} max={200} step={0.5} suffix="万円" onChange={(v) => set({ debtMonthly: v })} />
+          <NumberField label="完済する年齢" value={inp.debtUntil} min={0} max={100} suffix="歳" onChange={(v) => set({ debtUntil: v })} />
         </div>
-        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>生活費に教育費は入れないでください（下の子どもの欄から自動で計算します）。<strong>現預金は利回り0%</strong>です。<strong>生活防衛資金はいまの価値で保ちます</strong>。この額を割りそうになると投資を取り崩して戻すので、<strong>取り崩しは投資のほうから</strong>進みます（表の現預金が名目で増えていくのは、同じ買い物ができる状態を保つためです）。</div>
+        <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>生活費に<strong>教育費とローンの返済</strong>は入れないでください（教育費は下の子どもの欄から自動で計算します）。住宅ローン・奨学金・車のローンは、毎月の返済額と完済する年齢を入れてください。<strong>金利を聞かないのは、返済額にすでに入っているから</strong>です。完済するとその支出が消えます（住宅ローンなら、完済後も固定資産税や修繕は残るので、そのぶんは生活費に残しておいてください）。<strong>現預金は利回り0%</strong>です。<strong>生活防衛資金はいまの価値で保ちます</strong>。この額を割りそうになると投資を取り崩して戻すので、<strong>取り崩しは投資のほうから</strong>進みます（表の現預金が名目で増えていくのは、同じ買い物ができる状態を保つためです）。</div>
       </Section>
 
       {/* 子ども */}
@@ -535,10 +546,10 @@ export default function LifeplanSimulator() {
                 📋 年ごとの明細を見る（{view!.rows.length}年ぶん）
               </summary>
               <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch", marginTop: 10 }}>
-                <table style={{ borderCollapse: "collapse", fontSize: 12, minWidth: 620, width: "100%" }}>
+                <table style={{ borderCollapse: "collapse", fontSize: 12, minWidth: 690, width: "100%" }}>
                   <thead>
                     <tr>
-                      {["年齢", "収入", "生活費", "教育費", "旅行", "収支", "投資", "現預金", "資産計"].map((h, i) => (
+                      {["年齢", "収入", "生活費", "教育費", "返済", "旅行", "収支", "投資", "現預金", "資産計"].map((h, i) => (
                         <th key={h} style={{
                           background: "#e6efe0", color: GREEN_DARK, fontWeight: 700,
                           padding: "7px 8px", textAlign: i === 0 ? "left" : "right",
@@ -563,6 +574,7 @@ export default function LifeplanSimulator() {
                           <td style={{ padding: "6px 8px", textAlign: "right", color: INK }}>{Math.round(r.income).toLocaleString()}</td>
                           <td style={{ padding: "6px 8px", textAlign: "right", color: INK }}>{Math.round(r.living).toLocaleString()}</td>
                           <td style={{ padding: "6px 8px", textAlign: "right", color: r.edu > 0 ? TERRA_DARK : "#bbb" }}>{r.edu > 0 ? Math.round(r.edu).toLocaleString() : "-"}</td>
+                          <td style={{ padding: "6px 8px", textAlign: "right", color: r.debt > 0 ? TERRA_DARK : "#bbb" }}>{r.debt > 0 ? Math.round(r.debt).toLocaleString() : "-"}</td>
                           <td style={{ padding: "6px 8px", textAlign: "right", color: r.travel > 0 ? INK : "#bbb" }}>{r.travel > 0 ? Math.round(r.travel).toLocaleString() : "-"}</td>
                           <td style={{ padding: "6px 8px", textAlign: "right", fontWeight: 700, color: r.net < 0 ? TERRA_DARK : GREEN_DARK }}>
                             {r.net >= 0 ? "+" : ""}{Math.round(r.net).toLocaleString()}
@@ -579,7 +591,7 @@ export default function LifeplanSimulator() {
                 </table>
               </div>
               <div style={{ fontSize: 11, color: GREEN, marginTop: 8, lineHeight: 1.8 }}>
-                単位は万円。<strong>そのとき実際に動く金額</strong>で表示しています。いちばん上の行は<strong>今年</strong>で、入力した金額がそのまま入ります。そこから毎年{inp.inflPct}%ずつ増えていきます。<strong>収支</strong>は収入から生活費・教育費・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
+                単位は万円。<strong>そのとき実際に動く金額</strong>で表示しています。いちばん上の行は<strong>今年</strong>で、入力した金額がそのまま入ります。そこから毎年{inp.inflPct}%ずつ増えていきます。<strong>収支</strong>は収入から生活費・教育費・返済・旅行を引いたもので、ここから投資額を差し引いたぶんが現預金の増減になります。色のついた行は退職・年金開始・iDeCo受取の年です。
               </div>
             </details>
           </>
