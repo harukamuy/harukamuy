@@ -293,11 +293,14 @@ tags: ["ニュース解説", "フリーランス", "働き方"]
 
 **働けるだけでは、資産にならない**。8回とも決まらなかった方は、働く意思も体力もあった。足りなかったのは、**必要とされる場所**のほうだった。
 
-2022年のバークシャー・ハサウェイの株主総会で、ウォーレン・バフェットがインフレへの備えを聞かれて答えている。
+バークシャー・ハサウェイの株主総会で、ウォーレン・バフェットがインフレへの備えを聞かれて、こう答えている。
 
-> **インフレに対する最良の防御策は、自分自身が稼ぐ力を高めることだ。最良の投資は、自分自身を成長させることだ**
+<div class="data-card" style="background:#fff8f0;border:1.5px solid #f0dcc8;border-radius:16px;padding:22px 20px;margin:24px 0;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#a85f3c;line-height:1.8;">いちばんの投資は、<br>自分自身を育てるものだ。<br>しかも、それには税金がかからない</div>
+<div style="font-size:12px;color:#7a5c44;margin-top:12px;">The best investment by far is anything that develops yourself, and it's not taxed at all.<br>ウォーレン・バフェット（2022年 バークシャー・ハサウェイ株主総会）</div>
+</div>
 
-インフレは、債券を持っている人からも、ベッドの下に現金を置いている人からも、お金を奪っていく。でも**腕のいい医者や、いい歌い手には、人はいつでもお金を払う**。だから稼ぐ力だけは奪われない、という話だった。
+**自分が持っている能力は、誰にも奪われない。インフレでも目減りしない**、というのが理由だった。同じ場でこうも言っている。**町でいちばんの医者、いちばんの教師、いちばんの営業なら、通貨がどうなろうとうまくやっていける**。
 
 働ける力には金額がつけられないので、[毎月の資産報告](/blog/monthly-report-2026-07)には1円も出てこない。それでも、**資産の額より効く場面がある**。
 
@@ -318,7 +321,7 @@ tags: ["ニュース解説", "フリーランス", "働き方"]
 <li>共通点として挙げられていたのは<strong>「自分の仕事の延長線上に、次の仕事を描けるか」</strong>。<a href="/blog/fire-increase-causes-inflation">昨日書いた処方箋</a>「組織に頼らない、持ち運べる尖った技能」と同じことを言っている</li>
 <li>わたしも会社を辞めているが、<strong>探したのは次の職ではなかった</strong>。映像の仕事は会社を離れても中身が変わらない。ただし<strong>業界にフリーランスの先輩が多かった</strong>だけで、<strong>収入がゼロの時期も経験している</strong></li>
 <li>辞めたときの資産は<strong>約2,000万円</strong>（退職金を含む）。<strong>お金は次の仕事を連れてきてくれないが、決まるまでの時間は買える</strong></li>
-<li><strong>働けるだけでは、資産にならない</strong>。<strong>その働きに需要があること</strong>まで揃って、はじめて資産になる。バフェットも<strong>「インフレに対する最良の防御策は、自分自身が稼ぐ力を高めること」</strong>と言っていた</li>
+<li><strong>働けるだけでは、資産にならない</strong>。<strong>その働きに需要があること</strong>まで揃って、はじめて資産になる。バフェットも<strong>「いちばんの投資は、自分自身を育てるものだ」</strong>と言っていた</li>
 </ul>
 </div>
 
@@ -354,7 +357,7 @@ tags: ["ニュース解説", "フリーランス", "働き方"]
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
 ・早期・希望退職の人数と黒字リストラ：<a href="https://www.tsr-net.co.jp/data/detail/1202787_1527.html" target="_blank" rel="noopener noreferrer">東京商工リサーチ「2025年度の『早期・希望退職』は2万781人 約7割が『黒字リストラ』、2009年度以降で4番目の高水準」</a><br>
 ・辞めた人の実例と、次が決まった人の共通点：<a href="https://news.yahoo.co.jp/articles/0b3e41e85226058b5492d34ed3bde15eed4d7eab" target="_blank" rel="noopener noreferrer">ABEMA TIMES「『早期退職』も…第二の人生は甘くない? 『孤独感に苛まれる』リタイアがうまくいく人・いかない人の"決定的な差"」(2026年8月16日)</a><br>
-・バフェットの発言（2022年4月30日のバークシャー・ハサウェイ株主総会）：<a href="https://www.businessinsider.jp/post-253849" target="_blank" rel="noopener noreferrer">Business Insider Japan「投資の神様・バフェットが年次株主総会で述べたこと…インフレ、ビットコインなどに言及」</a><br>
+・バフェットの発言（2022年4月30日のバークシャー・ハサウェイ株主総会）：<a href="https://www.cnbc.com/2022/05/02/this-is-warren-buffetts-simple-advice-for-periods-of-high-inflation.html" target="_blank" rel="noopener noreferrer">CNBC（英語）</a>／<a href="https://www.businessinsider.jp/post-253849" target="_blank" rel="noopener noreferrer">Business Insider Japan</a>（原文は "The best investment by far is anything that develops yourself, and it's not taxed at all."、"Whatever abilities you have can't be taken away from you."、"If you're the best doctor in town, if you're the best teacher in town, if you're the best salesman in town, you'll do well no matter what the currency does."）<br>
 ・50代300人へのアンケート（後悔・再就職・退職金）：<a href="https://news.yahoo.co.jp/articles/54b259490858c7f6e10a9b6d8807e1dcbf929aa2" target="_blank" rel="noopener noreferrer">週プレNEWS「独自アンケートで経験者の明暗を徹底深掘り『早期退職』の光と影」(2026年7月24日)</a>
 </div>
 
