@@ -424,5 +424,15 @@ export async function renderMarkdown(markdown: string): Promise<string> {
     .use(remarkHtml, { sanitize: false })
     .process(processed);
   const headings = extractHeadings(markdown);
-  return nowrapNumericCells(injectHeadingIds(result.toString(), headings));
+  return annotateConversations(nowrapNumericCells(injectHeadingIds(result.toString(), headings)));
+}
+
+// 会話パーツ(conv-wrap)に読み上げ用のrole/aria-labelを付与する。
+// 記事本文には素のdivで書かれているため、レンダリング時に後付けする
+// （165本の記事を触らずに全記事へ効かせるため）。
+function annotateConversations(html: string): string {
+  return html.replace(
+    /<div class="conv-wrap">/g,
+    '<div class="conv-wrap" role="group" aria-label="あずきとごまもちの会話">'
+  );
 }

@@ -89,6 +89,16 @@ export default async function PostPage({ params }: Props) {
   const contentHtml = await renderMarkdown(post.content);
   const headings = extractHeadings(post.content);
   const readingMinutes = estimateReadingMinutes(post.content);
+  // 目次を h2 → h3 の入れ子構造にする（HTML上も親子関係を持たせ、読み上げで階層が伝わるように）
+  type TocGroup = { id: string; text: string; children: { id: string; text: string }[] };
+  const tocGroups: TocGroup[] = [];
+  for (const h of headings) {
+    if (h.level === 2 || tocGroups.length === 0) {
+      tocGroups.push({ id: h.id, text: h.text, children: [] });
+    } else {
+      tocGroups[tocGroups.length - 1].children.push({ id: h.id, text: h.text });
+    }
+  }
 
   const allPosts = getAllPosts();
   // 同カテゴリの記事を優先し、不足分は他カテゴリの新着で補う
@@ -326,19 +336,28 @@ export default async function PostPage({ params }: Props) {
               📑 目次
             </div>
             <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {headings.map((h) => (
-                <li key={h.id} style={{ marginLeft: h.level === 3 ? 16 : 0, marginBottom: 6 }}>
+              {tocGroups.map((g) => (
+                <li key={g.id} style={{ marginBottom: 6 }}>
                   <a
-                    href={`#${h.id}`}
-                    style={{
-                      fontSize: h.level === 3 ? 12 : 13,
-                      color: "var(--brown-2)",
-                      textDecoration: "none",
-                      lineHeight: 1.6,
-                    }}
+                    href={`#${g.id}`}
+                    style={{ fontSize: 13, color: "var(--brown-2)", textDecoration: "none", lineHeight: 1.6 }}
                   >
-                    {h.level === 3 ? "– " : ""}{h.text}
+                    {g.text}
                   </a>
+                  {g.children.length > 0 && (
+                    <ol style={{ listStyle: "none", padding: 0, margin: "4px 0 0 16px" }}>
+                      {g.children.map((c) => (
+                        <li key={c.id} style={{ marginBottom: 4 }}>
+                          <a
+                            href={`#${c.id}`}
+                            style={{ fontSize: 12, color: "var(--brown-2)", textDecoration: "none", lineHeight: 1.6 }}
+                          >
+                            – {c.text}
+                          </a>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
                 </li>
               ))}
             </ol>

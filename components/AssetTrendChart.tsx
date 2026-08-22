@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Snapshot, totalOf } from "./sidefireData";
 
 interface Props {
@@ -11,7 +12,6 @@ interface Props {
 // SVG viewBox 内の論理座標
 const VB_W = 800;
 const VB_H = 240;
-const PAD_L = 56;   // 左の数値ラベル領域
 const PAD_R = 24;
 const PAD_T = 24;
 const PAD_B = 36;   // 下の月ラベル領域
@@ -21,6 +21,22 @@ function fmt(n: number) {
 }
 
 export default function AssetTrendChart({ snapshots, selectedIdx, onSelect }: Props) {
+  // スマホ(600px以下)ではSVGが約0.4倍に縮小されて文字が読めなくなるため、
+  // viewBox内の文字サイズ・吹き出しサイズ・左余白を大きくする。
+  const [compact, setCompact] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 600px)");
+    const apply = () => setCompact(mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+  const PAD_L = compact ? 80 : 56;   // 左の数値ラベル領域
+  const LABEL_FS = compact ? 24 : 11; // 軸ラベルの文字サイズ(viewBox単位)
+  const BUBBLE_W = compact ? 140 : 76;
+  const BUBBLE_H = compact ? 36 : 20;
+  const BUBBLE_FS = compact ? 22 : 11;
+
   const totals = snapshots.map(totalOf);
   const minVal = Math.min(...totals);
   const maxVal = Math.max(...totals);
@@ -146,7 +162,7 @@ export default function AssetTrendChart({ snapshots, selectedIdx, onSelect }: Pr
             key={i}
             x={PAD_L - 8}
             y={yOf(t) + 4}
-            fontSize={11}
+            fontSize={LABEL_FS}
             fill="var(--brown-3)"
             textAnchor="end"
           >
@@ -177,7 +193,7 @@ export default function AssetTrendChart({ snapshots, selectedIdx, onSelect }: Pr
             key={i}
             x={xOf(i)}
             y={VB_H - 12}
-            fontSize={11}
+            fontSize={LABEL_FS}
             fill={i === selectedIdx ? "var(--green)" : "var(--brown-3)"}
             fontWeight={i === selectedIdx ? 700 : 400}
             textAnchor="middle"
@@ -223,17 +239,17 @@ export default function AssetTrendChart({ snapshots, selectedIdx, onSelect }: Pr
               {isSelected && (
                 <g>
                   <rect
-                    x={cx - 38}
-                    y={cy - 32}
-                    width={76}
-                    height={20}
+                    x={Math.min(Math.max(cx - BUBBLE_W / 2, 2), VB_W - BUBBLE_W - 2)}
+                    y={cy - 12 - BUBBLE_H}
+                    width={BUBBLE_W}
+                    height={BUBBLE_H}
                     rx={5}
                     fill="var(--brown)"
                   />
                   <text
-                    x={cx}
-                    y={cy - 18}
-                    fontSize={11}
+                    x={Math.min(Math.max(cx - BUBBLE_W / 2, 2), VB_W - BUBBLE_W - 2) + BUBBLE_W / 2}
+                    y={cy - 12 - BUBBLE_H / 2 + BUBBLE_FS * 0.35}
+                    fontSize={BUBBLE_FS}
                     fontWeight={700}
                     fill="white"
                     textAnchor="middle"
