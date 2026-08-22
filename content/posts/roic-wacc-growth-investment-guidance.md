@@ -382,7 +382,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 
 ## 関連記事
 
-- [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを測った](/blog/portfolio-risk-117-stocks)
+- [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを計算したら、答えは「数」ではなかった](/blog/portfolio-risk-117-stocks)
 - [資産5,831万円の年率リスクを計算したら11.4%だった](/blog/total-portfolio-risk-correlation)
 - [高配当株とインデックス、どちらを選ぶか。両方持っているわたしの結論](/blog/high-dividend-vs-index)
 - [日経平均6万円時代。8年で2万→6万、貯金では追いつけない](/blog/nikkei-60000-investment-now)
