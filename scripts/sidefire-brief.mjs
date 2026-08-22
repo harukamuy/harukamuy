@@ -15,6 +15,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { parseHoldingsCsv } from "./sidefire-parse-csv.mjs";
 import { compareWithPrev, archiveCurrent } from "./sidefire-compare.mjs";
+import { roicWacc } from "./sidefire-roic.mjs";
 
 const FAST = process.argv.includes("--fast");
 const CSV = "data/sidefire/input/holdings.csv";
@@ -43,6 +44,18 @@ const HIST = existsSync("data/sidefire/dividend-history.json")
   ? JSON.parse(readFileSync("data/sidefire/dividend-history.json", "utf8"))
   : { data: {}, _生成: null };
 const hist = HIST.data || {};
+// ROIC−WACC 用（どちらも無くても動く。未入力の銘柄は空欄になる）
+const FUND = existsSync("data/sidefire/fundamentals.json")
+  ? JSON.parse(readFileSync("data/sidefire/fundamentals.json", "utf8"))
+  : { stocks: {} };
+const BETA = existsSync("data/sidefire/beta.json")
+  ? JSON.parse(readFileSync("data/sidefire/beta.json", "utf8"))
+  : { data: {} };
+const betaData = BETA.data || {};
+// 表示用：+2.3pt / −1.1pt / 対象外 / －（未入力）
+const fmtRW = (rw) =>
+  !rw ? "－" : rw.skipped ? "対象外"
+  : `${rw.spread > 0 ? "+" : ""}${rw.spread}pt${rw.single ? "⚠" : ""}`;
 
 // ディフェンシブの定義は sidefire-sectors.mjs と揃えている
 const DEFENSIVE_33 = new Set([
@@ -341,7 +354,9 @@ const monthly = eligible
     return {
       c, name: pos[c].name, s33: pos[c].s33, y: pos[c].yieldNow,
       w: (pos[c].value / total) * 100, def: pos[c].defensive, h: hist[c],
-      chgPct: r && !r.isNew ? r.chgPct : null, fell, ...priority(c),
+      chgPct: r && !r.isNew ? r.chgPct : null, fell,
+      rw: roicWacc(c, FUND, betaData, pos[c].s33), beta: betaData[c]?.beta ?? null,
+      ...priority(c),
     };
   })
   .sort((a, b) => b.pt - a.pt || (a.chgPct ?? 99) - (b.chgPct ?? 99))
@@ -578,11 +593,14 @@ ${[
 
 ### 候補リスト
 
-| 今月 | 優先度 | コード | 銘柄 | 業種 | 前月比 | 利回り | 非減配 | コロナ | 性格 |
-|:--:|--:|---|---|---|--:|--:|--:|:--:|---|
-${monthly.map((x) => `| ${x.fell ? "**✅**" : "－"} | **${x.pt}点** | ${x.c} | ${x.name} | ${x.s33} | ${x.chgPct == null ? "－" : p1(x.chgPct) + "%"} | ${p1(x.y)}% | ${x.h.noCut}年${x.h.capped ? "以上" : ""} | ${x.h.covidDrop === 0 ? "○" : `−${p1(x.h.covidDrop)}%`} | ${x.def ? "ディフェンシブ" : "景気敏感"} |`).join("\n")}
+| 今月 | 優先度 | コード | 銘柄 | 業種 | 前月比 | 利回り | 非減配 | コロナ | β | ROIC−WACC | 性格 |
+|:--:|--:|---|---|---|--:|--:|--:|:--:|--:|--:|---|
+${monthly.map((x) => `| ${x.fell ? "**✅**" : "－"} | **${x.pt}点** | ${x.c} | ${x.name} | ${x.s33} | ${x.chgPct == null ? "－" : p1(x.chgPct) + "%"} | ${p1(x.y)}% | ${x.h.noCut}年${x.h.capped ? "以上" : ""} | ${x.h.covidDrop === 0 ? "○" : `−${p1(x.h.covidDrop)}%`} | ${x.beta ?? "－"} | ${fmtRW(x.rw)} | ${x.def ? "ディフェンシブ" : "景気敏感"} |`).join("\n")}
 
 **✅ ＝ 前月末より株価が下がっている（いまが買い時）**
+**ROIC−WACC** ＝ 資本コストをどれだけ上回る利益を出しているか。プラスが望ましい。
+\`－\` は財務データ未入力（\`fundamentals.json\`）、\`対象外\` は金融（投下資本の概念が違うため計算しない）。
+\`⚠\` は1期分しか入っていない印。一時的な損失で「WACC割れ」に見えることがあるので3期分入れてください。
 「コロナ」欄は2020年前後に**実際に1株配当が何%減ったか**。○は減らさなかった銘柄です。
 
 ${cmp.available
