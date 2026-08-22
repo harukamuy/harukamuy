@@ -121,6 +121,9 @@ export const TAG_SLUGS: Record<string, string> = {
   "初心者向け": "for-beginners",
   "FIREの疑問": "fire-questions",
   "後悔・不安": "regret-anxiety",
+  "ライフプラン": "lifeplan",
+  "働き方": "work-style",
+  "老後資金": "retirement-fund",
 };
 
 // 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）
