@@ -475,8 +475,16 @@ tags: ["ニュース解説", "米国株", "為替"]
 
 ---
 
-## 7. まとめ
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: 統計の数字にいちいち反応しなくていいように、積立は自動にしてあります。オルカン・米国ETF・日本の高配当株まで、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
+---
+
+## 7. まとめ
 
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
@@ -540,9 +548,3 @@ tags: ["ニュース解説", "米国株", "為替"]
 - [ダウが1,153ドル安から3営業日で最高値。急落のとき何もしなかった話の、答え合わせ](/blog/dow-record-after-crash)
 - [アメリカの物価が下がると、なぜわたしのオルカンとBNDが上がるの? 仕組みを調べてみた](/blog/us-cpi-orukan-bnd)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: 統計の数字にいちいち反応しなくていいように、積立は自動にしてあります。オルカン・米国ETF・日本の高配当株まで、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

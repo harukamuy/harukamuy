@@ -221,6 +221,15 @@ TOPIXはいま、大がかりな見直しの最中だ。「日本株ほぼ全部
 
 ---
 
+:::cta
+title: SBI証券 — インデックスも高配当株も、これ1つで
+description: オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 - TOPIXは「日本株の幕の内弁当」。連動する自動運用マネーは **約83兆円**。入るか外れるかで、巨大なお金が機械的に動く
@@ -274,9 +283,3 @@ TOPIXはいま、大がかりな見直しの最中だ。「日本株ほぼ全部
 - [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [なぜ、会社は突然「4,000億円の損失」を出すの? 話題の「のれん」を調べてみた](/blog/noren-amortization-maintained)
 
-:::cta
-title: SBI証券 — インデックスも高配当株も、これ1つで
-description: オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

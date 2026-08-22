@@ -213,6 +213,15 @@ NISAには「つみたて投資枠」と「成長投資枠」があって、わ�
 
 ---
 
+:::cta
+title: SBI証券 — 日本の高配当株を1株から買える
+description: S株(単元未満株)で東証ほぼ全銘柄を1株から購入可能。買付手数料も無料で、高配当株をコツコツ集めたい人に最適。NISA成長投資枠との相性も◎、わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -223,15 +232,6 @@ NISAには「つみたて投資枠」と「成長投資枠」があって、わ�
 <li>配当金は全額使う想定。美味しいもの・プレゼント・ちょっとした贅沢に。今も楽しみながら資産を増やすのがあずき流</li>
 </ul>
 </div>
-
-
-:::cta
-title: SBI証券 — 日本の高配当株を1株から買える
-description: S株(単元未満株)で東証ほぼ全銘柄を1株から購入可能。買付手数料も無料で、高配当株をコツコツ集めたい人に最適。NISA成長投資枠との相性も◎、わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
 
 ## 関連記事
 

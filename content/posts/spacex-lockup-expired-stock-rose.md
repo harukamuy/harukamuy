@@ -367,6 +367,15 @@ tags: ["ニュース解説", "米国株", "市場の話"]
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 9. まとめ
 
 <div class="summary-box">
@@ -431,9 +440,3 @@ tags: ["ニュース解説", "米国株", "市場の話"]
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 - [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを計算したら、答えは「数」ではなかった](/blog/portfolio-risk-117-stocks)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

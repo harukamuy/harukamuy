@@ -308,6 +308,15 @@ tags: ["ニュース解説", "フリーランス", "働き方"]
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 9. まとめ
 
 <div class="summary-box">
@@ -373,9 +382,3 @@ tags: ["ニュース解説", "フリーランス", "働き方"]
 - [会社を辞めた日のこと。3年越しの決断と、晴れ晴れした朝](/blog/quit-job-2023)
 - [「フリーランスは収入が不安定だからやめとけ」は本当か。収入ゼロを経験した3年目の答え合わせ](/blog/freelance-unstable-income-real)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

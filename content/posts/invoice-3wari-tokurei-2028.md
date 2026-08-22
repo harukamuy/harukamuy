@@ -264,6 +264,15 @@ tags: ["フリーランス", "会計ツール"]
 
 ---
 
+:::cta
+title: freee 会計 — インボイス・3割特例にも対応
+description: 銀行・クレカ連携で取引が自動取込、青色申告(65万円控除)もインボイス対応の消費税申告も freee 内で完結。わたしも3年使い続けている定番ソフトです。
+button: freee 会計の公式サイトを見る →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+---
+
 ## 7. まとめ
 
 ニュースのポイントを整理する。
@@ -289,13 +298,6 @@ tags: ["フリーランス", "会計ツール"]
 - [freeeを3年使い続けている理由](/blog/freee-vs-mf-real-3year)
 - [フリーランスの確定申告。freeeで青色申告した流れ](/blog/freelance-tax-return-freee)
 - [フリーランスの社会保険](/blog/freelance-social-insurance)
-
-:::cta
-title: freee 会計 — インボイス・3割特例にも対応
-description: 銀行・クレカ連携で取引が自動取込、青色申告(65万円控除)もインボイス対応の消費税申告も freee 内で完結。わたしも3年使い続けている定番ソフトです。
-button: freee 会計の公式サイトを見る →
-url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
-:::
 
 ---
 

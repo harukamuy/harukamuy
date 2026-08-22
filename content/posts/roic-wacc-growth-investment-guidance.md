@@ -359,6 +359,15 @@ EPは<strong>率×量の面積</strong>なので、率をどれだけ磨いて�
 
 ---
 
+:::cta
+title: SBI証券 — 保有銘柄の数字を確かめるところから
+description: ROICもWACCも、決算の数字がなければ計算できません。保有している銘柄の業績や指標を1か所で見られる環境があると、こういう確かめものがぐっと楽になります。わたしが8年使っているメイン口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 <div class="summary-box">
@@ -372,13 +381,6 @@ EPは<strong>率×量の面積</strong>なので、率をどれだけ磨いて�
 <li>高配当株を117銘柄持つ身として刺さったのは、<strong>成長ステージによらず一律に株主還元している</strong>という指摘だった</li>
 </ul>
 </div>
-
-:::cta
-title: SBI証券 — 保有銘柄の数字を確かめるところから
-description: ROICもWACCも、決算の数字がなければ計算できません。保有している銘柄の業績や指標を1か所で見られる環境があると、こういう確かめものがぐっと楽になります。わたしが8年使っているメイン口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ## 関連記事
 

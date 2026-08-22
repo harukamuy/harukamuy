@@ -618,8 +618,16 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 
 ---
 
-## 10. まとめ
+:::cta
+title: SBI証券 — 日本の高配当株もここから
+button: SBI証券の公式サイトを見る →
+description: 気になった会社をすぐ調べられるように、業績や配当の推移も口座の中で確認できます。日本株の売買手数料は無料。わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
+---
+
+## 10. まとめ
 
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
@@ -687,9 +695,3 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 - [1年前に買ったヤマハ発が1日で2割上がった。でも、うれしかったのは値上がりではなかった](/blog/yamaha-motor-record-high-yoc)
 - [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを計算したら、答えは「数」ではなかった](/blog/portfolio-risk-117-stocks)
 
-:::cta
-title: SBI証券 — 日本の高配当株もここから
-button: SBI証券の公式サイトを見る →
-description: 気になった会社をすぐ調べられるように、業績や配当の推移も口座の中で確認できます。日本株の売買手数料は無料。わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

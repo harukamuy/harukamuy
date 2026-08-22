@@ -203,6 +203,17 @@ S&P500はコロナショックのとき、一時3割を超えて下落した。�
 
 ---
 
+### 📚 サイドFIREを始める前に読みたい1冊
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+amazon: 4023318787
+rakuten: rb:18041936
+description: FIRE・サイドFIREの大前提となる「お金の5つの力」をマンガで網羅。読んでから始めると遠回りせずに済みます。
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -213,16 +224,6 @@ S&P500はコロナショックのとき、一時3割を超えて下落した。�
 <li>目指し始めたのは2018年。「1億円あれば働かなくてもいい」という考え方を知ってワクワクした。自分が達成できるとは思っていなかったけど、コツコツ積み上げてここまできた</li>
 </ul>
 </div>
-
-### 📚 サイドFIREを始める前に読みたい1冊
-
-:::product
-title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-amazon: 4023318787
-rakuten: rb:18041936
-description: FIRE・サイドFIREの大前提となる「お金の5つの力」をマンガで網羅。読んでから始めると遠回りせずに済みます。
-:::
-
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

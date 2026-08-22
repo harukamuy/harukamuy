@@ -208,6 +208,15 @@ tags: ["サイドFIRE"]
 
 ---
 
+:::cta
+title: freee会計 — 収入の波を「見える」状態にしておく
+description: フリーランス3年目。収入に波があるからこそ、毎月の入出金をfreeeで自動取込して、いつでも残高と売上の見通しが分かるようにしています。確定申告もここから。独立初年度から使っていて、いまも変えていません。
+button: freeeを無料で試してみる →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -220,7 +229,6 @@ tags: ["サイドFIRE"]
 <li>実は稼働サイクルは会社員に近い。でも「選べること」があるだけで、同じリズムでも気持ちがちがう</li>
 </ul>
 </div>
-
 
 ## 関連記事
 

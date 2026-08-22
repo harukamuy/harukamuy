@@ -578,8 +578,16 @@ BNDは、<strong>本当に気休め</strong>
 
 ---
 
-## 7. まとめ
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: 配分を決めて、あとは自動で積み立てる。オルカンの積立から米国ETFのBND、日本の高配当株まで、SBI証券ひとつで管理できます。わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
+---
+
+## 7. まとめ
 
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
@@ -646,9 +654,3 @@ BNDは、<strong>本当に気休め</strong>
 - [資産5,806万円のポートフォリオ。構成比・高配当株16銘柄・月別配当を公開します](/blog/portfolio-full-disclosure-5806)
 - [ダウが1,153ドル安から3営業日で最高値。急落のとき何もしなかった話の、答え合わせ](/blog/dow-record-after-crash)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: 配分を決めて、あとは自動で積み立てる。オルカンの積立から米国ETFのBND、日本の高配当株まで、SBI証券ひとつで管理できます。わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

@@ -227,6 +227,15 @@ tags: ["フリーランス"]
 
 ---
 
+:::cta
+title: freee 会計 — フリーランスの確定申告を簡単に
+description: 銀行・クレカ連携で取引が自動取込、青色申告(65万円控除)もインボイス対応の消費税申告もサイト内で完結。わたしも3年使い続けている定番ソフト。
+button: freee 会計の公式サイトを見る →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -238,15 +247,6 @@ tags: ["フリーランス"]
 <li>覚悟はしていたけれどやっぱり重い。事前に知っておくことが独立準備で一番大事だと思う</li>
 </ul>
 </div>
-
-
-:::cta
-title: freee 会計 — フリーランスの確定申告を簡単に
-description: 銀行・クレカ連携で取引が自動取込、青色申告(65万円控除)もインボイス対応の消費税申告もサイト内で完結。わたしも3年使い続けている定番ソフト。
-button: freee 会計の公式サイトを見る →
-url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
-:::
-
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
 <strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>

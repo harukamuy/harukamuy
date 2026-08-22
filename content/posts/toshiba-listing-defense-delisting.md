@@ -362,6 +362,15 @@ tags: ["ニュース解説", "日本株", "市場の話"]
 
 ---
 
+:::cta
+title: SBI証券 — 日本の高配当株も、1株から買えます
+button: SBI証券の公式サイトを見る →
+description: わたしは日本の高配当株を117銘柄持っています。単元未満株なら1株から買えるので、少しずつ業種を散らしていけます。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 8. まとめ
 
 <div class="summary-box">
@@ -429,9 +438,3 @@ tags: ["ニュース解説", "日本株", "市場の話"]
 - [株主総会のハガキをずっと捨てているわたしが、個人株主の『1票の見える化』を調べてみた](/blog/minority-shareholder-vote)
 - [アメリカが国債を買い戻すと発表。日経平均は890円戻したけれど、借金は1円も減っていなかった](/blog/us-treasury-buyback-doubled)
 
-:::cta
-title: SBI証券 — 日本の高配当株も、1株から買えます
-button: SBI証券の公式サイトを見る →
-description: わたしは日本の高配当株を117銘柄持っています。単元未満株なら1株から買えるので、少しずつ業種を散らしていけます。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

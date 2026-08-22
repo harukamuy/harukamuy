@@ -386,6 +386,15 @@ tags: ["高配当株", "配当投資"]
 
 </div>
 
+:::cta
+title: SBI証券 — あずきのメイン証券口座
+description: 日本株・米国ETF・iDeCoすべてをSBI証券に集約しています。手数料無料・NISA完全対応。高配当投資を始めたい方にまずおすすめしたい口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -395,16 +404,6 @@ tags: ["高配当株", "配当投資"]
 <li>営業CFの2025年急落は唯一の懸念点。来期の回復を見守りながら保有継続</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: SBI証券 — あずきのメイン証券口座
-description: 日本株・米国ETF・iDeCoすべてをSBI証券に集約しています。手数料無料・NISA完全対応。高配当投資を始めたい方にまずおすすめしたい口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::
-
 
 ## 関連記事
 

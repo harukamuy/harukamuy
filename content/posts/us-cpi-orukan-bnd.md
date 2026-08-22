@@ -173,6 +173,15 @@ FRBも日銀も、世界の主要な中央銀行の目標はほぼ共通で<stro
 
 ---
 
+:::cta
+title: SBI証券 — インデックスも高配当株も、これ1つで
+description: オルカン・S&P500の積立も、BNDなどの米国ETFも、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 8. まとめ
 
 - 米6月CPIは **前年比+3.5%** に急減速。前月比は **−0.4%と、2020年4月以来の大きなマイナス**(主因はガソリン安)
@@ -225,9 +234,3 @@ FRBも日銀も、世界の主要な中央銀行の目標はほぼ共通で<stro
 - [財務相の一言で、円も株も金利も動いた。GPIFの『国内投資後押し』を調べてみた](/blog/gpif-katayama-domestic-shift)
 - [物価は1.8%しか上がっていないことになっている。原典を開いたら、私立高校の授業料が73%下がっていた](/blog/cpi-july-tuition-minus-73)
 
-:::cta
-title: SBI証券 — インデックスも高配当株も、これ1つで
-description: オルカン・S&P500の積立も、BNDなどの米国ETFも、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

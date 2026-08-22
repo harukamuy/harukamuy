@@ -247,20 +247,6 @@ EV撤退のニュースで株価が下落したタイミングで購入した。
 
 ---
 
-<div class="summary-box">
-<div class="summary-title">🐾 この記事のまとめ</div>
-<ul class="summary-list">
-<li>自分で選んだ高配当株は三菱商事・東京海上・JT・ホンダ。それぞれに選んだ理由がある</li>
-<li>三菱商事はバフェット効果で購入。迷ったが結果的にさらに上昇</li>
-<li>東京海上はずっと狙っていた定番銘柄。JTは高配当の代名詞、株価も倍近くに</li>
-<li>ホンダはEV撤退後の下落で購入。財務・配当だけでなく「好きな会社」という気持ちも大事</li>
-<li>選ぶ基準は利回り4%・業種分散・財務チェックの3つ</li>
-<li>インデックス投資（オルカン・S&P500・iDeCo）が将来の資産形成の軸。BNDは守りと毎月の配当入金が魅力</li>
-</ul>
-</div>
-
----
-
 :::cta
 title: SBI証券 — あずきのメイン証券口座
 description: 高配当株・S&P500・BND・iDeCoすべてをSBI証券で管理しています。手数料無料・NISA完全対応。投資を始めるならまずここから。
@@ -277,6 +263,19 @@ rakuten: rb:18041936
 description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力をまるごと学べる1冊。サイドFIREの土台作りに。
 :::
 
+---
+
+<div class="summary-box">
+<div class="summary-title">🐾 この記事のまとめ</div>
+<ul class="summary-list">
+<li>自分で選んだ高配当株は三菱商事・東京海上・JT・ホンダ。それぞれに選んだ理由がある</li>
+<li>三菱商事はバフェット効果で購入。迷ったが結果的にさらに上昇</li>
+<li>東京海上はずっと狙っていた定番銘柄。JTは高配当の代名詞、株価も倍近くに</li>
+<li>ホンダはEV撤退後の下落で購入。財務・配当だけでなく「好きな会社」という気持ちも大事</li>
+<li>選ぶ基準は利回り4%・業種分散・財務チェックの3つ</li>
+<li>インデックス投資（オルカン・S&P500・iDeCo）が将来の資産形成の軸。BNDは守りと毎月の配当入金が魅力</li>
+</ul>
+</div>
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

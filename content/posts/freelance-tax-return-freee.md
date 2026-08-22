@@ -259,6 +259,15 @@ freeeには確定申告書類を作成する専用のフローがあって、今
 
 ---
 
+:::cta
+title: freee 会計 — 青色申告も日々の経理もこれ1つ
+description: ネット銀行・クレジットカードと連携して取引を自動取込。日々の経理さえ整えておけば、確定申告は資料を揃えて1時間ほどで完結します。フリーランス1年目から愛用中。
+button: freeeを無料で試してみる →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -270,16 +279,6 @@ freeeには確定申告書類を作成する専用のフローがあって、今
 <li>消費税は自分のお金ではない。インボイス登録をしている場合は消費税申告も必要なので要確認</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: freee 会計 — 青色申告も日々の経理もこれ1つ
-description: ネット銀行・クレジットカードと連携して取引を自動取込。日々の経理さえ整えておけば、確定申告は資料を揃えて1時間ほどで完結します。フリーランス1年目から愛用中。
-button: freeeを無料で試してみる →
-url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
-:::
-
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
 <strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>

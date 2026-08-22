@@ -295,6 +295,15 @@ tags: ["ニュース解説", "家計・資産管理", "市場の話"]
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立も、日本の高配当株も、これ1つで
+button: SBI証券の公式サイトを見る →
+description: 物価が上がるなら、現金だけで持つのがいちばん目減りします。わたしはオルカンの積立と日本の高配当株を同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 8. まとめ
 
 <div class="summary-box">
@@ -333,9 +342,3 @@ tags: ["ニュース解説", "家計・資産管理", "市場の話"]
 - [アメリカが国債を買い戻すと発表。日経平均は890円戻したけれど、借金は1円も減っていなかった](/blog/us-treasury-buyback-doubled)
 - [ウォルマートが1日で9%安。でも売られたのは業績ではなく、膨らみすぎた期待だった](/blog/defensive-stocks-walmart-drop)
 
-:::cta
-title: SBI証券 — オルカンの積立も、日本の高配当株も、これ1つで
-button: SBI証券の公式サイトを見る →
-description: 物価が上がるなら、現金だけで持つのがいちばん目減りします。わたしはオルカンの積立と日本の高配当株を同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

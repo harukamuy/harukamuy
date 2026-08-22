@@ -235,7 +235,6 @@ tags: ["ニュース解説", "働き方", "サイドFIRE"]
 
 わたしはどちらかと言えば倹約家で、新しいスキルを覚えたり、やったことのないことを試したりするのが好きだ。**たまたま、4つのうちその2つが埋まっていただけ**だと思う。決して備えていたわけではない。
 
-
 <div class="data-card" style="background:#fff8f0;border:1.5px solid #f0dcc8;border-radius:16px;padding:22px 20px;margin:24px 0;text-align:center;">
 <div style="font-size:16px;font-weight:700;color:#a85f3c;line-height:1.8;">風は、ろうそくを消し、<br>火を大きくする</div>
 <div style="font-size:12px;color:#7a5c44;margin-top:12px;">Wind extinguishes a candle and energizes fire.<br>ナシーム・ニコラス・タレブ（2012年『反脆弱性』序文より）</div>
@@ -244,6 +243,15 @@ tags: ["ニュース解説", "働き方", "サイドFIRE"]
 タレブがこの本で言っているのは、こういうことだ。**ろうそくにとって風は終わりで、焚き火にとっては燃料になる**。吹いた風は1つなのに、結果が逆になる。
 
 AIも同じ風なのだと思う。**火が消える人と、大きくなる人がいる**。違いは、焚き火のようにその風をうまく使って、火を大きくできるかなのかもしれない。
+
+---
+
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
 ---
 
@@ -313,9 +321,3 @@ AIも同じ風なのだと思う。**火が消える人と、大きくなる人�
 - [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを計算したら、答えは「数」ではなかった](/blog/portfolio-risk-117-stocks)
 - [ハローワークの求人は民間より1〜2割安い。調べていくと「安い」の正体が見えてきた](/blog/hellowork-wage-gap-why)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

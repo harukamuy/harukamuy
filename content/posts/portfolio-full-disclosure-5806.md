@@ -296,6 +296,15 @@ tags: ["ポートフォリオ", "高配当株", "資産公開"]
 
 ---
 
+:::cta
+title: SBI証券 — つみたて・高配当株・iDeCoを一気通貫で
+description: わたしはNISA（つみたて／成長投資枠）から日本の高配当株、米国ETF、iDeCoまで、すべてSBI証券で管理しています。S株（単元未満株）なら高配当株を1株から集められて、住信SBIネット銀行との連携で資金移動もスムーズ。これから始めるなら、まず候補に。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -307,14 +316,6 @@ tags: ["ポートフォリオ", "高配当株", "資産公開"]
 <li>インデックスは積立を続けつつ、余剰資金を高配当株へ。取り崩してまで動かさず、自分のペースで。日本高配当株がインデックス並みになれば年120万円も見えてくる</li>
 </ul>
 </div>
-
-:::cta
-title: SBI証券 — つみたて・高配当株・iDeCoを一気通貫で
-description: わたしはNISA（つみたて／成長投資枠）から日本の高配当株、米国ETF、iDeCoまで、すべてSBI証券で管理しています。S株（単元未満株）なら高配当株を1株から集められて、住信SBIネット銀行との連携で資金移動もスムーズ。これから始めるなら、まず候補に。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
 
 ## 関連記事
 

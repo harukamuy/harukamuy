@@ -460,6 +460,15 @@ tags: ["市場の話", "インデックス投資"]
 
 ---
 
+:::cta
+title: SBI証券 — 月1,000円からオルカン積立が始められる
+description: つみたて投資枠で月100円〜オルカン・S&P500を購入可能。買付手数料無料・住信SBIネット銀行との連携で資金移動もスムーズ。投資を始めるならまずSBI証券から。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 最後にこの記事のポイントをまとめておく。
@@ -481,13 +490,6 @@ tags: ["市場の話", "インデックス投資"]
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)
 - [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [投資を始めた2018年](/blog/investment-start-2018)
-
-:::cta
-title: SBI証券 — 月1,000円からオルカン積立が始められる
-description: つみたて投資枠で月100円〜オルカン・S&P500を購入可能。買付手数料無料・住信SBIネット銀行との連携で資金移動もスムーズ。投資を始めるならまずSBI証券から。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ---
 

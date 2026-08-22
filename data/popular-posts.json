@@ -1,26 +1,26 @@
 {
-  "updated": "2026-08-01",
+  "updated": "2026-08-22",
   "rangeDays": 28,
   "posts": [
     {
+      "slug": "genz-financial-nihilism",
+      "pv": 204
+    },
+    {
       "slug": "hdv-monthly-distribution-nisa",
-      "pv": 394
+      "pv": 121
     },
     {
       "slug": "sidefire-regrets-and-reality",
-      "pv": 176
+      "pv": 108
     },
     {
-      "slug": "spacex-ipo-index-inclusion",
-      "pv": 110
+      "slug": "hellowork-wage-gap-why",
+      "pv": 98
     },
     {
-      "slug": "sidefire-asset-simulation",
-      "pv": 109
-    },
-    {
-      "slug": "mansion-kanri-crisis",
-      "pv": 87
+      "slug": "ideco-restart-minimum",
+      "pv": 96
     }
   ]
 }

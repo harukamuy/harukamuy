@@ -292,6 +292,15 @@ tags: ["女性の資産形成", "家計・資産管理"]
 
 ---
 
+:::cta
+title: SBI証券 — コツコツ積み上げる土台を作るならここ
+description: つみたて投資枠でオルカン・S&P500を機械的に積立、成長投資枠で日本高配当株。8年積み上げてサイドFIREを目指すならSBI証券一択。住信SBIネット銀行との連携でお金まわりがシンプルになります。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 最後にこの記事のポイントをまとめておく。
@@ -318,13 +327,6 @@ tags: ["女性の資産形成", "家計・資産管理"]
 - [女性のサイドFIRE](/blog/women-financial-independence)
 - [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)
 - [独身女性の老後資金、1,800万円では足りない](/blog/single-woman-retirement-real)
-
-:::cta
-title: SBI証券 — コツコツ積み上げる土台を作るならここ
-description: つみたて投資枠でオルカン・S&P500を機械的に積立、成長投資枠で日本高配当株。8年積み上げてサイドFIREを目指すならSBI証券一択。住信SBIネット銀行との連携でお金まわりがシンプルになります。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ---
 

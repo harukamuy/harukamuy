@@ -268,6 +268,15 @@ tags: ["証券・銀行"]
 
 ---
 
+:::cta
+title: SBI証券 — あずきのメイン証券口座
+description: NISA・高配当株・米国債券ETF・iDeCoすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -279,16 +288,6 @@ tags: ["証券・銀行"]
 <li>わたしと一緒に始めたいならSBI一択</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: SBI証券 — あずきのメイン証券口座
-description: NISA・高配当株・米国債券ETF・iDeCoすべてをSBI証券に集約しています。手数料無料・NISA完全対応。投資を始めるならまずここから、と自信を持っておすすめできる口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::
-
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

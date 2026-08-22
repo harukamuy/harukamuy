@@ -596,8 +596,16 @@ tags: ["ニュース解説", "高配当株", "日本株"]
 
 ---
 
-## 8. まとめ
+:::cta
+title: SBI証券 — 日本の高配当株もここから
+button: SBI証券の公式サイトを見る →
+description: 日本株の売買手数料が無料。100株から買えるので、業種を散らして少しずつ増やしていけます。配当金の受け取り記録も見やすく、わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
+---
+
+## 8. まとめ
 
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
@@ -668,9 +676,3 @@ tags: ["ニュース解説", "高配当株", "日本株"]
 - [政府が1日で6兆円超の円買い介入。効くの? そもそも円はいくらが適正なの? を調べてみた](/blog/yen-buying-intervention)
 - [高配当株の選び方とオカムラを買い増した理由](/blog/high-dividend-stock-okamura-7994)
 
-:::cta
-title: SBI証券 — 日本の高配当株もここから
-button: SBI証券の公式サイトを見る →
-description: 日本株の売買手数料が無料。100株から買えるので、業種を散らして少しずつ増やしていけます。配当金の受け取り記録も見やすく、わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

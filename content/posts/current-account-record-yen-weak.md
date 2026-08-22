@@ -567,6 +567,15 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: わたしも5万円から始めました。月100円から積み立てられるので、まず口座を作って、少額で動かしてみるのがいちばん早いです。わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 10. まとめ
 
 <div class="summary-box">
@@ -634,9 +643,3 @@ S&P500とオルカンの評価益は、<strong>ドルのまま置いてある</s
 - [米の雇用が減ったのに、失業率は下がった。数字のからくりを調べてみた](/blog/us-jobs-fell-unemployment-down)
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: わたしも5万円から始めました。月100円から積み立てられるので、まず口座を作って、少額で動かしてみるのがいちばん早いです。わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

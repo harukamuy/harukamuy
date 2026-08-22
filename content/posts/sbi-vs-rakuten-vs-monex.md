@@ -296,6 +296,22 @@ SBIはVポイント・Pontaポイント・JALマイル・dポイントなど **�
 
 ---
 
+:::cta
+title: SBI証券 — あずきが8年選び続けているメイン口座
+description: 国内・米国株、投資信託、iDeCo、新NISAまで一気通貫。住信SBIネット銀行の「目的別口座」と組み合わせると生活防衛資金もごまもち貯金も別管理できて便利です。これから口座を開くなら、まず候補に入れてほしい1社。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+:::cta
+title: マネックス証券 — 米国株分析を極めたい人に
+description: 「銘柄スカウター米国株」は業界最強と評される分析ツール。IPO抽選は完全平等抽選で、マネックスカードのクレカ積立も1.1%還元と高水準。米国個別株を本気で扱いたい人や、抽選の公平性を重視する人に向いた1社です。
+button: マネックス証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pe7300orlw
+:::
+
+---
+
 ## まとめ
 
 最後にこの記事のポイントをまとめておく。
@@ -321,22 +337,6 @@ SBIはVポイント・Pontaポイント・JALマイル・dポイントなど **�
 - [NISAの設定](/blog/nisa-investment-settings)
 - [生活防衛資金300万円のリアル](/blog/emergency-fund-300)
 - [BNDを買い増ししている理由](/blog/why-bnd-add-on)
-
----
-
-:::cta
-title: SBI証券 — あずきが8年選び続けているメイン口座
-description: 国内・米国株、投資信託、iDeCo、新NISAまで一気通貫。住信SBIネット銀行の「目的別口座」と組み合わせると生活防衛資金もごまもち貯金も別管理できて便利です。これから口座を開くなら、まず候補に入れてほしい1社。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::
-
-:::cta
-title: マネックス証券 — 米国株分析を極めたい人に
-description: 「銘柄スカウター米国株」は業界最強と評される分析ツール。IPO抽選は完全平等抽選で、マネックスカードのクレカ積立も1.1%還元と高水準。米国個別株を本気で扱いたい人や、抽選の公平性を重視する人に向いた1社です。
-button: マネックス証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pe7300orlw
-:::
 
 ---
 

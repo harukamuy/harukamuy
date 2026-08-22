@@ -344,6 +344,15 @@ TOPIXは<strong>年初来+18.5%</strong>で高値圏<br>
 
 ---
 
+:::cta
+title: SBI証券 — 日本の高配当株も、1株から買えます
+button: SBI証券の公式サイトを見る →
+description: わたしは日本の高配当株を117銘柄持っています。単元未満株なら1株から買えるので、少しずつ業種を散らしていけます。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -414,9 +423,3 @@ TOPIXは<strong>年初来+18.5%</strong>で高値圏<br>
 - [20代の負債が過去最高。3,000万円のローンを組む同世代と、賃貸のわたし](/blog/20s-debt-record-high)
 - [金利は「据え置き」だったのに、ダウが1,153ドル安。なぜ? を調べてみた](/blog/fomc-hold-but-stocks-fell)
 
-:::cta
-title: SBI証券 — 日本の高配当株も、1株から買えます
-button: SBI証券の公式サイトを見る →
-description: わたしは日本の高配当株を117銘柄持っています。単元未満株なら1株から買えるので、少しずつ業種を散らしていけます。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

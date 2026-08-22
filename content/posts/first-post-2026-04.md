@@ -22,8 +22,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 配当利回り：<strong>4.94%</strong> ／ 年間配当金（税引後）：<strong>約49万円（月換算 約4万円）</strong>
 </div>
 
-
-
 ## 会社を辞めたきっかけ
 
 <div class="conv-wrap">
@@ -78,8 +76,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 </div>
 
 </div>
-
-
 
 ## 不安はなかった? — スキルと実家の保険
 
@@ -147,8 +143,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 
 </div>
 
-
-
 ## サイドFIRE達成時の資産内訳
 
 <div class="conv-wrap">
@@ -208,8 +202,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 </div>
 
 </div>
-
-
 
 ## 投資スタート時の500万円は、どう貯めたか
 
@@ -287,8 +279,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 
 </div>
 
-
-
 ## フルFIREじゃなくて、サイドFIREな理由
 
 <div class="conv-wrap">
@@ -339,8 +329,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 </div>
 
 </div>
-
-
 
 ## 東京で月15万円の暮らし
 
@@ -420,6 +408,17 @@ tags: ["サイドFIRE", "家計・資産管理"]
 
 </div>
 
+### 📚 サイドFIREを目指すあなたへ、最初の1冊
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+amazon: 4023318787
+rakuten: rb:18041936
+description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力を1冊で。サイドFIREの土台作りに最適なロングセラー。
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -448,16 +447,6 @@ tags: ["サイドFIRE", "家計・資産管理"]
 - 毎月の生活費：約15万円
 - 仕事収入：月40〜70万円
 - サイドFIREを意識し始めた時期：2020年頃（コロナをきっかけに）
-
-### 📚 サイドFIREを目指すあなたへ、最初の1冊
-
-:::product
-title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-amazon: 4023318787
-rakuten: rb:18041936
-description: 「貯める・稼ぐ・増やす・守る・使う」のお金の5つの力を1冊で。サイドFIREの土台作りに最適なロングセラー。
-:::
-
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

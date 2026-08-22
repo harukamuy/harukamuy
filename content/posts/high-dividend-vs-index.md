@@ -203,6 +203,24 @@ tags: ["高配当株", "配当投資", "インデックス投資"]
 
 ---
 
+### 📚 投資の大枠を理解するために
+
+:::product
+title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
+amazon: 4023318787
+rakuten: rb:18041936
+description: インデックス・高配当株の違いも含め、お金の5つの力を網羅的に学べる入門書。投資の全体像をつかむのに最適。
+:::
+
+:::cta
+title: SBI証券 — 新NISAも商品ラインナップが圧倒的
+description: つみたて投資枠・成長投資枠ともにオルカン／S&P500／日本高配当株まで一気通貫で買える、わたしのメイン口座。住信SBIネット銀行と組み合わせると資金移動もスムーズです。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -214,24 +232,6 @@ tags: ["高配当株", "配当投資", "インデックス投資"]
 <li>インデックスは未来のための資産形成、高配当株は今を充実させるお金。目的を分けることで両方無理なく続けられる</li>
 </ul>
 </div>
-
-### 📚 投資の大枠を理解するために
-
-:::product
-title: 本当の自由を手に入れる お金の大学（両@リベ大学長）
-amazon: 4023318787
-rakuten: rb:18041936
-description: インデックス・高配当株の違いも含め、お金の5つの力を網羅的に学べる入門書。投資の全体像をつかむのに最適。
-:::
-
-
-:::cta
-title: SBI証券 — 新NISAも商品ラインナップが圧倒的
-description: つみたて投資枠・成長投資枠ともにオルカン／S&P500／日本高配当株まで一気通貫で買える、わたしのメイン口座。住信SBIネット銀行と組み合わせると資金移動もスムーズです。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

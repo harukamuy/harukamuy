@@ -225,6 +225,15 @@ Xで話題になっている銘柄や、決算発表のニュースも気にし�
 
 ---
 
+:::cta
+title: SBI証券 — 日本の高配当株を1株から買える
+description: S株(単元未満株)で東証ほぼ全銘柄を1株から購入可能。買付手数料も無料で、高配当株をコツコツ集めたい人に最適。NISA成長投資枠との相性も◎、わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -236,15 +245,6 @@ Xで話題になっている銘柄や、決算発表のニュースも気にし�
 <li>納得して買う・資金を小分けにする・倍になったら別の割安株を探す。これがわたし流</li>
 </ul>
 </div>
-
-
-:::cta
-title: SBI証券 — 日本の高配当株を1株から買える
-description: S株(単元未満株)で東証ほぼ全銘柄を1株から購入可能。買付手数料も無料で、高配当株をコツコツ集めたい人に最適。NISA成長投資枠との相性も◎、わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

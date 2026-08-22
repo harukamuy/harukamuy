@@ -463,6 +463,22 @@ NISA口座は **税務署の審査(2〜3週間)** がかかるので、即日開
 
 ---
 
+:::cta
+title: SBI証券 — 新NISAの第一歩はここから
+description: つみたて投資枠・成長投資枠ともにオルカン/S&P500/日本高配当株まで一気通貫で買える、わたしのメイン口座。住信SBIネット銀行との連携でお金まわりがシンプルになります。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+:::cta
+title: マネックス証券 — クレカ積立還元1.1%は破格
+description: マネックスカードでつみたて投資をすると、業界最高水準の1.1%還元。新NISA枠でコツコツ積立しながら、ポイントもしっかり貯まります。米国株の分析ツール「銘柄スカウター」も銘柄選びの心強い味方です。
+button: マネックス証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pe7300orlw
+:::
+
+---
+
 ## まとめ
 
 - 新NISA証券会社は **SBI・楽天・マネックスの3択**(銀行・店頭での開設は避ける)
@@ -486,20 +502,6 @@ NISA口座は **税務署の審査(2〜3週間)** がかかるので、即日開
 - [わたしのNISA積立設定](/blog/nisa-investment-settings)
 - [SBI証券・楽天証券・マネックス証券・詳細比較](/blog/sbi-vs-rakuten-vs-monex)
 - [住信SBIネット銀行を8年使ってわかったこと](/blog/sbi-neobank-8years-real)
-
-:::cta
-title: SBI証券 — 新NISAの第一歩はここから
-description: つみたて投資枠・成長投資枠ともにオルカン/S&P500/日本高配当株まで一気通貫で買える、わたしのメイン口座。住信SBIネット銀行との連携でお金まわりがシンプルになります。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
-:::cta
-title: マネックス証券 — クレカ積立還元1.1%は破格
-description: マネックスカードでつみたて投資をすると、業界最高水準の1.1%還元。新NISA枠でコツコツ積立しながら、ポイントもしっかり貯まります。米国株の分析ツール「銘柄スカウター」も銘柄選びの心強い味方です。
-button: マネックス証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pe7300orlw
-:::
 
 ---
 

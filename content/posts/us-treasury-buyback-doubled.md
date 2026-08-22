@@ -303,6 +303,15 @@ tags: ["ニュース解説", "債券", "市場の話"]
 
 ---
 
+:::cta
+title: SBI証券 — 米国ETFも日本の高配当株も、これ1つで
+button: SBI証券の公式サイトを見る →
+description: わたしはBNDもオルカンも日本の高配当株も、同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -368,9 +377,3 @@ tags: ["ニュース解説", "債券", "市場の話"]
 - [金利は「据え置き」だったのに、ダウが1,153ドル安。なぜ? を調べてみた](/blog/fomc-hold-but-stocks-fell)
 - [アメリカの物価が下がると、なぜわたしのオルカンとBNDが上がるの? 仕組みを調べてみた](/blog/us-cpi-orukan-bnd)
 
-:::cta
-title: SBI証券 — 米国ETFも日本の高配当株も、これ1つで
-button: SBI証券の公式サイトを見る →
-description: わたしはBNDもオルカンも日本の高配当株も、同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

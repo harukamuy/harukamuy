@@ -269,6 +269,15 @@ tags: ["フリーランス"]
 
 ---
 
+:::cta
+title: freee 会計 — 収支管理・請求書・確定申告まで一気通貫
+description: ネット銀行と連携して請求書の照合・外注費の管理が自動で進むので、本業に集中できます。家事按分や経費の積み上げもアプリ上で完結。フリーランスのお金管理を一段ラクにしてくれる定番ツールです。
+button: freeeを無料で試してみる →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -280,16 +289,6 @@ tags: ["フリーランス"]
 <li>フリーランスは年金・保険・税金・健康診断すべて自己管理。消費税は自分のお金ではないので別で管理している</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: freee 会計 — 収支管理・請求書・確定申告まで一気通貫
-description: ネット銀行と連携して請求書の照合・外注費の管理が自動で進むので、本業に集中できます。家事按分や経費の積み上げもアプリ上で完結。フリーランスのお金管理を一段ラクにしてくれる定番ツールです。
-button: freeeを無料で試してみる →
-url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
-:::
-
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
 <strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>

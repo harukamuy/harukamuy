@@ -408,19 +408,6 @@ S&P500は2020年2月の高値から3月23日の底値まで、わずか約1ヶ�
 
 ---
 
-<div class="summary-box">
-<div class="summary-title">🐾 この記事のまとめ</div>
-<ul class="summary-list">
-<li>友人の何気ない一言がきっかけで、2018年26歳から投資をスタート</li>
-<li>FOLIOのテーマ型投資で5万円→10万円の成功体験が、長く続けるモチベーションになった</li>
-<li>ロボ投資（Theo）は遠回りだったが、運用コスト1%の重さを体で学べた</li>
-<li>2019年にeMAXIS Slim S&P500へ移行。コロナショックも「売らずに待つ」で乗り越えた</li>
-<li>今思えば最初からS&P500一本でよかった。でも小さく始めた経験があったから続けられた</li>
-</ul>
-</div>
-
----
-
 ### 📚 投資を始める前に読みたかった1冊
 
 :::product
@@ -437,6 +424,18 @@ button: SBI証券の公式サイトを見る →
 url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 :::
 
+---
+
+<div class="summary-box">
+<div class="summary-title">🐾 この記事のまとめ</div>
+<ul class="summary-list">
+<li>友人の何気ない一言がきっかけで、2018年26歳から投資をスタート</li>
+<li>FOLIOのテーマ型投資で5万円→10万円の成功体験が、長く続けるモチベーションになった</li>
+<li>ロボ投資（Theo）は遠回りだったが、運用コスト1%の重さを体で学べた</li>
+<li>2019年にeMAXIS Slim S&P500へ移行。コロナショックも「売らずに待つ」で乗り越えた</li>
+<li>今思えば最初からS&P500一本でよかった。でも小さく始めた経験があったから続けられた</li>
+</ul>
+</div>
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

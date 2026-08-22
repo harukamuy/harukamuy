@@ -395,6 +395,15 @@ tags: ["ニュース解説", "サイドFIRE", "市場の話"]
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 9. まとめ
 
 <div class="summary-box">
@@ -462,9 +471,3 @@ tags: ["ニュース解説", "サイドFIRE", "市場の話"]
 - [フリーランスの老後試算。年金月9万円のリアルと、配当金で備える計画](/blog/freelance-pension-future)
 - [東京・月15万円の生活費内訳。削るのではなく、使い方を決める](/blog/monthly-living-expenses)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: わたしは相場を当てにいかないぶん、積み立てる場所だけ決めています。メイン口座はSBI証券で、8年以上使っています。月100円から積み立てられます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

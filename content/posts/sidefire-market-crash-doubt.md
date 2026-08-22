@@ -217,6 +217,15 @@ tags: ["サイドFIRE", "FIREの疑問", "市場の話"]
 
 ---
 
+:::cta
+title: SBI証券 — 暴落を乗り越える土台づくりを
+description: わたしが暴落中も詰まなかったのは、資産を取り崩さない設計と、コツコツ積み立ててきた土台があったからです。SBI証券ならNISA口座でのインデックス積立から高配当株まで一気通貫。暴落が来る前に、備えを整えておきませんか。わたしが8年使っているメイン口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 <div class="summary-box">
@@ -231,13 +240,6 @@ tags: ["サイドFIRE", "FIREの疑問", "市場の話"]
 <li>詰むかどうかを決めるのは、暴落の大きさではなく、こちらの設計しだい</li>
 </ul>
 </div>
-
-:::cta
-title: SBI証券 — 暴落を乗り越える土台づくりを
-description: わたしが暴落中も詰まなかったのは、資産を取り崩さない設計と、コツコツ積み立ててきた土台があったからです。SBI証券ならNISA口座でのインデックス積立から高配当株まで一気通貫。暴落が来る前に、備えを整えておきませんか。わたしが8年使っているメイン口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

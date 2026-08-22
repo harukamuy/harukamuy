@@ -261,6 +261,15 @@ tags: ["フリーランス"]
 
 ---
 
+:::cta
+title: freee 会計 — 青色申告65万円控除をラクに取る
+description: 国保を抑える土台は「青色申告＋家事按分＋経費の積み上げ」で課税所得を適正に下げること。freeeなら複式簿記もe-Tax提出も画面に沿って進められるので、65万円控除のハードルがぐっと下がります。
+button: freeeを無料で試してみる →
+url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
+:::
+
+---
+
 ## まとめ：自分のフェーズで「ちょうどいい節税」を選ぶ
 
 国保を安くする方法は、世の中にはたくさんある。でも、**自分の所得・家族構成・手間の許容度によって、最適解は変わる**。
@@ -318,15 +327,6 @@ tags: ["フリーランス"]
 <li>まずは自分でやれることから。フリーランスの先輩・AI・コミュニティに相談しながら、青色申告と経費計上を着実にやるのが近道</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: freee 会計 — 青色申告65万円控除をラクに取る
-description: 国保を抑える土台は「青色申告＋家事按分＋経費の積み上げ」で課税所得を適正に下げること。freeeなら複式簿記もe-Tax提出も画面に沿って進められるので、65万円控除のハードルがぐっと下がります。
-button: freeeを無料で試してみる →
-url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
-:::
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
 <strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>

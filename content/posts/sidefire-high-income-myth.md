@@ -180,6 +180,15 @@ tags: ["サイドFIRE", "FIREの疑問"]
 
 ---
 
+:::cta
+title: SBI証券 — 月々の積立から、サイドFIREの土台づくりを
+description: わたしの資産の土台は、SBI証券で8年続けてきた機械的な積立です。NISA口座でオルカン・S&P500を自動積立、成長投資枠で高配当株。高収入じゃなくても、低コストの積立を長く続けることが複利の入口になります。貯金500万円から始めたわたしのメイン口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 <div class="summary-box">
@@ -196,13 +205,6 @@ tags: ["サイドFIRE", "FIREの疑問"]
 <li>高収入は「速度」。でも速度がなくても、コースの設計と時間でゴールには届く</li>
 </ul>
 </div>
-
-:::cta
-title: SBI証券 — 月々の積立から、サイドFIREの土台づくりを
-description: わたしの資産の土台は、SBI証券で8年続けてきた機械的な積立です。NISA口座でオルカン・S&P500を自動積立、成長投資枠で高配当株。高収入じゃなくても、低コストの積立を長く続けることが複利の入口になります。貯金500万円から始めたわたしのメイン口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 20px;margin:24px 0;">
   <div style="font-size:13px;color:#3a5030;">

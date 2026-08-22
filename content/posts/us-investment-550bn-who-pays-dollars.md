@@ -619,6 +619,15 @@ JBICが調達のために、円を売るかもしれない
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+button: SBI証券の公式サイトを見る →
+description: わたしも5万円から始めました。月100円から積み立てられるので、まず口座を作って、少額で動かしてみるのがいちばん早いです。わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 10. まとめ
 
 <div class="summary-box">
@@ -684,9 +693,3 @@ JBICが調達のために、円を売るかもしれない
 - [どの通貨で持つのがいいのか。円・ドル・その他で考えた結論](/blog/which-currency-to-hold)
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-button: SBI証券の公式サイトを見る →
-description: わたしも5万円から始めました。月100円から積み立てられるので、まず口座を作って、少額で動かしてみるのがいちばん早いです。わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

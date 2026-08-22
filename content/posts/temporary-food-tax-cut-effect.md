@@ -453,6 +453,15 @@ FIREやサイドFIREの計算に、この減税を入れてはいけないのも
 
 ---
 
+:::cta
+title: SBI証券 — 浮いた固定費を、NISAにまわす
+description: 月2,000円からでも積立は始められます。オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 9. まとめ
 
 - 食料品の消費税を**2027年4月から1%へ**。残り1%分は給付で「実質ゼロ」に。ただし**2年間の限定**
@@ -518,9 +527,3 @@ FIREやサイドFIREの計算に、この減税を入れてはいけないのも
 - [「フリーランスは収入が不安定だからやめとけ」は本当か。収入ゼロを経験した3年目の答え合わせ](/blog/freelance-unstable-income-real)
 - [暴落・含み損とのつきあい方。わたしがコロナショックで学んだこと](/blog/market-crash-mindset)
 
-:::cta
-title: SBI証券 — 浮いた固定費を、NISAにまわす
-description: 月2,000円からでも積立は始められます。オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

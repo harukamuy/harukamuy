@@ -411,6 +411,15 @@ tags: ["ニュース解説", "NISA", "家計・資産管理"]
 
 ---
 
+:::cta
+title: SBI証券 — まずは月1,000円から
+description: 少額からの積立でも、口座は同じ。オルカン・S&P500の積立から日本の高配当株まで、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 8. まとめ
 
 - 20代の**80.8%がNISA口座を持っていない**。記事のとおりだった
@@ -486,9 +495,3 @@ tags: ["ニュース解説", "NISA", "家計・資産管理"]
 - [東京・月15万円の生活費内訳。削るのではなく、使い方を決める](/blog/monthly-living-expenses)
 - [暴落・含み損とのつきあい方。わたしがコロナショックで学んだこと](/blog/market-crash-mindset)
 
-:::cta
-title: SBI証券 — まずは月1,000円から
-description: 少額からの積立でも、口座は同じ。オルカン・S&P500の積立から日本の高配当株まで、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

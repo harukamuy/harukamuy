@@ -10,7 +10,6 @@ series: "cyclical-vs-defensive"
 seriesOrder: 1
 ---
 
-
 <div class="conv-wrap">
 
 <div class="turn dog">
@@ -279,7 +278,6 @@ ETFの分配金では一社ずつの増減が分からないので、<strong>景
 
 とくに最初の2つが大事だと思っている。<strong>この記事が言えるのは「過去はこうだった」までで、しかもその「過去」は、どこから測るかで姿を変える</strong>。
 
-
 <div class="conv-wrap">
 
 <div class="turn dog">
@@ -307,6 +305,15 @@ ETFの分配金では一社ずつの増減が分からないので、<strong>景
 </div>
 
 </div>
+
+---
+
+:::cta
+title: SBI証券 — 景気敏感もディフェンシブも、1株から足せる
+description: わたしの日本の高配当株は、SBI証券の単元未満株で少しずつ買い足してきました。業種の偏りに気づいたときも、1株単位で調整できるのがありがたい。メインの口座として8年使っています。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
 ---
 

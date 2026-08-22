@@ -316,6 +316,15 @@ tags: ["証券・銀行"]
 
 ---
 
+:::cta
+title: SBI証券 — 住信SBIネット銀行との連携が圧倒的
+description: ハイブリッド預金・目的別口座・ATM/振込無料枠など、SBI証券と組み合わせると資金移動がシームレス。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 - 住信SBIネット銀行は **2018年から8年使って1行集約**。給与・生活費・貯金・投資資金まで全部ここで完結
@@ -337,9 +346,3 @@ tags: ["証券・銀行"]
 - [生活防衛資金は300万円](/blog/emergency-fund-300)
 - [ことら送金って増えてきたよね、で調べてみたら『銀行 vs PayPay』の壮絶な戦いが見えてきた話](/blog/kotora-soukin-future-payment)
 
-:::cta
-title: SBI証券 — 住信SBIネット銀行との連携が圧倒的
-description: ハイブリッド預金・目的別口座・ATM/振込無料枠など、SBI証券と組み合わせると資金移動がシームレス。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::

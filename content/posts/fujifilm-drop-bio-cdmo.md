@@ -532,8 +532,16 @@ tags: ["ニュース解説", "日本株", "市場の話"]
 
 ---
 
-## 7. まとめ
+:::cta
+title: SBI証券 — 日本の高配当株もここから
+button: SBI証券の公式サイトを見る →
+description: 日本株の売買手数料が無料。単元未満株なら1株から買えるので、応援したい会社を小さく持つこともできます。わたしのメイン口座として8年以上愛用中。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
+---
+
+## 7. まとめ
 
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
@@ -603,9 +611,3 @@ tags: ["ニュース解説", "日本株", "市場の話"]
 - [トヨタが1兆円の自社株買い。株主のわたしに、何が届くのか調べてみた](/blog/toyota-buyback-1trillion-cancellation)
 - [資産5,806万円のポートフォリオ。構成比・高配当株16銘柄・月別配当を公開します](/blog/portfolio-full-disclosure-5806)
 
-:::cta
-title: SBI証券 — 日本の高配当株もここから
-button: SBI証券の公式サイトを見る →
-description: 日本株の売買手数料が無料。単元未満株なら1株から買えるので、応援したい会社を小さく持つこともできます。わたしのメイン口座として8年以上愛用中。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

@@ -263,6 +263,15 @@ tags: ["新NISA", "NISA", "家計・資産管理"]
 
 ---
 
+:::cta
+title: SBI証券 — NISAミリオネアを目指す土台に
+description: つみたて投資枠でオルカン・S&P500を機械的に積立、成長投資枠で日本高配当株。8年積み上げてサイドFIREを目指すならSBI証券一択。住信SBIネット銀行との連携でお金まわりがシンプルになります。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 最後にこの記事のポイントをまとめておく。
@@ -290,13 +299,6 @@ NISAミリオネアの時代は、もうすぐそこに来ている。**「目�
 - [新NISA 1,800万円を10年で埋める](/blog/new-nisa-1800-strategy)
 - [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [サイドFIRE達成のごあいさつ](/blog/first-post-2026-04)
-
-:::cta
-title: SBI証券 — NISAミリオネアを目指す土台に
-description: つみたて投資枠でオルカン・S&P500を機械的に積立、成長投資枠で日本高配当株。8年積み上げてサイドFIREを目指すならSBI証券一択。住信SBIネット銀行との連携でお金まわりがシンプルになります。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ---
 

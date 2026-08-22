@@ -289,6 +289,15 @@ tags: ["ふるさと納税"]
 
 ---
 
+:::cta
+title: ふるなび — まずは控除上限額をチェック
+description: ふるさと納税の控除上限額が、かんたんなシミュレーターですぐ分かります。寄附でふるなびコインも貯まり、食品から家電まで返礼品のラインナップも豊富。わたしも3年以上ふるなびを使っています。
+button: ふるなびで上限額を調べる →
+url: https://h.accesstrade.net/sp/cc?rk=0100ob7n00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -300,15 +309,6 @@ tags: ["ふるさと納税"]
 <li>「めちゃ得した」感は薄いけれど、どうせ払う税金が実質2,000円で欲しいものに変わる制度。やらない理由はない</li>
 </ul>
 </div>
-
----
-
-:::cta
-title: ふるなび — まずは控除上限額をチェック
-description: ふるさと納税の控除上限額が、かんたんなシミュレーターですぐ分かります。寄附でふるなびコインも貯まり、食品から家電まで返礼品のラインナップも豊富。わたしも3年以上ふるなびを使っています。
-button: ふるなびで上限額を調べる →
-url: https://h.accesstrade.net/sp/cc?rk=0100ob7n00orlw
-:::
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
 <strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>

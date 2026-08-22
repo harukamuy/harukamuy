@@ -197,6 +197,15 @@ AI半導体の主役、HBMシェア6割、米国史上最大の外国企業IPO�
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立も、これ1つで
+description: オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 - SKハイニックスが米ナスダックに上場。**1株149ドル・1億7790万ADR・調達額およそ4兆円規模**で、アリババを抜き **米国史上最大の外国企業IPO** の見通し
@@ -249,9 +258,3 @@ AI半導体の主役、HBMシェア6割、米国史上最大の外国企業IPO�
 - [円だけで資産を持つリスクを整理してみた](/blog/yen-only-asset-risk)
 - [つみたて投資枠に「債券」がやってくる。2026年のNISA改正を調べてみた](/blog/nisa-2026-tsumitate-bond)
 
-:::cta
-title: SBI証券 — オルカンの積立も、これ1つで
-description: オルカン・S&P500の積立も、日本の高配当株も、SBI証券ひとつで管理可能。NISAと特定口座の使い分けもシンプル。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

@@ -236,6 +236,15 @@ iDeCoは60歳まで引き出せない。だからこそ、短期の値動きを�
 
 ---
 
+:::cta
+title: SBI証券 — iDeCoの商品ラインナップが豊富
+description: eMAXIS Slimシリーズなど低コストインデックス投信を含む豊富な商品ラインナップ。運営管理手数料も無料で、iDeCoの長期運用に向いています。わたしも企業型DC→iDeCo移管で利用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
@@ -246,15 +255,6 @@ iDeCoは60歳まで引き出せない。だからこそ、短期の値動きを�
 <li>iDeCoは60歳まで引き出せないからこそ、S&P500やオルカンで放置が合理的。フリーランスになる人は必ずやってほしい</li>
 </ul>
 </div>
-
-
-:::cta
-title: SBI証券 — iDeCoの商品ラインナップが豊富
-description: eMAXIS Slimシリーズなど低コストインデックス投信を含む豊富な商品ラインナップ。運営管理手数料も無料で、iDeCoの長期運用に向いています。わたしも企業型DC→iDeCo移管で利用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
-
 
 ## 関連記事
 

@@ -287,6 +287,15 @@ HDVは<strong>2026年6月に分配の回数を四半期から毎月へ変更</st
 
 ---
 
+:::cta
+title: SBI証券 — 米国ETFも日本の高配当株も、これ1つで
+description: HDV・VYMなどの米国ETFの特定口座での取引も、NISA口座での日本高配当株やインデックス積立も、SBI証券ひとつで完結します。口座の使い分けがシンプルで、配当の管理もしやすいのが気に入っているところ。わたしが8年使っているメイン口座です。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
+:::
+
+---
+
 ## まとめ
 
 <div class="summary-box">
@@ -301,13 +310,6 @@ HDVは<strong>2026年6月に分配の回数を四半期から毎月へ変更</st
 <li>位置づけは「ずっと候補の一軍。でも出番は今じゃない」。米国株が割安・円高・NISA枠を使い切ったときに、検討したい1本</li>
 </ul>
 </div>
-
-:::cta
-title: SBI証券 — 米国ETFも日本の高配当株も、これ1つで
-description: HDV・VYMなどの米国ETFの特定口座での取引も、NISA口座での日本高配当株やインデックス積立も、SBI証券ひとつで完結します。口座の使い分けがシンプルで、配当の管理もしやすいのが気に入っているところ。わたしが8年使っているメイン口座です。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
-:::
 
 ## 関連記事
 

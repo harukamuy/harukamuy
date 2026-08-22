@@ -459,6 +459,15 @@ TOPIX　<strong>+137.4%</strong><br>
 
 ---
 
+:::cta
+title: SBI証券 — 日本の高配当株も、1株から買えます
+button: SBI証券の公式サイトを見る →
+description: わたしは日本の高配当株を117銘柄持っています。単元未満株なら1株から買えるので、少しずつ業種を散らしていけます。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 8. まとめ
 
 <div class="summary-box">
@@ -501,9 +510,3 @@ TOPIX　<strong>+137.4%</strong><br>
 - [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを計算したら、答えは「数」ではなかった](/blog/portfolio-risk-117-stocks)
 - [東芝は上場を守るために株の3分の1を海外ファンドに渡した。6年後、その株主を追い出すために上場をやめた](/blog/toshiba-listing-defense-delisting)
 
-:::cta
-title: SBI証券 — 日本の高配当株も、1株から買えます
-button: SBI証券の公式サイトを見る →
-description: わたしは日本の高配当株を117銘柄持っています。単元未満株なら1株から買えるので、少しずつ業種を散らしていけます。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

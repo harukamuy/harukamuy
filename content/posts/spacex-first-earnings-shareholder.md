@@ -520,8 +520,16 @@ S&P500に入るには、**発行済み株式の50%以上が市場で売買でき
 
 ---
 
-## 8. まとめ
+:::cta
+title: SBI証券 — オルカンの積立はNISA口座で
+description: 銘柄を選ばなくても、育った会社は勝手に入ってきます。オルカンの積立から日本の高配当株まで、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
+button: SBI証券の公式サイトを見る →
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
 
+---
+
+## 8. まとめ
 
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
@@ -593,9 +601,3 @@ S&P500に入るには、**発行済み株式の50%以上が市場で売買でき
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 - [警戒していたロックアップ解除。その月、株は3割上がっている](/blog/spacex-lockup-expired-stock-rose)
 
-:::cta
-title: SBI証券 — オルカンの積立はNISA口座で
-description: 銘柄を選ばなくても、育った会社は勝手に入ってきます。オルカンの積立から日本の高配当株まで、SBI証券ひとつで管理可能。わたしのメイン口座として8年以上愛用中。
-button: SBI証券の公式サイトを見る →
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::
