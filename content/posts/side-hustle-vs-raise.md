@@ -229,7 +229,7 @@ url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
 
 もちろん、収入を上げる手段としては、転職も有力な選択肢になると思う。そのうえで、わたしがいいなと思うのは、自分の趣味や、続けられそうなことを副業にして、資産形成を加速させる道だ。好きで続けられるものなら無理なく長く回せるし、それ自体が毎日を少し豊かにしてくれる。悪くない選択だと思う。
 
-そして、ここで効率よく残したお金は、そのままサイドFIREの燃料になる。手元に残ったぶんを、NISAの非課税枠（生涯1,800万円）に積み立てて、少しずつ埋めていく。
+そして、ここで効率よく残したお金は、そのまま[サイドFIRE](/blog/what-is-sidefire)の燃料になる。手元に残ったぶんを、NISAの非課税枠（生涯1,800万円）に積み立てて、少しずつ埋めていく。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📈 年50万円を20年・年5%で積み立てたら（概算）</div>
