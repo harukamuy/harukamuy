@@ -279,3 +279,4 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 - [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
 - [新NISA完全ガイド。1,800万円を10年で埋める道筋](/blog/new-nisa-complete-guide)
 - [スペースX上場。オルカン・QQQ・S&P500にはいつ入る？](/blog/spacex-ipo-index-inclusion)
+- [250億円が消えた投資詐欺。だまされないために、わたしが決めている3つのこと](/blog/investment-scam-avoid-3-rules)

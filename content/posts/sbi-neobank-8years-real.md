@@ -335,6 +335,7 @@ tags: ["証券・銀行"]
 - [SBI証券を選んだ理由](/blog/why-sbi-securities)
 - [JALカードを使い続けるフリーランスの話](/blog/jal-card-freelance-real)
 - [生活防衛資金は300万円](/blog/emergency-fund-300)
+- [ことら送金って増えてきたよね、で調べてみたら『銀行 vs PayPay』の壮絶な戦いが見えてきた話](/blog/kotora-soukin-future-payment)
 
 :::cta
 title: SBI証券 — 住信SBIネット銀行との連携が圧倒的

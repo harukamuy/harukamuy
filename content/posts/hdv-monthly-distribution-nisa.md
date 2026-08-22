@@ -374,4 +374,5 @@ description: 何をどの口座で、どれだけ積み立てるか。その型�
 - [円だけで資産を持つリスクを整理してみた](/blog/yen-only-asset-risk)
 - [高配当株ポートフォリオ](/blog/high-dividend-portfolio)
 - [NISA設定](/blog/nisa-investment-settings)
+- [好きなのに買えていないHDV。15年ぶん答え合わせをしたら、勝ち負けの話ではなかった](/blog/hdv-vs-japan-dividend-15years)
 

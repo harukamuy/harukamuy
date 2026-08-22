@@ -183,3 +183,4 @@ tags: ["映像×AI", "フリーランス", "サイドFIRE"]
 - [フリーランス映像プロデューサーのリアル](/blog/video-producer-freelance-real)
 - [サイドFIRE達成から2ヶ月。変わったこと、変わらなかったこと](/blog/sidefire-achieved-2months)
 - [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)
+- [AIに脅かされる労働者の86%が女性。でも原典を読むと、分かれ目は職種ではなかった](/blog/ai-job-risk-86-percent-women)

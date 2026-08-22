@@ -246,3 +246,4 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 - [フリーランスが3ヶ月働けなくなったら。保険より貯金で備える理由](/blog/freelance-cannot-work-savings)
 - [東京・月15万円の生活費内訳](/blog/monthly-living-expenses)
 - [フリーランスのお金の管理。口座とクレカの分け方](/blog/freelance-money-management)
+- [生命保険の解約が過去最高ペースというニュース。理由を調べてみた](/blog/life-insurance-surrender-record)

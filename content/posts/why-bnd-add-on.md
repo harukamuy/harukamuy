@@ -307,6 +307,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [配当の月別分散](/blog/dividend-monthly-diversification)
 - [NISA設定](/blog/nisa-investment-settings)
 - [SBI証券を選んだ理由](/blog/why-sbi-securities)
+- [88兆円の年金が「資産配分」をやめた。株と債券の関係が変わった、ってどういうこと?](/blog/calpers-asset-allocation-abolished)
 
 ---
 

@@ -379,3 +379,4 @@ seriesOrder: 3
 - [両親が歳をとっていく。でも『親のため』を一番の理由にしたくない【十勝計画②】](/blog/tokachi-plan-02-parents-and-pride)
 - [東京・月15万円の生活費内訳](/blog/monthly-living-expenses)
 - [配当金で生活費をまかなう](/blog/dividend-goal-progress)
+- [十勝で、映像の仕事は続けられるのか。リモート・AI・地元の仕事について考えてみた【十勝計画④】](/blog/tokachi-plan-04-remote-work)

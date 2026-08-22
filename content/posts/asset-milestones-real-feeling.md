@@ -373,6 +373,7 @@ tags: ["サイドFIRE", "家計・資産管理"]
 - [「4%ルールは日本では通用しない」は本当か。まだ1円も取り崩していないわたしの答え合わせ【サイドFIREの疑問③】](/blog/four-percent-rule-japan-doubt)
 - [「サイドFIREは高収入じゃないと無理」は本当か。貯金500万円の会社員から始めたわたしの答え合わせ【サイドFIREの疑問①】](/blog/sidefire-high-income-myth)
 - [フリーランスのサイドFIRE 完全ロードマップ。貯金500万から8年でたどり着いた全ステップ](/blog/freelance-sidefire-roadmap)
+- [歯1本の値段を調べたら30万円だった。それでも安いと思った理由と、健康という資産の話](/blog/teeth-health-asset)
 
 ---
 

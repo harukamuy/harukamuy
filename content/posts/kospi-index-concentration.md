@@ -236,6 +236,7 @@ KOSPIの記事を読んだときは「2社で半分なんて、極端な国だ�
 - [AI株が上がると、関係ない会社が指数から押し出される? TOPIXの『1000社割れ』を調べてみた](/blog/topix-1000-exclusion)
 - [中国の格安AI登場で、なぜ米国株が下がるの? 気になったので調べてみた](/blog/kimi-k3-ai-shock)
 - [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
+- [世界銀行が中国への融資をやめるらしい。日本も卒業した『70年続く仕組み』を調べてみた](/blog/worldbank-china-graduation)
 
 :::cta
 title: SBI証券 — インデックスも高配当株も、これ1つで

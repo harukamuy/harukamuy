@@ -591,6 +591,7 @@ S&P500に入るには、**発行済み株式の50%以上が市場で売買でき
 - [スペースX、S&P500は門前払い・でもQQQには入れる?指数会社で割れた判断を調べてみた](/blog/spacex-sp500-rejected-index-rules)
 - [キオクシアが決算で営業利益1兆3,000億円。買いたくなった自分を、止めた話](/blog/kioxia-earnings-not-buying)
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
+- [警戒していたロックアップ解除。その月、株は3割上がっている](/blog/spacex-lockup-expired-stock-rose)
 
 :::cta
 title: SBI証券 — オルカンの積立はNISA口座で

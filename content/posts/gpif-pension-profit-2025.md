@@ -293,6 +293,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 - [暴落・含み損とのつきあい方](/blog/market-crash-mindset)
 - [資産1,300万円が、5年で4,886万円に。実数で振り返る](/blog/asset-growth-5years-real)
 - [新NISA完全ガイド。1,800万円を10年で埋める道筋](/blog/new-nisa-complete-guide)
+- [年金のESG投資が減っている。ESGの点数は何を測っているのか、調べてみた](/blog/gpif-esg-index-reduction)
 
 ---
 

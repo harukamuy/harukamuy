@@ -458,6 +458,7 @@ tags: ["ニュース解説", "為替", "市場の話"]
 - [「ドルも危ないのでは?」への答え。ユーロ・スイスフラン、持つならどの通貨がいい?](/blog/which-currency-to-hold)
 - [金利は「据え置き」だったのに、ダウが1,153ドル安。なぜ? を調べてみた](/blog/fomc-hold-but-stocks-fell)
 - [なぜ、トルコの金利は40%もあるの? 高金利通貨のワナを調べてみた](/blog/high-interest-currency-trap)
+- [金利を上げると、給料は上がるの? アベノミクスの師が「利上げしろ」と言い出した理由を調べてみた](/blog/rate-hike-and-real-wages)
 
 :::cta
 title: SBI証券 — 通貨を選ばずに、世界にまるごと分散する

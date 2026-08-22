@@ -272,6 +272,7 @@ TOPIXはいま、大がかりな見直しの最中だ。「日本株ほぼ全部
 - [財務相の一言で、円も株も金利も動いた。GPIFの『国内投資後押し』を調べてみた](/blog/gpif-katayama-domestic-shift)
 - [高配当株の出口戦略。わたしは「売らない」を基本にしている](/blog/high-dividend-exit-strategy)
 - [オルカン vs S&P500。両方持っているわたしの結論](/blog/orukan-vs-sp500-real)
+- [なぜ、会社は突然「4,000億円の損失」を出すの? 話題の「のれん」を調べてみた](/blog/noren-amortization-maintained)
 
 :::cta
 title: SBI証券 — インデックスも高配当株も、これ1つで

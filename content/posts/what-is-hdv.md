@@ -315,6 +315,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 - [米国高配当ETFを今は買わない理由。VYM・SPYD・HDVは優良。でも今じゃない](/blog/us-dividend-etf-not-now)
 - [高配当株とインデックス、どちらを選ぶか。「今」と「未来」で目的を分けて両方持つ](/blog/high-dividend-vs-index)
 - [BNDを買い増ししている理由。「守り」というより「気休め」、それでも持ち続けている債券ETF](/blog/why-bnd-add-on)
+- [好きなのに買えていないHDV。15年ぶん答え合わせをしたら、勝ち負けの話ではなかった](/blog/hdv-vs-japan-dividend-15years)
 
 ---
 

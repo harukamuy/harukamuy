@@ -235,3 +235,4 @@ tags: ["サイドFIRE"]
 - [サイドFIRE（サイドファイヤー）とは何か](/blog/what-is-sidefire)
 - [サイドFIREのリアルなデメリット。後悔していないけど、正直に書きます](/blog/sidefire-regrets-and-reality)
 - [フリーランスがサイドFIREを目指すロードマップ](/blog/freelance-sidefire-roadmap)
+- [資産5,000万円で「準富裕層」になった。それでも消えない「もっと」と、貯める・使うのバランスの話](/blog/jun-fuyuso-5000man-life)
