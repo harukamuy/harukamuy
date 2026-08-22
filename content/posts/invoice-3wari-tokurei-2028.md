@@ -278,6 +278,11 @@ tags: ["フリーランス", "会計ツール"]
 
 **2年間の猶予を活かして、2029年以降の簡易課税運用に向けて整えていく** のが、わたしの今の方針だ。
 
+<div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0;">
+<strong style="display:block;margin-bottom:6px;color:#666;">⚠ 免責事項</strong>
+この記事はあずき個人の体験と、執筆時点の制度にもとづく情報のシェアです。税制・社会保険制度は改正されることがあり、また個々の状況によって扱いが異なります。実際の申告・手続きにあたっては、税務署・自治体・税理士など専門家にご確認ください。
+</div>
+
 ## 関連記事
 
 - [インボイス制度・3年目のリアル](/blog/invoice-freelance-3year-real)
