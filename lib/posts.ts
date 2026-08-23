@@ -164,6 +164,7 @@ export const SERIES_NAMES: Record<string, string> = {
   "tokachi-plan": "十勝計画",
   "cyclical-vs-defensive": "景気敏感株とディフェンシブ株",
   "measure-holdings": "持ち株を測る",
+  "measure-etfs": "ETFの中身を測る",
 };
 
 export function getAllSeries(): string[] {
