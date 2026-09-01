@@ -231,33 +231,22 @@ EPは<strong>率×量の面積</strong>なので、率をどれだけ磨いて�
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🗺 上場企業がどこにいるか（2021〜2023年度の平均）</div>
   <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-  <div class="keep-grid" style="min-width:440px;display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12.5px;line-height:1.6;">
-    <div style="background:#e6efe0;padding:9px 8px;font-weight:700;color:#4a6640;"></div>
-    <div style="background:#e6efe0;padding:9px 8px;font-weight:700;color:#4a6640;text-align:right;">日本</div>
-    <div style="background:#e6efe0;padding:9px 8px;font-weight:700;color:#4a6640;text-align:right;">米国</div>
-    <div style="background:#e6efe0;padding:9px 8px;font-weight:700;color:#4a6640;text-align:right;">欧州</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;">PBR1倍未満・ROE8%未満</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;font-weight:700;text-align:right;">35.8%</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;text-align:right;">18.3%</div>
-    <div style="background:#fff6ea;padding:9px 8px;color:#a85f3c;text-align:right;">20.9%</div>
-    <div style="background:#fff;padding:9px 8px;color:#3a5030;">PBR1倍未満・ROE8%以上</div>
-    <div style="background:#fff;padding:9px 8px;color:#3a5030;text-align:right;">13.8%</div>
-    <div style="background:#fff;padding:9px 8px;color:#3a5030;text-align:right;">5.2%</div>
-    <div style="background:#fff;padding:9px 8px;color:#3a5030;text-align:right;">10.6%</div>
-    <div style="background:#fbfdfa;padding:9px 8px;color:#3a5030;">PBR1倍以上・ROE8%未満</div>
-    <div style="background:#fbfdfa;padding:9px 8px;color:#3a5030;text-align:right;">18.8%</div>
-    <div style="background:#fbfdfa;padding:9px 8px;color:#3a5030;text-align:right;">35.4%</div>
-    <div style="background:#fbfdfa;padding:9px 8px;color:#3a5030;text-align:right;">33.0%</div>
-    <div style="background:#e8f0e4;padding:9px 8px;color:#3a5030;font-weight:700;">PBR1倍以上・ROE8%以上</div>
-    <div style="background:#e8f0e4;padding:9px 8px;color:#3a5030;font-weight:700;text-align:right;">31.6%</div>
-    <div style="background:#e8f0e4;padding:9px 8px;color:#3a5030;font-weight:700;text-align:right;">41.0%</div>
-    <div style="background:#e8f0e4;padding:9px 8px;color:#3a5030;font-weight:700;text-align:right;">35.5%</div>
+  <div class="keep-grid" style="min-width:420px;display:grid;grid-template-columns:0.9fr 1.5fr 1.5fr;gap:1px;background:#c8d8c0;border:1px solid #c8d8c0;border-radius:10px;overflow:hidden;font-size:12px;line-height:1.7;">
+    <div style="background:#e6efe0;padding:8px;"></div>
+    <div style="background:#e6efe0;padding:8px;font-weight:700;color:#4a6640;text-align:center;">ROE 8%未満<br><span style="font-weight:400;font-size:10.5px;">（稼ぐ力が低い）</span></div>
+    <div style="background:#e6efe0;padding:8px;font-weight:700;color:#4a6640;text-align:center;">ROE 8%以上<br><span style="font-weight:400;font-size:10.5px;">（稼ぐ力が高い）</span></div>
+    <div style="background:#e6efe0;padding:8px;font-weight:700;color:#4a6640;display:flex;align-items:center;">PBR<br>1倍以上<br><span style="font-weight:400;font-size:10.5px;">（評価が高い）</span></div>
+    <div style="background:#fbfdfa;padding:10px;color:#3a5030;text-align:center;">日本 18.8%<br>米国 35.4%<br>欧州 33.0%</div>
+    <div style="background:#e8f0e4;padding:10px;color:#3a5030;text-align:center;font-weight:700;">日本 31.6%<br>米国 41.0%<br>欧州 35.5%</div>
+    <div style="background:#e6efe0;padding:8px;font-weight:700;color:#4a6640;display:flex;align-items:center;">PBR<br>1倍未満<br><span style="font-weight:400;font-size:10.5px;">（評価が低い）</span></div>
+    <div style="background:#fff6ea;padding:10px;color:#a85f3c;text-align:center;font-weight:700;">日本 35.8%<br>米国 18.3%<br>欧州 20.9%</div>
+    <div style="background:#fff;padding:10px;color:#3a5030;text-align:center;">日本 13.8%<br>米国 5.2%<br>欧州 10.6%</div>
   </div>
   </div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">元の図は、縦にPBR（市場の評価）、横にROE（稼ぐ力）を取った4象限。ここでは4つの部屋を表に並べ直しています</div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">縦がPBR（市場の評価）、横がROE（稼ぐ力）。ガイダンスの4象限の図と同じ並びで、各部屋にその国の上場企業の何%がいるかを示す</div>
 </div>
 
-日本は、両方を下回る部屋（PBR1倍未満・ROE8%未満）に<strong>3社に1社</strong>がいる。米国と欧州は2割前後だ。
+日本は、いちばん左下の部屋（PBR1倍未満・ROE8%未満）に<strong>3社に1社</strong>がいる。米国と欧州は2割前後だ。
 
 ここで面白いのは、<strong>ガイダンスがこの4象限を「結果」だと言い切っている</strong>ところだった。目標にする数字ではなく、過去の経営が出た跡だ、と。だから各社は自分の立ち位置を踏まえて、どういう道筋でEPを増やすかを投資家に説明しなさい、という書き方になっている。
 
