@@ -254,10 +254,10 @@ EPは<strong>率×量の面積</strong>なので、率をどれだけ磨いて�
     <div style="background:#e8f0e4;padding:9px 8px;color:#3a5030;font-weight:700;text-align:right;">35.5%</div>
   </div>
   </div>
-  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">縦がPBR（市場の評価）、横がROE（稼ぐ力）で区切った4つの部屋です</div>
+  <div style="font-size:11px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">元の図は、縦にPBR（市場の評価）、横にROE（稼ぐ力）を取った4象限。ここでは4つの部屋を表に並べ直しています</div>
 </div>
 
-日本は、いちばん左下（PBR1倍未満・ROE8%未満）に<strong>3社に1社</strong>がいる。米国と欧州は2割前後だ。
+日本は、両方を下回る部屋（PBR1倍未満・ROE8%未満）に<strong>3社に1社</strong>がいる。米国と欧州は2割前後だ。
 
 ここで面白いのは、<strong>ガイダンスがこの4象限を「結果」だと言い切っている</strong>ところだった。目標にする数字ではなく、過去の経営が出た跡だ、と。だから各社は自分の立ち位置を踏まえて、どういう道筋でEPを増やすかを投資家に説明しなさい、という書き方になっている。
 
