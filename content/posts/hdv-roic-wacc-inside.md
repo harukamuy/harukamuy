@@ -48,7 +48,7 @@ ETFそのものには当てられない。ETFは会社の詰め合わせで、�
 
 ## 1. この記事の測り方
 
-ETFの中身を測るシリーズは3本の予定で、測り方は毎回同じにする。先に書いておく。
+ETFの中身を測るシリーズは4本の予定で、測り方は毎回同じにする。先に書いておく。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">📐 ETFの中身の測り方（このシリーズ共通）</div>
