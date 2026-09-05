@@ -216,6 +216,15 @@ AI株が売られた理屈は、こう解説されている。部品代が上が
 
 ---
 
+:::cta
+title: SBI証券 — インデックスも高配当株も、これ1つで
+button: SBI証券の公式サイトを見る →
+description: わたしはオルカンの積立も日本の高配当株もBNDも、同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -252,9 +261,3 @@ AI株が売られた理屈は、こう解説されている。部品代が上が
 - [ウォルマートが1日で9%安。でも売られたのは業績ではなく、膨らみすぎた期待だった](/blog/defensive-stocks-walmart-drop)
 - [物価は1.8%しか上がっていないことになっている。原典を開いたら、私立高校の授業料が73%下がっていた](/blog/cpi-july-tuition-minus-73)
 
-:::cta
-title: SBI証券 — インデックスも高配当株も、これ1つで
-button: SBI証券の公式サイトを見る →
-description: わたしはオルカンの積立も日本の高配当株もBNDも、同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

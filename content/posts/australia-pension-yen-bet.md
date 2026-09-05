@@ -167,6 +167,15 @@ ARTのプロたちも、たぶん同じことを知っている。だから「�
 
 ---
 
+:::cta
+title: SBI証券 — オルカンの積立も、BNDも、この口座で
+button: SBI証券の公式サイトを見る →
+description: わたしのオルカンの積立も、S&P500も、BND228口も、ぜんぶSBI証券の口座です。8年以上使っているメイン口座で、為替が円高でも円安でも、積立は同じ日に同じ額で続いていきます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -204,9 +213,3 @@ ARTのプロたちも、たぶん同じことを知っている。だから「�
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 - [ウォルマートが1日で9%安。でも売られたのは業績ではなく、膨らみすぎた期待だった](/blog/defensive-stocks-walmart-drop)
 
-:::cta
-title: SBI証券 — オルカンの積立も、BNDも、この口座で
-button: SBI証券の公式サイトを見る →
-description: わたしのオルカンの積立も、S&P500も、BND228口も、ぜんぶSBI証券の口座です。8年以上使っているメイン口座で、為替が円高でも円安でも、積立は同じ日に同じ額で続いていきます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

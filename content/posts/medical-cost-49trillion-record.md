@@ -128,6 +128,15 @@ tags: ["ニュース解説", "フリーランス", "社会保険"]
 
 ---
 
+:::cta
+title: SBI証券 — わたしのメイン口座
+button: SBI証券の公式サイトを見る →
+description: 保険料が上がっても払い続けられる設計の土台は、収入の柱と資産の置き場所です。わたしはオルカンの積立も高配当株も、8年以上SBI証券の口座でやっています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 <div class="summary-box">
@@ -161,9 +170,3 @@ tags: ["ニュース解説", "フリーランス", "社会保険"]
 - [持ち株の武田薬品に、国内初の承認ニュース。でも株価は0.3%しか動かなかった](/blog/takeda-narcolepsy-approval-dividend)
 - [国民年金の納付率は85.6%で過去最高。でも原典を開いたら、第1号の4割は免除か猶予だった](/blog/pension-payment-rate-record-exemption-40)
 
-:::cta
-title: SBI証券 — わたしのメイン口座
-button: SBI証券の公式サイトを見る →
-description: 保険料が上がっても払い続けられる設計の土台は、収入の柱と資産の置き場所です。わたしはオルカンの積立も高配当株も、8年以上SBI証券の口座でやっています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

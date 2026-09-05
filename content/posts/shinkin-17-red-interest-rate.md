@@ -172,6 +172,15 @@ tags: ["ニュース解説", "市場の話", "債券"]
 
 ---
 
+:::cta
+title: SBI証券 — わたしのBND228口も、この口座で
+button: SBI証券の公式サイトを見る →
+description: わたしのBNDも、オルカンの積立も、高配当株も、ぜんぶSBI証券の口座です。8年以上使っているメイン口座で、債券ETFも1口から買えます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -210,9 +219,3 @@ tags: ["ニュース解説", "市場の話", "債券"]
 - [個人向け国債の固定5年が、初めて2%を超えた。わたしのインフレ前提と、同じ数字になった](/blog/kojin-kokusai-5year-2percent)
 - [アメリカが国債を買い戻すと発表。日経平均は890円戻したけれど、借金は1円も減っていなかった](/blog/us-treasury-buyback-doubled)
 
-:::cta
-title: SBI証券 — わたしのBND228口も、この口座で
-button: SBI証券の公式サイトを見る →
-description: わたしのBNDも、オルカンの積立も、高配当株も、ぜんぶSBI証券の口座です。8年以上使っているメイン口座で、債券ETFも1口から買えます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

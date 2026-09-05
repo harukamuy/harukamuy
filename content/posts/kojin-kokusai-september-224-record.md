@@ -236,6 +236,15 @@ BND（米国の債券ETF）　外貨建てなので、同じ向きに下がる<b
 
 ---
 
+:::cta
+title: SBI証券 — わたしのメイン口座
+button: SBI証券の公式サイトを見る →
+description: 金利が上がっても、円が動いても、わたしのやることは変わりません。オルカンの積立も高配当株もBNDも、8年以上SBI証券の口座です。積立は、同じ日に同じ額で続きます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 <div class="summary-box">
@@ -274,9 +283,3 @@ BND（米国の債券ETF）　外貨建てなので、同じ向きに下がる<b
 - [生活防衛資金は300万円。「健康のための備え」だと思っている](/blog/emergency-fund-300)
 - [資産が初めて6,000万円に乗った。運んでくれたのは、ほとんど相場だった【2026年8月】](/blog/monthly-report-2026-08)
 
-:::cta
-title: SBI証券 — わたしのメイン口座
-button: SBI証券の公式サイトを見る →
-description: 金利が上がっても、円が動いても、わたしのやることは変わりません。オルカンの積立も高配当株もBNDも、8年以上SBI証券の口座です。積立は、同じ日に同じ額で続きます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

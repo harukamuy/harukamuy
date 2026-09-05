@@ -150,6 +150,15 @@ tags: ["ニュース解説", "金利", "税金"]
 
 ---
 
+:::cta
+title: SBI証券 — わたしのメイン口座
+button: SBI証券の公式サイトを見る →
+description: 毎月の家計を黒字にする土台として、わたしはオルカン（全世界株の投信）の積立も高配当株も、8年以上SBI証券の口座でやっています。金利のある世界でも、積立は同じ日に同じ額で続きます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -189,9 +198,3 @@ tags: ["ニュース解説", "金利", "税金"]
 - [全国17の信用金庫が赤字になった。この夏わたしが書いた「金利2%」の、反対側の話だった](/blog/shinkin-17-red-interest-rate)
 - [日本の医療費が49.2兆円で過去最高。病院に行く回数は減っているのに、金額だけが増えていた](/blog/medical-cost-49trillion-record)
 
-:::cta
-title: SBI証券 — わたしのメイン口座
-button: SBI証券の公式サイトを見る →
-description: 毎月の家計を黒字にする土台として、わたしはオルカン（全世界株の投信）の積立も高配当株も、8年以上SBI証券の口座でやっています。金利のある世界でも、積立は同じ日に同じ額で続きます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

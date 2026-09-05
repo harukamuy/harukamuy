@@ -173,6 +173,15 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 
 ---
 
+:::cta
+title: SBI証券 — 単元未満株なら、武田も1株から
+button: SBI証券の公式サイトを見る →
+description: わたしの武田薬品15株も、単元未満株で買ったものです。1株から買えるので、業種を散らしながら自分のペースで積み上げられます。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 <div class="summary-box">
@@ -209,9 +218,3 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 - [ウォルマートが1日で9%安。でも売られたのは業績ではなく、膨らみすぎた期待だった](/blog/defensive-stocks-walmart-drop)
 - [高配当株の選び方。わたしが最初に見る3つの指標と、銘柄の探し方](/blog/high-dividend-stock-selection)
 
-:::cta
-title: SBI証券 — 単元未満株なら、武田も1株から
-button: SBI証券の公式サイトを見る →
-description: わたしの武田薬品15株も、単元未満株で買ったものです。1株から買えるので、業種を散らしながら自分のペースで積み上げられます。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

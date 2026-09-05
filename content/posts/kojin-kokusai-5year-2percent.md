@@ -222,6 +222,15 @@ tags: ["債券", "家計・資産管理", "ニュース解説"]
 
 ---
 
+:::cta
+title: SBI証券 — インデックスも高配当株も、これ1つで
+button: SBI証券の公式サイトを見る →
+description: わたしはオルカンの積立も日本の高配当株もBNDも、同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -258,9 +267,3 @@ tags: ["債券", "家計・資産管理", "ニュース解説"]
 - [国民年金の納付率は85.6%で過去最高。でも原典を開いたら、第1号の4割は免除か猶予だった](/blog/pension-payment-rate-record-exemption-40)
 - [債券は本当に必要?年金・持ち家・働く力という『隠れ債券』で考えてみた](/blog/hidden-bond-and-tokachi)
 
-:::cta
-title: SBI証券 — インデックスも高配当株も、これ1つで
-button: SBI証券の公式サイトを見る →
-description: わたしはオルカンの積立も日本の高配当株もBNDも、同じ口座で持っています。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

@@ -410,6 +410,15 @@ NISA　<strong>成長投資枠だけ</strong>（つみたて投資枠では買�
 
 ---
 
+:::cta
+title: SBI証券 — わたしのメイン口座
+button: SBI証券の公式サイトを見る →
+description: オルカンの積立も、日本の高配当株119銘柄も、BNDも、8年以上SBI証券の口座です。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -448,9 +457,3 @@ NISA　<strong>成長投資枠だけ</strong>（つみたて投資枠では買�
 - [減配の罠。高配当株で失敗しないために意識している5つのこと](/blog/high-dividend-cut-risk)
 - [資産が初めて6,000万円に乗った。運んでくれたのは、ほとんど相場だった【2026年8月】](/blog/monthly-report-2026-08)
 
-:::cta
-title: SBI証券 — わたしのメイン口座
-button: SBI証券の公式サイトを見る →
-description: オルカンの積立も、日本の高配当株119銘柄も、BNDも、8年以上SBI証券の口座です。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

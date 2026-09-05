@@ -338,6 +338,35 @@ function renderCtaCard(fields: Record<string, string>): string {
 </div>`;
 }
 
+// 広告ブロック（:::cta / :::product / :::service）が「まとめ」より後ろ、つまり
+// 記事末尾に置かれていても、描画時にまとめの直前へ移動する。末尾では読者が
+// そこまで到達せず、ほぼクリックされないため。原稿側でもまとめ直前に置くのが
+// ルールだが、新記事で末尾配置が何度も再発したので、ビルド時の保険として入れる。
+const AD_BLOCK_RE =
+  /(?:^---[ \t]*\n\n)?(?:^###[^\n]*\n\n)?^:::(?:cta|product|service)[ \t]*\n[\s\S]*?\n:::[ \t]*(?:\n|$)/gm;
+const SUMMARY_ANCHOR_RE = /^## (?:\d+\. ?)?まとめ.*$|^<div class="summary-box">/m;
+
+function hoistAffiliateBlocks(markdown: string): string {
+  const anchorMatch = SUMMARY_ANCHOR_RE.exec(markdown);
+  if (!anchorMatch) return markdown;
+  const anchor = anchorMatch.index;
+
+  const blocks: { start: number; end: number; text: string }[] = [];
+  AD_BLOCK_RE.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = AD_BLOCK_RE.exec(markdown)) !== null) {
+    if (m.index >= anchor) blocks.push({ start: m.index, end: m.index + m[0].length, text: m[0] });
+  }
+  if (blocks.length === 0) return markdown;
+
+  let out = markdown;
+  for (const b of [...blocks].reverse()) out = out.slice(0, b.start) + out.slice(b.end);
+  const ads = blocks.map((b) => b.text.replace(/^---[ \t]*\n\n/, "").trimEnd()).join("\n\n");
+  const insertAt = SUMMARY_ANCHOR_RE.exec(out)!.index;
+  out = out.slice(0, insertAt) + ads + "\n\n---\n\n" + out.slice(insertAt);
+  return out.replace(/\n{3,}/g, "\n\n").replace(/\n---[ \t]*\n*$/, "\n");
+}
+
 function preprocessAffiliate(markdown: string): string {
   return markdown.replace(
     /^:::(product|service|cta)\s*\n([\s\S]*?)\n:::\s*$/gm,
@@ -419,12 +448,14 @@ function nowrapNumericCells(html: string): string {
 }
 
 export async function renderMarkdown(markdown: string): Promise<string> {
-  const processed = preprocessAffiliate(markdown);
+  // 見出しの並びも移動後の本文に揃える（### 📚 見出しが広告と一緒に動くため）
+  const hoisted = hoistAffiliateBlocks(markdown);
+  const processed = preprocessAffiliate(hoisted);
   const result = await remark()
     .use(remarkGfm)
     .use(remarkHtml, { sanitize: false })
     .process(processed);
-  const headings = extractHeadings(markdown);
+  const headings = extractHeadings(hoisted);
   return annotateConversations(nowrapNumericCells(injectHeadingIds(result.toString(), headings)));
 }
 

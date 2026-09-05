@@ -136,6 +136,15 @@ tags: ["ニュース解説", "市場の話", "金利"]
 
 ---
 
+:::cta
+title: SBI証券 — わたしのメイン口座
+button: SBI証券の公式サイトを見る →
+description: オルカンの積立も、高配当株も、BNDも、ぜんぶSBI証券の口座です。8年以上使っているメイン口座で、利上げの週も、積立は同じ日に同じ額で続いていきます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 5. まとめ
 
 <div class="summary-box">
@@ -171,9 +180,3 @@ tags: ["ニュース解説", "市場の話", "金利"]
 - [全国17の信用金庫が赤字になった。この夏わたしが書いた「金利2%」の、反対側の話だった](/blog/shinkin-17-red-interest-rate)
 - [個人向け国債の固定5年が、初めて2%を超えた。わたしのインフレ前提と、同じ数字になった](/blog/kojin-kokusai-5year-2percent)
 
-:::cta
-title: SBI証券 — わたしのメイン口座
-button: SBI証券の公式サイトを見る →
-description: オルカンの積立も、高配当株も、BNDも、ぜんぶSBI証券の口座です。8年以上使っているメイン口座で、利上げの週も、積立は同じ日に同じ額で続いていきます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

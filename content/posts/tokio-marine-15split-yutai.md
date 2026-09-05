@@ -203,6 +203,15 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 
 ---
 
+:::cta
+title: SBI証券 — 単元未満株なら、東京海上も1株から
+button: SBI証券の公式サイトを見る →
+description: わたしの東京海上20株も、単元未満株で買ったものです。10月の分割後は1株約500円になるので、さらに小さく積めるようになります。メイン口座はSBI証券で、8年以上使っています。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -238,9 +247,3 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 - [高配当株は何銘柄あれば足りる? 自分の117銘柄でリスクを計算したら、答えは「数」ではなかった](/blog/portfolio-risk-117-stocks)
 - [高配当株の選び方。わたしが最初に見る3つの指標と、銘柄の探し方](/blog/high-dividend-stock-selection)
 
-:::cta
-title: SBI証券 — 単元未満株なら、東京海上も1株から
-button: SBI証券の公式サイトを見る →
-description: わたしの東京海上20株も、単元未満株で買ったものです。10月の分割後は1株約500円になるので、さらに小さく積めるようになります。メイン口座はSBI証券で、8年以上使っています。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

@@ -188,6 +188,15 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 
 ---
 
+:::cta
+title: SBI証券 — 単元未満株なら、ヤマハ発も1株から
+button: SBI証券の公式サイトを見る →
+description: わたしのヤマハ発100株も、SBI証券の口座で買ったものです。メイン口座として8年以上使っています。単元未満株なら1株約2,000円から、会社の一部を持てます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 6. まとめ
 
 <div class="summary-box">
@@ -221,9 +230,3 @@ tags: ["高配当株", "日本株", "ニュース解説"]
 - [東京海上が15分割と、初めての優待を発表した。わたしに届くのは、早くて2030年だった](/blog/tokio-marine-15split-yutai)
 - [ウォルマートが1日で9%安。でも売られたのは業績ではなく、膨らみすぎた期待だった](/blog/defensive-stocks-walmart-drop)
 
-:::cta
-title: SBI証券 — 単元未満株なら、ヤマハ発も1株から
-button: SBI証券の公式サイトを見る →
-description: わたしのヤマハ発100株も、SBI証券の口座で買ったものです。メイン口座として8年以上使っています。単元未満株なら1株約2,000円から、会社の一部を持てます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::

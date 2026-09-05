@@ -174,6 +174,15 @@ tags: ["ニュース解説", "市場の話", "映像・AI"]
 
 ---
 
+:::cta
+title: SBI証券 — わたしのメイン口座
+button: SBI証券の公式サイトを見る →
+description: 高配当株もオルカンの積立も、ぜんぶSBI証券の口座でやっています。8年以上使っているメイン口座です。単元未満株なら1株から、気になる会社を持てます。
+url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
+:::
+
+---
+
 ## 7. まとめ
 
 <div class="summary-box">
@@ -209,9 +218,3 @@ tags: ["ニュース解説", "市場の話", "映像・AI"]
 - [キオクシアが決算で営業利益1兆3,000億円。買いたくなった自分を、止めた話](/blog/kioxia-earnings-not-buying)
 - [全国17の信用金庫が赤字になった。この夏わたしが書いた「金利2%」の、反対側の話だった](/blog/shinkin-17-red-interest-rate)
 
-:::cta
-title: SBI証券 — わたしのメイン口座
-button: SBI証券の公式サイトを見る →
-description: 高配当株もオルカンの積立も、ぜんぶSBI証券の口座でやっています。8年以上使っているメイン口座です。単元未満株なら1株から、気になる会社を持てます。
-url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
-:::
