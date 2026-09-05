@@ -163,7 +163,7 @@ tags: ["フリーランス"]
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:8px;">📝 2026年8月追記</div>
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
 国民年金は、2024年分から<strong>クレジットカードで2年前納</strong>にしている（2年で約1.6万円の割引）。PayPayで払っているのは住民税と国民健康保険のほうだった。<br>
-住信SBIネット銀行（現・ドコモの銀行）は、<strong>2026年6月から国民年金の口座振替に対応</strong>した。経緯は[こちらの記事](/blog/pension-payment-rate-record-exemption-40)に書いた。
+住信SBIネット銀行（現・ドコモの銀行）は、<strong>2026年6月から国民年金の口座振替に対応</strong>した。経緯は<a href="/blog/pension-payment-rate-record-exemption-40">こちらの記事</a>に書いた。
 </div>
 </div>
 

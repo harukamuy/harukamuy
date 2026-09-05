@@ -124,6 +124,8 @@ export const TAG_SLUGS: Record<string, string> = {
   "ライフプラン": "lifeplan",
   "働き方": "work-style",
   "老後資金": "retirement-fund",
+  "投資信託": "mutual-funds",
+  "長期投資": "long-term-investing",
 };
 
 // 対応表に無いタグ用のフォールバック（ASCIIならそのまま、日本語なら短いハッシュ）

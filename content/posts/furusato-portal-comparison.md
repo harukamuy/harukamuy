@@ -65,7 +65,7 @@ tags: ["ふるさと納税"]
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:24px 18px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:18px;text-align:center;">🗺️ あずきの場合(年間4万円寄付)</div>
 
-  <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-bottom:14px;">
+  <div class="keep-grid" style="display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-bottom:14px;">
     <div style="background:#fff;border:1.5px solid #c8d8c0;border-radius:12px;padding:14px 8px;text-align:center;">
       <div style="width:56px;height:56px;margin:0 auto 6px;border-radius:50%;overflow:hidden;background:#fff;">
         <img src="/images/mio-fullbody.webp" alt="あずき" style="width:100%;height:100%;object-fit:cover;object-position:top center;" />
@@ -91,7 +91,7 @@ tags: ["ふるさと納税"]
 
   <div style="border-top:1px dashed #c8d8c0;padding-top:14px;margin-top:8px;">
     <div style="font-size:11px;color:#5a8a50;text-align:center;margin-bottom:10px;font-weight:700;">▼ 翌年の税金で精算 ▼</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;">
+    <div class="keep-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;">
       <div style="background:#fff;border:1.5px solid #c8d8c0;border-radius:10px;padding:10px;text-align:center;">
         <div style="font-size:10px;color:#5a8a50;margin-bottom:4px;">来年の住民税・所得税</div>
         <div style="font-weight:700;color:#4a6640;">▼ 3万8,000円</div>
