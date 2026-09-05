@@ -65,16 +65,16 @@ seriesOrder: 5           # 第何回か
 2. 月次レポート記事（`monthly-report-YYYY-MM.md`）を書く
 3. push すると、トップの資産カード・推移グラフ・サイドバーが**全ページ自動更新**
 
-## 6. 人気記事ランキングの更新（月1回くらい）
+## 6. 人気記事ランキングの更新（自動）
 
+毎朝8時のルーティン（daily-access-alert）が `scripts/update-popular.sh` を実行する。
+GA4の直近28日からトップ5を取り直し、**順位が変わった日だけ** `data/popular-posts.json` を1ファイルだけコミット＆プッシュする（順位が同じ日は何もしない）。
+
+手動で今すぐ更新したいときは:
 ```bash
 cd ~/Documents/harukamuy-blog
-node scripts/popular-posts.js
-git add data/popular-posts.json
-git commit -m "人気記事ランキング更新"
-git push
+bash scripts/update-popular.sh
 ```
-GA4の直近28日の実データからトップの「よく読まれている記事」が更新される。
 
 ---
 
@@ -109,7 +109,7 @@ GA4の直近28日の実データからトップの「よく読まれている記
 | 記事の目次・読了時間・関連記事 | ✅ 自動 |
 | デプロイ（push→公開） | ✅ 自動（3〜4分） |
 | 月次資産データ（SNAPSHOTS） | ✋ 手動（月1） |
-| 人気記事ランキング | ✋ 手動（月1、コマンド1回） |
+| 人気記事ランキング | ✅ 自動（毎朝8時、順位が変わった日だけ） |
 | 新タグのURL登録・新カテゴリ | ✋ Claudeに依頼 |
 | 記事の `updated:` 記入 | ✋ リライト時に手動 |
 
