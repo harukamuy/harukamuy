@@ -315,4 +315,5 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [インスタで中古マンションを買う人が増えているらしい。発信する側のわたしが考えたこと](/blog/sns-mansion-buying)
 - [資産5,806万円のポートフォリオ。構成比・高配当株16銘柄・月別配当を公開します](/blog/portfolio-full-disclosure-5806)
 - [東京・月15万円の生活費内訳。削るのではなく、使い方を決める](/blog/monthly-living-expenses)
+- [20代の持ち家率が過去最高。中身を見たら、買える人だけが20代で家族になっていた](/blog/20s-homeownership-50year-loan)
 

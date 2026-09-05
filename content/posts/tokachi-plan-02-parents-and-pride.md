@@ -270,3 +270,4 @@ seriesOrder: 2
 - [独身女性の老後資金、1,800万円では足りない](/blog/single-woman-retirement-real)
 - [貯金500万→5,463万までの8年](/blog/30s-single-woman-asset-roadmap)
 - [サイドFIREのリアルなデメリット](/blog/sidefire-regrets-and-reality)
+- [アメリカでは、出戻りした子どもが親の老後資金を減らしているらしい。それ、40歳で実家に帰るわたしのことだった](/blog/boomerang-kids-parents-retirement)

@@ -392,4 +392,5 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [オルカン vs S&P500。両方持っているわたしの結論「初心者ならオルカン」](/blog/orukan-vs-sp500-real)
 - [AI株が上がると、関係ない会社が指数から押し出される? TOPIXの「1000社割れ」を調べてみた](/blog/topix-1000-exclusion)
 - [暴落・含み損とのつきあい方。わたしがコロナショックで学んだこと](/blog/market-crash-mindset)
+- [キオクシアが5兆円の増産を発表した。翌日、株価は8.8%下がった](/blog/kioxia-5trillion-investment-drop)
 

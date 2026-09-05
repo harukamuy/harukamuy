@@ -675,4 +675,5 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [インデックスが45万円減ったのに、資産は22万円増えた月【2026年7月】](/blog/monthly-report-2026-07)
 - [政府が1日で6兆円超の円買い介入。効くの? そもそも円はいくらが適正なの? を調べてみた](/blog/yen-buying-intervention)
 - [高配当株の選び方とオカムラを買い増した理由](/blog/high-dividend-stock-okamura-7994)
+- [持ち株が「売却される」というニュースは、どう読めばいいのか。答えは、中古車売り場にあった](/blog/yamaha-sells-yamaha-motor-block)
 
