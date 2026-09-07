@@ -1,26 +1,26 @@
 {
-  "updated": "2026-09-05",
+  "updated": "2026-09-07",
   "rangeDays": 28,
   "posts": [
     {
       "slug": "shinkin-17-red-interest-rate",
-      "pv": 274
+      "pv": 286
     },
     {
       "slug": "genz-financial-nihilism",
       "pv": 210
     },
     {
-      "slug": "hdv-monthly-distribution-nisa",
-      "pv": 107
-    },
-    {
       "slug": "hellowork-wage-gap-why",
-      "pv": 102
+      "pv": 104
     },
     {
       "slug": "ideco-restart-minimum",
-      "pv": 101
+      "pv": 104
+    },
+    {
+      "slug": "hdv-monthly-distribution-nisa",
+      "pv": 102
     }
   ]
 }
