@@ -1,26 +1,26 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "rangeDays": 28,
   "posts": [
     {
       "slug": "shinkin-17-red-interest-rate",
-      "pv": 295
+      "pv": 297
     },
     {
       "slug": "hellowork-wage-gap-why",
-      "pv": 107
-    },
-    {
-      "slug": "ideco-restart-minimum",
-      "pv": 103
+      "pv": 108
     },
     {
       "slug": "hdv-monthly-distribution-nisa",
-      "pv": 101
+      "pv": 102
     },
     {
-      "slug": "kojin-kokusai-september-224-record",
-      "pv": 79
+      "slug": "ideco-restart-minimum",
+      "pv": 91
+    },
+    {
+      "slug": "all-country-high-dividend-compare",
+      "pv": 80
     }
   ]
 }
