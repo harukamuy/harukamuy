@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "rangeDays": 28,
   "posts": [
     {
@@ -12,14 +12,14 @@
     },
     {
       "slug": "hdv-monthly-distribution-nisa",
-      "pv": 102
-    },
-    {
-      "slug": "ideco-restart-minimum",
-      "pv": 91
+      "pv": 99
     },
     {
       "slug": "all-country-high-dividend-compare",
+      "pv": 80
+    },
+    {
+      "slug": "kojin-kokusai-september-224-record",
       "pv": 80
     }
   ]
