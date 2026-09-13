@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "rangeDays": 28,
   "posts": [
     {
       "slug": "shinkin-17-red-interest-rate",
-      "pv": 297
+      "pv": 298
     },
     {
       "slug": "hellowork-wage-gap-why",
@@ -12,14 +12,14 @@
     },
     {
       "slug": "hdv-monthly-distribution-nisa",
-      "pv": 99
-    },
-    {
-      "slug": "all-country-high-dividend-compare",
-      "pv": 80
+      "pv": 100
     },
     {
       "slug": "kojin-kokusai-september-224-record",
+      "pv": 81
+    },
+    {
+      "slug": "all-country-high-dividend-compare",
       "pv": 80
     }
   ]
