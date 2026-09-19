@@ -324,7 +324,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 ・原典：<a href="https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf" target="_blank" rel="noopener noreferrer">総務省統計局「2025年基準 消費者物価指数 全国 2026年（令和8年）7月分」</a>（2026年8月21日公表）。10大費目の前年比・ウエイト・寄与度、品目別の前年比、ガソリンの政策効果の試算値はすべてここから<br>
 ・きっかけになった記事：<a href="https://www.nikkei.com/article/DGXZQOUA208GW0Q6A820C2000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「消費者物価指数、7月1.8%上昇　エネ価格上昇で6月から伸び拡大」</a>（2026年8月21日）<br>
 ・基準改定の試算：<a href="https://www.nli-research.co.jp/report/detail/id=86245?site=nli" target="_blank" rel="noopener noreferrer">ニッセイ基礎研究所「消費者物価指数2025年基準改定の影響試算」</a>（2026年7月13日）<br>
-・就学支援金の制度：<a href="https://www.mext.go.jp/a_menu/shotou/mushouka/index.htm" target="_blank" rel="noopener noreferrer">文部科学省「高校生等への修学支援」</a>／<a href="https://finance.yahoo.co.jp/news/detail/158f11ee1e0e9e190846acf7f7b67890cdef3b33" target="_blank" rel="noopener noreferrer">東証マネ部！「2026年4月『私立高校授業料の実質無償化』が家計にもたらすもの」</a><br>
+・就学支援金の制度：<a href="https://www.mext.go.jp/a_menu/shotou/mushouka/index.htm" target="_blank" rel="noopener noreferrer">文部科学省「高校生等への修学支援」</a>／<a href="https://money-bu-jpx.com/news/article069816/" target="_blank" rel="noopener noreferrer">東証マネ部！「2026年4月『私立高校授業料の実質無償化』が家計にもたらすもの」</a><br>
 ・米類の過去の数字：<a href="https://www.nikkei.com/article/DGXZQOUA19C1W0Z10C25A6000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「5月の消費者物価指数（CPI）3.7％上昇　伸び拡大、コメは101.7％高」</a>（2025年6月20日）／<a href="https://www.indb.co.jp/insight/economydata_2607_cpizennkoku/" target="_blank" rel="noopener noreferrer">アイ・エヌ情報センター（2020年基準の米類指数 223.4・195.0）</a><br>
 ・ハフの言葉：Darrell Huff『How to Lie with Statistics』(1954) Introduction。邦訳『統計でウソをつく法』（講談社ブルーバックス）<br>
 ・「約2.3%」は上記の寄与度と試算値を<strong>わたしが単純に足した概算</strong>です

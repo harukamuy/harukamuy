@@ -614,7 +614,7 @@ description: 寓話の形でお金の原則を教えてくれる一冊。「収�
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0 16px;">
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
-・Z世代の投資行動：<a href="https://news.yahoo.co.jp/articles/5a75ef4f2be56e21bf421975b9ae446f5e9284b7" target="_blank" rel="noopener noreferrer">TBS CROSS DIG with Bloomberg「『デートや飲酒を控える一方、金融リスクには好戦的』一攫千金に賭けるZ世代 背景に“絶望感”」(2026年8月9日)</a><br>
+・Z世代の投資行動：TBS CROSS DIG with Bloomberg「『デートや飲酒を控える一方、金融リスクには好戦的』一攫千金に賭けるZ世代 背景に“絶望感”」(2026年8月9日)<br>
 ・PFOFの仕組みと規模：<a href="https://www.nri.com/jp/knowledge/blog/lst/2021/fis/kiuchi/0209" target="_blank" rel="noopener noreferrer">野村総合研究所「米オンライン証券のビジネスモデルPFOFが改めて注目を集める」</a>／<a href="https://www.congress.gov/crs-product/IF12594" target="_blank" rel="noopener noreferrer">米議会調査局「Payment for Order Flow (PFOF) and Broker-Dealer Regulation」</a><br>
 ・EUの禁止とアメリカの対応：<a href="https://theindustryspread.com/eu-pfof-ban-mifir-article-39a-june-2026-vs-us-uk/" target="_blank" rel="noopener noreferrer">The Industry Spread「EU's PFOF ban hits its June 30 cliff as the US keeps it legal」</a><br>
 ・日本での議論：<a href="https://www.fsa.go.jp/singi/singi_kinyu/sairyo-tf/siryou/20210518/02.pdf" target="_blank" rel="noopener noreferrer">金融庁「最良執行のあり方等に関するタスクフォース 報告書」(2021年5月)</a>／<a href="https://www.fsa.go.jp/singi/singi_kinyu/shijoseido_wg/shijoseido_wg_index.html" target="_blank" rel="noopener noreferrer">金融庁「市場制度ワーキング・グループ」</a><br>

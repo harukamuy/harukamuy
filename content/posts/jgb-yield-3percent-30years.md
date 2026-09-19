@@ -155,7 +155,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0 16px;">
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
-・3%突破と背景：<a href="https://news.yahoo.co.jp/articles/0c447a8c9dc33f6396a4d19a50abcadb181fbbbb" target="_blank" rel="noopener noreferrer">毎日新聞「長期金利、一時3%突破　30年ぶり高水準　財政懸念で国債売り」</a>（2026年9月1日）。「1996年9月以来」は日本相互証券のデータによる。4つの理由の整理もこの記事から。NHK「長期金利3%超 約30年ぶり」（9月1日）も参照<br>
+・3%突破と背景：<a href="https://mainichi.jp/articles/20260901/k00/00m/020/062000c" target="_blank" rel="noopener noreferrer">毎日新聞「長期金利、一時3%突破　30年ぶり高水準　財政懸念で国債売り」</a>（2026年9月1日）。「1996年9月以来」は日本相互証券のデータによる。4つの理由の整理もこの記事から。NHK「長期金利3%超 約30年ぶり」（9月1日）も参照<br>
 ・9月1日夕方の3.005%：日本経済新聞（9月1日）<br>
 ・8月28日・31日の長期金利（2.930%・2.943%）：財務省「国債金利情報」から<strong>わたしが取得</strong><br>
 ・ベッセント米財務長官の伝達：NHK報道（9月1日朝）。「伝えたとされる」段階の報道で、公式発表ではありません<br>

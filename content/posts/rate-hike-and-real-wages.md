@@ -491,7 +491,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
 ・浜田宏一氏の主張：<a href="https://www.dailyshincho.jp/article/2026/06180504/" target="_blank" rel="noopener noreferrer">デイリー新潮「日本もアメリカの政策金利の3.75%の水準まで金利を引き上げればいい」</a>／<a href="https://www.nikkei.com/article/DGXZQOUB29ACS0Z20C26A7000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「日本円沈没の危機 『4%に利上げを』アベノミクスの師が警鐘」</a><br>
 ・実質賃金の動向：<a href="https://www.dlri.co.jp/report/macro/623852.html" target="_blank" rel="noopener noreferrer">第一生命経済研究所「実質賃金は改善続くも、持続性は物価次第（26年5月毎月勤労統計）」</a>／<a href="https://www.itochu-research.com/ja/report/2026/3118/" target="_blank" rel="noopener noreferrer">伊藤忠総研「毎月勤労統計（2025年）実質賃金は4年連続でマイナス」</a><br>
-・春闘の大手と中小の差：<a href="https://news.yahoo.co.jp/articles/f04fa644b9c7a961f0ec12b12f6645f44a03bfe5" target="_blank" rel="noopener noreferrer">時事通信「大手と中小、消えぬ賃上げ格差 価格転嫁進まず、細る原資」</a>／<a href="https://www.nippon.com/ja/japan-data/h02747/" target="_blank" rel="noopener noreferrer">nippon.com「2026年春闘：1次集計の賃上げ率5.26%」</a><br>
+・春闘の大手と中小の差：<a href="https://www.jiji.com/jc/article?k=2026070301049&amp;g=eco" target="_blank" rel="noopener noreferrer">時事通信「大手と中小、消えぬ賃上げ格差 価格転嫁進まず、細る原資」</a>／<a href="https://www.nippon.com/ja/japan-data/h02747/" target="_blank" rel="noopener noreferrer">nippon.com「2026年春闘：1次集計の賃上げ率5.26%」</a><br>
 ・日銀の決定と植田総裁の発言：<a href="https://www.nikkei.com/article/DGXZQOUB3081L0Q6A730C2000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「日銀・植田総裁、利上げペース『加速もありうる』」</a><br>
 ・中立金利の推計と利上げ予想：<a href="https://www.smd-am.co.jp/market/macroview/2026/mvreport20260501_2/" target="_blank" rel="noopener noreferrer">三井住友DSアセットマネジメント「日銀の利上げスタンスを読み解く（後編）」</a>
 </div>

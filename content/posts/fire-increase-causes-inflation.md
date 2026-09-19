@@ -450,8 +450,8 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
 ・河田皓史さんご本人の解説（試算の金額別の結果、管理職の負担、処方箋2つ、35年で物価が倍という説明はここから）：<a href="https://www.youtube.com/watch?v=e0Meqx0m7EQ" target="_blank" rel="noopener noreferrer">JBpress「なぜこの本書いた？×河田皓史①」(2026年5月18日)</a><br>
 ・インタビュー：<a href="https://toyokeizai.net/articles/-/946837" target="_blank" rel="noopener noreferrer">東洋経済オンライン「実はインフレに弱いFIRE、労働は『インフレ高耐性資産』」(2026年6月7日)</a>／<a href="https://jbpress.ismedia.jp/articles/-/83212" target="_blank" rel="noopener noreferrer">JBpress「30代『FIREしたい』エコノミストの大胆予測が話題！」(2024年9月19日)</a><br>
-・試算の前提（年支出約350万円・65歳から年金200万円・税引後3.2%）：<a href="https://news.yahoo.co.jp/articles/bdf602f53a1e5ffbad991e0560badd7100670359" target="_blank" rel="noopener noreferrer">AERA DIGITAL「貯蓄5000万円でも『70歳手前』で資産寿命が尽きる」</a><br>
-・番組での解説：<a href="https://txbiz.tv-tokyo.co.jp/plusft/vod/post_346404" target="_blank" rel="noopener noreferrer">テレビ東京「日経モーニングプラスFT」(2026年8月10日放送)</a><br>
+・試算の前提（年支出約350万円・65歳から年金200万円・税引後3.2%）：AERA DIGITAL「貯蓄5000万円でも『70歳手前』で資産寿命が尽きる」<br>
+・番組での解説：テレビ東京「日経モーニングプラスFT」(2026年8月10日放送)<br>
 ・著書：河田皓史『働く人が減っていく国でこれから起きること』(朝日新聞出版、2026年4月)。<strong>この記事は書籍本文ではなく、上記のご本人の解説と報道にもとづいて書いています</strong>
 </div>
 

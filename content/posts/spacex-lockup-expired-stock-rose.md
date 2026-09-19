@@ -421,7 +421,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0 16px;">
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
-・マスク氏の保有と株価の動き：<a href="https://news.yahoo.co.jp/articles/3c486193a098e6c6c242b758f7d38eaec6642a4c" target="_blank" rel="noopener noreferrer">ロイター「マスク氏、スペースＸ株48.4％保有 評価額9000億ドル超」(2026年8月14日)</a>／<a href="https://www.newsweekjapan.jp/articles/-/331268" target="_blank" rel="noopener noreferrer">ニューズウィーク日本版（同内容）</a><br>
+・マスク氏の保有と株価の動き：ロイター「マスク氏、スペースＸ株48.4％保有 評価額9000億ドル超」(2026年8月14日)／<a href="https://www.newsweekjapan.jp/articles/-/331268" target="_blank" rel="noopener noreferrer">ニューズウィーク日本版（同内容）</a><br>
 ・ロックアップの初解除：<a href="https://www.nikkei.com/article/DGXZQOGN04B5W0U6A800C2000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「スペースX、ロックアップ6日にも初解除」</a><br>
 ・決算の内容：<a href="https://www.nikkei.com/article/DGXZQOGN048KE0U6A800C2000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「スペースX初の決算発表、4〜6月9割増収 AI投資で850億円赤字」(2026年8月4日)</a>
 </div>

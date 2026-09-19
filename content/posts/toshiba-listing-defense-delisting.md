@@ -416,7 +416,7 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0 16px;">
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
-・きっかけになった記事：<a href="https://news.yahoo.co.jp/articles/5b1e9741e19900c342ac9b963d5035a07f12d02a" target="_blank" rel="noopener noreferrer">文春オンライン「東芝元CFOがキオクシア売却の真相告白」</a>（2026年8月17日配信）<br>
+・きっかけになった記事：<a href="https://bunshun.jp/articles/-/91140" target="_blank" rel="noopener noreferrer">文春オンライン「東芝元CFOがキオクシア売却の真相告白」</a>（2026年8月17日配信）<br>
 ・2017年の増資：<a href="https://www.bloomberg.co.jp/news/articles/2017-11-19/OZNRYR6K50XT01" target="_blank" rel="noopener noreferrer">Bloomberg「東芝が6000億円の第三者割当で債務超過解消へ、旧村上Ｆ筆頭株主」</a>／<a href="https://www.nikkei.com/article/DGXLASFL05HOS_V01C17A2000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「東芝、第三者増資の払込完了 6000億円、エフィッシモなどから」</a><br>
 ・メモリ売却の完了時期：<a href="https://www.nikkei.com/article/DGXMZO30645250X10C18A5MM8000/" target="_blank" rel="noopener noreferrer">日本経済新聞「東芝メモリ6月1日付で売却 中国独禁当局が承認」</a><br>
 ・非公開化と上場廃止：<a href="https://www.nikkei.com/article/DGXZQOUC123840S3A011C2000000/" target="_blank" rel="noopener noreferrer">日本経済新聞「東芝、12月20日に上場廃止へ」</a>／<a href="https://www.global.toshiba/jp/ir/corporate/tender-offer.html" target="_blank" rel="noopener noreferrer">東芝「当社の株式公開買付けについて」</a><br>

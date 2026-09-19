@@ -301,7 +301,7 @@ tags: ["ニュース解説", "家計・資産管理", "金利"]
 
 <div style="background:#f5f3f0;border:1.5px solid #ddd8d0;border-radius:14px;padding:20px 22px;font-size:12px;color:#888;line-height:1.9;margin:36px 0 16px;">
 <strong style="display:block;margin-bottom:6px;color:#666;">📚 参考にした情報源</strong>
-・きっかけになった記事：<a href="https://news.yahoo.co.jp/articles/31b5fba82171f9251ef71eec67fa3ae05be3d555" target="_blank" rel="noopener noreferrer">産経新聞「金利上昇、住宅購入急ぐ若者…20代以下持ち家率が過去最高　超長期ローンに返済リスクも」（2026年9月5日、Yahoo!ニュース）</a>。持ち家率40.7%（2000年以降で最高）、年収8倍以上7.1%→20.4%、首都圏新築1億円、完済75〜80歳はここから<br>
+・きっかけになった記事：<a href="https://www.sankei.com/article/20260905-DC4QAAPIIJKPBDWFVUM222KWIY/" target="_blank" rel="noopener noreferrer">産経新聞「金利上昇、住宅購入急ぐ若者…20代以下持ち家率が過去最高　超長期ローンに返済リスクも」（2026年9月5日）</a>。持ち家率40.7%（2000年以降で最高）、年収8倍以上7.1%→20.4%、首都圏新築1億円、完済75〜80歳はここから<br>
 ・「2人以上の世帯」の但し書き・2000年の19.7%・総世帯では7%台・20代夫婦世帯▲74%・持ち家世帯▲46%：<a href="https://news.yahoo.co.jp/expert/articles/b54d59ad7fbcc62058569066e32f478d9d7e0f13" target="_blank" rel="noopener noreferrer">荒川和久「『20代以下の持ち家率が過去最高』という統計の裏にある『結婚できる・できない』を決定する経済階級差」（2026年5月26日、Yahoo!ニュース エキスパート）</a>。家計調査をもとにした同氏の試算<br>
 ・29歳以下の持ち家率6.3%（2023年）：<a href="https://garbagenews.net/archives/1846515.html" target="_blank" rel="noopener noreferrer">ガベージニュース「年齢階層別の持家と借家の割合」</a>（総務省「令和5年住宅・土地統計調査」による）<br>
 ・50年ローンの取扱銀行・金利・35年と50年の試算例：<a href="https://mogecheck.jp/articles/show/9xjkPQV3qGwXqWdrbNg6" target="_blank" rel="noopener noreferrer">モゲチェック「最長50年で借入可能な住宅ローンランキング」（2026年9月1日）</a>。ネット銀行初の50年は<a href="https://www.netbk.co.jp/contents/company/press/2023/0804_001806.html" target="_blank" rel="noopener noreferrer">住信SBIネット銀行のプレスリリース（2023年8月4日）</a><br>
