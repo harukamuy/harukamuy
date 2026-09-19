@@ -185,7 +185,7 @@ BNDは、今年に入ってドルで4%下がった。BNDの中身の半分近く
 <div style="font-size:13px;color:#3a5030;line-height:1.9;">
 <div style="margin-bottom:10px;"><strong>① 金利は、読まない</strong><br>去年の暮れ、市場は「次は利下げ」と見ていた。3月に原油で「利上げかも」に変わり、9月に本当に上がった。FRBの中でさえ、7月は3人が利上げを主張し、9月は全員が賛成。半年で正反対になるものを、わたしが当てられるとは思わない</div>
 <div style="margin-bottom:10px;"><strong>② 同じ利上げで、持ち物の中で逆のことが起きる</strong><br>BNDはドルで下がり、円安で円では増えた。オルカンは円で70万円戻った。全部まとめて、動かさない</div>
-<div><strong>③ BNDは、利息を受け取る側の席</strong><br>値段は下がった。でも、BNDが新しく買い足す債券は、前より高い利息をくれる。わたしがBNDを持っている理由は利息で、値段ではない。[残クレの記事](/blog/zankure-balloon-mortgage-monthly-vs-total)で書いた「利息は受け取る側でいたい」の、その利息が、少し増える方向になった</div>
+<div><strong>③ BNDは、利息を受け取る側の席</strong><br>値段は下がった。でも、BNDが新しく買い足す債券は、前より高い利息をくれる。わたしがBNDを持っている理由は利息で、値段ではない。<a href="/blog/zankure-balloon-mortgage-monthly-vs-total">残クレの記事</a>で書いた「利息は受け取る側でいたい」の、その利息が、少し増える方向になった</div>
 </div>
 </div>
 
