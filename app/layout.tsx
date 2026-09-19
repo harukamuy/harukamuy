@@ -50,7 +50,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    // 検索結果やGoogle Discover（スマホのおすすめ記事欄）で、見出し画像を大きく出してよい
+    // という許可。これが無いとDiscoverにはほぼ載らない（2026-09-20時点でDiscover表示ゼロ）。
+    // 説明文の長さも制限しない。
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
   alternates: {
     canonical: SITE_URL,

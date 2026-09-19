@@ -102,10 +102,25 @@ export default async function PostPage({ params }: Props) {
   }
 
   const allPosts = getAllPosts();
-  // 同カテゴリの記事を優先し、不足分は他カテゴリの新着で補う
-  const sameCategory = allPosts.filter((p) => p.slug !== slug && p.category === post.category);
-  const otherCategory = allPosts.filter((p) => p.slug !== slug && p.category !== post.category);
-  const relatedPosts = [...sameCategory, ...otherCategory].slice(0, 4);
+  // 関連記事は「同じテーマ（タグ）をどれだけ共有しているか」で選ぶ。
+  // 以前は同じカテゴリの新着4本を出していただけで、ニュース記事の下にはどれも同じ4本が並んでいた。
+  // 多くの記事が持つタグ（ニュース解説など）を共有しても関係は薄いので、珍しいタグほど重く数える。
+  // 同じ連載・同じカテゴリは少しだけ上乗せし、同点なら新しい記事を先に出す。
+  const tagCount = new Map<string, number>();
+  for (const p of allPosts) for (const t of p.tags) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+  const tagWeight = (t: string) => Math.log(allPosts.length / (tagCount.get(t) ?? 1));
+  const relatedPosts = allPosts
+    .filter((p) => p.slug !== slug)
+    .map((p) => ({
+      p,
+      score:
+        p.tags.filter((t) => post.tags.includes(t)).reduce((s, t) => s + tagWeight(t), 0) +
+        (post.series && p.series === post.series ? 2 : 0) +
+        (p.category === post.category ? 0.3 : 0),
+    }))
+    .sort((a, b) => b.score - a.score || (a.p.date < b.p.date ? 1 : -1))
+    .slice(0, 4)
+    .map(({ p }) => p);
 
   // 連載情報（series が指定されていれば、シリーズ内の前後記事と目次を出す）
   const seriesPosts = post.series ? getSeriesPosts(post.series) : [];
@@ -256,7 +271,13 @@ export default async function PostPage({ params }: Props) {
           }}>
             {categoryLabel[post.category] ?? post.category}
           </span>
-          <span style={{ fontSize: 12, color: "var(--brown-3)" }}>{post.date}</span>
+          <time dateTime={post.date} style={{ fontSize: 12, color: "var(--brown-3)" }}>{post.date}</time>
+          {/* 内容を更新した記事は更新日も出す（読者が情報の新しさを判断できるように） */}
+          {post.updated && post.updated !== post.date && (
+            <span style={{ fontSize: 12, color: "var(--brown-3)" }}>
+              更新 <time dateTime={post.updated}>{post.updated}</time>
+            </span>
+          )}
           <span style={{ fontSize: 12, color: "var(--brown-3)" }}>📖 約{readingMinutes}分で読めます</span>
         </div>
 
