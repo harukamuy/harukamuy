@@ -633,14 +633,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>87兆円の対米投資。でも<strong>投資するのは日本の民間企業</strong>で、政府は出資・融資・保証で関わるだけ。<strong>あげるお金でもなく、融資なら返ってくる</strong></li>
-<li>第2弾で<strong>米シティとJPモルガンが初参加</strong>。日本の3メガバンクは<strong>ドル調達が長く続かない</strong>として主役を降りた</li>
-<li><strong>足りないのは円ではなくドル</strong>。日本の銀行にとってドルは借り物で、<strong>10年貸すのに、数か月ごとの借り換えでつなぐ</strong>ことになる</li>
+<li>87兆円の対米投資。でも<strong>投資するのは日本の民間企業</strong>で、<strong>あげるお金でもなく、融資なら返ってくる</strong></li>
+<li>第2弾で<strong>米シティとJPモルガンが初参加</strong>。日本の3メガバンクは、ドル調達が長く続かないとして主役を降りた</li>
+<li><strong>足りないのは円ではなくドル</strong>。日本の銀行は、10年貸すのに数か月ごとの借り換えでつなぐことになる</li>
 <li>それは実際に詰まったことがある。<strong>2008年と2020年</strong>、中央銀行が出てくるまで民間だけでは回らなかった</li>
-<li>ここからは<strong>わたしの推論</strong>。米銀が出すなら<strong>アメリカのドルがアメリカの発電所へ向かうだけ</strong>で、円が売られる場面が生まれない</li>
-<li>つまり<strong>為替を動かすのは、お金が国境を越えることではなく、円が売られること</strong>だった</li>
-<li>最初は「87兆円も出ていくのか」と身構えたけれど、<strong>不安は、知らないことから来ていた</strong></li>
-<li><strong>無関係ではない</strong>（117銘柄に銀行業のETFが入っている）。<strong>それでも、売る理由にも買う理由にもならなかった</strong></li>
+<li>ここからは<strong>わたしの推論</strong>。米銀が出すなら、<strong>円が売られる場面が生まれない</strong></li>
+<li>つまり<strong>為替を動かすのは、お金が国境を越えることではなく、円が売られること</strong></li>
+<li><strong>不安は、知らないことから来ていた</strong>。売る理由にも買う理由にもならなかった</li>
 </ul>
 </div>
 
