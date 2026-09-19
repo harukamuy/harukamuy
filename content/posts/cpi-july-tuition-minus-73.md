@@ -341,4 +341,5 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [ライフプランを一緒に作ってみよう。行き先が決まれば、行動が具体化する](/blog/lifeplan-make-your-own)
 - [アメリカが国債を買い戻すと発表。日経平均は890円戻したけれど、借金は1円も減っていなかった](/blog/us-treasury-buyback-doubled)
 - [ウォルマートが1日で9%安。でも売られたのは業績ではなく、膨らみすぎた期待だった](/blog/defensive-stocks-walmart-drop)
+- [カレー1皿が349円。11か月ぶりに350円を切ったけれど、値段は2020年の1.36倍のまま](/blog/curry-rice-price-index-349)
 

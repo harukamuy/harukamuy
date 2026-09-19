@@ -282,4 +282,5 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [長期金利が3%を超えた。30年ぶりで、わたしが4歳のとき以来。前の日に「2.9%台」と書いたばかりだった](/blog/jgb-yield-3percent-30years)
 - [生活防衛資金は300万円。「健康のための備え」だと思っている](/blog/emergency-fund-300)
 - [資産が初めて6,000万円に乗った。運んでくれたのは、ほとんど相場だった【2026年8月】](/blog/monthly-report-2026-08)
+- [「ソフトバンクなら安全だよね?」年4.75%の社債を、わたしが買わない4つの理由](/blog/softbank-bond-475-risk-beyond-default)
 

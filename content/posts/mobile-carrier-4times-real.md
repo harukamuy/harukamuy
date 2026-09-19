@@ -276,3 +276,4 @@ ahamoに不満はなかった。それでも乗り換えたのは、やっぱり
 - [新NISA完全ガイド。1,800万円を10年で埋める道筋](/blog/new-nisa-complete-guide)
 - [サイドFIREのリアルなデメリット。正直に書きます](/blog/sidefire-regrets-and-reality)
 - [JALカードを使い続けるフリーランスの話](/blog/jal-card-freelance-real)
+- [月990円の新型iPhoneの正体。数字は、うまく隠れていた](/blog/smartphone-free-2years-where-you-pay)

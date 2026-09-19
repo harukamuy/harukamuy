@@ -339,3 +339,4 @@ url: https://px.a8.net/svt/ejp?a8mat=4B1V21+1MXXO2+3SPO+9FDI8Y
 - [フリーランスの社会保険](/blog/freelance-social-insurance)
 - [フリーランスの確定申告](/blog/freelance-tax-return-freee)
 - [フリーランスが3ヶ月働けなくなったら](/blog/freelance-cannot-work-savings)
+- [「国保逃れ」で1万1,610人が資格を失った。わたしも検討した保険料の抜け道は、なぜ閉じられたのか](/blog/kokuho-nogare-11610-i-considered-too)

@@ -422,4 +422,5 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 - [管理会社がマンションを「切り捨てる」時代に。賃貸派のわたしが、持ち家の見えないコストを調べてみた](/blog/mansion-kanri-crisis)
 - [20代の負債が過去最高。3,000万円のローンを組む同世代と、賃貸のわたし](/blog/20s-debt-record-high)
 - [金利は「据え置き」だったのに、ダウが1,153ドル安。なぜ? を調べてみた](/blog/fomc-hold-but-stocks-fell)
+- [6年半でマンションは1.5倍、株は2.3倍、REITは2割安。なぜREITだけ置いていかれたのか](/blog/reit-25years-lagging-behind-real-estate)
 

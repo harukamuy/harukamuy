@@ -258,6 +258,7 @@ tags: ["ニュース解説", "金利", "為替", "個人向け国債"]
 - [アメリカが3年ぶりに利上げ。減ったものと増えたものを整理する](/blog/fed-hike-first-since-2023-bnd-orukan)
 - [大統領が「金利は1%以下に」。金利を国のトップが決めた過去の記録を調べてみた](/blog/trump-1percent-who-decides-interest-rates)
 - [円高でわたしの資産は170万円減った。それでも何もしない理由](/blog/yen-153-dollar-box-nothing-changes)
+- [「次も3か月後ですか?」に、植田総裁はどう答えたか。1時間の会見を、質問ごとに噛み砕いてみた](/blog/ueda-press-conference-sep-2026-qa)
 
 :::cta
 title: SBI証券 — わたしのメイン口座

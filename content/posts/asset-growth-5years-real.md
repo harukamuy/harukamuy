@@ -280,3 +280,4 @@ url: https://h.accesstrade.net/sp/cc?rk=0100pesr00orlw
 - [新NISA完全ガイド。1,800万円を10年で埋める道筋](/blog/new-nisa-complete-guide)
 - [スペースX上場。オルカン・QQQ・S&P500にはいつ入る？](/blog/spacex-ipo-index-inclusion)
 - [250億円が消えた投資詐欺。だまされないために、わたしが決めている3つのこと](/blog/investment-scam-avoid-3-rules)
+- [個人の金融資産が1年で251兆円増えた。そのうち、新しく入ったお金は25兆円だった](/blog/household-assets-2519-trillion-who-added)
