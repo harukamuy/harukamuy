@@ -37,8 +37,9 @@ if [ -n "$kin" ]; then echo "  禁則         ← 要修正"; echo "$kin" | sed 
 kg=$(grep -n 'grid-template-columns' "$f" | grep -v 'keep-grid')
 if [ -n "$kg" ]; then echo "  keep-grid漏れ ← 要修正"; echo "$kg" | cut -c1-80 | sed 's/^/      /'; ng=$((ng+1)); else echo "  keep-grid漏れ 0"; fi
 
-# 「正直」は本文1回まで
-sh=$(grep -o "正直" "$f" | wc -l | tr -d ' ')
+# 「正直」は本文1回まで（タイトルと excerpt は数えない。検索結果やSNSカードに出る部分なので別扱い）
+# 他記事へのリンクの文字（引用先のタイトル）も数えない
+sh=$(awk 'NR>1 && /^---$/ {b=1; next} b' "$f" | sed -E 's#\[[^]]*\]\(/blog/[^)]*\)##g; s#<a [^>]*>[^<]*</a>##g' | grep -o "正直" | wc -l | tr -d ' ')
 echo "  「正直」      ${sh}回$( [ "$sh" -gt 1 ] && echo ' ← 1回まで')"
 [ "$sh" -gt 1 ] && ng=$((ng+1))
 
