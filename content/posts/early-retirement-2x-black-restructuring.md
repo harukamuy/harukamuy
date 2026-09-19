@@ -322,15 +322,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>2025年度の早期・希望退職は<strong>46社・2万781人</strong>で、前年度8,326人の<strong>約2.5倍</strong>（東京商工リサーチ）</li>
-<li>ただし<strong>募集した会社の約7割は黒字</strong>だった。この2万781人は「<strong>辞めたい人が増えた</strong>」ではなく「<strong>会社が募集をかけた</strong>」数字だった</li>
-<li>黒字でも募集する理由は、<strong>将来性の乏しい事業の見直し</strong>と<strong>新規事業への進出</strong>。<strong>生成AIを組織的に使う大企業が59.1%</strong>あり、事務職や管理職が対象になる動きも懸念されている</li>
-<li>辞めた側の調査（50代・300人）では<strong>後悔していないが82.7%</strong>。ただし<strong>ほぼ強制的に促された人が16.3%</strong>、<strong>フルタイムで働けているのは51.7%</strong></li>
-<li>記事に出ていた例では、53歳で退職し<strong>3,000万円と学び直し50万円</strong>を使っても、地方公務員の採用は<strong>8回とも決まらなかった</strong></li>
-<li>共通点として挙げられていたのは<strong>「自分の仕事の延長線上に、次の仕事を描けるか」</strong>。<a href="/blog/fire-increase-causes-inflation">昨日書いた処方箋</a>「組織に頼らない、持ち運べる尖った技能」と同じことを言っている</li>
-<li>わたしも会社を辞めているが、<strong>探したのは次の職ではなかった</strong>。映像の仕事は会社を離れても中身が変わらない。ただし<strong>業界にフリーランスの先輩が多かった</strong>だけで、<strong>収入がゼロの時期も経験している</strong></li>
-<li>辞めたときの資産は<strong>約2,000万円</strong>（退職金を含む）。<strong>お金は次の仕事を連れてきてくれないが、決まるまでの時間は買える</strong></li>
-<li><strong>働けるだけでは、資産にならない</strong>。<strong>その働きに需要があること</strong>まで揃って、はじめて資産になる。バフェットも<strong>「いちばんの投資は、自分自身を育てるものだ」</strong>と言っていた</li>
+<li>2025年度の早期・希望退職は<strong>2万781人</strong>で、前年度の<strong>約2.5倍</strong></li>
+<li>ただし<strong>募集した会社の約7割は黒字</strong>。「辞めたい人が増えた」ではなく、「会社が募集をかけた」数字</li>
+<li>黒字でも募集するのは、事業の見直しと新規事業のため。<strong>生成AIを組織的に使う大企業は59.1%</strong></li>
+<li>辞めた50代の<strong>82.7%は後悔していない</strong>。ただし、<strong>フルタイムで働けているのは51.7%</strong></li>
+<li>共通点として挙げられていたのは、<strong>「自分の仕事の延長線上に、次の仕事を描けるか」</strong></li>
+<li>わたしも会社を辞めたが、探したのは次の職ではなかった。<strong>お金は次の仕事を連れてきてくれないが、決まるまでの時間は買える</strong></li>
+<li><strong>働けるだけでは、資産にならない</strong>。その働きに需要があって、はじめて資産になる</li>
 </ul>
 </div>
 

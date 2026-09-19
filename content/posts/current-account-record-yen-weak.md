@@ -581,16 +581,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>2026年上半期の経常黒字は<strong>17兆4,292億円</strong>（前年同期比<strong>+22.5%</strong>）で、比較できる1996年以降の上半期として<strong>過去最大</strong>。貿易収支も<strong>5年ぶりに黒字</strong>（7,421億円）</li>
-<li>それなのに<strong>そのあいだ円は売られ続け</strong>、7月23日には<strong>163.99円</strong>と約40年ぶりの円安水準をつけた</li>
-<li>黒字の中身は<strong>第一次所得収支が20兆4,914億円</strong>。貿易の黒字はその<strong>28分の1</strong>しかなく、<strong>黒字を作っているのは貿易ではなかった</strong></li>
-<li>第一次所得収支は<strong>海外に持っている財産から生まれた稼ぎ</strong>。家計にたとえると<strong>給料ではなく、配当や家賃</strong>にあたる</li>
-<li><strong>海外子会社の利益は、円に替えられない</strong>。統計は「受け取って、すぐ投資し直した」とみなして両方に計上する（<strong>再投資収益</strong>）。つまり<strong>円に替える場面が、そもそも少ない</strong></li>
-<li><strong>円を買う側の動きも小さい</strong>。日本に入ってきている直接投資の残高は<strong>GDPの5〜8%ほど</strong>で、<strong>OECD38か国の最下位</strong>だった</li>
-<li><strong>統計が測っているのは「稼ぎ」で、為替を動かすのは「実際の売り買い」</strong>。この2つがずれているのが、黒字なのに円安の正体だった</li>
-<li>6月単月は<strong>▲923億円の赤字</strong>。第一次所得収支は<strong>受け取りから支払いを引いた残り</strong>で、海外投資家への配当が増えていた。<strong>一度きりの円買いと、続いていく円売り</strong></li>
-<li>この傾向が続くかは<strong>わたしには分からない</strong>。<strong>当てるための分散ではない。当てられないから分散する</strong>。わたしの通貨は<strong>円とドルの2軸</strong>だけだ</li>
-<li>最後に気づいたのは、<strong>「円に戻ってこないお金」にわたし自身も入っている</strong>ということ。規模はまったく違うけれど、<strong>企業と同じことを小さくやっていた</strong></li>
+<li>2026年上半期の経常黒字は<strong>17兆4,292億円</strong>で過去最大。<strong>それなのに円は売られ続け</strong>、7月には163.99円をつけた</li>
+<li>黒字を作っていたのは貿易ではなく、<strong>海外に持っている財産からの稼ぎ</strong>。家計でいえば、給料ではなく配当や家賃</li>
+<li><strong>海外子会社の利益は、円に替えられない</strong>。統計は「受け取って、すぐ投資し直した」とみなしている</li>
+<li><strong>円を買う側の動きも小さい</strong>。日本に入ってきている直接投資の残高は、<strong>OECD38か国の最下位</strong></li>
+<li><strong>統計が測っているのは「稼ぎ」で、為替を動かすのは「実際の売り買い」</strong>。このずれが、黒字なのに円安の正体</li>
+<li>続くかは、わたしには分からない。<strong>当てられないから分散する</strong>。わたしの通貨は円とドルの2軸だけ</li>
+<li>最後に気づいたのは、<strong>「円に戻ってこないお金」にわたし自身も入っている</strong>ということ</li>
 </ul>
 </div>
 
