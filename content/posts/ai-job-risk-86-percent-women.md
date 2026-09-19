@@ -260,15 +260,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li><strong>「AIに脅かされる労働者の86%が女性」</strong>の出どころは、米ブルッキングス研究所が<strong>2026年1月21日</strong>に出した報告書だった</li>
-<li>報告書によると、AIの影響が大きい仕事で働くのは<strong>3,710万人</strong>。そのうち<strong>約7割の2,650万人は別の仕事に移れる</strong>と見ている</li>
-<li><strong>86%は全体の話ではなく、移りにくいと判定された610万人の内訳</strong>。この610万人は調査対象の労働者の4.2%にあたる</li>
-<li>移れるかどうかを分けていたのは<strong>4つ。手元のお金・スキルが横に効くか・近くに仕事があるか・年齢</strong>で、どれもAI以前からあったもの</li>
-<li>いちばん移りにくかったのは<strong>一般事務・秘書・受付・医療事務</strong>とすべて事務系。<strong>AIが女性を狙ったのではなく、AIが得意な仕事に女性が多かった</strong></li>
-<li>日本でも働く女性でいちばん多い職業は事務で<strong>861万人・約28%</strong>（2024年平均）</li>
-<li>メタは5月に<strong>約8,000人</strong>を削減。7月に社員ら<strong>26人</strong>が、選定に<strong>打鍵数などの生産性スコア</strong>が使われ<strong>休職中は積み上がらなかった</strong>として提訴した。メタは<strong>人間が判断したと反論</strong>している</li>
-<li>どちらの話も、<strong>測っているのがその人の力ではなく、余力や状況のほう</strong>だという点で重なっている</li>
-<li>わたしは<a href="/blog/ai-changed-hours-not-rate">AIで単価は下がらず拘束時間が減った</a>側だった。<strong>4つのうち自分で動かしやすいのはお金とスキルの横幅の2つだけ</strong>で、<strong>たまたまその2つが埋まっていただけ</strong>。備えていたわけではない</li>
+<li><strong>「AIに脅かされる労働者の86%が女性」</strong>の出どころは、米ブルッキングス研究所の報告書だった</li>
+<li>AIの影響が大きい仕事で働く3,710万人のうち、<strong>約7割は別の仕事に移れる</strong>と見ている</li>
+<li><strong>86%は全体の話ではなく、移りにくいと判定された610万人の内訳</strong></li>
+<li>移れるかどうかを分けていたのは、<strong>手元のお金・スキルが横に効くか・近くに仕事があるか・年齢</strong>の4つ</li>
+<li>いちばん移りにくかったのは、すべて事務系。<strong>AIが女性を狙ったのではなく、AIが得意な仕事に女性が多かった</strong></li>
+<li>日本でも、働く女性でいちばん多い職業は事務で<strong>861万人</strong></li>
+<li>わたしは<a href="/blog/ai-changed-hours-not-rate">AIで単価は下がらず拘束時間が減った</a>側。4つのうちお金とスキルの2つが<strong>たまたま埋まっていただけ</strong>で、備えていたわけではない</li>
 </ul>
 </div>
 
