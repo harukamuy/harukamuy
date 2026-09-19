@@ -489,14 +489,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>アメリカの7月の雇用統計（8月7日発表）は、<strong>働いている人が前月より2万3,000人減</strong>。市場の予想は<strong>8万人ほどの増加</strong>で、<strong>5か月ぶりのマイナス</strong>。<strong>それなのに失業率は4.1%へ0.1ポイント低下</strong>した</li>
-<li>理由は<strong>分母が減ったから</strong>。失業率は「失業者÷働く気がある人」で、<strong>仕事を探すのをやめた人は分母から消える</strong>。<strong>労働参加率も61.5%から61.4%へ低下</strong>し、日経も「<strong>失業者が就職したというより、求職をやめた影響が含まれる</strong>」と書いている</li>
-<li>ただし<strong>0.1ポイントの話では済まない</strong>。2023年初から2025年末は<strong>62.4〜62.7%</strong>で安定していたのに、<strong>2025年12月からの半年で約0.9ポイント急落</strong>し、いまは<strong>コロナ期をのぞくと約50年ぶりの低さ</strong></li>
-<li>下がる理由は<strong>①高齢化 ②入ってくる移民の減少 ③仕事を探すのをやめた人</strong>の3つ。<strong>「みんなが諦めた」という話だけではなく、専門家も高齢化の影響が大きいと見ている</strong></li>
-<li>それでも株は上がり、<strong>S&P500は7,757.64で最高値を更新</strong>。理由は<strong>9月の利上げが遠のいたから</strong>で、市場が見る利上げの確率は<strong>発表前55%ほどから、発表後40%ほどへ</strong>。<strong>1本の統計で15ポイント動いた</strong></li>
-<li>そして同じ日に、<strong>5月と6月の数字が下方修正</strong>されていた。<strong>2か月あわせて10万3,000人ぶん少なかった</strong>。<strong>発表された瞬間の数字は、まだ確定していない</strong>。それでも市場はその数字を見て動くので、<strong>あとで直っても、そのとき動いた株価は戻らない</strong></li>
-<li>円高も進んだ。<strong>8月7日の終値は1ドル157円80〜90銭</strong>。外貨建て約4,100万円で計算すると、<a href="/blog/yen-buying-intervention">介入前の高値163.99円</a>から<strong>約154万円の目減り</strong>。ただし<strong>同じ日にS&P500は最高値</strong>で、<strong>円で見た目減りと、ドルで見た値上がりが同時に起きている</strong></li>
-<li><strong>どの数字も、そのままでは意味が取れない</strong>。だからその日の数字では動かない。<strong>何もしないでいられる形にしておく</strong>のがいちばん効く</li>
+<li>7月の米雇用統計は、<strong>働いている人が2万3,000人減</strong>。予想は8万人ほどの増加。<strong>それなのに失業率は4.1%へ低下</strong></li>
+<li>理由は<strong>分母が減ったから</strong>。仕事を探すのをやめた人は、失業率の計算から消える</li>
+<li>労働参加率は<strong>半年で約0.9ポイント急落</strong>し、コロナ期をのぞくと約50年ぶりの低さ。高齢化の影響も大きい</li>
+<li>それでも<strong>S&P500は最高値</strong>。9月の利上げが遠のき、市場が見る確率は<strong>1本の統計で15ポイント</strong>動いた</li>
+<li>同じ日に5月と6月が下方修正。<strong>発表された瞬間の数字は、まだ確定していない</strong>。それでも株価はその数字で動く</li>
+<li>円高で、わたしの外貨建て資産は<a href="/blog/yen-buying-intervention">介入前の高値</a>から<strong>約154万円の目減り</strong>。同じ日に、S&P500はドルで最高値</li>
+<li>どの数字も、そのままでは意味が取れない。だから<strong>何もしないでいられる形にしておく</strong>のがいちばん効く</li>
 </ul>
 </div>
 

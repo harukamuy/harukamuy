@@ -358,16 +358,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li><strong>8月14日にTOPIXが年初来高値</strong>。その4日後の<strong>8月18日、三井不動産・三菱地所・住友不動産がそろって年初来安値</strong>をつけた。年初来では<strong>TOPIX +18.5%、三井不動産 −18.4%</strong>で、<strong>相場が悪いのではなく不動産だけが沈んでいる</strong></li>
-<li>高値からの下落は<strong>住友不動産−38.0%、三井不動産−32.7%、三菱地所−32.2%</strong>。各社の高値は<strong>2月から3月上旬</strong>に集まっている</li>
-<li>原因は<strong>金利</strong>。長期金利は<strong>2025年8月の1.5%台から、8月18日には一時2.945%</strong>へ。<strong>約30年ぶりの高さ</strong>で、1年でほぼ倍になった</li>
-<li>不動産に効く理由は2つ。<strong>①借金が大きいので利払いが増える ②ローンで買える人が減るので物件も売れにくくなる</strong>。同時に来るので下げ幅も大きい</li>
-<li><strong>REITも年初来−11.3%</strong>。借りて買って貸す構造は同じなので、同じ逆風を受けている</li>
-<li>会社だけの話ではない。<strong>5,000万円を35年で借りると、金利1.0%と4.0%で月の返済は8万円、総額では3,370万円ちがう</strong></li>
-<li>変動金利には<strong>5年ルール・125%ルール</strong>があるので急には来ない。ただし<strong>採用していない銀行もある</strong>し、<strong>返済額が同じでも元本の減りが遅くなる</strong>だけで、消えるわけではない</li>
-<li>わたしは賃貸派なのでローンはないが、<strong>117銘柄のなかに不動産も入っている</strong>ので他人事でもない。<strong>指数だけ見ていたら、この3割は見えなかった</strong></li>
-<li>金利1.0%と4.0%では、返済の中身も変わる。同じ14.1万円を払っても<strong>借金が減る額は9.9万円→マイナス2.6万円</strong>。<strong>金利3.4%を超えると、払っても借金が増える</strong>（未払利息）</li>
-<li><a href="/blog/mufg-market-cap-no1">7月に銀行株の記事</a>で「<strong>金利のある世界が戻ってきた</strong>」と書いたのは<strong>貸す側</strong>の話だった。今度は<strong>借りる側</strong>に来ている。行き先はわからないが、<strong>変動か固定か、いま何%か、金利で沈む業種をどれだけ持っているか</strong>は今日わかる</li>
+<li><strong>8月14日にTOPIXが年初来高値</strong>。その4日後、<strong>三井不動産・三菱地所・住友不動産がそろって年初来安値</strong>をつけた</li>
+<li>高値からの下落は<strong>3割超</strong>。相場が悪いのではなく、<strong>不動産だけが沈んでいる</strong></li>
+<li>原因は<strong>金利</strong>。長期金利は1年でほぼ倍になり、<strong>一時2.945%</strong>と約30年ぶりの高さ</li>
+<li>効く理由は2つ。<strong>借金の利払いが増える</strong>ことと、<strong>ローンで買える人が減る</strong>こと</li>
+<li>会社だけの話ではない。5,000万円を35年で借りると、金利1.0%と4.0%で<strong>総額3,370万円ちがう</strong></li>
+<li>わたしは賃貸派でローンはないが、117銘柄に不動産も入っている。<strong>指数だけ見ていたら、この3割は見えなかった</strong></li>
+<li>7月に<a href="/blog/mufg-market-cap-no1">銀行株の記事</a>で書いたのは貸す側の話。今度は<strong>借りる側</strong>に来ている</li>
 </ul>
 </div>
 

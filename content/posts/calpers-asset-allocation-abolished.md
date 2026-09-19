@@ -592,15 +592,13 @@ url: https://h.accesstrade.net/sp/cc?rk=0100piab00orlw
 <div class="summary-box">
 <div class="summary-title">🐾 この記事のまとめ</div>
 <ul class="summary-list">
-<li>アメリカ最大の公的年金<strong>カルパース</strong>（カリフォルニア州の公務員の年金、運用資産<strong>約5,560億ドル・およそ88兆円</strong>）が、2026年7月に<strong>資産ごとの配分目標を廃止</strong>した</li>
-<li>これまでは「<strong>上場株式4割、債券3割</strong>」と決めていた。これからは<strong>株式75%・債券25%の「参照ポートフォリオ」をリスクの目安</strong>にして、範囲に収まれば<strong>株を9割まで増やしてもいい</strong>。<strong>箱で分けるのをやめて、重さで測るようにした</strong>（トータル・ポートフォリオ・アプローチ＝TPA）</li>
-<li>そもそも株と債券を組み合わせるのは、<strong>逆に動くと思われていたから</strong>。景気が悪化→株が下がる→中央銀行が金利を下げる→債券が上がる。この形が「<strong>株60・債券40</strong>」で、<strong>2013〜2022年は年平均7.7%</strong>という成績だった</li>
-<li><strong>その前提が崩れた</strong>。物価が上がる局面では、金利上昇で<strong>株も債券もそろって下がる</strong>。2022年は<strong>株が8%強、債券が12%強のマイナス</strong>（全体で約17%安、過去95年で3番目に悪い年）。<strong>受け止めるはずの債券のほうが、大きく沈んだ</strong></li>
-<li>ここで自分に返ると、<strong>わたしは「何割にするか」を考えたことがない</strong>。<strong>円で配当がほしい</strong>から日本の高配当株を買う、というふうに<strong>決めているのは比率ではなく目的のほう</strong>で、公開している構成比は<strong>目標ではなく結果</strong>だった</li>
-<li>だからカルパースとは<strong>もともと立っている場所が違う</strong>。あちらは<strong>枠を外した代わりに、リスクの量を測る</strong>ようにした。わたしは<strong>枠がないまま、リスクの量も測っていない</strong></li>
-<li>そして<strong>比率を決めずに買い続けると、伸びたものの割合が勝手に上がっていく</strong>。実際わたしのBNDは<strong>229口・262万1,098円で総資産の4.5%</strong>。買い増しは続けているのに、株が伸びたぶん<strong>比率はむしろ下がっている</strong></li>
-<li>もっとも、以前から<strong>BNDは「守り」ではなく「気休め」だと書いてきた</strong>ので、<strong>減らすつもりはない</strong>。期待していたのが「<strong>全部が株ではない</strong>」という状態そのものだったからで、<strong>期待の置き場所を確かめられたのが今回の収穫</strong>だった</li>
-<li><strong>リスクの量は測っていない</strong>。代わりにやっているのは、<strong>測らなくても済む形にしておく</strong>こと。<a href="/blog/emergency-fund-300">現金300万円を生活防衛資金</a>として別枠で持ち、<a href="/blog/monthly-living-expenses">生活費は月15万円</a>に収めてある。<strong>資産がどれだけ揺れても、暮らしのほうは止まらない</strong></li>
+<li>アメリカ最大の公的年金<strong>カルパース</strong>（約88兆円）が、2026年7月に<strong>資産ごとの配分目標を廃止</strong>。箱で分けるのをやめて、重さで測るようにした</li>
+<li>株と債券を組み合わせるのは<strong>逆に動くと思われていたから</strong>。でも物価が上がる局面では、<strong>株も債券もそろって下がる</strong></li>
+<li>2022年は<strong>株が8%強、債券が12%強のマイナス</strong>。受け止めるはずの債券が、大きく沈んだ</li>
+<li>わたしは「何割にするか」を考えたことがない。<strong>決めているのは比率ではなく目的のほう</strong>で、構成比は目標ではなく結果</li>
+<li>比率を決めずに買い続けると、伸びたものの割合が勝手に上がる。BNDは買い増しているのに、<strong>総資産の4.5%まで比率が下がっている</strong></li>
+<li>それでもBNDは減らさない。期待しているのは「<strong>全部が株ではない</strong>」という状態そのものだから</li>
+<li>リスクの量は測っていない。代わりに<a href="/blog/emergency-fund-300">現金300万円</a>を別枠で持ち、<strong>資産が揺れても暮らしは止まらない形</strong>にしてある</li>
 </ul>
 </div>
 
