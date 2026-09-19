@@ -139,7 +139,7 @@ export default function Home() {
         </div>
 
         <div className="hero-image-wrap">
-          <img src="/images/mio-room.webp" alt="あずきちゃんとごまもち" width={1672} height={941} style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
+          <img src="/images/mio-room.webp" alt="あずきちゃんとごまもち" width={1241} height={1268} style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }} />
         </div>
       </section>
 

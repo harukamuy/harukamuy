@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { PostMeta } from "@/lib/posts";
+import { coverSrcSet, CARD_SIZES } from "@/lib/cover";
 
 const categoryLabel: Record<string, string> = {
   gomazochi: "ごまもち🐾",
@@ -50,7 +51,7 @@ export default function PostCard({ post, featured }: { post: PostMeta; featured?
           }}
         >
           {post.coverImage ? (
-            <img src={post.coverImage} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
+            <img src={post.coverImage} srcSet={coverSrcSet(post.coverImage)} sizes={CARD_SIZES} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
           ) : (
             <>
               <div style={{
@@ -136,7 +137,7 @@ export default function PostCard({ post, featured }: { post: PostMeta; featured?
         }}
       >
         {post.coverImage ? (
-          <img src={post.coverImage} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
+          <img src={post.coverImage} srcSet={coverSrcSet(post.coverImage)} sizes={CARD_SIZES} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
         ) : (
           <>
             <div style={{

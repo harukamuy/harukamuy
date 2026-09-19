@@ -9,7 +9,7 @@
 // （元画像が .png / .jpg / .webp のいずれでも動く）
 
 import sharp from "sharp";
-import { readdirSync, readFileSync, existsSync, mkdirSync, statSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync, mkdirSync, statSync, writeFileSync, utimesSync } from "node:fs";
 import { join } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
@@ -21,6 +21,19 @@ const ogDir = join(imagesDir, "og");
 const sizesPath = join(root, "lib/og-sizes.json");
 // 1200×630に合わせたとき、余白を埋める色（ブログのアイボリー）
 const OG_BG = { r: 243, g: 235, b: 220 };
+
+// 表示用WebPの幅。記事本文の枠は最大740pxなので、高精細な画面（2倍）でも
+// 1280pxあれば足りる。元画像（1672px前後）のままだと1枚400KB近くになり、
+// スマホで記事を開くのが遅くなっていた（2026-09-19 計測）。
+const MAX_W = 1280;
+const QUALITY = 80;
+// スマホと記事一覧のカード用の小さい版（<base>-960.webp）。
+// スマホは画面幅400px前後×2〜3倍の高精細なので、640pxでは足りず大きい版が選ばれてしまった（実測）。
+// 960pxなら高精細なスマホでもこちらが選ばれる。
+const SMALL_W = 960;
+const SMALL_QUALITY = 78;
+
+const widthOf = async (p) => (await sharp(p).metadata()).width ?? 0;
 
 if (!existsSync(ogDir)) mkdirSync(ogDir, { recursive: true });
 
@@ -65,10 +78,37 @@ for (const cover of covers) {
   const webpPath = join(imagesDir, `${base}.webp`);
   const ogPath = join(ogDir, `${base}.jpg`);
 
-  // 表示用WebP（元がWebPそのものなら生成不要）
-  if (src !== webpPath && isStale(webpPath, src)) {
-    await sharp(src).webp({ quality: 82 }).toFile(webpPath);
-    console.log(`  ✓ ${base}.webp`);
+  // 表示用WebP（幅はMAX_Wまで）
+  if (src !== webpPath) {
+    if (isStale(webpPath, src) || (await widthOf(webpPath)) > MAX_W) {
+      await sharp(src)
+        .resize({ width: MAX_W, withoutEnlargement: true })
+        .webp({ quality: QUALITY })
+        .toFile(webpPath);
+      console.log(`  ✓ ${base}.webp`);
+      webpMade++;
+    }
+  } else if ((await widthOf(webpPath)) > MAX_W) {
+    // 元画像がWebPそのもの（PNGが手元に無い）場合は、その場で縮める。
+    // 更新日時は元のまま戻す。変わるとOGP画像まで「古い」と判定されて作り直しになるため。
+    const { atime, mtime } = statSync(webpPath);
+    const buf = await sharp(webpPath)
+      .resize({ width: MAX_W, withoutEnlargement: true })
+      .webp({ quality: QUALITY })
+      .toBuffer();
+    writeFileSync(webpPath, buf);
+    utimesSync(webpPath, atime, mtime);
+    console.log(`  ✓ ${base}.webp（縮小）`);
+    webpMade++;
+  }
+
+  // スマホ・カード用の小さい版
+  const smallPath = join(imagesDir, `${base}-${SMALL_W}.webp`);
+  if (!existsSync(smallPath) || statSync(smallPath).mtimeMs < statSync(webpPath).mtimeMs) {
+    await sharp(webpPath)
+      .resize({ width: SMALL_W, withoutEnlargement: true })
+      .webp({ quality: SMALL_QUALITY })
+      .toFile(smallPath);
     webpMade++;
   }
 

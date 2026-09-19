@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import Link from "next/link";
+import { coverSrcSet, CARD_SIZES } from "@/lib/cover";
 
 export const metadata: Metadata = {
   title: "ごまもち",
@@ -151,7 +152,7 @@ export default function GomamochiPage() {
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ background: "var(--white)", border: "1.5px solid var(--beige)", borderRadius: 16, overflow: "hidden", textDecoration: "none", color: "inherit", display: "block" }}>
                 <div style={{ aspectRatio: "16/9", background: photoColors[i % photoColors.length], position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   {post.coverImage ? (
-                    <img src={post.coverImage} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
+                    <img src={post.coverImage} srcSet={coverSrcSet(post.coverImage)} sizes={CARD_SIZES} alt={post.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }} />
                   ) : (
                     <>
                       <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(-45deg,transparent,transparent 7px,rgba(255,255,255,.25) 7px,rgba(255,255,255,.25) 8px)" }} />

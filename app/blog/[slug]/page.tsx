@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import ShareButtons from "@/components/ShareButtons";
 import { latestStats } from "@/components/sidefireData";
 import ogSizes from "@/lib/og-sizes.json";
+import { coverSrcSet, CARD_SIZES, HERO_SIZES } from "@/lib/cover";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -222,6 +223,9 @@ export default async function PostPage({ params }: Props) {
           {post.coverImage ? (
             <img
               src={post.coverImage}
+              srcSet={coverSrcSet(post.coverImage)}
+              sizes={HERO_SIZES}
+              fetchPriority="high"
               alt={post.title}
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: post.coverImagePosition ?? "top center" }}
             />
@@ -488,7 +492,7 @@ export default async function PostPage({ params }: Props) {
                     justifyContent: "center",
                   }}>
                     {related.coverImage ? (
-                      <img src={related.coverImage} alt={related.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: related.coverImagePosition ?? "top center" }} />
+                      <img src={related.coverImage} srcSet={coverSrcSet(related.coverImage)} sizes={CARD_SIZES} alt={related.title} width={1600} height={900} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: related.coverImagePosition ?? "top center" }} />
                     ) : (
                       <div style={{
                         position: "absolute",
