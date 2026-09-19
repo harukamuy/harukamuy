@@ -157,7 +157,7 @@ tags: ["フリーランス"]
 
 一方で<strong>国民年金</strong>は、住信SBIの口座振替に現時点では対応していない。これがちょっと不満なところで、他の銀行では対応しているところもあるのでぜひ対応してほしいと思っている。
 
-現状、国民年金はスマホアプリでの支払いができる。対応しているのはPayPay・d払い・au PAY・楽天ペイ・AEON Pay・PayBなど（納付書のバーコードを読み取って支払う方式）。わたしは今はPayPayで支払っているけれど、できれば使うアプリを増やしたくないのが正直なところ。住信SBIのPay-easy（ペイジー）でも払えるのでそちらも選択肢のひとつだ。
+現状、国民年金はスマホアプリでの支払いができる。対応しているのはPayPay・d払い・au PAY・楽天ペイ・AEON Pay・PayBなど（納付書のバーコードを読み取って支払う方式）。わたしは今はPayPayで支払っているけれど、できれば使うアプリを増やしたくないのが本音。住信SBIのPay-easy（ペイジー）でも払えるのでそちらも選択肢のひとつだ。
 
 <div class="data-card" style="background:#fafaf7;border:1.5px solid #c8d8c0;border-radius:12px;padding:16px 20px;margin:20px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:8px;">📝 2026年8月追記</div>

@@ -29,7 +29,7 @@ tags: ["証券・銀行"]
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      正直、あまり深く考えずに選んだんだよね。でも今となっては大正解だったと思ってる。
+      実は、あまり深く考えずに選んだんだよね。でも今となっては大正解だったと思ってる。
     </div>
   </div>
 </div>

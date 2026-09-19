@@ -50,7 +50,7 @@ tags: ["ニュース解説", "インデックス投資", "家計・資産管理"
 
 ## 1. カルパースって、何をしている組織なのか
 
-正直に書くと、わたしもニュースで名前を見るだけで、中身をきちんと知らなかった。
+実は、わたしもニュースで名前を見るだけで、中身をきちんと知らなかった。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:18px 16px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:12px;">🏛 カルパース（CalPERS）とは</div>

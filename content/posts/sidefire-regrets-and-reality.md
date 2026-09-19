@@ -29,16 +29,16 @@ tags: ["サイドFIRE"]
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      楽しいよ。でも良いことだけじゃないから、正直に話すね。
+      楽しいよ。でも良いことだけじゃないから、ちゃんと話すね。
     </div>
   </div>
 </div>
 
 </div>
 
-「サイドFIREを達成した」と書くと、キラキラしたイメージを持たれることがある。でも実際には、「これは想定外だった」「正直きついな」と感じる部分もある。後悔はしていない。でも、知らずに踏み出すよりも、デメリットを知った上で準備してほしいと思っている。
+「サイドFIREを達成した」と書くと、キラキラしたイメージを持たれることがある。でも実際には、「これは想定外だった」「これはきついな」と感じる部分もある。後悔はしていない。でも、知らずに踏み出すよりも、デメリットを知った上で準備してほしいと思っている。
 
-この記事で正直に書くことを、先に整理しておく。
+この記事で書くことを、先に整理しておく。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
 <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:12px;">📝 サイドFIREで「正直きつい」と感じたこと</div>
@@ -48,7 +48,7 @@ tags: ["サイドFIRE"]
 <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">③</span><span>自己管理がすべて自分に返ってくる</span></div>
 <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#5a8a50;font-weight:700;flex-shrink:0;">④</span><span>社会保険のコストが思った以上に重い</span></div>
 </div>
-<div style="font-size:12px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">それでも <strong>後悔はしていない</strong>。理由も最後に正直に書きます。</div>
+<div style="font-size:12px;color:#5a8a50;margin-top:12px;border-top:1px dashed #c8d8c0;padding-top:10px;">それでも <strong>後悔はしていない</strong>。理由も最後に書きます。</div>
 </div>
 
 ---

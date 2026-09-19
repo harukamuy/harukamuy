@@ -29,7 +29,7 @@ tags: ["iDeCo", "年金", "ニュース解説"]
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      うーん、やさしい話だといいんだけどね。今日は正直、ちょっと身構えながら調べた話だよ。
+      うーん、やさしい話だといいんだけどね。今日は、ちょっと身構えながら調べた話だよ。
     </div>
   </div>
 </div>

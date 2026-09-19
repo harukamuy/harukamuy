@@ -29,7 +29,7 @@ tags: ["ふるさと納税"]
   <div class="bubble-wrap">
     <div class="speaker-label">あずき</div>
     <div class="bubble">
-      そうなんだよね。今日は5つの主要サイトを比較しつつ、わたしがふるなびを使い続けている理由を正直に書くね。
+      そうなんだよね。今日は5つの主要サイトを比較しつつ、わたしがふるなびを使い続けている理由を書くね。
     </div>
   </div>
 </div>
@@ -46,7 +46,7 @@ tags: ["ふるさと納税"]
 
 ## まずは超かんたん解説：ふるさと納税ってそもそも何?
 
-正直、わたしも最初は仕組みがよくわからなかった。詳しい人の説明を聞いても、税金の話が混ざってきて頭に入ってこない。なので、**だれにでもスッと伝わるレベルで** 整理してみる。
+実は、わたしも最初は仕組みがよくわからなかった。詳しい人の説明を聞いても、税金の話が混ざってきて頭に入ってこない。なので、**だれにでもスッと伝わるレベルで** 整理してみる。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">🎒 ふるさと納税のしくみ(超かんたん版)</div>
@@ -320,7 +320,7 @@ tags: ["ふるさと納税"]
 
 ## 4. ふるなびのキャンペーン・コインを軽く紹介
 
-正直にいうと、わたしはふるなびのキャンペーンや還元プログラムをほとんど意識したことがない。でも調べてみると、ちゃんと活用すると還元率を上げられる仕組みがあるので、簡単に紹介しておく。
+本音をいうと、わたしはふるなびのキャンペーンや還元プログラムをほとんど意識したことがない。でも調べてみると、ちゃんと活用すると還元率を上げられる仕組みがあるので、簡単に紹介しておく。
 
 <div class="data-card" style="background:#f0f5ee;border:1.5px solid #c8d8c0;border-radius:16px;padding:22px 20px;margin:24px 0;">
   <div style="font-size:13px;font-weight:700;color:#4a6640;margin-bottom:14px;">💰 ふるなびの主な還元の仕組み</div>

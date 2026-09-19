@@ -38,7 +38,7 @@ tags: ["ニュース解説", "日本株", "市場の話"]
 
 「会計基準機構が『のれん』償却維持を決定」というニュースが流れてきた。
 
-正直、見た瞬間に「わたしには関係ない話かも」と思った。会計基準という言葉が、もう遠い。
+見た瞬間に「わたしには関係ない話かも」と思った。会計基準という言葉が、もう遠い。
 
 でも中身を追っていったら、まったく他人事ではなかった。これは、**持っている株が、ある日いきなり「特別損失4,000億円」みたいな数字を出すのはなぜか**、という話だったからだ。
 
@@ -239,7 +239,7 @@ tags: ["ニュース解説", "日本株", "市場の話"]
 パン屋さんで言うと、こうなる。
 
 <div class="data-card" style="background:#fff5e8;border:1.5px solid #d4957e;border-radius:12px;padding:18px 20px;margin:20px 0;">
-<div style="font-size:13px;font-weight:700;color:#a85f3c;margin-bottom:10px;">🥖 買ったパン屋さんの常連さんは、正直かなり減った</div>
+<div style="font-size:13px;font-weight:700;color:#a85f3c;margin-bottom:10px;">🥖 買ったパン屋さんの常連さんは、かなり減った</div>
 <div style="font-size:13px;color:#5a4030;line-height:1.9;">
 でも、<strong>買ったあとに自分たちで新商品を当てて、お店全体の価値はむしろ上がっている</strong><br>
 → 部門ぜんぶで見れば価値が上回っているので、<strong>減損は出ない</strong><br>
