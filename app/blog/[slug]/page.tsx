@@ -129,7 +129,8 @@ export default async function PostPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: "あずき",
-      url: SITE_URL,
+      // 著者はプロフィールページを指す（トップだと「誰が書いたか」の手がかりにならない）
+      url: `${SITE_URL}/about`,
       sameAs: ["https://x.com/harukamuy", "https://www.instagram.com/harukamuy_azuki/"],
     },
     publisher: {

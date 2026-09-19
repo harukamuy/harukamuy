@@ -1,5 +1,7 @@
 import { getAllPostMeta } from "@/lib/posts";
 import BlogClient from "./BlogClient";
+import BlogView from "./BlogView";
+import { PAGE_SIZE } from "./constants";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 
@@ -18,7 +20,9 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const posts = getAllPostMeta();
   return (
-    <Suspense fallback={<div className="max-w-4xl mx-auto px-4 py-12 text-stone-400">読み込み中...</div>}>
+    // 初期表示（最新24本）をサーバーで組み立てておく。URLのカテゴリを読む BlogClient は
+    // ブラウザでしか動かないので、ここを「読み込み中...」にすると空白のページが届いていた。
+    <Suspense fallback={<BlogView visible={posts.slice(0, PAGE_SIZE)} total={posts.length} category={null} />}>
       <BlogClient posts={posts} />
     </Suspense>
   );
